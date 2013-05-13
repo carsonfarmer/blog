@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>Parallel bootstrapping with R</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -60,7 +60,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/" rel="bookmark"
+        <a href="../../../2010/04/parallel-bootstrapping-with-r/" rel="bookmark"
            title="Permalink to Parallel bootstrapping with R">Parallel bootstrapping  with&nbsp;R</a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <abbr class="published" title="2010-04-21T15:34:00">
@@ -70,7 +70,7 @@
     </header>
 
     <div class="entry-content">
-      <p>In a <a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/">recent post</a>, I mentioned that I was testing the stability of
+      <p>In a <a href="../../../2009/10/community-structure-in-directed-weighted-networks/">recent post</a>, I mentioned that I was testing the stability of
 clusters generated from a modified network partitioning algorithm using
 bootstrap resampling techniques. I also mentioned that I was doing this
 in R, using the very nice <a href="http://cran.r-project.org/web/packages/foreach/index.html">foreach</a> package published by <a href="http://www.revolution-computing.com/">REvolution
@@ -93,21 +93,21 @@ registerDoMC<span class="p">()</span> <span class="c1"># registers the parallel 
 B <span class="o">=</span> <span class="m">1000</span> <span class="c1"># number of bootstrap replicates to create</span>
 load<span class="p">(</span><span class="s">&quot;igraph_network.Rdata&quot;</span><span class="p">)</span> <span class="c1"># load a previously saved network (network name: g)</span>
 fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>g<span class="p">)</span> <span class="c1"># compute original clustering</span>
-mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="p">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
-moc <span class="o">=</span> community.to.membership<span class="p">(</span>g<span class="p">,</span> fg<span class="p">$</span>merges<span class="p">,</span> mm<span class="p">)$</span>membership <span class="c1"># get membership</span>
+mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
+moc <span class="o">=</span> community.to.membership<span class="p">(</span>g<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
 noc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>moc<span class="p">))</span> <span class="c1"># count the number original clusters</span>
 bg <span class="o">=</span> g <span class="c1"># make a copy of g for bootstrapping</span>
-clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o">=</span>seq<span class="p">(</span>B<span class="p">),</span> <span class="m">.</span>combine<span class="o">=</span>cbind<span class="p">)</span> <span class="o">%</span>dopar<span class="o">%</span> <span class="p">{</span>
-    E<span class="p">(</span>bg<span class="p">)$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
+clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o">=</span>seq<span class="p">(</span>B<span class="p">),</span> .combine<span class="o">=</span>cbind<span class="p">)</span> <span class="o">%dopar%</span> <span class="p">{</span>
+    E<span class="p">(</span>bg<span class="p">)</span><span class="o">$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)</span><span class="o">$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
     fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>bg<span class="p">)</span> <span class="c1"># compute bootstrap clustering</span>
-    mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="p">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
-    mbc <span class="o">=</span> community.to.membership<span class="p">(</span>bg<span class="p">,</span> fg<span class="p">$</span>merges<span class="p">,</span> mm<span class="p">)$</span>membership <span class="c1"># get membership</span>
+    mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
+    mbc <span class="o">=</span> community.to.membership<span class="p">(</span>bg<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
     nbc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>mbc<span class="p">))</span> <span class="c1"># count the number new clusters</span>
     bootresult <span class="o">=</span> c<span class="p">()</span>
-    <span class="kr">for</span> <span class="p">(</span>j in seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> noc<span class="o">-</span><span class="m">1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the original clusters...</span>
+    <span class="kr">for</span> <span class="p">(</span>j <span class="kr">in</span> seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> noc<span class="m">-1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the original clusters...</span>
         maxgamma <span class="o">=</span> <span class="m">0</span>
         <span class="kr">if</span> <span class="p">(</span>nbc <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kr">for</span> <span class="p">(</span>k in seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> nbc<span class="o">-</span><span class="m">1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the new clusters...</span>
+            <span class="kr">for</span> <span class="p">(</span>k <span class="kr">in</span> seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> nbc<span class="m">-1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the new clusters...</span>
                 bv <span class="o">=</span> as.vector<span class="p">(</span>mbc <span class="o">==</span> k<span class="p">)</span>
                 ov <span class="o">=</span> as.vector<span class="p">(</span>moc <span class="o">==</span> j<span class="p">)</span>
                 jc <span class="o">=</span> clujaccard<span class="p">(</span>ov<span class="p">,</span> bv<span class="p">,</span> zerobyzero<span class="o">=</span><span class="m">0</span><span class="p">)</span>
@@ -117,7 +117,7 @@ clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o
         <span class="p">}</span>
         bootresult <span class="o">=</span> c<span class="p">(</span>bootresult<span class="p">,</span> maxgamma<span class="p">)</span> <span class="c1"># combine results</span>
     <span class="p">}</span>
-    return bootresult <span class="c1"># return the results of this iteration (and cbind with the rest)</span>
+    <span class="kr">return</span> bootresult <span class="c1"># return the results of this iteration (and cbind with the rest)</span>
 <span class="p">}</span>
 bootmean <span class="o">=</span> apply<span class="p">(</span>clusters<span class="p">,</span> <span class="m">1</span><span class="p">,</span> mean<span class="p">)</span> <span class="c1"># mean Jaccard coefficient for each cluster</span>
 </pre></div>
@@ -133,21 +133,21 @@ only &#8216;extra&#8217; bits required to make this run on multiple cores is the
 to run the loops in parallel. I ran a similar analysis using a different
 community detection algorithm on a computer with 4 cores, and was
 (finally) able to take full advantage of my processing&nbsp;power:</p>
-<p><a href="http://www.carsonfarmer.com/static/images/foreachcpu.png"><img alt="cpu_usage" src="http://www.carsonfarmer.com/static/images/foreachcpu-300x114.png" title="foreachcpu" /></a></p>
+<p><a href="../../../static/images/foreachcpu.png"><img alt="cpu_usage" src="../../../static/images/foreachcpu-300x114.png" title="foreachcpu" /></a></p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
+        <a href="../../../category/helpful-tip.html">Helpful tip</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/bootstrapping.html">Bootstrapping</a>
-         <a href="http://www.carsonfarmer.com/tag/cluster.html">Cluster</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/r.html">R</a>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/research.html">Research</a>
+         <a href="../../../tag/bootstrapping.html">Bootstrapping</a>
+         <a href="../../../tag/cluster.html">Cluster</a>
+         <a href="../../../tag/networks.html">Networks</a>
+         <a href="../../../tag/r.html">R</a>
+         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+         <a href="../../../tag/how-to.html">How to</a>
+         <a href="../../../tag/networks.html">Networks</a>
+         <a href="../../../tag/research.html">Research</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
@@ -155,7 +155,7 @@ community detection algorithm on a computer with 4 cores, and was
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2010/04/parallel-bootstrapping-with-r/";
-          var disqus_url = "http://www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/";
+          var disqus_url = "../../../2010/04/parallel-bootstrapping-with-r/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';

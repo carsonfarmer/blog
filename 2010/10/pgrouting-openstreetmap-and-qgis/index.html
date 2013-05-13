@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>pgRouting, OpenStreetMap, and QGIS</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -60,7 +60,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/" rel="bookmark"
+        <a href="../../../2010/10/pgrouting-openstreetmap-and-qgis/" rel="bookmark"
            title="Permalink to pgRouting, OpenStreetMap, and QGIS">pgRouting, OpenStreetMap, and&nbsp;<span class="caps">QGIS</span></a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <abbr class="published" title="2010-10-14T12:26:00">
@@ -70,7 +70,7 @@
     </header>
 
     <div class="entry-content">
-      <p>I mentioned <a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">a few posts back</a> that there was a great resource for
+      <p>I mentioned <a href="../../../2010/05/osm-data-by-country/">a few posts back</a> that there was a great resource for
 downloading OpenStreetMap data, and that it was relatively easy to
 import osm data into <code>PostgreSQL</code>/<code>PostGIS</code> for use with <code>pgRouting</code> to
 calculate shortest paths and various other network-based operations. In
@@ -79,7 +79,7 @@ and provide a quick example to show how this can be combined with <span class="c
 to visualise the computed shortest path directly.
 </p>
 <p>Firstly, we need to install all the required packages. I&#8217;m assuming you
-already have <code>PostgreSQL</code> and <code>PostGIS</code> installed, but if not, have a <a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/">look
+already have <code>PostgreSQL</code> and <code>PostGIS</code> installed, but if not, have a <a href="../../../2008/11/quick-guide-to-setting-up-postgis-database/">look
 here</a> for a quick guide to getting things set up (Note that the latest
 version of <code>PostgreSQL</code> is now&nbsp;8.4).</p>
 <div class="highlight"><pre>sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
@@ -124,8 +124,8 @@ sudo make install
 
 
 <p>Scroll to the bottom, and make sure you change the <code>METHOD</code> to&nbsp;&#8216;trust&#8217;.</p>
-<div class="highlight"><pre><span class="c1"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
-<span class="nb">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
+<div class="highlight"><pre><span class="cp"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
+<span class="n">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
 </pre></div>
 
 
@@ -175,7 +175,7 @@ make
 
 
 <p>Once that&#8217;s finished building, we can go ahead and download our osm data
-from <a href="http://download.geofabrik.de/osm/">http://download.geofabrik.de/osm/</a>. See this <a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">previous post</a>
+from <a href="http://download.geofabrik.de/osm/">http://download.geofabrik.de/osm/</a>. See this <a href="../../../2010/05/osm-data-by-country/">previous post</a>
 for details. For this example, I&#8217;ll be using the osm data for&nbsp;Ireland</p>
 <div class="highlight"><pre>wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
 bzip2 -d ireland.osm.bz2
@@ -212,7 +212,7 @@ network (Note that the values 52343 and 39219 represent network node&nbsp;ids)&#
 <span class="err">   </span> <span class="mi">20388</span> <span class="o">|</span>   <span class="mi">28715</span> <span class="o">|</span>   <span class="mf">0.271165901884914</span>
 <span class="err">   </span> <span class="mi">20387</span> <span class="o">|</span>  <span class="mi">112841</span> <span class="o">|</span>   <span class="mf">0.101669458767093</span>
 <span class="err">   </span> <span class="mi">14183</span> <span class="o">|</span>   <span class="mi">22893</span> <span class="o">|</span>   <span class="mf">0.106433172954507</span>
-<span class="o">...</span>
+<span class="p">...</span>
 </pre></div>
 
 
@@ -225,43 +225,43 @@ functions which return geometries for use with other <code>PostGIS</code> functi
 
 <div class="highlight"><pre><span class="n">id</span>  <span class="o">|</span>  <span class="n">gid</span>   <span class="o">|</span>          <span class="n">the_geom</span>
 <span class="o">----+--------+----------------------------</span>
-<span class="err"> </span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">78055</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">2</span> <span class="o">|</span>  <span class="mi">78052</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">3</span> <span class="o">|</span>  <span class="mi">78053</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">4</span> <span class="o">|</span>  <span class="mi">28717</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">5</span> <span class="o">|</span>  <span class="mi">28716</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">6</span> <span class="o">|</span>  <span class="mi">28715</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">7</span> <span class="o">|</span> <span class="mi">112841</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">8</span> <span class="o">|</span>  <span class="mi">22893</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="o">...</span>
+<span class="err"> </span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">78055</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">2</span> <span class="o">|</span>  <span class="mi">78052</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">3</span> <span class="o">|</span>  <span class="mi">78053</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">4</span> <span class="o">|</span>  <span class="mi">28717</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">5</span> <span class="o">|</span>  <span class="mi">28716</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">6</span> <span class="o">|</span>  <span class="mi">28715</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">7</span> <span class="o">|</span> <span class="mi">112841</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">8</span> <span class="o">|</span>  <span class="mi">22893</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="p">...</span>
 </pre></div>
 
 
 <p>These queries are all fine and dandy, and can easily be used to
 calculate the distances of shortest paths etc, but what I really want to
 do is visualise this output in a <span class="caps">GIS</span> so I can get an idea of what these
-shortest paths looks like. In <em>another</em> <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/">previous post</a>, I mentioned
+shortest paths looks like. In <em>another</em> <a href="../../../2010/04/postgis-select-statement-as-vector-layer-in-qgis/">previous post</a>, I mentioned
 how we could visualise spatial <code>SQL</code> queries directly in <span class="caps">QGIS</span> from both
 the Python console, and using a handy plugin. We can do the same thing
 here using <code>pgRouting</code> to produce a lovely spatial representation of our
 shortest path&nbsp;query:</p>
-<p><a href="http://www.carsonfarmer.com/static/images/shortest_path.png"><img alt="image" src="http://www.carsonfarmer.com/static/images/shortest_path-300x213.png" title="shortest_path" /></a></p>
+<p><a href="../../../static/images/shortest_path.png"><img alt="image" src="../../../static/images/shortest_path-300x213.png" title="shortest_path" /></a></p>
 <p>And there you go, a full fledged routing library built right into our&nbsp;database!</p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/openstreemap.html">OpenStreeMap</a>
-         <a href="http://www.carsonfarmer.com/tag/pgrouting.html">pgRouting</a>
-         <a href="http://www.carsonfarmer.com/tag/postgresqlpostgis.html">PostgreSQL/PostGIS</a>
-         <a href="http://www.carsonfarmer.com/tag/qgis.html">QGIS</a>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+         <a href="../../../tag/networks.html">Networks</a>
+         <a href="../../../tag/openstreemap.html">OpenStreeMap</a>
+         <a href="../../../tag/pgrouting.html">pgRouting</a>
+         <a href="../../../tag/postgresqlpostgis.html">PostgreSQL/PostGIS</a>
+         <a href="../../../tag/qgis.html">QGIS</a>
+         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+         <a href="../../../tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
+         <a href="../../../tag/how-to.html">How to</a>
+         <a href="../../../tag/networks.html">Networks</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
@@ -269,7 +269,7 @@ shortest path&nbsp;query:</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2010/10/pgrouting-openstreetmap-and-qgis/";
-          var disqus_url = "http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/";
+          var disqus_url = "../../../2010/10/pgrouting-openstreetmap-and-qgis/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';

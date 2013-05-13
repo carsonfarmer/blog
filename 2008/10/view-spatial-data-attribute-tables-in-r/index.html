@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>View spatial data attribute tables in R</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -60,7 +60,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/" rel="bookmark"
+        <a href="../../../2008/10/view-spatial-data-attribute-tables-in-r/" rel="bookmark"
            title="Permalink to View spatial data attribute tables in R">View spatial data attribute tables in&nbsp;R</a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <abbr class="published" title="2008-10-14T13:44:00">
@@ -76,37 +76,37 @@ not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
 </p>
-<div class="highlight"><pre>invisible<span class="p">(</span>edit<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">))</span>
+<div class="highlight"><pre>invisible<span class="p">(</span>edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">))</span>
 </pre></div>
 
 
 <p>Note: <code>invisible</code> allows you to close the viewer without filling the
 console with the attributes of the table. You could also&nbsp;use:</p>
-<div class="highlight"><pre>new_data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">)</span>
+<div class="highlight"><pre>new_data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
 </pre></div>
 
 
 <p>to assign changes made to the data to a new variable, or&nbsp;use:</p>
-<div class="highlight"><pre>spatial_layer<span class="p">@</span>data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">)</span>
+<div class="highlight"><pre>spatial_layer<span class="o">@</span>data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
 </pre></div>
 
 
 <p>or,</p>
-<div class="highlight"><pre>fix<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">)</span>
+<div class="highlight"><pre>fix<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
 </pre></div>
 
 
 <p>to make changes to the Spatial*DataFrame&nbsp;itself.</p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
-         <a href="http://www.carsonfarmer.com/tag/r-spatial.html">R spatial</a>
+         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+         <a href="../../../tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
+         <a href="../../../tag/how-to.html">How to</a>
+         <a href="../../../tag/r-spatial.html">R spatial</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
@@ -114,7 +114,7 @@ console with the attributes of the table. You could also&nbsp;use:</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2008/10/view-spatial-data-attribute-tables-in-r/";
-          var disqus_url = "http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/";
+          var disqus_url = "../../../2008/10/view-spatial-data-attribute-tables-in-r/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';

@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>Voronoi polygons with R</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -60,7 +60,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/" rel="bookmark"
+        <a href="../../../2009/09/voronoi-polygons-with-r/" rel="bookmark"
            title="Permalink to Voronoi polygons with R">Voronoi polygons with&nbsp;R</a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <abbr class="published" title="2009-09-16T22:30:00">
@@ -78,13 +78,13 @@ the input point layer.
 </p>
 <div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
     require<span class="p">(</span>deldir<span class="p">)</span>
-    crds <span class="o">=</span> layer<span class="p">@</span>coords
+    crds <span class="o">=</span> layer<span class="o">@</span>coords
     z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
     w <span class="o">=</span> tile.list<span class="p">(</span>z<span class="p">)</span>
     polys <span class="o">=</span> vector<span class="p">(</span>mode<span class="o">=</span><span class="s">&#39;list&#39;</span><span class="p">,</span> length<span class="o">=</span>length<span class="p">(</span>w<span class="p">))</span>
     require<span class="p">(</span>sp<span class="p">)</span>
-    <span class="kr">for</span> <span class="p">(</span>i in seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
-        pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]$</span>y<span class="p">)</span>
+    <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
+        pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
         pcrds <span class="o">=</span> rbind<span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
         polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> <span class="caps">ID</span><span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
     <span class="p">}</span>
@@ -99,20 +99,20 @@ the input point layer.
 <p>To save the output to shapefile, simply use<code>writeOGR</code> from the <code>rgdal</code>
 library:</p>
 <div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-?writeOGR
+<span class="o">?</span>writeOGR
 </pre></div>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/r.html">R</a>
-         <a href="http://www.carsonfarmer.com/tag/tesselation.html">Tesselation</a>
-         <a href="http://www.carsonfarmer.com/tag/voronoi-polygons.html">Voronoi polygons</a>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
-         <a href="http://www.carsonfarmer.com/tag/r-spatial.html">R spatial</a>
+         <a href="../../../tag/r.html">R</a>
+         <a href="../../../tag/tesselation.html">Tesselation</a>
+         <a href="../../../tag/voronoi-polygons.html">Voronoi polygons</a>
+         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+         <a href="../../../tag/how-to.html">How to</a>
+         <a href="../../../tag/r-spatial.html">R spatial</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
@@ -120,7 +120,7 @@ library:</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2009/09/voronoi-polygons-with-r/";
-          var disqus_url = "http://www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/";
+          var disqus_url = "../../../2009/09/voronoi-polygons-with-r/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';

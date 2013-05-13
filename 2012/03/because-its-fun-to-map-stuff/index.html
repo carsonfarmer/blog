@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <title>Because its fun to map stuff…</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -60,7 +60,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
+        <a href="../../../2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
            title="Permalink to Because its fun to map stuff…">Because its fun to map&nbsp;stuff&#8230;</a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <abbr class="published" title="2012-03-30T17:46:00">
@@ -82,7 +82,7 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 <code>http://www.carsonfarmer.com/</code> between 2009 and&nbsp;2011:</p>
-<p><a href="http://www.carsonfarmer.com/static/images/website_visitors.svg"><img alt="Visitors map" src="http://www.carsonfarmer.com/static/images/website_visitors.svg" /></a>
+<p><a href="../../../static/images/website_visitors.svg"><img alt="Visitors map" src="../../../static/images/website_visitors.svg" /></a>
 </p>
 <h3>Work-flow</h3>
 <p>Firstly, I downloaded the logs for <code>www.carsonfarmer.com</code>. I did this
@@ -118,7 +118,7 @@ packages: <code>RCurl</code>, <code>rjson</code>, and <code>plyr</code>):</p>
 up an R session and got&nbsp;working:</p>
 <div class="highlight"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
 library<span class="p">(</span><span class="caps">RDSTK</span><span class="p">)</span>
-? ip2coordinates
+<span class="o">?</span> ip2coordinates
 </pre></div>
 
 
@@ -127,12 +127,12 @@ within a single string with comma-separated <span class="caps">IP</span> address
 only do a few IPs at a time (about 100 I think?) so I had to do this
 part in a loop (it probably isn&#8217;t polite to slam <span class="caps">DSTK</span> with 1,000s of
 requests, so be&nbsp;nice!).</p>
-<div class="highlight"><pre>ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="p">$</span>address<span class="p">[</span><span class="m">1</span>:<span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
+<div class="highlight"><pre>ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
 out <span class="o">=</span> ip2coordinates<span class="p">(</span>ips<span class="p">)</span>
 last <span class="o">=</span> <span class="m">80</span>
 s <span class="o">=</span> c<span class="p">(</span>seq<span class="p">(</span><span class="m">160</span><span class="p">,</span> nrow<span class="p">(</span>addresses<span class="p">),</span> <span class="m">80</span><span class="p">),</span> nrow<span class="p">(</span>addresses<span class="p">))</span>
-<span class="kr">for</span> <span class="p">(</span>i in s<span class="p">)</span> <span class="p">{</span>
-    ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="p">$</span>address<span class="p">[(</span>last<span class="o">+</span><span class="m">1</span><span class="p">)</span>:i<span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
+<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> s<span class="p">)</span> <span class="p">{</span>
+    ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[(</span>last<span class="m">+1</span><span class="p">)</span><span class="o">:</span>i<span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
     out <span class="o">=</span> rbind<span class="p">(</span>out<span class="p">,</span> ip2coordinates<span class="p">(</span>ips<span class="p">))</span>
     last <span class="o">=</span> i
 <span class="p">}</span>
@@ -146,10 +146,10 @@ from a hexagonal sample of the grid, and then finally d) create a
 <code>SpatialPolygonsDataFrame</code> for&nbsp;plotting:</p>
 <div class="highlight"><pre>library<span class="p">(</span>sp<span class="p">)</span>
 <span class="c1"># make the output into a Spatial* object</span>
-coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> ~longitude<span class="o">+</span>latitude
+coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> <span class="o">~</span>longitude<span class="o">+</span>latitude
 library<span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
-sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc"><span class="caps">NULL</span></span><span class="p">)$</span><span class="caps">SG</span>
-hex_pts <span class="o">=</span> spsample<span class="p">(</span>sg<span class="p">,</span> type<span class="o">=</span><span class="s">&#39;hexagonal&#39;</span><span class="p">,</span> cellsize<span class="o">=</span>sg<span class="p">@</span>grid<span class="p">@</span>cellsize<span class="p">)</span>
+sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc"><span class="caps">NULL</span></span><span class="p">)</span><span class="o">$</span><span class="caps">SG</span>
+hex_pts <span class="o">=</span> spsample<span class="p">(</span>sg<span class="p">,</span> type<span class="o">=</span><span class="s">&#39;hexagonal&#39;</span><span class="p">,</span> cellsize<span class="o">=</span>sg<span class="o">@</span>grid<span class="o">@</span>cellsize<span class="p">)</span>
 hex_poly <span class="o">=</span> HexPoints2SpatialPolygons<span class="p">(</span>hex_pts<span class="p">)</span>
 pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span>
 pts_poly_count <span class="o">=</span> sapply<span class="p">(</span>pts_poly<span class="p">,</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> nrow<span class="p">(</span>x<span class="p">))</span>
@@ -166,7 +166,7 @@ library<span class="p">(</span>RColorBrewer<span class="p">)</span>
 <span class="c1"># don&#39;t use the lightest colour, it looks washed out</span>
 cols <span class="o">=</span> brewer.pal<span class="p">(</span><span class="m">7</span><span class="p">,</span><span class="s">&quot;Blues&quot;</span><span class="p">)[</span><span class="m">-1</span><span class="p">]</span> 
 <span class="c1"># plot the grid, which produces something close to our final product</span>
-spplot<span class="p">(</span>poly<span class="p">[</span>poly<span class="p">$</span>count<span class="o">&gt;</span><span class="m">0</span><span class="p">,],</span> col<span class="o">=</span><span class="s">&#39;white&#39;</span><span class="p">,</span> col.regions<span class="o">=</span>cols<span class="p">,</span> at<span class="o">=</span>breaks<span class="p">,</span> 
+spplot<span class="p">(</span>poly<span class="p">[</span>poly<span class="o">$</span>count<span class="o">&gt;</span><span class="m">0</span><span class="p">,],</span> col<span class="o">=</span><span class="s">&#39;white&#39;</span><span class="p">,</span> col.regions<span class="o">=</span>cols<span class="p">,</span> at<span class="o">=</span>breaks<span class="p">,</span> 
        par.settings<span class="o">=</span>list<span class="p">(</span>axis.line<span class="o">=</span>list<span class="p">(</span>col<span class="o">=</span><span class="s">&#39;transparent&#39;</span><span class="p">)))</span>
 </pre></div>
 
@@ -178,17 +178,17 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
 <p>Carson</p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/data-science-toolkit.html">Data Science Toolkit</a>
-         <a href="http://www.carsonfarmer.com/tag/hexagonal-grid.html">Hexagonal Grid</a>
-         <a href="http://www.carsonfarmer.com/tag/ip-addreses.html">IP Addreses</a>
-         <a href="http://www.carsonfarmer.com/tag/mapping.html">Mapping</a>
-         <a href="http://www.carsonfarmer.com/tag/r-spatial.html">R spatial</a>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
+         <a href="../../../tag/data-science-toolkit.html">Data Science Toolkit</a>
+         <a href="../../../tag/hexagonal-grid.html">Hexagonal Grid</a>
+         <a href="../../../tag/ip-addreses.html">IP Addreses</a>
+         <a href="../../../tag/mapping.html">Mapping</a>
+         <a href="../../../tag/r-spatial.html">R spatial</a>
+         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+         <a href="../../../tag/how-to.html">How to</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
@@ -196,7 +196,7 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2012/03/because-its-fun-to-map-stuff/";
-          var disqus_url = "http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/";
+          var disqus_url = "../../../2012/03/because-its-fun-to-map-stuff/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
