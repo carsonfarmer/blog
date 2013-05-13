@@ -1,0 +1,9 @@
+Title: Making the switch to Pelican
+Date: 2013-12-05 11:16
+Author: cfarmer
+Email: carson.farmer@gmail.com
+Category: Announcement
+Tags: Announcement, Pelican, Blog, Update
+Slug: making-the-switch-to-pelican
+
+This is a test post...
