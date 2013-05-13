@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/visualisation.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2012-08-10T14:07:00-04:00</updated><entry><title>cartogram updates</title><link href="http://www.carsonfarmer.com/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://cfarmer.github.io/blog/" rel="alternate"></link><link href="http://cfarmer.github.io/blog/feeds/visualisation.atom.xml" rel="self"></link><id>http://cfarmer.github.io/blog/</id><updated>2012-08-10T14:07:00-04:00</updated><entry><title>cartogram updates</title><link href="http://cfarmer.github.io/blog/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
 (&lt;a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised"&gt;Guardian data blog&lt;/a&gt;, and &lt;a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html"&gt;Telegraph data and graphics blog&lt;/a&gt;), so
 I&amp;#8217;ve updated a few things and wanted to highlight/explain them a bit&amp;nbsp;here.&lt;/p&gt;
 &lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/wp-content/uploads/2012/08/grenada.png" title="grenada" /&gt;&lt;/a&gt;
@@ -23,7 +23,7 @@ expense of all the other countries, making the graphic pretty boring
 unless you live in Grenada. As a result, I&amp;#8217;ve excluded all countries
 with less than two medals in total (I know, I&amp;#8217;m sorry, but it had to be
 done). Having said that, if you click to view the &amp;#8216;normal&amp;#8217; map, then all
-countries are added back, and you get medal counts for all of&amp;nbsp;them.&lt;/p&gt;</summary><category term="Cartogram"></category><category term="Olympics"></category><category term="Update"></category><category term="Visualisation"></category><category term="Update"></category></entry><entry><title>Olympic cartogram</title><link href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/" rel="alternate"></link><updated>2012-08-02T12:18:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-08-02:2012/08/olympic-cartogram/</id><summary type="html">&lt;p&gt;The London 2012 Summer Olympics have generated quite a bit of buzz in
+countries are added back, and you get medal counts for all of&amp;nbsp;them.&lt;/p&gt;</summary><category term="Cartogram"></category><category term="Olympics"></category><category term="Update"></category><category term="Visualisation"></category><category term="Update"></category></entry><entry><title>Olympic cartogram</title><link href="http://cfarmer.github.io/blog/2012/08/olympic-cartogram/" rel="alternate"></link><updated>2012-08-02T12:18:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2012-08-02:2012/08/olympic-cartogram/</id><summary type="html">&lt;p&gt;The London 2012 Summer Olympics have generated quite a bit of buzz in
 terms of visualisations and interesting data analysis. In fact, news
 sites here in the &lt;span class="caps"&gt;UK&lt;/span&gt; are doing all sorts of cools things with Olympic
 data, and &lt;a href="http://www.guardian.co.uk/"&gt;The Guardian&lt;/a&gt; has an &lt;a href="http://www.guardian.co.uk/sport/series/london-2012-olympics-data"&gt;entire series&lt;/a&gt; devoted to Olympic
@@ -52,7 +52,7 @@ now do that by including this in your &lt;span class="caps"&gt;HTML&lt;/span&gt;
 
 
 
-&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/olympic_carto.png" title="Olympic cartogram" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://cfarmer.github.io/blog/static/images/olympic_carto.png" title="Olympic cartogram" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The cartgram is interactive, and was created using &lt;a href="http://www.python.org/"&gt;Python&lt;/a&gt;
 (&lt;a href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt;, &lt;a href="https://github.com/esnme/ultrajson"&gt;ujson&lt;/a&gt;, and &lt;a href="http://toblerity.github.com/shapely/manual.html"&gt;shapely&lt;/a&gt;) and &lt;a href="http://d3js.org/"&gt;D3.js&lt;/a&gt;. If I get a
 chance, I&amp;#8217;ll try to post the code at some stage. In the mean time, here
@@ -73,7 +73,7 @@ fairly regular intervals so that the results are relatively up-to-date&lt;/strik
 I now have the maps updating every hour. In any case, have a play around
 and let me know what you think, and if you know of any other cool
 Olympics graphics or cool applications of cartograms, please let me know
-in the&amp;nbsp;comments!&lt;/p&gt;</summary><category term="Cartogram"></category><category term="Olympics"></category><category term="Visualisation"></category></entry><entry><title>Visualising data with FatFonts</title><link href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/" rel="alternate"></link><updated>2012-05-26T20:30:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-05-26:2012/05/visualising-data-with-fatfonts/</id><summary type="html">&lt;p&gt;I recently posted an &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/visualising-with-fatfonts/"&gt;article on the &lt;span class="caps"&gt;CGI&lt;/span&gt; blog&lt;/a&gt; about some
+in the&amp;nbsp;comments!&lt;/p&gt;</summary><category term="Cartogram"></category><category term="Olympics"></category><category term="Visualisation"></category></entry><entry><title>Visualising data with FatFonts</title><link href="http://cfarmer.github.io/blog/2012/05/visualising-data-with-fatfonts/" rel="alternate"></link><updated>2012-05-26T20:30:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2012-05-26:2012/05/visualising-data-with-fatfonts/</id><summary type="html">&lt;p&gt;I recently posted an &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/visualising-with-fatfonts/"&gt;article on the &lt;span class="caps"&gt;CGI&lt;/span&gt; blog&lt;/a&gt; about some
 visualisations that I produced with researchers from [St Andrews&amp;#8217;
 Computer Human Interaction Research Group (&lt;span class="caps"&gt;SACHI&lt;/span&gt;)][] using &lt;a href="http://fatfonts.org/"&gt;FatFonts&lt;/a&gt;,
 a tpographic visualisation technique developed by &lt;span class="caps"&gt;SACHI&lt;/span&gt; co-founder
@@ -89,8 +89,8 @@ still experimenting with FatFonts at this stage, but so far, I&amp;#8217;m quite
 pleased with the results, and find that they offer a nice way to add
 beauty to my potentially boring data!
 &lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/fat_fonts.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/fat_fonts-300x122.png" title="Subset of FatFont image" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Carson&lt;/p&gt;</summary><category term="Research"></category><category term="FatFonts"></category><category term="News"></category><category term="Feature"></category></entry><entry><title>Research dissemination and interactive visuals</title><link href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/" rel="alternate"></link><updated>2012-04-10T22:12:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-04-10:2012/04/research-dissemination-and-interactive-visuals/</id><summary type="html">&lt;p&gt;One of my goals for this year is to spend more time and effort
+&lt;p&gt;&lt;a href="http://cfarmer.github.io/blog/static/images/fat_fonts.png"&gt;&lt;img alt="image" src="http://cfarmer.github.io/blog/static/images/fat_fonts-300x122.png" title="Subset of FatFont image" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Carson&lt;/p&gt;</summary><category term="Research"></category><category term="FatFonts"></category><category term="News"></category><category term="Feature"></category></entry><entry><title>Research dissemination and interactive visuals</title><link href="http://cfarmer.github.io/blog/2012/04/research-dissemination-and-interactive-visuals/" rel="alternate"></link><updated>2012-04-10T22:12:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2012-04-10:2012/04/research-dissemination-and-interactive-visuals/</id><summary type="html">&lt;p&gt;One of my goals for this year is to spend more time and effort
 developing effective visualisations for my various research projects, in
 an effort to make my research more accessible to others. This is one
 thing that I think many academics are particularly bad at: letting
@@ -104,7 +104,7 @@ be able to use it, and maybe even create some compelling visualisations
 in the process. While I&amp;#8217;m not quite ready to start creating full-blown
 interactive websites yet, I thought it might be a good idea to start
 with something small to get the ball rolling; so I put together an
-&lt;a href="/examples/visitors/"&gt;upgraded version&lt;/a&gt; of my &lt;a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/"&gt;previous map&lt;/a&gt; of visitors to www.carsonfarmer.com.
+&lt;a href="/examples/visitors/"&gt;upgraded version&lt;/a&gt; of my &lt;a href="http://cfarmer.github.io/blog/2012/03/because-its-fun-to-map-stuff/"&gt;previous map&lt;/a&gt; of visitors to www.carsonfarmer.com.
 &lt;/p&gt;
 &lt;p&gt;I used the excellent &lt;a href="http://mbostock.github.com/d3/"&gt;D3 JavaScript library&lt;/a&gt; to re-create the visitor
 map, this time providing some basic interaction with the data. Most of
