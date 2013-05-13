@@ -16,6 +16,7 @@ Status: hidden
       View Larger Map
     </a>
   </small>
+</p>
 
 Dr. Carson J. Q. Farmer  
 Assistant Professor of GIScience  
