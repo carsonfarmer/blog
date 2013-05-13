@@ -1,0 +1,24 @@
+{% if TWITTER_USERNAME %}
+<div class="twitter">
+        <h2><i class="icon-twitter"></i> twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/{{TWITTER_USERNAME}}" 
+            data-link-color="#2A75A9" 
+            data-chrome="nofooter noheader noborders noscrollbar transparent" 
+            data-widget-id="{{TWITTER_WIDGET_ID}}"
+            height="300" lang="EN" 
+            data-related="{{TWITTER_USERNAME}}">
+            Tweets by @CarsonFarmer
+        </a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,"script","twitter-wjs");
+        </script>
+
+</div>
+{% endif %}
