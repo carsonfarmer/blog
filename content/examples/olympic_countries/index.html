@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Olympic Medal Cartogram</title>
+    <script type="text/javascript" src="../d3.v2.js"></script>
+    <script type="text/javascript" src="modified.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="title">
+        <h1>LONDON 2012</h1>
+        <h2>Who's shaping up to win big?</h2>
+    </div>
+    <div id="frame">
+      <iframe src=map.html width=1230 height=545></iframe>
+    </div>
+    <div class="footer">
+        This map is a cartogram! Country sizes are based on number of medals won by each country as of <span id="last-mod"></span>
+        <br/>
+        <em>Data sources:</em> 
+        <a href=" http://www.telegraph.co.uk/sport/olympics/medals/">The Telegraph Medal Counts</a> | 
+        <a href="https://www.cia.gov/library/publications/the-world-factbook/">The CIA World Factbook</a> | 
+        <a href="http://www.naturalearthdata.com/">Natural Earth Admin Boundaries</a> <br/>
+        <em>Created by:</em> <a href="http://www.carsonfarmer.com/?p=1126">Carson J. Q. Farmer</a> | <em>Twitter:</em> <a href="https://twitter.com/CarsonFarmer">@CarsonFarmer</a><br/>
+        Note: The first time you click on a button, it may take a few seconds to load.
+<script type="text/javascript">        
+d3.select("#last-mod").node().innerHTML = now;
+</script>
+    </div>
+  </body>
+</html>
