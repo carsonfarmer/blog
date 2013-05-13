@@ -28,7 +28,7 @@
                     <div class="navbar-inner">
                         <ul class="nav">
                             {% if DISPLAY_HOME_ON_MENU -%}
-                                <li><a id="home" href="."><i class="icon-home"></i></a></li>
+                                <li><a id="home" href="{{ SITEURL }}/"><i class="icon-home"></i></a></li>
                                 <li class="divider-vertical"></li>
                             {% endif %}
                             {% for title, link, icon in MENUITEMS %}
@@ -38,12 +38,12 @@
                                         <i class="{{ icon }}"></i> {{ title }}<i class="icon-chevron-down"></i></a>
                                         <ul class="dropdown-menu" role="menu" id="{{ title }}-menu" aria-labelledby="{{ title }}-drop">
                                             {% for title, link, icon in LINKS %}
-                                                <li><a href="{{ link }}"><i class="{{ icon }}"></i> {{ title }}</a></li>
+                                                <li><a href="{{ SITEURL }}/{{ link }}"><i class="{{ icon }}"></i> {{ title }}</a></li>
                                             {% endfor %}
                                         </ul>
                                     </li>
                                 {% else %}
-                                    <li><a href="{{ link }}"><i class="{{ icon }}"></i> {{ title }}</a></li>
+                                    <li><a href="{{ SITEURL }}/{{ link }}"><i class="{{ icon }}"></i> {{ title }}</a></li>
                                 {% endif %}
                             {% endfor %}
                             {% if DISPLAY_PAGES_ON_MENU -%}
