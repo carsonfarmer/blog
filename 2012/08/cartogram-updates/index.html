@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>cartogram updates</title>
+        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+                <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+                        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="/static/libs/bootstrap/js/bootstrap.js"></script>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li><a id="home" href="/"><i class="icon-home"></i></a></li>
+                                <li class="divider-vertical"></li>
+                                                                                                                            <li><a href="/about"><i class="icon-info-sign"></i> About</a></li>
+                                                                                                                                <li><a href="/curriculum-vitae"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
+                                                                                                                                <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
+                                        <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
+                                                                                            <li><a href="/research"><i class="icon-bar-chart"></i> Reserach</a></li>
+                                                                                            <li><a href="/spatial-software"><i class="icon-code"></i> Software</a></li>
+                                                                                    </ul>
+                                    </li>
+                                                                                                                                                                                <li class="dropdown pull-right">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+                                    <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu" id="social-menu" aria-labelledby="social-drop">
+                                        <li>
+                                          <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                                          <i class="icon-rss"></i> atom feed</a>
+                                        </li>
+                                                                                <li>
+                                          <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                                          <i class="icon-rss"></i> rss feed</a>
+                                        </li>
+                                                                                                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
+                                                                                    <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
+                                                                                    <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
+                                                                                    <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
+                                                                                    <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
+                                                                                    <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
+                                                                                    <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
+                                                                            </ul>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+        </header><!-- /#banner -->
+        <section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2012/08/cartogram-updates/" rel="bookmark"
+           title="Permalink to cartogram updates">cartogram&nbsp;updates</a></h1>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <abbr class="published" title="2012-08-10T14:07:00">
+          <i class="icon-calendar"></i>
+          Fri 10 August 2012
+      </abbr>
+    </header>
+
+    <div class="entry-content">
+      <p>It seems my <a href="examples/olympic_countries/">Olympic medals cartogram</a> is getting a bit more attention
+(<a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised">Guardian data blog</a>, and <a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html">Telegraph data and graphics blog</a>), so
+I&#8217;ve updated a few things and wanted to highlight/explain them a bit&nbsp;here.</p>
+<p><a href="examples/olympic_countries/"><img alt="image" src="http://www.carsonfarmer.com/wp-content/uploads/2012/08/grenada.png" title="grenada" /></a>
+</p>
+<p>Firstly, you can now explore the medal data together with
+population <strong>and</strong> <span class="caps">GDP</span> as well as without any warping to get a feel for
+how much things change. Secondly, in order to be able to display the map
+in a way that is familiar to most people (i.e., landscape style), I had
+to take a few liberties in terms of representation. For instance, the
+&#8216;projection&#8217; used is not area preserving (in fact, it is just the
+geographical coordinates), so some countries appear larger (smaller)
+than they should, even with the warping. We all make compromises though
+right? Third, because I wasn&#8217;t happy with adding artificial medal counts
+to make my algorithm happy, I decided to create a more &#8216;realistic&#8217;
+graphic, so this time around, countries with zero medals have zero area
+(i.e. are removed). Related to this, because Grenada only has about
+110,821 people, its <a href="http://www.medalspercapita.com/">per capita medal ranking</a> is off the charts (note
+that I&#8217;m not using the the <a href="http://www.medalspercapita.com/">http://www.medalspercapita.com/</a> figures for the graphic)! This, coupled with its tiny
+size, means that my cartogram algorithm emphasises Grenada at the
+expense of all the other countries, making the graphic pretty boring
+unless you live in Grenada. As a result, I&#8217;ve excluded all countries
+with less than two medals in total (I know, I&#8217;m sorry, but it had to be
+done). Having said that, if you click to view the &#8216;normal&#8217; map, then all
+countries are added back, and you get medal counts for all of&nbsp;them.</p>
+          <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/visualisation.html">Visualisation</a> 
+            </p>
+          <p class="tag">
+        <i class="icon-tags"></i>
+         <a href="http://www.carsonfarmer.com/tag/cartogram.html">Cartogram</a>
+         <a href="http://www.carsonfarmer.com/tag/olympics.html">Olympics</a>
+         <a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
+         <a href="http://www.carsonfarmer.com/tag/visualisation.html">Visualisation</a>
+         <a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
+            </p>
+    </div><!-- /.entry-content -->
+          <div class="comments">
+        <h2>Comments !</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2012/08/cartogram-updates/";
+          var disqus_url = "http://www.carsonfarmer.com/2012/08/cartogram-updates/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+    
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+                    <div class="twitter">
+        <h2><i class="icon-twitter"></i> twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+            data-link-color="#2A75A9" 
+            data-chrome="nofooter noheader noborders noscrollbar transparent" 
+            data-widget-id="330339195518337025"
+            height="300" lang="EN" 
+            data-related="CarsonFarmer">
+            Tweets by @CarsonFarmer
+        </a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,"script","twitter-wjs");
+        </script>
+
+</div>
+                
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+                <address id="about" class="vcard body shadow">
+                                                                            <ul id="links">
+                                    <li><a href="http://www.geo.hunter.cuny.edu/cfarmer/">CUNY Faculty Page</a></li>
+                                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
+                                </ul>
+                                            Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
+                Hunter College - CUNY | 695 Park Avenue, New York | New York, 10065</br>
+                </address><!-- /#about -->
+                <p style="text-align: center;">This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of <a href="http://python.org">Python</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script>
+    $(document).ready(function() {
+    
+        //Calculate the height of <header>
+        //Use outerHeight() instead of height() if have padding
+        var aboveHeight = $('.navbar').position().top;
+
+    //when scroll
+        $(window).scroll(function() {
+            //if scrolled down more than the header’s height
+                if ($(window).scrollTop() > aboveHeight){
+                // if yes, add "fixed" class to the <nav>
+                // add padding top to the #content 
+                    // if (!$('nav').hasClass('fixed')) {
+                    //     $('.home_link').show("slide", { direction: "right" }, 250)
+                    // };
+                    $('.navbar').addClass('fixed').css('top','0').next() //.addClass('navbar-fixed-top').next()//
+                    $('#content').css('margin-top',aboveHeight+20+'px'); // value is same as the height of the nav
+                } else {
+                // when scroll up or less than aboveHeight,
+                // remove the “fixed” class, and the padding-top
+                    // if ($('nav').hasClass('fixed')) {
+                    //     console.log('test')
+                    //     $('.home_link').hide("slide", { direction: "right" }, 250)
+                    // };
+                    $('.navbar').removeClass('fixed').next()
+                    $('#content').css('margin-top','0px');
+                }
+        });
+    });
+</script>
+</body>
+</html>

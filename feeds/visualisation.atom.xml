@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/visualisation.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2012-08-10T14:07:00-04:00</updated><entry><title>cartogram updates</title><link href="http://www.carsonfarmer.com/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
+(&lt;a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised"&gt;Guardian data blog&lt;/a&gt;, and &lt;a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html"&gt;Telegraph data and graphics blog&lt;/a&gt;), so
+I&amp;#8217;ve updated a few things and wanted to highlight/explain them a bit&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/wp-content/uploads/2012/08/grenada.png" title="grenada" /&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Firstly, you can now explore the medal data together with
+population &lt;strong&gt;and&lt;/strong&gt; &lt;span class="caps"&gt;GDP&lt;/span&gt; as well as without any warping to get a feel for
+how much things change. Secondly, in order to be able to display the map
+in a way that is familiar to most people (i.e., landscape style), I had
+to take a few liberties in terms of representation. For instance, the
+&amp;#8216;projection&amp;#8217; used is not area preserving (in fact, it is just the
+geographical coordinates), so some countries appear larger (smaller)
+than they should, even with the warping. We all make compromises though
+right? Third, because I wasn&amp;#8217;t happy with adding artificial medal counts
+to make my algorithm happy, I decided to create a more &amp;#8216;realistic&amp;#8217;
+graphic, so this time around, countries with zero medals have zero area
+(i.e. are removed). Related to this, because Grenada only has about
+110,821 people, its &lt;a href="http://www.medalspercapita.com/"&gt;per capita medal ranking&lt;/a&gt; is off the charts (note
+that I&amp;#8217;m not using the the &lt;a href="http://www.medalspercapita.com/"&gt;http://www.medalspercapita.com/&lt;/a&gt; figures for the graphic)! This, coupled with its tiny
+size, means that my cartogram algorithm emphasises Grenada at the
+expense of all the other countries, making the graphic pretty boring
+unless you live in Grenada. As a result, I&amp;#8217;ve excluded all countries
+with less than two medals in total (I know, I&amp;#8217;m sorry, but it had to be
+done). Having said that, if you click to view the &amp;#8216;normal&amp;#8217; map, then all
+countries are added back, and you get medal counts for all of&amp;nbsp;them.&lt;/p&gt;</summary><category term="Cartogram"></category><category term="Olympics"></category><category term="Update"></category><category term="Visualisation"></category><category term="Update"></category></entry><entry><title>Olympic cartogram</title><link href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/" rel="alternate"></link><updated>2012-08-02T12:18:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-08-02:2012/08/olympic-cartogram/</id><summary type="html">&lt;p&gt;The London 2012 Summer Olympics have generated quite a bit of buzz in
+terms of visualisations and interesting data analysis. In fact, news
+sites here in the &lt;span class="caps"&gt;UK&lt;/span&gt; are doing all sorts of cools things with Olympic
+data, and &lt;a href="http://www.guardian.co.uk/"&gt;The Guardian&lt;/a&gt; has an &lt;a href="http://www.guardian.co.uk/sport/series/london-2012-olympics-data"&gt;entire series&lt;/a&gt; devoted to Olympic
+data. A colleague of mine also pointed out a &lt;a href="http://www.telegraph.co.uk/sport/olympics/9436640/London-2012-Olympics-dynamic-world-medal-map.html"&gt;cool graphic&lt;/a&gt; on &lt;a href="http://www.telegraph.co.uk/"&gt;The
+Telegraph&lt;/a&gt; website, which is essentially a live cartogram of Olympic
+medal counts. The cartogram is basically a spatial bubble plot, with the
+size of the bubbles representing the number of medals obtained by each
+country. The location of each bubbled is based on the corresponding
+country&amp;#8217;s approximate geographic location. The graphic is pretty
+effective, and it certainly tells a clear&amp;nbsp;story.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m a big fan of these types of abstract &lt;a href="http://www.unicef.org/sowc2012/urbanmap/"&gt;representations of space&lt;/a&gt;,
+so I thought The Telegraph&amp;#8217;s graphic was pretty fun. Having said that,
+I&amp;#8217;m always a sucker for a more &amp;#8216;traditional&amp;#8217; rubber-sheet cartogram,
+which is generally less abstract than a bubble plot, but can sometimes
+lead to &lt;a href="http://www.worldmapper.org/"&gt;dramatic results&lt;/a&gt;. Since I felt like the only person on the
+internet without their own Olympics visualisation, I decided to throw
+together a cartogram to visualise Olympic medal achievements. Drawing
+inspiration from The Telegraph graphic, I created a rubber-sheet
+cartogram based on an &lt;a href="http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf"&gt;iterative warping method&lt;/a&gt;. The &amp;#8216;live&amp;#8217; version
+of the cartogram is &lt;a href="examples/olympic_countries/"&gt;available here&lt;/a&gt; (or by clicking on the image
+below). [&lt;span class="caps"&gt;UPDATE&lt;/span&gt;] If you&amp;#8217;d like to include the map on a web page, you can
+now do that by including this in your &lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;nbsp;source:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.carsonfarmer.com/examples/olympic_countries_map.html&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;1230&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;545\&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+
+
+&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/olympic_carto.png" title="Olympic cartogram" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The cartgram is interactive, and was created using &lt;a href="http://www.python.org/"&gt;Python&lt;/a&gt;
+(&lt;a href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt;, &lt;a href="https://github.com/esnme/ultrajson"&gt;ujson&lt;/a&gt;, and &lt;a href="http://toblerity.github.com/shapely/manual.html"&gt;shapely&lt;/a&gt;) and &lt;a href="http://d3js.org/"&gt;D3.js&lt;/a&gt;. If I get a
+chance, I&amp;#8217;ll try to post the code at some stage. In the mean time, here
+is a bit more info about the&amp;nbsp;graphic:&lt;/p&gt;
+&lt;p&gt;The size of each country is based on the total number of medals that
+they have achieved, weighted by the type of medal (gold, silver,
+bronze). For example, a country with one gold medal should be
+approximately the same size as a country with three bronze medals.
+Because the algorithm attempts to maintain the topological relationships
+between countries, this relationship might not be perfect, but the
+general trend is clear: the &lt;span class="caps"&gt;US&lt;/span&gt; and China and cleaning up! [&lt;span class="caps"&gt;UPDATE&lt;/span&gt;] I&amp;#8217;ve
+also added relative per capita medal counts and counts by &lt;span class="caps"&gt;GDP&lt;/span&gt;, which
+shrinks China down significantly&amp;#8230; now who&amp;#8217;s winning&amp;nbsp;&amp;#8216;big&amp;#8217;?!&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t have full access to the server that this website is running on,
+&lt;strike&gt;so I couldn&amp;#8217;t get things set up with regular updates,&lt;/strike&gt; however, the
+entire process is now automated, so &lt;strike&gt;I&amp;#8217;ll try to have the code run at
+fairly regular intervals so that the results are relatively up-to-date&lt;/strike&gt;
+I now have the maps updating every hour. In any case, have a play around
+and let me know what you think, and if you know of any other cool
+Olympics graphics or cool applications of cartograms, please let me know
+in the&amp;nbsp;comments!&lt;/p&gt;</summary><category term="Cartogram"></category><category term="Olympics"></category><category term="Visualisation"></category></entry><entry><title>Visualising data with FatFonts</title><link href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/" rel="alternate"></link><updated>2012-05-26T20:30:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-05-26:2012/05/visualising-data-with-fatfonts/</id><summary type="html">&lt;p&gt;I recently posted an &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/visualising-with-fatfonts/"&gt;article on the &lt;span class="caps"&gt;CGI&lt;/span&gt; blog&lt;/a&gt; about some
+visualisations that I produced with researchers from [St Andrews&amp;#8217;
+Computer Human Interaction Research Group (&lt;span class="caps"&gt;SACHI&lt;/span&gt;)][] using &lt;a href="http://fatfonts.org/"&gt;FatFonts&lt;/a&gt;,
+a tpographic visualisation technique developed by &lt;span class="caps"&gt;SACHI&lt;/span&gt; co-founder
+&lt;a href="http://nacenta.com/about/"&gt;Miguel Nacenta&lt;/a&gt; and colleagues (&lt;a href="http://www.utahinrichs.de/"&gt;Uta Hinrichs&lt;/a&gt;, and &lt;a href="http://pages.cpsc.ucalgary.ca/~sheelagh/wiki/pmwiki.php"&gt;Sheelagh
+Carpendale&lt;/a&gt;).
+The initial visualisations are now on-line, and feature flow matrices for 
+&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/examples/fatfonts/uk-migration/"&gt;English internal migration&lt;/a&gt; and &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/examples/fatfonts/irish-commuting/"&gt;commuting between Irish local labour markets&lt;/a&gt;. We
+have also produced several inforgraphics based on global oceans data
+that &lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr Timothy Stojanovic&lt;/a&gt; and I are working with as part of
+Tim&amp;#8217;s work linking off-shore cumulative human impacts to
+on-shore terrestrial urbanization (more on these graphics soon). I&amp;#8217;m
+still experimenting with FatFonts at this stage, but so far, I&amp;#8217;m quite
+pleased with the results, and find that they offer a nice way to add
+beauty to my potentially boring data!
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/fat_fonts.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/fat_fonts-300x122.png" title="Subset of FatFont image" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Carson&lt;/p&gt;</summary><category term="Research"></category><category term="FatFonts"></category><category term="News"></category><category term="Feature"></category></entry><entry><title>Research dissemination and interactive visuals</title><link href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/" rel="alternate"></link><updated>2012-04-10T22:12:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-04-10:2012/04/research-dissemination-and-interactive-visuals/</id><summary type="html">&lt;p&gt;One of my goals for this year is to spend more time and effort
+developing effective visualisations for my various research projects, in
+an effort to make my research more accessible to others. This is one
+thing that I think many academics are particularly bad at: letting
+others know what they are up to, and why it might be something worth
+looking at. In order to avoid this pitfall, I plan to focus on producing
+interactive, web-based visuals suitable for a more general audience &lt;em&gt;in
+addition&lt;/em&gt; to more traditional forms of research dissemination such as
+journals and conference papers. It is my hope that by doing this, I will
+be making my research more readily available to those who might actually
+be able to use it, and maybe even create some compelling visualisations
+in the process. While I&amp;#8217;m not quite ready to start creating full-blown
+interactive websites yet, I thought it might be a good idea to start
+with something small to get the ball rolling; so I put together an
+&lt;a href="/examples/visitors/"&gt;upgraded version&lt;/a&gt; of my &lt;a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/"&gt;previous map&lt;/a&gt; of visitors to www.carsonfarmer.com.
+&lt;/p&gt;
+&lt;p&gt;I used the excellent &lt;a href="http://mbostock.github.com/d3/"&gt;D3 JavaScript library&lt;/a&gt; to re-create the visitor
+map, this time providing some basic interaction with the data. Most of
+the functionality is based on &lt;a href="http://mbostock.github.com/d3/ex/"&gt;examples&lt;/a&gt; from the D3 website, and at
+this point, the map is really more of a learning tool than anything. As
+in my previous static map, the &lt;span class="caps"&gt;IP&lt;/span&gt; addresses were geocoded using the
+&lt;a href="http://www.datasciencetoolkit.org/"&gt;Data Science Toolkit &lt;span class="caps"&gt;API&lt;/span&gt;&lt;/a&gt; via the &lt;a href="https://github.com/rtelmore/RDSTK"&gt;&lt;span class="caps"&gt;RDSTK&lt;/span&gt; R package&lt;/a&gt;, and all data
+processing and manipulation was done using R. Additionally, the colour
+scheme functionality comes from &lt;a href="http://mbostock.github.com/d3/talk/20111018/#25"&gt;slide 25&lt;/a&gt; of &lt;a href="http://mbostock.github.com/d3/talk/20111018/#0"&gt;this presentation&lt;/a&gt;,
+and uses the sequential colour palettes from &lt;a href="http://colorbrewer2.org/"&gt;colorbrewer.org&lt;/a&gt;. There
+are still a few kinks to work out (like how to get the &lt;code&gt;onmouseout&lt;/code&gt; event
+to work properly in Internet Explorer), and tonnes of additional
+features and functions could be added, so comments and suggestions are
+welcome. Having said that, I think the new version looks quite nice, and
+will likely form the basis for more complex visuals as I become more
+familiar with Javascipt and various other web-development&amp;nbsp;tools.&lt;/p&gt;</summary><category term="D3"></category><category term="Interactive"></category><category term="Javascript"></category><category term="Online Maps"></category><category term="Visualisation"></category><category term="Free open-source software (FOSS)"></category><category term="Opinion"></category></entry></feed>

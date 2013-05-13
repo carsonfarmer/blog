@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/free-open-source-software-foss.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2010-05-13T12:05:00-04:00</updated><entry><title>OSM data by country</title><link href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/" rel="alternate"></link><updated>2010-05-13T12:05:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</id><summary type="html">&lt;p&gt;For part of a traffic simulation project I am currently working on we
+need country-wide road network data for Ireland. In the past, getting
+decent road network data for an area this large was quite a task (not to
+mention expensive and time consuming), however, with OpenStreetMap we
+have access to this type of data instantly, and for free! In order to
+download full country coverage all at once, all I had to do was turn to
+this &lt;a href="http://download.geofabrik.de/osm/"&gt;extremely useful site&lt;/a&gt;, which provides links for daily excerpts
+of OpenStreetMap data for any country in Europe plus several non-country
+regions such as the Alps region, as well as select countries outside of
+Europe. It currently also features &lt;a href="http://labs.geofabrik.de/haiti/"&gt;special coverage of Haiti&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now that I have the &lt;span class="caps"&gt;OSM&lt;/span&gt; data downloaded, it should be relatively easy to
+import it into my PostGIS database using &lt;a href="http://pgrouting.postlbs.org/"&gt;pgRouting&lt;/a&gt; and the
+&lt;a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting"&gt;osm2pgrouting&lt;/a&gt; import tool. More to come on this topic once I get
+things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</summary><category term="Ireland"></category><category term="OpenStreetMap"></category><category term="PostGIS"></category><category term="Road Networks"></category><category term="Geographic information science/systems (GIS)"></category><category term="Helpful tips"></category><category term="Networks"></category><category term="Research"></category></entry></feed>

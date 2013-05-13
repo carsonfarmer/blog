@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/python.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Feb 2013 22:31:00 -0500</lastBuildDate><item><title>Will it Python?</title><link>http://www.carsonfarmer.com/2013/02/will-it-python/</link><description>&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
+&lt;a href="http://slendrmeans.wordpress.com/"&gt;Carl Vogel&lt;/a&gt;. This blog has an excellent (growing) collection of
+Python examples based on porting code and examples from R to Python. In
+general, it is useful for those &amp;#8220;interested in the Python data analysis
+toolkit and its viability as an alternative to R&amp;#8221;. Carl draws on
+examples from &lt;em&gt;&lt;a href="http://shop.oreilly.com/product/0636920018483.do"&gt;Machine Learning for Hackers&lt;/a&gt;&lt;/em&gt; by &lt;a href="http://www.drewconway.com/"&gt;Drew Conway&lt;/a&gt; and
+&lt;a href="http://www.johnmyleswhite.com/"&gt;John Miles White&lt;/a&gt;, as well as &lt;a href="http://www.stat.columbia.edu/~gelman/"&gt;Gelman&lt;/a&gt; and &lt;a href="http://steinhardt.nyu.edu/faculty_bios/view/Jennifer_Hill"&gt;Hill’s&lt;/a&gt; &lt;em&gt;&lt;a href="http://www.stat.columbia.edu/~gelman/arm/"&gt;Data
+Analysis Using Regression and Multilevel/Hierarchical Models&lt;/a&gt;&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p&gt;From the&amp;nbsp;blog:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The objective [of this blog] isn’t to just make a key that translates
+functions and methods in R into Python equivalents. Instead, the goal
+is to reproduce the results and insights of the analysis in idiomatic
+Python [&amp;#8230;] Sometimes there will be a direct translation from a line
+of R to a line of Python; other times Python will suggest an
+altogether different approach to the&amp;nbsp;problem.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To make things even more useful for us, Carl has made the code,
+examples, and &lt;a href="http://ipython.org/"&gt;IPython&lt;/a&gt; notebooks available in his &lt;a href="https://github.com/carljv/Will_it_Python"&gt;Github repo&lt;/a&gt;,
+which makes it really easy to work through the examples. He&amp;#8217;s also open
+to requests/suggestions, so if you have a good R resource you&amp;#8217;d like to
+see ported to Python, maybe give him a&amp;nbsp;shout?&lt;/p&gt;
+&lt;p&gt;As an extra bonus, I suggest you check out Blendtec&amp;#8217;s hilarious &lt;a href="http://www.willitblend.com/"&gt;&amp;#8220;Will
+it blend?&amp;#8221;&lt;/a&gt; ad campaign, from which Carl derived his &amp;#8220;Will in Python&amp;#8221;
+name and&amp;nbsp;logo&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Happy&amp;nbsp;coding!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 12 Feb 2013 22:31:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2013-02-12:2013/02/will-it-python/</guid><category>Free open-source software (FOSS)</category><category>Helpful tips</category><category>How to</category><category>R</category></item><item><title>Because its Friday</title><link>http://www.carsonfarmer.com/2010/11/because-its-friday/</link><description>&lt;p&gt;My two favorite scientific programming languages are &lt;a href="http://www.python.org"&gt;Python&lt;/a&gt; and
+&lt;a href="http://http://www.r-project.org/"&gt;R&lt;/a&gt;, each for their own specific strengths. I stick with R for most of
+my serious stats stuff, but for everyday processing, analysis, and &lt;span class="caps"&gt;GUI&lt;/span&gt;
+building, Python is my &lt;em&gt;modus operandi&lt;/em&gt;. Lately however, I&amp;#8217;ve been doing
+more and more things in Python&amp;#8230; even the stats stuff. When doing
+statistical analysis in Python, I usually use the excellent &lt;a href="http://rpy.sourceforge.net/rpy2.html"&gt;rpy2&lt;/a&gt;
+library to communicate between Python and R. As a result, I have put
+together quite a few little code snippets to work with R commands in
+Python. Recently, I decided to put a bunch of these snippets together to
+create what I&amp;#8217;ve called fakeR. Basically it is a simple Python script
+that emulates a very basic (toy) R console. The fakeR console supports
+multi-line commands and pretty much all regular R commands, but has no
+history or any nice features like that. The cool and/or handy thing
+about it is that it separates the input/output from the actual
+processing via the very cool &lt;a href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt; Python package. Using
+this package, it is possible to separate the input/output and processing
+into two separate processes running in parallel, with communication back
+and forth done via a duplex (two-way) pipe. I&amp;#8217;ve &lt;a href="http://www.carsonfarmer.com/static/uploads/faker.py"&gt;uploaded the script&lt;/a&gt;
+for anyone interested in having a play with it. If anyone has any ideas
+on how to (safely) cancel a currently running R command on the
+processing side, I&amp;#8217;d be very interested to hear&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 06 Nov 2010 01:00:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-11-06:2010/11/because-its-friday/</guid><category>Multiprocessing</category><category>Python</category><category>R</category><category>Statistics</category><category>Free open-source software (FOSS)</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
+not, I&amp;#8217;m playing around with my data in a &lt;span class="caps"&gt;GIS&lt;/span&gt; to tease out interesting
+or informative spatial patterns, or to ensure that I&amp;#8217;m getting the
+results that I&amp;#8217;m expecting. As a result, I am constantly trying out
+different classification schemes to help me generalise spatial patterns,
+highlight outliers and/or patterns, or just plain &lt;a href="http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm"&gt;mess around with my
+data&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;Unfortunately, &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt; (which has been my primary &lt;span class="caps"&gt;GIS&lt;/span&gt; for several years
+now) only &lt;strike&gt;has&lt;/strike&gt; had &amp;#8216;Equal Interval&amp;#8217; and &amp;#8216;Quantiles&amp;#8217; classification algorithms
+implemented. While these classification schemes are no doubt useful and
+revealing when used in the right context, I often need something that
+better represents the &amp;#8216;actual&amp;#8217; distribution of values in my data. For
+this, I usually turn to the &lt;a href="http://en.wikipedia.org/wiki/Jenks_Natural_Breaks_Optimization"&gt;Jenks Optimisation&lt;/a&gt; (or Natural Breaks)
+classification. Essentially, this classification algorithm generates
+class intervals that minimise within group variance, and maximise
+between group variance. In this way, given a certain number (&lt;code&gt;k&lt;/code&gt;) of
+classes, we arrive at an &amp;#8216;optimal&amp;#8217; classification of our data into &lt;code&gt;k&lt;/code&gt;
+classes. In the past, I would import my data into &lt;a href="http://www.r-project.org/"&gt;R&lt;/a&gt;, and calculate
+class intervals using the very handy &lt;a href="http://cran.r-project.org/web/packages/classInt/index.html"&gt;classInt&lt;/a&gt; package. However,
+moving data between &lt;span class="caps"&gt;QGIS&lt;/span&gt; and R, while slightly easier using my &lt;a href="http://code.google.com/p/ftools-qgis/"&gt;manageR
+tool&lt;/a&gt; (shameless plug!), is not optimal when all I really want to do
+is fiddle around with different classification schemes. So I decided to
+reimplement the Jenks algorithm in Python so that I could do things
+directly from the Python console in&amp;nbsp;&lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Obviously I didn&amp;#8217;t really want to implement this algorithm from scratch,
+so I had a look at the R code from the &lt;code&gt;classInterval&lt;/code&gt; function in the
+classInt package (ah open source!), as well as the handy Python script
+&lt;a href="http://danieljlewis.org/2010/06/07/jenks-natural-breaks-algorithm-in-python/"&gt;from here&lt;/a&gt;. Once I had the code in hand, it didn&amp;#8217;t take long to have
+a nice Python script ready to be run on my data directly from within
+&lt;span class="caps"&gt;QGIS&lt;/span&gt;. While I was at it, I also implemented a few other classification
+algorithms to play around with, including &amp;#8216;Equal Interval&amp;#8217;, &amp;#8216;Quantiles&amp;#8217;,
+&amp;#8216;Standard Deviation&amp;#8217;, and R&amp;#8217;s &amp;#8216;Pretty&amp;#8217; algorithm. For those of you who
+don&amp;#8217;t know, R&amp;#8217;s pretty algorithm basically computes a sequence of about
+&amp;#8216;n+1&amp;#8217; equally spaced &amp;#8216;round&amp;#8217; values which cover the range of our input
+data, such that the class breaks are 1, 2 or 5 times a power of 10. The
+Python script is &lt;a href="http://www.carsonfarmer.com/static/uploads/class_intervals.py"&gt;available here&lt;/a&gt;, and has a version of the pretty
+algorithm based on code from the &lt;a href="https://r-forge.r-project.org/projects/labeling/"&gt;labeling&lt;/a&gt;&amp;nbsp;package.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 23 Sep 2010 10:56:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-23:2010/09/playing-around-with-classification-algorithms-python-and-qgis/</guid><category>Classification</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>R</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category></item></channel></rss>
