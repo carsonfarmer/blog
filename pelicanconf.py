@@ -19,7 +19,7 @@ TYPOGRIFY = True
 DEFAULT_LANG = u'en'
 
 LATEX = 'article'
-IGNORE_FILES = ['.#*', '~']
+IGNORE_FILES = ['.#*', '*~']
 
 PLUGIN_PATH = "pelican-plugins/"
 PLUGINS = ['gravatar', 'latex', 'summary']
