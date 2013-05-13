@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Carson J. Q. Farmer'
 SITENAME = u'Carson Farmer'
-SITEURL = 'http://www.carsonfarmer.com'
+SITEURL = 'http://cfarmer.github.io/blog'
 SITESUBTITLE = 'www.carsonfarmer.com'
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
@@ -46,8 +46,8 @@ DISPLAY_PAGES_ON_MENU = False
 DISPLAY_HOME_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
-MENUITEMS = (('About', '/about', 'icon-info-sign'), 
-             ('Curriculum Vitae', '/curriculum-vitae', 'icon-rocket'),
+MENUITEMS = (('About', 'about/', 'icon-info-sign'), 
+             ('Curriculum Vitae', 'curriculum-vitae/', 'icon-rocket'),
              ('Work','links', 'icon-globe'),)
 
 DISQUS_SITENAME = "carsonfarmer"
@@ -59,8 +59,8 @@ FILES_TO_COPY = (('favicon.ico', 'favicon.ico'),
                  ('404.html', '404.html'),)
 
 # Blogroll
-LINKS =  (('Reserach','/research','icon-bar-chart'),
-          ('Software', '/spatial-software','icon-code'),)
+LINKS =  (('Reserach','research/','icon-bar-chart'),
+          ('Software', 'spatial-software/','icon-code'),)
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/CarsonFarmer', 'icon-twitter'),
@@ -76,4 +76,4 @@ TWITTER_WIDGET_ID = '330339195518337025'
 DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
