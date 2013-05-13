@@ -22,7 +22,7 @@ body {
     /*background: #F5F4EF;*/
     color: #2e3436;
     /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
-    background: rgb(250, 250, 250) url(../images/side-bg.png) no-repeat;
+    background: #d1d1d1 url(../images/side-bg.png) no-repeat;
     background-attachment:fixed;
     /*font-size: 87.5%; /* Base font size: 14px */
     font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
@@ -384,7 +384,7 @@ text-shadow: 0 1px 0 #eee;
 	Extras
 *****************/
 #extras {
-    margin: 0 auto 3em auto;
+    margin: 2em auto 3em auto;
     overflow: hidden;
 	  border-radius: 10px;
 	  -moz-border-radius: 10px;
