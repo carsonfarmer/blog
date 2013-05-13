@@ -3,7 +3,7 @@ Date: 2008-08-01 16:50
 Author: cfarmer
 Slug: about
 
-[![carson_farmer_border][link]][image]{.rfloat}
+[![carson_farmer_border][image]][link]{.rfloat}
 
 My research interests span a wide range of topics in urban and regional
 analysis, with a focus on spatial-temporal dynamics, complexity, and
