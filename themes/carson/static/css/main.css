@@ -190,7 +190,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	/* Banner */
 	#banner h1 {font-size: 3.571em; line-height: 0;}
 	#banner h1 a:link, #banner h1 a:visited {
-		color: #2e3436;
+		color: #2A75A9;
 		display: block;
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
@@ -198,11 +198,15 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
-		color: #2A75A9;
+		color: #2e3436;
 		text-shadow: none;
 	}
 	
-	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	#banner h1 strong {
+	    font-size: 0.36em;
+	    font-weight: normal;
+	    color: #2e3436;
+    }
 	
 	/* Main Nav */
 	#banner nav {
