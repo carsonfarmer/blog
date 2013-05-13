@@ -3,7 +3,7 @@ Date: 2008-08-01 16:50
 Author: cfarmer
 Slug: about
 
-![carson_farmer_border](|filename|/images/carson_circle_300.png){.rfloat}
+[![carson_farmer_border][link]][image]{.rfloat}
 
 My research interests span a wide range of topics in urban and regional
 analysis, with a focus on spatial-temporal dynamics, complexity, and
@@ -20,3 +20,6 @@ markets. I am particularly interested in movements and flows of
 individuals, information, and commodities within urban environments, as
 well as the development and implementation of novel spatial analysis
 methods and software aimed at characterizing these flows.
+
+[image]: |filename|/images/carson_circle_300.png
+[link]: |filename|/pages/contact.md

@@ -7,7 +7,7 @@ Status: hidden
 
 <iframe width="425" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
     src="http://www.openstreetmap.org/export/embed.html?bbox=-74,40.7463,-73.9274,40.7905&amp;layer=mapnik&amp;marker=40.76870,-73.96504" 
-    style="float: right; margin-top: -50px;">
+    style="float: right; margin-top: -30px;">
 </iframe>
 
 Dr. Carson J. Q. Farmer  
