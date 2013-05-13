@@ -32,5 +32,5 @@ version. The DOI for the paper is:
 [2]: http://www.sciencedirect.com/science/article/pii/S0308597X13000481
 [3]: http://www.sciencedirect.com/science/journal/0308597X
 [4]: http://www.nceas.ucsb.edu/globalmarine
-[5]: /contact
+[5]: |filename|../pages/contact.md
 [6]: http://dx.doi.org/10.1016/j.marpol.2013.02.005
