@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/announcement.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-12-05T11:16:00-05:00</updated><entry><title>Making the switch to Pelican</title><link href="http://www.carsonfarmer.com/2013/12/making-the-switch-to-pelican/" rel="alternate"></link><updated>2013-12-05T11:16:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-12-05:2013/12/making-the-switch-to-pelican/</id><summary type="html">&lt;p&gt;This is a test&amp;nbsp;post&amp;#8230;&lt;/p&gt;</summary><category term="Announcement"></category><category term="Pelican"></category><category term="Blog"></category><category term="Update"></category></entry><entry><title>Geocomputational landscapes and spaces</title><link href="http://www.carsonfarmer.com/2013/03/geocomp-special-session/" rel="alternate"></link><updated>2013-03-15T17:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-03-15:2013/03/geocomp-special-session/</id><summary type="html">&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
+&lt;a href="http://www.ammcs2013.wlu.ca/"&gt;International Conference on Applied Mathematics, Modeling and
+Computational Science&lt;/a&gt; (&lt;span class="caps"&gt;AMMCS&lt;/span&gt;-2013), to be held at &lt;a href="https://www.wlu.ca/"&gt;Wilfrid Laurier
+University&lt;/a&gt;, August 26-30,&amp;nbsp;2013.&lt;/p&gt;
+&lt;p&gt;The deadline for abstracts is &lt;strong&gt;April 15, 2013&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Description of the&amp;nbsp;session:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This session focuses on new applications and theoretical developments
+in geocomputation. Increasingly, spatial analysis and modelling
+requires advanced computational techniques (&lt;span class="caps"&gt;MCMC&lt;/span&gt;, &lt;span class="caps"&gt;INLA&lt;/span&gt;, GAs etc.) to
+address problems related to land and resource management. This session
+is devoted to current developments and advances in geocomputation for
+understanding landscape patterns, processes, and building spatial
+decision-support systems. For example, talks will explore
+computational solutions to problems related to multi-objective
+optimization of spatial configuration of land-uses, new computational
+approaches to spatial model development and assessment and map
+comparison analysis. We encourage submissions of additional
+presentations related to geocomputation including spatial modelling,
+genetic algorithm development, spatial databases, spatial
+representation, visualization, and spatial analysis of &amp;#8216;Big&amp;nbsp;Data&amp;#8217;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Abstract &lt;a href="http://www.ammcs2013.wlu.ca/submit-abstract.html"&gt;submission is here&lt;/a&gt;, and be sure to note the &lt;strong&gt;special session&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Please share with colleagues and feel free to contact the organizers of
+this session &lt;a href="mailto:crobertson@wlu.ca"&gt;Dr Colin Robertson&lt;/a&gt; and &lt;a href="mailto:sroberts@wlu.ca"&gt;Dr Steve Roberts&lt;/a&gt;.&lt;/p&gt;</summary><category term="Applied Mathematics"></category><category term="Computational Science"></category><category term="Conference"></category><category term="Geocomputation"></category><category term="Modeling"></category><category term="Special Session"></category><category term="Research"></category></entry><entry><title>Science, Canadian Style!</title><link href="http://www.carsonfarmer.com/2013/01/science-canadian-style/" rel="alternate"></link><updated>2013-01-20T21:55:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-01-20:2013/01/science-canadian-style/</id><summary type="html">&lt;p&gt;Recently, a &lt;a href="http://www.wlu.ca/homepage.php?grp_id=12616"&gt;colleague of mine&lt;/a&gt; from Wilfred Laurier University has
+started a website with some colleagues called RinkWatch
+(&lt;a href="http://rinkwatch.org/"&gt;http://rinkwatch.org/&lt;/a&gt;). The website is designed to track
+climate-change by keeping tabs on local community ice rink(s). This
+innovative use of &lt;a href="http://en.wikipedia.org/wiki/Citizen_science"&gt;Citizen Science&lt;/a&gt; is getting quite a bit of buzz up
+in Canada, but the idea has implications for any country with a culture
+of outdoor skating rinks. It is also a great way to get the public
+involved in the climate debate, and science in general! RinkWatch
+received a mention in the Canadian Association of Geographers&amp;#8217; Mailing
+list, which I&amp;#8217;m posting here to help spread the good word. You can also
+check out the &lt;a href="http://www.cbc.ca/hamilton/news/story/2013/01/18/hamilton-climate-change-rinks.html"&gt;full story and video here&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;The site, created by a
+group of geographers at Wilfred Laurier University, invites people to
+register online and record the state of their homemade ice surfaces.
+Researchers will use the data - when the flooding is done, how many
+weeks the ice is useable - to track the progression of climate change.
+According to Robert McLeman, one of the project&amp;#8217;s creators, it&amp;#8217;s also a
+chance to educate Canadians about the real-world implications of climate
+change, an issue that can seem abstract when discussed on &lt;span class="caps"&gt;TV&lt;/span&gt; or in the
+classroom. &amp;#8220;People appreciate the scale of the problem, but don&amp;#8217;t
+understand personally how it fits in with their life,&amp;#8221; McLeman, an
+associate professor of geography and environmental science, told &lt;span class="caps"&gt;CBC&lt;/span&gt;
+Hamilton. &amp;#8220;We thought this sort of provides an opportunity to connect
+people to environmental research literally through their own backyards.&amp;#8221;
+He said the website, which has already registered 375 rinks across
+Canada and the northern U.S., has spawned some unintended, but very
+welcome uses. Participants, he said, are sharing ice-making tips with
+each other, creating a richer, more interactive online community than
+he&amp;#8217;d anticipated. &amp;#8220;People who are coming to it really just are&amp;nbsp;passionate.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="Citizen Science"></category><category term="Climate Change"></category><category term="Research"></category><category term="RinkWatch"></category></entry><entry><title>Postdocs and Lectureships at St Andrews</title><link href="http://www.carsonfarmer.com/2012/11/postdocs-lectureships-st-andrews/" rel="alternate"></link><updated>2012-11-08T16:54:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-11-08:2012/11/postdocs-lectureships-st-andrews/</id><summary type="html">&lt;p&gt;The &lt;a href="http://www.st-andrews.ac.uk/geoinformatics"&gt;Centre for GeoInformatics (&lt;span class="caps"&gt;CGI&lt;/span&gt;)&lt;/a&gt; at the &lt;a href="http://www.st-andrews.ac.uk/"&gt;University of St
+Andrews&lt;/a&gt; in Scotland has the following open&amp;nbsp;positions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/lectureship-in-geoinformatics/"&gt;Lectureship in Geoinformatics&lt;/a&gt;, permanent position, application
+   &lt;span class="caps"&gt;DL&lt;/span&gt; 21 Dec&amp;nbsp;2012&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/research-fellow-in-geoinformatics/"&gt;Postdoctoral researcher in Geoinformatics&lt;/a&gt;, preferably Visual
+   Analytics/Visualisation (three year fixed post, application &lt;span class="caps"&gt;DL&lt;/span&gt; 7 Dec&amp;nbsp;2012)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/research-fellow-in-geoinformatics-2/"&gt;Postdoctoral researcher in Geoinformatics&lt;/a&gt; (two year fixed post,
+   application &lt;span class="caps"&gt;DL&lt;/span&gt; 21 Dec&amp;nbsp;2012)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In addition, there are three lectureships open at the Department of
+Geography &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Sustainable Development in which &lt;span class="caps"&gt;CGI&lt;/span&gt; is&amp;nbsp;located:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/environmental-geography-lectureships/"&gt;Two lectureships&lt;/a&gt; in Environmental&amp;nbsp;Geography&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/lecturer-in-human-geography/"&gt;Lectureship&lt;/a&gt; in Human&amp;nbsp;Geography&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I&amp;#8217;ve just recently moved on from the &lt;span class="caps"&gt;CGI&lt;/span&gt; and St Andrews and I
+can tell you that it is a great place to work! The people are fun to
+work with, there are plenty of opportunities for collaborations and
+cross-disciplinary research, there are funding opportunities for
+geoinformatics research in the &lt;span class="caps"&gt;UK&lt;/span&gt; and &lt;span class="caps"&gt;EU&lt;/span&gt; right now, and you simply can&amp;#8217;t
+beat the setting - St Andrews is a beautiful coastal town on the East
+Coast of Scotland. If you are interested in any of the above positions,
+don&amp;#8217;t hesitate to contact the &lt;span class="caps"&gt;CGI&lt;/span&gt;. Additionally, the &lt;span class="caps"&gt;CGI&lt;/span&gt; would greatly
+appreciate if you could please forward this message to any potential
+candidates. You can find more information about the above positions,
+plus other &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/"&gt;exciting opportunities at &lt;span class="caps"&gt;CGI&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;</summary><category term="Employement"></category><category term="GeoInformatics"></category><category term="Lecturship"></category><category term="Postdoc"></category><category term="Research"></category><category term="Scotland"></category><category term="St Andrews"></category></entry><entry><title>PhD position in GeoInformatics and Housing research</title><link href="http://www.carsonfarmer.com/2012/10/phd-position-in-geoinformatics-and-housing-research/" rel="alternate"></link><updated>2012-10-25T14:37:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-10-25:2012/10/phd-position-in-geoinformatics-and-housing-research/</id><summary type="html">&lt;p&gt;The &lt;span class="caps"&gt;CGI&lt;/span&gt; is looking for a talented PhD student to fill an
+interdiciplinary PhD Studentship co-funded by the Economic and Social
+Research Council and &lt;span class="caps"&gt;HOME&lt;/span&gt; Housing Association. Suitable candidates
+should apply by &lt;strong&gt;23 November 2012&lt;/strong&gt; for a start date of &lt;strong&gt;1 January
+2013&lt;/strong&gt;. Have a look at the &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/"&gt;&lt;span class="caps"&gt;CGI&lt;/span&gt; vacancies webpage&lt;/a&gt; for more details.
+This is a great opportunity for students interested in using and
+developing state-of-the-art methods in geoinformatics and applying them
+to fundamental questions in the social housing&amp;nbsp;sector.&lt;/p&gt;</summary><category term="News"></category><category term="Announcement"></category><category term="PhD opportunity"></category></entry><entry><title>Carson moves to the Big Apple</title><link href="http://www.carsonfarmer.com/2012/10/carson-moves-to-the-big-apple/" rel="alternate"></link><updated>2012-10-16T15:05:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-10-16:2012/10/carson-moves-to-the-big-apple/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/postcards.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/postcards-300x135.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I am very excited to announce that I will soon be moving to New York to
+take up a faculty position in the &lt;a href="http://www.geo.hunter.cuny.edu/"&gt;Department of Geography&lt;/a&gt; at &lt;a href="http://www.hunter.cuny.edu/"&gt;Hunter
+College&lt;/a&gt; of the &lt;a href="http://www.cuny.edu/"&gt;City University of New York&lt;/a&gt;. The plans have been
+in motion for quite a while, and now that my wife and I have started to
+pack up our stuff, I thought I&amp;#8217;d post something here to make it
+&amp;#8216;official&amp;#8217;. I start full time in &lt;span class="caps"&gt;NY&lt;/span&gt; at the end of January, at which
+point I will be diving head first into teaching and research. I am
+really looking forward to engaging with the active &lt;span class="caps"&gt;NY&lt;/span&gt; open source
+community, teaching a whole slew of new courses, interacting more
+directly with students, and working with my new colleagues on all sorts
+of cool research&amp;nbsp;projects.&lt;/p&gt;
+&lt;p&gt;With that in mind, I will also be sad to leave &lt;a href="http://www.st-andrews.ac.uk/"&gt;St
+Andrews&lt;/a&gt;. The past year working in the &lt;a href="http://www.st-andrews.ac.uk/gg/"&gt;School of Geography and
+Geosciences&lt;/a&gt; has been a great experience; I&amp;#8217;ve learned a lot about the
+inner workings of a research centre by helping to set up the &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;Centre for
+GeoInformatics&lt;/a&gt; and I&amp;#8217;ve made a lot of great personal and professional
+connections. Combined, the past four years in Ireland and the &lt;span class="caps"&gt;UK&lt;/span&gt; have
+been very exciting, and I have had excellent opportunities to make
+friends, build collaborative networks, hone my research skills, carve
+out my own research niche, and develop a longer-term research program
+that should keep me busy for years to&amp;nbsp;come!&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll try to continue posting the occasional blog post over the next few
+months, and hopefully compile a decent record of my progression from
+postdoc to professor (lecturer to my &lt;span class="caps"&gt;EU&lt;/span&gt; friends) along the way. In the
+mean time, feel free to &lt;a href="http://www.carsonfarmer.com/contact/"&gt;get in touch&lt;/a&gt; with me if you are ever in the
+&lt;span class="caps"&gt;NY&lt;/span&gt;&amp;nbsp;area!&lt;/p&gt;</summary><category term="Announcement"></category><category term="Moving"></category><category term="New York"></category><category term="Research"></category><category term="St Andrews"></category></entry><entry><title>Visualisation featured on wired.co.uk</title><link href="http://www.carsonfarmer.com/2012/05/visualisation-featured-in-wired-magazine/" rel="alternate"></link><updated>2012-05-29T00:01:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-05-29:2012/05/visualisation-featured-in-wired-magazine/</id><summary type="html">&lt;p&gt;A few weeks back the &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;&lt;span class="caps"&gt;CGI&lt;/span&gt;&lt;/a&gt; and I were approached by &lt;a href="http://nacenta.com/about/"&gt;Miguel Nacenta&lt;/a&gt;
+from &lt;a href="http://sachi.cs.st-andrews.ac.uk/"&gt;&lt;span class="caps"&gt;SACHI&lt;/span&gt;&lt;/a&gt; about putting together an infographic for an article on
+&lt;a href="http://fatfonts.org/"&gt;FatFonts&lt;/a&gt; (also see my &lt;a href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/"&gt;previous article&lt;/a&gt;) to be featured on the
+&lt;a href="http://www.wired.co.uk/"&gt;Wired (&lt;span class="caps"&gt;UK&lt;/span&gt;) magazine&lt;/a&gt; website. Since Wired is one of my favourite
+magazines, I jumped at the chance! Using data that &lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr Timothy
+Stojanovic&lt;/a&gt; and I are working with as part of Tim’s work linking
+off-shore cumulative human impacts to on-shore terrestrial urbanization,
+I put together several infographics depicting human impacts on the
+oceans surrounding Edinburgh and London. One of these graphics was
+selected for the article, which is now &lt;a href="http://www.wired.co.uk/news/archive/2012-05/25/fatfonts"&gt;available online&lt;/a&gt;. So go check
+out the article, and click on &amp;#8220;View Gallery&amp;#8221; to check out my
+infographic, along with several cool images from &lt;a href="http://nacenta.com/about/" title="About Miguel"&gt;Miguel Nacenta&lt;/a&gt;,
+&lt;a href="http://www.utahinrichs.de/" title="FatFonts: Uta Hinrichs"&gt;Uta Hinrichs&lt;/a&gt;, and &lt;a href="http://pages.cpsc.ucalgary.ca/~sheelagh/wiki/pmwiki.php" title="Sheelagh's home page"&gt;Sheelagh Carpendale&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;The infographic in the article doesn&amp;#8217;t have a title or legend per se, so
+I&amp;#8217;m going to create an amended version soon with an explanation of what
+the values represent, and a bit of context to the data and what we are
+hoping to show with it. So stayed tuned for&amp;nbsp;updates!&lt;/p&gt;</summary><category term="FatFonts"></category><category term="Infographic"></category><category term="Visualisation"></category><category term="Wired"></category></entry><entry><title>Presentation at CAG 2012 in Waterloo</title><link href="http://www.carsonfarmer.com/2012/05/presentation-at-cag-2012-in-waterloo/" rel="alternate"></link><updated>2012-05-28T17:23:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-05-28:2012/05/presentation-at-cag-2012-in-waterloo/</id><summary type="html">&lt;p&gt;I am giving a talk and chairing a session at the &lt;a href="http://www.cag2012.org/"&gt;Canadian Association
+of Geographers (&lt;span class="caps"&gt;CAG&lt;/span&gt;) Annual Meeting&lt;/a&gt; this week in Waterloo, Ontario,
+Canada. My session, entitled &amp;#8220;Spatial Modelling&amp;#8221;, is &lt;a href="http://www.cag2012.org/program.html"&gt;scheduled&lt;/a&gt; for
+Thursday at 08:30, and is supported by the &lt;span class="caps"&gt;CAG&lt;/span&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt; Study Group. If you
+are in the neighbourhood, check out the session, and stick around for my
+talk: &amp;#8220;Spatial interaction modelling of commuting flows within local
+labour markets&amp;#8221;, which is also &lt;a href="/presentations/cag_2012/"&gt;available online&lt;/a&gt; (best viewed at 90%
+on full&amp;nbsp;screen).&lt;/p&gt;
+&lt;p&gt;Hope I see you&amp;nbsp;there!&lt;/p&gt;</summary><category term="News"></category><category term="Research"></category><category term="Presentation"></category></entry><entry><title>Introducing the Centre for GeoInformatics</title><link href="http://www.carsonfarmer.com/2012/05/introducing-the-centre-for-geoinformatics/" rel="alternate"></link><updated>2012-05-24T09:58:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-05-24:2012/05/introducing-the-centre-for-geoinformatics/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/cgi_logo_full.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/cgi_logo_full-300x78.png" title="cgi_logo_full" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The new Centre for GeoInformatics (&lt;span class="caps"&gt;CGI&lt;/span&gt;) within the &lt;a href="http://www.st-andrews.ac.uk/gg/"&gt;School of Geography
+and Geosciences&lt;/a&gt; and the &lt;a href="http://www.st-andrews.ac.uk/gsd/"&gt;Department of Geography and Sustainable
+Development&lt;/a&gt; is now an official university &lt;a href="http://www.st-andrews.ac.uk/gsd/research/centres/#cgi"&gt;Research Centre&lt;/a&gt; at the
+&lt;a href="http://www.st-andrews.ac.uk/"&gt;University of St Andrews&lt;/a&gt; in Scotland! A few months ago, I started my
+new job as &lt;a href="http://www.st-andrews.ac.uk/gsd/people/cjqf/"&gt;Research Fellow&lt;/a&gt; with &lt;span class="caps"&gt;CGI&lt;/span&gt;, where I am continuing to work
+with &lt;a href="http://www.st-andrews.ac.uk/gsd/people/asf7/"&gt;Prof. A. Stewart Fotheringham&lt;/a&gt;, who is the director of the new
+centre, along with several new and continuing &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/people/students/"&gt;PhD students&lt;/a&gt; and
+&lt;a href="http://www.st-andrews.ac.uk/geoinformatics/people/faculty/"&gt;faculty members&lt;/a&gt;. Now that we have the centre officially up and
+running, we are quickly getting ready for our &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/featured-item/"&gt;official launch&lt;/a&gt; next
+month, as well as the launch of &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;our website&lt;/a&gt; (which is still &amp;#8216;in
+development&amp;#8217;). If you are interested in any aspect of GeoInformatics,
+GIScience, Geocomputation, or spatial analysis, I strongly recommend you
+check out our website to get a feel for what we are working on. We will
+also be featuring a &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/blog/"&gt;research blog&lt;/a&gt;, where we will post code, ideas,
+thoughts, and results from our various research endeavours. Check it
+out, and let us know what you&amp;nbsp;think!&lt;/p&gt;</summary><category term="Announcement"></category><category term="Centre for GeoInformatics"></category><category term="Research"></category></entry><entry><title>It’s about time…</title><link href="http://www.carsonfarmer.com/2011/11/its-about-time/" rel="alternate"></link><updated>2011-11-09T12:16:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2011-11-09:2011/11/its-about-time/</id><summary type="html">&lt;p&gt;Well its been a long time since my last post, but I &lt;em&gt;do&lt;/em&gt; have a
+relatively good reason: I was finishing up my PhD thesis. The good news
+is that I&amp;#8217;m now done and graduated! I&amp;#8217;m hoping I&amp;#8217;ll have a bit more time
+to blog and continue working on side-projects that I had to put on-hold
+while finishing up. My plan for the next few months is to finish up here
+in Maynooth, (unofficially) start some post-doc work, and finish/get
+going on several papers on my PhD research. I&amp;#8217;m also going to try to
+learn Bayesian statistics, fiddle about with some visualizations I&amp;#8217;ve
+been working on, and start getting back into &lt;span class="caps"&gt;QGIS&lt;/span&gt; and Python development&amp;nbsp;again&lt;/p&gt;
+&lt;p&gt;In the mean time, I&amp;#8217;ve put together a fun little visualization of my
+PhD thesis in the form of a word-cloud.
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/wordcloud.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/wordcloud-300x280.png" title="Thesis wordcloud" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is actually a pretty rough version, and I suspect there are a few
+issues with hyphenated words and things like that; but it does give a
+pretty good impression of what my thesis is all about, so I&amp;#8217;ll leave it
+at that for now. For those who might be interested (and for my own
+reference), the &lt;code&gt;R&lt;/code&gt; code to generate this figure is here (requires the
+&lt;code&gt;wordcloud&lt;/code&gt; and &lt;code&gt;tm&lt;/code&gt; packages):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# read in all the lines as a character vector&lt;/span&gt;
+lines &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; readLines&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;modified.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+head&lt;span class="p"&gt;(&lt;/span&gt;lines&lt;span class="p"&gt;)&lt;/span&gt;
+library&lt;span class="p"&gt;(&lt;/span&gt;tm&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# text mining package&lt;/span&gt;
+library&lt;span class="p"&gt;(&lt;/span&gt;wordcloud&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# create a corpus object&lt;/span&gt;
+corpus &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; Corpus&lt;span class="p"&gt;(&lt;/span&gt;DataframeSource&lt;span class="p"&gt;(&lt;/span&gt;data.frame&lt;span class="p"&gt;(&lt;/span&gt;lines&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;span class="c1"&gt;# now start processing the text and removing punctuation etc&lt;/span&gt;
+corpus &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; tm_map&lt;span class="p"&gt;(&lt;/span&gt;corpus&lt;span class="p"&gt;,&lt;/span&gt; removePunctuation&lt;span class="p"&gt;)&lt;/span&gt;
+corpus &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; tm_map&lt;span class="p"&gt;(&lt;/span&gt;corpus&lt;span class="p"&gt;,&lt;/span&gt; tolower&lt;span class="p"&gt;)&lt;/span&gt;
+corpus &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; tm_map&lt;span class="p"&gt;(&lt;/span&gt;corpus&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; removeWords&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; stopwords&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;english&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;span class="c1"&gt;# create a term document matrix (don&amp;#39;t really know what that is...)&lt;/span&gt;
+tdm &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; TermDocumentMatrix&lt;span class="p"&gt;(&lt;/span&gt;corpus&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# convert to matrix&lt;/span&gt;
+m &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; as.matrix&lt;span class="p"&gt;(&lt;/span&gt;tdm&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# count up re-occuring words&lt;/span&gt;
+v &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; sort&lt;span class="p"&gt;(&lt;/span&gt;rowSums&lt;span class="p"&gt;(&lt;/span&gt;m&lt;span class="p"&gt;),&lt;/span&gt; decreasing&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;# create dataframe for word cloud&lt;/span&gt;
+d &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; data.frame&lt;span class="p"&gt;(&lt;/span&gt;word &lt;span class="o"&gt;=&lt;/span&gt; names&lt;span class="p"&gt;(&lt;/span&gt;v&lt;span class="p"&gt;),&lt;/span&gt; freq&lt;span class="o"&gt;=&lt;/span&gt;v&lt;span class="p"&gt;)&lt;/span&gt;
+png&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wordcloud.png&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; width&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1280&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; height&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;800&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+wordcloud&lt;span class="p"&gt;(&lt;/span&gt;d&lt;span class="p"&gt;$&lt;/span&gt;word&lt;span class="p"&gt;,&lt;/span&gt;d&lt;span class="p"&gt;$&lt;/span&gt;freq&lt;span class="p"&gt;,&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.3&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; vfont&lt;span class="o"&gt;=&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sans serif&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plain&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+dev.off&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I actually got this snippet from &lt;a href="http://onertipaday.blogspot.com/2011/07/word-cloud-in-r.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed:+OneRTipADay+(One+R+Tip+A+Day)"&gt;One R Tip A Day&lt;/a&gt; via &lt;a href="http://www.r-bloggers.com/"&gt;R-bloggers&lt;/a&gt;.&lt;/p&gt;</summary><category term="Announcement"></category><category term="PhD"></category><category term="R"></category><category term="snippet"></category><category term="Update"></category><category term="Helpful tips"></category></entry><entry><title>Evolution is beautiful…</title><link href="http://www.carsonfarmer.com/2010/10/evolution-is-beautiful/" rel="alternate"></link><updated>2010-10-27T16:33:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-10-27:2010/10/evolution-is-beautiful/</id><summary type="html">&lt;p&gt;Check out &lt;a href="http://vimeo.com/16148504"&gt;this video&lt;/a&gt; of the evolution of OpenSteetMap in Europe! It
+sure is cool to see how much ground a bunch of nerds with &lt;span class="caps"&gt;GPS&lt;/span&gt; units can
+cover! Link courtesy of &lt;a href="http://slashgeo.org/"&gt;slashgeo.org&lt;/a&gt;.&lt;/p&gt;</summary><category term="Data"></category><category term="Free"></category><category term="Open-source"></category><category term="OpenStreetMap"></category></entry><entry><title>Happy 42 day!</title><link href="http://www.carsonfarmer.com/2010/10/happy-42-day/" rel="alternate"></link><updated>2010-10-10T19:37:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-10-10:2010/10/happy-42-day/</id><summary type="html">&lt;p&gt;Happy &lt;a href="http://fortytwoday.com/42daycities.html"&gt;42 day&lt;/a&gt; to all those nerds and geeks out there! May this day
+bring you the question to the ultimate&amp;nbsp;answer!&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;
+    &lt;a href="http://www.carsonfarmer.com/static/images/hitchhikersguide.jpg"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/hitchhikersguide-300x123.jpg" /&gt;&lt;/a&gt;
+&lt;/center&gt;&lt;/p&gt;</summary><category term="42 day"></category></entry><entry><title>Adding a bit of class(ification) to QGIS…</title><link href="http://www.carsonfarmer.com/2010/09/adding-a-bit-of-classification-to-qgis/" rel="alternate"></link><updated>2010-09-29T00:40:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-09-29:2010/09/adding-a-bit-of-classification-to-qgis/</id><summary type="html">&lt;p&gt;In my &lt;a href="http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/"&gt;last post&lt;/a&gt;, I implemented several classification algorithms for
+quantitative data which could be used directly from the Python console
+in &lt;span class="caps"&gt;QGIS&lt;/span&gt;. While this was a handy addition to my PyQGIS toolkit, it wasn&amp;#8217;t
+quite handy enough for me, so I decided to (re)implement the same
+algorithms in C++ so that they could be added directly to the &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;span class="caps"&gt;API&lt;/span&gt;.
+Before I did that however, I wanted to fix a few issues, and speed
+things up a bit, particularly for the Jenks Natural Breaks algorithm,
+which can be quite slow for large datasets.
+&lt;/p&gt;
+&lt;p&gt;After porting everything over to C++, I noticed that things were still
+a little too slow for large datasets. My first thought was to limit the
+amount of data that the algorithm had to go through by taking a random
+sample (without replacement) and only running the algorithm on this
+sample. Based on trial and error, I found that about 1000 values was a
+good number to use, as it was still relatively fast, but generally not
+too small to be unrepresentative of the overall distribution. In the
+end, I went with using &lt;code&gt;max(1000, n*0.10)&lt;/code&gt; for layers with more than
+1000&amp;nbsp;features.&lt;/p&gt;
+&lt;p&gt;Since several of my colleagues here still use &lt;span class="caps"&gt;ESRI&lt;/span&gt; products, I also
+decided to compare my version with the Natural Breaks algorithm in
+ArcMAP. I noticed right away that their version was much faster (when I
+didn&amp;#8217;t use the random sampling scheme), so I decided to search around
+for information on their implementation. Obviously &lt;span class="caps"&gt;ESRI&lt;/span&gt;’s documentation
+didn&amp;#8217;t explain the specifics of their algorithm, but it does produce
+very similar class breaks to mine (and the implementation &lt;a href="http://cran.r-project.org/web/packages/classInt/index.html"&gt;available in
+R&lt;/a&gt;, 
+so I was relatively confident that the main underlying algorithm
+was similar. I then stumbled upon this question in an 
+&lt;a href="http://mappingcenter.esri.com/index.cfm?fa=ask.answers&amp;amp;q=541"&gt;&lt;span class="caps"&gt;ESRI&lt;/span&gt; forum&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Does ArcMap use the Jenks-Caspall or the Fisher-Jenks algorithm for
+classifying data into natural breaks. I did some support.esri.com
+research and found that ArcView 3.x appeared to have used the
+Fisher-Jenks, but ArcGIS Desktop only generically talked about Jenks
+Optimization without eluded to what algorithm it was&amp;nbsp;using.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The initial response was quite good, but unfortunately, like all
+propriety software companies, when asked exactly how the algorithm was
+implemented, they responded&amp;nbsp;with:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;That&amp;#8217;s proprietary information, along the lines of a trade secret, and
+so corporate policy is that we do not provide&amp;nbsp;it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Bummer&amp;#8230; I &lt;em&gt;was&lt;/em&gt; able to figure out a few things from simply clicking
+around the various different options in ArcMAP, and I found that for
+large datasets, ArcMAP&amp;#8217;s version of the Jenks algorithm also uses
+sampling to reduce computation time. However, I was surprised to find
+that their sampling technique appears to simply sample the first &lt;code&gt;x&lt;/code&gt;
+data values (where &lt;code&gt;x&lt;/code&gt; defaults to 10,000, but can be changed by the
+user). Depending on how the data was created/digitised, this may not
+produce a statistically representative sample at all! In my opinion, it
+is better to use a random sampling scheme, with the constraint that both
+the minimum and maximum values are included in the random sample so that
+we don&amp;#8217;t lose values off the ends of our class intervals. Which is
+exactly what I&amp;#8217;ve&amp;nbsp;done&amp;#8230;&lt;/p&gt;
+&lt;p&gt;At the moment I&amp;#8217;m still looking at ways to optimize my rather basic
+implementation. So far I use a relatively simple sampling procedure, but
+it might be possible to do something more &amp;#8216;intelligent&amp;#8217; here to speed
+things up while maintaining a statistically representative sample.
+Comments are more than welcome. I have also posted the diff file to the
+&lt;span class="caps"&gt;QGIS&lt;/span&gt; developers mailing list for evaluation, and once I tidy up a few
+issues I&amp;#8217;ll commit to this trunk, making it available for future
+versions of&amp;nbsp;&lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Just to remind you of how important it is to carefully consider the
+classification scheme you use when presenting your data, here is a
+graphic of the 5 different classification schemes (soon to be) available
+in &lt;span class="caps"&gt;QGIS&lt;/span&gt;. All 5 methods are grouping the same underlying data (2007
+population) into the same number of classes&amp;nbsp;(5).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/class_intervals.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/class_intervals-300x118.png" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="ArcGIS"></category><category term="C++"></category><category term="Jenks"></category><category term="Python"></category><category term="QGIS"></category><category term="Free open-source software (FOSS)"></category><category term="Geographic information science/systems (GIS)"></category><category term="Python"></category></entry><entry><title>New online GIS resource</title><link href="http://www.carsonfarmer.com/2010/07/new-online-gis-resource/" rel="alternate"></link><updated>2010-07-29T20:59:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-07-29:2010/07/new-online-gis-resource/</id><summary type="html">&lt;p&gt;The new Geographic Information Systems Stack Exchange site is now open
+to the&amp;nbsp;public!&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s brand new, and has the potential to be an extremely valuable
+resource for &lt;span class="caps"&gt;GIS&lt;/span&gt; professionals, academics, enthusiasts, and just about
+anyone else looking for answers to &lt;span class="caps"&gt;GIS&lt;/span&gt; related questions.
+Check it out here: &lt;a href="http://gis.stackexchange.com"&gt;http://gis.stackexchange.com&lt;/a&gt;&lt;/p&gt;</summary><category term="Forum"></category><category term="GIS"></category><category term="Online resource"></category><category term="Geographic information science/systems (GIS)"></category></entry><entry><title>Speeding up geoprocessing in QGIS</title><link href="http://www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/" rel="alternate"></link><updated>2010-04-01T14:55:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-04-01:2010/04/speeding-up-geoprocessing-in-qgis/</id><summary type="html">&lt;p&gt;Last night I had an uncontrollable urge to make geopoprocessing in &lt;span class="caps"&gt;QGIS&lt;/span&gt;
+better, faster and more fun! I had come across a couple of posts
+(&lt;a href="http://lin-ear-th-inking.blogspot.com/search?q=cascaded"&gt;here&lt;/a&gt;, &lt;a href="http://blog.cleverelephant.ca/2009/01/must-faster-unions-in-postgis-14.html"&gt;here&lt;/a&gt;) on the idea of a cascaded union operation, and
+since it has recently been added to &lt;a href="http://trac.osgeo.org/geos/"&gt;&lt;span class="caps"&gt;GEOS&lt;/span&gt;&lt;/a&gt; (which &lt;span class="caps"&gt;QGIS&lt;/span&gt; uses for its
+geometry operations), I thought I&amp;#8217;d give a much needed boost to the
+fTools union tool and related functions.
+&lt;/p&gt;
+&lt;p&gt;This required a bit of mucking about with &lt;a href="http://doc.qgis.org/stable/classQgsGeometry.html"&gt;QgsGeometry&lt;/a&gt;, but in the
+end it really didn&amp;#8217;t take too much hacking to get things working
+properly. I was able to add a &lt;code&gt;combineCascaded(QList&amp;lt;QgsGeometry*&amp;gt;)&lt;/code&gt;
+function to the &lt;code&gt;QgsGeometry&lt;/code&gt; class, as well as the required Python
+bindings. Basically what this function does is union small subsets of
+the input layer, then union groups of the resulting features, and so on
+recursively until the final union of all features in the input list is
+computed. There is a nice explanation of the algorithm straight from the
+horses mouth &lt;a href="http://lin-ear-th-inking.blogspot.com/search?q=cascaded"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I haven&amp;#8217;t yet committed these additions, as I&amp;#8217;m not quite sure I like
+how I&amp;#8217;ve done things, but just to prove how much faster things can be,
+here is a quick little demo that can be run from the built-in &lt;span class="caps"&gt;QGIS&lt;/span&gt;
+Python&amp;nbsp;console:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="n"&gt;canvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;qgis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;canvas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# assumes target layer is fist in layer list&lt;/span&gt;
+&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;attrs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;attributeIndexes&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;attrs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;geoms&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+&lt;span class="n"&gt;feat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsFeature&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="c"&gt;# get a list of all the feature geometries in the layer&lt;/span&gt;
+&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nextFeature&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;feat&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
+    &lt;span class="n"&gt;geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsGeometry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;feat&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+    &lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geom&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;First, using the current method, which adds all the geometries together one by&amp;nbsp;one:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;regular_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geom&lt;/span&gt; &lt;span class="c"&gt;# start with the last geometry in the layer&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;geometry&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;regular_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsGeometry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;regular_geom&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;combine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="n"&gt;end&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;total&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Secondly, using cascaded union, which uses magic to combine geometries together
+more efficiently. Also requires fewer lines of&amp;nbsp;code!&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;cascaded_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geom&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;combineCascaded&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;end&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;total&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;When I tested this last night on the &lt;code&gt;grassland.shp&lt;/code&gt; layer from the
+&lt;a href="http://www.qgis.org/en/download/sample-data.html"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; sample dataset&lt;/a&gt; the results were about &lt;strong&gt;86.89&lt;/strong&gt; seconds for the
+&amp;#8216;old&amp;#8217; method, and &lt;strong&gt;6.14&lt;/strong&gt; seconds for the cascaded union method. That&amp;#8217;s
+a &lt;strong&gt;14.15&lt;/strong&gt; times speedup on a relatively small layer (about 143
+features of varying complexity)! I&amp;#8217;ve tested the function on both
+poylgons and lines so far, and it appears to work quite nicely.
+Eventually I&amp;#8217;ll add this to the official &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;span class="caps"&gt;API&lt;/span&gt; so that others can
+take advantage of the speedup. Additionally, the other fTools functions
+which rely to some degree on unioning will also benefit from the extra
+speed, which is always a good&amp;nbsp;thing.&lt;/p&gt;</summary><category term="C++"></category><category term="geoprocessing"></category><category term="Python"></category><category term="QGIS"></category><category term="Free open-source software (FOSS)"></category><category term="Geographic information science/systems (GIS)"></category></entry><entry><title>QGIS developer meeting update</title><link href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/" rel="alternate"></link><updated>2009-11-11T17:33:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2009-11-11:2009/11/qgis-developer-meeting-update/</id><summary type="html">&lt;p&gt;Last week I attended the 2009 &lt;span class="caps"&gt;QGIS&lt;/span&gt; Developers Meeting in Vienna,
+Austria. We all had a really good time, &lt;a href="http://blog.qgis.org/node/139"&gt;met many new people&lt;/a&gt;, and
+actually got a lot done in the process. There have been updates about
+the meeting &lt;a href="http://qgis.org/en/developer-meeting.html"&gt;(hackfest)&lt;/a&gt; on the &lt;span class="caps"&gt;QGIS&lt;/span&gt; blog, and Tim Sutton has &lt;a href="http://linfiniti.com/2009/11/report-back-on-the-qgis-hackfest-in-vienna-november-2009/"&gt;written
+a few words&lt;/a&gt; about our progress as well. I&amp;#8217;m not going to repeat what
+others have said, but I &lt;em&gt;would&lt;/em&gt; like to give a quick update on the work
+that I was doing at the meeting, and show off the new geoprocessing
+features now available to all &lt;span class="caps"&gt;QGIS&lt;/span&gt; developers (Python and C++).
+&lt;/p&gt;
+&lt;p&gt;My main goal for the meeting was to start/continue work on the new
+&amp;#8216;Analysis Library&amp;#8217; for &lt;span class="caps"&gt;QGIS&lt;/span&gt;. Basically, this was intended to be a port
+(to C++ from Python) of the &lt;a href="http://www.ftools.ca/"&gt;fTools&lt;/a&gt; suite of tools already available
+in &lt;span class="caps"&gt;QGIS&lt;/span&gt;. These tools currently provide geoprocessing, geometry, and
+various other analysis functionality natively within &lt;span class="caps"&gt;QGIS&lt;/span&gt;. However, the
+Python implementation is simply a Python plugin, and so does not provide
+these functions to other developers hoping use/add geoprocessing
+capabilities to their own plugins or tools. In addition, in some cases
+the Python fTools functions can be quite slow, and would benefit greatly
+from the speed-ups afforded by a compiled language like&amp;nbsp;C++.&lt;/p&gt;
+&lt;p&gt;Porting these functions to C++ is still underway, and so far we have
+implementations for buffering, dissolving, centroids, convex hulls,
+layer extents in the QgsGeometryAnalyzer class, and intersections in the
+QgsOverlayAnalyzer class. We have set it up so that it should be
+relatively easy to add functions and classes to the library in the
+future, though I expect there will be many changes to the library along
+the way. We have also created Python bindings for the library, so these
+functions will also be available to Python developers. By doing so, it
+is now extremely easy to perform geoprocessing functions directly from
+the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python console, or from &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python plugins, with only a few
+lines of&amp;nbsp;code.&lt;/p&gt;
+&lt;h3&gt;The old&amp;nbsp;way&lt;/h3&gt;
+&lt;p&gt;In the past, Python developers had to operate directly on the
+geometries of the layers in order to do any sort of geoprocessing. For
+example, to perform a (very) simple buffer, one had to use the following
+code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the map canvas&lt;/span&gt;
+&lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the first layer in the layer list&lt;/span&gt;
+&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# data provider for the layer&lt;/span&gt;
+&lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;select&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pendingAllAttributesList&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;QgsRectangle&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# select features to buffer&lt;/span&gt;
+&lt;span class="n"&gt;in_feat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsFeature&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# empty input feature&lt;/span&gt;
+&lt;span class="n"&gt;out_feat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsFeature&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# empty output feature&lt;/span&gt;
+&lt;span class="n"&gt;writer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsVectorFileWriter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;output_path.shp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;encoding&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;fields&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; 
+&lt;span class="n"&gt;QGis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WKBPolygon&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;crs&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# use this to write results to disk (as shapefile)&lt;/span&gt;
+&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nextFeature&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;feat&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt; &lt;span class="c"&gt;# for each feature that we selected...&lt;/span&gt;
+    &lt;span class="n"&gt;geometry&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;feat&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# grab it&amp;#39;s geometry&lt;/span&gt;
+    &lt;span class="nb"&gt;buffer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geometry&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;buffer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# buffer the geometry&lt;/span&gt;
+    &lt;span class="n"&gt;out_feat&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setAttributeMap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in_feat&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;attributeMap&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt; &lt;span class="c"&gt;# set the attributes for the output feature&lt;/span&gt;
+    &lt;span class="n"&gt;out_feat&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setGeometry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# set the bufer as the output geometry&lt;/span&gt;
+    &lt;span class="n"&gt;writer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;addFeature&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out_feat&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# write the feature to file&lt;/span&gt;
+&lt;span class="k"&gt;del&lt;/span&gt; &lt;span class="n"&gt;writer&lt;/span&gt; &lt;span class="c"&gt;# delete/close the writer to save to disk&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;The new&amp;nbsp;way&lt;/h3&gt;
+&lt;p&gt;With the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; Analysis Library, things are much simpler, and the
+same (or more complex) buffering example can be completed with only 5
+lines of code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;Console:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="c"&gt;# import iface (interface)&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.analysis&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;QgsGeometryAnalyzer&lt;/span&gt; &lt;span class="c"&gt;# import (par of) the analysis library&lt;/span&gt;
+&lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the map canvas&lt;/span&gt;
+&lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the first layer in the layer list&lt;/span&gt;
+&lt;span class="n"&gt;QgsGeometryAnalyzer&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;buffer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;output_path.shp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# perform the buffer&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note: only the first two parameters in the buffer function are really
+required, and the additional parameters control the buffer distance,
+whether to use a subset (selected features) of the layer, whether to
+dissolve the output buffer regions, and whether to use a field (field
+&lt;span class="caps"&gt;ID&lt;/span&gt;) from the input layer&amp;#8217;s attribute table as the buffer&amp;nbsp;distance.&lt;/p&gt;
+&lt;p&gt;Pretty nice eh? For now, the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Analysis Library is only available in
+Trunk, however, before long these tools should be available as part of
+the official releases, so I hope we will start to see more Plugins
+taking advantage of these new capabilities in the&amp;nbsp;future&amp;#8230;&lt;/p&gt;</summary><category term="C++"></category><category term="geoprocessing"></category><category term="Python"></category><category term="QGIS"></category><category term="Free open-source software (FOSS)"></category><category term="Geographic information science/systems (GIS)"></category><category term="Helpful tips"></category><category term="How to"></category></entry><entry><title>Introduction to Open Source Geospatial Software</title><link href="http://www.carsonfarmer.com/2009/09/introduction-to-open-source-geospatial-software/" rel="alternate"></link><updated>2009-09-25T10:48:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2009-09-25:2009/09/introduction-to-open-source-geospatial-software/</id><summary type="html">&lt;p&gt;Announcing an opportunity to learn about the leading edge free and
+open-source technologies for desktop and web-based mapping and data
+analysis. This is a two day Masterclass focusing on introducing
+participants to the wonderful world of open source geospatial software.
+Check out the &lt;a href="http://shortcourses.maths.lancs.ac.uk/geospatial"&gt;announcement&lt;/a&gt; from the Postgraduate Statistics Centre
+at Lancaster&amp;nbsp;University.&lt;/p&gt;</summary><category term="Free open-source software (FOSS)"></category><category term="Masterclass"></category><category term="Geographic information science/systems (GIS)"></category></entry><entry><title>Journal of Spatial Information Science</title><link href="http://www.carsonfarmer.com/2009/09/journal-of-spatial-information-science/" rel="alternate"></link><updated>2009-09-10T11:19:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2009-09-10:2009/09/journal-of-spatial-information-science/</id><summary type="html">&lt;p&gt;Check out the &lt;a href="http://josis.org/index.php/josis/index"&gt;Journal of Spatial Information Science&lt;/a&gt;, a new,
+peer-reviewed, open-access journal with a range of well established
+geospatial academics on the editorial board.
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Journal of Spatial Information Science (&lt;span class="caps"&gt;JOSIS&lt;/span&gt;) is an
+international, interdisciplinary, open-access journal dedicated to
+publishing high-quality, original research articles in spatial
+information science. The journal aims to publish research spanning the
+theoretical foundations of spatial and geographical information
+science, through computation with geospatial information, to
+technologies for geographical information&amp;nbsp;use.&lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;JOSIS&lt;/span&gt; is run as a service to the geographic information science
+community, supported entirely through the efforts of volunteers. &lt;span class="caps"&gt;JOSIS&lt;/span&gt;
+does not aim to profit from the articles published in the journal,
+which are open&amp;nbsp;access.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Since it&amp;#8217;s run entirely by volunteers, they provide a link to &lt;a href="http://josis.org/index.php/josis/user/register"&gt;become
+involved&lt;/a&gt; as a reader, reviewer, or&amp;nbsp;author.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href="http://www.le.ac.uk/geography/staff/academic_brunsdon.html"&gt;Professor Chris Brunsdon&lt;/a&gt; for the&amp;nbsp;heads-up!&lt;/p&gt;</summary><category term="Journal"></category><category term="Open-access"></category><category term="Peer-review"></category><category term="Spatial information analysis"></category><category term="Geographic information science/systems (GIS)"></category></entry><entry><title>FOSS4G and teaching GIS</title><link href="http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/" rel="alternate"></link><updated>2009-07-20T10:45:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2009-07-20:2009/07/foss4g-and-teaching-gis/</id><summary type="html">&lt;p&gt;Two quicks notes to&amp;nbsp;share:&lt;/p&gt;
+&lt;p&gt;Firstly, please check out this &lt;a href="http://linfiniti.com/dla/"&gt;excellent introduction to &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/a&gt; by Tim
+Sutton, Otto Dassau, and Marcelle Sutton in partnership with the Chief
+Directorate for Spatial Planning &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Information, Department of Land
+Affairs, Eastern Cape, South Africa, and the Spatial Information
+Management Unit, Office of the Premier, Eastern Cape, South Africa. They
+use &lt;span class="caps"&gt;QGIS&lt;/span&gt; to present some basic &lt;span class="caps"&gt;GIS&lt;/span&gt; concepts and skills, and I
+particularly like their section on Coordinate Reference&amp;nbsp;Systems.&lt;/p&gt;
+&lt;p&gt;Secondly, don&amp;#8217;t forget to checkout the &lt;a href="http://2009.foss4g.org/"&gt;&lt;span class="caps"&gt;FOSS4G&lt;/span&gt; 2009 Free and open source
+software for geospatial&lt;/a&gt; conference in Sydney in October. There will
+be loads of excellent presentations and exhibitors, and the atmosphere
+is always very cool. I will be presenting &lt;a href="http://www.ftools.ca/plugins.html"&gt;some software&lt;/a&gt; that I&amp;#8217;ve
+been developing for a while now, and will hopefully get a chance to
+represent &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt; there as&amp;nbsp;well!&lt;/p&gt;</summary><category term="Conference"></category><category term="GIS"></category><category term="Teaching"></category><category term="Free open-source software (FOSS)"></category></entry></feed>

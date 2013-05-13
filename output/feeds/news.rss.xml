@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/news.rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 28 Jan 2009 12:14:00 -0500</lastBuildDate><item><title>R featured in New York Times</title><link>http://www.carsonfarmer.com/2009/01/r-featured-in-new-york-times/</link><description>&lt;p&gt;I&amp;#8217;m sure everyone has seen this already, but I&amp;#8217;m going to post it
+anyway, as I think the more exposure open-source tools get, the better
+off we&amp;#8217;ll all&amp;nbsp;be!&lt;/p&gt;
+&lt;p&gt;Check out this &lt;a href="http://www.nytimes.com/2009/01/07/technology/business-computing/07program.html?e%3Cbr%20/%3Em" title="Data Analysts Captivated by R’s Power"&gt;New York Times article&lt;/a&gt; which features &lt;code&gt;R&lt;/code&gt;, the
+open-source statistical programming language. &lt;code&gt;R&lt;/code&gt; now has quite an
+extensive range of &lt;a href="http://cran.r-project.org/web/views/Spatial.html" title="CRAN Task View: Analysis of Spatial Data"&gt;spatial analysis options&lt;/a&gt;, and is the software of
+choice for researchers using spatial statistics and geographic
+information&amp;nbsp;analysis.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 28 Jan 2009 12:14:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2009-01-28:2009/01/r-featured-in-new-york-times/</guid><category>New York Times</category><category>R</category><category>Spatial statistics</category><category>Free open-source software (FOSS)</category><category>R spatial</category></item></channel></rss>

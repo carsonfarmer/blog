@@ -1,6 +1,5 @@
 *.pid
 *.pyc
 *~
-output
 pelican-plugins
 themes
