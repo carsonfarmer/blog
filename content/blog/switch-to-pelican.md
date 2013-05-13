@@ -1,5 +1,5 @@
 Title: Making the switch to Pelican
-Date: 2013-05-12 11:16
+Date: 2013-12-05 11:16
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
