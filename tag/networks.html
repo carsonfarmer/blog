@@ -421,7 +421,7 @@ network types (directed, undirected, weighted, unweighted, etc.).
                     // if (!$('nav').hasClass('fixed')) {
                     //     $('.home_link').show("slide", { direction: "right" }, 250)
                     // };
-                    $('.navbar').addClass('fixed').css('top','0').next() //.addClass('navbar-fixed-top').next()//
+                    $('.navbar').addClass('fixed').addClass('shadow').css('top','0').next() //.addClass('navbar-fixed-top').next()//
                     $('#content').css('margin-top',aboveHeight+20+'px'); // value is same as the height of the nav
                 } else {
                 // when scroll up or less than aboveHeight,
@@ -430,7 +430,7 @@ network types (directed, undirected, weighted, unweighted, etc.).
                     //     console.log('test')
                     //     $('.home_link').hide("slide", { direction: "right" }, 250)
                     // };
-                    $('.navbar').removeClass('fixed').next()
+                    $('.navbar').removeClass('fixed').removeClass('shadow').next()
                     $('#content').css('margin-top','0px');
                 }
         });
