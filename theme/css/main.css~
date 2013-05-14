@@ -202,7 +202,11 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 		text-shadow: none;
 	}
 	
-	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	#banner h1 strong {
+	    font-size: 0.36em;
+	    font-weight: normal;
+	    color: #2e3436;
+    }
 	
 	/* Main Nav */
 	#banner nav {
@@ -362,7 +366,7 @@ text-shadow: 0 1px 0 #eee;
 *****************/
 #content {
 	/*margin-bottom: 2em;*/
-	overflow: hidden;
+	/*overflow: hidden;*/
 	/*width: 760px;*/
 	clear: both;
 	border-radius: 10px;
@@ -436,7 +440,7 @@ text-shadow: 0 1px 0 #eee;
 #extras .twitter {
 	float: left;
     display: inline-block;
-    width: 100%;
+    /*width: 100%;*/
     padding: 20px 20px;
 }
 	
