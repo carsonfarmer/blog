@@ -23,6 +23,8 @@ local labour markets: Spatial interaction modelling of travel-to-work".
 
 ### Current & Future Research
 
+[![Current & Future Research][image1]{.left}][link1]
+
 My current and future research interests are ultimately concerned with
 modelling and understanding spatial processes. While much of the current
 work on modelling urban dynamics is concerned with networks and abstract
@@ -55,9 +57,9 @@ explore the complex hierarchies and interactions within urban
 environments.
 
 ### PhD Research
+*Commuting flows & local labour markets: Spatial interaction modelling of travel-to-work*
 
-*Commuting flows & local labour markets: Spatial interaction modelling
-of travel-to-work*  
+[![PhD Research][image2]{.right}][link2]
 One of the most promising approaches to mitigating land-use and
 transportation problems is continued research on urban commuting.
 Commuting is essential to many individuals, allowing them to participate
@@ -82,7 +84,7 @@ as unemployment, housing density, and education, all significantly
 affect commuting flows. Furthermore, the distance decay component of
 these models can be shown to capture a combination of geographical
 distance and regional differentiation due to LLM boundaries, leading to
-\`functional' distance decay. This concept of functional distance decay
+'functional' distance decay. This concept of functional distance decay
 is a key finding of my research, and, indicates that in addition to the
 configuration of origins and destinations, distance decay is also
 dependent on the spatial structure of LLMs, or more generally, the
@@ -92,9 +94,9 @@ SSHRC, and is being completed under the supervision of Prof. Stewart
 Fotheringham.
 
 ### MSc Research
+*Spatial time-series analysis of satellite derived snow water equivalence*
 
-*Spatial time-series analysis of satellite derived snow water
-equivalence*  
+[![MSc Research][image3]{.left}][link3]
 My MSc research focused primarily on examining the spatial-temporal
 characteristics of snow water equivalence (SWE) in Canada, and comparing
 these characteristics to known or hypothesized climate and ecological
@@ -116,3 +118,10 @@ Canada, driven by remote sensing of multiple indicators of biodiversity.
 These indicators include productivity, disturbance, topography, and
 land-cover, of which terrestrial snow cover and SWE play an integral
 part.
+
+[image1]: |filename|/images/blurred_workers.png
+[link1]: |filename|/images/blurred_workers.png
+[image2]: |filename|/images/congestion.png
+[link2]: |filename|/images/congestion.png
+[image3]: |filename|/images/alberta_snow.png
+[link3]: |filename|/images/alberta_snow.png
