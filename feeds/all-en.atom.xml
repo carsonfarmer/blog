@@ -1,33 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://cfarmer.github.io/blog/" rel="alternate"></link><link href="http://cfarmer.github.io/blog/feeds/all-en.atom.xml" rel="self"></link><id>http://cfarmer.github.io/blog/</id><updated>2013-05-12T11:16:00-04:00</updated><entry><title>Making the switch to Pelican</title><link href="http://cfarmer.github.io/blog/2013/05/making-the-switch-to-pelican/" rel="alternate"></link><updated>2013-05-12T11:16:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2013-05-12:2013/05/making-the-switch-to-pelican/</id><summary type="html">&lt;p&gt;Welcome to the new and improved &lt;code&gt;carsonfarmer.com&lt;/code&gt;! If you are reading this, then
-you are enjoying my new, repsonive static website/blog. The new site is powered 
-by [Pelican][] &amp;#8212; a static website generator written in Python &amp;#8212; and is&amp;nbsp;hosted &lt;/p&gt;
-&lt;p class="note right shadow"&gt;
-Here is a small note with some useful information that should be placed in the &amp;#8216;margins&amp;#8217; of the&amp;nbsp;website.
-&lt;/p&gt;
-
-&lt;p&gt;on [GitHub][] using [GitHub Pages][]. Most of the content on the site is written 
-in Markdown, which makes it really easy to add headings, anchors, and all sorts
-of goodies to simplify writing blog posts and&amp;nbsp;web-pages.&lt;/p&gt;
-&lt;p&gt;The move from Wordpress to Pelican was relatively painless, though there were
-some issues with comments and converting (some) existing posts to Markdown. I
-also took the opportunity to update the site, change the page structure a bit
-and try out a few things like adding icons, using Twitter Bootstrap for some of 
-the &lt;span class="caps"&gt;UI&lt;/span&gt;, and some other tweaks. To get me though the process, I took advantage of
-several blogs and sites dedicated to documenting&amp;nbsp;Pelican:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://docs.getpelican.com/"&gt;Pelican documentation (which is&amp;nbsp;great)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://magically.us/2013-02-03/creating-a-pelican-powered-site-on-github-pages.html"&gt;Creating A Pelican-Powered Site on GitHub&amp;nbsp;Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.macdrifter.com/2012/08/pelican-guide-moving-from-wordpress-and-initial-setup.html"&gt;Pelican Guide - Moving From WordPress and Initial&amp;nbsp;Setup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/"&gt;Yes, this blog is now powered by&amp;nbsp;Pelican&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Once I get things working, I&amp;#8217;ll also start to think about some of the 
-&lt;a href="http://arunrocks.com/moving-blogs-to-pelican/"&gt;points here&lt;/a&gt;, to make things even &lt;em&gt;more&lt;/em&gt; responsive and&amp;nbsp;readable.&lt;/p&gt;
-&lt;p&gt;I am still missing some things that Wordpress did quite nicely, including
-comments (I&amp;#8217;m now relying on &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; to handle comments on the site), 
-site search, and the plethora of plugins and themes available for Wordpress 
-sites. Having said that, I love writing posts using Markdown, I love that the 
-site is static, fast (thanks&amp;nbsp;)&lt;/p&gt;</summary><category term="Announcement"></category><category term="Pelican"></category><category term="Blog"></category><category term="Update"></category></entry><entry><title>Paper published in Marine Policy</title><link href="http://cfarmer.github.io/blog/2013/03/marine-policy-paper/" rel="alternate"></link><updated>2013-03-20T14:52:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2013-03-20:2013/03/marine-policy-paper/</id><summary type="html">&lt;p&gt;An article I worked on with &lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr Tim Stojanovic&lt;/a&gt;, &amp;#8220;The development of
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://cfarmer.github.io/blog/" rel="alternate"></link><link href="http://cfarmer.github.io/blog/feeds/all-en.atom.xml" rel="self"></link><id>http://cfarmer.github.io/blog/</id><updated>2013-03-20T14:52:00-04:00</updated><entry><title>Paper published in Marine Policy</title><link href="http://cfarmer.github.io/blog/2013/03/marine-policy-paper/" rel="alternate"></link><updated>2013-03-20T14:52:00-04:00</updated><author><name>cfarmer</name></author><id>tag:cfarmer.github.io/blog,2013-03-20:2013/03/marine-policy-paper/</id><summary type="html">&lt;p&gt;An article I worked on with &lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr Tim Stojanovic&lt;/a&gt;, &amp;#8220;The development of
 world oceans &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; coasts and concepts of sustainability&amp;#8221;, has recently been
 &lt;a href="http://www.sciencedirect.com/science/article/pii/S0308597X13000481"&gt;published online&lt;/a&gt;, with the journal &lt;a href="http://www.sciencedirect.com/science/journal/0308597X"&gt;Marine Policy&lt;/a&gt;. The article
 can be cited&amp;nbsp;as:&lt;/p&gt;
