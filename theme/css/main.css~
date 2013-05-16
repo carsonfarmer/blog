@@ -655,7 +655,7 @@ article header .published {
     background-color: transparent;
 }
 
-#posts-list note {
+#posts-list .note {
     display: none;
 }
 
