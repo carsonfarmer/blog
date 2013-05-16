@@ -143,6 +143,14 @@ q:before {
 
 cite {}
 
+code {
+    color: #2A75A9;
+}
+
+blockquote p {
+    font-size: 88%;
+}
+
 .note {
 	position: absolute;
 	padding:5px;
@@ -645,6 +653,10 @@ article header .published {
 .paginator a:hover, .paginator a:active {
     color: #2A75A9;
     background-color: transparent;
+}
+
+#posts-list .note {
+    display: none;
 }
 
 #posts-list footer address {display: block;}
