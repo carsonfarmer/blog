@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>http://cfarmer.github.io/blog/</link><description>www.carsonfarmer.com</description><atom:link href="http://cfarmer.github.io/blog/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 12 May 2013 11:16:00 -0400</lastBuildDate><item><title>Making the switch to Pelican</title><link>http://cfarmer.github.io/blog/2013/05/making-the-switch-to-pelican/</link><description>&lt;p&gt;This is a test&amp;nbsp;post&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 12 May 2013 11:16:00 -0400</pubDate><guid>tag:cfarmer.github.io/blog,2013-05-12:2013/05/making-the-switch-to-pelican/</guid><category>Announcement</category><category>Pelican</category><category>Blog</category><category>Update</category></item><item><title>Geocomputational landscapes and spaces</title><link>http://cfarmer.github.io/blog/2013/03/geocomp-special-session/</link><description>&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>http://cfarmer.github.io/blog/</link><description>www.carsonfarmer.com</description><atom:link href="http://cfarmer.github.io/blog/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 12 May 2013 11:16:00 -0400</lastBuildDate><item><title>Making the switch to Pelican</title><link>http://cfarmer.github.io/blog/2013/05/making-the-switch-to-pelican/</link><description>&lt;p&gt;Welcome to the new and improved &lt;code&gt;carsonfarmer.com&lt;/code&gt;! If you are reading this, then
+you are enjoying my new, repsonive static website/blog. The new site is powered 
+by [Pelican][] &amp;#8212; a static website generator written in Python &amp;#8212; and is&amp;nbsp;hosted &lt;/p&gt;
+&lt;p class="note right shadow"&gt;
+Here is a small note with some useful information that should be placed in the &amp;#8216;margins&amp;#8217; of the&amp;nbsp;website.
+&lt;/p&gt;
+
+&lt;p&gt;on [GitHub][] using [GitHub Pages][]. Most of the content on the site is written 
+in Markdown, which makes it really easy to add headings, anchors, and all sorts
+of goodies to simplify writing blog posts and&amp;nbsp;web-pages.&lt;/p&gt;
+&lt;p&gt;The move from Wordpress to Pelican was relatively painless, though there were
+some issues with comments and converting (some) existing posts to Markdown. I
+also took the opportunity to update the site, change the page structure a bit
+and try out a few things like adding icons, using Twitter Bootstrap for some of 
+the &lt;span class="caps"&gt;UI&lt;/span&gt;, and some other tweaks. To get me though the process, I took advantage of
+several blogs and sites dedicated to documenting&amp;nbsp;Pelican:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://docs.getpelican.com/"&gt;Pelican documentation (which is&amp;nbsp;great)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://magically.us/2013-02-03/creating-a-pelican-powered-site-on-github-pages.html"&gt;Creating A Pelican-Powered Site on GitHub&amp;nbsp;Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.macdrifter.com/2012/08/pelican-guide-moving-from-wordpress-and-initial-setup.html"&gt;Pelican Guide - Moving From WordPress and Initial&amp;nbsp;Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/"&gt;Yes, this blog is now powered by&amp;nbsp;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once I get things working, I&amp;#8217;ll also start to think about some of the 
+&lt;a href="http://arunrocks.com/moving-blogs-to-pelican/"&gt;points here&lt;/a&gt;, to make things even &lt;em&gt;more&lt;/em&gt; responsive and&amp;nbsp;readable.&lt;/p&gt;
+&lt;p&gt;I am still missing some things that Wordpress did quite nicely, including
+comments (I&amp;#8217;m now relying on &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; to handle comments on the site), 
+site search, and the plethora of plugins and themes available for Wordpress 
+sites. Having said that, I love writing posts using Markdown, I love that the 
+site is static, fast (thanks&amp;nbsp;)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 12 May 2013 11:16:00 -0400</pubDate><guid>tag:cfarmer.github.io/blog,2013-05-12:2013/05/making-the-switch-to-pelican/</guid><category>Announcement</category><category>Pelican</category><category>Blog</category><category>Update</category></item><item><title>Geocomputational landscapes and spaces</title><link>http://cfarmer.github.io/blog/2013/03/geocomp-special-session/</link><description>&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
 &lt;a href="http://www.ammcs2013.wlu.ca/"&gt;International Conference on Applied Mathematics, Modeling and
 Computational Science&lt;/a&gt; (&lt;span class="caps"&gt;AMMCS&lt;/span&gt;-2013), to be held at &lt;a href="https://www.wlu.ca/"&gt;Wilfrid Laurier
 University&lt;/a&gt;, August 26-30,&amp;nbsp;2013.&lt;/p&gt;

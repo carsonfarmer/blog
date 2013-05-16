@@ -143,12 +143,90 @@ q:before {
 
 cite {}
 
-div.note {
-   float: right;
-   margin: 5px;
-   font-size: 85%;
-   max-width: 300px;
+code {
+    color: #2A75A9;
 }
+
+blockquote p {
+    font-size: 88%;
+}
+
+.note {
+	position: absolute;
+	padding:5px;
+	margin: 1em;
+	right: -270px;
+	border:5px solid #B0C4DE;
+	color:#eee;
+	max-width: 200px;
+	background: #B0C4DE;
+	/* css3 */
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	margin-left:30px;
+	margin-top: -8px;
+}
+
+.note.right {}
+
+.note.left {
+	margin-right:25px;
+	margin-left:0px;
+	left: -255px;
+}
+
+.note:before {
+	content:"";
+	position:absolute;
+	border-style:solid;
+	top:10px; /* controls vertical position */
+	bottom:auto;
+	left:-30px; /* value = - border-left-width - border-right-width */
+	border-width:15px 30px 15px 0;
+	border-color:transparent #B0C4DE;
+    display:block; 
+    width: 0;
+}
+
+/* creates the smaller  triangle */
+.note:after {
+	content:"";
+	position:absolute;
+	border-style:solid;
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+	left:-21px; /* value = - border-left-width - border-right-width */
+	border-width:9px 21px 9px 0;
+	border-color:transparent #B0C4DE;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+.note.right:before {}
+
+.note.right:after {}
+
+.note.left:before {
+	top:10px; /* controls vertical position */
+	bottom:auto;
+    left:auto;
+	right:-30px; /* value = - border-left-width - border-right-width */
+	border-width:15px 0 15px 30px;
+	border-color:transparent #B0C4DE;
+}
+
+.note.left:after {
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	bottom:auto;
+    left:auto;
+	right:-21px; /* value = - border-left-width - border-right-width */
+	border-width:9px 0 9px 21px;
+	border-color:transparent #B0C4DE;
+}
+
+
 
 /* Tables */
 table {margin: .5em auto 1.5em auto; width: 98%;}
@@ -493,7 +571,7 @@ text-shadow: 0 1px 0 #eee;
     -webkit-box-shadow: 0 5px 5px -3px #A9A9A9; /*#BCBCBC;*/
     box-shadow: 0 5px 5px -3px #A9A9A9; /*#BCBCBC;*/
 }
-
+ 
 /*
 	Footer
 *****************/
@@ -515,9 +593,9 @@ text-shadow: 0 1px 0 #eee;
 	  background: rgba(255, 255, 255, 1);
 	  padding: 1em 1.5em 1.5em 1.5em;
 	  margin-bottom: 1.5em;
-	  border-radius: 5px;
-	  -moz-border-radius: 5px;
-	  -webkit-border-radius: 5px;		
+	  border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;		
 }
 
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
@@ -528,6 +606,10 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .entry-title a:visited {background-color: #fff;}
 .entry-content li {padding-bottom: 0px;}
 .hentry .post-info * {font-style: normal;}
+
+.entry-content {
+    position: relative;
+}
 
 article header .published {
     float: right;
@@ -571,6 +653,10 @@ article header .published {
 .paginator a:hover, .paginator a:active {
     color: #2A75A9;
     background-color: transparent;
+}
+
+#posts-list note {
+    display: none;
 }
 
 #posts-list footer address {display: block;}
