@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>Bootstrapping network partitioning methods</title>
         <link rel="stylesheet" href="../../../theme/css/main.css">
-                <link href="http://cfarmer.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-                        <link href="http://cfarmer.github.io/blog/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+                <link href="www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+                        <link href="www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="../../../static/libs/bootstrap/js/bootstrap.js"></script>
         <!--[if IE]>
@@ -45,11 +45,11 @@
                                     <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
                                     <ul class="dropdown-menu" role="menu" id="social-menu" aria-labelledby="social-drop">
                                         <li>
-                                          <a href="http://cfarmer.github.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                                          <a href="www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                                           <i class="icon-rss"></i> atom feed</a>
                                         </li>
                                                                                 <li>
-                                          <a href="http://cfarmer.github.io/blog/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                                          <a href="www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                                           <i class="icon-rss"></i> rss feed</a>
                                         </li>
                                                                                                                             <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
@@ -258,19 +258,28 @@ site_search = function() {
     var token = '';
     var el = $("#top-results");
     el.empty();
-    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
-        function(data) {
+    var data = [{
+        "_score": 0.71860904,
+        "link": "http://tapirgo.com",
+        "title": "Tapir",
+        "published_on": "2011-05-05T15:13:22Z",
+        "content": "hello tapir",
+        "summary":"hello, summary!"
+      }];
+    //$.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+    //    function(data) {
             // insert function here if needed
-            el.append('<div class="result"><h3>No results found...</h3></div>)
-            if (data.size >= 1) {
+    //        el.append('<div class="result"><h3>No results found...</h3></div>)
+    //        if (data.size >= 1) {
                 el.empty()
                 $.each(data, function(key, val) {
                     el.append('<div class="result"><h3><a href="' + val.link + 
                         '">' + val.title + '</a></h3><p>' + val.summary + 
                         '</p></div>');
                 });
-            };
-    });
+    //        };
+    //});
+    el.show("slide", { direction: "bottom" }, 500);
 }
 </script>
 </body>
