@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="www.carsonfarmer.com/feeds/networks.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 17 Apr 2010 14:26:00 -0400</lastBuildDate><item><title>Bootstrapping network partitioning methods</title><link>www.carsonfarmer.com/2010/04/bootstrapping-network-partitioning-methods/</link><description>&lt;p&gt;My PhD research at the moment focuses on network-based algorithms for
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="/feeds/networks.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 17 Apr 2010 14:26:00 -0400</lastBuildDate><item><title>Bootstrapping network partitioning methods</title><link>www.carsonfarmer.com/2010/04/bootstrapping-network-partitioning-methods/</link><description>&lt;p&gt;My PhD research at the moment focuses on network-based algorithms for
 delineating functional regions (geographical regions within which a
 large majority of the local population seeks employment, and the
 majority of local employers recruit their labour). Currently I&amp;#8217;m using a
