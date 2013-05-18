@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Carson J. Q. Farmer'
 SITENAME = u'Carson Farmer'
-SITEURL = 'http://cfarmer.github.io/blog'
-SITESUBTITLE = 'www.carsonfarmer.com'
+SITEURL = u'www.carsonfarmer.com'
+SITESUBTITLE = u'www.carsonfarmer.com'
 
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
@@ -55,8 +55,9 @@ DISQUS_SITENAME = "carsonfarmer"
 # which folders should be copied to output/static
 STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt']
 
-FILES_TO_COPY = (('favicon.ico', 'favicon.ico'),
-                 ('404.html', '404.html'),)
+FILES_TO_COPY = (('extras/favicon.ico', 'favicon.ico'),
+                 ('extras/404.html', '404.html'),
+                 ('extras/CNAME', 'CNAME'),)
 
 # Blogroll
 LINKS =  (('Reserach','research/','icon-bar-chart'),
@@ -76,4 +77,4 @@ TWITTER_WIDGET_ID = '330339195518337025'
 DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
