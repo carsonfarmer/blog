@@ -27,7 +27,7 @@ PLUGINS = ['gravatar', 'latex', 'summary']
 SUMMARY_END_MARKER = "<!--more-->"
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN = SITEURL
+FEED_DOMAIN = ""
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/%s.atom.xml"
 FEED_ALL_RSS = 'feeds/all.rss.xml'
