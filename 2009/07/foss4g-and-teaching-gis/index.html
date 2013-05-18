@@ -16,6 +16,15 @@
 <body id="index" class="home">
         <header id="banner" class="body">
                 <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <form class="form-search" id="top-search">
+    <div class='input-append'>
+        <input type="text" class="search-query" id="top-query" placeholder="Search..." />
+        <button class='btn add-on' id="top-btn" onclick="site_search()">
+            <i class="icon-search"></i>
+        </button>
+    </div>
+</form>
+<div id="top-results"></div>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -189,7 +198,30 @@ represent <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a> ther
                     $('#content').css('margin-top','0px');
                 }
         });
+        $("#top-results").hide()
     });
+    
+site_search = function() {
+    var query = $("#top-query").val();
+    if (query == "") return
+    var api = 'http://tapirgo.com/api/1/search.json?';
+    var token = '';
+    var el = $("#top-results");
+    el.empty();
+    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+        function(data) {
+            // insert function here if needed
+            el.append('<div class="result"><h3>No results found...</h3></div>)
+            if (data.size >= 1) {
+                el.empty()
+                $.each(data, function(key, val) {
+                    el.append('<div class="result"><h3><a href="' + val.link + 
+                        '">' + val.title + '</a></h3><p>' + val.summary + 
+                        '</p></div>');
+                });
+            };
+    });
+}
 </script>
 </body>
 </html>

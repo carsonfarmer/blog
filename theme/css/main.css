@@ -151,6 +151,31 @@ blockquote p {
     font-size: 88%;
 }
 
+.input-append button.add-on { 
+  height: inherit !important;
+}
+
+#top-search {
+    position: absolute;
+    right: 0px;
+    top: 55px
+}
+
+.form-search .input-append #top-query {
+    -webkit-border-radius: 10px 0 0 0;
+    -moz-border-radius: 10px 0 0 10;
+    border-radius: 10px 0 0 0;
+}
+
+.form-search .input-append #top-btn{
+    -webkit-border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+    border-radius: 0 10px 0 0;
+    background: #fff;
+}
+
+
+
 .note {
 	position: absolute;
 	padding:5px;
@@ -263,12 +288,13 @@ img.left, figure.left {float: left; margin: 0 2em 1em 0;}
 #banner {
 	margin: 0 auto;
 	padding: 2.5em 0 0 0;
+	position: relative;
 }
 
 	/* Banner */
 	#banner h1 {font-size: 3.571em; line-height: 0;}
 	#banner h1 a:link, #banner h1 a:visited {
-		color: #2A75A9;
+		color: #2e3436;
 		display: block;
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
@@ -276,15 +302,19 @@ img.left, figure.left {float: left; margin: 0 2em 1em 0;}
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
-		color: #2e3436;
+		color: #2A75A9;
 		text-shadow: none;
 	}
 	
 	#banner h1 strong {
 	    font-size: 0.36em;
 	    font-weight: normal;
-	    color: #2e3436;
+	    color: #2A75A9;
     }
+
+	#banner h1 a:hover strong, #banner h1 a:active strong {
+	    color: #2e3436;
+	}
 	
 	/* Main Nav */
 	#banner nav {

@@ -16,6 +16,15 @@
 <body id="index" class="home">
         <header id="banner" class="body">
                 <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <form class="form-search" id="top-search">
+    <div class='input-append'>
+        <input type="text" class="search-query" id="top-query" placeholder="Search..." />
+        <button class='btn add-on' id="top-btn" onclick="site_search()">
+            <i class="icon-search"></i>
+        </button>
+    </div>
+</form>
+<div id="top-results"></div>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -87,8 +96,8 @@ about, I discovered that the following <code>css</code> seems to fix the&nbsp;is
     <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">50px</span><span class="p">;</span>
-    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
-    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">50px</span><span class="p">;</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -219,7 +228,30 @@ suggestions from <a href="http://stackoverflow.com/questions/166160/how-can-i-sc
                     $('#content').css('margin-top','0px');
                 }
         });
+        $("#top-results").hide()
     });
+    
+site_search = function() {
+    var query = $("#top-query").val();
+    if (query == "") return
+    var api = 'http://tapirgo.com/api/1/search.json?';
+    var token = '';
+    var el = $("#top-results");
+    el.empty();
+    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+        function(data) {
+            // insert function here if needed
+            el.append('<div class="result"><h3>No results found...</h3></div>)
+            if (data.size >= 1) {
+                el.empty()
+                $.each(data, function(key, val) {
+                    el.append('<div class="result"><h3><a href="' + val.link + 
+                        '">' + val.title + '</a></h3><p>' + val.summary + 
+                        '</p></div>');
+                });
+            };
+    });
+}
 </script>
 </body>
 </html>
