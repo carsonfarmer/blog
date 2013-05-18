@@ -182,11 +182,16 @@ Slug: curriculum-vitae
     effects of the modifiable areal unit problem on local measures of
     spatial autocorrelation. *Western Canadian Association of
     Geographers*. March 10-11, Kamloops, B.C.
+    
+### Teaching
+
+Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Methods
 
 ### Academic Service
 
 |                     |                                       |
 | ------------------  |  ------------------------------------ |
+| 2013 - present | Review (Spatial Demography)
 | 2012 - present | Reviewer (Journal of Spatial Science)
 | 2012 - present | Reviewer (Computers, Environment and Urban Systems)
 | 2012 - present | Reviewer (International Journal of Geographical Information Science)
