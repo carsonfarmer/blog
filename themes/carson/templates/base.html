@@ -24,6 +24,15 @@
 {% include 'github.html' %}
         <header id="banner" class="body">
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }} {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                <form class="form-search" id="top-search">
+    <div class='input-append'>
+        <input type="text" class="search-query" id="top-query" placeholder="Search..." />
+        <button class='btn add-on' id="top-btn" onclick="site_search()">
+            <i class="icon-search"></i>
+        </button>
+    </div>
+</form>
+<div id="top-results"></div>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -138,7 +147,39 @@
                     $('#content').css('margin-top','0px');
                 }
         });
+        $("#top-results").hide()
     });
+    
+site_search = function() {
+    var query = $("#top-query").val();
+    if (query == "") return
+    var api = 'http://tapirgo.com/api/1/search.json?';
+    var token = '51980cd33f61b05bbb000ce0';
+    var el = $("#top-results");
+    el.empty();
+    var data = [{
+        "_score": 0.71860904,
+        "link": "http://tapirgo.com",
+        "title": "Tapir",
+        "published_on": "2011-05-05T15:13:22Z",
+        "content": "hello tapir",
+        "summary":"hello, summary!"
+      }];
+    //$.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+    //    function(data) {
+            // insert function here if needed
+    //        el.append('<div class="result"><h3>No results found...</h3></div>)
+    //        if (data.size >= 1) {
+                el.empty()
+                $.each(data, function(key, val) {
+                    el.append('<div class="result"><h3><a href="' + val.link + 
+                        '">' + val.title + '</a></h3><p>' + val.summary + 
+                        '</p></div>');
+                });
+    //        };
+    //});
+    el.show("slide", { direction: "bottom" }, 500);
+}
 </script>
 </body>
 </html>
