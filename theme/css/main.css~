@@ -161,6 +161,24 @@ blockquote p {
     top: 55px
 }
 
+.result h3 {margin-bottom: 5px;}
+
+#top-results {
+    position: absolute;
+    right: 0px;
+    top: 85px;
+    width: 236px;
+    padding: 0px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin: 0px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    background: #fff;
+    z-index: 5;
+}
+
 .form-search .input-append #top-query {
     -webkit-border-radius: 10px 0 0 0;
     -moz-border-radius: 10px 0 0 10;
@@ -312,7 +330,7 @@ img.left, figure.left {float: left; margin: 0 2em 1em 0;}
 	    color: #2A75A9;
     }
 
-	#banner h1 strong a:hover, #banner h1 strong a:active {
+	#banner h1 a:hover strong, #banner h1 a:active strong {
 	    color: #2e3436;
 	}
 	

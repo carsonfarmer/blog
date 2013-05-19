@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../theme/css/main.css">
                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+                        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
         <script src="../static/libs/bootstrap/js/bootstrap.js"></script>
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,12 +19,12 @@
                 <form class="form-search" id="top-search">
     <div class='input-append'>
         <input type="text" class="search-query" id="top-query" placeholder="Search..." />
-        <button class='btn add-on' id="top-btn" onclick="site_search()">
+        <button class="btn add-on" id="top-btn" onclick="site_search()" type="button">
             <i class="icon-search"></i>
         </button>
     </div>
 </form>
-<div id="top-results"></div>
+<div id="top-results" class="shadow"></div>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -184,38 +184,40 @@ Check it out here: <a href="http://gis.stackexchange.com">http ...</a></p>
                 }
         });
         $("#top-results").hide()
+        $("#top-search").focusout(function() {
+            // TODO: make sure the correct thing is 'focused out'
+            $("#top-results").slideUp();
+        });
     });
     
 site_search = function() {
-    console.log("alskfdjldafk")
     var query = $("#top-query").val();
     if (query == "") return
     var api = 'http://tapirgo.com/api/1/search.json?';
     var token = '51980cd33f61b05bbb000ce0';
     var el = $("#top-results");
     el.empty();
-    var data = [{
-        "_score": 0.71860904,
-        "link": "http://tapirgo.com",
-        "title": "Tapir",
-        "published_on": "2011-05-05T15:13:22Z",
-        "content": "hello tapir",
-        "summary":"hello, summary!"
-      }];
-    //$.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
-    //    function(data) {
+    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+        function(data) {
             // insert function here if needed
-    //        el.append('<div class="result"><h3>No results found...</h3></div>)
-    //        if (data.size >= 1) {
-                el.empty()
+            el.append('<div class="result"><h3>No results found...</h3></div>')
+            if (data.length) {
+                el.empty();
                 $.each(data, function(key, val) {
-                    el.append('<div class="result"><h3><a href="' + val.link + 
-                        '">' + val.title + '</a></h3><p>' + val.summary + 
-                        '</p></div>');
+                    var MM = {Jan:"January", Feb:"February", Mar:"March", 
+                          Apr:"April", May:"May", Jun:"June", Jul:"July", 
+                          Aug:"August", Sep:"September", Oct:"October", 
+                          Nov:"November", Dec:"December"}
+
+                    var xx = new Date(val.published_on)
+                    el.append('<div class="result"><h3><a href="' + val.link + '">' + 
+                        val.title + '</a></h3>' +
+                        '<abbr class="published" title="'+ xx + '">' +
+                        '<i class="icon-calendar"></i> '+ xx.toLocaleDateString()+ '</abbr></div>');
                 });
-    //        };
-    //});
-    el.show("slide", { direction: "bottom" }, 500);
+            };
+    });
+    setTimeout(function() {$("#top-results").slideDown()}, 500);
 }
 </script>
 </body>
