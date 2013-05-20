@@ -7,7 +7,8 @@
                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-        <script src="../../../static/libs/bootstrap/js/bootstrap.js"></script>
+        <script src="../../../static/libs/bootstrap/js/bootstrap.min.js"></script>
+        <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -245,23 +246,23 @@ function site_search() {
     var token = '51980cd33f61b05bbb000ce0';
     var el = $("#top-results");
     el.empty();
-    el.append('<li>Fetching results...</li>')
+    el.append('<li style="padding-left: 10px">Fetching results...</li>')
     $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
         function(data) {
             // insert function here if needed
             if (data.length) {
                 el.empty();
                 $.each(data, function(key, val) {
-                    var xx = new Date(val.published_on)
-                    el.append('<li><a href="' + val.link + '">' + 
-                        '<abbr title="'+ xx + '">' + val.title + '</abbr></a>' +
-                        //'<abbr class="published" title="'+ xx + '">' +
-                        //'<i class="icon-calendar"></i> '+ xx.toLocaleDateString() + '</abbr>' +
+                    var xx = new Date(val.published_on)+""
+                    el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
+                        'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' +
                         '</li>');
                 });
             } else {
-                el.append('<li>No results found...</li>')
+                el.empty();
+                el.append('<li style="padding-left: 10px">No results found...</li>')
             };
+        $("[data-toggle=tooltip]").tooltip();
     });
     $("#top-toggle").dropdown('toggle');
 }
