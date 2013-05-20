@@ -16,15 +16,17 @@
 <body id="index" class="home">
         <header id="banner" class="body">
                 <h1><a href="../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
-                <form class="form-search" id="top-search">
+                <form class="form-inline" id="top-search">
     <div class='input-append'>
-        <input type="text" class="search-query" id="top-query" placeholder="Search..." />
+        <input type="text" id="top-query" placeholder="Search..." />
         <button class="btn add-on" id="top-btn" onclick="site_search()" type="button">
             <i class="icon-search"></i>
         </button>
+<div class="dropdown" id="top-dropdown">
+<a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+<ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
     </div>
 </form>
-<div id="top-results" class="shadow"></div>
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
@@ -323,41 +325,46 @@ with something small to get the ball rolling; so I put together an
                     $('#content').css('margin-top','0px');
                 }
         });
-        $("#top-results").hide()
-        $("#top-search").focusout(function() {
-            // TODO: make sure the correct thing is 'focused out'
-            $("#top-results").slideUp();
+       // $("#top-results").hide()
+       // $("#top-search").focusout(function() {
+       //     // TODO: make sure the correct thing is 'focused out'
+       //     $("#top-results").slideUp();
+       // });
+        $("#top-query").keydown(function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                site_search();
+                return false;
+            }
         });
     });
     
 site_search = function() {
     var query = $("#top-query").val();
-    if (query == "") return
+    if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';
     var token = '51980cd33f61b05bbb000ce0';
     var el = $("#top-results");
     el.empty();
+    el.append('<li><h3>Fetching results...</h3></li>')
     $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
         function(data) {
             // insert function here if needed
-            el.append('<div class="result"><h3>No results found...</h3></div>')
             if (data.length) {
                 el.empty();
                 $.each(data, function(key, val) {
-                    var MM = {Jan:"January", Feb:"February", Mar:"March", 
-                          Apr:"April", May:"May", Jun:"June", Jul:"July", 
-                          Aug:"August", Sep:"September", Oct:"October", 
-                          Nov:"November", Dec:"December"}
-
                     var xx = new Date(val.published_on)
-                    el.append('<div class="result"><h3><a href="' + val.link + '">' + 
-                        val.title + '</a></h3>' +
-                        '<abbr class="published" title="'+ xx + '">' +
-                        '<i class="icon-calendar"></i> '+ xx.toLocaleDateString()+ '</abbr></div>');
+                    el.append('<li><a href="' + val.link + '">' + 
+                        '<abbr title="'+ xx + '">' + val.title + '</abbr></a>' +
+                        //'<abbr class="published" title="'+ xx + '">' +
+                        //'<i class="icon-calendar"></i> '+ xx.toLocaleDateString() + '</abbr>' +
+                        '</li>');
                 });
+            } else {
+                el.append('<li><h3>No results found...</h3></li>')
             };
     });
-    setTimeout(function() {$("#top-results").slideDown()}, 500);
+    $("#top-toggle").dropdown('toggle');
 }
 </script>
 </body>
