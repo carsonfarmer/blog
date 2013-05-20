@@ -45,7 +45,7 @@
                                                                                                                                                                                 <li class="dropdown pull-right">
                                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
                                     <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu" id="social-menu" aria-labelledby="social-drop">
+                                    <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
                                         <li>
                                           <a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                                           <i class="icon-rss"></i> atom feed</a>
@@ -237,7 +237,7 @@ function site_search() {
     var token = '51980cd33f61b05bbb000ce0';
     var el = $("#top-results");
     el.empty();
-    el.append('<li><h3>Fetching results...</h3></li>')
+    el.append('<li>Fetching results...</li>')
     $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
         function(data) {
             // insert function here if needed
@@ -252,7 +252,7 @@ function site_search() {
                         '</li>');
                 });
             } else {
-                el.append('<li><h3>No results found...</h3></li>')
+                el.append('<li>No results found...</li>')
             };
     });
     $("#top-toggle").dropdown('toggle');
