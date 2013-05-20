@@ -161,6 +161,39 @@ blockquote p {
     top: 55px
 }
 
+.dropdown-menu:before {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    display: inline-block;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ccc;
+    border-left: 7px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.2);
+    content: '';
+}
+
+.dropdown-menu.pull-right:before {
+    right: 12px;
+    left: auto;
+}
+
+.dropdown-menu:after {
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+    content: '';
+}
+
+.dropdown-menu.pull-right:after {
+    right: 13px;
+    left: auto;
+}
+
 /*#top-results {
     width: 238px;
 }*/
