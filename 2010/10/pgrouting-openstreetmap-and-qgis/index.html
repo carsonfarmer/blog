@@ -135,8 +135,8 @@ sudo make install
 
 
 <p>Scroll to the bottom, and make sure you change the <code>METHOD</code> to&nbsp;&#8216;trust&#8217;.</p>
-<div class="highlight"><pre><span class="c1"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
-<span class="nb">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
+<div class="highlight"><pre><span class="cp"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
+<span class="n">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
 </pre></div>
 
 
@@ -223,7 +223,7 @@ network (Note that the values 52343 and 39219 represent network node&nbsp;ids)&#
 <span class="err">   </span> <span class="mi">20388</span> <span class="o">|</span>   <span class="mi">28715</span> <span class="o">|</span>   <span class="mf">0.271165901884914</span>
 <span class="err">   </span> <span class="mi">20387</span> <span class="o">|</span>  <span class="mi">112841</span> <span class="o">|</span>   <span class="mf">0.101669458767093</span>
 <span class="err">   </span> <span class="mi">14183</span> <span class="o">|</span>   <span class="mi">22893</span> <span class="o">|</span>   <span class="mf">0.106433172954507</span>
-<span class="o">...</span>
+<span class="p">...</span>
 </pre></div>
 
 
@@ -236,15 +236,15 @@ functions which return geometries for use with other <code>PostGIS</code> functi
 
 <div class="highlight"><pre><span class="n">id</span>  <span class="o">|</span>  <span class="n">gid</span>   <span class="o">|</span>          <span class="n">the_geom</span>
 <span class="o">----+--------+----------------------------</span>
-<span class="err"> </span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">78055</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">2</span> <span class="o">|</span>  <span class="mi">78052</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">3</span> <span class="o">|</span>  <span class="mi">78053</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">4</span> <span class="o">|</span>  <span class="mi">28717</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">5</span> <span class="o">|</span>  <span class="mi">28716</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">6</span> <span class="o">|</span>  <span class="mi">28715</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">7</span> <span class="o">|</span> <span class="mi">112841</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="err"> </span> <span class="mi">8</span> <span class="o">|</span>  <span class="mi">22893</span> <span class="o">|</span> <span class="mo">0105000020</span><span class="n">E610000001000</span><span class="o">...</span>
-<span class="o">...</span>
+<span class="err"> </span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">78055</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">2</span> <span class="o">|</span>  <span class="mi">78052</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">3</span> <span class="o">|</span>  <span class="mi">78053</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">4</span> <span class="o">|</span>  <span class="mi">28717</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">5</span> <span class="o">|</span>  <span class="mi">28716</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">6</span> <span class="o">|</span>  <span class="mi">28715</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">7</span> <span class="o">|</span> <span class="mi">112841</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">8</span> <span class="o">|</span>  <span class="mi">22893</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="p">...</span>
 </pre></div>
 
 
@@ -382,7 +382,7 @@ shortest path&nbsp;query:</p>
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

@@ -98,8 +98,8 @@ about, I discovered that the following <code>css</code> seems to fix the&nbsp;is
     <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">50px</span><span class="p">;</span>
-    <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
-    <span class="o">-</span><span class="err">o</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">50px</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">o</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0px</span> <span class="m">50px</span><span class="p">;</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -244,7 +244,7 @@ suggestions from <a href="http://stackoverflow.com/questions/166160/how-can-i-sc
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

@@ -214,7 +214,7 @@ represent <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a> ther
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

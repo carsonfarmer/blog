@@ -258,7 +258,7 @@ now do that by including this in your <span class="caps">HTML</span>&nbsp;source
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

@@ -197,7 +197,7 @@ to embed <a href="examples/olympic_countries/">this page</a> inside <a href="htt
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

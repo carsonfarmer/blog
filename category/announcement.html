@@ -471,7 +471,7 @@ new job as <a href="http://www.st-andrews.ac.uk/gsd/people/cjqf/">Research Fello
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

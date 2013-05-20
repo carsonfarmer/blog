@@ -209,7 +209,7 @@ Spatial*DataFrames.
 features, the value at that point will be&nbsp;displayed.</p>
 <div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
 y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
-y.grid <span class="o">=</span> y<span class="p">@</span>grid
+y.grid <span class="o">=</span> y<span class="o">@</span>grid
 y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
                 <p class="readmore">
                     <i class="icon-book"></i>
@@ -351,7 +351,7 @@ which ...</p>
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';

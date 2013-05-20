@@ -210,7 +210,7 @@ email me and I can forward you a <span class="caps">PDF</span>&nbsp;version.</p>
         });
     });
     
-site_search = function() {
+function site_search() {
     var query = $("#top-query").val();
     if (query == "") return false;
     var api = 'http://tapirgo.com/api/1/search.json?';
