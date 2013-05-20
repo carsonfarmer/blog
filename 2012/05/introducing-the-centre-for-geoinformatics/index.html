@@ -19,7 +19,7 @@
                 <form class="form-inline" id="top-search">
     <div class='input-append'>
         <input type="text" id="top-query" placeholder="Search..." />
-        <button class="btn add-on" id="top-btn" onclick="site_search()" type="button">
+        <button class="btn add-on" id="top-btn" type="button">
             <i class="icon-search"></i>
         </button>
 <div class="dropdown" id="top-dropdown">
@@ -202,17 +202,17 @@ out, and let us know what you&nbsp;think!</p>
                     $('#content').css('margin-top','0px');
                 }
         });
-       // $("#top-results").hide()
-       // $("#top-search").focusout(function() {
-       //     // TODO: make sure the correct thing is 'focused out'
-       //     $("#top-results").slideUp();
-       // });
         $("#top-query").keydown(function(event) {
             if (event.keyCode == 13) {
                 event.preventDefault();
                 site_search();
                 return false;
             }
+        });
+        $("#top-btn").onclick(function(event) {
+            event.preventDefault();
+            site_search();
+            return false;
         });
     });
     
