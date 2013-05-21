@@ -12,7 +12,7 @@ by [Pelican][pelican] -- a static website generator written in Python -- and is 
 on [GitHub][github] using [GitHub Pages][gh-pages]. Most of the content on the 
 site is written in Markdown, which makes it really easy to add headings, anchors, 
 and all sorts of goodies to simplify writing blog posts and web-pages.
-<--more-->
+<!--more-->
 
 The move from WordPress to Pelican was relatively painless, though there were
 some issues with comments and converting (some) existing posts to Markdown. I
@@ -22,7 +22,7 @@ Twitter [Bootstrap][bootstrap] for some of the UI, and some other tweaks. To get
 me though the process, I took advantage of several blogs and sites dedicated to 
 documenting the switch to Pelican:
 
-* [Pelican documentation (which is great)][pelican-docs]
+* [Pelican documentation][pelican-docs] (which is great)
 * [Creating A Pelican-Powered Site on GitHub Pages][magically-us]
 * [Pelican Guide - Moving From WordPress and Initial Setup][pelican-guide]
 * [Yes, this blog is now powered by Pelican][powered-by-pelican]
@@ -30,21 +30,20 @@ documenting the switch to Pelican:
 Once I got things working, I'll also start to think about some of the 
 [points here], to make things even _more_ responsive and readable.
 
+<p class="note right shadow">
+One of the things that I did have trouble with was getting my RSS feeds set 
+up like it was in my WordPress site: /?feed=rss2.
+For now, I'm just rerouting things to /feeds/all.rss.xml, but search engines 
+won't recognize this, and I'm sure there is a better solution out there... any 
+thoughts?
+</p>
 I am still missing some things that WordPress did quite nicely, including
 comments (I'm now relying on [Disqus][disqus] for comments), site search (I've 
 started using [Tapir][tapir] for this, and have implemented a cool search tool 
 that I may turn into a Pelican plug-in if I find some time), and the plethora of 
 plug-ins and themes available for WordPress sites. Having said that, it *is* 
-relatively easy to create new themes, and add social networking components like 
-a Twitter Feed using standard html. 
-
-<p class="note right shadow">
-One of the things that I *did* have trouble with was getting my `RSS` feeds set 
-up like it was in my WordPress site: `http://www.carsonfarmer.com/?feed=rss2`.
-For now, I'm just rerouting things to `http://www.carsonfarmer.com/feeds/all.rss.xml`, 
-but search engines won't recognize this, and I'm sure there is a better solution 
-out there... any thoughts?
-</p>
+relatively easy to create new themes, and adding social networking components 
+like a Twitter Feed using standard html is pretty simple. 
 
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [pelican]: http://blog.getpelican.com/
