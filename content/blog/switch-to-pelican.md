@@ -27,7 +27,7 @@ documenting the switch to Pelican:
 * [Pelican Guide - Moving From WordPress and Initial Setup][pelican-guide]
 * [Yes, this blog is now powered by Pelican][powered-by-pelican]
 
-Once I got things working, I'll also start to think about some of the 
+Once I get things working, I'll also start to think about some of the 
 [points here], to make things even _more_ responsive and readable.
 
 <p class="note right shadow">
