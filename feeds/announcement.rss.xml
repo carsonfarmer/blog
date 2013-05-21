@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 12 May 2013 11:16:00 -0400</lastBuildDate><item><title>Making the switch to Pelican</title><link>www.carsonfarmer.com/2013/05/making-the-switch-to-pelican/</link><description>&lt;p&gt;Welcome to the new and improved &lt;code&gt;carsonfarmer.com&lt;/code&gt;! If you are reading this, then
-you are enjoying my new, repsonive static website/blog. The new site is powered 
+you are enjoying my new, responsive static website/blog. The new site is powered 
 by &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; &amp;#8212; a static website generator written in Python &amp;#8212; and is hosted 
 on &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; using &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;. Most of the content on the 
 site is written in Markdown, which makes it really easy to add headings, anchors, 
 and all sorts of goodies to simplify writing blog posts and web-pages.&amp;nbsp;&amp;lt;&amp;#8212;more&amp;#8212;&amp;gt;&lt;/p&gt;
-&lt;p&gt;The move from Wordpress to Pelican was relatively painless, though there were
+&lt;p&gt;The move from WordPress to Pelican was relatively painless, though there were
 some issues with comments and converting (some) existing posts to Markdown. I
 also took the opportunity to update the site, change the page structure a bit
 and try out a few things like adding icons (&lt;a href="http://fortawesome.github.io/Font-Awesome/"&gt;FontAwesome&lt;/a&gt;), using 
@@ -20,18 +20,18 @@ documenting the switch to&amp;nbsp;Pelican:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Once I got things working, I&amp;#8217;ll also start to think about some of the 
 &lt;a href="http://arunrocks.com/moving-blogs-to-pelican/"&gt;points here&lt;/a&gt;, to make things even &lt;em&gt;more&lt;/em&gt; responsive and&amp;nbsp;readable.&lt;/p&gt;
-&lt;p&gt;I am still missing some things that Wordpress did quite nicely, including
+&lt;p&gt;I am still missing some things that WordPress did quite nicely, including
 comments (I&amp;#8217;m now relying on &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; for comments), site search (I&amp;#8217;ve 
 started using &lt;a href="http://tapirgo.com/"&gt;Tapir&lt;/a&gt; for this, and have implemented a cool search tool 
-that I may turn into a Pelican plugin if I find some time), and the plethora of 
-plugins and themes available for Wordpress sites. Having said that, it &lt;em&gt;is&lt;/em&gt; 
+that I may turn into a Pelican plug-in if I find some time), and the plethora of 
+plug-ins and themes available for WordPress sites. Having said that, it &lt;em&gt;is&lt;/em&gt; 
 relatively easy to create new themes, and add social networking components like 
 a Twitter Feed using standard&amp;nbsp;html. &lt;/p&gt;
 &lt;p class="note right shadow"&gt;
 One of the things that I *did* have trouble with was getting my `&lt;span class="caps"&gt;RSS&lt;/span&gt;` feeds set 
-up like it was in my Wordpress site: `http://www.carsonfarmer.com/?feed=rss2`.
+up like it was in my WordPress site: `http://www.carsonfarmer.com/?feed=rss2`.
 For now, I&amp;#8217;m just rerouting things to `http://www.carsonfarmer.com/feeds/all.rss.xml`, 
-but search engines won&amp;#8217;t recogize this, and I&amp;#8217;m sure there is a better solution 
+but search engines won&amp;#8217;t recognize this, and I&amp;#8217;m sure there is a better solution 
 out there&amp;#8230; any&amp;nbsp;thoughts?
 &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 12 May 2013 11:16:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-05-12:2013/05/making-the-switch-to-pelican/</guid><category>Announcement</category><category>Pelican</category><category>Blog</category><category>Update</category></item><item><title>Geocomputational landscapes and spaces</title><link>www.carsonfarmer.com/2013/03/geocomp-special-session/</link><description>&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
 &lt;a href="http://www.ammcs2013.wlu.ca/"&gt;International Conference on Applied Mathematics, Modeling and
