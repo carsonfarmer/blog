@@ -1,10 +1,10 @@
-Title: New Journal: Spatial Demography
+Title: Up and running at CUNY
 Date: 2013-05-20 23:16
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Announcement, Journal, Demography, Research
-Slug: new-journal-spatial-demography
+Tags: Announcement, Research, CUNY, Update, NYC
+Slug: up-and-running-at-cuny
 Status: draft
 
 I have recently joined the editorial team at [Spatial Demography][spatial-demography]
