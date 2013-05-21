@@ -162,6 +162,11 @@ open-source statistical programming language. <code>R</code> now has ...</p>
     }());
 </script>
 <script>
+    $(function() {
+        var search = window.location.search.substring(1)
+        if (search == "feed=rss2") window.location = "http://www.carsonfarmer.com/feeds/all.rss.xml"
+    });
+
     $(document).ready(function() {
     
         //Calculate the height of <header>

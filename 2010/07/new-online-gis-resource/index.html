@@ -165,6 +165,11 @@ Check it out here: <a href="http://gis.stackexchange.com">http://gis.stackexchan
     }());
 </script>
 <script>
+    $(function() {
+        var search = window.location.search.substring(1)
+        if (search == "feed=rss2") window.location = "http://www.carsonfarmer.com/feeds/all.rss.xml"
+    });
+
     $(document).ready(function() {
     
         //Calculate the height of <header>
