@@ -7,14 +7,14 @@ Tags: Announcement, Pelican, Blog, Update
 Slug: making-the-switch-to-pelican
 
 Welcome to the new and improved `carsonfarmer.com`! If you are reading this, then
-you are enjoying my new, repsonive static website/blog. The new site is powered 
+you are enjoying my new, responsive static website/blog. The new site is powered 
 by [Pelican][pelican] -- a static website generator written in Python -- and is hosted 
 on [GitHub][github] using [GitHub Pages][gh-pages]. Most of the content on the 
 site is written in Markdown, which makes it really easy to add headings, anchors, 
 and all sorts of goodies to simplify writing blog posts and web-pages.
 <--more-->
 
-The move from Wordpress to Pelican was relatively painless, though there were
+The move from WordPress to Pelican was relatively painless, though there were
 some issues with comments and converting (some) existing posts to Markdown. I
 also took the opportunity to update the site, change the page structure a bit
 and try out a few things like adding icons ([FontAwesome][font-awesome]), using 
@@ -30,19 +30,19 @@ documenting the switch to Pelican:
 Once I got things working, I'll also start to think about some of the 
 [points here], to make things even _more_ responsive and readable.
 
-I am still missing some things that Wordpress did quite nicely, including
+I am still missing some things that WordPress did quite nicely, including
 comments (I'm now relying on [Disqus][disqus] for comments), site search (I've 
 started using [Tapir][tapir] for this, and have implemented a cool search tool 
-that I may turn into a Pelican plugin if I find some time), and the plethora of 
-plugins and themes available for Wordpress sites. Having said that, it *is* 
+that I may turn into a Pelican plug-in if I find some time), and the plethora of 
+plug-ins and themes available for WordPress sites. Having said that, it *is* 
 relatively easy to create new themes, and add social networking components like 
 a Twitter Feed using standard html. 
 
 <p class="note right shadow">
 One of the things that I *did* have trouble with was getting my `RSS` feeds set 
-up like it was in my Wordpress site: `http://www.carsonfarmer.com/?feed=rss2`.
+up like it was in my WordPress site: `http://www.carsonfarmer.com/?feed=rss2`.
 For now, I'm just rerouting things to `http://www.carsonfarmer.com/feeds/all.rss.xml`, 
-but search engines won't recogize this, and I'm sure there is a better solution 
+but search engines won't recognize this, and I'm sure there is a better solution 
 out there... any thoughts?
 </p>
 
