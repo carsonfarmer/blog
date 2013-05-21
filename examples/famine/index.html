@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>After the Irish Famine | 1941 to 1901</title>
+    <script type="text/javascript" src="../d3.v2.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <link type="text/css" rel="stylesheet" href="colorbrewer.css"/>
+  </head>
+  <body>
+    <div class="title">
+        <h1>After the Irish Famine:</h1>
+        <h2>Population change in Ireland from 1841 to 1901</h2>
+    </div>
+    <div id="chart"></div>
+    <div id="plot" class="tooltip" tooltip="slide to activate cartogram morphing">
+      <h2 id="plot-title">Population change (All Ireland)</h2>
+    </div>
+    <div class="controls">
+      <h2>Map controls</h2> <br/>
+      <div id="key" class="tooltip" tooltip="choose ColorBrewer.org color scheme"><font size=3em>Population</font><font size=2em> (tens of thousands)</font>
+          <select>
+            <optgroup>
+              <option value="YlGn">YlGn</option>
+              <option value="YlGnBu">YlGnBu</option>
+              <option value="GnBu">GnBu</option>
+              <option value="BuGn">BuGn</option>
+              <option value="PuBuGn">PuBuGn</option>
+              <option value="PuBu">PuBu</option>
+              <option value="BuPu">BuPu</option>
+              <option value="RdPu">RdPu</option>
+              <option value="PuRd">PuRd</option>
+              <option value="OrRd">OrRd</option>
+              <option value="YlOrRd">YlOrRd</option>
+              <option value="YlOrBr">YlOrBr</option>
+              <option value="Purples">Purples</option>
+              <option value="Blues" selected>Blues</option>
+              <option value="Greens">Greens</option>
+              <option value="Oranges">Oranges</option>
+              <option value="Reds">Reds</option>
+              <option value="Greys">Greys</option>
+            </optgroup>
+          </select>
+      </div>
+      <br/><br/>
+      <div id="slider-div" class="tooltip" tooltip="slide to activate cartogram morphing" >
+        <font size=3em>Time line<br/></font>
+        <font size=5em>1841<input id="slider" type="range" min="1841" max="1901" width=400px 
+          value="1841" step="10" onchange="change_year(this.value)" />1901<br/></font>
+        <div id="range" style="font-size: 1.5em;">1841</div>
+      </div>
+    </div>
+    <div class="footer">
+        <em>Created by:</em> Carson J. Q. Farmer, because its fun to map things!
+    </div>
+    <div class="pop-up">
+      <div id="title"></div>
+      <div id="info"></div>
+      <div id="desc"></div>
+    </div>
+    <script type="text/javascript">
+    
+var start_year = 1841,
+    end_year = 1901,
+    width = 450,
+    height = 200,
+	  years = d3.range(start_year, end_year+1, 10),
+	  x = d3.scale.ordinal().domain(years).rangeBands([0 + 60, width+20]);
+
+var plot = d3.select("#plot")
+  .append("svg")
+    .attr("width", width)
+    .attr("height", height);
+    
+var irish_data = [816.6875, 654.7870, 578.7015, 537.3235, 512.4322, 462.8767, 446.7152];
+var curr_data = irish_data;
+var start_pop = Math.min.apply(Math, curr_data),
+    end_pop = Math.max.apply(Math, curr_data),
+	  y = d3.scale.linear().domain([end_pop, start_pop]).range([0+20, height - 30]),
+	  y_axis = d3.svg.axis().scale(y).ticks(4).tickSize(5).orient("left");
+	  
+var line = d3.svg.line()
+  .x(function(d,i) { return x(years[i]); })
+  .y(function(d) { return y(d); });
+  
+var area = d3.svg.area()
+    .x(line.x())
+    .y1(line.y())
+    .y0(y(start_pop));
+
+plot.append("g")
+  .attr("id", "lines")
+  .attr("class", "Blues")
+  .append("path")
+    .data([curr_data])
+    .attr("d", area)
+    .attr("class", "q4-5");
+    
+plot.append("g")
+  .attr("class", "y_axis")
+  .attr("transform", "translate(" + 59 + ",0)")
+  .call(y_axis);
+ 
+plot.append("svg:line")
+    .attr("x1", x(start_year))
+    .attr("y1", y(start_pop))
+    .attr("x2", x(end_year))
+    .attr("y2", y(start_pop))
+    .attr("class", "axis");
+    
+plot.append("svg:text")
+    .text("population (x10,000)")
+    .attr("x", -height/2)
+    .attr("y", 18)
+    .attr("transform", "rotate(-90)")
+    .attr("text-anchor", "middle");
+
+plot.append("svg:line")
+    .attr("x1", x(start_year))
+    .attr("y1", y(start_pop))
+    .attr("x2", x(start_year))
+    .attr("y2", y(end_pop))
+    .attr("class", "axis");
+			
+plot.selectAll(".xLabel")
+    .data(years)
+    .enter().append("svg:text")
+    .attr("class", "xLabel")
+    .text(String)
+    .attr("x", function(d) { return x(d) })
+    .attr("y", height-10)
+    .attr("text-anchor", "middle")
+			
+plot.selectAll(".xTicks")
+    .data(years)
+    .enter().append("svg:line")
+    .attr("class", "xTicks")
+    .attr("x1", function(d) { return x(d); })
+    .attr("y1", y(start_pop))
+    .attr("x2", function(d) { return x(d); })
+    .attr("y2", y(start_pop)+7)
+ 
+d3.select(".pop-up").style("visibility", "hidden")
+
+var projection =  d3.geo.albers()
+    .origin([-6.937,52.837])
+    .translate([400,370])
+    .scale(8500);
+
+var path = d3.geo.path()
+    .projection(projection)
+
+var svg = d3.select("#chart")
+  .append("svg")
+    .attr("class", "map")
+    .attr("height", 570)
+    .attr("width", 580)
+    .on('mousemove', pop_up);
+
+var grids = svg.append("g")
+    .attr("id", "grids")
+    .attr("class", "Blues");
+
+d3.json("cartograms/y1841_geo.geojson", function(json) {
+  grids.selectAll("path")
+      .data(json.features)
+    .enter().append("path")
+      .attr("d", path)
+      .attr("class", quantize)
+    .on("mouseover", update_pop_up)
+    .on("mouseout", hide_pop_up);
+});
+
+var names = ['under 19.9','19.9 to 36.2','36.2 to 52.5',
+             '52.5 to 68.8','over 68.8']
+
+var svg = d3.select("#key")
+  .append("svg")
+    .attr("width", 150)
+    .attr("height", 110);
+
+var blocks = svg.append("g")
+  .attr("id", "blocks")
+  .attr("class", "Blues")
+    .selectAll("rect")
+      .data(names)
+        .enter().append("rect")
+    .attr("width", 20)
+    .attr("x", 0)
+    .attr("y", function(d) {return(names.indexOf(d) * 22)})
+    .attr("height", 20)
+    .attr("class", function(d) {return("q" + (names.indexOf(d)) + "-5")})
+    .on("mouseover", mouseover_block)
+    .on("mouseout", mouseout_block);
+    
+var labels = svg.append("g")
+  .attr("id", "labels")
+    .selectAll("text")
+      .data(names)
+        .enter().append("text")
+    .attr("x", 24)
+    .text(function(d) {return(d)})
+    .attr("y", function(d) {return(names.indexOf(d) * 22 + 15)});
+
+function quantize(d) {
+  function sortit(x, y) {
+    return (x-y)
+  }
+  var year = d3.select("#slider").node().value;
+  var breaks = [199010, 362139, 525268, 688397, d.properties["Y"+year]].sort(sortit);
+  var t = "q" + (breaks.indexOf(d.properties["Y"+year])) + "-5";
+  
+  return t;
+};
+
+function get_name(d) {
+  var t = d.properties;
+  return (t.NAME ? "County " + t.NAME : "Missing Data :-(");
+};
+
+function get_count(d) {
+  var year = d3.select("#slider").node().value;
+  var t = d.properties;
+  return "Total pop in " + year + ": " + t["Y"+year];
+}
+
+function get_change(d) {
+  var year = d3.select("#slider").node().value;
+  var t = d.properties;
+  var old = parseFloat(t["Y1841"]);
+  var perc = parseFloat(t["Y"+year]) / old;
+  perc = Math.round(perc*100)
+  if (perc < 100) {
+    return "-" + perc + "%";
+  }
+  else {
+    if (perc = 100) {
+      return "Stable"
+    }
+    else {
+      return "+" + (perc - 100) + "%"
+    }
+  }
+}
+
+function mouseover_block(d, i) {
+  d3.select(this)
+    .transition()
+      .duration(10)
+      .style("opacity", 0.4);
+
+  var cls = this.attributes.class.value
+  d3.selectAll("#grids").selectAll('path')
+    .filter(function(x) {return(quantize(x) != cls)})
+    //.transition() // this may disrupt morphing
+      //.duration(50)
+      .style("opacity", 0.1);
+};
+
+function mouseout_block(d) {
+  d3.select(this)
+    .transition()
+      .duration(10)
+      .style("opacity", 1);
+
+  var cls = this.attributes.class.value
+  d3.selectAll("#grids").selectAll('path')
+    .filter(function(x) {return(quantize(x) != cls)})
+    //.transition() // this may disrupt morphing
+      //.duration(50)
+      .style("opacity", 1.0);
+};
+
+d3.select("select").on("change", function() {
+  d3.selectAll("#blocks").attr("class", this.value);
+  d3.selectAll("#grids").attr("class", this.value);
+  d3.selectAll("#lines").attr("class", this.value);
+});
+
+function change_year(year) {
+  d3.json("cartograms/y"+ year +"_geo.geojson", function(json) {
+    grids.selectAll("path")
+        .data(json.features)
+        .attr("class", quantize)
+        .transition()
+          .duration(3000)
+        .attr("d", path);
+  });
+  document.getElementById("range").innerHTML=year;
+}
+
+function update_pop_up(d) {
+  var pop_up = d3.select(".pop-up")
+  pop_up.style("visibility", "visible").transition().style("opacity", 0.8)
+  d3.select(".pop-up #title").node().innerHTML = get_name(d)
+  d3.select(".pop-up #info").node().innerHTML = get_change(d)
+  d3.select(".pop-up #desc").node().innerHTML = get_count(d)
+  update_plot(d)
+}
+
+function hide_pop_up(d) {
+  var pop_up = d3.select(".pop-up")
+  pop_up.transition().style("opacity",0)
+  pop_up.transition().delay(1000).style("visibility", "hidden")
+  update_plot(null)
+}
+
+function pop_up() {
+  // update pop-up position
+  var coord = d3.svg.mouse(this)
+  var pop_up = d3.select(".pop-up")
+  pop_up.style("right", (Math.abs(580 - coord[0])+15)+"px");
+  pop_up.style("top",coord[1]-15+"px");
+  //.transition().duration(300).style("opacity", 1.0)
+}
+
+function update_plot(d) {
+
+  var name = "";
+  if (d != null) {
+    curr_data = [];
+    years.forEach(function(year) {
+      curr_data.push(d.properties["Y"+year]/10000)
+      });
+    name = d.properties.NAME
+  } else {
+    curr_data = irish_data;
+    name = "All Ireland"
+  }
+
+  start_pop = Math.min.apply(Math, curr_data),
+  end_pop = Math.max.apply(Math, curr_data),
+  y.domain([end_pop, start_pop]);
+  
+  d3.select("#lines").selectAll("path")
+    .data([curr_data])
+    .transition()
+    .attr("d", area)
+    .attr("class", "q4-5");
+    
+  d3.select(".y_axis").transition().call(y_axis)
+  
+  d3.select("#plot-title").node().innerHTML = "Population change ("+ name + ")"
+}
+    </script>
+  </body>
+</html>
