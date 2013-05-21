@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Carson Farmer - Linux</title>
+        <title>Carson Farmer - Blog</title>
         <link rel="stylesheet" href="../theme/css/main.css">
                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -75,14 +75,14 @@
                     <ol id="posts-list" class="hfeed">
                         <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="../2009/07/keep-an-eye-on-long-running-processes/" rel="bookmark"
-                           title="Permalink to ‘Watch’ long running processes"><span class="quo">&#8216;</span>Watch&#8217; long running&nbsp;processes</a></h1>
+                    <h1><a href="../2013/05/making-the-switch-to-pelican/" rel="bookmark"
+                           title="Permalink to Making the switch to Pelican">Making the switch to&nbsp;Pelican</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-07-08T12:23:00">
+                  <abbr class="published" title="2013-05-12T11:16:00">
                       <i class="icon-calendar"></i>
-                      Wed 08 July 2009
+                      Sun 12 May 2013
                   </abbr>
                                         <address class="vcard author">
                           <i class="icon-user"></i>
@@ -91,179 +91,22 @@
                                     <footer class="post-info">
                           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="../category/helpful-tips.html">Helpful tips</a> 
+        <a href="../category/announcement.html">Announcement</a> 
             </p>
                   </footer>
-                <p>The other day I was loading a shapefile of approximately 11 million
-records into a PostGIS database (stay tuned for more on that later) and
-I wanted to know when shp2pgsql was done. Instead of continually
-checking the console, I decided to &#8216;watch&#8217; the process using the *nix
-command <code>watch</code>. I discovered this handy tool a while ago, and have
-found that for long running processes, I can use <code>watch</code> to notify me
-when the process has finished, using the following&nbsp;command:</p>
-<div class="highlight"><pre>watch -ben 1 <span class="s2">&quot;ps u -C shp2pgsql&quot;</span>
-</pre></div>
-
-
-
+                <p>Welcome to the new and improved <code>carsonfarmer.com</code>! If you are reading this, then
+you are enjoying my new, repsonive static website/blog. The new site is powered 
+by <a href="http://blog.getpelican.com/">Pelican</a> &#8212; a static website generator written in Python &#8212; and is hosted 
+on <a href="https://github.com/">GitHub</a> using <a href="http://pages.github.com/">GitHub Pages</a>. Most of the content on ...</p>
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="../2009/07/keep-an-eye-on-long-running-processes/">read more</a>
+                    <a class="readmore" href="../2013/05/making-the-switch-to-pelican/">read more</a>
                 </p>
-                    <p><i class="icon-comments"></i> <a href="../2009/07/keep-an-eye-on-long-running-processes/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-                    
-
-                        <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="../2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
-                           title="Permalink to gedit: The ultimate LaTeX editor">gedit: The ultimate LaTeX&nbsp;editor</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-12-12T00:56:00">
-                      <i class="icon-calendar"></i>
-                      Fri 12 December 2008
-                  </abbr>
-                                        <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
-                      </address>
-                                    <footer class="post-info">
-                          <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="../category/helpful-tips.html">Helpful tips</a> 
-            </p>
-                  </footer>
-                <p>Out of the box <em>gedit</em> is a basic text editor, but it comes equipped
-with about 12 standard plugins, and another 9 readily available. In
-addition to this, there are a range of &#8216;third-party&#8217; plugins developed
-to do various specific tasks, such as assist you in writing and
-exporting LaTeX documents!
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="../2008/12/gedit-the-ultimate-latex-editor/">read more</a>
-                </p>
-                    <p><i class="icon-comments"></i> <a href="../2008/12/gedit-the-ultimate-latex-editor/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-                    
-
-                        <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="../2008/11/quick-guide-to-setting-up-postgis-database/" rel="bookmark"
-                           title="Permalink to Quick guide to setting up a PostGIS database">Quick guide to setting up a PostGIS&nbsp;database</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-11-28T12:01:00">
-                      <i class="icon-calendar"></i>
-                      Fri 28 November 2008
-                  </abbr>
-                                        <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
-                      </address>
-                                    <footer class="post-info">
-                          <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="../category/helpful-tips.html">Helpful tips</a> 
-            </p>
-                  </footer>
-                <p>Recently I decided to seriously start using PostGIS to manage my spatial
-data. As I have several projects on the go, organizing and managing my
-data effectively has become extremely important, and PostGIS is by far
-the most convenient way to do this. There is lots of documentation out
-there that explains in detail how to set up PostGIS, but by far the best
-reference I&#8217;ve found is from <a href="http://tim.linfiniti.com/" title="Tim Sutton's blog">Tim Sutton&#8217;s blog</a>, mainly because he
-uses Ubuntu, and sudo-apt gets everything you need to have PostGIS
-working in minutes.
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="../2008/11/quick-guide-to-setting-up-postgis-database/">read more</a>
-                </p>
-                    <p><i class="icon-comments"></i> <a href="../2008/11/quick-guide-to-setting-up-postgis-database/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-                    
-
-                        <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="../2008/09/r-spatial-indentify-tool/" rel="bookmark"
-                           title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-09-23T12:36:00">
-                      <i class="icon-calendar"></i>
-                      Tue 23 September 2008
-                  </abbr>
-                                        <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
-                      </address>
-                                    <footer class="post-info">
-                          <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="../category/helpful-tips.html">Helpful tips</a> 
-            </p>
-                  </footer>
-                <p>This is useful for visually exploring R spatial data such as
-<code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
-features, the value at that point will be&nbsp;displayed.</p>
-<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
-y.grid <span class="o">=</span> y<span class="o">@</span>grid
-y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="../2008/09/r-spatial-indentify-tool/">read more</a>
-                </p>
-                    <p><i class="icon-comments"></i> <a href="../2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-                    
-
-                        <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="../2008/09/find-and-replace-multiple-files/" rel="bookmark"
-                           title="Permalink to Find and replace multiple files">Find and replace multiple&nbsp;files</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-09-08T09:09:00">
-                      <i class="icon-calendar"></i>
-                      Mon 08 September 2008
-                  </abbr>
-                                        <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
-                      </address>
-                                    <footer class="post-info">
-                          <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="../category/helpful-tips.html">Helpful tips</a> 
-            </p>
-                  </footer>
-                <p>Recently, I had to do a find and replace over several individual python
-files.There are plenty of scripts out there which will accomplish this,
-but I was interested in something simple, and preferably a single line
-command. After a lot of Google-ing, I ended up finding <a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487">this post</a>,
-which ...</p>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="../2008/09/find-and-replace-multiple-files/">read more</a>
-                </p>
-                    <p><i class="icon-comments"></i> <a href="../2008/09/find-and-replace-multiple-files/#disqus_thread">comments</a></p>
+                    <p><i class="icon-comments"></i> <a href="../2013/05/making-the-switch-to-pelican/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
                     </ol><!-- /#posts-list -->
-                            <p class="paginator">
-        1 / 1
-    </p>                        </section><!-- /#content -->
+                        </section><!-- /#content -->
                     <section id="extras" class="body shadow">
                     <div class="twitter">
         <h2><i class="icon-twitter"></i> twitter</h2>

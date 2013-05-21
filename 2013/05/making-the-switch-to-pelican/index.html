@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Because its fun to map stuff…</title>
+        <title>Making the switch to Pelican</title>
         <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -72,143 +72,69 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="../../../2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
-           title="Permalink to Because its fun to map stuff…">Because its fun to map&nbsp;stuff&#8230;</a></h1>
+        <a href="../../../2013/05/making-the-switch-to-pelican/" rel="bookmark"
+           title="Permalink to Making the switch to Pelican">Making the switch to&nbsp;Pelican</a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-      <abbr class="published" title="2012-03-30T17:46:00">
+      <abbr class="published" title="2013-05-12T11:16:00">
           <i class="icon-calendar"></i>
-          Fri 30 March 2012
+          Sun 12 May 2013
       </abbr>
     </header>
 
     <div class="entry-content">
-      <p>Its been quite a while since my last post, and its Friday and I was
-feeling creative, so I decided to map something! I&#8217;ve been looking for
-an excuse to produce a nice graphic like the one <a href="http://underdark.wordpress.com/about/">Anita Graser</a>
-created to represent Vienna’s green-spaces. She used <a href="http://qgis.org/">Quantum
-<span class="caps">GIS</span></a> to produce a <a href="http://underdark.wordpress.com/2012/03/04/mapping-density-with-hexagonal-grids/">hexagonal grid</a> for representing the density of
-Viennese trees instead of the standard heat map or kernel density map,
-and the results are quite nice! I&#8217;m a huge fan of <span class="caps">QGIS</span>, but I tend to do
-most of my work in R, so I decided to see if I could produce something
-similar using R. Turns out you can, and the final results are displayed
-below (read on to see the full work-flow). Instead of trees, I went
-ahead and mapped the locations of unique visitors to
-<code>http://www.carsonfarmer.com/</code> between 2009 and&nbsp;2011:</p>
-<p><a href="../../../static/images/website_visitors.svg"><img alt="Visitors map" src="../../../static/images/website_visitors.svg" /></a>
+      <p>Welcome to the new and improved <code>carsonfarmer.com</code>! If you are reading this, then
+you are enjoying my new, repsonive static website/blog. The new site is powered 
+by <a href="http://blog.getpelican.com/">Pelican</a> &#8212; a static website generator written in Python &#8212; and is hosted 
+on <a href="https://github.com/">GitHub</a> using <a href="http://pages.github.com/">GitHub Pages</a>. Most of the content on the 
+site is written in Markdown, which makes it really easy to add headings, anchors, 
+and all sorts of goodies to simplify writing blog posts and web-pages.&nbsp;&lt;&#8212;more&#8212;&gt;</p>
+<p>The move from Wordpress to Pelican was relatively painless, though there were
+some issues with comments and converting (some) existing posts to Markdown. I
+also took the opportunity to update the site, change the page structure a bit
+and try out a few things like adding icons (<a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>), using 
+Twitter <a href="http://twitter.github.io/bootstrap/">Bootstrap</a> for some of the <span class="caps">UI</span>, and some other tweaks. To get 
+me though the process, I took advantage of several blogs and sites dedicated to 
+documenting the switch to&nbsp;Pelican:</p>
+<ul>
+<li><a href="http://docs.getpelican.com/">Pelican documentation (which is&nbsp;great)</a></li>
+<li><a href="http://magically.us/2013-02-03/creating-a-pelican-powered-site-on-github-pages.html">Creating A Pelican-Powered Site on GitHub&nbsp;Pages</a></li>
+<li><a href="http://www.macdrifter.com/2012/08/pelican-guide-moving-from-wordpress-and-initial-setup.html">Pelican Guide - Moving From WordPress and Initial&nbsp;Setup</a></li>
+<li><a href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/">Yes, this blog is now powered by&nbsp;Pelican</a></li>
+</ul>
+<p>Once I got things working, I&#8217;ll also start to think about some of the 
+<a href="http://arunrocks.com/moving-blogs-to-pelican/">points here</a>, to make things even <em>more</em> responsive and&nbsp;readable.</p>
+<p>I am still missing some things that Wordpress did quite nicely, including
+comments (I&#8217;m now relying on <a href="http://disqus.com/">Disqus</a> for comments), site search (I&#8217;ve 
+started using <a href="http://tapirgo.com/">Tapir</a> for this, and have implemented a cool search tool 
+that I may turn into a Pelican plugin if I find some time), and the plethora of 
+plugins and themes available for Wordpress sites. Having said that, it <em>is</em> 
+relatively easy to create new themes, and add social networking components like 
+a Twitter Feed using standard&nbsp;html. </p>
+<p class="note right shadow">
+One of the things that I *did* have trouble with was getting my `<span class="caps">RSS</span>` feeds set 
+up like it was in my Wordpress site: `http://www.carsonfarmer.com/?feed=rss2`.
+For now, I&#8217;m just rerouting things to `http://www.carsonfarmer.com/feeds/all.rss.xml`, 
+but search engines won&#8217;t recogize this, and I&#8217;m sure there is a better solution 
+out there&#8230; any&nbsp;thoughts?
 </p>
-<h3>Work-flow</h3>
-<p>Firstly, I downloaded the logs for <code>www.carsonfarmer.com</code>. I did this
-directly from the console, though I&#8217;m pretty sure I could have done this
-from R as well. Next, I needed to extract the unique <span class="caps">IP</span> addresses from
-the logs. I found this nice grep one-liner from <a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/">here</a>, which I
-modified to grab all unique <span class="caps">IP</span> addresses that &#8216;<span class="caps">GET</span>&#8217; something from the&nbsp;site:</p>
-<div class="highlight"><pre>grep <span class="s1">&#39;<span class="caps">GET</span>&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
-</pre></div>
-
-
-<p>To actually map the <span class="caps">IP</span> addresses, I obviously needed some way to convert
-the raw <span class="caps">IP</span> addresses to latitude and longitude coordinates. Enter the
-very nice <a href="http://www.datasciencetoolkit.org/">Data Science Toolkit (<span class="caps">DSTK</span>)</a> from Pete Warden and the very
-handy <a href="https://github.com/rtelmore/RDSTK"><span class="caps">RDSTK</span> R package</a> from Ryan Elmore! Basically, the <span class="caps">DSTK</span> has an
-<span class="caps">API</span> that can be queried for all sorts of information useful for &#8216;data
-science&#8217; applications, and the <span class="caps">RDSTK</span> makes it possible to query to <span class="caps">API</span>
-directly from within R. I first heard about both these projects from the
-<a href="http://blog.revolutionanalytics.com">Revolution Analytics blog</a>, where there is an <a href="http://blog.revolutionanalytics.com/2011/05/mapping-locations-in-r-with-the-data-science-toolkit.html">article</a> summarising
-Ryan Elmore&#8217;s <a href="http://thelogcabin.wordpress.com/2011/05/02/r-and-the-data-science-toolkit/">work on <span class="caps">RDSTK</span></a>, and a few other handy links. <span class="caps">RDSTK</span>
-isn&#8217;t (yet?) available on <a href="http://cran.r-project.org/"><span class="caps">CRAN</span></a>, so I downloaded it directly from&nbsp;github:</p>
-<div class="highlight"><pre>wget https://github.com/rtelmore/RDSTK/raw/master/src/RDSTK_1.0.tar.gz
-</pre></div>
-
-
-<p>Then I installed it via <code>R CMD INSTALL</code> (note that it requires other R
-packages: <code>RCurl</code>, <code>rjson</code>, and <code>plyr</code>):</p>
-<div class="highlight"><pre>R CMD INSTALL RDSTK_1.0.tar.gz
-</pre></div>
-
-
-<p>Once I had all that stuff installed and ready to go, I actually started
-up an R session and got&nbsp;working:</p>
-<div class="highlight"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
-library<span class="p">(</span><span class="caps">RDSTK</span><span class="p">)</span>
-<span class="o">?</span> ip2coordinates
-</pre></div>
-
-
-<p>The <code>ip2coordinates</code> function requires multiple IPs to be contained
-within a single string with comma-separated <span class="caps">IP</span> addresses, but we can
-only do a few IPs at a time (about 100 I think?) so I had to do this
-part in a loop (it probably isn&#8217;t polite to slam <span class="caps">DSTK</span> with 1,000s of
-requests, so be&nbsp;nice!).</p>
-<div class="highlight"><pre>ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
-out <span class="o">=</span> ip2coordinates<span class="p">(</span>ips<span class="p">)</span>
-last <span class="o">=</span> <span class="m">80</span>
-s <span class="o">=</span> c<span class="p">(</span>seq<span class="p">(</span><span class="m">160</span><span class="p">,</span> nrow<span class="p">(</span>addresses<span class="p">),</span> <span class="m">80</span><span class="p">),</span> nrow<span class="p">(</span>addresses<span class="p">))</span>
-<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> s<span class="p">)</span> <span class="p">{</span>
-    ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[(</span>last<span class="m">+1</span><span class="p">)</span><span class="o">:</span>i<span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
-    out <span class="o">=</span> rbind<span class="p">(</span>out<span class="p">,</span> ip2coordinates<span class="p">(</span>ips<span class="p">))</span>
-    last <span class="o">=</span> i
-<span class="p">}</span>
-</pre></div>
-
-
-<p>Once that is done running, the next step(s) are to a) convert the
-returned <code>data.frame</code> to a <code>SpatialPointsDataFrame</code>, b) create a
-<code>SpatialGrid</code> based on the points, c) create a <code>SpatialPolygons</code> object
-from a hexagonal sample of the grid, and then finally d) create a
-<code>SpatialPolygonsDataFrame</code> for&nbsp;plotting:</p>
-<div class="highlight"><pre>library<span class="p">(</span>sp<span class="p">)</span>
-<span class="c1"># make the output into a Spatial* object</span>
-coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> <span class="o">~</span>longitude<span class="o">+</span>latitude
-library<span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
-sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc"><span class="caps">NULL</span></span><span class="p">)</span><span class="o">$</span><span class="caps">SG</span>
-hex_pts <span class="o">=</span> spsample<span class="p">(</span>sg<span class="p">,</span> type<span class="o">=</span><span class="s">&#39;hexagonal&#39;</span><span class="p">,</span> cellsize<span class="o">=</span>sg<span class="o">@</span>grid<span class="o">@</span>cellsize<span class="p">)</span>
-hex_poly <span class="o">=</span> HexPoints2SpatialPolygons<span class="p">(</span>hex_pts<span class="p">)</span>
-pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span>
-pts_poly_count <span class="o">=</span> sapply<span class="p">(</span>pts_poly<span class="p">,</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> nrow<span class="p">(</span>x<span class="p">))</span>
-poly <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>poly<span class="p">,</span> data.frame<span class="p">(</span><span class="s">&#39;count&#39;</span><span class="o">=</span>pts_poly_count<span class="p">),</span> 
-    match.<span class="caps">ID</span><span class="o">=</span><span class="kc"><span class="caps">FALSE</span></span><span class="p">)</span>
-</pre></div>
-
-
-<p>Ok, now for some&nbsp;plotting!</p>
-<div class="highlight"><pre><span class="c1"># pick some reasonable break points</span>
-breaks <span class="o">=</span> c<span class="p">(</span><span class="m">1.0</span><span class="p">,</span> <span class="m">10.0</span><span class="p">,</span> <span class="m">20.0</span><span class="p">,</span> <span class="m">50.0</span><span class="p">,</span> <span class="m">100.0</span><span class="p">,</span> <span class="m">500.0</span><span class="p">,</span> <span class="m">2000.0</span><span class="p">)</span>
-<span class="c1"># use RColorBrewer to get a nice blue palette</span>
-library<span class="p">(</span>RColorBrewer<span class="p">)</span>
-<span class="c1"># don&#39;t use the lightest colour, it looks washed out</span>
-cols <span class="o">=</span> brewer.pal<span class="p">(</span><span class="m">7</span><span class="p">,</span><span class="s">&quot;Blues&quot;</span><span class="p">)[</span><span class="m">-1</span><span class="p">]</span> 
-<span class="c1"># plot the grid, which produces something close to our final product</span>
-spplot<span class="p">(</span>poly<span class="p">[</span>poly<span class="o">$</span>count<span class="o">&gt;</span><span class="m">0</span><span class="p">,],</span> col<span class="o">=</span><span class="s">&#39;white&#39;</span><span class="p">,</span> col.regions<span class="o">=</span>cols<span class="p">,</span> at<span class="o">=</span>breaks<span class="p">,</span> 
-       par.settings<span class="o">=</span>list<span class="p">(</span>axis.line<span class="o">=</span>list<span class="p">(</span>col<span class="o">=</span><span class="s">&#39;transparent&#39;</span><span class="p">)))</span>
-</pre></div>
-
-
-<p>I then used <a href="http://inkscape.org/">Inkscape</a> to tweak the final product, adding titles and
-labels and modifying the colour key to look like something a bit more
-suited to the map at hand. In the end I had a nice map of my blog
-readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!</p>
-<p>Carson</p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/announcement.html">Announcement</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="../../../tag/data-science-toolkit.html">Data Science Toolkit</a>
-         <a href="../../../tag/hexagonal-grid.html">Hexagonal Grid</a>
-         <a href="../../../tag/ip-addreses.html">IP Addreses</a>
-         <a href="../../../tag/mapping.html">Mapping</a>
-         <a href="../../../tag/r-spatial.html">R spatial</a>
-         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="../../../tag/how-to.html">How to</a>
+         <a href="../../../tag/announcement.html">Announcement</a>
+         <a href="../../../tag/pelican.html">Pelican</a>
+         <a href="../../../tag/blog.html">Blog</a>
+         <a href="../../../tag/update.html">Update</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
         <h2>Comments !</h2>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
-          var disqus_identifier = "2012/03/because-its-fun-to-map-stuff/";
-          var disqus_url = "../../../2012/03/because-its-fun-to-map-stuff/";
+          var disqus_identifier = "2013/05/making-the-switch-to-pelican/";
+          var disqus_url = "../../../2013/05/making-the-switch-to-pelican/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';

@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="www.carsonfarmer.com/" rel="alternate"></link><link href="/feeds/announcement.atom.xml" rel="self"></link><id>www.carsonfarmer.com/</id><updated>2013-03-15T17:15:00-04:00</updated><entry><title>Geocomputational landscapes and spaces</title><link href="www.carsonfarmer.com/2013/03/geocomp-special-session/" rel="alternate"></link><updated>2013-03-15T17:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-03-15:2013/03/geocomp-special-session/</id><summary type="html">&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="www.carsonfarmer.com/" rel="alternate"></link><link href="/feeds/announcement.atom.xml" rel="self"></link><id>www.carsonfarmer.com/</id><updated>2013-05-12T11:16:00-04:00</updated><entry><title>Making the switch to Pelican</title><link href="www.carsonfarmer.com/2013/05/making-the-switch-to-pelican/" rel="alternate"></link><updated>2013-05-12T11:16:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-05-12:2013/05/making-the-switch-to-pelican/</id><summary type="html">&lt;p&gt;Welcome to the new and improved &lt;code&gt;carsonfarmer.com&lt;/code&gt;! If you are reading this, then
+you are enjoying my new, repsonive static website/blog. The new site is powered 
+by &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; &amp;#8212; a static website generator written in Python &amp;#8212; and is hosted 
+on &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt; using &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;. Most of the content on the 
+site is written in Markdown, which makes it really easy to add headings, anchors, 
+and all sorts of goodies to simplify writing blog posts and web-pages.&amp;nbsp;&amp;lt;&amp;#8212;more&amp;#8212;&amp;gt;&lt;/p&gt;
+&lt;p&gt;The move from Wordpress to Pelican was relatively painless, though there were
+some issues with comments and converting (some) existing posts to Markdown. I
+also took the opportunity to update the site, change the page structure a bit
+and try out a few things like adding icons (&lt;a href="http://fortawesome.github.io/Font-Awesome/"&gt;FontAwesome&lt;/a&gt;), using 
+Twitter &lt;a href="http://twitter.github.io/bootstrap/"&gt;Bootstrap&lt;/a&gt; for some of the &lt;span class="caps"&gt;UI&lt;/span&gt;, and some other tweaks. To get 
+me though the process, I took advantage of several blogs and sites dedicated to 
+documenting the switch to&amp;nbsp;Pelican:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://docs.getpelican.com/"&gt;Pelican documentation (which is&amp;nbsp;great)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://magically.us/2013-02-03/creating-a-pelican-powered-site-on-github-pages.html"&gt;Creating A Pelican-Powered Site on GitHub&amp;nbsp;Pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.macdrifter.com/2012/08/pelican-guide-moving-from-wordpress-and-initial-setup.html"&gt;Pelican Guide - Moving From WordPress and Initial&amp;nbsp;Setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blog.aclark.net/2012/09/21/yes-this-blog-is-now-powered-by-pelican/"&gt;Yes, this blog is now powered by&amp;nbsp;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once I got things working, I&amp;#8217;ll also start to think about some of the 
+&lt;a href="http://arunrocks.com/moving-blogs-to-pelican/"&gt;points here&lt;/a&gt;, to make things even &lt;em&gt;more&lt;/em&gt; responsive and&amp;nbsp;readable.&lt;/p&gt;
+&lt;p&gt;I am still missing some things that Wordpress did quite nicely, including
+comments (I&amp;#8217;m now relying on &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; for comments), site search (I&amp;#8217;ve 
+started using &lt;a href="http://tapirgo.com/"&gt;Tapir&lt;/a&gt; for this, and have implemented a cool search tool 
+that I may turn into a Pelican plugin if I find some time), and the plethora of 
+plugins and themes available for Wordpress sites. Having said that, it &lt;em&gt;is&lt;/em&gt; 
+relatively easy to create new themes, and add social networking components like 
+a Twitter Feed using standard&amp;nbsp;html. &lt;/p&gt;
+&lt;p class="note right shadow"&gt;
+One of the things that I *did* have trouble with was getting my `&lt;span class="caps"&gt;RSS&lt;/span&gt;` feeds set 
+up like it was in my Wordpress site: `http://www.carsonfarmer.com/?feed=rss2`.
+For now, I&amp;#8217;m just rerouting things to `http://www.carsonfarmer.com/feeds/all.rss.xml`, 
+but search engines won&amp;#8217;t recogize this, and I&amp;#8217;m sure there is a better solution 
+out there&amp;#8230; any&amp;nbsp;thoughts?
+&lt;/p&gt;</summary><category term="Announcement"></category><category term="Pelican"></category><category term="Blog"></category><category term="Update"></category></entry><entry><title>Geocomputational landscapes and spaces</title><link href="www.carsonfarmer.com/2013/03/geocomp-special-session/" rel="alternate"></link><updated>2013-03-15T17:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-03-15:2013/03/geocomp-special-session/</id><summary type="html">&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
 &lt;a href="http://www.ammcs2013.wlu.ca/"&gt;International Conference on Applied Mathematics, Modeling and
 Computational Science&lt;/a&gt; (&lt;span class="caps"&gt;AMMCS&lt;/span&gt;-2013), to be held at &lt;a href="https://www.wlu.ca/"&gt;Wilfrid Laurier
 University&lt;/a&gt;, August 26-30,&amp;nbsp;2013.&lt;/p&gt;
@@ -195,7 +229,7 @@ v &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; sort&lt;span class="p"&gt;(&lt;/s
 &lt;span class="c1"&gt;# create dataframe for word cloud&lt;/span&gt;
 d &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; data.frame&lt;span class="p"&gt;(&lt;/span&gt;word &lt;span class="o"&gt;=&lt;/span&gt; names&lt;span class="p"&gt;(&lt;/span&gt;v&lt;span class="p"&gt;),&lt;/span&gt; freq&lt;span class="o"&gt;=&lt;/span&gt;v&lt;span class="p"&gt;)&lt;/span&gt;
 png&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wordcloud.png&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; width&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1280&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; height&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;800&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-wordcloud&lt;span class="p"&gt;(&lt;/span&gt;d&lt;span class="p"&gt;$&lt;/span&gt;word&lt;span class="p"&gt;,&lt;/span&gt;d&lt;span class="p"&gt;$&lt;/span&gt;freq&lt;span class="p"&gt;,&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.3&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; vfont&lt;span class="o"&gt;=&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sans serif&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plain&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+wordcloud&lt;span class="p"&gt;(&lt;/span&gt;d&lt;span class="o"&gt;$&lt;/span&gt;word&lt;span class="p"&gt;,&lt;/span&gt;d&lt;span class="o"&gt;$&lt;/span&gt;freq&lt;span class="p"&gt;,&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.3&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; vfont&lt;span class="o"&gt;=&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sans serif&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plain&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 dev.off&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
