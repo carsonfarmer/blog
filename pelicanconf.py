@@ -7,6 +7,8 @@ SITENAME = u'Carson Farmer'
 SITEURL = u'www.carsonfarmer.com'
 SITESUBTITLE = u'www.carsonfarmer.com'
 
+GOOGLE_ANALYTICS = "UA-41110370-1"
+
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
 AUTHOR_EMAIL = "carson.farmer@gmail.com"
