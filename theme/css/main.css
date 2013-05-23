@@ -244,30 +244,31 @@ blockquote p {
 .note:before {
 	content:"";
 	position:absolute;
-	border-style:solid;
 	top:10px; /* controls vertical position */
 	bottom:auto;
 	left:-30px; /* value = - border-left-width - border-right-width */
-	border-width:15px 30px 15px 0;
-	border-color:transparent #B0C4DE;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 30px dashed #B0C4DE;
     display:block; 
     width: 0;
+    height: 0;
 }
 
 /* creates the smaller  triangle */
-.note:after {
+/*.note:after {
 	content:"";
-	position:absolute;
+	position: absolute;
 	border-style:solid;
-	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top)
 	bottom:auto;
-	left:-21px; /* value = - border-left-width - border-right-width */
+	left:-21px; /* value = - border-left-width - border-right-width
 	border-width:9px 21px 9px 0;
 	border-color:transparent #B0C4DE;
-    /* reduce the damage in FF3.0 */
+    /* reduce the damage in FF3.0
     display:block; 
     width:0;
-}
+}*/
 
 .note.right:before {}
 
@@ -277,19 +278,21 @@ blockquote p {
 	top:10px; /* controls vertical position */
 	bottom:auto;
     left:auto;
-	right:-30px; /* value = - border-left-width - border-right-width */
-	border-width:15px 0 15px 30px;
-	border-color:transparent #B0C4DE;
+	right:-45px; /* value = - border-left-width - border-right-width */
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 30px dashed #B0C4DE;
+	border-right: 15px dashed transparent;
 }
 
-.note.left:after {
-	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top) */
+/*.note.left:after {
+	top:16px; /* value = (:before top) + (:before border-top) - (:after border-top)
 	bottom:auto;
     left:auto;
-	right:-21px; /* value = - border-left-width - border-right-width */
+	right:-21px; /* value = - border-left-width - border-right-width
 	border-width:9px 0 9px 21px;
 	border-color:transparent #B0C4DE;
-}
+}*/
 
 
 
@@ -689,14 +692,10 @@ article header .published {
     float: right;
 }
 
-.category {
-    float: left;
+.category, .tag {
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-size: .8em;
-}
-
-.tag {
-    font-size: .8em;
-    clear: both;
 }
 
 /* Content */
