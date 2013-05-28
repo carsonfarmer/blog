@@ -21,20 +21,21 @@ documenting the switch to&amp;nbsp;Pelican:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Once I get things working, I&amp;#8217;ll also start to think about some of the 
 &lt;a href="http://arunrocks.com/moving-blogs-to-pelican/"&gt;points here&lt;/a&gt;, to make things even &lt;em&gt;more&lt;/em&gt; responsive and&amp;nbsp;readable.&lt;/p&gt;
-&lt;p class="note right shadow"&gt;
-One of the things that I did have trouble with was getting my &lt;span class="caps"&gt;RSS&lt;/span&gt; feeds set 
-up like it was in my WordPress site: /?feed=rss2.
-For now, I&amp;#8217;m just rerouting things to /feeds/all.rss.xml, but search engines 
-won&amp;#8217;t recognize this, and I&amp;#8217;m sure there is a better solution out there&amp;#8230; any&amp;nbsp;thoughts?
-&lt;/p&gt;
-
-&lt;p&gt;I am still missing some things that WordPress did quite nicely, including
+&lt;p&gt;&lt;span class="note right shadow"&gt;
+One of the things that I did have trouble with was getting my &lt;code&gt;RSS&lt;/code&gt; feeds set 
+up like it was in my WordPress site: &lt;code&gt;/?feed=rss2&lt;/code&gt;.
+For now, I&amp;#8217;m just rerouting things to &lt;code&gt;/feeds/all.rss.xml&lt;/code&gt;, but search engines 
+won&amp;#8217;t recognize this, and I&amp;#8217;m sure there is a better solution out there&amp;#8230; any 
+thoughts?
+&lt;/span&gt;
+I am still missing some things that WordPress did quite nicely, including
 comments (I&amp;#8217;m now relying on &lt;a href="http://disqus.com/"&gt;Disqus&lt;/a&gt; for comments), site search (I&amp;#8217;ve 
 started using &lt;a href="http://tapirgo.com/"&gt;Tapir&lt;/a&gt; for this, and have implemented a cool search tool 
 that I may turn into a Pelican plug-in if I find some time), and the plethora of 
 plug-ins and themes available for WordPress sites. Having said that, it &lt;em&gt;is&lt;/em&gt; 
 relatively easy to create new themes, and adding social networking components 
-like a Twitter Feed using standard html is pretty&amp;nbsp;simple. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 12 May 2013 11:16:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-05-12:2013/05/making-the-switch-to-pelican/</guid><category>Announcement</category><category>Pelican</category><category>Blog</category><category>Update</category></item><item><title>Geocomputational landscapes and spaces</title><link>www.carsonfarmer.com/2013/03/geocomp-special-session/</link><description>&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
+like a Twitter feed using standard html is pretty simple. 
+&lt;/br&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 12 May 2013 11:16:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-05-12:2013/05/making-the-switch-to-pelican/</guid><category>Announcement</category><category>Pelican</category><category>Blog</category><category>Update</category></item><item><title>Geocomputational landscapes and spaces</title><link>www.carsonfarmer.com/2013/03/geocomp-special-session/</link><description>&lt;p&gt;Special session titled &amp;#8220;Geocomputational landscapes and spaces&amp;#8221; at the
 &lt;a href="http://www.ammcs2013.wlu.ca/"&gt;International Conference on Applied Mathematics, Modeling and
 Computational Science&lt;/a&gt; (&lt;span class="caps"&gt;AMMCS&lt;/span&gt;-2013), to be held at &lt;a href="https://www.wlu.ca/"&gt;Wilfrid Laurier
 University&lt;/a&gt;, August 26-30,&amp;nbsp;2013.&lt;/p&gt;
