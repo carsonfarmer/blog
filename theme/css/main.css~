@@ -119,7 +119,12 @@ dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
-pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+pre {
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
 
 /* Quotes */
 q {
@@ -692,14 +697,32 @@ article header .published {
     float: right;
 }
 
-.category {
-    float: left;
+.category, .tag {
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-size: .8em;
 }
 
-.tag {
-    font-size: .8em;
-    clear: both;
+.output {
+    background: transparent;
+}
+
+.prompt {
+    width: 70px;
+    text-align: right;
+    font-family: monospace;
+    float: left;
+    padding: 10px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.prompt out {
+    color: rgb(238, 238, 238);
+}
+
+.MathJax .mo, .MathJax .mi {
+    color: inherit !important;
 }
 
 /* Content */
