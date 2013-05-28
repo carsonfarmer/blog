@@ -6,14 +6,16 @@ Category: Guest speaker
 Tags: Human Impacts, Policy, Research, Sustainability, Oceans
 Slug: guest-speaker-june-2013
 
-[Dr. Tim Stojanovic][stojanovic] will be coming to the Department of Geography 
-at Hunter College, CUNY next week to give a talk entitled: "Analysing Change in 
-the Human Development of the World’s Oceans". The talk will be held on **June 
-5th, 2013** at **3:00 p.m.** in the Hunter North building, room 1004. The talk 
-is hosted by the [Department of Geography][geo].
+[Dr. Tim Stojanovic][stojanovic] will be coming to the [Department of Geography 
+at Hunter College][geo], CUNY next week to give a talk entitled: "Analysing 
+Change in the Human Development of the World’s Oceans". The talk will be held 
+on **June 5th, 2013** at **3:00 p.m.** in the Hunter North building, room 1004.
+The talk is hosted by the Department of Geography.
 <!--more-->
 
-### Abstract
+## Abstract
+
+[![image1][oceans-small]{.right}][oceans]
 
 The World’s oceans are a frontline for sustainability, given the expansion of 
 human activity in coasts and seas, changes brought about by human forcing 
@@ -32,9 +34,9 @@ refinement of this assessment is required and is likely to be driven by a
 recently established UN Global Assessment of the State of the Marine 
 Environment.
 
-### Bio
+## Speaker bio
 
-[![image][tim]{.left}][tim]
+[![image2][tim]{.left}][stojanovic]
 
 Dr. Tim Stojanovic is a Lecturer (i.e. Associate Professor) in Geography and 
 Sustainable Development at the University of St Andrews, UK. He has a PhD and 
@@ -43,9 +45,14 @@ interests relate to the sustainability of oceans and coasts, including work
 with interdisciplinary research teams in issues such as climate adaptation and 
 ecosystem services, and social science research on effective governance.
 
+</br>
+</br>
+
 If you would like to learn more about the talk, the venue, or Dr Stojanovic's 
 work, please [contact me][contact] for further details.
 
+[oceans-small]: |filename|/images/global-oceans-400x265.png
+[oceans]: |filename|/images/global-oceans.png
 [tim]: |filename|/images/stojanovic.jpg "Dr. Tim Stojanovic, Lecturer in Geography & Sustainable Development, Department of Geography & Sustainable Development,  Scottish Oceans Institute, Sustainability Institute,  University of St Andrews, UK"
 [geo]: http://www.geo.hunter.cuny.edu/
 [stojanovic]: http://www.st-andrews.ac.uk/gsd/people/tas21/
