@@ -788,6 +788,10 @@ article header .published {
 	#about-author .photo {border: 1px solid #ddd; float: left; margin: 5px 1em 0 0;}
 	
 	/* Comments */
+	
+	.comments {
+	    padding-top: 20px;
+	}
 	#comments-list {list-style: none; margin: 0 1em;}
 	#comments-list blockquote {
 		background: #f8f8f8;
