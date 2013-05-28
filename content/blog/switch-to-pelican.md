@@ -30,20 +30,21 @@ documenting the switch to Pelican:
 Once I get things working, I'll also start to think about some of the 
 [points here], to make things even _more_ responsive and readable.
 
-<p class="note right shadow">
-One of the things that I did have trouble with was getting my RSS feeds set 
-up like it was in my WordPress site: /?feed=rss2.
-For now, I'm just rerouting things to /feeds/all.rss.xml, but search engines 
+<span class="note right shadow">
+One of the things that I did have trouble with was getting my `RSS` feeds set 
+up like it was in my WordPress site: `/?feed=rss2`.
+For now, I'm just rerouting things to `/feeds/all.rss.xml`, but search engines 
 won't recognize this, and I'm sure there is a better solution out there... any 
 thoughts?
-</p>
+</span>
 I am still missing some things that WordPress did quite nicely, including
 comments (I'm now relying on [Disqus][disqus] for comments), site search (I've 
 started using [Tapir][tapir] for this, and have implemented a cool search tool 
 that I may turn into a Pelican plug-in if I find some time), and the plethora of 
 plug-ins and themes available for WordPress sites. Having said that, it *is* 
 relatively easy to create new themes, and adding social networking components 
-like a Twitter Feed using standard html is pretty simple. 
+like a Twitter feed using standard html is pretty simple. 
+</br>
 
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [pelican]: http://blog.getpelican.com/
