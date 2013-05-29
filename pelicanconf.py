@@ -79,4 +79,4 @@ TWITTER_WIDGET_ID = '330339195518337025'
 DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+# RELATIVE_URLS = True
