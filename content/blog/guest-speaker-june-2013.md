@@ -10,7 +10,8 @@ Slug: guest-speaker-june-2013
 at Hunter College][geo], CUNY next week to give a talk entitled: "Analysing 
 Change in the Human Development of the World’s Oceans". The talk will be held 
 on **June 5th, 2013** at **3:00 p.m.** in the Hunter North building, room 1004.
-The talk is hosted by the Department of Geography.
+The talk is hosted by the Department of Geography, and the poster is [available 
+here][poster].
 <!--more-->
 
 ## Abstract
@@ -51,6 +52,7 @@ ecosystem services, and social science research on effective governance.
 If you would like to learn more about the talk, the venue, or Dr Stojanovic's 
 work, please [contact me][contact] for further details.
 
+[poster]: |filename|/uploads/stojanovic_human_dev_oceans.pdf
 [oceans-small]: |filename|/images/global-oceans-400x265.png
 [oceans]: |filename|/images/global-oceans.png
 [tim]: |filename|/images/stojanovic.jpg "Dr. Tim Stojanovic, Lecturer in Geography & Sustainable Development, Department of Geography & Sustainable Development,  Scottish Oceans Institute, Sustainability Institute,  University of St Andrews, UK"
