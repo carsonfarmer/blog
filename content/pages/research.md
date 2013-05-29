@@ -5,6 +5,8 @@ Slug: research
 
 ### Background
 
+[![Background][image0]{.right}][link0]
+
 I completed a BSc (honours with distinction) in Geography at the
 University of Victoria, in British Columbia, Canada in 2006. There, my
 studies focused on GIS, spatial statistics, and housing prices, and led
@@ -119,6 +121,8 @@ These indicators include productivity, disturbance, topography, and
 land-cover, of which terrestrial snow cover and SWE play an integral
 part.
 
+[image0]: |filename|/images/carson-pres-small.jpg
+[link0]: |filename|/images/carson-pres-small.jpg
 [image1]: |filename|/images/blurred_workers.png
 [link1]: |filename|/images/blurred_workers.png
 [image2]: |filename|/images/congestion.png
