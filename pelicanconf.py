@@ -42,7 +42,7 @@ THEME = "themes/carson"
 MD_EXTENSIONS = (['codehilite(css_class=highlight)','extra', ])
 
 # Some useful defaults and menu settings
-DEFAULT_CATEGORY = 'misc'
+DEFAULT_CATEGORY = 'News'
 DEFAULT_DATE_FORMAT = '%a %d %B %Y'
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_HOME_ON_MENU = True
