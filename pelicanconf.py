@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Carson J. Q. Farmer'
 SITENAME = u'Carson Farmer'
-SITEURL = u'www.carsonfarmer.com'
+SITEURL = u'http://www.carsonfarmer.com'
 SITESUBTITLE = u'www.carsonfarmer.com'
 
 GOOGLE_ANALYTICS = "UA-41110370-1"
@@ -29,7 +29,7 @@ PLUGINS = ['gravatar', 'latex', 'summary']
 SUMMARY_END_MARKER = "<!--more-->"
 
 # Feed generation is usually not desired when developing
-FEED_DOMAIN = ""
+FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/%s.atom.xml"
 FEED_ALL_RSS = 'feeds/all.rss.xml'
