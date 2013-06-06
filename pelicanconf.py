@@ -39,7 +39,7 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 THEME = "themes/carson"
 #CSS_FILE = "wide.css"
 
-MD_EXTENSIONS = (['codehilite(css_class=highlight)','extra', ])
+MD_EXTENSIONS = (['codehilite(css_class=highlight)','extra', 'fenced_code'])
 
 # Some useful defaults and menu settings
 DEFAULT_CATEGORY = 'News'
