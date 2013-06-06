@@ -19,8 +19,8 @@ A bit more [about the journal][about]:
 > articles, essays, research reports, data sources, computing software, teaching 
 > notes, and book reviews on a wide range of topics of interest to the social 
 > demographer.
-<!--more-->
 
+<!--more-->
 Spatial Demography is more than just another new online journal - the editors 
 strongly promote the use of the [forums][forums] as a place to engage with others on 
 general research topics, as well as discuss specific articles from the journal 
