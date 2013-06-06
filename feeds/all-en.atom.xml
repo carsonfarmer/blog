@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-05-28T18:29:00-04:00</updated><entry><title>Tim Stojanovic Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/" rel="alternate"></link><updated>2013-05-28T18:29:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-05-28:2013/05/guest-speaker-june-2013/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr. Tim Stojanovic&lt;/a&gt; will be coming to the &lt;a href="http://www.geo.hunter.cuny.edu/"&gt;Department of Geography 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-06-06T13:11:00-04:00</updated><entry><title>New Journal: Spatial Demography</title><link href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/" rel="alternate"></link><updated>2013-06-06T13:11:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-06-06:2013/06/new-journal-spatial-demography/</id><summary type="html">&lt;p&gt;I have recently joined the &lt;a href="http://spatialdemography.org/editors-2/editorial-board/"&gt;editorial team&lt;/a&gt; at &lt;a href="http://spatialdemography.org/"&gt;Spatial Demography&lt;/a&gt;
+&amp;#8212; a new journal outlet for demographers and others who use spatial data, 
+methods, and&amp;nbsp;theory. &lt;/p&gt;
+&lt;p&gt;A bit more &lt;a href="http://spatialdemography.org/about/"&gt;about the journal&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Spatial Demography [&lt;span class="caps"&gt;ISSN&lt;/span&gt;: 2164-7070 (online)] focuses on the spatial analysis 
+of demographic processes. This cross-disciplinary work involves modern 
+demographic data visualization, enhanced geo-referenced data availability, and 
+spatial statistics, facilitated through full color graphics, motion video 
+tools, and a quick time-to-publication. The journal publishes research 
+articles, essays, research reports, data sources, computing software, teaching 
+notes, and book reviews on a wide range of topics of interest to the social 
+demographer.&amp;nbsp;&amp;lt;&amp;#8212;more&amp;#8212;&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Spatial Demography is more than just another new online journal - the editors 
+strongly promote the use of the &lt;a href="http://spatialdemography.org/?page_id=669"&gt;forums&lt;/a&gt; as a place to engage with others on 
+general research topics, as well as discuss specific articles from the journal 
+and &lt;a href="http://spatialdemography.org/?page_id=42"&gt;Online First&lt;/a&gt; area. One of the really nice thing about the forums 
+is that they have a familiar &amp;#8216;blog-feel&amp;#8217;, where users are encourage to post 
+their thoughts about the work being done by others as well as their own&amp;nbsp;work. &lt;/p&gt;
+&lt;p&gt;Another thing I really like about Spatial Demography is that the Associate 
+Editors embrace technology and sharing of ideas in a very open way. For example, 
+Corey Sparks does a cool column/forum for the journal on &lt;a href="http://spatialdemography.org/introduction-to-software-and-code-forum/"&gt;&amp;#8216;Software and Code&amp;#8217;&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The purpose of this forum is to highlight the tools of the trade, our 
+methodological toolbox, if you will.  With so many scientists in so many 
+disciplines contributing to the area known as &amp;#8220;Spatial Demography&amp;#8221;, we all 
+have our old stand by routines, our tricks and our tips for new&amp;nbsp;researchers.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The &amp;#8216;Software and Code&amp;#8217; forum will routinely feature &amp;#8216;how-to guides&amp;#8217; for various 
+spatial analysis techniques using primarily open source computing applications, 
+with lots of annotated code to help others learn everything from the basics to 
+the more advanced spatial statistics&amp;nbsp;methods.&lt;/p&gt;
+&lt;p&gt;A big thanks to Frank Howell and Jeremy Porter (Editors-in-Chief) for inviting 
+me on-board. I&amp;#8217;m excited to see where this journal goes, and I hope &lt;em&gt;you&amp;#8217;ll&lt;/em&gt; 
+check it out as&amp;nbsp;well.&lt;/p&gt;</summary><category term="Announcement"></category><category term="Journal"></category><category term="Demography"></category><category term="Research"></category></entry><entry><title>Tim Stojanovic Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/" rel="alternate"></link><updated>2013-05-28T18:29:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-05-28:2013/05/guest-speaker-june-2013/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr. Tim Stojanovic&lt;/a&gt; will be coming to the &lt;a href="http://www.geo.hunter.cuny.edu/"&gt;Department of Geography 
 at Hunter College&lt;/a&gt;, &lt;span class="caps"&gt;CUNY&lt;/span&gt; next week to give a talk entitled: &amp;#8220;Analysing 
 Change in the Human Development of the World’s Oceans&amp;#8221;. The talk will be held 
 on &lt;strong&gt;June 5th, 2013&lt;/strong&gt; at &lt;strong&gt;3:00 p.m.&lt;/strong&gt; in the Hunter North building, room 1004.
