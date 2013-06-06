@@ -1,11 +1,10 @@
 Title: New Journal: Spatial Demography
-Date: 2013-06-08 12:00
+Date: 2013-06-06 13:11
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
 Tags: Announcement, Journal, Demography, Research
 Slug: new-journal-spatial-demography
-Status: draft
 
 I have recently joined the [editorial team][editors] at [Spatial Demography][spatial-demography]
 -- a new journal outlet for demographers and others who use spatial data, 
