@@ -98,7 +98,7 @@
 visualise the results of a <code>SELECT</code> statement on a <a href="http://postgis.refractions.net/">PostGIS</a> database
 that returns spatial data in <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a>. In other words, can we map the
 results of something&nbsp;like:</p>
-<div class="codehilite"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
+<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
 </pre></div>
 
 

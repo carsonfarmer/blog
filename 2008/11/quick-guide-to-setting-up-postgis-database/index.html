@@ -95,7 +95,7 @@ working in minutes.
 <blockquote>
 <p>Another reason I love Ubuntu - getting postgis + postgresql is really&nbsp;easy&#8230;</p>
 </blockquote>
-<div class="codehilite"><pre>sudo apt-get install postgis postgresql-8.3-postgis
+<div class="highlight"><pre>sudo apt-get install postgis postgresql-8.3-postgis
 sudo su postgres
 createuser -s -d -r -l -P -E -e timlinux
 <span class="nb">exit</span>
@@ -106,7 +106,7 @@ createuser -s -d -r -l -P -E -e timlinux
 <p>Enter prompts following above commands as needed. Now you have
 postgres installed and a user created. Next create an empty spatial&nbsp;database:</p>
 </blockquote>
-<div class="codehilite"><pre>createdb qgis
+<div class="highlight"><pre>createdb qgis
 createlang plpgsql qgis
 psql qgis &lt; /usr/share/postgresql-8.3-postgis/lwpostgis.sql
 psql qgis &lt; /usr/share/postgresql-8.3-postgis/spatial_ref_sys.sql

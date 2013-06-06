@@ -102,7 +102,7 @@ horses mouth <a href="http://lin-ear-th-inking.blogspot.com/search?q=cascaded">h
 how I&#8217;ve done things, but just to prove how much faster things can be,
 here is a quick little demo that can be run from the built-in <span class="caps">QGIS</span>
 Python&nbsp;console:</p>
-<div class="codehilite"><pre><span class="kn">import</span> <span class="nn">time</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
 <span class="n">canvas</span> <span class="o">=</span> <span class="n">qgis</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">iface</span><span class="o">.</span><span class="n">mapCanvas</span><span class="p">()</span>
 <span class="n">layer</span> <span class="o">=</span> <span class="n">canvas</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c"># assumes target layer is fist in layer list</span>
 <span class="n">provider</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">dataProvider</span><span class="p">()</span>
@@ -118,7 +118,7 @@ Python&nbsp;console:</p>
 
 
 <p>First, using the current method, which adds all the geometries together one by&nbsp;one:</p>
-<div class="codehilite"><pre><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">regular_geom</span> <span class="o">=</span> <span class="n">geom</span> <span class="c"># start with the last geometry in the layer</span>
 <span class="k">for</span> <span class="n">geometry</span> <span class="ow">in</span> <span class="n">geoms</span><span class="p">:</span>
     <span class="n">regular_geom</span> <span class="o">=</span> <span class="n">QgsGeometry</span><span class="p">(</span><span class="n">regular_geom</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">geometry</span><span class="p">))</span>
@@ -130,7 +130,7 @@ Python&nbsp;console:</p>
 
 <p>Secondly, using cascaded union, which uses magic to combine geometries together
 more efficiently. Also requires fewer lines of&nbsp;code!</p>
-<div class="codehilite"><pre><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">cascaded_geom</span> <span class="o">=</span> <span class="n">geom</span><span class="o">.</span><span class="n">combineCascaded</span><span class="p">(</span><span class="n">geoms</span><span class="p">)</span>
 <span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">total</span> <span class="o">=</span> <span class="n">end</span><span class="o">-</span><span class="n">start</span>

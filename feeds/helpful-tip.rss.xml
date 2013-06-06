@@ -7,7 +7,7 @@ Computing&lt;/a&gt;. To show just how nice this package is, below is a minimal
 example of bootstrapping a network partitioning algorithm which takes
 advantage of a multicore processor:
 &lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;foreach&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;igraph&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# Jaccard coeficcient function (taken from package fpc)&lt;/span&gt;

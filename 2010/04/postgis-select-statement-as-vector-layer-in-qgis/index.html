@@ -86,7 +86,7 @@
 visualise the results of a <code>SELECT</code> statement on a <a href="http://postgis.refractions.net/">PostGIS</a> database
 that returns spatial data in <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a>. In other words, can we map the
 results of something&nbsp;like:</p>
-<div class="codehilite"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
+<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
 </pre></div>
 
 
@@ -100,7 +100,7 @@ of this functionality (yet!)</strike>There is now a plugin available from the
 <a href="http://www.faunalia.it/qgis/plugins.xml">Faunalia python plugin repository</a> called <code>RT Sql Layer</code> which provides
 a <span class="caps">GUI</span> for loading <code>PostGIS</code> <code>SELECT</code> statements as layer, but you can also
 access this handy feature via the <code>QGIS</code> <code>Python</code> console:</p>
-<div class="codehilite"><pre><span class="n">db_conn</span> <span class="o">=</span> <span class="s">&quot;dbname=&#39;gis&#39; host=localhost port=5432 user=&#39;cfarmer&#39; password=&#39;xxxx&#39;&quot;</span>
+<div class="highlight"><pre><span class="n">db_conn</span> <span class="o">=</span> <span class="s">&quot;dbname=&#39;gis&#39; host=localhost port=5432 user=&#39;cfarmer&#39; password=&#39;xxxx&#39;&quot;</span>
 <span class="n">id_field</span> <span class="o">=</span> <span class="s">&quot;id&quot;</span>
 <span class="n">table</span> <span class="o">=</span> <span class="s">&quot;(select id, st_union(the_geom) from spatial_table group by id)&quot;</span>
 <span class="n">uri</span> <span class="o">=</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s"> key=</span><span class="si">%s</span><span class="s"> table=</span><span class="si">%s</span><span class="s"> (the_geom) sql=&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">db_conn</span><span class="p">,</span><span class="n">id_field</span><span class="p">,</span><span class="n">table</span><span class="p">,)</span>
@@ -109,12 +109,12 @@ access this handy feature via the <code>QGIS</code> <code>Python</code> console:
 
 
 <p>we can then add the layer to the map canvas&nbsp;via:</p>
-<div class="codehilite"><pre><span class="n">QgsMapLayerRegistry</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span><span class="o">.</span><span class="n">addMapLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">QgsMapLayerRegistry</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span><span class="o">.</span><span class="n">addMapLayer</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span>
 </pre></div>
 
 
 <p>and even query/measure it via something&nbsp;like:</p>
-<div class="codehilite"><pre><span class="n">provider</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">dataProvider</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">provider</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">dataProvider</span><span class="p">()</span>
 <span class="n">feat</span> <span class="o">=</span> <span class="n">QgsFeature</span><span class="p">()</span>
 <span class="n">provider</span><span class="o">.</span><span class="n">select</span><span class="p">([],</span> <span class="n">QgsRectangle</span><span class="p">())</span>
 <span class="n">provider</span><span class="o">.</span><span class="n">nextFeature</span><span class="p">(</span><span class="n">feat</span><span class="p">)</span>

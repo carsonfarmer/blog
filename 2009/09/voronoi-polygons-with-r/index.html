@@ -88,7 +88,7 @@ takes a <code>SpatialPointsDataFrame</code> as input, and returns a
 <code>SpatialPolygonsDataFrame</code> that represents the Voronoi tessellation of
 the input point layer.
 </p>
-<div class="codehilite"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
     require<span class="p">(</span>deldir<span class="p">)</span>
     crds <span class="o">=</span> layer<span class="o">@</span>coords
     z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
@@ -110,7 +110,7 @@ the input point layer.
 
 <p>To save the output to shapefile, simply use<code>writeOGR</code> from the <code>rgdal</code>
 library:</p>
-<div class="codehilite"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
+<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
 <span class="o">?</span>writeOGR
 </pre></div>
           <p class="category">

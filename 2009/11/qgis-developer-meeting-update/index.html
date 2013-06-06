@@ -117,7 +117,7 @@ lines of&nbsp;code.</p>
 geometries of the layers in order to do any sort of geoprocessing. For
 example, to perform a (very) simple buffer, one had to use the following
 code in the <span class="caps">QGIS</span> Python&nbsp;console:</p>
-<div class="codehilite"><pre><span class="kn">from</span> <span class="nn">qgis.core</span> <span class="kn">import</span> <span class="n">iface</span>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">qgis.core</span> <span class="kn">import</span> <span class="n">iface</span>
 <span class="n">mc</span> <span class="o">=</span> <span class="n">iface</span><span class="o">.</span><span class="n">mapCanvas</span><span class="p">()</span> <span class="c"># get a reference to the map canvas</span>
 <span class="n">layer</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c"># get a reference to the first layer in the layer list</span>
 <span class="n">provider</span> <span class="o">=</span> <span class="n">layer</span><span class="o">.</span><span class="n">dataProvider</span><span class="p">()</span> <span class="c"># data provider for the layer</span>
@@ -140,7 +140,7 @@ code in the <span class="caps">QGIS</span> Python&nbsp;console:</p>
 <p>With the new <span class="caps">QGIS</span> Analysis Library, things are much simpler, and the
 same (or more complex) buffering example can be completed with only 5
 lines of code in the <span class="caps">QGIS</span> Python&nbsp;Console:</p>
-<div class="codehilite"><pre><span class="kn">from</span> <span class="nn">qgis.core</span> <span class="kn">import</span> <span class="n">iface</span> <span class="c"># import iface (interface)</span>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">qgis.core</span> <span class="kn">import</span> <span class="n">iface</span> <span class="c"># import iface (interface)</span>
 <span class="kn">from</span> <span class="nn">qgis.analysis</span> <span class="kn">import</span> <span class="n">QgsGeometryAnalyzer</span> <span class="c"># import (par of) the analysis library</span>
 <span class="n">mc</span> <span class="o">=</span> <span class="n">iface</span><span class="o">.</span><span class="n">mapCanvas</span><span class="p">()</span> <span class="c"># get a reference to the map canvas</span>
 <span class="n">layer</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c"># get a reference to the first layer in the layer list</span>

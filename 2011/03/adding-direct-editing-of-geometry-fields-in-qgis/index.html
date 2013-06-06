@@ -102,7 +102,7 @@ Here are some examples of the script&#8217;s usage from the <span class="caps">Q
 <li>Add geometry information (assumes that the target layer in first
 layer in the&nbsp;layer-list):</li>
 </ol>
-<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">mc</span> <span class="o">=</span> <span class="n">qgis</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">iface</span><span class="o">.</span><span class="n">mapCanvas</span><span class="p">()</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">mc</span> <span class="o">=</span> <span class="n">qgis</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">iface</span><span class="o">.</span><span class="n">mapCanvas</span><span class="p">()</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">layer</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">add_geometry_information</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">add_geometry_information</span><span class="o">.</span><span class="n">addGeometryInformation</span><span class="p">(</span><span class="n">vlayer</span><span class="p">)</span> <span class="bp">True</span>
@@ -114,7 +114,7 @@ layer in the&nbsp;layer-list):</li>
 input polygon layer (assumes polygon layer is second, and point or line
 layer is the first in&nbsp;layer-list):</li>
 </ol>
-<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">polygonLayer</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">polygonLayer</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span> <span class="n">Layer</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="o">&gt;&gt;&gt;</span> <span class="n">add_geometry_information</span><span class="o">.</span><span class="n">countFeaturesInPolygon</span><span class="p">(</span><span class="n">polygonLayer</span><span class="p">,</span> <span class="n">inputLayer</span><span class="p">)</span> <span class="bp">True</span>
 </pre></div>

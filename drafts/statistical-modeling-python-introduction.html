@@ -160,7 +160,7 @@ to a language) before we can use them. For Scientific Python, the most important
 library that we need is <code>numpy</code> (Numerical Python), which can be loaded like
 this:
 <p class="prompt in">In[1]:</p></p>
-<div class="codehilite"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 </pre></div>
 
 
@@ -183,7 +183,7 @@ Python). You enter your commands as a &#8216;dialog&#8217; between you and the i
 as part of a script (a text file with a list of commands to perform) or directly
 at a &#8216;command prompt&#8217;:
 <p class="prompt in">In[2]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 
 
@@ -198,7 +198,7 @@ at a &#8216;command prompt&#8217;:
 performs the computation. For commands such as the one above, the interpreter
 will print the output value from the computation:
 <p class="prompt in">In[3]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 
 
@@ -216,7 +216,7 @@ separated by commas. For example, here is an operation named <code>arange</code>
 <code>numpy</code> library that produces a range of numbers (increasing values between 3
 and 10):
 <p class="prompt in">In[4]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 
@@ -231,7 +231,7 @@ end it. The order of the arguments is important. For instance, <em>here</em> is 
 range produced when 10 is the first argument, 3 is the second, and the third is
 -1 (decreasing values between 10 and 3):
 <p class="prompt in">In[5]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
 
@@ -248,7 +248,7 @@ example, the <code>arange</code> operator from the <code>numpy</code> library ca
 type of output values to produce (integers, floats, etc). This is accomplished
 using an argument named <code>dtype</code>:
 <p class="prompt in">In[6]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&#39;float&#39;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&#39;float&#39;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -263,7 +263,7 @@ circumstances, all four parts of an operation need not be present. For example,
 the <code>ctime</code> operation from the <code>time</code> library returns the current time and date;
 no input arguments are required:
 <p class="prompt in">In[7]:</p></p>
-<div class="codehilite"><pre><span class="kn">import</span> <span class="nn">time</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
 <span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span>
 </pre></div>
 
@@ -284,7 +284,7 @@ stored for later use with the <strong>assignment operator</strong>. This has a d
 syntax that reminds the user that a value is being stored. Here&#8217;s an example of
 a simple assignment:
 <p class="prompt in">In[8]:</p></p>
-<div class="codehilite"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">16</span>
+<div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">16</span>
 </pre></div>
 
 
@@ -298,7 +298,7 @@ defining the object and thereby storing a value under the object&#8217;s&nbsp;na
 <p>To refer to the value stored in the object, just use the object&#8217;s name itself.
 For instance:
 <p class="prompt in">In[9]:</p></p>
-<div class="codehilite"><pre><span class="n">x</span>
+<div class="highlight"><pre><span class="n">x</span>
 </pre></div>
 
 
@@ -311,7 +311,7 @@ For instance:
 <p>Doing a computation on the value store in an object is much the same (and
 provides and extremely rich syntax for performing complex calculations):
 <p class="prompt in">In[10]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
 
@@ -340,7 +340,7 @@ have an object named something like <code>ages_of_children_from_the _clinical_tr
 feel free (it&#8217;s just more typing for you&nbsp;later!).</p>
 <p>Objects can store all sorts of things, for example a range of numbers:
 <p class="prompt in">In[11]:</p></p>
-<div class="codehilite"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 </pre></div>
 
 
@@ -348,7 +348,7 @@ feel free (it&#8217;s just more typing for you&nbsp;later!).</p>
 the former values of that object is erased from the computer memory. The former
 value of <code>x</code> was 16, but after the new assignment above, it is:
 <p class="prompt in">In[12]:</p></p>
-<div class="codehilite"><pre><span class="n">x</span>
+<div class="highlight"><pre><span class="n">x</span>
 </pre></div>
 
 
@@ -362,7 +362,7 @@ array([1, 2, 3, 4, 5, 6])
 object in a computation does not change the value. For example, suppose you
 invoke the square-root operator on <code>x</code>:
 <p class="prompt in">In[13]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
 
@@ -376,7 +376,7 @@ array([ 1.        ,  1.41421356,  1.73205081,  2.        ,  2.23606798,
 <p>The square roots have been returned as a value, but this doesn&#8217;t change the
 value of <code>x</code>:
 <p class="prompt in">In[14]:</p></p>
-<div class="codehilite"><pre><span class="n">x</span>
+<div class="highlight"><pre><span class="n">x</span>
 </pre></div>
 
 
@@ -400,7 +400,7 @@ the square-root of the old&nbsp;ones.
 </span></p>
 <p>If you want to change the value of <code>x</code>, you need to use the assignment operator:
 <p class="prompt in">In[15]:</p></p>
-<div class="codehilite"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
 
@@ -415,7 +415,7 @@ can then be used to select a subset of these values at&nbsp;random.</p>
 <p>One way to connect the computations is by using objects to store the
 intermediate outputs:
 <p class="prompt in">In[16]:</p></p>
-<div class="codehilite"><pre><span class="n">choices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">choices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">choices</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c"># sample _without_ replacement</span>
 </pre></div>
 
@@ -431,7 +431,7 @@ array([2239, 7280, 4216, 5736, 7213,  200, 1372, 9674, 5376, 8430, 2258,
 operator. Here&#8217;s another way to accomplish exactly the same thing as the above
 (note that the values will differ because we are performing a <em>random</em> sample):
 <p class="prompt in">In[17]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">),</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">),</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -446,7 +446,7 @@ array([8504, 4323, 3173, 4060, 5633, 1669, 9771,  389, 5357, 2518, 2839,
 <p>The <code>Python</code> language has a concise notation for arithmetic that looks very much
 like the traditional one:
 <p class="prompt in">In[18]:</p></p>
-<div class="codehilite"><pre><span class="mi">7</span> <span class="o">+</span> <span class="mi">2</span>
+<div class="highlight"><pre><span class="mi">7</span> <span class="o">+</span> <span class="mi">2</span>
 </pre></div>
 
 
@@ -458,7 +458,7 @@ like the traditional one:
 
 <p class="prompt in">In[19]:</p>
 
-<div class="codehilite"><pre><span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
+<div class="highlight"><pre><span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
 </pre></div>
 
 
@@ -470,7 +470,7 @@ like the traditional one:
 
 <p class="prompt in">In[20]:</p>
 
-<div class="codehilite"><pre><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
+<div class="highlight"><pre><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
 </pre></div>
 
 
@@ -482,7 +482,7 @@ like the traditional one:
 
 <p class="prompt in">In[21]:</p>
 
-<div class="codehilite"><pre><span class="mi">3</span> <span class="o">-</span> <span class="mi">8</span>
+<div class="highlight"><pre><span class="mi">3</span> <span class="o">-</span> <span class="mi">8</span>
 </pre></div>
 
 
@@ -494,7 +494,7 @@ like the traditional one:
 
 <p class="prompt in">In[22]:</p>
 
-<div class="codehilite"><pre><span class="o">-</span><span class="mi">3</span>
+<div class="highlight"><pre><span class="o">-</span><span class="mi">3</span>
 </pre></div>
 
 
@@ -506,7 +506,7 @@ like the traditional one:
 
 <p class="prompt in">In[23]:</p>
 
-<div class="codehilite"><pre><span class="mi">5</span><span class="o">**</span><span class="mi">2</span> <span class="c"># same as 5^2 (or 5 to the power of 2)</span>
+<div class="highlight"><pre><span class="mi">5</span><span class="o">**</span><span class="mi">2</span> <span class="c"># same as 5^2 (or 5 to the power of 2)</span>
 </pre></div>
 
 
@@ -519,7 +519,7 @@ like the traditional one:
 <p>Arithmetic operators, like any other operators, can be connected to form more
 complicated computations. For instance:
 <p class="prompt in">In[24]:</p></p>
-<div class="codehilite"><pre><span class="mi">8</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span>
+<div class="highlight"><pre><span class="mi">8</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span>
 </pre></div>
 
 
@@ -534,7 +534,7 @@ be <code>(8+4)/2</code> or <code>8+(4/2)</code>? The computer uses unambiguous r
 expression, but it&#8217;s a good idea for you to use parentheses so that you can make
 sure that what you <em>intend</em> is what the computer carries out:
 <p class="prompt in">In[25]:</p></p>
-<div class="codehilite"><pre><span class="p">(</span><span class="mi">8</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<div class="highlight"><pre><span class="p">(</span><span class="mi">8</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
 </pre></div>
 
 
@@ -549,7 +549,7 @@ exponentials and roots, e.g. $3^2$ or $\sqrt{3}$ or $\sqrt[3]{8}$. This special
 typography doesn&#8217;t work well with an ordinary keyboard, so <code>Python</code> and most
 other computer languages uses a different notation:
 <p class="prompt in">In[26]:</p></p>
-<div class="codehilite"><pre><span class="mi">3</span><span class="o">**</span><span class="mi">2</span>
+<div class="highlight"><pre><span class="mi">3</span><span class="o">**</span><span class="mi">2</span>
 </pre></div>
 
 
@@ -561,7 +561,7 @@ other computer languages uses a different notation:
 
 <p class="prompt in">In[27]:</p>
 
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 
@@ -573,7 +573,7 @@ other computer languages uses a different notation:
 
 <p class="prompt in">In[28]:</p>
 
-<div class="codehilite"><pre><span class="mi">8</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight"><pre><span class="mi">8</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 
@@ -641,7 +641,7 @@ apparent in some calculations that produce results that are (near) zero. For
 example, mathematically, $sin(\pi) = 0$, however, the computer does not
 duplicate the mathematical relationship exactly:
 <p class="prompt in">In[29]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
 </pre></div>
 
 
@@ -672,7 +672,7 @@ to do. To calculate $\sqrt{-9}$ for example, simply use
 <code>np.sqrt(-9+0j)</code>.
 </span>
 <p class="prompt in">In[30]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.0</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.0</span>
 </pre></div>
 
 
@@ -684,7 +684,7 @@ inf
 
 <p class="prompt in">In[31]:</p>
 
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.0</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.0</span>
 </pre></div>
 
 
@@ -729,7 +729,7 @@ example, in the following, we are first assigning the string <code>"python"</cod
 <code>name</code> object, and then returning (and printing automatically) the <code>name</code>
 object.
 <p class="prompt in">In[32]:</p></p>
-<div class="codehilite"><pre><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;python&quot;</span>
+<div class="highlight"><pre><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;python&quot;</span>
 <span class="n">name</span>
 </pre></div>
 
@@ -743,7 +743,7 @@ object.
 <p>If you make a command with the object name in quotes, it won&#8217;t be treated as
 referring to an object. Instead, it will merely mean the text itself:
 <p class="prompt in">In[33]:</p></p>
-<div class="codehilite"><pre><span class="s">&quot;name&quot;</span>
+<div class="highlight"><pre><span class="s">&quot;name&quot;</span>
 </pre></div>
 
 
@@ -759,11 +759,11 @@ name. For instance, the following command directs the computer to look up the
 value contained in an object named <code>python</code> and insert that value into the
 object <code>name</code>:
 <p class="prompt in">In[34]:</p></p>
-<div class="codehilite"><pre><span class="n">name</span> <span class="o">=</span> <span class="n">python</span>
+<div class="highlight"><pre><span class="n">name</span> <span class="o">=</span> <span class="n">python</span>
 </pre></div>
 
 
-<div class="codehilite"><pre>---------------------------------------------------------------------------
+<div class="highlight"><pre>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 &lt;ipython-input-34-43a69bc65ba8&gt; in &lt;module&gt;()
 ----&gt; 1 name = python

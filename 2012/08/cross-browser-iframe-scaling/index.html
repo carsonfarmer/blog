@@ -88,7 +88,7 @@ another page using an <code>iframe</code>. When trying to come up with a nice wa
 to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit based
 browsers were not behaving as they should. After a lot of fiddling
 about, I discovered that the following <code>css</code> seems to fix the&nbsp;issues:</p>
-<div class="codehilite"><pre><span class="nf">#wrap</span> <span class="p">{</span>  
+<div class="highlight"><pre><span class="nf">#wrap</span> <span class="p">{</span>  
     <span class="k">width</span><span class="o">:</span> <span class="m">630px</span><span class="p">;</span>
     <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
     <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
@@ -116,7 +116,7 @@ about, I discovered that the following <code>css</code> seems to fix the&nbsp;is
 to &#8216;double scale&#8217; everything, which turned out to be the root of my
 problem. With the above tweaks, everything works fine (for now) using
 the following <code>HTML</code>:</p>
-<div class="codehilite"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrap&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;wrap&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;iframe</span> <span class="na">id=</span><span class="s">&quot;frame&quot;</span> <span class="na">src=</span><span class="s">&quot;http://www.website.com/&quot;</span><span class="nt">&gt;&lt;/iframe&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></div>

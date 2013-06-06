@@ -132,7 +132,7 @@ This makes things a bit easier in terms of typing, but can sometimes lead to
 confusion when operators from different libraries have the same name.
 </span>
 <p class="prompt in">In[1]:</p></p>
-<div class="codehilite"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 </pre></div>
 
@@ -148,7 +148,7 @@ is <code>"swim100m.csv"</code>. To read in this data table and create an object 
 that contains the data, use a command like&nbsp;this:</p>
 <p><span class="dataset shadow"><code>swim100m.csv</code></span>
 <p class="prompt in">In[2]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;http://www.mosaic-web.org/go/datasets/swim100m.csv&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">swim</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;http://www.mosaic-web.org/go/datasets/swim100m.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -171,7 +171,7 @@ essentially a tabular layout. To illustrate, here are the ﬁrst several cases o
 the <code>swim</code> data frame created by the previous use of <code>read_csv()</code>:</p>
 <p class="prompt in">In[3]:</p>
 
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 
@@ -195,7 +195,7 @@ the variable by name in a couple of diﬀerent ways. To see the variable names i
 a data frame, something you might want to do to remind yourself of how names a
 spelled and capitalized, use the <code>columns</code> attribute of the data frame object:
 <p class="prompt in">In[4]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">columns</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
 
@@ -212,7 +212,7 @@ additional Python objects. In this case, the attributes describe the names (and
 data types) of the columns. Another way to get quick information about the
 variables in a data frame is with <code>describe()</code>:
 <p class="prompt in">In[5]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
 
@@ -236,7 +236,7 @@ frame. To keep things simple, the output from <code>describe()</code> is itself 
 (and any other Python objects). For instance, to see how many cases and
 variables there are in a data frame, you can use the <code>shape</code> attribute:
 <p class="prompt in">In[6]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
 
@@ -260,7 +260,7 @@ series&#8217;, data frames, and other objects in &#8216;pandas, <a href="http://
 are designed to work with data frames and allow you to refer directly to
 variables within a data frame. For instance:
 <p class="prompt in">In[7]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
 
@@ -272,7 +272,7 @@ variables within a data frame. For instance:
 
 <p class="prompt in">In[8]:</p>
 
-<div class="codehilite"><pre><span class="n">swim</span><span class="p">[</span><span class="s">&quot;year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="p">[</span><span class="s">&quot;year&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
 </pre></div>
 
 
@@ -284,7 +284,7 @@ variables within a data frame. For instance:
 
 <p>It is also possible to combine &#8216;numpy&#8217; operators with &#8216;pandas&#8217; variables:
 <p class="prompt in">In[10]:</p></p>
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">swim</span><span class="p">[</span><span class="s">&quot;year&quot;</span><span class="p">])</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">swim</span><span class="p">[</span><span class="s">&quot;year&quot;</span><span class="p">])</span>
 </pre></div>
 
 
@@ -296,7 +296,7 @@ variables within a data frame. For instance:
 
 <p class="prompt in">In[11]:</p>
 
-<div class="codehilite"><pre><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
 </pre></div>
 
 
@@ -309,11 +309,11 @@ variables within a data frame. For instance:
 <p>The <code>swim</code> portion of the above commands tells Python which data frame we want
 to operate on. Leaving oﬀ that argument leads to an error:
 <p class="prompt in">In[9]:</p></p>
-<div class="codehilite"><pre><span class="n">year</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">year</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
 </pre></div>
 
 
-<div class="codehilite"><pre>---------------------------------------------------------------------------
+<div class="highlight"><pre>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 &lt;ipython-input-9-2ef03df1cde8&gt; in &lt;module&gt;()
 ----&gt; 1 year.min()
@@ -333,7 +333,7 @@ construct statements that involve more than one variable within a data frame.
 For instance, here&#8217;s a calculation of the mean year, separately for (grouping
 by) the different sexes:
 <p class="prompt in">In[12]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;sex&#39;</span><span class="p">)[</span><span class="s">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;sex&#39;</span><span class="p">)[</span><span class="s">&#39;year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 </pre></div>
 
 
@@ -354,11 +354,11 @@ of &#8220;grouping&#8221; and &#8220;modeling&#8221; variables &#8220;by&#8221; 
 library to look in the data frame when interpreting variables, but not all
 Python functions are designed this way. For instance:
 <p class="prompt in">In[13]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
 </pre></div>
 
 
-<div class="codehilite"><pre>---------------------------------------------------------------------------
+<div class="highlight"><pre>---------------------------------------------------------------------------
 AttributeError                            Traceback (most recent call last)
 &lt;ipython-input-13-e6382fdf6716&gt; in &lt;module&gt;()
 ----&gt; 1 swim.year.sqrt()
@@ -371,7 +371,7 @@ AttributeError: &#39;Series&#39; object has no attribute &#39;sqrt&#39;
 &#8216;numpy&#8217; functions and the special <code>apply</code> function built-into data frames (note
 that the <code>func</code> argument is optional):
 <p class="prompt in">In[14]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">year</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">)</span>
 </pre></div>
 
 
@@ -419,27 +419,27 @@ done similarly to <em>accessing</em> a variable. For instance, here is how to cr
 new variable in <code>swim</code> that holds the <code>time</code> converted from seconds to units of
 minutes:
 <p class="prompt in">In[15]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="p">[</span><span class="s">&#39;minutes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">swim</span><span class="o">.</span><span class="n">time</span><span class="o">/</span><span class="mi">60</span> <span class="c"># or swim[&#39;time&#39;]/60</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="p">[</span><span class="s">&#39;minutes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">swim</span><span class="o">.</span><span class="n">time</span><span class="o">/</span><span class="mi">60</span> <span class="c"># or swim[&#39;time&#39;]/60</span>
 </pre></div>
 
 
 <p>By default, columns get inserted at the end. The <code>insert</code> function is available
 to insert at a particular location in the columns.
 <p class="prompt in">In[16]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#39;mins&#39;</span><span class="p">,</span> <span class="n">swim</span><span class="o">.</span><span class="n">time</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#39;mins&#39;</span><span class="p">,</span> <span class="n">swim</span><span class="o">.</span><span class="n">time</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span>
 </pre></div>
 
 
 <p>You could also, if you want, redeﬁne an existing variable, for instance:
 <p class="prompt in">In[17]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="p">[</span><span class="s">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">swim</span><span class="o">.</span><span class="n">time</span><span class="o">/</span><span class="mi">60</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="p">[</span><span class="s">&#39;time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">swim</span><span class="o">.</span><span class="n">time</span><span class="o">/</span><span class="mi">60</span>
 </pre></div>
 
 
 <p>As always, we can take a quick look at the results of our operations by using
 the <code>head()</code> fuction of our data frame:
 <p class="prompt in">In[18]:</p></p>
-<div class="codehilite"><pre><span class="n">swim</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight"><pre><span class="n">swim</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
 
@@ -472,7 +472,7 @@ select a sample from an existing data set. For example, the <code>"kidsfeet.csv"
 data set has <code>n=39</code> cases.</p>
 <p><span class="dataset shadow"><code>kidsfeet.csv</code></span>
 <p class="prompt in">In[45]:</p></p>
-<div class="codehilite"><pre><span class="n">kids</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;http://www.mosaic-web.org/go/datasets/kidsfeet.csv&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">kids</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&quot;http://www.mosaic-web.org/go/datasets/kidsfeet.csv&quot;</span><span class="p">)</span>
 <span class="n">kids</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
@@ -492,7 +492,7 @@ The <code>ix[]</code> operator is a bit tricky to figure out at first. For more
 information, see <a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html">the official docs</a>.
 </span></p>
 <p><p class="prompt in">In[54]:</p></p>
-<div class="codehilite"><pre><span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">kids</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<div class="highlight"><pre><span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">kids</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">kids</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">rows</span><span class="p">]</span>
 </pre></div>
 
@@ -515,7 +515,7 @@ which will allow you to simply use <code>choice()</code> without including the l
 </span></p>
 <p>This can also be done in a single line:
 <p class="prompt in">In[32]:</p></p>
-<div class="codehilite"><pre><span class="n">kids</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">kids</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)]</span>
+<div class="highlight"><pre><span class="n">kids</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">kids</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)]</span>
 </pre></div>
 
 
@@ -539,7 +539,7 @@ sampling frame, but it turns out that there are valuable statistical uses for
 this sort of sampling with <strong>replacement</strong>. You’ll make use of re-sampling in
 Tutorial 5 (Conﬁdence Intervals).
 <p class="prompt in">In[44]:</p></p>
-<div class="codehilite"><pre><span class="n">kids</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">kids</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)]</span>
+<div class="highlight"><pre><span class="n">kids</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">kids</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span><span class="p">)]</span>
 </pre></div>
 
 

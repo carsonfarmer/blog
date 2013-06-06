@@ -102,7 +102,7 @@ directly from the console, though I&#8217;m pretty sure I could have done this
 from R as well. Next, I needed to extract the unique <span class="caps">IP</span> addresses from
 the logs. I found this nice grep one-liner from <a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/">here</a>, which I
 modified to grab all unique <span class="caps">IP</span> addresses that &#8216;<span class="caps">GET</span>&#8217; something from the&nbsp;site:</p>
-<div class="codehilite"><pre>grep <span class="s1">&#39;<span class="caps">GET</span>&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
+<div class="highlight"><pre>grep <span class="s1">&#39;<span class="caps">GET</span>&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
 </pre></div>
 
 
@@ -116,19 +116,19 @@ directly from within R. I first heard about both these projects from the
 <a href="http://blog.revolutionanalytics.com">Revolution Analytics blog</a>, where there is an <a href="http://blog.revolutionanalytics.com/2011/05/mapping-locations-in-r-with-the-data-science-toolkit.html">article</a> summarising
 Ryan Elmore&#8217;s <a href="http://thelogcabin.wordpress.com/2011/05/02/r-and-the-data-science-toolkit/">work on <span class="caps">RDSTK</span></a>, and a few other handy links. <span class="caps">RDSTK</span>
 isn&#8217;t (yet?) available on <a href="http://cran.r-project.org/"><span class="caps">CRAN</span></a>, so I downloaded it directly from&nbsp;github:</p>
-<div class="codehilite"><pre>wget https://github.com/rtelmore/RDSTK/raw/master/src/RDSTK_1.0.tar.gz
+<div class="highlight"><pre>wget https://github.com/rtelmore/RDSTK/raw/master/src/RDSTK_1.0.tar.gz
 </pre></div>
 
 
 <p>Then I installed it via <code>R CMD INSTALL</code> (note that it requires other R
 packages: <code>RCurl</code>, <code>rjson</code>, and <code>plyr</code>):</p>
-<div class="codehilite"><pre>R CMD INSTALL RDSTK_1.0.tar.gz
+<div class="highlight"><pre>R CMD INSTALL RDSTK_1.0.tar.gz
 </pre></div>
 
 
 <p>Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&nbsp;working:</p>
-<div class="codehilite"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
+<div class="highlight"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
 library<span class="p">(</span><span class="caps">RDSTK</span><span class="p">)</span>
 <span class="o">?</span> ip2coordinates
 </pre></div>
@@ -139,7 +139,7 @@ within a single string with comma-separated <span class="caps">IP</span> address
 only do a few IPs at a time (about 100 I think?) so I had to do this
 part in a loop (it probably isn&#8217;t polite to slam <span class="caps">DSTK</span> with 1,000s of
 requests, so be&nbsp;nice!).</p>
-<div class="codehilite"><pre>ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
+<div class="highlight"><pre>ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
 out <span class="o">=</span> ip2coordinates<span class="p">(</span>ips<span class="p">)</span>
 last <span class="o">=</span> <span class="m">80</span>
 s <span class="o">=</span> c<span class="p">(</span>seq<span class="p">(</span><span class="m">160</span><span class="p">,</span> nrow<span class="p">(</span>addresses<span class="p">),</span> <span class="m">80</span><span class="p">),</span> nrow<span class="p">(</span>addresses<span class="p">))</span>
@@ -156,7 +156,7 @@ returned <code>data.frame</code> to a <code>SpatialPointsDataFrame</code>, b) cr
 <code>SpatialGrid</code> based on the points, c) create a <code>SpatialPolygons</code> object
 from a hexagonal sample of the grid, and then finally d) create a
 <code>SpatialPolygonsDataFrame</code> for&nbsp;plotting:</p>
-<div class="codehilite"><pre>library<span class="p">(</span>sp<span class="p">)</span>
+<div class="highlight"><pre>library<span class="p">(</span>sp<span class="p">)</span>
 <span class="c1"># make the output into a Spatial* object</span>
 coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> <span class="o">~</span>longitude<span class="o">+</span>latitude
 library<span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
@@ -171,7 +171,7 @@ poly <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>po
 
 
 <p>Ok, now for some&nbsp;plotting!</p>
-<div class="codehilite"><pre><span class="c1"># pick some reasonable break points</span>
+<div class="highlight"><pre><span class="c1"># pick some reasonable break points</span>
 breaks <span class="o">=</span> c<span class="p">(</span><span class="m">1.0</span><span class="p">,</span> <span class="m">10.0</span><span class="p">,</span> <span class="m">20.0</span><span class="p">,</span> <span class="m">50.0</span><span class="p">,</span> <span class="m">100.0</span><span class="p">,</span> <span class="m">500.0</span><span class="p">,</span> <span class="m">2000.0</span><span class="p">)</span>
 <span class="c1"># use RColorBrewer to get a nice blue palette</span>
 library<span class="p">(</span>RColorBrewer<span class="p">)</span>
