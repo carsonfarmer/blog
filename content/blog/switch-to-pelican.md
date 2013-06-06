@@ -19,7 +19,7 @@ some issues with comments and converting (some) existing posts to Markdown. I
 also took the opportunity to update the site, change the page structure a bit
 and try out a few things like adding icons ([FontAwesome][font-awesome]), using 
 Twitter [Bootstrap][bootstrap] for some of the UI, and some other tweaks. To get 
-me though the process, I took advantage of several blogs and sites dedicated to 
+me through the process, I took advantage of several blogs and sites dedicated to 
 documenting the switch to Pelican:
 
 * [Pelican documentation][pelican-docs] (which is great)
