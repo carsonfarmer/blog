@@ -11,7 +11,7 @@ some issues with comments and converting (some) existing posts to Markdown. I
 also took the opportunity to update the site, change the page structure a bit
 and try out a few things like adding icons (&lt;a href="http://fortawesome.github.io/Font-Awesome/"&gt;FontAwesome&lt;/a&gt;), using 
 Twitter &lt;a href="http://twitter.github.io/bootstrap/"&gt;Bootstrap&lt;/a&gt; for some of the &lt;span class="caps"&gt;UI&lt;/span&gt;, and some other tweaks. To get 
-me though the process, I took advantage of several blogs and sites dedicated to 
+me through the process, I took advantage of several blogs and sites dedicated to 
 documenting the switch to&amp;nbsp;Pelican:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.getpelican.com/"&gt;Pelican documentation&lt;/a&gt; (which is&amp;nbsp;great)&lt;/li&gt;
@@ -211,7 +211,7 @@ pretty good impression of what my thesis is all about, so I&amp;#8217;ll leave i
 at that for now. For those who might be interested (and for my own
 reference), the &lt;code&gt;R&lt;/code&gt; code to generate this figure is here (requires the
 &lt;code&gt;wordcloud&lt;/code&gt; and &lt;code&gt;tm&lt;/code&gt; packages):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# read in all the lines as a character vector&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# read in all the lines as a character vector&lt;/span&gt;
 lines &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; readLines&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;modified.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 head&lt;span class="p"&gt;(&lt;/span&gt;lines&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;tm&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# text mining package&lt;/span&gt;
@@ -335,7 +335,7 @@ horses mouth &lt;a href="http://lin-ear-th-inking.blogspot.com/search?q=cascaded
 how I&amp;#8217;ve done things, but just to prove how much faster things can be,
 here is a quick little demo that can be run from the built-in &lt;span class="caps"&gt;QGIS&lt;/span&gt;
 Python&amp;nbsp;console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
 &lt;span class="n"&gt;canvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;qgis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;canvas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# assumes target layer is fist in layer list&lt;/span&gt;
 &lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -351,7 +351,7 @@ Python&amp;nbsp;console:&lt;/p&gt;
 
 
 &lt;p&gt;First, using the current method, which adds all the geometries together one by&amp;nbsp;one:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;regular_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geom&lt;/span&gt; &lt;span class="c"&gt;# start with the last geometry in the layer&lt;/span&gt;
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;geometry&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;regular_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsGeometry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;regular_geom&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;combine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -363,7 +363,7 @@ Python&amp;nbsp;console:&lt;/p&gt;
 
 &lt;p&gt;Secondly, using cascaded union, which uses magic to combine geometries together
 more efficiently. Also requires fewer lines of&amp;nbsp;code!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;cascaded_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geom&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;combineCascaded&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;end&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;
@@ -415,7 +415,7 @@ lines of&amp;nbsp;code.&lt;/p&gt;
 geometries of the layers in order to do any sort of geoprocessing. For
 example, to perform a (very) simple buffer, one had to use the following
 code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;
 &lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the map canvas&lt;/span&gt;
 &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the first layer in the layer list&lt;/span&gt;
 &lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# data provider for the layer&lt;/span&gt;
@@ -438,7 +438,7 @@ code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&
 &lt;p&gt;With the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; Analysis Library, things are much simpler, and the
 same (or more complex) buffering example can be completed with only 5
 lines of code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;Console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="c"&gt;# import iface (interface)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="c"&gt;# import iface (interface)&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.analysis&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;QgsGeometryAnalyzer&lt;/span&gt; &lt;span class="c"&gt;# import (par of) the analysis library&lt;/span&gt;
 &lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the map canvas&lt;/span&gt;
 &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the first layer in the layer list&lt;/span&gt;

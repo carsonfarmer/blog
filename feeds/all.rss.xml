@@ -46,7 +46,7 @@ some issues with comments and converting (some) existing posts to Markdown. I
 also took the opportunity to update the site, change the page structure a bit
 and try out a few things like adding icons (&lt;a href="http://fortawesome.github.io/Font-Awesome/"&gt;FontAwesome&lt;/a&gt;), using 
 Twitter &lt;a href="http://twitter.github.io/bootstrap/"&gt;Bootstrap&lt;/a&gt; for some of the &lt;span class="caps"&gt;UI&lt;/span&gt;, and some other tweaks. To get 
-me though the process, I took advantage of several blogs and sites dedicated to 
+me through the process, I took advantage of several blogs and sites dedicated to 
 documenting the switch to&amp;nbsp;Pelican:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://docs.getpelican.com/"&gt;Pelican documentation&lt;/a&gt; (which is&amp;nbsp;great)&lt;/li&gt;
@@ -298,7 +298,7 @@ another page using an &lt;code&gt;iframe&lt;/code&gt;. When trying to come up wi
 to embed &lt;a href="examples/olympic_countries/"&gt;this page&lt;/a&gt; inside &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;this page&lt;/a&gt;, I found that webkit based
 browsers were not behaving as they should. After a lot of fiddling
 about, I discovered that the following &lt;code&gt;css&lt;/code&gt; seems to fix the&amp;nbsp;issues:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#wrap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;  
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nf"&gt;#wrap&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;  
     &lt;span class="k"&gt;width&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;630px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;height&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;300px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -326,7 +326,7 @@ about, I discovered that the following &lt;code&gt;css&lt;/code&gt; seems to fix
 to &amp;#8216;double scale&amp;#8217; everything, which turned out to be the root of my
 problem. With the above tweaks, everything works fine (for now) using
 the following &lt;code&gt;HTML&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wrap&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wrap&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.website.com/&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -358,7 +358,7 @@ cartogram based on an &lt;a href="http://lambert.nico.free.fr/tp/biblio/Dougenik
 of the cartogram is &lt;a href="examples/olympic_countries/"&gt;available here&lt;/a&gt; (or by clicking on the image
 below). [&lt;span class="caps"&gt;UPDATE&lt;/span&gt;] If you&amp;#8217;d like to include the map on a web page, you can
 now do that by including this in your &lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;nbsp;source:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.carsonfarmer.com/examples/olympic_countries_map.html&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;1230&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;545\&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.carsonfarmer.com/examples/olympic_countries_map.html&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;1230&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;545\&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -515,7 +515,7 @@ directly from the console, though I&amp;#8217;m pretty sure I could have done th
 from R as well. Next, I needed to extract the unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses from
 the logs. I found this nice grep one-liner from &lt;a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/"&gt;here&lt;/a&gt;, which I
 modified to grab all unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses that &amp;#8216;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#8217; something from the&amp;nbsp;site:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
+&lt;div class="codehilite"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -529,19 +529,19 @@ directly from within R. I first heard about both these projects from the
 &lt;a href="http://blog.revolutionanalytics.com"&gt;Revolution Analytics blog&lt;/a&gt;, where there is an &lt;a href="http://blog.revolutionanalytics.com/2011/05/mapping-locations-in-r-with-the-data-science-toolkit.html"&gt;article&lt;/a&gt; summarising
 Ryan Elmore&amp;#8217;s &lt;a href="http://thelogcabin.wordpress.com/2011/05/02/r-and-the-data-science-toolkit/"&gt;work on &lt;span class="caps"&gt;RDSTK&lt;/span&gt;&lt;/a&gt;, and a few other handy links. &lt;span class="caps"&gt;RDSTK&lt;/span&gt;
 isn&amp;#8217;t (yet?) available on &lt;a href="http://cran.r-project.org/"&gt;&lt;span class="caps"&gt;CRAN&lt;/span&gt;&lt;/a&gt;, so I downloaded it directly from&amp;nbsp;github:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;wget https://github.com/rtelmore/RDSTK/raw/master/src/RDSTK_1.0.tar.gz
+&lt;div class="codehilite"&gt;&lt;pre&gt;wget https://github.com/rtelmore/RDSTK/raw/master/src/RDSTK_1.0.tar.gz
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Then I installed it via &lt;code&gt;R CMD INSTALL&lt;/code&gt; (note that it requires other R
 packages: &lt;code&gt;RCurl&lt;/code&gt;, &lt;code&gt;rjson&lt;/code&gt;, and &lt;code&gt;plyr&lt;/code&gt;):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;R CMD INSTALL RDSTK_1.0.tar.gz
+&lt;div class="codehilite"&gt;&lt;pre&gt;R CMD INSTALL RDSTK_1.0.tar.gz
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&amp;nbsp;working:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;addresses &lt;span class="o"&gt;=&lt;/span&gt; read.table&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ip_addresses.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;addresses &lt;span class="o"&gt;=&lt;/span&gt; read.table&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ip_addresses.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;RDSTK&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;?&lt;/span&gt; ip2coordinates
 &lt;/pre&gt;&lt;/div&gt;
@@ -552,7 +552,7 @@ within a single string with comma-separated &lt;span class="caps"&gt;IP&lt;/span
 only do a few IPs at a time (about 100 I think?) so I had to do this
 part in a loop (it probably isn&amp;#8217;t polite to slam &lt;span class="caps"&gt;DSTK&lt;/span&gt; with 1,000s of
 requests, so be&amp;nbsp;nice!).&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 out &lt;span class="o"&gt;=&lt;/span&gt; ip2coordinates&lt;span class="p"&gt;(&lt;/span&gt;ips&lt;span class="p"&gt;)&lt;/span&gt;
 last &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;
 s &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;(&lt;/span&gt;seq&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;160&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;))&lt;/span&gt;
@@ -569,7 +569,7 @@ returned &lt;code&gt;data.frame&lt;/code&gt; to a &lt;code&gt;SpatialPointsDataF
 &lt;code&gt;SpatialGrid&lt;/code&gt; based on the points, c) create a &lt;code&gt;SpatialPolygons&lt;/code&gt; object
 from a hexagonal sample of the grid, and then finally d) create a
 &lt;code&gt;SpatialPolygonsDataFrame&lt;/code&gt; for&amp;nbsp;plotting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# make the output into a Spatial* object&lt;/span&gt;
 coordinates&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;longitude&lt;span class="o"&gt;+&lt;/span&gt;latitude
 library&lt;span class="p"&gt;(&lt;/span&gt;maptools&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# need this for the following function&lt;/span&gt;
@@ -584,7 +584,7 @@ poly &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class
 
 
 &lt;p&gt;Ok, now for some&amp;nbsp;plotting!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# pick some reasonable break points&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# pick some reasonable break points&lt;/span&gt;
 breaks &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;20.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;50.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;100.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;500.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;2000.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# use RColorBrewer to get a nice blue palette&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;RColorBrewer&lt;span class="p"&gt;)&lt;/span&gt;
@@ -627,7 +627,7 @@ pretty good impression of what my thesis is all about, so I&amp;#8217;ll leave i
 at that for now. For those who might be interested (and for my own
 reference), the &lt;code&gt;R&lt;/code&gt; code to generate this figure is here (requires the
 &lt;code&gt;wordcloud&lt;/code&gt; and &lt;code&gt;tm&lt;/code&gt; packages):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# read in all the lines as a character vector&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# read in all the lines as a character vector&lt;/span&gt;
 lines &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; readLines&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;modified.txt&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 head&lt;span class="p"&gt;(&lt;/span&gt;lines&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;tm&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# text mining package&lt;/span&gt;
@@ -672,7 +672,7 @@ Here are some examples of the script&amp;#8217;s usage from the &lt;span class="
 &lt;li&gt;Add geometry information (assumes that the target layer in first
 layer in the&amp;nbsp;layer-list):&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;qgis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;qgis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;add_geometry_information&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;add_geometry_information&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;addGeometryInformation&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;vlayer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
@@ -684,7 +684,7 @@ layer in the&amp;nbsp;layer-list):&lt;/li&gt;
 input polygon layer (assumes polygon layer is second, and point or line
 layer is the first in&amp;nbsp;layer-list):&lt;/li&gt;
 &lt;/ol&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;polygonLayer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;polygonLayer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;input&lt;/span&gt; &lt;span class="n"&gt;Layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;add_geometry_information&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;countFeaturesInPolygon&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;polygonLayer&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;inputLayer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -734,23 +734,23 @@ to visualise the computed shortest path directly.
 already have &lt;code&gt;PostgreSQL&lt;/code&gt; and &lt;code&gt;PostGIS&lt;/code&gt; installed, but if not, have a &lt;a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/"&gt;look
 here&lt;/a&gt; for a quick guide to getting things set up (Note that the latest
 version of &lt;code&gt;PostgreSQL&lt;/code&gt; is now&amp;nbsp;8.4).&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;If you don&amp;#8217;t have them already, you might also need tools for building
 the required software packages, as well as subversion and&amp;nbsp;cmake.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install build-essential subversion cmake
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo apt-get install build-essential subversion cmake
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;To be able to run the driving distance algorithms we need&amp;nbsp;&lt;span class="caps"&gt;CGAL&lt;/span&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libcgal*
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo apt-get install libcgal*
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And the traveling sales person algorithm requires&amp;nbsp;&lt;span class="caps"&gt;GAUL&lt;/span&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
+&lt;div class="codehilite"&gt;&lt;pre&gt;wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
 tar -xzf gaul-devel-0.1850-0.tar.gz &lt;span class="nb"&gt;cd &lt;/span&gt;gaul-devel-0.1850-0/
 ./configure --disable-slang
 make
@@ -762,7 +762,7 @@ sudo ldconfig
 &lt;p&gt;Now it&amp;#8217;s time to download, build, and install &lt;code&gt;pgRouting&lt;/code&gt;. If you don&amp;#8217;t
 have subversion, or you don&amp;#8217;t want to have the latest trunk version of
 &lt;code&gt;pgRouting&lt;/code&gt;, you can also &lt;a href="http://pgrouting.postlbs.org/wiki/pgRoutingDownload"&gt;download it manually&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
+&lt;div class="codehilite"&gt;&lt;pre&gt;svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
 &lt;span class="nb"&gt;cd &lt;/span&gt;pgrouting/
 cmake -DWITH_TSP&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="caps"&gt;ON&lt;/span&gt; -DWITH_DD&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="caps"&gt;ON&lt;/span&gt; . make
 sudo make install
@@ -771,47 +771,47 @@ sudo make install
 
 &lt;p&gt;Once we&amp;#8217;ve got that installed and ready to go, we need to set up
 &lt;code&gt;PostgreSQL&lt;/code&gt; so that it &amp;#8216;trusts&amp;#8217; local database&amp;nbsp;connections.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo gedit /etc/postgresql/8.4/main/pg_hba.conf
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo gedit /etc/postgresql/8.4/main/pg_hba.conf
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Scroll to the bottom, and make sure you change the &lt;code&gt;METHOD&lt;/code&gt; to&amp;nbsp;&amp;#8216;trust&amp;#8217;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# &lt;span class="caps"&gt;TYPE&lt;/span&gt;  &lt;span class="caps"&gt;DATABASE&lt;/span&gt;    &lt;span class="caps"&gt;USER&lt;/span&gt;        &lt;span class="caps"&gt;CIDR&lt;/span&gt;-&lt;span class="caps"&gt;ADDRESS&lt;/span&gt;          &lt;span class="caps"&gt;METHOD&lt;/span&gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# &lt;span class="caps"&gt;TYPE&lt;/span&gt;  &lt;span class="caps"&gt;DATABASE&lt;/span&gt;    &lt;span class="caps"&gt;USER&lt;/span&gt;        &lt;span class="caps"&gt;CIDR&lt;/span&gt;-&lt;span class="caps"&gt;ADDRESS&lt;/span&gt;          &lt;span class="caps"&gt;METHOD&lt;/span&gt;&lt;/span&gt;
 &lt;span class="n"&gt;local&lt;/span&gt;   &lt;span class="n"&gt;all&lt;/span&gt;         &lt;span class="n"&gt;all&lt;/span&gt;                               &lt;span class="n"&gt;trust&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And now that we&amp;#8217;ve made these changes, we need to restart &lt;code&gt;PostgreSQL&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo /etc/init.d/postgresql-8.4 restart
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo /etc/init.d/postgresql-8.4 restart
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Next we simply create a routing database to store our data&amp;nbsp;in&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;createdb -U postgres routing createlang -U postgres plpgsql routing
+&lt;div class="codehilite"&gt;&lt;pre&gt;createdb -U postgres routing createlang -U postgres plpgsql routing
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&amp;#8230;add the &lt;code&gt;PostGIS&lt;/code&gt; functions&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql routing
+&lt;div class="codehilite"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql routing
 psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql routing
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&amp;#8230;add all the &lt;code&gt;pgRouting&lt;/code&gt; functions&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postlbs/routing_core.sql routing
+&lt;div class="codehilite"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postlbs/routing_core.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_core_wrappers.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_topology.sql routing
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&amp;#8230;including the traveling salesman&amp;nbsp;functions&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postlbs/routing_tsp.sql routing
+&lt;div class="codehilite"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postlbs/routing_tsp.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_tsp_wrappers.sql routing
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&amp;#8230;and finally the driving distance&amp;nbsp;functions.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postlbs/routing_dd.sql routing
+&lt;div class="codehilite"&gt;&lt;pre&gt;psql -U postgres -f /usr/share/postlbs/routing_dd.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_dd_wrappers.sql routing
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -820,7 +820,7 @@ psql -U postgres -f /usr/share/postlbs/routing_dd_wrappers.sql routing
 with data! So in order to do that relatively painlessly, we first
 install the &lt;a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting"&gt;osm2pgrouting&lt;/a&gt; tool, which will help us import our osm
 data directly into our &lt;code&gt;pgRouting&lt;/code&gt; database with the correct structure and&amp;nbsp;everything.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;svn checkout http://pgrouting.postlbs.org/svn/pgrouting/tools/osm2pgrouting/trunk osm2pgrouting
+&lt;div class="codehilite"&gt;&lt;pre&gt;svn checkout http://pgrouting.postlbs.org/svn/pgrouting/tools/osm2pgrouting/trunk osm2pgrouting
 &lt;span class="nb"&gt;cd &lt;/span&gt;osm2pgrouting/
 make
 &lt;/pre&gt;&lt;/div&gt;
@@ -829,20 +829,20 @@ make
 &lt;p&gt;Once that&amp;#8217;s finished building, we can go ahead and download our osm data
 from &lt;a href="http://download.geofabrik.de/osm/"&gt;http://download.geofabrik.de/osm/&lt;/a&gt;. See this &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;previous post&lt;/a&gt;
 for details. For this example, I&amp;#8217;ll be using the osm data for&amp;nbsp;Ireland&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
+&lt;div class="codehilite"&gt;&lt;pre&gt;wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
 bzip2 -d ireland.osm.bz2
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Once we have that downloaded and extracted, we&amp;#8217;re ready to import the
 osm data into our database using the &lt;code&gt;osm2pgrouting&lt;/code&gt; tool&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;./osm2pgrouting -file /home/cfarmer/Downloads/ireland.osm -conf mapconfig.xml -dbname routing -user postgres -clean
+&lt;div class="codehilite"&gt;&lt;pre&gt;./osm2pgrouting -file /home/cfarmer/Downloads/ireland.osm -conf mapconfig.xml -dbname routing -user postgres -clean
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Once that is finished (could take a long time) we&amp;#8217;re ready to query the
 network (Note that the values 52343 and 39219 represent network node&amp;nbsp;ids)&amp;#8230;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;psql -U postgres routing
+&lt;div class="codehilite"&gt;&lt;pre&gt;psql -U postgres routing
 &lt;span class="k"&gt;select&lt;/span&gt; * from shortest_path
     &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;select gid as id,&lt;/span&gt;
 &lt;span class="s1"&gt;        source::int4,&lt;/span&gt;
@@ -854,7 +854,7 @@ network (Note that the values 52343 and 39219 represent network node&amp;nbsp;id
 
 
 &lt;p&gt;&amp;#8230;to produce something like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;vertex_id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;edge_id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;        &lt;span class="n"&gt;cost&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;vertex_id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;edge_id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;        &lt;span class="n"&gt;cost&lt;/span&gt;
 &lt;span class="o"&gt;----------+---------+---------------------&lt;/span&gt;
 &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;52343&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;78055&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.217641978736602&lt;/span&gt;
 &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;52341&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;78052&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mf"&gt;0.0230665826613562&lt;/span&gt;
@@ -871,11 +871,11 @@ network (Note that the values 52343 and 39219 represent network node&amp;nbsp;id
 &lt;p&gt;Assuming your database is structured as &lt;code&gt;pgRouting&lt;/code&gt; expects (which it
 should be if you&amp;#8217;ve used &lt;code&gt;osm2pgrouting&lt;/code&gt;), you can use the some of the
 functions which return geometries for use with other &lt;code&gt;PostGIS&lt;/code&gt; functions:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; * from dijkstra_sp&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ways&amp;#39;&lt;/span&gt;, 52343, 39219&lt;span class="o"&gt;)&lt;/span&gt;;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; * from dijkstra_sp&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ways&amp;#39;&lt;/span&gt;, 52343, 39219&lt;span class="o"&gt;)&lt;/span&gt;;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;id&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="n"&gt;gid&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;          &lt;span class="n"&gt;the_geom&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;id&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="n"&gt;gid&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;          &lt;span class="n"&gt;the_geom&lt;/span&gt;
 &lt;span class="o"&gt;----+--------+----------------------------&lt;/span&gt;
 &lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78055&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
 &lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78052&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
@@ -1029,7 +1029,7 @@ things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xml
 visualise the results of a &lt;code&gt;SELECT&lt;/code&gt; statement on a &lt;a href="http://postgis.refractions.net/"&gt;PostGIS&lt;/a&gt; database
 that returns spatial data in &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt;. In other words, can we map the
 results of something&amp;nbsp;like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="caps"&gt;FROM&lt;/span&gt; spatial_table &lt;span class="caps"&gt;GROUP&lt;/span&gt; &lt;span class="caps"&gt;BY&lt;/span&gt; id;
+&lt;div class="codehilite"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="caps"&gt;FROM&lt;/span&gt; spatial_table &lt;span class="caps"&gt;GROUP&lt;/span&gt; &lt;span class="caps"&gt;BY&lt;/span&gt; id;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1043,7 +1043,7 @@ of this functionality (yet!)&lt;/strike&gt;There is now a plugin available from 
 &lt;a href="http://www.faunalia.it/qgis/plugins.xml"&gt;Faunalia python plugin repository&lt;/a&gt; called &lt;code&gt;RT Sql Layer&lt;/code&gt; which provides
 a &lt;span class="caps"&gt;GUI&lt;/span&gt; for loading &lt;code&gt;PostGIS&lt;/code&gt; &lt;code&gt;SELECT&lt;/code&gt; statements as layer, but you can also
 access this handy feature via the &lt;code&gt;QGIS&lt;/code&gt; &lt;code&gt;Python&lt;/code&gt; console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;db_conn&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;dbname=&amp;#39;gis&amp;#39; host=localhost port=5432 user=&amp;#39;cfarmer&amp;#39; password=&amp;#39;xxxx&amp;#39;&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;db_conn&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;dbname=&amp;#39;gis&amp;#39; host=localhost port=5432 user=&amp;#39;cfarmer&amp;#39; password=&amp;#39;xxxx&amp;#39;&amp;quot;&lt;/span&gt;
 &lt;span class="n"&gt;id_field&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;id&amp;quot;&lt;/span&gt;
 &lt;span class="n"&gt;table&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;(select id, st_union(the_geom) from spatial_table group by id)&amp;quot;&lt;/span&gt;
 &lt;span class="n"&gt;uri&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt; key=&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt; table=&lt;/span&gt;&lt;span class="si"&gt;%s&lt;/span&gt;&lt;span class="s"&gt; (the_geom) sql=&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;db_conn&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;id_field&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;table&lt;/span&gt;&lt;span class="p"&gt;,)&lt;/span&gt;
@@ -1052,12 +1052,12 @@ access this handy feature via the &lt;code&gt;QGIS&lt;/code&gt; &lt;code&gt;Pyth
 
 
 &lt;p&gt;we can then add the layer to the map canvas&amp;nbsp;via:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;QgsMapLayerRegistry&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;instance&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;addMapLayer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;QgsMapLayerRegistry&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;instance&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;addMapLayer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and even query/measure it via something&amp;nbsp;like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;feat&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsFeature&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;select&lt;/span&gt;&lt;span class="p"&gt;([],&lt;/span&gt; &lt;span class="n"&gt;QgsRectangle&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;span class="n"&gt;provider&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nextFeature&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;feat&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1074,7 +1074,7 @@ Computing&lt;/a&gt;. To show just how nice this package is, below is a minimal
 example of bootstrapping a network partitioning algorithm which takes
 advantage of a multicore processor:
 &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;foreach&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;igraph&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# Jaccard coeficcient function (taken from package fpc)&lt;/span&gt;
@@ -1222,7 +1222,7 @@ horses mouth &lt;a href="http://lin-ear-th-inking.blogspot.com/search?q=cascaded
 how I&amp;#8217;ve done things, but just to prove how much faster things can be,
 here is a quick little demo that can be run from the built-in &lt;span class="caps"&gt;QGIS&lt;/span&gt;
 Python&amp;nbsp;console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
 &lt;span class="n"&gt;canvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;qgis&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;utils&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;canvas&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# assumes target layer is fist in layer list&lt;/span&gt;
 &lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1238,7 +1238,7 @@ Python&amp;nbsp;console:&lt;/p&gt;
 
 
 &lt;p&gt;First, using the current method, which adds all the geometries together one by&amp;nbsp;one:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;regular_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geom&lt;/span&gt; &lt;span class="c"&gt;# start with the last geometry in the layer&lt;/span&gt;
 &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;geometry&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;regular_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QgsGeometry&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;regular_geom&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;combine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geometry&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -1250,7 +1250,7 @@ Python&amp;nbsp;console:&lt;/p&gt;
 
 &lt;p&gt;Secondly, using cascaded union, which uses magic to combine geometries together
 more efficiently. Also requires fewer lines of&amp;nbsp;code!&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;cascaded_geom&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;geom&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;combineCascaded&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;geoms&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;end&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;total&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;start&lt;/span&gt;
@@ -1302,7 +1302,7 @@ lines of&amp;nbsp;code.&lt;/p&gt;
 geometries of the layers in order to do any sort of geoprocessing. For
 example, to perform a (very) simple buffer, one had to use the following
 code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;
 &lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the map canvas&lt;/span&gt;
 &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the first layer in the layer list&lt;/span&gt;
 &lt;span class="n"&gt;provider&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dataProvider&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# data provider for the layer&lt;/span&gt;
@@ -1325,7 +1325,7 @@ code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&
 &lt;p&gt;With the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; Analysis Library, things are much simpler, and the
 same (or more complex) buffering example can be completed with only 5
 lines of code in the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;Console:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="c"&gt;# import iface (interface)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.core&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="c"&gt;# import iface (interface)&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;qgis.analysis&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;QgsGeometryAnalyzer&lt;/span&gt; &lt;span class="c"&gt;# import (par of) the analysis library&lt;/span&gt;
 &lt;span class="n"&gt;mc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mapCanvas&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the map canvas&lt;/span&gt;
 &lt;span class="n"&gt;layer&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mc&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;layer&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# get a reference to the first layer in the layer list&lt;/span&gt;
@@ -1421,7 +1421,7 @@ takes a &lt;code&gt;SpatialPointsDataFrame&lt;/code&gt; as input, and returns a
 &lt;code&gt;SpatialPolygonsDataFrame&lt;/code&gt; that represents the Voronoi tessellation of
 the input point layer.
 &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;voronoipolygons &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;layer&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;voronoipolygons &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;layer&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     require&lt;span class="p"&gt;(&lt;/span&gt;deldir&lt;span class="p"&gt;)&lt;/span&gt;
     crds &lt;span class="o"&gt;=&lt;/span&gt; layer&lt;span class="o"&gt;@&lt;/span&gt;coords
     z &lt;span class="o"&gt;=&lt;/span&gt; deldir&lt;span class="p"&gt;(&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
@@ -1443,7 +1443,7 @@ the input point layer.
 
 &lt;p&gt;To save the output to shapefile, simply use&lt;code&gt;writeOGR&lt;/code&gt; from the &lt;code&gt;rgdal&lt;/code&gt;
 library:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;?&lt;/span&gt;writeOGR
 &lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 16 Sep 2009 22:30:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-09-16:2009/09/voronoi-polygons-with-r/</guid><category>R</category><category>Tesselation</category><category>Voronoi polygons</category><category>Free open-source software (FOSS)</category><category>How to</category><category>R spatial</category></item><item><title>Journal of Spatial Information Science</title><link>http://www.carsonfarmer.com/2009/09/journal-of-spatial-information-science/</link><description>&lt;p&gt;Check out the &lt;a href="http://josis.org/index.php/josis/index"&gt;Journal of Spatial Information Science&lt;/a&gt;, a new,
 peer-reviewed, open-access journal with a range of well established
@@ -1503,7 +1503,7 @@ checking the console, I decided to &amp;#8216;watch&amp;#8217; the process using
 command &lt;code&gt;watch&lt;/code&gt;. I discovered this handy tool a while ago, and have
 found that for long running processes, I can use &lt;code&gt;watch&lt;/code&gt; to notify me
 when the process has finished, using the following&amp;nbsp;command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;watch -ben 1 &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;watch -ben 1 &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1520,7 +1520,7 @@ tells &lt;code&gt;ps&lt;/code&gt; to report the process matching the name &lt;co
 &lt;code&gt;shp2pgsql&lt;/code&gt; is no longer running, &lt;code&gt;ps u -C&lt;/code&gt; will have a non-zero exit,
 and I get my beep: very handy!
 This can be made even more useful by changing the above command&amp;nbsp;to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;watch -ben 1 &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;; mail -s &lt;span class="s2"&gt;&amp;quot;Process complete!&amp;quot;&lt;/span&gt; email.address@some.one &amp;lt; /home/username/email_text.txt
+&lt;div class="codehilite"&gt;&lt;pre&gt;watch -ben 1 &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;; mail -s &lt;span class="s2"&gt;&amp;quot;Process complete!&amp;quot;&lt;/span&gt; email.address@some.one &amp;lt; /home/username/email_text.txt
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1545,7 +1545,7 @@ specify several highlighting rules. Generally, a rule consists of a
 QRegExp pattern and a QTextCharFormat instance. For this example, the
 syntax rules are based on the R statistical programming language. The
 various rules can be stored using a Python&amp;nbsp;list.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;PyQt4.QtGui&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
 &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;PyQt4.QtCore&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyHighlighter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;QSyntaxHighlighter&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
@@ -1575,7 +1575,7 @@ the keyword and the specified format to a &lt;code&gt;HighlightingRule&lt;/code&
 the attached Python file) and append the object to our list of rules.
 We can specify further syntax rules, including &lt;code&gt;reservedClasses&lt;/code&gt;,
 &lt;code&gt;assignmentOperators&lt;/code&gt;, and &lt;code&gt;numbers&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;reservedClasses&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QTextCharFormat&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;reservedClasses&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QTextCharFormat&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="n"&gt;reservedClasses&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setForeground&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;Qt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;darkRed&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;reservedClasses&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setFontWeight&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;QFont&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Bold&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;keywords&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QStringList&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;array&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;character&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;complex&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -1611,7 +1611,7 @@ argument to the &lt;code&gt;highlightBlock&lt;/code&gt; function. The specified 
 applied to the text from the given start position for the given length.
 The formatting properties set in the given format are merged at display
 time with the formatting information stored directly in the&amp;nbsp;document.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;highlightBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;highlightBlock&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;rule&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;highlightingRules&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;expression&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QRegExp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;rule&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pattern&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="n"&gt;index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;expression&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;indexIn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
@@ -1631,7 +1631,7 @@ In order to apply the syntax highlighter to a QTextEdit, we simply
 create an instance of our QSyntaxHighlighter subclass, and pass it the
 QTextEdit or QTextDocument that we want the syntax highlighting to be
 applied to, as the following test application&amp;nbsp;demonstrates:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestApp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;QMainWindow&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestApp&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;QMainWindow&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="n"&gt;QMainWindow&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;__init__&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         &lt;span class="n"&gt;editor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QTextEdit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1710,7 +1710,7 @@ to do various specific tasks, such as assist you in writing and
 exporting LaTeX documents!
 
 First, get all the basic&amp;nbsp;plugins:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gedit-plugins&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo apt-get install gedit-plugins&lt;span class="sb"&gt;`&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -1748,7 +1748,7 @@ working in minutes.
 &lt;blockquote&gt;
 &lt;p&gt;Another reason I love Ubuntu - getting postgis + postgresql is really&amp;nbsp;easy&amp;#8230;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install postgis postgresql-8.3-postgis
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo apt-get install postgis postgresql-8.3-postgis
 sudo su postgres
 createuser -s -d -r -l -P -E -e timlinux
 &lt;span class="nb"&gt;exit&lt;/span&gt;
@@ -1759,7 +1759,7 @@ createuser -s -d -r -l -P -E -e timlinux
 &lt;p&gt;Enter prompts following above commands as needed. Now you have
 postgres installed and a user created. Next create an empty spatial&amp;nbsp;database:&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;createdb qgis
+&lt;div class="codehilite"&gt;&lt;pre&gt;createdb qgis
 createlang plpgsql qgis
 psql qgis &amp;lt; /usr/share/postgresql-8.3-postgis/lwpostgis.sql
 psql qgis &amp;lt; /usr/share/postgresql-8.3-postgis/spatial_ref_sys.sql
@@ -1774,30 +1774,30 @@ not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
 &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;invisible&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;invisible&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Note: &lt;code&gt;invisible&lt;/code&gt; allows you to close the viewer without filling the
 console with the attributes of the table. You could also&amp;nbsp;use:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;new_data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;new_data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;to assign changes made to the data to a new variable, or&amp;nbsp;use:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;or,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;fix&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;fix&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;to make changes to the Spatial*DataFrame&amp;nbsp;itself.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 14 Oct 2008 13:44:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2008-10-14:2008/10/view-spatial-data-attribute-tables-in-r/</guid><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category><category>How to</category><category>R spatial</category></item><item><title>R spatial indentify tool</title><link>http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/</link><description>&lt;p&gt;This is useful for visually exploring R spatial data such as
 &lt;code&gt;SpatialPointDataFrames&lt;/code&gt; or &lt;code&gt;SpatialGridDataFrames&lt;/code&gt;. By clicking on various
 features, the value at that point will be&amp;nbsp;displayed.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
 y &lt;span class="o"&gt;=&lt;/span&gt; readGDAL&lt;span class="p"&gt;(&lt;/span&gt;system.file&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pictures/Rlogo.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rgdal&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; band&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 y.grid &lt;span class="o"&gt;=&lt;/span&gt; y&lt;span class="o"&gt;@&lt;/span&gt;grid
 y.coords &lt;span class="o"&gt;=&lt;/span&gt; coordinates&lt;span class="p"&gt;(&lt;/span&gt;y.grid&lt;span class="p"&gt;)&lt;/span&gt; 
@@ -1814,7 +1814,7 @@ but I was interested in something simple, and preferably a single line
 command. After a lot of Google-ing, I ended up finding &lt;a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487"&gt;this post&lt;/a&gt;,
 which does a great job of explaining how to do this in linux. The basic
 command&amp;nbsp;is:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;find . -name &lt;span class="s2"&gt;&amp;quot;\*.py&amp;quot;&lt;/span&gt; -print | xargs sed -i &lt;span class="s1"&gt;&amp;#39;s/foo/bar/g&amp;#39;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;find . -name &lt;span class="s2"&gt;&amp;quot;\*.py&amp;quot;&lt;/span&gt; -print | xargs sed -i &lt;span class="s1"&gt;&amp;#39;s/foo/bar/g&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

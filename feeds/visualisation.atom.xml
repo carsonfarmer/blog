@@ -46,7 +46,7 @@ cartogram based on an &lt;a href="http://lambert.nico.free.fr/tp/biblio/Dougenik
 of the cartogram is &lt;a href="examples/olympic_countries/"&gt;available here&lt;/a&gt; (or by clicking on the image
 below). [&lt;span class="caps"&gt;UPDATE&lt;/span&gt;] If you&amp;#8217;d like to include the map on a web page, you can
 now do that by including this in your &lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;nbsp;source:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.carsonfarmer.com/examples/olympic_countries_map.html&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;1230&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;545\&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.carsonfarmer.com/examples/olympic_countries_map.html&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;1230&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;545\&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

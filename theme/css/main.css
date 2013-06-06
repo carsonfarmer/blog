@@ -123,7 +123,7 @@ pre {
     background-color: rgb(238, 238, 238);
     padding: 10px;
     margin: 10px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Quotes */
@@ -144,6 +144,32 @@ q:before {
     left: -10px;
     top: -5px;
     color: #7a7a7a;
+}
+
+.dataset {
+    position: absolute;
+	  padding: 5px;
+	  right: -171px;
+	  max-width: 200px;
+	  background: #B0C4DE;
+	  /* css3 */
+	  -webkit-border-radius:10px;
+	  -moz-border-radius:10px;
+	  border-radius:10px;
+}
+
+.dataset.right{}
+
+.dataset.left {
+	  left: -170px;
+	  right: auto;
+}
+
+.dataset:before {
+    font-family: "FontAwesome";
+    content: "\f024";
+    padding-right: 10px;
+    font-size: 1.5em;
 }
 
 cite {}
@@ -244,6 +270,7 @@ blockquote p {
 	margin-right:25px;
 	margin-left:0px;
 	left: -255px;
+	right: auto;
 }
 
 .note:before {

@@ -3,11 +3,11 @@
 <head>
         <meta charset="utf-8">
         <title>pgRouting, OpenStreetMap, and QGIS</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link rel="stylesheet" href="../../../theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
                         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-        <script src="http://www.carsonfarmer.com/static/libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../../static/libs/bootstrap/js/bootstrap.min.js"></script>
         <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,7 +16,7 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <form class="form-inline" id="top-search">
     <div class='input-append'>
         <input type="text" id="top-query" placeholder="Search..." />
@@ -31,16 +31,16 @@
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
-                            <li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
+                            <li><a id="home" href="../../../"><i class="icon-home"></i></a></li>
                                 <li class="divider-vertical"></li>
-                                                                                                                            <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
-                                                                                                                                <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
+                                                                                                                            <li><a href="../../../about/"><i class="icon-info-sign"></i> About</a></li>
+                                                                                                                                <li><a href="../../../curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
                                                                                                                                 <li class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
                                         <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
                                         <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
-                                                                                            <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Reserach</a></li>
-                                                                                            <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
+                                                                                            <li><a href="../../../research/"><i class="icon-bar-chart"></i> Reserach</a></li>
+                                                                                            <li><a href="../../../spatial-software/"><i class="icon-code"></i> Software</a></li>
                                                                                     </ul>
                                     </li>
                                                                                                                                                                                 <li class="dropdown pull-right">
@@ -72,7 +72,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/" rel="bookmark"
+        <a href="../../../2010/10/pgrouting-openstreetmap-and-qgis/" rel="bookmark"
            title="Permalink to pgRouting, OpenStreetMap, and QGIS">pgRouting, OpenStreetMap, and&nbsp;<span class="caps">QGIS</span></a></h1>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
       <abbr class="published" title="2010-10-14T12:26:00">
@@ -82,7 +82,7 @@
     </header>
 
     <div class="entry-content">
-      <p>I mentioned <a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">a few posts back</a> that there was a great resource for
+      <p>I mentioned <a href="../../../2010/05/osm-data-by-country/">a few posts back</a> that there was a great resource for
 downloading OpenStreetMap data, and that it was relatively easy to
 import osm data into <code>PostgreSQL</code>/<code>PostGIS</code> for use with <code>pgRouting</code> to
 calculate shortest paths and various other network-based operations. In
@@ -91,26 +91,26 @@ and provide a quick example to show how this can be combined with <span class="c
 to visualise the computed shortest path directly.
 </p>
 <p>Firstly, we need to install all the required packages. I&#8217;m assuming you
-already have <code>PostgreSQL</code> and <code>PostGIS</code> installed, but if not, have a <a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/">look
+already have <code>PostgreSQL</code> and <code>PostGIS</code> installed, but if not, have a <a href="../../../2008/11/quick-guide-to-setting-up-postgis-database/">look
 here</a> for a quick guide to getting things set up (Note that the latest
 version of <code>PostgreSQL</code> is now&nbsp;8.4).</p>
-<div class="highlight"><pre>sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
+<div class="codehilite"><pre>sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
 </pre></div>
 
 
 <p>If you don&#8217;t have them already, you might also need tools for building
 the required software packages, as well as subversion and&nbsp;cmake.</p>
-<div class="highlight"><pre>sudo apt-get install build-essential subversion cmake
+<div class="codehilite"><pre>sudo apt-get install build-essential subversion cmake
 </pre></div>
 
 
 <p>To be able to run the driving distance algorithms we need&nbsp;<span class="caps">CGAL</span>:</p>
-<div class="highlight"><pre>sudo apt-get install libcgal*
+<div class="codehilite"><pre>sudo apt-get install libcgal*
 </pre></div>
 
 
 <p>And the traveling sales person algorithm requires&nbsp;<span class="caps">GAUL</span>:</p>
-<div class="highlight"><pre>wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
+<div class="codehilite"><pre>wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
 tar -xzf gaul-devel-0.1850-0.tar.gz <span class="nb">cd </span>gaul-devel-0.1850-0/
 ./configure --disable-slang
 make
@@ -122,7 +122,7 @@ sudo ldconfig
 <p>Now it&#8217;s time to download, build, and install <code>pgRouting</code>. If you don&#8217;t
 have subversion, or you don&#8217;t want to have the latest trunk version of
 <code>pgRouting</code>, you can also <a href="http://pgrouting.postlbs.org/wiki/pgRoutingDownload">download it manually</a>.</p>
-<div class="highlight"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
+<div class="codehilite"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
 <span class="nb">cd </span>pgrouting/
 cmake -DWITH_TSP<span class="o">=</span><span class="caps">ON</span> -DWITH_DD<span class="o">=</span><span class="caps">ON</span> . make
 sudo make install
@@ -131,47 +131,47 @@ sudo make install
 
 <p>Once we&#8217;ve got that installed and ready to go, we need to set up
 <code>PostgreSQL</code> so that it &#8216;trusts&#8217; local database&nbsp;connections.</p>
-<div class="highlight"><pre>sudo gedit /etc/postgresql/8.4/main/pg_hba.conf
+<div class="codehilite"><pre>sudo gedit /etc/postgresql/8.4/main/pg_hba.conf
 </pre></div>
 
 
 <p>Scroll to the bottom, and make sure you change the <code>METHOD</code> to&nbsp;&#8216;trust&#8217;.</p>
-<div class="highlight"><pre><span class="cp"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
+<div class="codehilite"><pre><span class="cp"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
 <span class="n">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
 </pre></div>
 
 
 <p>And now that we&#8217;ve made these changes, we need to restart <code>PostgreSQL</code></p>
-<div class="highlight"><pre>sudo /etc/init.d/postgresql-8.4 restart
+<div class="codehilite"><pre>sudo /etc/init.d/postgresql-8.4 restart
 </pre></div>
 
 
 <p>Next we simply create a routing database to store our data&nbsp;in&#8230;</p>
-<div class="highlight"><pre>createdb -U postgres routing createlang -U postgres plpgsql routing
+<div class="codehilite"><pre>createdb -U postgres routing createlang -U postgres plpgsql routing
 </pre></div>
 
 
 <p>&#8230;add the <code>PostGIS</code> functions&#8230;</p>
-<div class="highlight"><pre>psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql routing
+<div class="codehilite"><pre>psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql routing
 psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql routing
 </pre></div>
 
 
 <p>&#8230;add all the <code>pgRouting</code> functions&#8230;</p>
-<div class="highlight"><pre>psql -U postgres -f /usr/share/postlbs/routing_core.sql routing
+<div class="codehilite"><pre>psql -U postgres -f /usr/share/postlbs/routing_core.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_core_wrappers.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_topology.sql routing
 </pre></div>
 
 
 <p>&#8230;including the traveling salesman&nbsp;functions&#8230;</p>
-<div class="highlight"><pre>psql -U postgres -f /usr/share/postlbs/routing_tsp.sql routing
+<div class="codehilite"><pre>psql -U postgres -f /usr/share/postlbs/routing_tsp.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_tsp_wrappers.sql routing
 </pre></div>
 
 
 <p>&#8230;and finally the driving distance&nbsp;functions.</p>
-<div class="highlight"><pre>psql -U postgres -f /usr/share/postlbs/routing_dd.sql routing
+<div class="codehilite"><pre>psql -U postgres -f /usr/share/postlbs/routing_dd.sql routing
 psql -U postgres -f /usr/share/postlbs/routing_dd_wrappers.sql routing
 </pre></div>
 
@@ -180,29 +180,29 @@ psql -U postgres -f /usr/share/postlbs/routing_dd_wrappers.sql routing
 with data! So in order to do that relatively painlessly, we first
 install the <a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting">osm2pgrouting</a> tool, which will help us import our osm
 data directly into our <code>pgRouting</code> database with the correct structure and&nbsp;everything.</p>
-<div class="highlight"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/tools/osm2pgrouting/trunk osm2pgrouting
+<div class="codehilite"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/tools/osm2pgrouting/trunk osm2pgrouting
 <span class="nb">cd </span>osm2pgrouting/
 make
 </pre></div>
 
 
 <p>Once that&#8217;s finished building, we can go ahead and download our osm data
-from <a href="http://download.geofabrik.de/osm/">http://download.geofabrik.de/osm/</a>. See this <a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">previous post</a>
+from <a href="http://download.geofabrik.de/osm/">http://download.geofabrik.de/osm/</a>. See this <a href="../../../2010/05/osm-data-by-country/">previous post</a>
 for details. For this example, I&#8217;ll be using the osm data for&nbsp;Ireland</p>
-<div class="highlight"><pre>wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
+<div class="codehilite"><pre>wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
 bzip2 -d ireland.osm.bz2
 </pre></div>
 
 
 <p>Once we have that downloaded and extracted, we&#8217;re ready to import the
 osm data into our database using the <code>osm2pgrouting</code> tool</p>
-<div class="highlight"><pre>./osm2pgrouting -file /home/cfarmer/Downloads/ireland.osm -conf mapconfig.xml -dbname routing -user postgres -clean
+<div class="codehilite"><pre>./osm2pgrouting -file /home/cfarmer/Downloads/ireland.osm -conf mapconfig.xml -dbname routing -user postgres -clean
 </pre></div>
 
 
 <p>Once that is finished (could take a long time) we&#8217;re ready to query the
 network (Note that the values 52343 and 39219 represent network node&nbsp;ids)&#8230;</p>
-<div class="highlight"><pre>psql -U postgres routing
+<div class="codehilite"><pre>psql -U postgres routing
 <span class="k">select</span> * from shortest_path
     <span class="o">(</span><span class="s1">&#39;select gid as id,</span>
 <span class="s1">        source::int4,</span>
@@ -214,7 +214,7 @@ network (Note that the values 52343 and 39219 represent network node&nbsp;ids)&#
 
 
 <p>&#8230;to produce something like&nbsp;this:</p>
-<div class="highlight"><pre><span class="n">vertex_id</span> <span class="o">|</span> <span class="n">edge_id</span> <span class="o">|</span>        <span class="n">cost</span>
+<div class="codehilite"><pre><span class="n">vertex_id</span> <span class="o">|</span> <span class="n">edge_id</span> <span class="o">|</span>        <span class="n">cost</span>
 <span class="o">----------+---------+---------------------</span>
 <span class="err">   </span> <span class="mi">52343</span> <span class="o">|</span>   <span class="mi">78055</span> <span class="o">|</span>   <span class="mf">0.217641978736602</span>
 <span class="err">   </span> <span class="mi">52341</span> <span class="o">|</span>   <span class="mi">78052</span> <span class="o">|</span>  <span class="mf">0.0230665826613562</span>
@@ -231,11 +231,11 @@ network (Note that the values 52343 and 39219 represent network node&nbsp;ids)&#
 <p>Assuming your database is structured as <code>pgRouting</code> expects (which it
 should be if you&#8217;ve used <code>osm2pgrouting</code>), you can use the some of the
 functions which return geometries for use with other <code>PostGIS</code> functions:</p>
-<div class="highlight"><pre><span class="k">select</span> * from dijkstra_sp<span class="o">(</span><span class="s1">&#39;ways&#39;</span>, 52343, 39219<span class="o">)</span>;
+<div class="codehilite"><pre><span class="k">select</span> * from dijkstra_sp<span class="o">(</span><span class="s1">&#39;ways&#39;</span>, 52343, 39219<span class="o">)</span>;
 </pre></div>
 
 
-<div class="highlight"><pre><span class="n">id</span>  <span class="o">|</span>  <span class="n">gid</span>   <span class="o">|</span>          <span class="n">the_geom</span>
+<div class="codehilite"><pre><span class="n">id</span>  <span class="o">|</span>  <span class="n">gid</span>   <span class="o">|</span>          <span class="n">the_geom</span>
 <span class="o">----+--------+----------------------------</span>
 <span class="err"> </span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">78055</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
 <span class="err"> </span> <span class="mi">2</span> <span class="o">|</span>  <span class="mi">78052</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
@@ -252,35 +252,35 @@ functions which return geometries for use with other <code>PostGIS</code> functi
 <p>These queries are all fine and dandy, and can easily be used to
 calculate the distances of shortest paths etc, but what I really want to
 do is visualise this output in a <span class="caps">GIS</span> so I can get an idea of what these
-shortest paths looks like. In <em>another</em> <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/">previous post</a>, I mentioned
+shortest paths looks like. In <em>another</em> <a href="../../../2010/04/postgis-select-statement-as-vector-layer-in-qgis/">previous post</a>, I mentioned
 how we could visualise spatial <code>SQL</code> queries directly in <span class="caps">QGIS</span> from both
 the Python console, and using a handy plugin. We can do the same thing
 here using <code>pgRouting</code> to produce a lovely spatial representation of our
 shortest path&nbsp;query:</p>
-<p><a href="http://www.carsonfarmer.com/static/images/shortest_path.png"><img alt="image" src="http://www.carsonfarmer.com/static/images/shortest_path-300x213.png" title="shortest_path" /></a></p>
+<p><a href="../../../static/images/shortest_path.png"><img alt="image" src="../../../static/images/shortest_path-300x213.png" title="shortest_path" /></a></p>
 <p>And there you go, a full fledged routing library built right into our&nbsp;database!</p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/openstreemap.html">OpenStreeMap</a>
-         <a href="http://www.carsonfarmer.com/tag/pgrouting.html">pgRouting</a>
-         <a href="http://www.carsonfarmer.com/tag/postgresqlpostgis.html">PostgreSQL/PostGIS</a>
-         <a href="http://www.carsonfarmer.com/tag/qgis.html">QGIS</a>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+         <a href="../../../tag/networks.html">Networks</a>
+         <a href="../../../tag/openstreemap.html">OpenStreeMap</a>
+         <a href="../../../tag/pgrouting.html">pgRouting</a>
+         <a href="../../../tag/postgresqlpostgis.html">PostgreSQL/PostGIS</a>
+         <a href="../../../tag/qgis.html">QGIS</a>
+         <a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+         <a href="../../../tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
+         <a href="../../../tag/how-to.html">How to</a>
+         <a href="../../../tag/networks.html">Networks</a>
             </p>
     </div><!-- /.entry-content -->
           <div class="comments">
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2010/10/pgrouting-openstreetmap-and-qgis/";
-          var disqus_url = "http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/";
+          var disqus_url = "../../../2010/10/pgrouting-openstreetmap-and-qgis/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
