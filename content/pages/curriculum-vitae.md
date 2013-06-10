@@ -35,11 +35,11 @@ Slug: curriculum-vitae
 |                     |                      |
 | ------------------  |  -------------------
 2012 --- 2014 | Research Fellowship, Centre for GeoInformatics, University of St Andrews
-2008 --- 2012 | SSHRC Doctoral Fellowship, Social Sciences and Humanities Research Council of Canada
+2008 --- 2012 | Doctoral Fellowship, Social Science & Humanities Research Council of Canada
 2011 | Postgraduate Travel Fund/Collins Kitchin Fund, NUI Maynooth
 2008 --- 2011 | PhD Fellowship, Irish Social Sciences Platform
 2007 | Derrick Sewell Graduate Scholarship, University of Victoria
-2007 | Physical Geography Student Paper Presentation Award, Canadian Association of Geographers
+2007 | Physical Geography Student Paper Presentation Award, CAG
 2006 | Derrick Sewell Graduate Scholarship, University of Victoria
 2006 | Student Paper Presentation Award, Canadian Cartographic Association
 2006 | Ross Fund Undergraduate Scholarship, University of Victoria
