@@ -710,8 +710,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 }
 
 article header .published {
-    right: 0px;
-    position: absolute;
+    display: inline-block;
+    float: right;
 }
 
 .hentry .vcard.author {

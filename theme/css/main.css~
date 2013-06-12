@@ -710,6 +710,7 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 }
 
 article header .published {
+    display: inline-block;
     float: right;
 }
 
