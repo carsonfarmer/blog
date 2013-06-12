@@ -75,6 +75,49 @@
                     <ol id="posts-list" class="hfeed">
                         <li><article class="hentry shadow">    
                 <header>
+                    <h1><a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/" rel="bookmark"
+                           title="Permalink to PostGIS ‘select’ statement as vector layer in QGIS">PostGIS &#8216;select&#8217; statement as vector layer in&nbsp;<span class="caps">QGIS</span></a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2010-04-27T17:40:00">
+                      <i class="icon-calendar"></i>
+                      Tue 27 April 2010
+                  </abbr>
+                                        <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                                    <footer class="post-info">
+                          <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+            </p>
+                  </footer>
+                <p>Several colleagues of mine have asked whether it is possible to
+visualise the results of a <code>SELECT</code> statement on a <a href="http://postgis.refractions.net/">PostGIS</a> database
+that returns spatial data in <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a>. In other words, can we map the
+results of something&nbsp;like:</p>
+<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
+</pre></div>
+
+
+<p>My usual answer to this in the past has been &#8220;not yet&#8230;&#8221;, but now thanks
+to Giuseppe Sucameli and Jürgen E. Fischer, the answer is a resounding
+&#8220;yes!&#8221;. A <a href="https://trac.osgeo.org/qgis/changeset/13340">recent patch</a> to <span class="caps">QGIS</span> trunk now makes custom Postgres
+queries possible via the postgres data provider.
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/">read more</a>
+                </p>
+                    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+                    
+
+                        <li><article class="hentry shadow">    
+                <header>
                     <h1><a href="http://www.carsonfarmer.com/2012/05/presentation-at-cag-2012-in-waterloo/" rel="bookmark"
                            title="Permalink to Presentation at CAG 2012 in Waterloo">Presentation at <span class="caps">CAG</span> 2012 in&nbsp;Waterloo</a></h1>
                 </header>
@@ -332,52 +375,6 @@ of Environment</a>. <strike>For now,</strike>
                     <a class="readmore" href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/">read more</a>
                 </p>
                     <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-                    
-
-                        <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/" rel="bookmark"
-                           title="Permalink to Research dissemination and interactive visuals">Research dissemination and interactive&nbsp;visuals</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2012-04-10T22:12:00">
-                      <i class="icon-calendar"></i>
-                      Tue 10 April 2012
-                  </abbr>
-                                        <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                                    <footer class="post-info">
-                          <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/visualisation.html">Visualisation</a> 
-            </p>
-                  </footer>
-                <p>One of my goals for this year is to spend more time and effort
-developing effective visualisations for my various research projects, in
-an effort to make my research more accessible to others. This is one
-thing that I think many academics are particularly bad at: letting
-others know what they are up to, and why it might be something worth
-looking at. In order to avoid this pitfall, I plan to focus on producing
-interactive, web-based visuals suitable for a more general audience <em>in
-addition</em> to more traditional forms of research dissemination such as
-journals and conference papers. It is my hope that by doing this, I will
-be making my research more readily available to those who might actually
-be able to use it, and maybe even create some compelling visualisations
-in the process. While I&#8217;m not quite ready to start creating full-blown
-interactive websites yet, I thought it might be a good idea to start
-with something small to get the ball rolling; so I put together an
-<a href="/examples/visitors/">upgraded version</a> of my <a href="|filename|because-its-fun-to-map-stuff.md">previous map</a> of visitors to www.carsonfarmer.com.
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/">read more</a>
-                </p>
-                    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
                     </ol><!-- /#posts-list -->
