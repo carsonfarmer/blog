@@ -24,7 +24,8 @@ website:
 > manager is the CISC lead of the NPCC2 Technical Team.
 
 [![image1][]{.left}][link1]
-[![image2][]{.left}][link2]
+[![image2][]{.right}][link2]
+<br/>
 
 [geo-site]: http://www.geo.hunter.cuny.edu/
 [report]: http://www.cunysustainablecities.org/climate-projections-future-flood-risk-maps-inform-a-stronger-resilient-york/
