@@ -22,10 +22,9 @@ website:
 > [William Solecki][bill] and director of the CUNY Institute for Sustainable 
 > Cities, is co-chair of the NPCC2 and [Lesley Patrick][lesley], CISC program 
 > manager is the CISC lead of the NPCC2 Technical Team.
-
-[![image1][]{.left}][link1]
-[![image2][]{.right}][link2]
-<br/>
+> 
+> [![image1][]{.left}][link1]
+> [![image2][]][link2]
 
 [geo-site]: http://www.geo.hunter.cuny.edu/
 [report]: http://www.cunysustainablecities.org/climate-projections-future-flood-risk-maps-inform-a-stronger-resilient-york/
