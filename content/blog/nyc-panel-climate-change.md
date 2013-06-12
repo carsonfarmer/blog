@@ -9,8 +9,8 @@ Slug: nyc-panel-climate-change
 This was recently announced on the [Hunter Geography Department][geo-site] 
 website:
 
-### CISC Produced Map Spearhead of Mayor Bloomberg's SIRR Announcement
-
+> ### CISC Produced Map Spearhead of Mayor Bloomberg's SIRR Announcement
+> 
 > The [New York City Panel on Climate Change (NPCC2) Climate Risk Information 
 > 2013 Report][report] was released on June 11, 2013 in conjunction with the 
 > release of the NYC Special Initiative for Rebuilding and Resiliency's (SIRR) 
@@ -23,7 +23,8 @@ website:
 > Cities, is co-chair of the NPCC2 and [Lesley Patrick][lesley], CISC program 
 > manager is the CISC lead of the NPCC2 Technical Team.
 
-[![image][]][link]
+[![image1][]{.left}][link1]
+[![image2][]{.left}][link2]
 
 [geo-site]: http://www.geo.hunter.cuny.edu/
 [report]: http://www.cunysustainablecities.org/climate-projections-future-flood-risk-maps-inform-a-stronger-resilient-york/
@@ -32,5 +33,7 @@ website:
 [cisc]: http://www.cunysustainablecities.org/
 [bill]: http://www.geo.hunter.cuny.edu/people/fac/solecki.html
 [lesley]: http://www.cunysustainablecities.org/lesley-patrick-program-manager/
-[image]: http://www.geo.hunter.cuny.edu/images/climate_risk_info2013.jpg "A Stronger, More Resilient New York"
-[link]: http://www.cunysustainablecities.org/climate-projections-future-flood-risk-maps-inform-a-stronger-resilient-york/
+[image1]: http://www.geo.hunter.cuny.edu/images/climate_risk_info2013.jpg "A Stronger, More Resilient New York"
+[link1]: http://www.cunysustainablecities.org/climate-projections-future-flood-risk-maps-inform-a-stronger-resilient-york/
+[image2]: http://www.geo.hunter.cuny.edu/images/sirr_report_cover.jpg
+[link2]: http://www.nyc.gov/html/sirr/html/report/report.shtml
