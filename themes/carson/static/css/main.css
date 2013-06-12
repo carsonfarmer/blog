@@ -350,6 +350,7 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 header, section, footer,
 aside, nav, article, figure {
 	display: block;
+	position: relative;
 }
 
 /***** Layout *****/
@@ -709,7 +710,8 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 }
 
 article header .published {
-    float: right;
+    right: 0px;
+    position: absolute;
 }
 
 .hentry .vcard.author {
