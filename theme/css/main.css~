@@ -149,7 +149,7 @@ q:before {
 .dataset {
     position: absolute;
 	  padding: 5px;
-	  right: -180px;
+	  right: -171px;
 	  max-width: 200px;
 	  background: #B0C4DE;
 	  /* css3 */
@@ -350,6 +350,7 @@ table {margin: .5em auto 1.5em auto; width: 98%;}
 header, section, footer,
 aside, nav, article, figure {
 	display: block;
+	position: relative;
 }
 
 /***** Layout *****/
