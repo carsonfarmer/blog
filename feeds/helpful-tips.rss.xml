@@ -80,8 +80,7 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 &lt;code&gt;http://www.carsonfarmer.com/&lt;/code&gt; between 2009 and&amp;nbsp;2011:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/static/images/website_visitors.svg" /&gt;&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/static/images/website_visitors.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Work-flow&lt;/h3&gt;
 &lt;p&gt;Firstly, I downloaded the logs for &lt;code&gt;www.carsonfarmer.com&lt;/code&gt;. I did this
 directly from the console, though I&amp;#8217;m pretty sure I could have done this
@@ -172,8 +171,7 @@ spplot&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;[&lt;/span&g
 &lt;p&gt;I then used &lt;a href="http://inkscape.org/"&gt;Inkscape&lt;/a&gt; to tweak the final product, adding titles and
 labels and modifying the colour key to look like something a bit more
 suited to the map at hand. In the end I had a nice map of my blog
-readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;
-&lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 30 Mar 2012 17:46:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-03-30:2012/03/because-its-fun-to-map-stuff/</guid><category>Data Science Toolkit</category><category>Hexagonal Grid</category><category>IP Addreses</category><category>Mapping</category><category>R spatial</category><category>Free open-source software (FOSS)</category><category>How to</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
+readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 30 Mar 2012 17:46:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-03-30:2012/03/because-its-fun-to-map-stuff/</guid><category>Data Science Toolkit</category><category>Hexagonal Grid</category><category>IP Addreses</category><category>Mapping</category><category>R spatial</category><category>Free open-source software (FOSS)</category><category>How to</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
 for &lt;span class="caps"&gt;QGIS&lt;/span&gt; at this point. However, to date non of the fTools functions
 (Vector menu) have taken advantage of this capability. If a tool needed
 to create a new field in the input vector layer, it simply wrote a new

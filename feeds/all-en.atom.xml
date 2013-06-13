@@ -320,11 +320,10 @@ potential fix is courtesy of &lt;a href="http://gis.stackexchange.com/questions/
 Windows? Perhaps someone out there has a Windows build they&amp;#8217;d like to
 share? As far as I know (i.e., it works for me), things are working fine
 on Linux, but if someone else has a different experience, please share
-in the&amp;nbsp;comments.&lt;/p&gt;</summary><category term="manageR"></category><category term="Python"></category><category term="QGIS"></category><category term="R spatial"></category><category term="rpy2"></category><category term="Spatial"></category><category term="Free open-source software (FOSS)"></category></entry><entry><title>cartogram updates</title><link href="http://www.carsonfarmer.com/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
+in the&amp;nbsp;comments.&lt;/p&gt;</summary><category term="manageR"></category><category term="Python"></category><category term="QGIS"></category><category term="R spatial"></category><category term="rpy2"></category><category term="Spatial"></category><category term="Free open-source software (FOSS)"></category></entry><entry><title>cartogram updates</title><link href="http://www.carsonfarmer.com/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
 (&lt;a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised"&gt;Guardian data blog&lt;/a&gt;, and &lt;a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html"&gt;Telegraph data and graphics blog&lt;/a&gt;), so
 I&amp;#8217;ve updated a few things and wanted to highlight/explain them a bit&amp;nbsp;here.&lt;/p&gt;
-&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/wp-content/uploads/2012/08/grenada.png" title="grenada" /&gt;&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/grenada-150x150.png" title="Grenada" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Firstly, you can now explore the medal data together with
 population &lt;strong&gt;and&lt;/strong&gt; &lt;span class="caps"&gt;GDP&lt;/span&gt; as well as without any warping to get a feel for
 how much things change. Secondly, in order to be able to display the map
@@ -559,8 +558,7 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 &lt;code&gt;http://www.carsonfarmer.com/&lt;/code&gt; between 2009 and&amp;nbsp;2011:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/static/images/website_visitors.svg" /&gt;&lt;/a&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/static/images/website_visitors.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Work-flow&lt;/h3&gt;
 &lt;p&gt;Firstly, I downloaded the logs for &lt;code&gt;www.carsonfarmer.com&lt;/code&gt;. I did this
 directly from the console, though I&amp;#8217;m pretty sure I could have done this
@@ -651,8 +649,7 @@ spplot&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;[&lt;/span&g
 &lt;p&gt;I then used &lt;a href="http://inkscape.org/"&gt;Inkscape&lt;/a&gt; to tweak the final product, adding titles and
 labels and modifying the colour key to look like something a bit more
 suited to the map at hand. In the end I had a nice map of my blog
-readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;
-&lt;p&gt;Carson&lt;/p&gt;</summary><category term="Data Science Toolkit"></category><category term="Hexagonal Grid"></category><category term="IP Addreses"></category><category term="Mapping"></category><category term="R spatial"></category><category term="Free open-source software (FOSS)"></category><category term="How to"></category></entry><entry><title>Environment and Planning A paper published</title><link href="http://www.carsonfarmer.com/2011/12/environment-and-planning-a-paper-published/" rel="alternate"></link><updated>2011-12-01T13:52:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2011-12-01:2011/12/environment-and-planning-a-paper-published/</id><summary type="html">&lt;p&gt;My latest article, &amp;#8220;Network-based functional regions&amp;#8221;, has recently been
+readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;</summary><category term="Data Science Toolkit"></category><category term="Hexagonal Grid"></category><category term="IP Addreses"></category><category term="Mapping"></category><category term="R spatial"></category><category term="Free open-source software (FOSS)"></category><category term="How to"></category></entry><entry><title>Environment and Planning A paper published</title><link href="http://www.carsonfarmer.com/2011/12/environment-and-planning-a-paper-published/" rel="alternate"></link><updated>2011-12-01T13:52:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2011-12-01:2011/12/environment-and-planning-a-paper-published/</id><summary type="html">&lt;p&gt;My latest article, &amp;#8220;Network-based functional regions&amp;#8221;, has recently been
 &lt;a href="http://www.envplan.com/abstract.cgi?id=a44136"&gt;published on-line&lt;/a&gt;, with &lt;a href="http://www.envplan.com/A.html"&gt;Environment and Planning A&lt;/a&gt;. The article
 can be cited&amp;nbsp;as:&lt;/p&gt;
 &lt;blockquote&gt;
