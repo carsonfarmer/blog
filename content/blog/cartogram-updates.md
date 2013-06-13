@@ -12,7 +12,6 @@ I've updated a few things and wanted to highlight/explain them a bit
 here.
 
 [![image][]][Olympic medals cartogram]
-<!--more-->
 
 Firstly, you can now explore the medal data together with
 population **and** GDP as well as without any warping to get a feel for
@@ -36,8 +35,8 @@ with less than two medals in total (I know, I'm sorry, but it had to be
 done). Having said that, if you click to view the 'normal' map, then all
 countries are added back, and you get medal counts for all of them.
 
-  [Olympic medals cartogram]: examples/olympic_countries/
-  [Guardian data blog]: http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised
-  [Telegraph data and graphics blog]: http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html
-  [image]: http://www.carsonfarmer.com/wp-content/uploads/2012/08/grenada.png "grenada"
-  [per capita medal ranking]: http://www.medalspercapita.com/
+[Olympic medals cartogram]: http://www.carsonfarmer.com/examples/olympic_countries/
+[image]: |filename|/images/grenada-150x150.png "Grenada"
+[Guardian data blog]: http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised
+[Telegraph data and graphics blog]: http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html
+[per capita medal ranking]: http://www.medalspercapita.com/

@@ -20,7 +20,7 @@ ahead and mapped the locations of unique visitors to
 `http://www.carsonfarmer.com/` between 2009 and 2011:
 
 [![Visitors map][]](|filename|/images/website_visitors.svg)
-<!--more-->
+[Visitors map]: |filename|/images/website_visitors.svg
 
 ### Work-flow
 
@@ -125,17 +125,14 @@ suited to the map at hand. In the end I had a nice map of my blog
 readers, and an excellent way to procrastinate on a sunny Friday
 afternoon!
 
-Carson
-
-  [Anita Graser]: http://underdark.wordpress.com/about/
-  [Quantum GIS]: http://qgis.org/
-  [hexagonal grid]: http://underdark.wordpress.com/2012/03/04/mapping-density-with-hexagonal-grids/
-  [Visitors map]: |filename|/images/website_visitors.svg
-  [here]: http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/
-  [Data Science Toolkit (DSTK)]: http://www.datasciencetoolkit.org/
-  [RDSTK R package]: https://github.com/rtelmore/RDSTK
-  [Revolution Analytics blog]: http://blog.revolutionanalytics.com
-  [article]: http://blog.revolutionanalytics.com/2011/05/mapping-locations-in-r-with-the-data-science-toolkit.html
-  [work on RDSTK]: http://thelogcabin.wordpress.com/2011/05/02/r-and-the-data-science-toolkit/
-  [CRAN]: http://cran.r-project.org/
-  [Inkscape]: http://inkscape.org/
+[Anita Graser]: http://underdark.wordpress.com/about/
+[Quantum GIS]: http://qgis.org/
+[hexagonal grid]: http://underdark.wordpress.com/2012/03/04/mapping-density-with-hexagonal-grids/
+[here]: http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/
+[Data Science Toolkit (DSTK)]: http://www.datasciencetoolkit.org/
+[RDSTK R package]: https://github.com/rtelmore/RDSTK
+[Revolution Analytics blog]: http://blog.revolutionanalytics.com
+[article]: http://blog.revolutionanalytics.com/2011/05/mapping-locations-in-r-with-the-data-science-toolkit.html
+[work on RDSTK]: http://thelogcabin.wordpress.com/2011/05/02/r-and-the-data-science-toolkit/
+[CRAN]: http://cran.r-project.org/
+[Inkscape]: http://inkscape.org/
