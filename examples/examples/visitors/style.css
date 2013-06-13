@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #282828;
+  color: #F0F0F0;
+  height: 100%;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+#grids path {
+  stroke: #282828;
+  stroke-width: .3px;
+}
+
+.title {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.footer {
+  position: fixed;
+  left: 10px;
+  bottom: 5px;
+  font-size: 0.75em;
+}
+
+.footer a {
+  color: #F0F0F0;
+}
+
+.place-name {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 1.8em;
+}
+
+.place-count {
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  font-size: 1.2em;
+}
+
+#key {
+  fill: #F0F0F0;
+  position: fixed;
+  right: 10px;
+  bottom: 35%;
+  font-size: 0.8em;
+  height: 200px;
+  width: 130px;
+}
+
+#overlay {
+     visibility: hidden;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width:100%;
+     height:100%;
+     z-index: 1000;
+}
+
+#overlay div {
+     width:400px;
+     margin: 100px auto;
+     background-color: #F0F0F0;
+     padding:10px;
+     color: #282828;
+     border-radius: 15px;
+     font-size: 0.8em;
+}
+
+#overlay a {
+  color: #282828;
+}
+
+#overlay h4 {
+ margin: 0px;
+}
+
+#overlay h3 {
+ margin: 0px;
+}
+
+#overlay p {
+  margin-top: 0px;
+}
+
+div#chart {
+  margin-top: 80px;
+  height: 90%;
+  width: 90%;
+}
+
+rect {
+  stroke: #282828;
+}
+
