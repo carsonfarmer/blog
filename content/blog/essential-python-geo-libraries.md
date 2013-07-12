@@ -19,7 +19,7 @@ I'm using these days to do lots of fun things with spatial data:
 * [geopy][] - For geolocating and things like that
 * [ipython][] - For a wondering interactive environment in which to play
 * [freetype-py][] - For converting font glyphs to polygons (odd I know...)
-* [OGR/GDAL][] - For reading, writing, and transforming geospatial data formats
+* [ogr/gdal][] - For reading, writing, and transforming geospatial data formats
 * [fiona][] - For making it _easy_ to read/write geospatial data formats
 * [matplotlib][] - For all my plotting needs
 * [networkx][] - For working with networks (duh!)
@@ -37,7 +37,7 @@ Any others I've missed?
 [geopy]: https://code.google.com/p/geopy/
 [ipython]: http://ipython.org/
 [freetype-py]: https://code.google.com/p/freetype-py/
-[ogr-gdal]: https://pypi.python.org/pypi/GDAL/
+[ogr/gdal]: https://pypi.python.org/pypi/GDAL/
 [matplotlib]: http://matplotlib.org/
 [fiona]: http://toblerity.github.io/fiona/
 [networkx]: http://networkx.github.io/
