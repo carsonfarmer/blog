@@ -1,4 +1,4 @@
-Title: New York City Panel on Climate Change
+Title: Essential Python Geospatial Libraries
 Date: 2013-07-12 17:25
 Author: cfarmer
 Email: carson.farmer@gmail.com
