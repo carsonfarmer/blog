@@ -12,7 +12,7 @@ I&amp;#8217;m using these days to do lots of fun things with spatial&amp;nbsp;da
 &lt;li&gt;&lt;a href="https://code.google.com/p/geopy/"&gt;geopy&lt;/a&gt; - For geolocating and things like&amp;nbsp;that&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://ipython.org/"&gt;ipython&lt;/a&gt; - For a wondering interactive environment in which to&amp;nbsp;play&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://code.google.com/p/freetype-py/"&gt;freetype-py&lt;/a&gt; - For converting font glyphs to polygons (odd I&amp;nbsp;know&amp;#8230;)&lt;/li&gt;
-&lt;li&gt;[&lt;span class="caps"&gt;OGR&lt;/span&gt;/&lt;span class="caps"&gt;GDAL&lt;/span&gt;][] - For reading, writing, and transforming geospatial data&amp;nbsp;formats&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.python.org/pypi/GDAL/"&gt;ogr/gdal&lt;/a&gt; - For reading, writing, and transforming geospatial data&amp;nbsp;formats&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://toblerity.github.io/fiona/"&gt;fiona&lt;/a&gt; - For making it &lt;em&gt;easy&lt;/em&gt; to read/write geospatial data&amp;nbsp;formats&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://matplotlib.org/"&gt;matplotlib&lt;/a&gt; - For all my plotting&amp;nbsp;needs&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://networkx.github.io/"&gt;networkx&lt;/a&gt; - For working with networks&amp;nbsp;(duh!)&lt;/li&gt;
