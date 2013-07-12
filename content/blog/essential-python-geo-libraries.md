@@ -20,6 +20,7 @@ I'm using these days to do lots of fun things with spatial data:
 * [ipython][] - For a wondering interactive environment in which to play
 * [freetype-py][] - For converting font glyphs to polygons (odd I know...)
 * [ogr/gdal][] - For reading, writing, and transforming geospatial data formats
+* [pyqgis] - For anything and everything GIS
 * [fiona][] - For making it _easy_ to read/write geospatial data formats
 * [matplotlib][] - For all my plotting needs
 * [networkx][] - For working with networks (duh!)
@@ -42,6 +43,7 @@ Any others I've missed?
 [fiona]: http://toblerity.github.io/fiona/
 [networkx]: http://networkx.github.io/
 [pelican]: http://docs.getpelican.com/en/3.2/
+[pyqgis]: http://www.qgis.org/pyqgis-cookbook/
 <!--more-->
 
 
