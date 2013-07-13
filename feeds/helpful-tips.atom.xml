@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/helpful-tips.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2012-10-06T14:26:00-04:00</updated><entry><title>manageR and rpy2 installation problems</title><link href="http://www.carsonfarmer.com/2012/10/manager-and-rpy2-installation-problems/" rel="alternate"></link><updated>2012-10-06T14:26:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-10-06:2012/10/manager-and-rpy2-installation-problems/</id><summary type="html">&lt;p&gt;Unfortunately, I haven&amp;#8217;t had much time recently to update or work on
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/helpful-tips.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-07-12T17:25:00-04:00</updated><entry><title>Essential Python Geospatial Libraries</title><link href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/" rel="alternate"></link><updated>2013-07-12T17:25:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-07-12:2013/07/essential-python-geo-libraries/</id><summary type="html">&lt;p&gt;Just so I don&amp;#8217;t forget, here is a list of really awesome Python libraries that
+I&amp;#8217;m using these days to do lots of fun things with spatial data [&lt;span class="caps"&gt;UPDATE&lt;/span&gt;: I&amp;#8217;ve 
+added a few&amp;nbsp;more]:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt; - For data handling and&amp;nbsp;munging&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.python.org/pypi/Shapely"&gt;shapely&lt;/a&gt; - For geometry&amp;nbsp;handling&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://scitools.org.uk/cartopy/"&gt;cartopy&lt;/a&gt; - For plotting spatial&amp;nbsp;data&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://toblerity.github.io/rtree/"&gt;rtree&lt;/a&gt; - For efficiently querying spatial&amp;nbsp;data&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cityinabottle.org/nodebox/"&gt;nodebox-opengl&lt;/a&gt; - For playing around with&amp;nbsp;animations&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://statsmodels.sourceforge.net/"&gt;statsmodels&lt;/a&gt; - For models and stats in Python (otherwise I&amp;#8217;d use&amp;nbsp;R)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.numpy.org/"&gt;numpy&lt;/a&gt; - For pretty much anything that involves&amp;nbsp;arrays&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.google.com/p/geopy/"&gt;geopy&lt;/a&gt; - For geolocating and things like&amp;nbsp;that&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ipython.org/"&gt;ipython&lt;/a&gt; - For a wondering interactive environment in which to&amp;nbsp;play&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.google.com/p/freetype-py/"&gt;freetype-py&lt;/a&gt; - For converting font glyphs to polygons (odd I&amp;nbsp;know&amp;#8230;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.python.org/pypi/GDAL/"&gt;ogr/gdal&lt;/a&gt; - For reading, writing, and transforming geospatial data&amp;nbsp;formats&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.qgis.org/pyqgis-cookbook/"&gt;pyqgis&lt;/a&gt; - For anything and everything&amp;nbsp;&lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://toblerity.github.io/fiona/"&gt;fiona&lt;/a&gt; - For making it &lt;em&gt;easy&lt;/em&gt; to read/write geospatial data&amp;nbsp;formats&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://matplotlib.org/"&gt;matplotlib&lt;/a&gt; - For all my plotting&amp;nbsp;needs&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://networkx.github.io/"&gt;networkx&lt;/a&gt; - For working with networks&amp;nbsp;(duh!)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.getpelican.com/en/3.2/"&gt;pelican&lt;/a&gt; - For blogging about all this&amp;nbsp;stuff&amp;#8230;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pythonhosted.org/PySAL/"&gt;pysal&lt;/a&gt; - For all your spatial econometrics needs (and&amp;nbsp;more)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.python.org/pypi/descartes"&gt;descartes&lt;/a&gt; - For plotting geometries in&amp;nbsp;matplotlib&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Based on Twitter and some of the comments below, I should also&amp;nbsp;add:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://geographiclib.sourceforge.net/"&gt;geographiclib&lt;/a&gt; - For solving geodesic&amp;nbsp;problems&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.google.com/p/pyshp/"&gt;pyshp&lt;/a&gt; - For reading and writing shapefiles (in &lt;em&gt;pure&lt;/em&gt;&amp;nbsp;Python)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://code.google.com/p/pyproj/"&gt;pyproj&lt;/a&gt; - For conversions between&amp;nbsp;projections&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Any others I&amp;#8217;ve&amp;nbsp;missed?&lt;/p&gt;
+</summary><category term="Update"></category><category term="Useful Tips"></category><category term="Python"></category><category term="GIS"></category><category term="Open Source"></category></entry><entry><title>manageR and rpy2 installation problems</title><link href="http://www.carsonfarmer.com/2012/10/manager-and-rpy2-installation-problems/" rel="alternate"></link><updated>2012-10-06T14:26:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2012-10-06:2012/10/manager-and-rpy2-installation-problems/</id><summary type="html">&lt;p&gt;Unfortunately, I haven&amp;#8217;t had much time recently to update or work on
 &lt;code&gt;manageR&lt;/code&gt;, but I&amp;#8217;m hoping that will change in the next few months&amp;#8230;
 Having said that, there are quite a few people out there that have been
 having trouble installing &lt;code&gt;manageR&lt;/code&gt; (and the required &lt;code&gt;rpy2&lt;/code&gt;) on their
