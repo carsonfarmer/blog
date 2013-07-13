@@ -42,8 +42,8 @@ about, I discovered that the following &lt;code&gt;css&lt;/code&gt; seems to fix
     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;ms&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0px&lt;/span&gt; &lt;span class="m"&gt;50px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0px&lt;/span&gt; &lt;span class="m"&gt;50px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="err"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="err"&gt;o&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0px&lt;/span&gt; &lt;span class="m"&gt;50px&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;scale&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="m"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
@@ -115,7 +115,7 @@ packages: &lt;code&gt;RCurl&lt;/code&gt;, &lt;code&gt;rjson&lt;/code&gt;, and &l
 up an R session and got&amp;nbsp;working:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;addresses &lt;span class="o"&gt;=&lt;/span&gt; read.table&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ip_addresses.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;RDSTK&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="o"&gt;?&lt;/span&gt; ip2coordinates
+? ip2coordinates
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -124,12 +124,12 @@ within a single string with comma-separated &lt;span class="caps"&gt;IP&lt;/span
 only do a few IPs at a time (about 100 I think?) so I had to do this
 part in a loop (it probably isn&amp;#8217;t polite to slam &lt;span class="caps"&gt;DSTK&lt;/span&gt; with 1,000s of
 requests, so be&amp;nbsp;nice!).&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;:&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 out &lt;span class="o"&gt;=&lt;/span&gt; ip2coordinates&lt;span class="p"&gt;(&lt;/span&gt;ips&lt;span class="p"&gt;)&lt;/span&gt;
 last &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;
 s &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;(&lt;/span&gt;seq&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;160&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; s&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[(&lt;/span&gt;last&lt;span class="m"&gt;+1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;i&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i in s&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[(&lt;/span&gt;last&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;:i&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     out &lt;span class="o"&gt;=&lt;/span&gt; rbind&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; ip2coordinates&lt;span class="p"&gt;(&lt;/span&gt;ips&lt;span class="p"&gt;))&lt;/span&gt;
     last &lt;span class="o"&gt;=&lt;/span&gt; i
 &lt;span class="p"&gt;}&lt;/span&gt;
@@ -143,10 +143,10 @@ from a hexagonal sample of the grid, and then finally d) create a
 &lt;code&gt;SpatialPolygonsDataFrame&lt;/code&gt; for&amp;nbsp;plotting:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# make the output into a Spatial* object&lt;/span&gt;
-coordinates&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;longitude&lt;span class="o"&gt;+&lt;/span&gt;latitude
+coordinates&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; ~longitude&lt;span class="o"&gt;+&lt;/span&gt;latitude
 library&lt;span class="p"&gt;(&lt;/span&gt;maptools&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# need this for the following function&lt;/span&gt;
-sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="caps"&gt;SG&lt;/span&gt;
-hex_pts &lt;span class="o"&gt;=&lt;/span&gt; spsample&lt;span class="p"&gt;(&lt;/span&gt;sg&lt;span class="p"&gt;,&lt;/span&gt; type&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;hexagonal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; cellsize&lt;span class="o"&gt;=&lt;/span&gt;sg&lt;span class="o"&gt;@&lt;/span&gt;grid&lt;span class="o"&gt;@&lt;/span&gt;cellsize&lt;span class="p"&gt;)&lt;/span&gt;
+sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)$&lt;/span&gt;&lt;span class="caps"&gt;SG&lt;/span&gt;
+hex_pts &lt;span class="o"&gt;=&lt;/span&gt; spsample&lt;span class="p"&gt;(&lt;/span&gt;sg&lt;span class="p"&gt;,&lt;/span&gt; type&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;hexagonal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; cellsize&lt;span class="o"&gt;=&lt;/span&gt;sg&lt;span class="p"&gt;@&lt;/span&gt;grid&lt;span class="p"&gt;@&lt;/span&gt;cellsize&lt;span class="p"&gt;)&lt;/span&gt;
 hex_poly &lt;span class="o"&gt;=&lt;/span&gt; HexPoints2SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;hex_pts&lt;span class="p"&gt;)&lt;/span&gt;
 pts_poly &lt;span class="o"&gt;=&lt;/span&gt; over&lt;span class="p"&gt;(&lt;/span&gt;hex_poly&lt;span class="p"&gt;,&lt;/span&gt; out&lt;span class="p"&gt;,&lt;/span&gt; returnList&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 pts_poly_count &lt;span class="o"&gt;=&lt;/span&gt; sapply&lt;span class="p"&gt;(&lt;/span&gt;pts_poly&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;))&lt;/span&gt;
@@ -163,7 +163,7 @@ library&lt;span class="p"&gt;(&lt;/span&gt;RColorBrewer&lt;span class="p"&gt;)&l
 &lt;span class="c1"&gt;# don&amp;#39;t use the lightest colour, it looks washed out&lt;/span&gt;
 cols &lt;span class="o"&gt;=&lt;/span&gt; brewer.pal&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Blues&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="m"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
 &lt;span class="c1"&gt;# plot the grid, which produces something close to our final product&lt;/span&gt;
-spplot&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;[&lt;/span&gt;poly&lt;span class="o"&gt;$&lt;/span&gt;count&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,],&lt;/span&gt; col&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.regions&lt;span class="o"&gt;=&lt;/span&gt;cols&lt;span class="p"&gt;,&lt;/span&gt; at&lt;span class="o"&gt;=&lt;/span&gt;breaks&lt;span class="p"&gt;,&lt;/span&gt; 
+spplot&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;[&lt;/span&gt;poly&lt;span class="p"&gt;$&lt;/span&gt;count&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,],&lt;/span&gt; col&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.regions&lt;span class="o"&gt;=&lt;/span&gt;cols&lt;span class="p"&gt;,&lt;/span&gt; at&lt;span class="o"&gt;=&lt;/span&gt;breaks&lt;span class="p"&gt;,&lt;/span&gt; 
        par.settings&lt;span class="o"&gt;=&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;axis.line&lt;span class="o"&gt;=&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;col&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;transparent&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -272,8 +272,8 @@ sudo make install
 
 
 &lt;p&gt;Scroll to the bottom, and make sure you change the &lt;code&gt;METHOD&lt;/code&gt; to&amp;nbsp;&amp;#8216;trust&amp;#8217;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# &lt;span class="caps"&gt;TYPE&lt;/span&gt;  &lt;span class="caps"&gt;DATABASE&lt;/span&gt;    &lt;span class="caps"&gt;USER&lt;/span&gt;        &lt;span class="caps"&gt;CIDR&lt;/span&gt;-&lt;span class="caps"&gt;ADDRESS&lt;/span&gt;          &lt;span class="caps"&gt;METHOD&lt;/span&gt;&lt;/span&gt;
-&lt;span class="n"&gt;local&lt;/span&gt;   &lt;span class="n"&gt;all&lt;/span&gt;         &lt;span class="n"&gt;all&lt;/span&gt;                               &lt;span class="n"&gt;trust&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# &lt;span class="caps"&gt;TYPE&lt;/span&gt;  &lt;span class="caps"&gt;DATABASE&lt;/span&gt;    &lt;span class="caps"&gt;USER&lt;/span&gt;        &lt;span class="caps"&gt;CIDR&lt;/span&gt;-&lt;span class="caps"&gt;ADDRESS&lt;/span&gt;          &lt;span class="caps"&gt;METHOD&lt;/span&gt;&lt;/span&gt;
+&lt;span class="nb"&gt;local&lt;/span&gt;   &lt;span class="n"&gt;all&lt;/span&gt;         &lt;span class="n"&gt;all&lt;/span&gt;                               &lt;span class="n"&gt;trust&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -360,7 +360,7 @@ network (Note that the values 52343 and 39219 represent network node&amp;nbsp;id
 &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;20388&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;28715&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.271165901884914&lt;/span&gt;
 &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;20387&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;112841&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.101669458767093&lt;/span&gt;
 &lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;14183&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;22893&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.106433172954507&lt;/span&gt;
-&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;span class="o"&gt;...&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -373,15 +373,15 @@ functions which return geometries for use with other &lt;code&gt;PostGIS&lt;/cod
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;id&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="n"&gt;gid&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;          &lt;span class="n"&gt;the_geom&lt;/span&gt;
 &lt;span class="o"&gt;----+--------+----------------------------&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78055&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78052&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78053&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28717&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28716&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28715&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;112841&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;22893&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78055&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78052&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78053&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28717&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28716&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28715&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;112841&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;22893&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mo"&gt;0105000020&lt;/span&gt;&lt;span class="n"&gt;E610000001000&lt;/span&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="o"&gt;...&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -443,13 +443,13 @@ the input point layer.
 &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;voronoipolygons &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;layer&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     require&lt;span class="p"&gt;(&lt;/span&gt;deldir&lt;span class="p"&gt;)&lt;/span&gt;
-    crds &lt;span class="o"&gt;=&lt;/span&gt; layer&lt;span class="o"&gt;@&lt;/span&gt;coords
+    crds &lt;span class="o"&gt;=&lt;/span&gt; layer&lt;span class="p"&gt;@&lt;/span&gt;coords
     z &lt;span class="o"&gt;=&lt;/span&gt; deldir&lt;span class="p"&gt;(&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
     w &lt;span class="o"&gt;=&lt;/span&gt; tile.list&lt;span class="p"&gt;(&lt;/span&gt;z&lt;span class="p"&gt;)&lt;/span&gt;
     polys &lt;span class="o"&gt;=&lt;/span&gt; vector&lt;span class="p"&gt;(&lt;/span&gt;mode&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;list&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; length&lt;span class="o"&gt;=&lt;/span&gt;length&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;))&lt;/span&gt;
     require&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; seq&lt;span class="p"&gt;(&lt;/span&gt;along&lt;span class="o"&gt;=&lt;/span&gt;polys&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        pcrds &lt;span class="o"&gt;=&lt;/span&gt; cbind&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i in seq&lt;span class="p"&gt;(&lt;/span&gt;along&lt;span class="o"&gt;=&lt;/span&gt;polys&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        pcrds &lt;span class="o"&gt;=&lt;/span&gt; cbind&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]$&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]$&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
         pcrds &lt;span class="o"&gt;=&lt;/span&gt; rbind&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;,&lt;/span&gt; pcrds&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,])&lt;/span&gt;
         polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="caps"&gt;ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
@@ -464,7 +464,7 @@ the input point layer.
 &lt;p&gt;To save the output to shapefile, simply use&lt;code&gt;writeOGR&lt;/code&gt; from the &lt;code&gt;rgdal&lt;/code&gt;
 library:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="o"&gt;?&lt;/span&gt;writeOGR
+?writeOGR
 &lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 16 Sep 2009 22:30:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-09-16:2009/09/voronoi-polygons-with-r/</guid><category>R</category><category>Tesselation</category><category>Voronoi polygons</category><category>Free open-source software (FOSS)</category><category>How to</category><category>R spatial</category></item><item><title>Python, Matlab, and R</title><link>http://www.carsonfarmer.com/2009/08/python-matlab-and-r/</link><description>&lt;p&gt;One project I&amp;#8217;m working on at the moment involves exploring a dynamic
 extension of the Isomap algorithm for visualising constantly varying
 real-world road networks. Currently, we are testing out the method on a
@@ -755,23 +755,23 @@ not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
 &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;invisible&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;invisible&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="p"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Note: &lt;code&gt;invisible&lt;/code&gt; allows you to close the viewer without filling the
 console with the attributes of the table. You could also&amp;nbsp;use:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;new_data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;new_data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="p"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;to assign changes made to the data to a new variable, or&amp;nbsp;use:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;spatial_layer&lt;span class="p"&gt;@&lt;/span&gt;data &lt;span class="o"&gt;=&lt;/span&gt; edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="p"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;or,&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;fix&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;fix&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="p"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -780,7 +780,7 @@ console with the attributes of the table. You could also&amp;nbsp;use:&lt;/p&gt;
 features, the value at that point will be&amp;nbsp;displayed.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
 y &lt;span class="o"&gt;=&lt;/span&gt; readGDAL&lt;span class="p"&gt;(&lt;/span&gt;system.file&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pictures/Rlogo.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rgdal&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; band&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-y.grid &lt;span class="o"&gt;=&lt;/span&gt; y&lt;span class="o"&gt;@&lt;/span&gt;grid
+y.grid &lt;span class="o"&gt;=&lt;/span&gt; y&lt;span class="p"&gt;@&lt;/span&gt;grid
 y.coords &lt;span class="o"&gt;=&lt;/span&gt; coordinates&lt;span class="p"&gt;(&lt;/span&gt;y.grid&lt;span class="p"&gt;)&lt;/span&gt; 
 image&lt;span class="p"&gt;(&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
 identify&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;y.coords&lt;span class="p"&gt;,&lt;/span&gt; y&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
