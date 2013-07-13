@@ -2,7 +2,7 @@ Title: Essential Python Geospatial Libraries
 Date: 2013-07-12 17:25
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Useful Tips
+Category: Helpful tips
 Tags: Update, Useful Tips, Python, GIS, Open Source
 Slug: essential-python-geo-libraries
 
