@@ -7,7 +7,8 @@ Tags: Update, Useful Tips, Python, GIS, Open Source
 Slug: essential-python-geo-libraries
 
 Just so I don't forget, here is a list of really awesome Python libraries that
-I'm using these days to do lots of fun things with spatial data:
+I'm using these days to do lots of fun things with spatial data [UPDATE: I've 
+added a few more]:
 
 * [pandas][] - For data handling and munging
 * [shapely][] - For geometry handling
@@ -25,6 +26,14 @@ I'm using these days to do lots of fun things with spatial data:
 * [matplotlib][] - For all my plotting needs
 * [networkx][] - For working with networks (duh!)
 * [pelican][] - For blogging about all this stuff...
+* [pysal][] - For all your spatial econometrics needs (and more)
+* [descartes][] - For plotting geometries in matplotlib
+
+Based on Twitter and some of the comments below, I should also add:
+
+* [geographiclib][] - For solving geodesic problems
+* [pyshp][] - For reading and writing shapefiles (in _pure_ Python)
+* [pyproj][] - For conversions between projections
 
 Any others I've missed?
 
@@ -44,6 +53,11 @@ Any others I've missed?
 [networkx]: http://networkx.github.io/
 [pelican]: http://docs.getpelican.com/en/3.2/
 [pyqgis]: http://www.qgis.org/pyqgis-cookbook/
+[pysal]: http://pythonhosted.org/PySAL/
+[geographiclib]: http://geographiclib.sourceforge.net/
+[pyproj]: https://code.google.com/p/pyproj/
+[pyshp]: https://code.google.com/p/pyshp/
+[descartes]: https://pypi.python.org/pypi/descartes
 <!--more-->
 
 
