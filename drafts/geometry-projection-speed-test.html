@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Parallel bootstrapping with R</title>
+        <title>Geometry Projection Speed Test</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
                 <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
                         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -72,11 +72,11 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/" rel="bookmark"
-           title="Permalink to Parallel bootstrapping with R">Parallel bootstrapping  with&nbsp;R</a></h1>
-      <abbr class="published" title="2010-04-21T15:34:00">
+        <a href="http://www.carsonfarmer.com/2013/07/geometry-projection-speed-test/" rel="bookmark"
+           title="Permalink to Geometry Projection Speed Test">Geometry Projection Speed&nbsp;Test</a></h1>
+      <abbr class="published" title="2013-07-18T12:00:00">
           <i class="icon-calendar"></i>
-          Wed 21 April 2010
+          Thu 18 July 2013
       </abbr>
       <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -94,98 +94,93 @@
 <script type="IN/Share" data-counter="right"></script>    </header>
 
     <div class="entry-content">
-      <p>In a <a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/">recent post</a>, I mentioned that I was testing the stability of
-clusters generated from a modified network partitioning algorithm using
-bootstrap resampling techniques. I also mentioned that I was doing this
-in R, using the very nice <a href="http://cran.r-project.org/web/packages/foreach/index.html">foreach</a> package published by <a href="http://www.revolution-computing.com/">REvolution
-Computing</a>. To show just how nice this package is, below is a minimal
-example of bootstrapping a network partitioning algorithm which takes
-advantage of a multicore processor:
+      <p>After a recent post about essential <a href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/">Python libraries for working with 
+geospatial data</a>, I decided to explore the <a href="https://code.google.com/p/pyproj/">pyproj</a> library for 
+(re)projecting geometries. Lately I&#8217;ve been using the <a href="http://www.gdal.org/ogr/osr_tutorial.html"><span class="caps">OGR</span> projection 
+classes</a> that come with <a href="https://pypi.python.org/pypi/GDAL/">ogr/gdal</a>, but <a href="http://sgillies.net/blog/">Sean Gillies</a>
+recommended pyproj, so I thought I&#8217;d give it a try. To help me decide if I 
+should make the switch, I did a speed test. The following is a 
+small reproducible example that I came up with to test the two. I&#8217;m not sure 
+if this test is totally fair, so comments and recommendations are welcome!
 </p>
-<div class="highlight"><pre>library<span class="p">(</span>doMC<span class="p">)</span>
-library<span class="p">(</span>foreach<span class="p">)</span>
-library<span class="p">(</span>igraph<span class="p">)</span>
-<span class="c1"># Jaccard coeficcient function (taken from package fpc)</span>
-clujaccard <span class="o">=</span> <span class="kr">function</span> <span class="p">(</span>c1<span class="p">,</span> c2<span class="p">,</span> zerobyzero <span class="o">=</span> <span class="kc"><span class="caps">NA</span></span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">if</span> <span class="p">(</span>sum<span class="p">(</span>c1<span class="p">)</span> <span class="o">+</span> sum<span class="p">(</span>c2<span class="p">)</span> <span class="o">-</span> sum<span class="p">(</span>c1 <span class="o">&amp;</span> c2<span class="p">)</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span>
-        out <span class="o">=</span> zerobyzero
-    <span class="kr">else</span>
-        out <span class="o">=</span> sum<span class="p">(</span>c1 <span class="o">&amp;</span> c2<span class="p">)</span><span class="o">/</span><span class="p">(</span>sum<span class="p">(</span>c1<span class="p">)</span> <span class="o">+</span> sum<span class="p">(</span>c2<span class="p">)</span> <span class="o">-</span> sum<span class="p">(</span>c1 <span class="o">&amp;</span> c2<span class="p">))</span>
-    <span class="kr">return</span><span class="p">(</span>out<span class="p">)</span>
-<span class="p">}</span>
-registerDoMC<span class="p">()</span> <span class="c1"># registers the parallel backend</span>
-B <span class="o">=</span> <span class="m">1000</span> <span class="c1"># number of bootstrap replicates to create</span>
-load<span class="p">(</span><span class="s">&quot;igraph_network.Rdata&quot;</span><span class="p">)</span> <span class="c1"># load a previously saved network (network name: g)</span>
-fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>g<span class="p">)</span> <span class="c1"># compute original clustering</span>
-mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
-moc <span class="o">=</span> community.to.membership<span class="p">(</span>g<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
-noc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>moc<span class="p">))</span> <span class="c1"># count the number original clusters</span>
-bg <span class="o">=</span> g <span class="c1"># make a copy of g for bootstrapping</span>
-clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o">=</span>seq<span class="p">(</span>B<span class="p">),</span> .combine<span class="o">=</span>cbind<span class="p">)</span> <span class="o">%dopar%</span> <span class="p">{</span>
-    E<span class="p">(</span>bg<span class="p">)</span><span class="o">$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)</span><span class="o">$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
-    fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>bg<span class="p">)</span> <span class="c1"># compute bootstrap clustering</span>
-    mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
-    mbc <span class="o">=</span> community.to.membership<span class="p">(</span>bg<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
-    nbc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>mbc<span class="p">))</span> <span class="c1"># count the number new clusters</span>
-    bootresult <span class="o">=</span> c<span class="p">()</span>
-    <span class="kr">for</span> <span class="p">(</span>j <span class="kr">in</span> seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> noc<span class="m">-1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the original clusters...</span>
-        maxgamma <span class="o">=</span> <span class="m">0</span>
-        <span class="kr">if</span> <span class="p">(</span>nbc <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kr">for</span> <span class="p">(</span>k <span class="kr">in</span> seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> nbc<span class="m">-1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the new clusters...</span>
-                bv <span class="o">=</span> as.vector<span class="p">(</span>mbc <span class="o">==</span> k<span class="p">)</span>
-                ov <span class="o">=</span> as.vector<span class="p">(</span>moc <span class="o">==</span> j<span class="p">)</span>
-                jc <span class="o">=</span> clujaccard<span class="p">(</span>ov<span class="p">,</span> bv<span class="p">,</span> zerobyzero<span class="o">=</span><span class="m">0</span><span class="p">)</span>
-                <span class="kr">if</span> <span class="p">(</span>jc <span class="o">&gt;</span> maxgamma<span class="p">)</span> <span class="c1"># if these two clusters are most similar...</span>
-                    maxgamma <span class="o">=</span> jc
-            <span class="p">}</span>
-        <span class="p">}</span>
-        bootresult <span class="o">=</span> c<span class="p">(</span>bootresult<span class="p">,</span> maxgamma<span class="p">)</span> <span class="c1"># combine results</span>
-    <span class="p">}</span>
-    <span class="kr">return</span> bootresult <span class="c1"># return the results of this iteration (and cbind with the rest)</span>
-<span class="p">}</span>
-bootmean <span class="o">=</span> apply<span class="p">(</span>clusters<span class="p">,</span> <span class="m">1</span><span class="p">,</span> mean<span class="p">)</span> <span class="c1"># mean Jaccard coefficient for each cluster</span>
+<p>Imports first, to make sure we start off with a level playing&nbsp;field:</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">Series</span> <span class="c"># This is what our geometries are stored in</span>
+<span class="kn">from</span> <span class="nn">shapely</span> <span class="kn">import</span> <span class="n">wkb</span>
+<span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">from</span> <span class="nn">shapely.geometry</span> <span class="kn">import</span> <span class="n">shape</span>
+<span class="kn">from</span> <span class="nn">osgeo</span> <span class="kn">import</span> <span class="n">ogr</span>
+<span class="c"># The following two imports are the important ones</span>
+<span class="kn">from</span> <span class="nn">pyproj</span> <span class="kn">import</span> <span class="n">Proj</span><span class="p">,</span> <span class="n">transform</span>
+<span class="kn">from</span> <span class="nn">osgeo.osr</span> <span class="kn">import</span> <span class="n">SpatialReference</span><span class="p">,</span> <span class="n">CoordinateTransformation</span>
 </pre></div>
 
 
-<p>The above example might not produce great results, as it simply
-resamples (with replacement) the weights of all the network edges, and
-therefore a more sophisticated resampling regime might be warranted.
-Having said that, it&#8217;s quite a useful example, and as you can see, the
-only &#8216;extra&#8217; bits required to make this run on multiple cores is the
-<code>registerDoMC()</code> command which simply registers the parallel backend
-(uses the multicore package) and the <code>foreach ... %dopar%</code> which tells <code>R</code>
-to run the loops in parallel. I ran a similar analysis using a different
-community detection algorithm on a computer with 4 cores, and was
-(finally) able to take full advantage of my processing&nbsp;power:</p>
-<p><a href="http://www.carsonfarmer.com/static/images/foreachcpu.png"><img alt="cpu_usage" src="http://www.carsonfarmer.com/static/images/foreachcpu-300x114.png" title="foreachcpu" /></a></p>
+<p>Because I&#8217;m storing the <a href="https://pypi.python.org/pypi/Shapely">shapely</a> geometries in a <a href="http://pandas.pydata.org/">pandas</a> &#8216;Series&#8217;, the 
+functions need to work with <code>Series.apply()</code>. Here I define two functions 
+(one using &#8216;ogr.osr&#8217; and one using &#8216;pyproj&#8217;) to perform coordinate 
+transformations inside a call to <code>Series.apply()</code>:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">transform_osr</span><span class="p">(</span><span class="n">geoms</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">target_crs</span> <span class="o">=</span> <span class="n">SpatialReference</span><span class="p">()</span>
+    <span class="n">target_crs</span><span class="o">.</span><span class="n">ImportFromEPSG</span><span class="p">(</span><span class="n">origin</span><span class="p">)</span>
+    <span class="n">origin_crs</span> <span class="o">=</span> <span class="n">SpatialReference</span><span class="p">()</span>
+    <span class="n">origin_crs</span><span class="o">.</span><span class="n">ImportFromEPSG</span><span class="p">(</span><span class="n">origin</span><span class="p">)</span>
+    <span class="n">transformer</span> <span class="o">=</span> <span class="n">CoordinateTransformation</span><span class="p">(</span><span class="n">origin_crs</span><span class="p">,</span> <span class="n">target_crs</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">trans</span><span class="p">(</span><span class="n">geom</span><span class="p">):</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="n">ogr</span><span class="o">.</span><span class="n">CreateGeometryFromWkb</span><span class="p">(</span><span class="n">geom</span><span class="o">.</span><span class="n">wkb</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">g</span><span class="o">.</span><span class="n">Transform</span><span class="p">(</span><span class="n">transformer</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s">&quot;Ahhhh!&quot;</span><span class="p">)</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="n">wkb</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">ExportToWkb</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">g</span>
+    <span class="k">return</span> <span class="n">geoms</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">trans</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">transform_pyproj</span><span class="p">(</span><span class="n">geoms</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+    <span class="n">target</span> <span class="o">=</span> <span class="n">Proj</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s">&quot;epsg:</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">target</span><span class="p">)</span>
+    <span class="n">origin</span> <span class="o">=</span> <span class="n">Proj</span><span class="p">(</span><span class="n">init</span><span class="o">=</span><span class="s">&quot;epsg:</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">origin</span><span class="p">)</span>
+    <span class="n">transformer</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span><span class="n">transform</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">trans</span><span class="p">(</span><span class="n">geom</span><span class="p">):</span>
+        <span class="n">interface</span> <span class="o">=</span> <span class="n">geom</span><span class="o">.</span><span class="n">__geo_interface__</span>
+        <span class="n">geom_type</span> <span class="o">=</span> <span class="n">interface</span><span class="p">[</span><span class="s">&#39;type&#39;</span><span class="p">]</span>
+        <span class="n">coords</span> <span class="o">=</span> <span class="n">interface</span><span class="p">[</span><span class="s">&#39;coordinates&#39;</span><span class="p">]</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">apply_to_coord_pairs</span><span class="p">(</span><span class="n">transformer</span><span class="p">,</span> <span class="n">coords</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">shape</span><span class="p">({</span><span class="s">&#39;coordinates&#39;</span><span class="p">:</span><span class="n">result</span><span class="p">,</span> <span class="s">&#39;type&#39;</span><span class="p">:</span><span class="n">geom_type</span><span class="p">})</span>
+    <span class="k">def</span> <span class="nf">apply_to_coord_pairs</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">geom</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="ow">not</span> <span class="nb">all</span><span class="p">([</span><span class="nb">hasattr</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="s">&quot;__iter__&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">])</span> <span class="ow">and</span> \
+                <span class="n">fun</span><span class="p">(</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="ow">or</span> <span class="n">apply_to_coord_pairs</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">geom</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">geoms</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">trans</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Each of these functions takes an <span class="caps">EPSG</span> code as input for the origin and 
+destination coordinate reference systems. Both libraries offer alternative
+ways to define projection information, but <span class="caps">EPSG</span> codes keeps the code pretty 
+simple for&nbsp;now.</p>
+<p>Here are the results, using the <code>%timeit</code> magic function in <a href="http://ipython.org/">ipython</a>:</p>
+<div class="highlight"><pre><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">:</span> <span class="o">%</span><span class="n">timeit</span> <span class="n">transform_pyproj</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">29903</span><span class="p">,</span> <span class="mi">4326</span><span class="p">)</span>
+<span class="mi">1</span> <span class="n">loops</span><span class="p">,</span> <span class="n">best</span> <span class="n">of</span> <span class="mi">3</span><span class="o">:</span> <span class="mi">641</span> <span class="n">ms</span> <span class="n">per</span> <span class="n">loop</span>
+
+<span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">:</span> <span class="o">%</span><span class="n">timeit</span> <span class="n">transform_osr</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="mi">29903</span><span class="p">,</span> <span class="mi">4326</span><span class="p">)</span>
+<span class="mi">10</span> <span class="n">loops</span><span class="p">,</span> <span class="n">best</span> <span class="n">of</span> <span class="mi">3</span><span class="o">:</span> <span class="mf">27.4</span> <span class="n">ms</span> <span class="n">per</span> <span class="n">loop</span>
+</pre></div>
+
+
+<p>Clearly the &#8216;ogr.osr&#8217; version is faster, but is it a fair comparison? The 
+&#8216;pyproj&#8217; version is done on individual points, and is mostly run in Python, 
+whereas the &#8216;ogr.osr&#8217; version operates directly on the <span class="caps">OGR</span> geometry object.
+Is there a better way to compare&nbsp;these?</p>
           <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
             </p>
           <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/bootstrapping.html">Bootstrapping</a>
-         <a href="http://www.carsonfarmer.com/tag/cluster.html">Cluster</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/r.html">R</a>
-         <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-         <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/research.html">Research</a>
+         <a href="http://www.carsonfarmer.com/tag/helpful-tips.html">Helpful tips</a>
+         <a href="http://www.carsonfarmer.com/tag/python.html">Python</a>
+         <a href="http://www.carsonfarmer.com/tag/gis.html">GIS</a>
+         <a href="http://www.carsonfarmer.com/tag/open-source.html">Open Source</a>
             </p>
     </div><!-- /.entry-content -->
-          <div class="comments">
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          var disqus_identifier = "2010/04/parallel-bootstrapping-with-r/";
-          var disqus_url = "http://www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/";
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-      </div>
     
   </article>
 </section>

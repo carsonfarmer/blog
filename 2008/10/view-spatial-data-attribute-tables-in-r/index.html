@@ -100,23 +100,23 @@ not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
 </p>
-<div class="highlight"><pre>invisible<span class="p">(</span>edit<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">))</span>
+<div class="highlight"><pre>invisible<span class="p">(</span>edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">))</span>
 </pre></div>
 
 
 <p>Note: <code>invisible</code> allows you to close the viewer without filling the
 console with the attributes of the table. You could also&nbsp;use:</p>
-<div class="highlight"><pre>new_data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">)</span>
+<div class="highlight"><pre>new_data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
 </pre></div>
 
 
 <p>to assign changes made to the data to a new variable, or&nbsp;use:</p>
-<div class="highlight"><pre>spatial_layer<span class="p">@</span>data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">)</span>
+<div class="highlight"><pre>spatial_layer<span class="o">@</span>data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
 </pre></div>
 
 
 <p>or,</p>
-<div class="highlight"><pre>fix<span class="p">(</span>spatial_layer<span class="p">@</span>data<span class="p">)</span>
+<div class="highlight"><pre>fix<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
 </pre></div>
 
 
