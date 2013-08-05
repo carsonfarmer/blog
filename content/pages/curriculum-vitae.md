@@ -191,7 +191,7 @@ Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Meth
 
 |                     |                                       |
 | ------------------  |  ------------------------------------ |
-| 2013 - present | Review (Spatial Demography)
+| 2013 - present | Editorial Board Member (Spatial Demography)
 | 2012 - present | Reviewer (Journal of Spatial Science)
 | 2012 - present | Reviewer (Computers, Environment and Urban Systems)
 | 2012 - present | Reviewer (International Journal of Geographical Information Science)
