@@ -4,7 +4,7 @@ Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
 Tags: Update, Announcement, Employement, GeoInformatics, Research
-Slug: essential-python-geo-libraries
+Slug: researcher-position-geoInformatics
 
 This is just a quick note about a great opportunity for early career researchers 
 interested in the field of [geoinformatics]. The [Centre for GeoInformatics][center] at the
