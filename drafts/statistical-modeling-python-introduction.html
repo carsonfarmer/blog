@@ -109,494 +109,819 @@
 
     <div class="entry-content">
       <h1>A Fresh Approach for Python:&nbsp;Introduction</h1>
-<p>The goal of this series of tutorials is to show how all of the R analysis and
-commands used in the &#8216;Computational Technique&#8217; sections of each chapter from
-<a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a> can be done just
-as easily using the <a href="http://python.org/">Python</a> programming language. This has the dual
-goal of introducing &#8216;Scientific Python&#8217; to students learning statistics, as well
-as showcasing the recent advances in statistical computing that have been
-introduced to Python in recent years. Each tutorial in the series will cover the
-Computational Technique section of a different chapter from the book, starting
-with Section 1.4.3 from the introduction (which technically <em>isn&#8217;t</em> a
-Computational Technique section, but is a useful introduction none-the-less),
-which is <a href="http://www.mosaic-web.org/go/StatisticalModeling/Chapters/">available online here</a>.</p>
-<p>All the tutorials assume that Python is installed and running on your computer.
-To use the Notebook [associated with this tutorial][notebook-link], you&#8217;ll also
-need to have <a href="http://ipython.org/">IPython</a> (with notebook) installed. There are plenty of
-resources online with information on <a href="http://ipython.org/">IPython</a>, [Notebooks][ipython-
-notebook], and <a href="http://ipython.org/install.html">installation instructions</a>) for both. You&#8217;ll
-also need to have the <a href="http://www.scipy.org/">Scientific Python</a> libraries installed for
-additional statistical functionality (we&#8217;ll also introduce some <a href="http://statsmodels.sourceforge.net/">other
-statistical libraries</a> in later tutorials), and <a href="http://matplotlib.org/">matplotlib</a> for
-plotting and&nbsp;visualization.</p>
+<p>The goal of this series of tutorials is to show how all of the R analysis and commands used in the &#8216;Computational Technique&#8217; sections of each chapter from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a> can be done just as easily using the <a href="http://python.org/">Python</a> programming language. This has the dual goal of introducing &#8216;Scientific Python&#8217; to students learning statistics, as well as showcasing the recent advances in statistical computing that have been introduced to Python in recent years. Each tutorial in the series will cover the Computational Technique section of a different chapter from the book, starting with Section 1.4.3 from the introduction (which technically <em>isn&#8217;t</em> a Computational Technique section, but is a useful introduction none-the-less), which is <a href="http://www.mosaic-web.org/go/StatisticalModeling/Chapters/">available online here</a>.</p>
+<p>All the tutorials assume that Python is installed and running on your computer. To use the Notebook [associated with this tutorial][notebook-link], you&#8217;ll also need to have <a href="http://ipython.org/">IPython</a> (with notebook) installed. There are plenty of resources online with information on <a href="http://ipython.org/">IPython</a>, <a href="http://ipython.org/notebook.html">Notebooks</a>, and <a href="http://ipython.org/install.html">installation instructions</a>) for both. You&#8217;ll also need to have the <a href="http://www.scipy.org/">Scientific Python</a> libraries installed for additional statistical functionality (we&#8217;ll also introduce some <a href="http://statsmodels.sourceforge.net/">other statistical libraries</a> in later tutorials), and <a href="http://matplotlib.org/">matplotlib</a> for plotting and&nbsp;visualization.</p>
 <h2>The IPython Command&nbsp;Console</h2>
-<p>Once you have IPython installed, you are ready to perform all sorts of
-statistical and other mathematical and scientific operations. However, to use
-the powerful range of tools, functions, commands, and statistical methods
-available in Python, you first need to learn a little bit about the syntax and
-meaning of Python commands. Once you have learned this, operations become simple
-to perform. Before staring this tutorial, read section 1.4 from &#8216;Statistical
-Modeling: A Fresh Approach&#8217;, which outlines some general concepts surrounding
-computational statistics (in the context of R). In particular, it provides some
-explanation of a &#8216;language-based approach&#8217; to statistical computing - which is
-an important concept throughout the book and this series of&nbsp;tutorials.</p>
+<p>Once you have IPython installed, you are ready to perform all sorts of statistical and other mathematical and scientific operations. However, to use the powerful range of tools, functions, commands, and statistical methods available in Python, you first need to learn a little bit about the syntax and meaning of Python commands. Once you have learned this, operations become simple to perform. Before staring this tutorial, read section 1.4 from &#8216;Statistical Modeling: A Fresh Approach&#8217;, which outlines some general concepts surrounding computational statistics (in the context of R). In particular, it provides some explanation of a &#8216;language-based approach&#8217; to statistical computing - which is an important concept throughout the book and this series of&nbsp;tutorials.</p>
 <h2>Invoking an&nbsp;Operation</h2>
-<p>People often think of computers as <em>doing things</em>: sending email, playing music,
-storing files. Your job in using a computer is to tell the computer <em>what</em> to
-do. There are many different words used to refer to the &#8220;what&#8221;: a procedure, a
-task, a function, a routine, and so on. Like in the book, I&#8217;ll use the word
-<strong>computation</strong>. Admittedly, this is a bit circular, but it is easy to remember:
-computers perform&nbsp;computations.</p>
-<p>Complex computations are built up from simpler computations. This may seem
-obvious, but it is a powerful idea. An <strong>algorithm</strong> is just a description of a
-computation in terms of other computations that you already know how to perform.
-To help distinguish between the computation as a whole and the simpler parts, it
-is helpful to introduce a new word: an <strong>operator</strong> performs a&nbsp;computation.</p>
-<p>It&#8217;s helpful to think of the computation carried out by an operator as involving
-four&nbsp;parts:</p>
+<p>People often think of computers as <em>doing things</em>: sending email, playing music, storing files. Your job in using a computer is to tell the computer <em>what</em> to do. There are many different words used to refer to the &#8220;what&#8221;: a procedure, a task, a function, a routine, and so on. Like in the book, I&#8217;ll use the word <strong>computation</strong>. Admittedly, this is a bit circular, but it is easy to remember: computers perform&nbsp;computations.</p>
+<p>Complex computations are built up from simpler computations. This may seem obvious, but it is a powerful idea. An <strong>algorithm</strong> is just a description of a computation in terms of other computations that you already know how to perform. To help distinguish between the computation as a whole and the simpler parts, it is helpful to introduce a new word: an <strong>operator</strong> performs a&nbsp;computation.</p>
+<p>It&#8217;s helpful to think of the computation carried out by an operator as involving four&nbsp;parts:</p>
 <ol>
 <li>The name of the&nbsp;operator</li>
 <li>The input&nbsp;arguments</li>
 <li>The output&nbsp;value</li>
 <li>Side&nbsp;effects</li>
 </ol>
-<p>A typical operation takes one or more <strong>input arguments</strong> and uses the
-information in these to produce an <strong>output value</strong>. Along the way, the computer
-might take some action: display a graph, store a file, make a sound, etc. These
-actions are called <strong>side effects</strong>.</p>
-<p>Because R is a programing language designed specifically for statistical
-analysis, many of the &#8216;base&#8217; commands (such as <code>sqrt()</code>) are available &#8216;out-of-
-the-box&#8217;. However, since Python is a more general-purpose programming language,
-we usually need to <code>import</code> statistical commands (think of this as adding words
-to a language) before we can use them. For Scientific Python, the most important
-library that we need is <code>numpy</code> (Numerical Python), which can be loaded like
-this:
-<p class="prompt in">In[1]:</p></p>
+<p>A typical operation takes one or more <strong>input arguments</strong> and uses the information in these to produce an <strong>output value</strong>. Along the way, the computer might take some action: display a graph, store a file, make a sound, etc. These actions are called <strong>side effects</strong>.</p>
+<p>Because R is a programing language designed specifically for statistical analysis, many of the &#8216;base&#8217; commands (such as <code>sqrt()</code>) are available &#8216;out-of-the-box&#8217;. However, since Python is a more general-purpose programming language, we usually need to <code>import</code> statistical commands (think of this as adding words to a language) before we can use them. For Scientific Python, the most important library that we need is <code>numpy</code> (Numerical Python), which can be loaded like this:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-</pre></div>
-
-
-<p><span class="note left shadow">
-It is best to ensure you are using the latest version of <code>numpy</code>, which is
-available <a href="http://scipy.org/Download">from here</a>.
+</pre></div></p>
+<p></div>
+</div></p>
+<p></div>
+<span class="note left shadow">
+It is best to ensure you are using the latest version of <code>numpy</code>, which is available <a href="http://scipy.org/Download">from here</a>.
 </span></p>
-<p>To tell the computer to perform a computation - call this <strong>invoking an
-operation</strong> or giving a <strong>command</strong> - you need to provide the name and the input
-arguments in a specific format. The computer then returns the output value. For
-example, the command <code>np.sqrt(25)</code> invokes the square root operator (named
-<code>sqrt</code> from the <code>numpy</code> library) on the argument <code>25</code>. The output from the
-computation will, of course, we <code>5</code>.</p>
-<p>The syntax of invoking an operation consists of the operator&#8217;s name, followed by
-round parentheses. The input arguments go inside the&nbsp;parentheses.</p>
-<p>The software program that you use to invoke operators is called an
-<strong>interpreter</strong> (the interpreter is the program you are running when you start
-Python). You enter your commands as a &#8216;dialog&#8217; between you and the interpreter
-(just like when converting between any two languages!). Commands can be entered
-as part of a script (a text file with a list of commands to perform) or directly
-at a &#8216;command prompt&#8217;:
-<p class="prompt in">In[2]:</p></p>
+<p>To tell the computer to perform a computation - call this <strong>invoking an operation</strong> or giving a <strong>command</strong> - you need to provide the name and the input arguments in a specific format. The computer then returns the output value. For example, the command <code>np.sqrt(25)</code> invokes the square root operator (named <code>sqrt</code> from the <code>numpy</code> library) on the argument <code>25</code>. The output from the computation will, of course, we <code>5</code>.</p>
+<p>The syntax of invoking an operation consists of the operator&#8217;s name, followed by round parentheses. The input arguments go inside the&nbsp;parentheses.</p>
+<p>The software program that you use to invoke operators is called an <strong>interpreter</strong> (the interpreter is the program you are running when you start Python). You enter your commands as a &#8216;dialog&#8217; between you and the interpreter (just like when converting between any two languages!). Commands can be entered as part of a script (a text file with a list of commands to perform) or directly at a &#8216;command prompt&#8217;:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[2]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[2]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[2]:</p>
-
-<pre class="output command">
+<pre>
 5.0
 </pre>
 
-<p>In the above situation, the &#8216;prompt&#8217; is <code>In [ ]:</code>, and the &#8216;command&#8217; is
-<code>np.sqrt(25)</code>. When you press &#8216;Enter&#8217;, the interpreter reads your command and
-performs the computation. For commands such as the one above, the interpreter
-will print the output value from the computation:
-<p class="prompt in">In[3]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+In the above situation, the &#8216;prompt&#8217; is <code>In [ ]:</code>, and the &#8216;command&#8217; is <code>np.sqrt(25)</code>. When you press &#8216;Enter&#8217;, the interpreter reads your command and performs the computation. For commands such as the one above, the interpreter will print the output value from the computation:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[3]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[3]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[3]:</p>
-
-<pre class="output command">
+<pre>
 5.0
 </pre>
 
-<p>In the above example, the &#8216;output marker&#8217; is <code>Out[ ]:</code>, and the output value is
-<code>5.0</code>. The dialog continues as the interpreter prints another prompt and waits
-for your further&nbsp;command.</p>
-<p>Often, operations involve more than one argument. The various arguments are
-separated by commas. For example, here is an operation named <code>arange</code> from the
-<code>numpy</code> library that produces a range of numbers (increasing values between 3
-and 10):
-<p class="prompt in">In[4]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+In the above example, the &#8216;output marker&#8217; is <code>Out[ ]:</code>, and the output value is <code>5.0</code>. The dialog continues as the interpreter prints another prompt and waits for your further command.
+Often, operations involve more than one argument. The various arguments are separated by commas. For example, here is an operation named <code>arange</code> from the <code>numpy</code> library that produces a range of numbers (increasing values between 3 and 10):
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[4]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[4]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[4]:</p>
-
-<pre class="output command">
+<pre>
 array([3, 4, 5, 6, 7, 8, 9])
 </pre>
 
-<p>The first argument tells where to start the range and the second tells where to
-end it. The order of the arguments is important. For instance, <em>here</em> is the
-range produced when 10 is the first argument, 3 is the second, and the third is
--1 (decreasing values between 10 and 3):
-<p class="prompt in">In[5]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+The first argument tells where to start the range and the second tells where to end it. The order of the arguments is important. For instance, <em>here</em> is the range produced when 10 is the first argument, 3 is the second, and the third is -1 (decreasing values between 10 and 3):
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[5]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[5]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[5]:</p>
-
-<pre class="output command">
+<pre>
 array([10,  9,  8,  7,  6,  5,  4])
 </pre>
 
-<p>For some operators, particularly those that have many input arguments, some of
-the arguments can be referred to by name rather than position. This is
-particularly useful when the named argument has a sensible default value. For
-example, the <code>arange</code> operator from the <code>numpy</code> library can be instructed what
-type of output values to produce (integers, floats, etc). This is accomplished
-using an argument named <code>dtype</code>:
-<p class="prompt in">In[6]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+For some operators, particularly those that have many input arguments, some of the arguments can be referred to by name rather than position. This is particularly useful when the named argument has a sensible default value. For example, the <code>arange</code> operator from the <code>numpy</code> library can be instructed what type of output values to produce (integers, floats, etc). This is accomplished using an argument named <code>dtype</code>:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[6]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&#39;float&#39;</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[6]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[6]:</p>
-
-<pre class="output command">
+<pre>
 array([ 10.,   9.,   8.,   7.,   6.,   5.,   4.])
 </pre>
 
-<p>Note that all the values in the range now have decimal places. Depending on the
-circumstances, all four parts of an operation need not be present. For example,
-the <code>ctime</code> operation from the <code>time</code> library returns the current time and date;
-no input arguments are required:
-<p class="prompt in">In[7]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+Note that all the values in the range now have decimal places. Depending on the circumstances, all four parts of an operation need not be present. For example, the <code>ctime</code> operation from the <code>time</code> library returns the current time and date; no input arguments are required:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[7]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
 <span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[7]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[7]:</p>
-
-<pre class="output command">
-<span class="quo">'</span>Sun Jun  2 15:29:59 2013'
+<pre>
+&apos;Sun Jun  2 15:29:59 2013&apos;
 </pre>
 
-<p>In the above example, we first imported the <code>time</code> library, which provides a
-series of commands that help us work with dates and times. Next, even though
-there are no arguments, the parentheses are still used when calling the <code>ctime</code>
-command. Think of the pair of parentheses as meaning, &#8216;<em>do this</em>&#8216;.</p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+In the above example, we first imported the <code>time</code> library, which provides a series of commands that help us work with dates and times. Next, even though there are no arguments, the parentheses are still used when calling the <code>ctime</code> command. Think of the pair of parentheses as meaning, &#8216;<em>do this</em>&#8216;.</p>
 <h3>Naming and Storing&nbsp;Values</h3>
-<p>Often the value returned by an operation will be used later on. Values can be
-stored for later use with the <strong>assignment operator</strong>. This has a different
-syntax that reminds the user that a value is being stored. Here&#8217;s an example of
-a simple assignment:
-<p class="prompt in">In[8]:</p></p>
+<p>Often the value returned by an operation will be used later on. Values can be stored for later use with the <strong>assignment operator</strong>. This has a different syntax that reminds the user that a value is being stored. Here&#8217;s an example of a simple assignment:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[8]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">16</span>
-</pre></div>
-
-
-<p>The command has stored the value 16 under the name <code>x</code>. The syntax is always the
-same: an equal sign (=) with a name on the left side and a value on the right.
-Such stored values are called <strong>objects</strong>. Making an assignment to an object
-defines the object. Once an object has been defined, it can be referred to and
-used in later computations. Notice that an assignment operation does not return
-a value or display a value. Its sole purpose is to have the side effects of
-defining the object and thereby storing a value under the object&#8217;s&nbsp;name.</p>
-<p>To refer to the value stored in the object, just use the object&#8217;s name itself.
-For instance:
-<p class="prompt in">In[9]:</p></p>
+</pre></div></p>
+<p></div>
+</div></p>
+<p></div>
+The command has stored the value 16 under the name <code>x</code>. The syntax is always the same: an equal sign (=) with a name on the left side and a value on the right. 
+Such stored values are called <strong>objects</strong>. Making an assignment to an object defines the object. Once an object has been defined, it can be referred to and used in later computations. Notice that an assignment operation does not return a value or display a value. Its sole purpose is to have the side effects of defining the object and thereby storing a value under the object&#8217;s&nbsp;name.</p>
+<p>To refer to the value stored in the object, just use the object&#8217;s name itself. For instance:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[9]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">x</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[9]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[9]:</p>
-
-<pre class="output command">
+<pre>
 16
 </pre>
 
-<p>Doing a computation on the value store in an object is much the same (and
-provides and extremely rich syntax for performing complex calculations):
-<p class="prompt in">In[10]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+Doing a computation on the value store in an object is much the same (and provides and extremely rich syntax for performing complex calculations):
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[10]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[10]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[10]:</p>
-
-<pre class="output command">
+<pre>
 4.0
 </pre>
 
-<p>You can create as many objects as you like and give them names that remind you
-of their purpose. Some examples: <code>wilma</code>, <code>ages</code>, <code>temp</code>, <code>dog_houses</code>, <code>foo3</code>.
-There <em>are</em> some general rules for object&nbsp;names:</p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+You can create as many objects as you like and give them names that remind you of their purpose. Some examples: <code>wilma</code>, <code>ages</code>, <code>temp</code>, <code>dog_houses</code>, <code>foo3</code>. There <em>are</em> some general rules for object&nbsp;names:</p>
 <ul>
 <li>Use only letters and numbers and &#8216;underscores&#8217;&nbsp;(_)</li>
 <li>Do <span class="caps">NOT</span> use spaces anywhere in the name (Python won&#8217;t let&nbsp;you)</li>
 <li>A number cannot be the first character in the&nbsp;name</li>
-<li>Capital letters are treated as distinct from lower-case letters (i.e., Python
-is <em>case-sensitive</em>)<ul>
+<li>Capital letters are treated as distinct from lower-case letters (i.e., Python is <em>case-sensitive</em>)<ul>
 <li>the objects named <code>wilma</code>, <code>Wilma</code>, and <code>WILMA</code> are all&nbsp;different</li>
 </ul>
 </li>
-<li>If possible, use an &#8216;underscore&#8217; between words (i.e., <code>my_object</code>)</li>
+<li>If possible, use an &#8216;underscore&#8217; between words (i.e., <code>my_object</code>)
+For the sake of readability, keep object names short. But if you really must have an object named something like <code>ages_of_children_from_the _clinical_trial</code>, feel free (it&#8217;s just more typing for you&nbsp;later!).</li>
 </ul>
-<p>For the sake of readability, keep object names short. But if you really must
-have an object named something like <code>ages_of_children_from_the _clinical_trial</code>,
-feel free (it&#8217;s just more typing for you&nbsp;later!).</p>
 <p>Objects can store all sorts of things, for example a range of numbers:
-<p class="prompt in">In[11]:</p></p>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[11]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-</pre></div>
-
-
-<p>When you assign a new value to an existing object, as just done to <code>x</code> above,
-the former values of that object is erased from the computer memory. The former
-value of <code>x</code> was 16, but after the new assignment above, it is:
-<p class="prompt in">In[12]:</p></p>
+</pre></div></p>
+<p></div>
+</div></p>
+<p></div>
+When you assign a new value to an existing object, as just done to <code>x</code> above, the former values of that object is erased from the computer memory. The former value of <code>x</code> was 16, but after the new assignment above, it is:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[12]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">x</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[12]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[12]:</p>
-
-<pre class="output command">
+<pre>
 array([1, 2, 3, 4, 5, 6])
 </pre>
 
-<p>The value of an object is changed only via the assignment operator. Using an
-object in a computation does not change the value. For example, suppose you
-invoke the square-root operator on <code>x</code>:
-<p class="prompt in">In[13]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+The value of an object is changed only via the assignment operator. Using an object in a computation does not change the value. For example, suppose you invoke the square-root operator on <code>x</code>:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[13]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[13]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[13]:</p>
-
-<pre class="output command">
+<pre>
 array([ 1.        ,  1.41421356,  1.73205081,  2.        ,  2.23606798,
         2.44948974])
 </pre>
 
-<p>The square roots have been returned as a value, but this doesn&#8217;t change the
-value of <code>x</code>:
-<p class="prompt in">In[14]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+The square roots have been returned as a value, but this doesn&#8217;t change the value of <code>x</code>:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[14]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">x</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[14]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[14]:</p>
-
-<pre class="output command">
+<pre>
 array([1, 2, 3, 4, 5, 6])
 </pre>
 
-<p><span class="note right shadow" markdown="1">
-An assignment command like <code>x=np.sqrt(x)</code> can be confusing to people
-who are used to algebraic notation. In algebra, the equal sign describes a
-relationship between the left and right sides. So, $x = \sqrt{x}$ tells us about
-how the quantity $x$ and the quantity $\sqrt{x}$ are related. Students are
-usually trained to &#8216;solve&#8217; such a relationship, going through a series of
-algebraic steps to find values for $x$ that are consistent with the mathematical
-statement (for $x = \sqrt{x}$, the solutions are $x = 0$ and $x = 1$). In
-contrast, the assignment command <code>x = np.sqrt(x)</code> is a way of
-replacing the previous values stored in <code>x</code> with new values that are
-the square-root of the old&nbsp;ones.
-</span></p>
-<p>If you want to change the value of <code>x</code>, you need to use the assignment operator:
-<p class="prompt in">In[15]:</p></p>
-<div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
+</div>
 
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<span class="note right shadow" markdown="1">
+An assignment command like <code>x=np.sqrt(x)</code> can be confusing to people who are used to algebraic notation. In algebra, the equal sign describes a relationship between the left and right sides. So, $x = \sqrt{x}$ tells us about how the quantity $x$ and the quantity $\sqrt{x}$ are related. Students are usually trained to &#8216;solve&#8217; such a relationship, going through a series of algebraic steps to find values for $x$ that are consistent with the mathematical statement (for $x = \sqrt{x}$, the solutions are $x = 0$ and $x = 1$). In contrast, the assignment command <code>x = np.sqrt(x)</code> is a way of replacing the previous values stored in <code>x</code> with new values that are the square-root of the old ones.
+</span>
+If you want to change the value of <code>x</code>, you need to use the assignment operator:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[15]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div></p>
+</div>
 
 <h3>Connecting&nbsp;Computations</h3>
-<p>The brilliant thing about organizing operators in terms of unput arguments and
-output values is that the output of one operator can be used as an input to
-another. This lets complicated computations be built out of simpler&nbsp;ones.</p>
-<p>For example, suppose you have a list of 10000 voters in a precinct and you want
-to select a random sample of 20 of them for a survey. The <code>np.arange</code> operator
-can be used to generate a set of 10000 choices. The <code>np.random.choice</code> operator
-can then be used to select a subset of these values at&nbsp;random.</p>
-<p>One way to connect the computations is by using objects to store the
-intermediate outputs:
-<p class="prompt in">In[16]:</p></p>
+<p>The brilliant thing about organizing operators in terms of unput arguments and output values is that the output of one operator can be used as an input to another. This lets complicated computations be built out of simpler&nbsp;ones.</p>
+<p>For example, suppose you have a list of 10000 voters in a precinct and you want to select a random sample of 20 of them for a survey. The <code>np.arange</code> operator can be used to generate a set of 10000 choices. The <code>np.random.choice</code> operator can then be used to select a subset of these values at&nbsp;random.</p>
+<p>One way to connect the computations is by using objects to store the intermediate outputs:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[16]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">choices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">choices</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c"># sample _without_ replacement</span>
-</pre></div>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">choices</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c"># sample <em>without</em> replacement</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[16]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[16]:</p>
-
-<pre class="output command">
+<pre>
 array([2239, 7280, 4216, 5736, 7213,  200, 1372, 9674, 5376, 8430, 2258,
        7935,  737, 5451, 9441, 8582, 4643, 1806, 4740, 3627])
 </pre>
 
-<p>You can also pass the output of an operator <em>directly</em> as an argument to another
-operator. Here&#8217;s another way to accomplish exactly the same thing as the above
-(note that the values will differ because we are performing a <em>random</em> sample):
-<p class="prompt in">In[17]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+You can also pass the output of an operator <em>directly</em> as an argument to another operator. Here&#8217;s another way to accomplish exactly the same thing as the above (note that the values will differ because we are performing a <em>random</em> sample):
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[17]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">),</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[17]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[17]:</p>
-
-<pre class="output command">
+<pre>
 array([8504, 4323, 3173, 4060, 5633, 1669, 9771,  389, 5357, 2518, 2839,
        1349, 5777, 8973, 2632,  763, 4790, 9306, 5879, 2144])
 </pre>
 
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+</div>
+
 <h3>Numbers and&nbsp;Arithmetic</h3>
-<p>The <code>Python</code> language has a concise notation for arithmetic that looks very much
-like the traditional one:
-<p class="prompt in">In[18]:</p></p>
-<div class="highlight"><pre><span class="mi">7</span> <span class="o">+</span> <span class="mi">2</span>
-</pre></div>
+<p>The <code>Python</code> language has a concise notation for arithmetic that looks very much like the traditional one:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[9]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">7.</span> <span class="o">+</span> <span class="mf">2.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[9]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[18]:</p>
-
-<pre class="output command">
-9
+<pre>
+9.0
 </pre>
 
-<p class="prompt in">In[19]:</p>
+</div>
 
-<div class="highlight"><pre><span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[10]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">3.</span> <span class="o">*</span> <span class="mf">4.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[10]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[19]:</p>
-
-<pre class="output command">
-12
+<pre>
+12.0
 </pre>
 
-<p class="prompt in">In[20]:</p>
+</div>
 
-<div class="highlight"><pre><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[11]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">5.</span> <span class="o">/</span> <span class="mf">2.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[11]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[20]:</p>
-
-<pre class="output command">
-2
+<pre>
+2.5
 </pre>
 
-<p class="prompt in">In[21]:</p>
+</div>
 
-<div class="highlight"><pre><span class="mi">3</span> <span class="o">-</span> <span class="mi">8</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[12]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">3.</span> <span class="o">-</span> <span class="mf">8.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[12]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[21]:</p>
-
-<pre class="output command">
--5
+<pre>
+-5.0
 </pre>
 
-<p class="prompt in">In[22]:</p>
+</div>
 
-<div class="highlight"><pre><span class="o">-</span><span class="mi">3</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[13]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="o">-</span><span class="mf">3.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[13]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[22]:</p>
-
-<pre class="output command">
--3
+<pre>
+-3.0
 </pre>
 
-<p class="prompt in">In[23]:</p>
+</div>
 
-<div class="highlight"><pre><span class="mi">5</span><span class="o">**</span><span class="mi">2</span> <span class="c"># same as 5^2 (or 5 to the power of 2)</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[14]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">5.</span><span class="o">**</span><span class="mf">2.</span> <span class="c"># same as 5^2 (or 5 to the power of 2)</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[14]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[23]:</p>
-
-<pre class="output command">
-25
+<pre>
+25.0
 </pre>
 
-<p>Arithmetic operators, like any other operators, can be connected to form more
-complicated computations. For instance:
-<p class="prompt in">In[24]:</p></p>
-<div class="highlight"><pre><span class="mi">8</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span>
-</pre></div>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+Arithmetic operators, like any other operators, can be connected to form more complicated computations. For instance:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[8]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">8.</span> <span class="o">+</span> <span class="mf">4.</span> <span class="o">/</span> <span class="mf">2.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[8]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[24]:</p>
-
-<pre class="output command">
-10
+<pre>
+10.0
 </pre>
 
-<p>The a human reader, the command <code>8+4/2</code> might seem ambiguous. Is it intended to
-be <code>(8+4)/2</code> or <code>8+(4/2)</code>? The computer uses unambiguous rules to interpret the
-expression, but it&#8217;s a good idea for you to use parentheses so that you can make
-sure that what you <em>intend</em> is what the computer carries out:
-<p class="prompt in">In[25]:</p></p>
-<div class="highlight"><pre><span class="p">(</span><span class="mi">8</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-</pre></div>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+The a human reader, the command <code>8+4/2</code> might seem ambiguous. Is it intended to be <code>(8+4)/2</code> or <code>8+(4/2)</code>? The computer uses unambiguous rules to interpret the expression, but it&#8217;s a good idea for you to use parentheses so that you can make sure that what you <em>intend</em> is what the computer carries out:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[7]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="p">(</span><span class="mf">8.</span> <span class="o">+</span> <span class="mf">4.</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[7]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[25]:</p>
-
-<pre class="output command">
-6
+<pre>
+6.0
 </pre>
 
-<p>Traditional mathematical notations uses superscripts and radicals to indicate
-exponentials and roots, e.g. $3^2$ or $\sqrt{3}$ or $\sqrt[3]{8}$. This special
-typography doesn&#8217;t work well with an ordinary keyboard, so <code>Python</code> and most
-other computer languages uses a different notation:
-<p class="prompt in">In[26]:</p></p>
-<div class="highlight"><pre><span class="mi">3</span><span class="o">**</span><span class="mi">2</span>
-</pre></div>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. $3^2$ or $\sqrt{3}$ or $\sqrt[3]{8}$. This special typography doesn&#8217;t work well with an ordinary keyboard, so <code>Python</code> and most other computer languages uses a different notation:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[2]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">3.</span><span class="o">**</span><span class="mf">2.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[2]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[26]:</p>
-
-<pre class="output command">
-9
+<pre>
+9.0
 </pre>
 
-<p class="prompt in">In[27]:</p>
+</div>
 
-<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[4]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">3.</span><span class="p">)</span> <span class="c"># or 3.**0.5</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[4]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[27]:</p>
-
-<pre class="output command">
+<pre>
 1.7320508075688772
 </pre>
 
-<p class="prompt in">In[28]:</p>
+</div>
 
-<div class="highlight"><pre><span class="mi">8</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[5]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="mf">8.</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[5]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[28]:</p>
-
-<pre class="output command">
-1
+<pre>
+2.0
 </pre>
 
-<p>There is a large set of mathematical functions: exponentials, logs,
-trigonometric and inverse trigonometric functions, etc. Some&nbsp;examples:</p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+There is a large set of mathematical functions: exponentials, logs, trigonometric and inverse trigonometric functions, etc. Some&nbsp;examples:</p>
 <table border="0">
 <tr>
 <th>Traditional</th>
@@ -636,170 +961,233 @@ trigonometric and inverse trigonometric functions, etc. Some&nbsp;examples:</p>
 </tr>
 </table>
 
-<p>Numbers can be written in <strong>scientific notation</strong>. For example, the &#8216;universal
-gravitational constant&#8217; that describes the gravitational attraction between
-masses is $6.67428 \times 10^{11}$ (with units meters-cubed per kilogram per
-second squared). In the computer notation, this would be written as
-<code>6.67428e-11</code>. The Avogadro constant, which gives the number of atoms in a mole,
-is $6.02214179 \times 10^{23}$ per mole, or <code>6.02214179e+23</code>.</p>
-<p>The computer language does not directly support the recording of units. This is
-unfortunate, since in the real world numbers often have units and the units
-matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because
-the design engineers specified the engine&#8217;s thrust in units of pounds, while the
-guidance engineers thought the units were&nbsp;newtons.</p>
-<p>Computer arithmetic is accurate and reliable, but it often involves very slight
-rounding of numbers. Ordinarily, this is not noticeable. However, it can become
-apparent in some calculations that produce results that are (near) zero. For
-example, mathematically, $sin(\pi) = 0$, however, the computer does not
-duplicate the mathematical relationship exactly:
-<p class="prompt in">In[29]:</p></p>
+<p>Numbers can be written in <strong>scientific notation</strong>. For example, the &#8216;universal gravitational constant&#8217; that describes the gravitational attraction between masses is $6.67428 \times 10^{11}$ (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as <code>6.67428e-11</code>. The Avogadro constant, which gives the number of atoms in a mole, is $6.02214179 \times 10^{23}$ per mole, or <code>6.02214179e+23</code>.</p>
+<p>The computer language does not directly support the recording of units. This is unfortunate, since in the real world numbers often have units and the units matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because the design engineers specified the engine&#8217;s thrust in units of pounds, while the guidance engineers thought the units were&nbsp;newtons.</p>
+<p>Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, $sin(\pi) = 0$, however, the computer does not duplicate the mathematical relationship exactly:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[29]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[29]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[29]:</p>
-
-<pre class="output command">
+<pre>
 1.2246467991473532e-16
 </pre>
 
-<p>Whether a number like this is properly interpreted as &#8216;close to zero&#8217; depends on
-the context and, for quantities that have units, on the units themselves. For
-instance, the unit &#8216;parsec&#8217; is used in astronomy in reporting distances between
-stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A
-distance of $1.22 \times 10^{-16}$ parsecs is tiny in astronomy but translates
-to about 2.5 meters - not so small on the human scale. In statistics, many
-calculations relate to probabilities which are always in the range 0 to 1. On
-this scale, <code>1.22e-16</code> is very close to&nbsp;zero.</p>
-<p>There are several &#8216;special&#8217; numbers in the <code>Python</code> world; two of which are
-<code>inf</code>, which stands for $\infty$ (infinity), and <code>nan</code>, which stands for &#8216;not a
-number&#8217; (nan results when a numerical operation isn&#8217;t define), for&nbsp;instance:</p>
-<p><span class="note right shadow">
-Mathematically oriented readers will wonder why <code>Python</code> should have
-any trouble with a computation like $\sqrt{-9}$; the result is the imaginary
-number $3\jmath$ (imaginary numbers may be represented by a $\jmath$ or a
-$\imath$, depending on the field). <code>Python</code> works with complex
-numbers, but you have to explicitly tell the system that this is what you want
-to do. To calculate $\sqrt{-9}$ for example, simply use
-<code>np.sqrt(-9+0j)</code>.
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+Whether a number like this is properly interpreted as &#8216;close to zero&#8217; depends on the context and, for quantities that have units, on the units themselves. For instance, the unit &#8216;parsec&#8217; is used in astronomy in reporting distances between stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A distance of $1.22 \times 10^{-16}$ parsecs is tiny in astronomy but translates to about 2.5 meters - not so small on the human scale. In statistics, many calculations relate to probabilities which are always in the range 0 to 1. On this scale, <code>1.22e-16</code> is very close to&nbsp;zero.</p>
+<p>There are several &#8216;special&#8217; numbers in the <code>Python</code> world; two of which are <code>inf</code>, which stands for $\infty$ (infinity), and <code>nan</code>, which stands for &#8216;not a number&#8217; (nan results when a numerical operation isn&#8217;t define), for instance:
+<span class="note right shadow">
+Mathematically oriented readers will wonder why <code>Python</code> should have any trouble with a computation like $\sqrt{-9}$; the result is the imaginary number $3\jmath$ (imaginary numbers may be represented by a $\jmath$ or a $\imath$, depending on the field). <code>Python</code> works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate $\sqrt{-9}$ for example, simply use <code>np.sqrt(-9+0j)</code>.
 </span>
-<p class="prompt in">In[30]:</p></p>
-<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.0</span>
-</pre></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[16]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stderr">
+<pre>
+-c:1: RuntimeWarning: divide by zero encountered in double_scalars
 
-<p class="prompt out">Out[30]:</p>
+</pre>
+</div>
 
-<pre class="output command">
+</div>
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[16]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<pre>
 inf
 </pre>
 
-<p class="prompt in">In[31]:</p>
+</div>
 
-<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.0</span>
-</pre></div>
+</div>
 
+<p></div>
+</div></p>
+<p></div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[15]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight"><pre><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.</span>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
-<p class="prompt out">Out[31]:</p>
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stderr">
+<pre>
+-c:1: RuntimeWarning: invalid value encountered in double_scalars
 
-<pre class="output command">
+</pre>
+</div>
+
+</div>
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[15]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+<pre>
 nan
 </pre>
 
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+</div>
+
 <h3>Types of&nbsp;Objects</h3>
-<p>Most of the examples used so far have dealt with numbers. But computers work
-with other kinds of information as well: text, photographs, sounds, sets of
-data, and so on. The word <strong>type</strong> is used to refer to the <em>kind</em> of
-information. Modern computer languages support a great variety of types. It&#8217;s
-important to know about the types of data because operators expect their input
-arguments to be of specific types. When you use the wrong type of input, the
-computer might not be able to process your&nbsp;command.</p>
-<p><span class="note left shadow">
-In Python, data frames are not &#8216;built in&#8217; as part of the basic language, but the
-excellent <a href="http://pandas.pydata.org/"><code>pandas</code></a> library provides data frames and a whole slew of
-other functionality to researchers doing data analysis with Python. We will be
-learning more about <code>pandas</code> in future&nbsp;tutorials.
+<p>Most of the examples used so far have dealt with numbers. But computers work with other kinds of information as well: text, photographs, sounds, sets of data, and so on. The word <strong>type</strong> is used to refer to the <em>kind</em> of information. Modern computer languages support a great variety of types. It&#8217;s important to know about the types of data because operators expect their input arguments to be of specific types. When you use the wrong type of input, the computer might not be able to process your command.
+<span class="note left shadow">
+In Python, data frames are not &#8216;built in&#8217; as part of the basic language, but the excellent <a href="http://pandas.pydata.org/">&#8216;pandas&#8217;</a> library provides data frames and a whole slew of other functionality to researchers doing data analysis with Python. We will be learning more about &#8216;pandas&#8217; in future&nbsp;tutorials.
 </span></p>
-<p>For the purposes of starting computational statistics with Python, it&#8217;s
-important to distinguish among three basic&nbsp;types:</p>
+<p>For the purposes of starting computational statistics with Python, it&#8217;s important to distinguish among three basic&nbsp;types:</p>
 <ul>
-<li><strong>numeric</strong> positive and negative numbers, decimal and fractional numbers
-(<code>floats</code>), and whole numbers (<code>integers</code>) - numbers of the sort encountered so&nbsp;far</li>
-<li><strong>data frames</strong> collections of data (more or less) in the form of a
-spreadsheet table - the &#8216;Computational Technique&#8217; section from chapter 2 will
-introduce data frames and the operators and libraries for working with data&nbsp;frames</li>
-<li><strong>strings</strong> textual data - you indicate string data to the computer by
-enclosing the text in quotation marks (e.g., <code>name = "python"</code>)</li>
+<li><strong>numeric</strong> positive and negative numbers, decimal and fractional numbers (<code>floats</code>), and whole numbers (<code>integers</code>) - numbers of the sort encountered so&nbsp;far</li>
+<li><strong>data frames</strong> collections of data (more or less) in the form of a spreadsheet table - the &#8216;Computational Technique&#8217; section from chapter 2 will introduce data frames and the operators and libraries for working with data&nbsp;frames</li>
+<li><strong>strings</strong> textual data - you indicate string data to the computer by enclosing the text in quotation marks (e.g., <code>name = "python"</code>)</li>
 </ul>
 <h4>A Note on&nbsp;Strings</h4>
-<p>There is something a bit subtle going on in the previous command involving the
-string <code>"python"</code>, so look at it carefully. The purpose of the command is to
-create a new object, called <code>name</code>, which stores a little bit of text data.
-Notice that the name of the object is not put in quotes, but the text characters&nbsp;are.</p>
-<p>Whenever you refer to an object name, make sure that you don&#8217;t use quotes. For
-example, in the following, we are first assigning the string <code>"python"</code> to the
-<code>name</code> object, and then returning (and printing automatically) the <code>name</code>
-object.
-<p class="prompt in">In[32]:</p></p>
+<p>There is something a bit subtle going on in the previous command involving the string <code>"python"</code>, so look at it carefully. The purpose of the command is to create a new object, called <code>name</code>, which stores a little bit of text data. Notice that the name of the object is not put in quotes, but the text characters&nbsp;are.</p>
+<p>Whenever you refer to an object name, make sure that you don&#8217;t use quotes. For example, in the following, we are first assigning the string <code>"python"</code> to the <code>name</code> object, and then returning (and printing automatically) the <code>name</code> object.
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[32]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;python&quot;</span>
 <span class="n">name</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[32]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[32]:</p>
-
-<pre class="output command">
-<span class="quo">'</span>python'
+<pre>
+&apos;python&apos;
 </pre>
 
-<p>If you make a command with the object name in quotes, it won&#8217;t be treated as
-referring to an object. Instead, it will merely mean the text itself:
-<p class="prompt in">In[33]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+If you make a command with the object name in quotes, it won&#8217;t be treated as referring to an object. Instead, it will merely mean the text itself:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[33]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="s">&quot;name&quot;</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
+
+<div class="hbox output_area"><div class="prompt output_prompt">
+    Out[33]:</div>
+<div class="box-flex1 output_subarea output_pyout">
 
 
-<p class="prompt out">Out[33]:</p>
-
-<pre class="output command">
-<span class="quo">'</span>name'
+<pre>
+&apos;name&apos;
 </pre>
 
-<p>Similarly, if you omit the quotation marks from around the text, the computer
-will treat it as if it were an object name and will look for the object of that
-name. For instance, the following command directs the computer to look up the
-value contained in an object named <code>python</code> and insert that value into the
-object <code>name</code>:
-<p class="prompt in">In[34]:</p></p>
+</div>
+
+</div>
+
+<p></div>
+</div></p>
+<p></div>
+Similarly, if you omit the quotation marks from around the text, the computer will treat it as if it were an object name and will look for the object of that name. For instance, the following command directs the computer to look up the value contained in an object named <code>python</code> and insert that value into the object <code>name</code>:
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input hbox">
+<div class="prompt input_prompt">
+In&nbsp;[34]:
+</div>
+<div class="input_area box-flex1">
 <div class="highlight"><pre><span class="n">name</span> <span class="o">=</span> <span class="n">python</span>
-</pre></div>
+</pre></div></p>
+<p></div>
+</div></p>
+<div class="vbox output_wrapper">
+<div class="output vbox">
 
+<div class="hbox output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_pyerr">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">NameError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-34-43a69bc65ba8&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>name <span class="ansiyellow">=</span> python<span class="ansiyellow"></span>
 
-<div class="highlight"><pre>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-34-43a69bc65ba8&gt; in &lt;module&gt;()
-----&gt; 1 name = python
+<span class="ansired">NameError</span>: name &apos;python&apos; is not defined</pre>
+</div>
 
-NameError: name &#39;python&#39; is not defined
-</pre></div>
+</div>
 
-
-<p>As it happens, there was no object named <code>python</code> because it had not been
-defined by any previous assignment command. So, the computer generated an error.
-For the most part, you will not need to use vary many operators on text data
-when doing statistical analyses; you just need to remember to include text, such
-as file names, in quotation marks, <code>"like this"</code>.</p>
+<p></div>
+</div></p>
+<p></div>
+As it happens, there was no object named <code>python</code> because it had not been defined by any previous assignment command. So, the computer generated an error. For the most part, you will not need to use vary many operators on text data when doing statistical analyses; you just need to remember to include text, such as file names, in quotation marks, <code>"like this"</code>.</p>
 <h3>Next time on, Statistical Modeling: A Fresh Approach for&nbsp;Python&#8230;</h3>
-<h4>Data: Cases, Variables,&nbsp;Samples</h4>
-<h3>Reference</h3>
-<p>As with all &#8216;Statistical Modeling: A Fresh Approach for Python&#8217; tutorials, this
-tutorial is based directly on material from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh
-Approach (2nd Edition)&#8217;</a> by <a href="http://www.macalester.edu/~kaplan/">Daniel Kaplan</a>.</p>
-<p>I have made an effort to keep the text and explanations consistent between the
-original (R-based) version and the Python tutorials, in order to keep things
-comparable. With that in mind, any errors, omissions, and/or differences between
-the two versions are mine, and any questions, comments, and/or concerns should
-be <a href="mailto:carson.farmer@hunter.cuny.edu">directed to me</a>.</p>
+<ul>
+<li><strong>Data: Cases, Variables,&nbsp;Samples</strong></li>
+</ul>
+<h3>References</h3>
+<p>As with all &#8216;Statistical Modeling: A Fresh Approach for Python&#8217; tutorials, this tutorial is based directly on material from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a> by <a href="http://www.macalester.edu/~kaplan/">Daniel Kaplan</a>.</p>
+<p>Another useful source of information for statistics in Python is this <a href="http://work.thaslwanter.at/Stats/html/">introduction to statistics</a> web-book by Thomas Haslwanter which is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported&nbsp;License.</p>
+<p>I have made an effort to keep the text and explanations consistent between the original (R-based) version and the Python tutorials, in order to keep things comparable. With that in mind, any errors, omissions, and/or differences between the two versions are mine, and any questions, comments, and/or concerns should be <a href="mailto:carson.farmer@hunter.cuny.edu">directed to me</a>.</p>
           <p class="category">
         <i class="icon-certificate"></i>
         <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 

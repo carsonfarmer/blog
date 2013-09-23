@@ -165,12 +165,12 @@ q:before {
 	  right: auto;
 }
 
-.dataset:before {
-    font-family: "FontAwesome";
-    content: "\f024";
-    padding-right: 10px;
-    font-size: 1.5em;
-}
+/*.dataset:before {*/
+/*    font-family: "FontAwesome";*/
+/*    content: "\f024";*/
+/*    padding-right: 10px;*/
+/*    font-size: 1.5em;*/
+/*}*/
 
 cite {}
 
@@ -738,7 +738,7 @@ article header .published {
     color: rgba(0, 0, 0, 0.45);
 }
 
-.prompt out {
+.prompt .output_prompt {
     color: rgb(238, 238, 238);
 }
 
