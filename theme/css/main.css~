@@ -120,10 +120,10 @@ dt {font-weight: bold;}
 dd {margin-left: 1.5em;}
 
 pre {
-    background-color: rgb(238, 238, 238);
+    /*background-color: rgb(238, 238, 238);*/
     padding: 10px;
     margin: 10px;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 .output_subarea pre {
@@ -743,7 +743,7 @@ article header .published {
     color: rgba(0, 0, 128, 0.45); /* navy with .45 alpha */
 }
 
-.prompt .output_prompt {
+.prompt.output_prompt {
     color: rgba(139, 0, 0, 0.45); /* darkred with .45 alpha */
 }
 
