@@ -128,9 +128,7 @@ pre {
 
 .output_subarea pre {
     background: transparent;
-    padding: 10px;
-    margin: 10px;
-    overflow: auto;
+    border: none;
 }
 
 /* Quotes */
@@ -742,11 +740,11 @@ article header .published {
     float: left;
     padding: 10px;
     margin: 0px;
-    color: rgba(0, 0, 0, 0.45);
+    color: rgba(0, 0, 128, 0.45); /* navy with .45 alpha */
 }
 
 .prompt .output_prompt {
-    color: rgb(238, 238, 238);
+    color: rgba(139, 0, 0, 0.45); /* darkred with .45 alpha */
 }
 
 .MathJax .mo, .MathJax .mi {
