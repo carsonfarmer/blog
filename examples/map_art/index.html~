@@ -1735,35 +1735,35 @@ text-align: inherit;
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_length.png" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_length.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_yellow.png" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_yellow.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_dissolved.png" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_dissolved.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_yellow_merge.png" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_yellow_merge.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_yellow_multipart.png" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_yellow_multipart.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section>
@@ -1794,7 +1794,7 @@ to get enable social buttons.
 // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 controls: true,
-progress: true,
+progress: false,
 history: false,
 loop: true,
 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
