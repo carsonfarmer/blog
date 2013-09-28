@@ -102,13 +102,13 @@ the input point layer.
 </p>
 <div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
     require<span class="p">(</span>deldir<span class="p">)</span>
-    crds <span class="o">=</span> layer<span class="o">@</span>coords
+    crds <span class="o">=</span> layer<span class="p">@</span>coords
     z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
     w <span class="o">=</span> tile.list<span class="p">(</span>z<span class="p">)</span>
     polys <span class="o">=</span> vector<span class="p">(</span>mode<span class="o">=</span><span class="s">&#39;list&#39;</span><span class="p">,</span> length<span class="o">=</span>length<span class="p">(</span>w<span class="p">))</span>
     require<span class="p">(</span>sp<span class="p">)</span>
-    <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
-        pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
+    <span class="kr">for</span> <span class="p">(</span>i in seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
+        pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]$</span>y<span class="p">)</span>
         pcrds <span class="o">=</span> rbind<span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
         polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> <span class="caps">ID</span><span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
     <span class="p">}</span>
@@ -123,7 +123,7 @@ the input point layer.
 <p>To save the output to shapefile, simply use<code>writeOGR</code> from the <code>rgdal</code>
 library:</p>
 <div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-<span class="o">?</span>writeOGR
+?writeOGR
 </pre></div>
           <p class="category">
         <i class="icon-certificate"></i>
