@@ -17,7 +17,7 @@ gray Friday afternoon to test it out. I also wanted an excuse to play around
 with [Reveal.js][reveal] slides in [IPython notebook][ipython], so I produced 
 the following slide show using the images from QGIS and some IPython magic:
 
-<iframe src="|filename|/uploads/map_art_slides.html" width=800 height=600></iframe>
+<iframe src="|filename|/examples/map_art/index.html" width=600 height=400></iframe>
 
 <!--more-->
 
@@ -25,5 +25,5 @@ the following slide show using the images from QGIS and some IPython magic:
 [labels]: http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/
 [reveal]: http://lab.hakim.se/reveal-js/#/
 [ipython]: http://ipython.org/notebook.html
-[slideshow]: |filename|/uploads/map_art_slides.html
+[slideshow]: |filename|/examples/map_art/
 
