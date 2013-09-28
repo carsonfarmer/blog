@@ -17,7 +17,7 @@ gray Friday afternoon to test it out. I also wanted an excuse to play around
 with [Reveal.js][reveal] slides in [IPython notebook][ipython], so I produced 
 the following slide show using the images from QGIS and some IPython magic:
 
-<iframe src="http://www.carsonfarmer.com/examples/map_art/" height=350></iframe>
+<iframe src="http://www.carsonfarmer.com/examples/map_art/" width=100% height=350></iframe>
 
 <!--more-->
 
