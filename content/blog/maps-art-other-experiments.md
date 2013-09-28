@@ -5,7 +5,6 @@ Email: carson.farmer@gmail.com
 Category: Visualisation
 Tags: Visualisation, Python, Open Source, IPython, Mapping
 Slug: maps-art-other-experiments
-Status: draft
 
 With the recent (and long anticipated) release of [Quantum GIS 2.0][qgis], 
 there has been a lot of 'buzz' in the open source geospatial community about 
@@ -18,7 +17,7 @@ with [Reveal.js][reveal] slides in [IPython notebook][ipython], so I produced
 the following [slide show][slideshow] using the images from QGIS and some 
 IPython magic:
 
-<iframe src="http://www.carsonfarmer.com/examples/map_art/" width=100%></iframe>
+<iframe src="http://www.carsonfarmer.com/examples/map_art/" width=750 height=575></iframe>
 
 <!--more-->
 
