@@ -1675,7 +1675,7 @@ h1:hover .anchor-link,h2:hover .anchor-link,h3:hover .anchor-link,h4:hover .anch
 /* Overrides of notebook CSS for static HTML export */
 .reveal {
 font-size: 20px;
-overflow-y: auto;
+overflow-y: hidden;
 overflow-x: hidden;
 }
 .reveal pre {
@@ -1735,35 +1735,35 @@ text-align: inherit;
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_length.png" title="NYC Roads labeled by length" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_length.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_yellow.png" title="NYC Roads labeled by length (with some color!)" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_yellow.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_dissolved.png" title="NYC Roads labeled by _total_ length" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_dissolved.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_yellow_merge.png" title="NYC Roads labeled by overall length (with some color!)" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_yellow_merge.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section><section>
     <section>
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="figure">
-<img src="nyc_roads_yellow_multipart.png" title="NYC Roads labeled by total length over all segments" alt="NYC Roads labeled by length" /><p class="caption">NYC Roads labeled by length</p>
+<img src="nyc_roads_yellow_multipart.png" alt="NYC Roads labeled by length" />
 </div>
 </div></section>
     </section>
@@ -1796,9 +1796,9 @@ Reveal.initialize({
 controls: true,
 progress: false,
 history: false,
-
+loop: true,
 theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: 'linear',//default/cube/page/concave/zoom/linear/none
+transition: 'linear', // default/cube/page/concave/zoom/linear/none
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
