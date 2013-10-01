@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <title>Community structure in directed, weighted networks</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
-                <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-                        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-                            
+        <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+            
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type= "text/javascript">
        MathJax.Hub.Config({
            config: ["MMLorHTML.js"],
@@ -16,11 +16,14 @@
            tex2jax: { 
                inlineMath: [ ['$','$'] ],
                displayMath: [ ['$$','$$'] ],
-               processEscapes: true }
+               processEscapes: true },
+           "HTML-CSS": {
+               styles: { ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+           }
        });
     </script>
 
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
         <script src="http://www.carsonfarmer.com/static/libs/bootstrap/js/bootstrap.min.js"></script>
         <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
         <!--[if IE]>
@@ -45,19 +48,19 @@
                 <div class="navbar">
                     <div class="navbar-inner">
                         <ul class="nav">
-                            <li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
+<li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
                                 <li class="divider-vertical"></li>
-                                                                                                                            <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
-                                                                                                                                <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
-                                                                                                                                <li class="dropdown">
+                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
+                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
+                                    <li class="dropdown">
                                         <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
                                         <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
                                         <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
-                                                                                            <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Reserach</a></li>
-                                                                                            <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
-                                                                                    </ul>
+                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Reserach</a></li>
+                                                <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
+                                        </ul>
                                     </li>
-                                                                                                                                                                                <li class="dropdown pull-right">
+                                <li class="dropdown pull-right">
                                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
                                     <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
                                     <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
@@ -65,24 +68,24 @@
                                           <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                                           <i class="icon-rss"></i> atom feed</a>
                                         </li>
-                                                                                <li>
+                                        <li>
                                           <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                                           <i class="icon-rss"></i> rss feed</a>
                                         </li>
-                                                                                                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
-                                                                                    <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
-                                                                                    <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
-                                                                                    <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
-                                                                                    <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
-                                                                                    <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
-                                                                                    <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
-                                                                            </ul>
+                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
+                                            <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
+                                            <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
+                                            <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
+                                            <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
+                                            <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
+                                            <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
+                                    </ul>
                                 </li>
-                                                    </ul>
+                        </ul>
                     </div>
                 </div>
         </header><!-- /#banner -->
-        <section id="content" class="body">
+<section id="content" class="body">
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
@@ -92,7 +95,7 @@
           <i class="icon-calendar"></i>
           Tue 20 October 2009
       </abbr>
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 <div class="g-plusone" data-size="medium"></div>
 <script type="text/javascript">
@@ -155,22 +158,22 @@ countries and/or&nbsp;regions.</p>
 <p>Leicht, <span class="caps">E. A.</span> <span class="amp">&amp;</span> Newman, <span class="caps">M. E. J.</span>(2008). <a href="http://arxiv.org/abs/0709.4500">Community structure in directed networks</a>.
 <em>Physical Review Letters</em>, 100(11),&nbsp;118703.</p>
 <p>Newman, <span class="caps">M. E. J.</span>(2004). <a href="http://arxiv.org/abs/cond-mat/0407503">Analysis of weighted networks</a>. <em>Physical Review E</em>, 70(5),&nbsp;056131.</p>
-          <p class="category">
+    <p class="category">
         <i class="icon-certificate"></i>
         <a href="http://www.carsonfarmer.com/category/networks.html">Networks</a> 
-            </p>
-          <p class="tag">
+    </p>
+    <p class="tag">
         <i class="icon-tags"></i>
-         <a href="http://www.carsonfarmer.com/tag/community-structure.html">Community structure</a>
-         <a href="http://www.carsonfarmer.com/tag/directed.html">Directed</a>
-         <a href="http://www.carsonfarmer.com/tag/modularity.html">Modularity</a>
-         <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
-         <a href="http://www.carsonfarmer.com/tag/weighted.html">Weighted</a>
-         <a href="http://www.carsonfarmer.com/tag/helpful-tips.html">Helpful tips</a>
-         <a href="http://www.carsonfarmer.com/tag/research.html">Research</a>
-            </p>
+ <a href="http://www.carsonfarmer.com/tag/community-structure.html">Community structure</a>
+ <a href="http://www.carsonfarmer.com/tag/directed.html">Directed</a>
+ <a href="http://www.carsonfarmer.com/tag/modularity.html">Modularity</a>
+ <a href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+ <a href="http://www.carsonfarmer.com/tag/weighted.html">Weighted</a>
+ <a href="http://www.carsonfarmer.com/tag/helpful-tips.html">Helpful tips</a>
+ <a href="http://www.carsonfarmer.com/tag/research.html">Research</a>
+    </p>
     </div><!-- /.entry-content -->
-          <div class="comments">
+      <div class="comments">
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2009/10/community-structure-in-directed-weighted-networks/";
@@ -182,11 +185,11 @@ countries and/or&nbsp;regions.</p>
           })();
         </script>
       </div>
-    
+
   </article>
 </section>
         <section id="extras" class="body shadow">
-                    <div class="twitter">
+<div class="twitter">
         <h2><i class="icon-twitter"></i> twitter</h2>
         <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
             data-link-color="#2A75A9" 
@@ -208,16 +211,16 @@ countries and/or&nbsp;regions.</p>
         </script>
 
 </div>
-                
+        
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
                 <address id="about" class="vcard body shadow">
-                                                                            <ul id="links">
+                                <ul id="links">
                                     <li><a href="http://www.geo.hunter.cuny.edu/cfarmer/">CUNY Faculty Page</a></li>
                                     <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
                                 </ul>
-                                            Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
+                Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
                 Hunter College - CUNY | 695 Park Avenue, New York | New York, 10065</br>
                 </address><!-- /#about -->
                 <p style="text-align: center;">This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, 

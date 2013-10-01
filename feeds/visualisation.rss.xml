@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/visualisation.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 10 Aug 2012 14:07:00 -0400</lastBuildDate><item><title>cartogram updates</title><link>http://www.carsonfarmer.com/2012/08/cartogram-updates/</link><description>&lt;p&gt;It seems my &lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/visualisation.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 01 Oct 2013 13:15:00 -0400</lastBuildDate><item><title>Public transportation time warp</title><link>http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/</link><description>&lt;p&gt;I recently came across two extremely cool videos while preparing lectures for my
+transportation geography course. It is pretty cool to see the development of the 
+regions around the transportation network while the network itself remains 
+pretty much unchanged. Worth a quick&amp;nbsp;watch!&lt;/p&gt;
+&lt;div class="youtube" align="center"&gt;
+&lt;iframe width="640" height="360" 
+    src="//www.youtube.com/embed/tGTwSNPqAqs?feature=player_detailpage" 
+    frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class="youtube" align="center"&gt;
+&lt;iframe width="640" height="390" 
+    src="//www.youtube.com/embed/erodkwTS7sQ" frameborder="0" 
+    allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 01 Oct 2013 13:15:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-10-01:2013/10/public-transportation-time-warp/</guid><category>Visualisation</category><category>Transportation</category><category>Video</category><category>Links</category></item><item><title>Maps as Art and Other Experiments</title><link>http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/</link><description>&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
+there has been a lot of &amp;#8216;buzz&amp;#8217; in the open source geospatial community about 
+all the cool new features that &lt;span class="caps"&gt;QGIS&lt;/span&gt; now boasts, and how far it has come in such 
+a short time. I was recently inspired by &lt;a href="http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/"&gt;such a post by Anita Graser (aka 
+Underdark)&lt;/a&gt; (who is a wonderfully talented cartographer/designer) on 
+data driven labeling in &lt;span class="caps"&gt;QGIS&lt;/span&gt;, so I thought I&amp;#8217;d throw something together on a 
+gray Friday afternoon to test it out. I also wanted an excuse to play around 
+with &lt;a href="http://lab.hakim.se/reveal-js/#/"&gt;Reveal.js&lt;/a&gt; slides in &lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;, so I produced 
+the following &lt;a href="http://www.carsonfarmer.com/examples/map_art/"&gt;slide show&lt;/a&gt; using the images from &lt;span class="caps"&gt;QGIS&lt;/span&gt; and some 
+IPython magic:
+&lt;iframe src=http://www.carsonfarmer.com/examples/map_art/ width=700 height=500&gt;&lt;/iframe&gt;&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 27 Sep 2013 17:25:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-09-27:2013/09/maps-art-other-experiments/</guid><category>Visualisation</category><category>Python</category><category>Open Source</category><category>IPython</category><category>Mapping</category></item><item><title>cartogram updates</title><link>http://www.carsonfarmer.com/2012/08/cartogram-updates/</link><description>&lt;p&gt;It seems my &lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
 (&lt;a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised"&gt;Guardian data blog&lt;/a&gt;, and &lt;a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html"&gt;Telegraph data and graphics blog&lt;/a&gt;), so
 I&amp;#8217;ve updated a few things and wanted to highlight/explain them a bit&amp;nbsp;here.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/grenada.png" title="Grenada" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/grenada.png" title="Grenada" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Firstly, you can now explore the medal data together with
 population &lt;strong&gt;and&lt;/strong&gt; &lt;span class="caps"&gt;GDP&lt;/span&gt; as well as without any warping to get a feel for
 how much things change. Secondly, in order to be able to display the map
@@ -51,7 +78,7 @@ now do that by including this in your &lt;span class="caps"&gt;HTML&lt;/span&gt;
 
 
 
-&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/olympic_carto.png" title="Olympic cartogram" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="examples/olympic_countries/"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/olympic_carto.png" title="Olympic cartogram" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The cartgram is interactive, and was created using &lt;a href="http://www.python.org/"&gt;Python&lt;/a&gt;
 (&lt;a href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt;, &lt;a href="https://github.com/esnme/ultrajson"&gt;ujson&lt;/a&gt;, and &lt;a href="http://toblerity.github.com/shapely/manual.html"&gt;shapely&lt;/a&gt;) and &lt;a href="http://d3js.org/"&gt;D3.js&lt;/a&gt;. If I get a
 chance, I&amp;#8217;ll try to post the code at some stage. In the mean time, here
@@ -88,7 +115,7 @@ still experimenting with FatFonts at this stage, but so far, I&amp;#8217;m quite
 pleased with the results, and find that they offer a nice way to add
 beauty to my potentially boring data!
 &lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/fat_fonts.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/fat_fonts-300x122.png" title="Subset of FatFont image" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/fat_fonts.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/fat_fonts-300x122.png" title="Subset of FatFont image" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 26 May 2012 20:30:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-05-26:2012/05/visualising-data-with-fatfonts/</guid><category>Research</category><category>FatFonts</category><category>News</category><category>Feature</category></item><item><title>Research dissemination and interactive visuals</title><link>http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/</link><description>&lt;p&gt;One of my goals for this year is to spend more time and effort
 developing effective visualisations for my various research projects, in
 an effort to make my research more accessible to others. This is one

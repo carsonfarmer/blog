@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/python.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Feb 2013 22:31:00 -0500</lastBuildDate><item><title>Will it Python?</title><link>http://www.carsonfarmer.com/2013/02/will-it-python/</link><description>&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/python.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Feb 2013 22:31:00 -0500</lastBuildDate><item><title>Will it Python?</title><link>http://www.carsonfarmer.com/2013/02/will-it-python/</link><description>&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
 &lt;a href="http://slendrmeans.wordpress.com/"&gt;Carl Vogel&lt;/a&gt;. This blog has an excellent (growing) collection of
 Python examples based on porting code and examples from R to Python. In
 general, it is useful for those &amp;#8220;interested in the Python data analysis
@@ -42,7 +42,7 @@ about it is that it separates the input/output from the actual
 processing via the very cool &lt;a href="http://docs.python.org/library/multiprocessing.html"&gt;multiprocessing&lt;/a&gt; Python package. Using
 this package, it is possible to separate the input/output and processing
 into two separate processes running in parallel, with communication back
-and forth done via a duplex (two-way) pipe. I&amp;#8217;ve &lt;a href="http://www.carsonfarmer.com/static/uploads/faker.py"&gt;uploaded the script&lt;/a&gt;
+and forth done via a duplex (two-way) pipe. I&amp;#8217;ve &lt;a href="http://www.carsonfarmer.com/uploads/faker.py"&gt;uploaded the script&lt;/a&gt;
 for anyone interested in having a play with it. If anyone has any ideas
 on how to (safely) cancel a currently running R command on the
 processing side, I&amp;#8217;d be very interested to hear&amp;nbsp;them.&lt;/p&gt;
@@ -82,5 +82,5 @@ algorithms to play around with, including &amp;#8216;Equal Interval&amp;#8217;, 
 don&amp;#8217;t know, R&amp;#8217;s pretty algorithm basically computes a sequence of about
 &amp;#8216;n+1&amp;#8217; equally spaced &amp;#8216;round&amp;#8217; values which cover the range of our input
 data, such that the class breaks are 1, 2 or 5 times a power of 10. The
-Python script is &lt;a href="http://www.carsonfarmer.com/static/uploads/class_intervals.py"&gt;available here&lt;/a&gt;, and has a version of the pretty
+Python script is &lt;a href="http://www.carsonfarmer.com/uploads/class_intervals.py"&gt;available here&lt;/a&gt;, and has a version of the pretty
 algorithm based on code from the &lt;a href="https://r-forge.r-project.org/projects/labeling/"&gt;labeling&lt;/a&gt;&amp;nbsp;package.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 23 Sep 2010 10:56:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-23:2010/09/playing-around-with-classification-algorithms-python-and-qgis/</guid><category>Classification</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>R</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category></item></channel></rss>

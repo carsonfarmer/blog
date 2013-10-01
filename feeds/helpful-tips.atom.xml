@@ -110,7 +110,7 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 &lt;code&gt;http://www.carsonfarmer.com/&lt;/code&gt; between 2009 and&amp;nbsp;2011:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/static/images/website_visitors.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/images/website_visitors.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Work-flow&lt;/h3&gt;
 &lt;p&gt;Firstly, I downloaded the logs for &lt;code&gt;www.carsonfarmer.com&lt;/code&gt;. I did this
 directly from the console, though I&amp;#8217;m pretty sure I could have done this
@@ -423,7 +423,7 @@ how we could visualise spatial &lt;code&gt;SQL&lt;/code&gt; queries directly in 
 the Python console, and using a handy plugin. We can do the same thing
 here using &lt;code&gt;pgRouting&lt;/code&gt; to produce a lovely spatial representation of our
 shortest path&amp;nbsp;query:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/shortest_path.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/shortest_path-300x213.png" title="shortest_path" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/shortest_path.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/shortest_path-300x213.png" title="shortest_path" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;And there you go, a full fledged routing library built right into our&amp;nbsp;database!&lt;/p&gt;</summary><category term="Networks"></category><category term="OpenStreeMap"></category><category term="pgRouting"></category><category term="PostgreSQL/PostGIS"></category><category term="QGIS"></category><category term="Free open-source software (FOSS)"></category><category term="Geographic information science/systems (GIS)"></category><category term="How to"></category><category term="Networks"></category></entry><entry><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/" rel="alternate"></link><updated>2010-04-27T17:40:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-04-27:2010/04/postgis-select-statement-as-vector-layer-in-qgis/</id><summary type="html">&lt;p&gt;Several colleagues of mine have asked whether it is possible to
 visualise the results of a &lt;code&gt;SELECT&lt;/code&gt; statement on a &lt;a href="http://postgis.refractions.net/"&gt;PostGIS&lt;/a&gt; database
 that returns spatial data in &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt;. In other words, can we map the
@@ -509,7 +509,7 @@ libraries, and the fewer additional libraries required, the better.
 &lt;p&gt;The most difficult stage in all this was to convert the Matlab code to
 Python code, while still remaining relatively fast and simple. The
 solution is of course the NumPy Python library, and nothing could have
-made this conversion more simple than this &lt;a href="http://www.carsonfarmer.com/static/uploads/matlab-python-xref.pdf"&gt;pdf document&lt;/a&gt;. It is
+made this conversion more simple than this &lt;a href="http://www.carsonfarmer.com/uploads/matlab-python-xref.pdf"&gt;pdf document&lt;/a&gt;. It is
 basically a syntax conversion chart between Matlab/Octave, Python, and
 R&amp;#8230;&amp;nbsp;brilliant!&lt;/p&gt;
 &lt;p&gt;Check out Vidar Bronken Gundersen&amp;#8217;s &lt;a href="http://mathesaurus.sourceforge.net/"&gt;Mathesaurus&lt;/a&gt; site for this, and
@@ -556,7 +556,7 @@ highlighting was to use Qt&amp;#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&amp;#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
 &lt;/p&gt;
-&lt;p&gt;The Python file used in this example is &lt;a href="http://www.carsonfarmer.com/static/uploads/highlighter.py"&gt;available here&lt;/a&gt;.
+&lt;p&gt;The Python file used in this example is &lt;a href="http://www.carsonfarmer.com/uploads/highlighter.py"&gt;available here&lt;/a&gt;.
 To implement syntax highlighting, we need to subclass
 QSyntaxHighlighter, reimplement the &lt;code&gt;highlightBlock&lt;/code&gt; function, and
 specify several highlighting rules. Generally, a rule consists of a
@@ -660,7 +660,7 @@ applied to, as the following test application&amp;nbsp;demonstrates:&lt;/p&gt;
 
 
 &lt;p&gt;Once implemented, the above example produces output like&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/static/images/screenshot.png" title="screenshot"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/static/images/screenshot.png" title="screenshot" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="PyQT"></category><category term="Python"></category><category term="Syntax highlighting"></category><category term="Free open-source software (FOSS)"></category></entry><entry><title>Open up your online maps with OpenStreetMap</title><link href="http://www.carsonfarmer.com/2009/01/open-up-your-web-maps-with-openstreetmap/" rel="alternate"></link><updated>2009-01-26T23:27:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2009-01-26:2009/01/open-up-your-web-maps-with-openstreetmap/</id><summary type="html">&lt;p&gt;OpenStreetMap (&lt;span class="caps"&gt;OSM&lt;/span&gt;) is a project designed to create and provide free
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/screenshot.png" title="screenshot"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/screenshot.png" title="screenshot" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="PyQT"></category><category term="Python"></category><category term="Syntax highlighting"></category><category term="Free open-source software (FOSS)"></category></entry><entry><title>Open up your online maps with OpenStreetMap</title><link href="http://www.carsonfarmer.com/2009/01/open-up-your-web-maps-with-openstreetmap/" rel="alternate"></link><updated>2009-01-26T23:27:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2009-01-26:2009/01/open-up-your-web-maps-with-openstreetmap/</id><summary type="html">&lt;p&gt;OpenStreetMap (&lt;span class="caps"&gt;OSM&lt;/span&gt;) is a project designed to create and provide free
 spatial data (street maps) to anyone and everyone who wants them. It is
 based on an open-source &lt;a href="http://wiki.openstreetmap.org/wiki/FAQ#Why_OpenStreetMap.3F" title="OpenStreetMap Philosophy"&gt;philosophy&lt;/a&gt;, and combines wiki-like user
 generated data, with &lt;a href="http://www.opengeodata.org/?p=262"&gt;free access&lt;/a&gt;, allowing users to create, edit,
