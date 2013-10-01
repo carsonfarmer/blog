@@ -1,5 +1,5 @@
 Title: Contact
-Date: 2008-09-09 06:02
+Date: 2013-10-01 17:55
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Slug: contact
@@ -11,12 +11,13 @@ Status: hidden
 </iframe>
 
 Dr. Carson J. Q. Farmer  
+Associate Director, [CARSI Lab][carsi]  
 Assistant Professor of GIScience  
-Department Geography  
-Hunter College - CUNY  
+[Department Geography][geo]  
+[Hunter College][hunter] - [CUNY][cuny]  
 695 Park Avenue, New York  
 New York, 10065  
-[about.me/carson.farmer](http://about.me/carson.farmer)
+[about.me/carson.farmer][about_me]
 
 <br/>
 <br/>
@@ -26,3 +27,9 @@ New York, 10065
     <a href="http://www.openstreetmap.org/?lat=40.7684&amp;lon=-73.9637&amp;zoom=13&amp;layers=M&amp;mlat=40.76870&amp;mlon=-73.96504">View Larger Map</a>
 </small>
 </p>
+
+[carsi]: http://www.carsilab.org/
+[about_me]: http://about.me/carson.farmer
+[geo]: http://www.geo.hunter.cuny.edu/
+[hunter]: http://www.hunter.cuny.edu/
+[cuny]: http://www.cuny.edu/

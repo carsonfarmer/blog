@@ -21,5 +21,7 @@ individuals, information, and commodities within urban environments, as
 well as the development and implementation of novel spatial analysis
 methods and software aimed at characterizing these flows.
 
+If you'd like to get in touch, please [contact me][link].
+
 [image]: |filename|/images/carson_circle_300.png
 [link]: |filename|/pages/contact.md
