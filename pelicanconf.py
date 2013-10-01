@@ -63,7 +63,9 @@ STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt',
 EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
                        'extras/404.html': {'path': '404.html'},
                        'extras/CNAME': {'path': 'CNAME'},
-                       'examples' : {'path': 'examples'}
+                       'examples' : {'path': 'examples'},
+                       'libs' : {'path': 'static/libs'},
+                       'uploads' : {'path': 'static/uploads'}
                       }
 
 # Blogroll
