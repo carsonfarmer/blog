@@ -117,21 +117,21 @@ registerDoMC<span class="p">()</span> <span class="c1"># registers the parallel 
 B <span class="o">=</span> <span class="m">1000</span> <span class="c1"># number of bootstrap replicates to create</span>
 load<span class="p">(</span><span class="s">&quot;igraph_network.Rdata&quot;</span><span class="p">)</span> <span class="c1"># load a previously saved network (network name: g)</span>
 fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>g<span class="p">)</span> <span class="c1"># compute original clustering</span>
-mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="p">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
-moc <span class="o">=</span> community.to.membership<span class="p">(</span>g<span class="p">,</span> fg<span class="p">$</span>merges<span class="p">,</span> mm<span class="p">)$</span>membership <span class="c1"># get membership</span>
+mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
+moc <span class="o">=</span> community.to.membership<span class="p">(</span>g<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
 noc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>moc<span class="p">))</span> <span class="c1"># count the number original clusters</span>
 bg <span class="o">=</span> g <span class="c1"># make a copy of g for bootstrapping</span>
-clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o">=</span>seq<span class="p">(</span>B<span class="p">),</span> <span class="m">.</span>combine<span class="o">=</span>cbind<span class="p">)</span> <span class="o">%</span>dopar<span class="o">%</span> <span class="p">{</span>
-    E<span class="p">(</span>bg<span class="p">)$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
+clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o">=</span>seq<span class="p">(</span>B<span class="p">),</span> .combine<span class="o">=</span>cbind<span class="p">)</span> <span class="o">%dopar%</span> <span class="p">{</span>
+    E<span class="p">(</span>bg<span class="p">)</span><span class="o">$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)</span><span class="o">$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
     fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>bg<span class="p">)</span> <span class="c1"># compute bootstrap clustering</span>
-    mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="p">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
-    mbc <span class="o">=</span> community.to.membership<span class="p">(</span>bg<span class="p">,</span> fg<span class="p">$</span>merges<span class="p">,</span> mm<span class="p">)$</span>membership <span class="c1"># get membership</span>
+    mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
+    mbc <span class="o">=</span> community.to.membership<span class="p">(</span>bg<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
     nbc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>mbc<span class="p">))</span> <span class="c1"># count the number new clusters</span>
     bootresult <span class="o">=</span> c<span class="p">()</span>
-    <span class="kr">for</span> <span class="p">(</span>j in seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> noc<span class="o">-</span><span class="m">1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the original clusters...</span>
+    <span class="kr">for</span> <span class="p">(</span>j <span class="kr">in</span> seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> noc<span class="m">-1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the original clusters...</span>
         maxgamma <span class="o">=</span> <span class="m">0</span>
         <span class="kr">if</span> <span class="p">(</span>nbc <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kr">for</span> <span class="p">(</span>k in seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> nbc<span class="o">-</span><span class="m">1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the new clusters...</span>
+            <span class="kr">for</span> <span class="p">(</span>k <span class="kr">in</span> seq<span class="p">(</span><span class="m">0</span><span class="p">,</span> nbc<span class="m">-1</span><span class="p">))</span> <span class="p">{</span> <span class="c1"># for each of the new clusters...</span>
                 bv <span class="o">=</span> as.vector<span class="p">(</span>mbc <span class="o">==</span> k<span class="p">)</span>
                 ov <span class="o">=</span> as.vector<span class="p">(</span>moc <span class="o">==</span> j<span class="p">)</span>
                 jc <span class="o">=</span> clujaccard<span class="p">(</span>ov<span class="p">,</span> bv<span class="p">,</span> zerobyzero<span class="o">=</span><span class="m">0</span><span class="p">)</span>
@@ -141,7 +141,7 @@ clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o
         <span class="p">}</span>
         bootresult <span class="o">=</span> c<span class="p">(</span>bootresult<span class="p">,</span> maxgamma<span class="p">)</span> <span class="c1"># combine results</span>
     <span class="p">}</span>
-    return bootresult <span class="c1"># return the results of this iteration (and cbind with the rest)</span>
+    <span class="kr">return</span> bootresult <span class="c1"># return the results of this iteration (and cbind with the rest)</span>
 <span class="p">}</span>
 bootmean <span class="o">=</span> apply<span class="p">(</span>clusters<span class="p">,</span> <span class="m">1</span><span class="p">,</span> mean<span class="p">)</span> <span class="c1"># mean Jaccard coefficient for each cluster</span>
 </pre></div>

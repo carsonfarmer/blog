@@ -75,43 +75,6 @@
                     <ol id="posts-list" class="hfeed">
                         <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" rel="bookmark"
-                           title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-09-23T12:36:00">
-                      <i class="icon-calendar"></i>
-                      Tue 23 September 2008
-                  </abbr>
-                                        <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                                    <footer class="post-info">
-                          <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
-            </p>
-                  </footer>
-                <p>This is useful for visually exploring R spatial data such as
-<code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
-features, the value at that point will be&nbsp;displayed.</p>
-<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
-y.grid <span class="o">=</span> y<span class="p">@</span>grid
-y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
-                </p>
-                    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-                    
-
-                        <li><article class="hentry shadow">    
-                <header>
                     <h1><a href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/" rel="bookmark"
                            title="Permalink to Remote Sensing of Environment paper published">Remote Sensing of Environment paper&nbsp;published</a></h1>
                 </header>
@@ -374,6 +337,42 @@ by Morten Nielsen ...</p>
                     <a class="readmore" href="http://www.carsonfarmer.com/2009/01/understanding-spatial-reference-systems/">read more</a>
                 </p>
                     <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2009/01/understanding-spatial-reference-systems/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+                    
+
+                        <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/" rel="bookmark"
+                           title="Permalink to View spatial data attribute tables in R">View spatial data attribute tables in&nbsp;R</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2008-10-14T13:44:00">
+                      <i class="icon-calendar"></i>
+                      Tue 14 October 2008
+                  </abbr>
+                                        <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                                    <footer class="post-info">
+                          <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+            </p>
+                  </footer>
+                <p>Many <span class="caps">GIS</span> offer the ability to view the attribute table of a vector
+layer. While this is perhaps less obvious in the R environment, it is
+not impossible. The following command allows you to visually inspect,
+and change any data.frame (or other vector, matrix, etc.), including
+Spatial*DataFrames.
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/">read more</a>
+                </p>
+                    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
                     </ol><!-- /#posts-list -->
