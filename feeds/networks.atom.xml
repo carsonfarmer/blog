@@ -50,11 +50,10 @@ the detected clusters goes down. The nice bit however, is that for
 (&lt;em&gt;&lt;code&gt;γ &amp;gt;= 0.6&lt;/code&gt;&lt;/em&gt;), meaning the network partitioning algorithm I was using
 is doing a pretty good job.&amp;nbsp;Nice!&lt;/p&gt;
 &lt;p&gt;This bootstrapping process is part of a paper I&amp;#8217;m working on at the
-moment, and uses a geographical variant of &lt;a href="community-structure-in-directed-weighted-networks.html"&gt;this algorithm&lt;/a&gt; to detect
+moment, and uses a geographical variant of &lt;a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/"&gt;this algorithm&lt;/a&gt; to detect
 functional regions in travel to work data. I&amp;#8217;ll post more on the
 algorithm and my bootstrapping implementation in R (using the very cool
 &lt;a href="http://cran.r-project.org/web/packages/foreach/index.html"&gt;foreach&lt;/a&gt; package) here&amp;nbsp;soon.&lt;/p&gt;
-&lt;p&gt;C&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;Leicht, E. A., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Newman, &lt;span class="caps"&gt;M. E. J.&lt;/span&gt;(2008). &lt;a href="http://prl.aps.org/abstract/PRL/v100/i11/e118703"&gt;Community structure in
 directed networks&lt;/a&gt;. &lt;em&gt;Physical Review Letters&lt;/em&gt;, 100(11),&amp;nbsp;118703.&lt;/p&gt;

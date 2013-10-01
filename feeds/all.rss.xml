@@ -1147,7 +1147,7 @@ Europe. It currently also features &lt;a href="http://labs.geofabrik.de/haiti/"&
 &lt;p&gt;Now that I have the &lt;span class="caps"&gt;OSM&lt;/span&gt; data downloaded, it should be relatively easy to
 import it into my PostGIS database using &lt;a href="http://pgrouting.postlbs.org/"&gt;pgRouting&lt;/a&gt; and the
 &lt;a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting"&gt;osm2pgrouting&lt;/a&gt; import tool. More to come on this topic once I get
-things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>Ireland</category><category>OpenStreetMap</category><category>PostGIS</category><category>Road Networks</category><category>Geographic information science/systems (GIS)</category><category>Helpful tips</category><category>Networks</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
+things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>Ireland</category><category>OpenStreetMap</category><category>PostGIS</category><category>Road Networks</category><category>Helpful tips</category><category>Networks</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
 visualise the results of a &lt;code&gt;SELECT&lt;/code&gt; statement on a &lt;a href="http://postgis.refractions.net/"&gt;PostGIS&lt;/a&gt; database
 that returns spatial data in &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt;. In other words, can we map the
 results of something&amp;nbsp;like:&lt;/p&gt;
@@ -1302,11 +1302,10 @@ the detected clusters goes down. The nice bit however, is that for
 (&lt;em&gt;&lt;code&gt;γ &amp;gt;= 0.6&lt;/code&gt;&lt;/em&gt;), meaning the network partitioning algorithm I was using
 is doing a pretty good job.&amp;nbsp;Nice!&lt;/p&gt;
 &lt;p&gt;This bootstrapping process is part of a paper I&amp;#8217;m working on at the
-moment, and uses a geographical variant of &lt;a href="community-structure-in-directed-weighted-networks.html"&gt;this algorithm&lt;/a&gt; to detect
+moment, and uses a geographical variant of &lt;a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/"&gt;this algorithm&lt;/a&gt; to detect
 functional regions in travel to work data. I&amp;#8217;ll post more on the
 algorithm and my bootstrapping implementation in R (using the very cool
 &lt;a href="http://cran.r-project.org/web/packages/foreach/index.html"&gt;foreach&lt;/a&gt; package) here&amp;nbsp;soon.&lt;/p&gt;
-&lt;p&gt;C&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;Leicht, E. A., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Newman, &lt;span class="caps"&gt;M. E. J.&lt;/span&gt;(2008). &lt;a href="http://prl.aps.org/abstract/PRL/v100/i11/e118703"&gt;Community structure in
 directed networks&lt;/a&gt;. &lt;em&gt;Physical Review Letters&lt;/em&gt;, 100(11),&amp;nbsp;118703.&lt;/p&gt;

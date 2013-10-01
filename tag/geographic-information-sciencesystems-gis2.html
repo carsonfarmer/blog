@@ -75,45 +75,6 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/" rel="bookmark"
-                           title="Permalink to QGIS developer meeting update"><span class="caps">QGIS</span> developer meeting&nbsp;update</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2009-11-11T17:33:00">
-                      <i class="icon-calendar"></i>
-                      Wed 11 November 2009
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
-    </p>
-                  </footer>
-                <p>Last week I attended the 2009 <span class="caps">QGIS</span> Developers Meeting in Vienna,
-Austria. We all had a really good time, <a href="http://blog.qgis.org/node/139">met many new people</a>, and
-actually got a lot done in the process. There have been updates about
-the meeting <a href="http://qgis.org/en/developer-meeting.html">(hackfest)</a> on the <span class="caps">QGIS</span> blog, and Tim Sutton has <a href="http://linfiniti.com/2009/11/report-back-on-the-qgis-hackfest-in-vienna-november-2009/">written
-a few words</a> about our progress as well. I&#8217;m not going to repeat what
-others have said, but I <em>would</em> like to give a quick update on the work
-that I was doing at the meeting, and show off the new geoprocessing
-features now available to all <span class="caps">QGIS</span> developers (Python and C++).
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
                     <h1><a href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/" rel="bookmark"
                            title="Permalink to Remote Sensing of Environment paper published">Remote Sensing of Environment paper&nbsp;published</a></h1>
                 </header>
@@ -370,15 +331,49 @@ Spatial*DataFrames.
     <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" rel="bookmark"
+                           title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2008-09-23T12:36:00">
+                      <i class="icon-calendar"></i>
+                      Tue 23 September 2008
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+    </p>
+                  </footer>
+                <p>This is useful for visually exploring R spatial data such as
+<code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
+features, the value at that point will be&nbsp;displayed.</p>
+<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
+y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+y.grid <span class="o">=</span> y<span class="o">@</span>grid
+y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
             <a href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis.html">
                 <i class="icon-arrow-left"></i>
             </a>
-    2 / 3
-        <a href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis3.html">
-            <i class="icon-arrow-right"></i>
-        </a>
+    2 / 2
 </p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">
