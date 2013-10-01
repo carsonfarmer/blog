@@ -18,8 +18,8 @@ train, 30 years later (1983) they did the same trip again, and again
 
 <div class="youtube" align="center">
 <iframe width="640" height="360" 
-    src="//www.youtube.com/embed/tGTwSNPqAqs?feature=player_detailpage" 
-    frameborder="0" allowfullscreen></iframe>
+    src="//www.youtube.com/embed/tGTwSNPqAqs?wmode=transparent" 
+    frameborder="0" allowfullscreen wmode="Opaque"></iframe>
 </div>
 
 The second video is from the Vancouver SkyTrain, with older footage (1985) from 
@@ -28,8 +28,8 @@ original Translink footage [from here][].
 
 <div class="youtube" align="center">
 <iframe width="640" height="390" 
-    src="//www.youtube.com/embed/erodkwTS7sQ" frameborder="0" 
-    allowfullscreen></iframe>
+    src="//www.youtube.com/embed/erodkwTS7sQ?wmode=transparent" frameborder="0" 
+    allowfullscreen wmode="Opaque"></iframe>
 </div>
 
 [from here]: http://www.youtube.com/watch?feature=player_detailpage&v=SV7rwEB_SOA
