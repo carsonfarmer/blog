@@ -385,7 +385,7 @@ function site_search() {
                 el.empty();
                 $.each(data, function(key, val) {
                     var xx = new Date(val.published_on)+""
-                    if (/^www.carsonfarmer.com/).test(val.link) console.log(val.link)
+                    if ((/^www.carsonfarmer.com/).test(val.link)) console.log(val.link)
                     el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
                         'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' +
                         '</li>');
