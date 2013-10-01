@@ -55,11 +55,16 @@ MENUITEMS = (('About', 'about/', 'icon-info-sign'),
 DISQUS_SITENAME = "carsonfarmer"
 
 # which folders should be copied to output/static
-STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt']
+STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt', 
+                'extras/favicon.ico', 'extras/404.html',
+                'extras/CNAME', 'examples'
+               ]
 
-FILES_TO_COPY = (('extras/favicon.ico', 'favicon.ico'),
-                 ('extras/404.html', '404.html'),
-                 ('extras/CNAME', 'CNAME'),)
+EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
+                       'extras/404.html': {'path': '404.html'},
+                       'extras/CNAME': {'path': 'CNAME'},
+                       'examples' : {'path': 'examples'}
+                      }
 
 # Blogroll
 LINKS =  (('Reserach','research/','icon-bar-chart'),
