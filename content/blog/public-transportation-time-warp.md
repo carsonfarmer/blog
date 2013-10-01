@@ -12,8 +12,8 @@ regions around the transportation network while the network itself remains
 pretty much unchanged. Worth a quick watch!
 
 The first video depicts the London to Brighton Train Journey for three time 
-periods. In 1953, the BBC make a point-of-view field from a London to Brighton 
-train. 30 years later (1983) they did the same trip again, and again 
+periods. In 1953, the BBC made a point-of-view film from a London to Brighton 
+train, 30 years later (1983) they did the same trip again, and again 
 30 years after that (2013).
 
 <div class="youtube" align="center">
