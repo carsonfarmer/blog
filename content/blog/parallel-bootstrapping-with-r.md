@@ -73,8 +73,8 @@ community detection algorithm on a computer with 4 cores, and was
 
 [![cpu_usage][]][image]
 
-[recent post]: |filename|community-structure-in-directed-weighted-networks.md
+[recent post]: {filename}community-structure-in-directed-weighted-networks.md
 [foreach]: http://cran.r-project.org/web/packages/foreach/index.html
 [REvolution Computing]: http://www.revolution-computing.com/
-[cpu_usage]: |filename|/images/foreachcpu-300x114.png "foreachcpu"
-[image]: |filename|/images/foreachcpu.png
+[cpu_usage]: {filename}/images/foreachcpu-300x114.png "foreachcpu"
+[image]: {filename}/images/foreachcpu.png
