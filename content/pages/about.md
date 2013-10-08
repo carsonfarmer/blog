@@ -3,7 +3,7 @@ Date: 2008-08-01 16:50
 Author: cfarmer
 Slug: about
 
-[![carson_farmer_border][image]{.right}][link]
+[![carson_farmer_border][image]{.right .contact}][link]
 
 My research interests span a wide range of topics in urban and regional
 analysis, with a focus on spatial-temporal dynamics, complexity, and
@@ -23,5 +23,14 @@ methods and software aimed at characterizing these flows.
 
 If you'd like to get in touch, please [contact me][link].
 
-[image]: |filename|/images/carson_circle_300.png
-[link]: |filename|/pages/contact.md
+[image]: {filename}/images/carson_circle_300.png
+[link]: {filename}/pages/contact.md
+
+<script  type='text/javascript'>
+$(document).ready(function(){
+    $(".contact").hover(
+        function() {$(this).attr("src","http://www.carsonfarmer.com/images/carson_circle_300_contact.png");},
+        function() {$(this).attr("src","http://www.carsonfarmer.com/images/carson_circle_300.png");
+    });
+});
+</script>
