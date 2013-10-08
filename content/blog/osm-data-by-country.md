@@ -2,8 +2,8 @@ Title: OSM data by country
 Date: 2010-05-13 12:05
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Free open-source software (FOSS)
-Tags: Ireland, OpenStreetMap, PostGIS, Road Networks, Geographic information science/systems (GIS), Helpful tips, Networks, Research
+Category: Helpful tips
+Tags: Ireland, OpenStreetMap, PostGIS, Road Networks, Helpful tips, Networks, Research
 Slug: osm-data-by-country
 
 For part of a traffic simulation project I am currently working on we

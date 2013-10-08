@@ -204,11 +204,11 @@ shortest path query:
 And there you go, a full fledged routing library built right into our
 database!
 
-[a few posts back]: |filename|osm-data-by-country.md
-[look here]: |filename|quick-guide-to-setting-up-postgis-database.md
+[a few posts back]: {filename}osm-data-by-country.md
+[look here]: {filename}quick-guide-to-setting-up-postgis-database.md
 [download it manually]: http://pgrouting.postlbs.org/wiki/pgRoutingDownload
 [osm2pgrouting]: http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting
 [http://download.geofabrik.de/osm/]: http://download.geofabrik.de/osm/
 [postgis-select]: |filename|postgis-select-statement-as-vector-layer-in-qgis.md
-[image]: |filename|/images/shortest_path-300x213.png "shortest_path"
-[shortest_path]: |filename|/images/shortest_path.png
+[image]: {filename}/images/shortest_path-300x213.png "shortest_path"
+[shortest_path]: {filename}/images/shortest_path.png

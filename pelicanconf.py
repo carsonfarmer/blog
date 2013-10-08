@@ -23,8 +23,10 @@ DEFAULT_LANG = u'en'
 LATEX = 'article'
 IGNORE_FILES = ['.#*', '*~']
 
+MARKUP = ("md", "ipynb")
+
 PLUGIN_PATH = "pelican-plugins/"
-PLUGINS = ['gravatar', 'latex', 'summary']
+PLUGINS = ['gravatar', 'latex', 'summary', 'ipythonnb']
 
 SUMMARY_END_MARKER = "<!--more-->"
 
