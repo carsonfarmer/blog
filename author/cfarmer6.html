@@ -75,6 +75,49 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
+                    <h1><a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/" rel="bookmark"
+                           title="Permalink to PostGIS ‘select’ statement as vector layer in QGIS">PostGIS &#8216;select&#8217; statement as vector layer in&nbsp;<span class="caps">QGIS</span></a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2010-04-27T17:40:00">
+                      <i class="icon-calendar"></i>
+                      Tue 27 April 2010
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+    </p>
+                  </footer>
+                <p>Several colleagues of mine have asked whether it is possible to
+visualise the results of a <code>SELECT</code> statement on a <a href="http://postgis.refractions.net/">PostGIS</a> database
+that returns spatial data in <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a>. In other words, can we map the
+results of something&nbsp;like:</p>
+<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
+</pre></div>
+
+
+<p>My usual answer to this in the past has been &#8220;not yet&#8230;&#8221;, but now thanks
+to Giuseppe Sucameli and Jürgen E. Fischer, the answer is a resounding
+&#8220;yes!&#8221;. A <a href="https://trac.osgeo.org/qgis/changeset/13340">recent patch</a> to <span class="caps">QGIS</span> trunk now makes custom Postgres
+queries possible via the postgres data provider.
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
                     <h1><a href="http://www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/" rel="bookmark"
                            title="Permalink to Parallel bootstrapping with R">Parallel bootstrapping  with&nbsp;R</a></h1>
                 </header>
@@ -94,7 +137,7 @@
         <a href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
     </p>
                   </footer>
-                <p>In a <a href="|filename|/blog/community-structure-in-directed-weighted-networks.md">recent post</a>, I mentioned that I was testing the stability of
+                <p>In a <a href="{filename}community-structure-in-directed-weighted-networks.md">recent post</a>, I mentioned that I was testing the stability of
 clusters generated from a modified network partitioning algorithm using
 bootstrap resampling techniques. I also mentioned that I was doing this
 in R, using the very nice <a href="http://cran.r-project.org/web/packages/foreach/index.html">foreach</a> package published by <a href="http://www.revolution-computing.com/">REvolution
@@ -332,43 +375,6 @@ The article is now officially published, and can be cited&nbsp;as:</p>
                     <a class="readmore" href="http://www.carsonfarmer.com/2009/10/canadian-geographer-paper-published/">read more</a>
                 </p>
     <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2009/10/canadian-geographer-paper-published/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/" rel="bookmark"
-                           title="Permalink to Remote Sensing of Environment paper published">Remote Sensing of Environment paper&nbsp;published</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2009-10-06T13:30:00">
-                      <i class="icon-calendar"></i>
-                      Tue 06 October 2009
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/research-paper.html">Research paper</a> 
-    </p>
-                  </footer>
-                <p>My latest article, &#8220;Identification of snow cover regimes through spatial
-and temporal clustering of satellite microwave brightness temperatures&#8221;,
-has recently been <a href="http://dx.doi.org/10.1016/j.rse.2009.09.002">published on-line</a>, with the journal<a href="http://www.sciencedirect.com/science/journal/00344257">Remote Sensing
-of Environment</a>. <strike>For now,</strike>
-<span class="caps">UPDATE</span>: The article can be cited&nbsp;as:</p>
-<blockquote>
-<p>Farmer, <span class="caps">C. J.</span> Q., Nelson, T. A., Wulder, <span class="caps">M.A.</span> and ...</p></blockquote>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2009/10/remote-sensing-of-environment-paper-published/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->

@@ -22,7 +22,22 @@ original Translink footage &lt;a href="http://www.youtube.com/watch?feature=play
     allowfullscreen wmode="Opaque"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 01 Oct 2013 13:15:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-10-01:2013/10/public-transportation-time-warp/</guid><category>Visualisation</category><category>Transportation</category><category>Video</category><category>Links</category></item><item><title>Maps as Art and Other Experiments</title><link>http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/</link><description>&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 01 Oct 2013 13:15:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-10-01:2013/10/public-transportation-time-warp/</guid><category>Visualisation</category><category>Transportation</category><category>Video</category><category>Links</category></item><item><title>Re-imagining New York Streets</title><link>http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/</link><description>&lt;p&gt;Here&amp;#8217;s a &lt;a href="http://www.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"&gt;&lt;span class="caps"&gt;TED&lt;/span&gt; talk&lt;/a&gt; from Janette Sadik-Khan, the New York City Transportation 
+Commissioner, on how they&amp;#8217;ve transformed New York City streets over the past 
+several&amp;nbsp;years.&lt;/p&gt;
+&lt;p&gt;I love the &lt;a href="http://citibikenyc.com/"&gt;Citi Bike&lt;/a&gt; program (especially the data), which she 
+helped introduce, so it is interesting to hear her talk about how and why the 
+program was started. There is also an interesting article on Sadik-Khan on the 
+&lt;span class="caps"&gt;TED&lt;/span&gt; &lt;a href="http://blog.ted.com/2013/10/08/better-roads-for-bikes-and-walkers-what-cities-inspire-janette-sadik-khan/"&gt;blog&lt;/a&gt; which provides some additional insight into her and the various 
+programs she&amp;#8217;s helped&amp;nbsp;develop.&lt;/p&gt;
+&lt;div class="youtube" align="center"&gt;
+    &lt;iframe width="560" height="315" 
+        src="http://embed.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"
+        frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen wmode="Opaque"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 01 Oct 2013 13:15:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-10-01:2013/10/reimagine-new-york-streets/</guid><category>Transportation</category><category>Video</category><category>Links</category></item><item><title>Maps as Art and Other Experiments</title><link>http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/</link><description>&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
 there has been a lot of &amp;#8216;buzz&amp;#8217; in the open source geospatial community about 
 all the cool new features that &lt;span class="caps"&gt;QGIS&lt;/span&gt; now boasts, and how far it has come in such 
 a short time. I was recently inspired by &lt;a href="http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/"&gt;such a post by Anita Graser (aka 
