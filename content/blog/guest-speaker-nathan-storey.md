@@ -21,9 +21,9 @@ your brain :)
 
 Here is what Nathan (the speaker) has to say about this talk:
 
-    I will be speaking to Carson Farmer's spatial data analysis class next week 
-    about open data in NYC, data discovery, and [PediaCities][pediacities], a 
-    data encyclopedia project I've been working on for the past 6 months. 
+> I will be speaking to Carson Farmer's spatial data analysis class next week 
+> about open data in NYC, data discovery, and [PediaCities][pediacities], a 
+> data encyclopedia project I've been working on for the past 6 months. 
 
 
 [pediacities]: http://nyc.pediacities.com/
