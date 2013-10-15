@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Carson Farmer</title>
+        <title>Carson Farmer - QGIS</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
         <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -75,14 +75,14 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" rel="bookmark"
-                           title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
+                    <h1><a href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/" rel="bookmark"
+                           title="Permalink to QGIS developer meeting update"><span class="caps">QGIS</span> developer meeting&nbsp;update</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-09-23T12:36:00">
+                  <abbr class="published" title="2009-11-11T17:33:00">
                       <i class="icon-calendar"></i>
-                      Tue 23 September 2008
+                      Wed 11 November 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
@@ -91,64 +91,31 @@
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
     </p>
                   </footer>
-                <p>This is useful for visually exploring R spatial data such as
-<code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
-features, the value at that point will be&nbsp;displayed.</p>
-<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
-y.grid <span class="o">=</span> y<span class="o">@</span>grid
-y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
+                <p>Last week I attended the 2009 <span class="caps">QGIS</span> Developers Meeting in Vienna,
+Austria. We all had a really good time, <a href="http://blog.qgis.org/node/139">met many new people</a>, and
+actually got a lot done in the process. There have been updates about
+the meeting <a href="http://qgis.org/en/developer-meeting.html">(hackfest)</a> on the <span class="caps">QGIS</span> blog, and Tim Sutton has <a href="http://linfiniti.com/2009/11/report-back-on-the-qgis-hackfest-in-vienna-november-2009/">written
+a few words</a> about our progress as well. I&#8217;m not going to repeat what
+others have said, but I <em>would</em> like to give a quick update on the work
+that I was doing at the meeting, and show off the new geoprocessing
+features now available to all <span class="caps">QGIS</span> developers (Python and C++).
 
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/" rel="bookmark"
-                           title="Permalink to Find and replace multiple files">Find and replace multiple&nbsp;files</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-09-08T09:09:00">
-                      <i class="icon-calendar"></i>
-                      Mon 08 September 2008
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
-    </p>
-                  </footer>
-                <p>Recently, I had to do a find and replace over several individual python
-files.There are plenty of scripts out there which will accomplish this,
-but I was interested in something simple, and preferably a single line
-command. After a lot of Google-ing, I ended up finding <a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487">this post</a>,
-which ...</p>
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/">read more</a>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2009/11/qgis-developer-meeting-update/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-            <a href="http://www.carsonfarmer.com/index8.html">
+            <a href="http://www.carsonfarmer.com/tag/qgis.html">
                 <i class="icon-arrow-left"></i>
             </a>
-    9 / 9
+    2 / 2
 </p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">

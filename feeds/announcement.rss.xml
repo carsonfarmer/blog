@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 23 Sep 2013 11:57:00 -0400</lastBuildDate><item><title>Early Stage Researcher Position in GeoInformatics</title><link>http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/</link><description>&lt;p&gt;This is just a quick note about a great opportunity for early career researchers 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 15 Oct 2013 09:40:00 -0400</lastBuildDate><item><title>ftools is dead… long live ftools!</title><link>http://www.carsonfarmer.com/2013/10/ftools-is-no-more/</link><description>&lt;p&gt;I recently decided to drop &lt;code&gt;ftools.ca&lt;/code&gt;, since I hadn&amp;#8217;t updated it in a very long 
+time, and it was really just costing me money to keep a &amp;#8216;dead&amp;#8217; website up and 
+running. Additionally, with the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;a href="http://plugins.qgis.org/"&gt;plugin infrastructure&lt;/a&gt;, 
+hosting my own plugins (the website&amp;#8217;s primary purpose) was no longer needed. 
+The site has served me well for many years, and really helped get fTools (the 
+plugin) into the &lt;span class="caps"&gt;QGIS&lt;/span&gt; core codebase. The website has served its purpose, and 
+now that I have very little involvement with fTools and the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Processing 
+Toolbox that is poised to replace it, I&amp;#8217;m moving on: &lt;code&gt;ftools.ca&lt;/code&gt; is dead, long 
+live &lt;code&gt;ftools.ca&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;However, now that &lt;a href="http://www.qgis.org/en/docs/index.html#documentation-for-qgis-2-0"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0&lt;/a&gt; has rolled out, it seems that at least 
+one part of ftools.ca is missed: my old cartogram plugin. If I 
+have some spare time, I&amp;#8217;ll try to update the plugin to the latest and 
+greatest &lt;a href="http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0 standards&lt;/a&gt; and upload it to the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; plugins 
+system. In the mean time, for those out there who would like to use it right 
+away, you can get the &lt;a href="http://www.carsonfarmer.com/uploads/cartogram.zip"&gt;original code from here&lt;/a&gt; or &lt;a href="https://github.com/cfarmer/cartogram-plugin"&gt;grab it from 
+github&lt;/a&gt;. In fact, if someone is able and willing, they can grab 
+the code from github, update it for &lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0, and submit a pull request which I 
+will (more than likely) happily&amp;nbsp;accept.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 15 Oct 2013 09:40:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-10-15:2013/10/ftools-is-no-more/</guid><category>Update</category><category>Announcement</category><category>Web</category><category>QGIS</category><category>Cartogram</category></item><item><title>Early Stage Researcher Position in GeoInformatics</title><link>http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/</link><description>&lt;p&gt;This is just a quick note about a great opportunity for early career researchers 
 interested in the field of &lt;a href="http://en.wikipedia.org/wiki/Geoinformatics"&gt;geoinformatics&lt;/a&gt;. The &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;Centre for GeoInformatics&lt;/a&gt; at the
 &lt;a href="http://www.st-andrews.ac.uk/"&gt;University of St Andrews&lt;/a&gt; in Scotland has two new early career researcher positions
 available to start right away. These are really great opportunities for someone

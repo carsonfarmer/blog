@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Carson Farmer</title>
+        <title>ftools is dead… long live ftools!</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
         <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -68,88 +68,79 @@
                     </div>
                 </div>
         </header><!-- /#banner -->
-        
-        
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2013/10/ftools-is-no-more/" rel="bookmark"
+           title="Permalink to ftools is dead… long live ftools!">ftools is dead&#8230; long live&nbsp;ftools!</a></h1>
+      <abbr class="published" title="2013-10-15T09:40:00">
+          <i class="icon-calendar"></i>
+          Tue 15 October 2013
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
 
-                <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed">
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" rel="bookmark"
-                           title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-09-23T12:36:00">
-                      <i class="icon-calendar"></i>
-                      Tue 23 September 2008
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
+    <div class="entry-content">
+      <p>I recently decided to drop <code>ftools.ca</code>, since I hadn&#8217;t updated it in a very long 
+time, and it was really just costing me money to keep a &#8216;dead&#8217; website up and 
+running. Additionally, with the new <span class="caps">QGIS</span> <a href="http://plugins.qgis.org/">plugin infrastructure</a>, 
+hosting my own plugins (the website&#8217;s primary purpose) was no longer needed. 
+The site has served me well for many years, and really helped get fTools (the 
+plugin) into the <span class="caps">QGIS</span> core codebase. The website has served its purpose, and 
+now that I have very little involvement with fTools and the <span class="caps">QGIS</span> Processing 
+Toolbox that is poised to replace it, I&#8217;m moving on: <code>ftools.ca</code> is dead, long 
+live <code>ftools.ca</code>!</p>
+<p>However, now that <a href="http://www.qgis.org/en/docs/index.html#documentation-for-qgis-2-0"><span class="caps">QGIS</span> 2.0</a> has rolled out, it seems that at least 
+one part of ftools.ca is missed: my old cartogram plugin. If I 
+have some spare time, I&#8217;ll try to update the plugin to the latest and 
+greatest <a href="http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html"><span class="caps">QGIS</span> 2.0 standards</a> and upload it to the new <span class="caps">QGIS</span> plugins 
+system. In the mean time, for those out there who would like to use it right 
+away, you can get the <a href="http://www.carsonfarmer.com/uploads/cartogram.zip">original code from here</a> or <a href="https://github.com/cfarmer/cartogram-plugin">grab it from 
+github</a>. In fact, if someone is able and willing, they can grab 
+the code from github, update it for <span class="caps">QGIS</span> 2.0, and submit a pull request which I 
+will (more than likely) happily&nbsp;accept.</p>
+
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
     </p>
-                  </footer>
-                <p>This is useful for visually exploring R spatial data such as
-<code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
-features, the value at that point will be&nbsp;displayed.</p>
-<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
-y.grid <span class="o">=</span> y<span class="o">@</span>grid
-y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
+    <p class="tag">
+        <i class="icon-tags"></i>
+ <a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
+ <a href="http://www.carsonfarmer.com/tag/announcement.html">Announcement</a>
+ <a href="http://www.carsonfarmer.com/tag/web.html">Web</a>
+ <a href="http://www.carsonfarmer.com/tag/qgis.html">QGIS</a>
+ <a href="http://www.carsonfarmer.com/tag/cartogram.html">Cartogram</a>
+    </p>
+    </div><!-- /.entry-content -->
+      <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2013/10/ftools-is-no-more/";
+          var disqus_url = "http://www.carsonfarmer.com/2013/10/ftools-is-no-more/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
 
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/" rel="bookmark"
-                           title="Permalink to Find and replace multiple files">Find and replace multiple&nbsp;files</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2008-09-08T09:09:00">
-                      <i class="icon-calendar"></i>
-                      Mon 08 September 2008
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
-    </p>
-                  </footer>
-                <p>Recently, I had to do a find and replace over several individual python
-files.There are plenty of scripts out there which will accomplish this,
-but I was interested in something simple, and preferably a single line
-command. After a lot of Google-ing, I ended up finding <a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487">this post</a>,
-which ...</p>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-            <a href="http://www.carsonfarmer.com/index8.html">
-                <i class="icon-arrow-left"></i>
-            </a>
-    9 / 9
-</p>            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body shadow">
 <div class="twitter">
         <h2><i class="icon-twitter"></i> twitter</h2>
