@@ -25,13 +25,13 @@
         <![endif]-->
         <script type="text/javascript">
             function initialize() {
-                var layer = "toner";
+                var layer = "watercolor";
                 var map = new L.Map("map", {
-                        center: new L.LatLng(40.67, -73.94),
+                        center: new L.LatLng(40.67, -74.94),
                         zoom: 10,
                         zoomControl: false
                     });
-                map.addLayer(new L.StamenTileLayer(layer));
+                map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
             }
         </script>
 </head> 
