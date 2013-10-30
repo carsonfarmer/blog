@@ -25,6 +25,12 @@
                         zoomControl: false
                     });
                 map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
+                
+                map.locate({setView: true, watch: true})
+                  .on('locationfound', function(e) {
+                    var marker = L.marker([e.latitude, e.longitude]).bindPopup('Thanks for stopping by!');
+                    map.addLayer(marker);
+                  });
             }
         </script>
 </head> 
