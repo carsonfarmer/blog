@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Carson Farmer - Announcement</title>
+        <title>Carson Farmer</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
         <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -27,10 +27,20 @@
                 map.addLayer(new L.StamenTileLayer(layer));
             }
         </script>
+        <style>
+#map {
+    z-index: -1; 
+    position: fixed; 
+    width: 100%;
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+        </style>
 </head> 
 
 <body id="index" class="home" onload="initialize()">
-<div id="map" style="position: fixed;"></div>
+<div id="map"></div>
         <header id="banner" class="body">
                 <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
                 <form class="form-inline" id="top-search">
@@ -140,6 +150,196 @@ will (more than likely) happily&nbsp;accept.</p>
 
             <li><article class="hentry shadow">    
                 <header>
+                    <h1><a href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/" rel="bookmark"
+                           title="Permalink to Nathan Storey Guest Lecture">Nathan Storey Guest&nbsp;Lecture</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2013-10-10T12:41:00">
+                      <i class="icon-calendar"></i>
+                      Thu 10 October 2013
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/guest-speaker.html">Guest Speaker</a> 
+    </p>
+                  </footer>
+                <p><a href="https://twitter.com/npstorey">Nathan Storey</a> will be speaking to my spatial data analysis class 
+later today, October 10th, 2013, and you are invited to attend! Nathan is a 
+former <a href="http://www.hunteruap.org/">Hunter Urban Affairs</a> student and current Open Data Guru working 
+with <a href="http://www.ontodia.com/">Ontodia</a> doing <span class="caps">GIS</span>/open data projects for <span class="caps">NYC</span>. Check out 
+<a href="http://nyc.pediacities.com/">PediaCities</a>, their platform to curate, organize, and link data 
+about&nbsp;cities.</p>
+<p>This will be a great opportunity to see <span class="caps">GIS</span> data applied to real-world problem 
+sets here in <span class="caps">NYC</span>. The discussion will go approx 1 hour, beginning at 5:35 in 
+the large lab of Hunter College, <span class="caps">CUNY</span>, North Building, Room 1090B.  Due to the 
+location, no refreshments will be served, but its a good opportunity to feed 
+your brain&nbsp;:)</p>
+<p>Here is what Nathan (the speaker) has to say about this&nbsp;talk:</p>
+<blockquote>
+<p>I will be speaking to Carson Farmer&#8217;s spatial data analysis class next week 
+about open data in <span class="caps">NYC</span>, data discovery, and <a href="http://nyc.pediacities.com/">PediaCities</a>, a 
+data encyclopedia project I&#8217;ve been working on for the past 6&nbsp;months. </p>
+</blockquote>
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/" rel="bookmark"
+                           title="Permalink to Re-imagining New York Streets">Re-imagining New York&nbsp;Streets</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2013-10-08T14:15:00">
+                      <i class="icon-calendar"></i>
+                      Tue 08 October 2013
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/transportation.html">Transportation</a> 
+    </p>
+                  </footer>
+                <p>Here&#8217;s a <a href="http://www.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"><span class="caps">TED</span> talk</a> from Janette Sadik-Khan, the New York City Transportation 
+Commissioner, on how they&#8217;ve transformed New York City streets over the past 
+several&nbsp;years.</p>
+<p>I love the <a href="http://citibikenyc.com/">Citi Bike</a> program (especially the data), which she 
+helped introduce, so it is interesting to hear her talk about how and why the 
+program was started. There is also an interesting article on Sadik-Khan on the 
+<span class="caps">TED</span> <a href="http://blog.ted.com/2013/10/08/better-roads-for-bikes-and-walkers-what-cities-inspire-janette-sadik-khan/">blog</a> which provides some additional insight into her and the various 
+programs she&#8217;s helped&nbsp;develop.</p>
+<div class="youtube" align="center">
+    <iframe width="560" height="315" 
+        src="http://embed.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"
+        frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen wmode="Opaque">
+    </iframe>
+</div>
+
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/" rel="bookmark"
+                           title="Permalink to Public transportation time warp">Public transportation time&nbsp;warp</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2013-10-01T13:15:00">
+                      <i class="icon-calendar"></i>
+                      Tue 01 October 2013
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/visualisation.html">Visualisation</a> 
+    </p>
+                  </footer>
+                <p>I recently came across two extremely cool videos while preparing lectures for my
+transportation geography course. It is pretty cool to see the development of the 
+regions around the transportation network while the network itself remains 
+pretty much unchanged. Worth a quick&nbsp;watch!</p>
+<p>The first video depicts the London to Brighton Train Journey for three time 
+periods. In 1953, the <span class="caps">BBC</span> made a point-of-view film from a London to Brighton 
+train, 30 years later (1983) they did the same trip again, and again 
+30 years after that&nbsp;(2013).</p>
+<div class="youtube" align="center">
+<iframe width="640" height="360" 
+    src="//www.youtube.com/embed/tGTwSNPqAqs?wmode=transparent" 
+    frameborder="0" allowfullscreen wmode="Opaque"></iframe>
+</div>
+
+<p>The second video is from the Vancouver SkyTrain, with older footage (1985) from 
+<span class="caps">BCRTC</span>/Translink, and newer footage (2013) by Celgen Studios. You can get the 
+original Translink footage <a href="http://www.youtube.com/watch?feature=player_detailpage&amp;v=SV7rwEB_SOA">from here</a>.</p>
+<div class="youtube" align="center">
+<iframe width="640" height="390" 
+    src="//www.youtube.com/embed/erodkwTS7sQ?wmode=transparent" frameborder="0" 
+    allowfullscreen wmode="Opaque"></iframe>
+</div>
+
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="bookmark"
+                           title="Permalink to Maps as Art and Other Experiments">Maps as Art and Other&nbsp;Experiments</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2013-09-27T17:25:00">
+                      <i class="icon-calendar"></i>
+                      Fri 27 September 2013
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/visualisation.html">Visualisation</a> 
+    </p>
+                  </footer>
+                <p>With the recent (and long anticipated) release of <a href="http://www.qgis.org/">Quantum <span class="caps">GIS</span> 2.0</a>, 
+there has been a lot of &#8216;buzz&#8217; in the open source geospatial community about 
+all the cool new features that <span class="caps">QGIS</span> now boasts, and how far it has come in such 
+a short time. I was recently inspired by <a href="http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/">such a post by Anita Graser (aka 
+Underdark)</a> (who is a wonderfully talented cartographer/designer) on 
+data driven labeling in <span class="caps">QGIS</span>, so I thought I&#8217;d throw something together on a 
+gray Friday afternoon to test it out. I also wanted an excuse to play around 
+with <a href="http://lab.hakim.se/reveal-js/#/">Reveal.js</a> slides in <a href="http://ipython.org/notebook.html">IPython notebook</a>, so I produced 
+the following <a href="http://www.carsonfarmer.com/examples/map_art/">slide show</a> using the images from <span class="caps">QGIS</span> and some 
+IPython magic:
+<iframe src=http://www.carsonfarmer.com/examples/map_art/ width=700 height=500></iframe></p>
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
                     <h1><a href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/" rel="bookmark"
                            title="Permalink to Early Stage Researcher Position in GeoInformatics">Early Stage Researcher Position in&nbsp;GeoInformatics</a></h1>
                 </header>
@@ -168,6 +368,67 @@ available to start right away. These are really great opportunities for ...</p>
                     <a class="readmore" href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/">read more</a>
                 </p>
     <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/" rel="bookmark"
+                           title="Permalink to Essential Python Geospatial Libraries">Essential Python Geospatial&nbsp;Libraries</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2013-07-12T17:25:00">
+                      <i class="icon-calendar"></i>
+                      Fri 12 July 2013
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="icon-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+    </p>
+                  </footer>
+                <p>Just so I don&#8217;t forget, here is a list of really awesome Python libraries that
+I&#8217;m using these days to do lots of fun things with spatial data [<span class="caps">UPDATE</span>: I&#8217;ve 
+added a few&nbsp;more]:</p>
+<ul>
+<li><a href="http://pandas.pydata.org/">pandas</a> - For data handling and&nbsp;munging</li>
+<li><a href="https://pypi.python.org/pypi/Shapely">shapely</a> - For geometry&nbsp;handling</li>
+<li><a href="http://scitools.org.uk/cartopy/">cartopy</a> - For plotting spatial&nbsp;data</li>
+<li><a href="http://toblerity.github.io/rtree/">rtree</a> - For efficiently querying spatial&nbsp;data</li>
+<li><a href="http://www.cityinabottle.org/nodebox/">nodebox-opengl</a> - For playing around with&nbsp;animations</li>
+<li><a href="http://statsmodels.sourceforge.net/">statsmodels</a> - For models and stats in Python (otherwise I&#8217;d use&nbsp;R)</li>
+<li><a href="http://www.numpy.org/">numpy</a> - For pretty much anything that involves&nbsp;arrays</li>
+<li><a href="https://code.google.com/p/geopy/">geopy</a> - For geolocating and things like&nbsp;that</li>
+<li><a href="http://ipython.org/">ipython</a> - For a wondering interactive environment in which to&nbsp;play</li>
+<li><a href="https://code.google.com/p/freetype-py/">freetype-py</a> - For converting font glyphs to polygons (odd I&nbsp;know&#8230;)</li>
+<li><a href="https://pypi.python.org/pypi/GDAL/">ogr/gdal</a> - For reading, writing, and transforming geospatial data&nbsp;formats</li>
+<li><a href="http://www.qgis.org/pyqgis-cookbook/">pyqgis</a> - For anything and everything&nbsp;<span class="caps">GIS</span></li>
+<li><a href="http://toblerity.github.io/fiona/">fiona</a> - For making it <em>easy</em> to read/write geospatial data&nbsp;formats</li>
+<li><a href="http://matplotlib.org/">matplotlib</a> - For all my plotting&nbsp;needs</li>
+<li><a href="http://networkx.github.io/">networkx</a> - For working with networks&nbsp;(duh!)</li>
+<li><a href="http://docs.getpelican.com/en/3.2/">pelican</a> - For blogging about all this&nbsp;stuff&#8230;</li>
+<li><a href="http://pythonhosted.org/PySAL/">pysal</a> - For all your spatial econometrics needs (and&nbsp;more)</li>
+<li><a href="https://pypi.python.org/pypi/descartes">descartes</a> - For plotting geometries in&nbsp;matplotlib</li>
+</ul>
+<p>Based on Twitter and some of the comments below, I should also&nbsp;add:</p>
+<ul>
+<li><a href="http://geographiclib.sourceforge.net/">geographiclib</a> - For solving geodesic&nbsp;problems</li>
+<li><a href="https://code.google.com/p/pyshp/">pyshp</a> - For reading and writing shapefiles (in <em>pure</em>&nbsp;Python)</li>
+<li><a href="https://code.google.com/p/pyproj/">pyproj</a> - For conversions between&nbsp;projections</li>
+</ul>
+<p>Any others I&#8217;ve&nbsp;missed?</p>
+
+                <p class="readmore">
+                    <i class="icon-book"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/">read more</a>
+                </p>
+    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
@@ -206,218 +467,10 @@ release of the <span class="caps">NYC</span> Special Initiative ...</p></blockqu
     <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/" rel="bookmark"
-                           title="Permalink to New Journal: Spatial Demography">New Journal: Spatial&nbsp;Demography</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-06-06T13:11:00">
-                      <i class="icon-calendar"></i>
-                      Thu 06 June 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
-    </p>
-                  </footer>
-                <p>I have recently joined the <a href="http://spatialdemography.org/editors-2/editorial-board/">editorial team</a> at <a href="http://spatialdemography.org/">Spatial Demography</a>
-&#8212; a new journal outlet for demographers and others who use spatial data, 
-methods, and&nbsp;theory. </p>
-<p>A bit more <a href="http://spatialdemography.org/about/">about the journal</a>:</p>
-<blockquote>
-<p>Spatial Demography [<span class="caps">ISSN</span>: 2164-7070 (online)] focuses on the spatial analysis 
-of demographic processes. This cross-disciplinary work involves modern 
-demographic data visualization, enhanced geo-referenced data availability, and 
-spatial statistics, facilitated through full color graphics, motion video 
-tools, and a quick time-to-publication. The journal publishes research 
-articles, essays, research reports, data sources, computing software, teaching 
-notes, and book reviews on a wide range of topics of interest to the social&nbsp;demographer.</p>
-</blockquote>
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/05/making-the-switch-to-pelican/" rel="bookmark"
-                           title="Permalink to Making the switch to Pelican">Making the switch to&nbsp;Pelican</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-05-12T11:16:00">
-                      <i class="icon-calendar"></i>
-                      Sun 12 May 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
-    </p>
-                  </footer>
-                <p>Welcome to the new and improved <code>carsonfarmer.com</code>! If you are reading this, then
-you are enjoying my new, responsive static website/blog. The new site is powered 
-by <a href="http://blog.getpelican.com/">Pelican</a> &#8212; a static website generator written in Python &#8212; and is hosted 
-on <a href="https://github.com/">GitHub</a> using <a href="http://pages.github.com/">GitHub Pages</a>. Most of the content on the 
-site is written in Markdown, which makes it really easy to add headings, anchors, 
-and all sorts of goodies to simplify writing blog posts and web-pages.
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/05/making-the-switch-to-pelican/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/05/making-the-switch-to-pelican/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/03/geocomp-special-session/" rel="bookmark"
-                           title="Permalink to Geocomputational landscapes and spaces">Geocomputational landscapes and&nbsp;spaces</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-03-15T17:15:00">
-                      <i class="icon-calendar"></i>
-                      Fri 15 March 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
-    </p>
-                  </footer>
-                <p>Special session titled &#8220;Geocomputational landscapes and spaces&#8221; at the
-<a href="http://www.ammcs2013.wlu.ca/">International Conference on Applied Mathematics, Modeling and
-Computational Science</a> (<span class="caps">AMMCS</span>-2013), to be held at <a href="https://www.wlu.ca/">Wilfrid Laurier
-University</a>, August 26-30,&nbsp;2013.</p>
-<p>The deadline for abstracts is <strong>April 15, 2013</strong>.</p>
-<p>Description of the&nbsp;session:</p>
-<blockquote>
-<p>This session focuses on new applications and theoretical ...</p></blockquote>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/03/geocomp-special-session/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/03/geocomp-special-session/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/01/science-canadian-style/" rel="bookmark"
-                           title="Permalink to Science, Canadian Style!">Science, Canadian&nbsp;Style!</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-01-20T21:55:00">
-                      <i class="icon-calendar"></i>
-                      Sun 20 January 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
-    </p>
-                  </footer>
-                <p>Recently, a <a href="http://www.wlu.ca/homepage.php?grp_id=12616">colleague of mine</a> from Wilfred Laurier University has
-started a website with some colleagues called RinkWatch
-(<a href="http://rinkwatch.org/">http://rinkwatch.org/</a>). The website is designed to track
-climate-change by keeping tabs on local community ice rink(s). This
-innovative use of <a href="http://en.wikipedia.org/wiki/Citizen_science">Citizen Science</a> is getting quite a bit of buzz up
-in Canada, but the idea has implications for any country with a culture
-of outdoor skating rinks. It is also a great way to get the public
-involved in the climate debate, and science in general! RinkWatch
-received a mention in the Canadian Association of Geographers&#8217; Mailing
-list, which I&#8217;m posting here to help spread the good word. You can also
-check out the <a href="http://www.cbc.ca/hamilton/news/story/2013/01/18/hamilton-climate-change-rinks.html">full story and video here</a>.</p>
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/01/science-canadian-style/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/01/science-canadian-style/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/11/postdocs-lectureships-st-andrews/" rel="bookmark"
-                           title="Permalink to Postdocs and Lectureships at St Andrews">Postdocs and Lectureships at St&nbsp;Andrews</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2012-11-08T16:54:00">
-                      <i class="icon-calendar"></i>
-                      Thu 08 November 2012
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
-    </p>
-                  </footer>
-                <p>The <a href="http://www.st-andrews.ac.uk/geoinformatics">Centre for GeoInformatics (<span class="caps">CGI</span>)</a> at the <a href="http://www.st-andrews.ac.uk/">University of St
-Andrews</a> in Scotland has the following open&nbsp;positions:</p>
-<ol>
-<li><a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/lectureship-in-geoinformatics/">Lectureship in Geoinformatics</a>, permanent position, application
-   <span class="caps">DL</span> 21 Dec&nbsp;2012</li>
-<li><a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/research-fellow-in-geoinformatics/">Postdoctoral researcher in Geoinformatics</a>, preferably Visual
-   Analytics/Visualisation (three year fixed post, application <span class="caps">DL</span> 7 Dec&nbsp;2012)</li>
-<li><a href="http://www.st-andrews.ac.uk/geoinformatics/research-fellow-in-geoinformatics-2/">Postdoctoral researcher in Geoinformatics</a> (two year fixed post,
-   application <span class="caps">DL</span> 21 Dec&nbsp;2012)</li>
-</ol>
-<p>In addition, there are three lectureships open at the Department of
-Geography <span class="amp">&amp;</span> Sustainable Development in which <span class="caps">CGI</span> is&nbsp;located:</p>
-<ol>
-<li><a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/environmental-geography-lectureships/">Two lectureships</a> in Environmental&nbsp;Geography</li>
-<li><a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/lecturer-in-human-geography/">Lectureship</a> in Human&nbsp;Geography</li>
-</ol>
-
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/11/postdocs-lectureships-st-andrews/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2012/11/postdocs-lectureships-st-andrews/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-    1 / 3
-        <a href="http://www.carsonfarmer.com/category/announcement2.html">
+    1 / 9
+        <a href="http://www.carsonfarmer.com/index2.html">
             <i class="icon-arrow-right"></i>
         </a>
 </p>            </section><!-- /#content -->

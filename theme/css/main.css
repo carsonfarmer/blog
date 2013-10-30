@@ -781,6 +781,15 @@ article header .published {
     display: none;
 }
 
+#map {
+    z-index: -1; 
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
 #posts-list footer address {display: block;}
 
 	/* Blog Index */
