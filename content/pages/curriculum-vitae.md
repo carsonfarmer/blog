@@ -2,6 +2,7 @@ Title: Curriculum Vitae
 Date: 2008-09-09 06:10
 Author: cfarmer
 Slug: curriculum-vitae
+Location: 53.38461, -6.60057, 8
 
 ### Current Position
 

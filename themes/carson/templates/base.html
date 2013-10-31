@@ -24,20 +24,26 @@
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script type="text/javascript">
+            {% if page %}
+            var loc = [{{page.location}}];
+            {% else %}
+            var loc = [40.7684, -73.9637, 10];
+            {% endif %}
             function initialize() {
                 var layer = "watercolor";
                 var map = new L.Map("map", {
-                        center: new L.LatLng(40.67, -74.94),
-                        zoom: 10,
+                        center: new L.LatLng(loc[0], loc[1]),
+                        zoom: loc[2],
                         zoomControl: false
                     });
                 map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
-                
+             {% if not page %}
                 map.locate({setView: true, watch: true})
                   .on('locationfound', function(e) {
                     var marker = L.marker([e.latitude, e.longitude]).bindPopup('Thanks for stopping by!');
                     map.addLayer(marker);
                   });
+            {% endif %}
             }
         </script>
 </head> 

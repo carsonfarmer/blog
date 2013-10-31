@@ -4,6 +4,7 @@ Author: cfarmer
 Email: carson.farmer@gmail.com
 Slug: contact
 Status: hidden
+Location: 40.7684, -73.9637, 10
 
 <iframe width="425" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
     src="http://www.openstreetmap.org/export/embed.html?bbox=-74,40.7463,-73.9274,40.7905&amp;layer=mapnik&amp;marker=40.76870,-73.96504" 

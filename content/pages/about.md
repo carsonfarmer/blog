@@ -2,6 +2,7 @@ Title: About
 Date: 2008-08-01 16:50
 Author: cfarmer
 Slug: about
+Location: 48.60675, -123.42929, 6
 
 [![carson_farmer_border][image]{.right .contact}][link]
 
