@@ -19,11 +19,11 @@
 /***** Global *****/
 /* Body */
 body {
-    /*background: #F5F4EF;*/
+    background: #ECD0BA;
     color: #2e3436;
     /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
-    background: #d1d1d1 url(../images/side-bg.png) no-repeat;
-    background-attachment:fixed;
+    /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
+    /*background-attachment:fixed;*/
     /*font-size: 87.5%; /* Base font size: 14px */
     font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
     line-height: 1.429;

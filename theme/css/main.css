@@ -19,7 +19,7 @@
 /***** Global *****/
 /* Body */
 body {
-    /*background: #F5F4EF;*/
+    background: #ECD0BA;
     color: #2e3436;
     /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
     /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
@@ -28,7 +28,7 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
     line-height: 1.429;
     margin: 0;
-    padding: 0;
+    padding: 0; 
     text-align: left;
 }
 
