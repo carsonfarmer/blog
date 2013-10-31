@@ -3,7 +3,7 @@ Date: 2008-09-23 09:49
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Slug: spatial-software
-Location: 40.35, -39.24
+Location: 40.35, -39.24, 4
 
 ### Software development
 
