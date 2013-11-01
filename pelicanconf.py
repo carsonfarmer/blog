@@ -28,7 +28,7 @@ MARKUP = ("md", "ipynb")
 PLUGIN_PATH = "pelican-plugins/"
 PLUGINS = ['gravatar', 'latex', 'summary', 'liquid_tags.notebook']
 
-NOTEBOOK_DIR = 'notebooks'
+NOTEBOOK_DIR = 'notebooks' 
 
 SUMMARY_END_MARKER = "<!--more-->"
 
