@@ -1,89 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-10-15T09:40:00-04:00</updated><entry><title>ftools is dead… long live ftools!</title><link href="http://www.carsonfarmer.com/2013/10/ftools-is-no-more/" rel="alternate"></link><updated>2013-10-15T09:40:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-15:2013/10/ftools-is-no-more/</id><summary type="html">&lt;p&gt;I recently decided to drop &lt;code&gt;ftools.ca&lt;/code&gt;, since I hadn&amp;#8217;t updated it in a very long 
-time, and it was really just costing me money to keep a &amp;#8216;dead&amp;#8217; website up and 
-running. Additionally, with the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;a href="http://plugins.qgis.org/"&gt;plugin infrastructure&lt;/a&gt;, 
-hosting my own plugins (the website&amp;#8217;s primary purpose) was no longer needed. 
-The site has served me well for many years, and really helped get fTools (the 
-plugin) into the &lt;span class="caps"&gt;QGIS&lt;/span&gt; core codebase. The website has served its purpose, and 
-now that I have very little involvement with fTools and the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Processing 
-Toolbox that is poised to replace it, I&amp;#8217;m moving on: &lt;code&gt;ftools.ca&lt;/code&gt; is dead, long 
-live &lt;code&gt;ftools.ca&lt;/code&gt;!&lt;/p&gt;
-&lt;p&gt;However, now that &lt;a href="http://www.qgis.org/en/docs/index.html#documentation-for-qgis-2-0"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0&lt;/a&gt; has rolled out, it seems that at least 
-one part of ftools.ca is missed: my old cartogram plugin. If I 
-have some spare time, I&amp;#8217;ll try to update the plugin to the latest and 
-greatest &lt;a href="http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0 standards&lt;/a&gt; and upload it to the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; plugins 
-system. In the mean time, for those out there who would like to use it right 
-away, you can get the &lt;a href="http://www.carsonfarmer.com/uploads/cartogram.zip"&gt;original code from here&lt;/a&gt; or &lt;a href="https://github.com/cfarmer/cartogram-plugin"&gt;grab it from 
-github&lt;/a&gt;. In fact, if someone is able and willing, they can grab 
-the code from github, update it for &lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0, and submit a pull request which I 
-will (more than likely) happily&amp;nbsp;accept.&lt;/p&gt;
-</summary><category term="Update"></category><category term="Announcement"></category><category term="Web"></category><category term="QGIS"></category><category term="Cartogram"></category></entry><entry><title>Nathan Storey Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/" rel="alternate"></link><updated>2013-10-10T12:41:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-10:2013/10/guest-speaker-nathan-storey/</id><summary type="html">&lt;p&gt;&lt;a href="https://twitter.com/npstorey"&gt;Nathan Storey&lt;/a&gt; will be speaking to my spatial data analysis class 
-later today, October 10th, 2013, and you are invited to attend! Nathan is a 
-former &lt;a href="http://www.hunteruap.org/"&gt;Hunter Urban Affairs&lt;/a&gt; student and current Open Data Guru working 
-with &lt;a href="http://www.ontodia.com/"&gt;Ontodia&lt;/a&gt; doing &lt;span class="caps"&gt;GIS&lt;/span&gt;/open data projects for &lt;span class="caps"&gt;NYC&lt;/span&gt;. Check out 
-&lt;a href="http://nyc.pediacities.com/"&gt;PediaCities&lt;/a&gt;, their platform to curate, organize, and link data 
-about&amp;nbsp;cities.&lt;/p&gt;
-&lt;p&gt;This will be a great opportunity to see &lt;span class="caps"&gt;GIS&lt;/span&gt; data applied to real-world problem 
-sets here in &lt;span class="caps"&gt;NYC&lt;/span&gt;. The discussion will go approx 1 hour, beginning at 5:35 in 
-the large lab of Hunter College, &lt;span class="caps"&gt;CUNY&lt;/span&gt;, North Building, Room 1090B.  Due to the 
-location, no refreshments will be served, but its a good opportunity to feed 
-your brain&amp;nbsp;:)&lt;/p&gt;
-&lt;p&gt;Here is what Nathan (the speaker) has to say about this&amp;nbsp;talk:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I will be speaking to Carson Farmer&amp;#8217;s spatial data analysis class next week 
-about open data in &lt;span class="caps"&gt;NYC&lt;/span&gt;, data discovery, and &lt;a href="http://nyc.pediacities.com/"&gt;PediaCities&lt;/a&gt;, a 
-data encyclopedia project I&amp;#8217;ve been working on for the past 6&amp;nbsp;months. &lt;/p&gt;
-&lt;/blockquote&gt;
-</summary><category term="Guest Speaker"></category><category term="Open Data"></category><category term="Open Source"></category><category term="Data"></category></entry><entry><title>Re-imagining New York Streets</title><link href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/" rel="alternate"></link><updated>2013-10-08T14:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-08:2013/10/reimagine-new-york-streets/</id><summary type="html">&lt;p&gt;Here&amp;#8217;s a &lt;a href="http://www.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"&gt;&lt;span class="caps"&gt;TED&lt;/span&gt; talk&lt;/a&gt; from Janette Sadik-Khan, the New York City Transportation 
-Commissioner, on how they&amp;#8217;ve transformed New York City streets over the past 
-several&amp;nbsp;years.&lt;/p&gt;
-&lt;p&gt;I love the &lt;a href="http://citibikenyc.com/"&gt;Citi Bike&lt;/a&gt; program (especially the data), which she 
-helped introduce, so it is interesting to hear her talk about how and why the 
-program was started. There is also an interesting article on Sadik-Khan on the 
-&lt;span class="caps"&gt;TED&lt;/span&gt; &lt;a href="http://blog.ted.com/2013/10/08/better-roads-for-bikes-and-walkers-what-cities-inspire-janette-sadik-khan/"&gt;blog&lt;/a&gt; which provides some additional insight into her and the various 
-programs she&amp;#8217;s helped&amp;nbsp;develop.&lt;/p&gt;
-&lt;div class="youtube" align="center"&gt;
-    &lt;iframe width="560" height="315" 
-        src="http://embed.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"
-        frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen wmode="Opaque"&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-</summary><category term="Transportation"></category><category term="Video"></category><category term="Links"></category></entry><entry><title>Public transportation time warp</title><link href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/" rel="alternate"></link><updated>2013-10-01T13:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-01:2013/10/public-transportation-time-warp/</id><summary type="html">&lt;p&gt;I recently came across two extremely cool videos while preparing lectures for my
-transportation geography course. It is pretty cool to see the development of the 
-regions around the transportation network while the network itself remains 
-pretty much unchanged. Worth a quick&amp;nbsp;watch!&lt;/p&gt;
-&lt;p&gt;The first video depicts the London to Brighton Train Journey for three time 
-periods. In 1953, the &lt;span class="caps"&gt;BBC&lt;/span&gt; made a point-of-view film from a London to Brighton 
-train, 30 years later (1983) they did the same trip again, and again 
-30 years after that&amp;nbsp;(2013).&lt;/p&gt;
-&lt;div class="youtube" align="center"&gt;
-&lt;iframe width="640" height="360" 
-    src="//www.youtube.com/embed/tGTwSNPqAqs?wmode=transparent" 
-    frameborder="0" allowfullscreen wmode="Opaque"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The second video is from the Vancouver SkyTrain, with older footage (1985) from 
-&lt;span class="caps"&gt;BCRTC&lt;/span&gt;/Translink, and newer footage (2013) by Celgen Studios. You can get the 
-original Translink footage &lt;a href="http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=SV7rwEB_SOA"&gt;from here&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="youtube" align="center"&gt;
-&lt;iframe width="640" height="390" 
-    src="//www.youtube.com/embed/erodkwTS7sQ?wmode=transparent" frameborder="0" 
-    allowfullscreen wmode="Opaque"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</summary><category term="Visualisation"></category><category term="Transportation"></category><category term="Video"></category><category term="Links"></category></entry><entry><title>Maps as Art and Other Experiments</title><link href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="alternate"></link><updated>2013-09-27T17:25:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-09-27:2013/09/maps-art-other-experiments/</id><summary type="html">&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
-there has been a lot of &amp;#8216;buzz&amp;#8217; in the open source geospatial community about 
-all the cool new features that &lt;span class="caps"&gt;QGIS&lt;/span&gt; now boasts, and how far it has come in such 
-a short time. I was recently inspired by &lt;a href="http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/"&gt;such a post by Anita Graser (aka 
-Underdark)&lt;/a&gt; (who is a wonderfully talented cartographer/designer) on 
-data driven labeling in &lt;span class="caps"&gt;QGIS&lt;/span&gt;, so I thought I&amp;#8217;d throw something together on a 
-gray Friday afternoon to test it out. I also wanted an excuse to play around 
-with &lt;a href="http://lab.hakim.se/reveal-js/#/"&gt;Reveal.js&lt;/a&gt; slides in &lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;, so I produced 
-the following &lt;a href="http://www.carsonfarmer.com/examples/map_art/"&gt;slide show&lt;/a&gt; using the images from &lt;span class="caps"&gt;QGIS&lt;/span&gt; and some 
-IPython magic:
-&lt;iframe src=http://www.carsonfarmer.com/examples/map_art/ width=700 height=500&gt;&lt;/iframe&gt;&lt;/p&gt;
-</summary><category term="Visualisation"></category><category term="Python"></category><category term="Open Source"></category><category term="IPython"></category><category term="Mapping"></category></entry><entry><title>A Fresh Approach using Python: Introduction</title><link href="http://www.carsonfarmer.com/2013/09/statistical-modeling-python-introduction/" rel="alternate"></link><updated>2013-09-23T12:00:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-09-23:2013/09/statistical-modeling-python-introduction/</id><summary type="html">&lt;p&gt;Introducing a series of tutorials on using Python for introductory statistical&amp;nbsp;analysis.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-11-01T12:00:00-04:00</updated><entry><title>A Fresh Approach using Python: Introduction</title><link href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/" rel="alternate"></link><updated>2013-11-01T12:00:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-01:2013/11/statistical-modeling-python-introduction/</id><summary type="html">&lt;p&gt;Introducing a series of tutorials on using Python for introductory statistical&amp;nbsp;analysis.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Introducing a series of tutorials on using Python for introductory statistical analysis based on the &amp;#8216;Computational Technique&amp;#8217; sections of each chapter from &lt;a href="http://www.mosaic-web.org/go/StatisticalModeling/"&gt;&amp;#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&amp;#8217;&lt;/a&gt;. The goal of this series of tutorials is to show how all of the R analysis and commands used in the book can be done just as easily using the &lt;a href="http://python.org/"&gt;Python&lt;/a&gt; programming language. This has the dual goal of introducing &amp;#8216;Scientific Python&amp;#8217; to students learning statistics, as well as showcasing the recent advances in statistical computing that have been introduced to Python in recent years. Each tutorial in the series will cover the Computational Technique section of a different chapter from the book, starting with Section 1.4.3 from the introduction (which technically &lt;em&gt;isn&amp;#8217;t&lt;/em&gt; a Computational Technique section, but is a useful introduction none-the-less), which is &lt;a href="http://www.mosaic-web.org/go/StatisticalModeling/Chapters/"&gt;available online here&lt;/a&gt;. Note that many of these tutorials will require you to have read the corresponding chapter(s) from the book in order to be&amp;nbsp;useful.&lt;/p&gt;
@@ -1366,7 +1282,91 @@ h='&amp;#104;&amp;#x75;&amp;#110;&amp;#116;&amp;#x65;&amp;#114;&amp;#46;&amp;#x6
 document.write('&lt;a h'+'ref'+'="ma'+'ilto'+':'+e+'"&gt;'+'directed to me'+'&lt;\/'+'a'+'&gt;');
 // --&gt;
 &lt;/script&gt;&lt;noscript&gt;&amp;#100;&amp;#x69;&amp;#114;&amp;#x65;&amp;#x63;&amp;#116;&amp;#x65;&amp;#100;&amp;#32;&amp;#116;&amp;#x6f;&amp;#32;&amp;#x6d;&amp;#x65;&amp;#32;&amp;#40;&amp;#x63;&amp;#x61;&amp;#114;&amp;#x73;&amp;#x6f;&amp;#110;&amp;#46;&amp;#102;&amp;#x61;&amp;#114;&amp;#x6d;&amp;#x65;&amp;#114;&amp;#32;&amp;#x61;&amp;#116;&amp;#32;&amp;#104;&amp;#x75;&amp;#110;&amp;#116;&amp;#x65;&amp;#114;&amp;#32;&amp;#100;&amp;#x6f;&amp;#116;&amp;#32;&amp;#x63;&amp;#x75;&amp;#110;&amp;#x79;&amp;#32;&amp;#100;&amp;#x6f;&amp;#116;&amp;#32;&amp;#x65;&amp;#100;&amp;#x75;&amp;#x29;&lt;/noscript&gt;.&lt;/p&gt;
-&lt;/div&gt;&lt;/p&gt;</summary><category term="Helpful tips"></category><category term="Python"></category><category term="Statistical Modeling"></category><category term="Teaching"></category></entry><entry><title>Early Stage Researcher Position in GeoInformatics</title><link href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/" rel="alternate"></link><updated>2013-09-23T11:57:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-09-23:2013/09/researcher-position-geoInformatics/</id><summary type="html">&lt;p&gt;This is just a quick note about a great opportunity for early career researchers 
+&lt;/div&gt;&lt;/p&gt;</summary><category term="Helpful tips"></category><category term="Python"></category><category term="Statistical Modeling"></category><category term="Teaching"></category></entry><entry><title>ftools is dead… long live ftools!</title><link href="http://www.carsonfarmer.com/2013/10/ftools-is-no-more/" rel="alternate"></link><updated>2013-10-15T09:40:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-15:2013/10/ftools-is-no-more/</id><summary type="html">&lt;p&gt;I recently decided to drop &lt;code&gt;ftools.ca&lt;/code&gt;, since I hadn&amp;#8217;t updated it in a very long 
+time, and it was really just costing me money to keep a &amp;#8216;dead&amp;#8217; website up and 
+running. Additionally, with the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;a href="http://plugins.qgis.org/"&gt;plugin infrastructure&lt;/a&gt;, 
+hosting my own plugins (the website&amp;#8217;s primary purpose) was no longer needed. 
+The site has served me well for many years, and really helped get fTools (the 
+plugin) into the &lt;span class="caps"&gt;QGIS&lt;/span&gt; core codebase. The website has served its purpose, and 
+now that I have very little involvement with fTools and the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Processing 
+Toolbox that is poised to replace it, I&amp;#8217;m moving on: &lt;code&gt;ftools.ca&lt;/code&gt; is dead, long 
+live &lt;code&gt;ftools.ca&lt;/code&gt;!&lt;/p&gt;
+&lt;p&gt;However, now that &lt;a href="http://www.qgis.org/en/docs/index.html#documentation-for-qgis-2-0"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0&lt;/a&gt; has rolled out, it seems that at least 
+one part of ftools.ca is missed: my old cartogram plugin. If I 
+have some spare time, I&amp;#8217;ll try to update the plugin to the latest and 
+greatest &lt;a href="http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0 standards&lt;/a&gt; and upload it to the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; plugins 
+system. In the mean time, for those out there who would like to use it right 
+away, you can get the &lt;a href="http://www.carsonfarmer.com/uploads/cartogram.zip"&gt;original code from here&lt;/a&gt; or &lt;a href="https://github.com/cfarmer/cartogram-plugin"&gt;grab it from 
+github&lt;/a&gt;. In fact, if someone is able and willing, they can grab 
+the code from github, update it for &lt;span class="caps"&gt;QGIS&lt;/span&gt; 2.0, and submit a pull request which I 
+will (more than likely) happily&amp;nbsp;accept.&lt;/p&gt;
+</summary><category term="Update"></category><category term="Announcement"></category><category term="Web"></category><category term="QGIS"></category><category term="Cartogram"></category></entry><entry><title>Nathan Storey Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/" rel="alternate"></link><updated>2013-10-10T12:41:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-10:2013/10/guest-speaker-nathan-storey/</id><summary type="html">&lt;p&gt;&lt;a href="https://twitter.com/npstorey"&gt;Nathan Storey&lt;/a&gt; will be speaking to my spatial data analysis class 
+later today, October 10th, 2013, and you are invited to attend! Nathan is a 
+former &lt;a href="http://www.hunteruap.org/"&gt;Hunter Urban Affairs&lt;/a&gt; student and current Open Data Guru working 
+with &lt;a href="http://www.ontodia.com/"&gt;Ontodia&lt;/a&gt; doing &lt;span class="caps"&gt;GIS&lt;/span&gt;/open data projects for &lt;span class="caps"&gt;NYC&lt;/span&gt;. Check out 
+&lt;a href="http://nyc.pediacities.com/"&gt;PediaCities&lt;/a&gt;, their platform to curate, organize, and link data 
+about&amp;nbsp;cities.&lt;/p&gt;
+&lt;p&gt;This will be a great opportunity to see &lt;span class="caps"&gt;GIS&lt;/span&gt; data applied to real-world problem 
+sets here in &lt;span class="caps"&gt;NYC&lt;/span&gt;. The discussion will go approx 1 hour, beginning at 5:35 in 
+the large lab of Hunter College, &lt;span class="caps"&gt;CUNY&lt;/span&gt;, North Building, Room 1090B.  Due to the 
+location, no refreshments will be served, but its a good opportunity to feed 
+your brain&amp;nbsp;:)&lt;/p&gt;
+&lt;p&gt;Here is what Nathan (the speaker) has to say about this&amp;nbsp;talk:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I will be speaking to Carson Farmer&amp;#8217;s spatial data analysis class next week 
+about open data in &lt;span class="caps"&gt;NYC&lt;/span&gt;, data discovery, and &lt;a href="http://nyc.pediacities.com/"&gt;PediaCities&lt;/a&gt;, a 
+data encyclopedia project I&amp;#8217;ve been working on for the past 6&amp;nbsp;months. &lt;/p&gt;
+&lt;/blockquote&gt;
+</summary><category term="Guest Speaker"></category><category term="Open Data"></category><category term="Open Source"></category><category term="Data"></category></entry><entry><title>Re-imagining New York Streets</title><link href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/" rel="alternate"></link><updated>2013-10-08T14:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-08:2013/10/reimagine-new-york-streets/</id><summary type="html">&lt;p&gt;Here&amp;#8217;s a &lt;a href="http://www.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"&gt;&lt;span class="caps"&gt;TED&lt;/span&gt; talk&lt;/a&gt; from Janette Sadik-Khan, the New York City Transportation 
+Commissioner, on how they&amp;#8217;ve transformed New York City streets over the past 
+several&amp;nbsp;years.&lt;/p&gt;
+&lt;p&gt;I love the &lt;a href="http://citibikenyc.com/"&gt;Citi Bike&lt;/a&gt; program (especially the data), which she 
+helped introduce, so it is interesting to hear her talk about how and why the 
+program was started. There is also an interesting article on Sadik-Khan on the 
+&lt;span class="caps"&gt;TED&lt;/span&gt; &lt;a href="http://blog.ted.com/2013/10/08/better-roads-for-bikes-and-walkers-what-cities-inspire-janette-sadik-khan/"&gt;blog&lt;/a&gt; which provides some additional insight into her and the various 
+programs she&amp;#8217;s helped&amp;nbsp;develop.&lt;/p&gt;
+&lt;div class="youtube" align="center"&gt;
+    &lt;iframe width="560" height="315" 
+        src="http://embed.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"
+        frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen wmode="Opaque"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</summary><category term="Transportation"></category><category term="Video"></category><category term="Links"></category></entry><entry><title>Public transportation time warp</title><link href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/" rel="alternate"></link><updated>2013-10-01T13:15:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-01:2013/10/public-transportation-time-warp/</id><summary type="html">&lt;p&gt;I recently came across two extremely cool videos while preparing lectures for my
+transportation geography course. It is pretty cool to see the development of the 
+regions around the transportation network while the network itself remains 
+pretty much unchanged. Worth a quick&amp;nbsp;watch!&lt;/p&gt;
+&lt;p&gt;The first video depicts the London to Brighton Train Journey for three time 
+periods. In 1953, the &lt;span class="caps"&gt;BBC&lt;/span&gt; made a point-of-view film from a London to Brighton 
+train, 30 years later (1983) they did the same trip again, and again 
+30 years after that&amp;nbsp;(2013).&lt;/p&gt;
+&lt;div class="youtube" align="center"&gt;
+&lt;iframe width="640" height="360" 
+    src="//www.youtube.com/embed/tGTwSNPqAqs?wmode=transparent" 
+    frameborder="0" allowfullscreen wmode="Opaque"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The second video is from the Vancouver SkyTrain, with older footage (1985) from 
+&lt;span class="caps"&gt;BCRTC&lt;/span&gt;/Translink, and newer footage (2013) by Celgen Studios. You can get the 
+original Translink footage &lt;a href="http://www.youtube.com/watch?feature=player_detailpage&amp;amp;v=SV7rwEB_SOA"&gt;from here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="youtube" align="center"&gt;
+&lt;iframe width="640" height="390" 
+    src="//www.youtube.com/embed/erodkwTS7sQ?wmode=transparent" frameborder="0" 
+    allowfullscreen wmode="Opaque"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</summary><category term="Visualisation"></category><category term="Transportation"></category><category term="Video"></category><category term="Links"></category></entry><entry><title>Maps as Art and Other Experiments</title><link href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="alternate"></link><updated>2013-09-27T17:25:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-09-27:2013/09/maps-art-other-experiments/</id><summary type="html">&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
+there has been a lot of &amp;#8216;buzz&amp;#8217; in the open source geospatial community about 
+all the cool new features that &lt;span class="caps"&gt;QGIS&lt;/span&gt; now boasts, and how far it has come in such 
+a short time. I was recently inspired by &lt;a href="http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/"&gt;such a post by Anita Graser (aka 
+Underdark)&lt;/a&gt; (who is a wonderfully talented cartographer/designer) on 
+data driven labeling in &lt;span class="caps"&gt;QGIS&lt;/span&gt;, so I thought I&amp;#8217;d throw something together on a 
+gray Friday afternoon to test it out. I also wanted an excuse to play around 
+with &lt;a href="http://lab.hakim.se/reveal-js/#/"&gt;Reveal.js&lt;/a&gt; slides in &lt;a href="http://ipython.org/notebook.html"&gt;IPython notebook&lt;/a&gt;, so I produced 
+the following &lt;a href="http://www.carsonfarmer.com/examples/map_art/"&gt;slide show&lt;/a&gt; using the images from &lt;span class="caps"&gt;QGIS&lt;/span&gt; and some 
+IPython magic:
+&lt;iframe src=http://www.carsonfarmer.com/examples/map_art/ width=700 height=500&gt;&lt;/iframe&gt;&lt;/p&gt;
+</summary><category term="Visualisation"></category><category term="Python"></category><category term="Open Source"></category><category term="IPython"></category><category term="Mapping"></category></entry><entry><title>Early Stage Researcher Position in GeoInformatics</title><link href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/" rel="alternate"></link><updated>2013-09-23T11:57:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-09-23:2013/09/researcher-position-geoInformatics/</id><summary type="html">&lt;p&gt;This is just a quick note about a great opportunity for early career researchers 
 interested in the field of &lt;a href="http://en.wikipedia.org/wiki/Geoinformatics"&gt;geoinformatics&lt;/a&gt;. The &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;Centre for GeoInformatics&lt;/a&gt; at the
 &lt;a href="http://www.st-andrews.ac.uk/"&gt;University of St Andrews&lt;/a&gt; in Scotland has two new early career researcher positions
 available to start right away. These are really great opportunities for someone
