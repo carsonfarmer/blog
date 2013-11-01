@@ -7,7 +7,4 @@ Tags: Helpful tips, Python, Statistical Modeling, Teaching
 Slug: statistical-modeling-python-introduction
 Latex:
 
-Introducing a series of tutorials on using Python for introductory statistical 
-analysis.
-
 {% notebook tutorial_1_statistical_modeling_introduction.ipynb %}
