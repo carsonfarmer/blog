@@ -77,7 +77,7 @@ Hennig, C. (2007). [Cluster-wise assessment of cluster stability][].
 
 [modularity maximisation]: http://en.wikipedia.org/wiki/Modularity_(networks)
 [Jaccard coeffcient]: http://en.wikipedia.org/wiki/Jaccard_index
-[this algorithm]: |filename|/blog/community-structure-in-directed-weighted-networks.md
+[this algorithm]: {filename}/blog/community-structure-in-directed-weighted-networks.md
 [foreach]: http://cran.r-project.org/web/packages/foreach/index.html
 [Community structure in directed networks]: http://prl.aps.org/abstract/PRL/v100/i11/e118703
 [Cluster-wise assessment of cluster stability]: http://www.sciencedirect.com/science/article/B6V8V-4MJJMV8-1/2/303f8dd772cd73d54aea3a224b188005
