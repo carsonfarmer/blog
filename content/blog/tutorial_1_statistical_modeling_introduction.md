@@ -1,5 +1,5 @@
 Title: A Fresh Approach using Python: Introduction
-Date: 2013-09-23 12:00
+Date: 2013-11-01 12:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Statistical Modeling for Python
