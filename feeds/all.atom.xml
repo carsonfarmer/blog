@@ -964,7 +964,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(log_{e}(100)\)
+\(\log_{e}(100)\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.log(100)&lt;/code&gt;
@@ -972,7 +972,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(log_{10}(100)\)
+\(\log_{10}(100)\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.log10(100)&lt;/code&gt;
@@ -980,7 +980,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(log_{2}(100)\)
+\(\log_{2}(100)\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.log2(100)&lt;/code&gt;
@@ -988,7 +988,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(cos(\frac{\pi}{2})\)
+\(\cos(\frac{\pi}{2})\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.cos(np.pi/2)&lt;/code&gt;
@@ -996,7 +996,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(sin(\frac{\pi}{2})\)
+\(\sin(\frac{\pi}{2})\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.sin(np.pi/2)&lt;/code&gt;
@@ -1004,7 +1004,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(tan(\frac{\pi}{2})\)
+\(\tan(\frac{\pi}{2})\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.tan(np.pi/2)&lt;/code&gt;
@@ -1012,7 +1012,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(cos^{-1}(-1)\)
+\(\cos^{-1}(-1)\)
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.acos(-1)&lt;/code&gt;
