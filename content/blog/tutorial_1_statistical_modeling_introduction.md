@@ -10,4 +10,5 @@ Latex:
 {% notebook tutorial_1_statistical_modeling_introduction.ipynb %}
 
 As I put more of these tutorials online, you should be able to access 
-them easily by clicking or searching for |category|statistical-modeling-for-python
+them easily by [clicking]({category}statistical-modeling-for-python}) 
+or searching for "Statistical Modeling for Python".
