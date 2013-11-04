@@ -104,7 +104,6 @@ init_mathjax = function() {
                                             <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
                                             <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
                                             <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
-                                            <li><a href="http://cuny.is/cfarmer"><i class="icon-comment-alt"></i> cuny.is</a></li>
                                             <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
                                     </ul>
                                 </li>
@@ -116,11 +115,11 @@ init_mathjax = function() {
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/" rel="bookmark"
+        <a href="http://www.carsonfarmer.com/2013/09/statistical-modeling-python-introduction/" rel="bookmark"
            title="Permalink to A Fresh Approach using Python: Introduction">A Fresh Approach using Python:&nbsp;Introduction</a></h1>
-      <abbr class="published" title="2013-11-01T12:00:00">
+      <abbr class="published" title="2013-09-23T12:00:00">
           <i class="icon-calendar"></i>
-          Fri 01 November 2013
+          Mon 23 September 2013
       </abbr>
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -138,13 +137,10 @@ init_mathjax = function() {
 <script type="IN/Share" data-counter="right"></script>    </header>
 
     <div class="entry-content">
-      <p>Welcome to the first in a series of tutorials on using Python for introductory 
-statistical analysis. As I put more of these tutorials online, you should be 
-able to access them easily by <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">clicking</a> or searching for the relevant 
-category: &#8220;Statistical Modeling for&nbsp;Python&#8221;.</p>
+      <p>Introducing a series of tutorials on using Python for introductory statistical&nbsp;analysis.</p>
 <p>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This series of tutorials is based on the &#8216;Computational Technique&#8217; sections of each chapter from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a>. The goal of this series of tutorials is to show how all of the R analysis and commands used in the book can be done just as easily using the <a href="http://python.org/">Python</a> programming language. This has the dual goal of introducing &#8216;Scientific Python&#8217; to students learning statistics, as well as showcasing the recent advances in statistical computing that have been introduced to Python in recent years. Each tutorial in the series will cover the Computational Technique section of a different chapter from the book, starting with Section 1.4.3 from the introduction (which technically <em>isn&#8217;t</em> a Computational Technique section, but is a useful introduction none-the-less), which is <a href="http://www.mosaic-web.org/go/StatisticalModeling/Chapters/">available online here</a>. Note that many of these tutorials will require you to have read the corresponding chapter(s) from the book in order to be&nbsp;useful.</p>
+<p>Introducing a series of tutorials on using Python for introductory statistical analysis based on the &#8216;Computational Technique&#8217; sections of each chapter from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a>. The goal of this series of tutorials is to show how all of the R analysis and commands used in the book can be done just as easily using the <a href="http://python.org/">Python</a> programming language. This has the dual goal of introducing &#8216;Scientific Python&#8217; to students learning statistics, as well as showcasing the recent advances in statistical computing that have been introduced to Python in recent years. Each tutorial in the series will cover the Computational Technique section of a different chapter from the book, starting with Section 1.4.3 from the introduction (which technically <em>isn&#8217;t</em> a Computational Technique section, but is a useful introduction none-the-less), which is <a href="http://www.mosaic-web.org/go/StatisticalModeling/Chapters/">available online here</a>. Note that many of these tutorials will require you to have read the corresponding chapter(s) from the book in order to be&nbsp;useful.</p>
 <p>All the tutorials assume that Python is installed and running on your computer. To use the notebooks <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">associated with these tutorials</a>, you&#8217;ll also need to have <a href="http://ipython.org/">IPython</a> (with notebook) installed. There are plenty of resources online with information on <a href="http://ipython.org/">IPython</a>, <a href="http://ipython.org/notebook.html">Notebooks</a>, and <a href="http://ipython.org/install.html">installation instructions</a>) for both. You&#8217;ll also need to have the <a href="http://www.scipy.org/">Scientific Python</a> libraries installed for additional statistical functionality (we&#8217;ll also introduce some <a href="http://statsmodels.sourceforge.net/">other statistical libraries</a> in later tutorials), and <a href="http://matplotlib.org/">matplotlib</a> for plotting and&nbsp;visualization.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1107,7 +1103,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\log_{e}(100)\)
+\(log_{e}(100)\)
 </td>
     <td>
 <code>np.log(100)</code>
@@ -1115,7 +1111,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\log_{10}(100)\)
+\(log_{10}(100)\)
 </td>
     <td>
 <code>np.log10(100)</code>
@@ -1123,7 +1119,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\log_{2}(100)\)
+\(log_{2}(100)\)
 </td>
     <td>
 <code>np.log2(100)</code>
@@ -1131,7 +1127,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\cos(\frac{\pi}{2})\)
+\(cos(\frac{\pi}{2})\)
 </td>
     <td>
 <code>np.cos(np.pi/2)</code>
@@ -1139,7 +1135,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\sin(\frac{\pi}{2})\)
+\(sin(\frac{\pi}{2})\)
 </td>
     <td>
 <code>np.sin(np.pi/2)</code>
@@ -1147,7 +1143,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\tan(\frac{\pi}{2})\)
+\(tan(\frac{\pi}{2})\)
 </td>
     <td>
 <code>np.tan(np.pi/2)</code>
@@ -1155,7 +1151,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\cos^{-1}(-1)\)
+\(cos^{-1}(-1)\)
 </td>
     <td>
 <code>np.acos(-1)</code>
@@ -1440,8 +1436,8 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'directed to me'+'<\/'+'a'+
       <div class="comments">
         <div id="disqus_thread"></div>
         <script type="text/javascript">
-          var disqus_identifier = "2013/11/statistical-modeling-python-introduction/";
-          var disqus_url = "http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/";
+          var disqus_identifier = "2013/09/statistical-modeling-python-introduction/";
+          var disqus_url = "http://www.carsonfarmer.com/2013/09/statistical-modeling-python-introduction/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
