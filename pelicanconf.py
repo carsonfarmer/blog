@@ -58,7 +58,7 @@ MENUITEMS = (('About', 'about/', 'icon-info-sign'),
 
 DISQUS_SITENAME = "carsonfarmer"
 
-# which folders should be copied to output/static
+# Which folders should be copied to output/static
 STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt', 
                 'extras/favicon.ico', 'extras/404.html',
                 'extras/CNAME', 'examples'
@@ -81,6 +81,7 @@ SOCIAL = (('twitter', 'https://twitter.com/CarsonFarmer', 'icon-twitter'),
           ('academia.edu', 'http://hunter-cuny.academia.edu/CarsonFarmer','icon-book'),
           ('linkedin', 'http://www.linkedin.com/pub/carson-farmer/40/3bb/27/','icon-linkedin'),
           ('google+', 'https://plus.google.com/108062014159451325697/about/p/pub','icon-google-plus'),
+          ('cuny.is', 'http://cuny.is/cfarmer', 'icon-comment-alt'),
           ('email', 'mailto:carson.farmer@gmail.com', 'icon-envelope'),)
 
 TWITTER_USERNAME = 'CarsonFarmer'
