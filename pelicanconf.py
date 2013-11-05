@@ -71,7 +71,7 @@ EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
                       }
 
 # Blogroll
-LINKS =  (('Reserach','research/','icon-bar-chart'),
+LINKS =  (('Research','research/','icon-bar-chart'),
           ('Software', 'spatial-software/','icon-code'),)
 
 # Social widget
