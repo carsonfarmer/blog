@@ -82,7 +82,7 @@ init_mathjax = function() {
                                         <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
                                         <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
                                         <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
-                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Reserach</a></li>
+                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Research</a></li>
                                                 <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
                                         </ul>
                                     </li>
@@ -1165,6 +1165,7 @@ Python
 
 <p>Numbers can be written in <strong>scientific notation</strong>. For example, the &#8216;universal gravitational constant&#8217; that describes the gravitational attraction between masses is \(6.67428 \times 10^{11}\) (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as <code>6.67428e-11</code>. The Avogadro constant, which gives the number of atoms in a mole, is \(6.02214179 \times 10^{23}\) per mole, or <code>6.02214179e+23</code>.</p>
 <p>The computer language does not directly support the recording of units. This is unfortunate, since in the real world numbers often have units and the units matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because the design engineers specified the engine&#8217;s thrust in units of pounds, while the guidance engineers thought the units were&nbsp;newtons.</p>
+<p><span class="note right shadow"> There are <em>some</em> Python packages for handling units, including <a href="https://pint.readthedocs.org/en/latest/">pint</a>, <a href="http://pythonhosted.org/quantities/">quantities</a>, <a href="https://pypi.python.org/pypi/units/">units</a>, <a href="http://docs.sympy.org/latest/modules/physics/units.html">sympy.physics.units</a>, <a href="http://conference.scipy.org/scipy2013/presentation_detail.php?id=174">etc</a>. </span></p>
 <p>Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, \(sin(\pi) = 0\), however, the computer does not duplicate the mathematical relationship&nbsp;exactly:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
@@ -1415,15 +1416,15 @@ In&nbsp;[34]:
 <p>As it happens, there was no object named <code>python</code> because it had not been defined by any previous assignment command. So, the computer generated an error. For the most part, you will not need to use vary many operators on text data when doing statistical analyses; you just need to remember to include text, such as file names, in quotation marks, <code>&quot;like this&quot;</code>.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="references">References</h3>
-<p>As with all &#8216;Statistical Modeling: A Fresh Approach for Python&#8217; tutorials, this tutorial is based directly on material from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a> by <a href="http://www.macalester.edu/~kaplan/">Daniel Kaplan</a>.</p>
+<h3 id="reference">Reference</h3>
+<p>As with all &#8216;Statistical Modeling: A Fresh Approach for Python&#8217; tutorials, this tutorial is based directly on material from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a> by <a href="http://www.macalester.edu/~kaplan/">Daniel Kaplan</a>. This tutorial is based on Chapter 1:&nbsp;Introduction.</p>
 <p>Another useful source of information for statistics in Python is this <a href="http://work.thaslwanter.at/Stats/html/">introduction to statistics</a> web-book by Thomas Haslwanter which is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported&nbsp;License.</p>
 <p>I have made an effort to keep the text and explanations consistent between the original (R-based) version and the Python tutorials, in order to keep things comparable. With that in mind, any errors, omissions, and/or differences between the two versions are mine, and any questions, comments, and/or concerns should be <script type="text/javascript">
 <!--
-h='&#104;&#x75;&#110;&#116;&#x65;&#114;&#46;&#x63;&#x75;&#110;&#x79;&#46;&#x65;&#100;&#x75;';a='&#64;';n='&#x63;&#x61;&#114;&#x73;&#x6f;&#110;&#46;&#102;&#x61;&#114;&#x6d;&#x65;&#114;';e=n+a+h;
+h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#x63;&#x61;&#114;&#x73;&#x6f;&#110;&#46;&#102;&#x61;&#114;&#x6d;&#x65;&#114;';e=n+a+h;
 document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'directed to me'+'<\/'+'a'+'>');
 // -->
-</script><noscript>&#100;&#x69;&#114;&#x65;&#x63;&#116;&#x65;&#100;&#32;&#116;&#x6f;&#32;&#x6d;&#x65;&#32;&#40;&#x63;&#x61;&#114;&#x73;&#x6f;&#110;&#46;&#102;&#x61;&#114;&#x6d;&#x65;&#114;&#32;&#x61;&#116;&#32;&#104;&#x75;&#110;&#116;&#x65;&#114;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x75;&#110;&#x79;&#32;&#100;&#x6f;&#116;&#32;&#x65;&#100;&#x75;&#x29;</noscript>.</p>
+</script><noscript>&#100;&#x69;&#114;&#x65;&#x63;&#116;&#x65;&#100;&#32;&#116;&#x6f;&#32;&#x6d;&#x65;&#32;&#40;&#x63;&#x61;&#114;&#x73;&#x6f;&#110;&#46;&#102;&#x61;&#114;&#x6d;&#x65;&#114;&#32;&#x61;&#116;&#32;&#x67;&#x6d;&#x61;&#x69;&#108;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x6f;&#x6d;&#x29;</noscript>.</p>
 </div></p>
     <p class="category">
         <i class="icon-certificate"></i>
