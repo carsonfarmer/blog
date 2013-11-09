@@ -1,5 +1,1145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/statistical-modeling-for-python.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 01 Nov 2013 12:00:00 -0400</lastBuildDate><item><title>A Fresh Approach using Python: Introduction</title><link>http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/</link><description>&lt;p&gt;Welcome to the first in a series of tutorials on using Python for introductory 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/statistical-modeling-for-python.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 09 Nov 2013 12:00:00 -0500</lastBuildDate><item><title>Data: Cases, Variables, Samples</title><link>http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/</link><description>&lt;p&gt;The second in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
+statistical analysis, this tutorial covers &lt;strong&gt;data&lt;/strong&gt;, including cases, variables, 
+samples, and a whole lot&amp;nbsp;more.&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Data used in statistical modeling are usually organized into tables, often created using spreadsheet software. Most people presume that the same software used to create a table of data should be used to display and analyze it. This is part of the reason for the popularity of spreadsheet programs such as &amp;#8216;Excel&amp;#8217; and &amp;#8216;Google&amp;nbsp;Spreadsheets&amp;#8217;.&lt;/p&gt;
+&lt;p&gt;For serious statistical work, it&amp;#8217;s helpful to take another approach that strictly separates the processes of data collection and of data analysis: use one program to create data ﬁles and another program to analyze the data stored in those ﬁles. By doing this, one guarantees that the original data are not modiﬁed accidentally in the process of analyzing them. This also makes it possible to perform many diﬀerent analyses of the data; modelers often create and compare many diﬀerent models of the same&amp;nbsp;data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="reading-tabular-data-into-python"&gt;Reading Tabular Data into&amp;nbsp;Python&lt;/h2&gt;
+&lt;p&gt;Data is central to statistics, and the tabular arrangement of data is very common. Accordingly, Python provides a large number of ways to read in tabular data. These vary depending on how the data are stored, where they are located, etc. To help keep things as simple as possible, the &amp;#8216;pandas&amp;#8217; Python library iprovides an operator, &lt;code&gt;read_csv()&lt;/code&gt; that allows you to access data ﬁles in tabular format on your computer as well as data stored in repositories such as the one associated with the &amp;#8216;Statistical Modeling: A Fresh Approach&amp;#8217; book, or one that a course instructor might set up for his or her&amp;nbsp;students.&lt;/p&gt;
+&lt;p&gt;The &amp;#8216;pandas&amp;#8217; library is &lt;a href="http://pandas.pydata.org/"&gt;available here&lt;/a&gt;, and you can follow these &lt;a href="http://pandas.pydata.org/pandas-docs/stable/install.html"&gt;installation instructions&lt;/a&gt; to get it working on your computer (installation via &lt;code&gt;pip&lt;/code&gt; is the easiest method). Once you have &amp;#8216;pandas&amp;#8217; installed, you need to &lt;code&gt;import pandas&lt;/code&gt; in order to to use &lt;code&gt;read_csv()&lt;/code&gt;, as well as a variety of other &amp;#8216;pandas&amp;#8217; operators that you will encounter later (it is also usually a good idea to &lt;code&gt;import numpy as np&lt;/code&gt; at the same time that we &lt;code&gt;import pandas as pd&lt;/code&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;span class="note left shadow"&gt; An alternative to writing &lt;code&gt;pds.xxx&lt;/code&gt; when calling each &amp;#8216;pandas&amp;#8217; operator is to import all available operators from &amp;#8216;pandas&amp;#8217; at once: &lt;code&gt;from pandas import *&lt;/code&gt;. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&amp;nbsp;name. &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[1]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;You need do this only once in each session of Python, and on systems such as IPython, the library will sometimes be reloaded automatically (if you get an error message, it’s likely that the &amp;#8216;pandas&amp;#8217; library has not been installed on your system. Follow the installation instructions provided at the link&amp;nbsp;above.)&lt;/p&gt;
+&lt;p&gt;Reading in a data table that’s been connected with &lt;code&gt;read_csv()&lt;/code&gt; is simply a matter of knowing the name (and location) of the data set. For instance, one data table used in examples in the &amp;#8216;Statistical Modeling: A Fresh Approach&amp;#8217; book is &lt;code&gt;&amp;quot;swim100m.csv&amp;quot;&lt;/code&gt;. To read in this data table and create an object in Python that contains the data, use a command like&amp;nbsp;this:&lt;/p&gt;
+&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/swim100m.csv"&gt;&lt;code&gt;swim100m.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[2]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.mosaic-web.org/go/datasets/swim100m.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The csv part of the name in &lt;code&gt;&amp;quot;swim100m.csv&amp;quot;&lt;/code&gt; indicates that the ﬁle has been stored in a particular data format, comma-separated values that is handled by spreadsheet software as well as many other kinds of software. The part of this command that requires creativity is choosing a name for the Python object that will hold the data. In the above command it is called &lt;code&gt;swim&lt;/code&gt;, but you might prefer another name (e.g., &lt;code&gt;s&lt;/code&gt; or &lt;code&gt;sdata&lt;/code&gt; or even &lt;code&gt;ralph&lt;/code&gt;). Of course, it&amp;#8217;s sensible to choose names that are short, easy to type and remember, and remind you what the contents of the object are&amp;nbsp;about.&lt;/p&gt;
+&lt;p&gt;To help you identify data tables that can be accessed through &lt;code&gt;read_csv()&lt;/code&gt;, examples from these tutorials will be marked with a flag &lt;i class="icon-flag"&gt;&lt;/i&gt; containing the name of the data file. The files themselves are mostly available automatically through the web site for the &amp;#8216;Statistical Modeling: A Fresh Approach&amp;#8217;&amp;nbsp;book.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="data-frames"&gt;Data&amp;nbsp;Frames&lt;/h3&gt;
+&lt;p&gt;The type of Python object created by &lt;code&gt;read_csv()&lt;/code&gt; is called a data frame and is essentially a tabular layout. To illustrate, here are the ﬁrst several cases of the &lt;code&gt;swim&lt;/code&gt; data frame created by the previous use of &lt;code&gt;read_csv()&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[3]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[3]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+&lt;div class="output_html rendered_html"&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;year&lt;/th&gt;
+      &lt;th&gt;time&lt;/th&gt;
+      &lt;th&gt;sex&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt; 1905&lt;/td&gt;
+      &lt;td&gt; 65.8&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt; 1908&lt;/td&gt;
+      &lt;td&gt; 65.6&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt; 1910&lt;/td&gt;
+      &lt;td&gt; 62.8&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt; 1912&lt;/td&gt;
+      &lt;td&gt; 61.6&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt; 1918&lt;/td&gt;
+      &lt;td&gt; 61.4&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Note that the &lt;code&gt;head()&lt;/code&gt; function, one of several functions built-into &amp;#8216;pandas&amp;#8217; data frames, is a function of the Python object (data frame) itself; not from the main &amp;#8216;pandas&amp;#8217;&amp;nbsp;library.&lt;/p&gt;
+&lt;p&gt;Data frames, like tabular data generally, involve variables and cases. In &amp;#8216;pandas&amp;#8217; data frames, each of the variables is given a name. You can refer to the variable by name in a couple of diﬀerent ways. To see the variable names in a data frame, something you might want to do to remind yourself of how names a spelled and capitalized, use the &lt;code&gt;columns&lt;/code&gt; attribute of the data frame&amp;nbsp;object:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[4]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[4]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+Index([u&amp;apos;year&amp;apos;, u&amp;apos;time&amp;apos;, u&amp;apos;sex&amp;apos;], dtype=object)
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Note that we have &lt;strong&gt;not&lt;/strong&gt; used brackets &lt;code&gt;()&lt;/code&gt; in the above command. This is because &lt;code&gt;columns&lt;/code&gt; is not a function; it is an &lt;em&gt;attribute&lt;/em&gt; of the data frame. Attributes add &amp;#8216;extra&amp;#8217; information (or metadata) to objects in the form of additional Python objects. In this case, the attributes describe the names (and data types) of the columns. Another way to get quick information about the variables in a data frame is with &lt;code&gt;describe()&lt;/code&gt;:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[5]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;describe&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[5]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+&lt;div class="output_html rendered_html"&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;year&lt;/th&gt;
+      &lt;th&gt;time&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;count&lt;/th&gt;
+      &lt;td&gt;   62.000000&lt;/td&gt;
+      &lt;td&gt; 62.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;mean&lt;/th&gt;
+      &lt;td&gt; 1952.145161&lt;/td&gt;
+      &lt;td&gt; 59.924194&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;std&lt;/th&gt;
+      &lt;td&gt;   29.472881&lt;/td&gt;
+      &lt;td&gt;  9.916588&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;min&lt;/th&gt;
+      &lt;td&gt; 1905.000000&lt;/td&gt;
+      &lt;td&gt; 47.840000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;25%&lt;/th&gt;
+      &lt;td&gt; 1924.500000&lt;/td&gt;
+      &lt;td&gt; 53.642500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;50%&lt;/th&gt;
+      &lt;td&gt; 1956.500000&lt;/td&gt;
+      &lt;td&gt; 56.880000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;75%&lt;/th&gt;
+      &lt;td&gt; 1975.750000&lt;/td&gt;
+      &lt;td&gt; 65.200000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;max&lt;/th&gt;
+      &lt;td&gt; 2004.000000&lt;/td&gt;
+      &lt;td&gt; 95.000000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;This provides a numerical summary of each of the variables contained in the data frame. To keep things simple, the output from &lt;code&gt;describe()&lt;/code&gt; is itself a data&amp;nbsp;frame.&lt;/p&gt;
+&lt;p&gt;There are lots of different functions and attributes available for data frames (and any other Python objects). For instance, to see how many cases and variables there are in a data frame, you can use the &lt;code&gt;shape&lt;/code&gt; attribute:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[6]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[6]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+(62, 3)
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="variables-in-data-frames"&gt;Variables in Data&amp;nbsp;Frames&lt;/h3&gt;
+&lt;p&gt;Perhaps the most common operation on a data frame is to refer to the values in a single variable. The two ways you will most commonly use involve referring to a variable by string-quoted name (&lt;code&gt;swim[&amp;quot;year&amp;quot;]&lt;/code&gt;) and as an attribute of a data frame without quotes (&lt;code&gt;swim.year&lt;/code&gt;).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;span class="note right shadow"&gt; Each column or variable in a &amp;#8216;pandas&amp;#8217; data frame is called a &amp;#8216;series&amp;#8217;, and each series can contain one of many different data types. For more information on series&amp;#8217;, data frames, and other objects in &amp;#8216;pandas&amp;#8217;, &lt;a href="http://pandas.pydata.org/pandas-docs/dev/dsintro.html"&gt;have a look here&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Most of the statistical modeling functions you will encounter in these tutorials are designed to work with data frames and allow you to refer directly to variables within a data frame. For&amp;nbsp;instance:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[7]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[7]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+1952.1451612903227
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[8]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;year&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[8]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+1905
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;It is also possible to combine &amp;#8216;numpy&amp;#8217; operators with &amp;#8216;pandas&amp;#8217;&amp;nbsp;variables:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[9]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;year&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[9]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+1905
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[10]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[10]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+1905
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The &lt;code&gt;swim&lt;/code&gt; portion of the above commands tells Python which data frame we want to operate on. Leaving oﬀ that argument leads to an&amp;nbsp;error:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[11]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;min&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyerr"&gt;
+&lt;pre&gt;
+&lt;span class="ansired"&gt;---------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="ansired"&gt;NameError&lt;/span&gt;                                 Traceback (most recent call last)
+&lt;span class="ansigreen"&gt;&amp;lt;ipython-input-11-2ef03df1cde8&amp;gt;&lt;/span&gt; in &lt;span class="ansicyan"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;&lt;span class="ansiblue"&gt;()&lt;/span&gt;
+&lt;span class="ansigreen"&gt;----&amp;gt; 1&lt;/span&gt;&lt;span class="ansiyellow"&gt; &lt;/span&gt;year&lt;span class="ansiyellow"&gt;.&lt;/span&gt;min&lt;span class="ansiyellow"&gt;(&lt;/span&gt;&lt;span class="ansiyellow"&gt;)&lt;/span&gt;&lt;span class="ansiyellow"&gt;&lt;/span&gt;
+
+&lt;span class="ansired"&gt;NameError&lt;/span&gt;: name &amp;apos;year&amp;apos; is not defined&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Of course, you know that the variable year is deﬁned &lt;em&gt;within&lt;/em&gt; the data frame &lt;code&gt;swim&lt;/code&gt;, but you have to tell Python which data frame you want to operate on explicitly, otherwise it doesn’t know where to find the variable(s). Think of this notation as referring to the variable by both its family name (the data frame’s name,&lt;code&gt;&amp;quot;swim&amp;quot;&lt;/code&gt;) and its given name (&lt;code&gt;&amp;quot;year&amp;quot;&lt;/code&gt;), something like &lt;code&gt;einstein.albert&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The advantage of referring to variables by name becomes evident when you construct statements that involve more than one variable within a data frame. For instance, here&amp;#8217;s a calculation of the mean year, separately for (grouping by) the different&amp;nbsp;sexes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[12]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;sex&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;year&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[12]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+sex
+F      1950.677419
+M      1953.612903
+Name: year, dtype: float64
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;You will see much more of the &lt;code&gt;groupby&lt;/code&gt; function, starting in Tutorial 4 (Group-wise Models). It&amp;#8217;s the &amp;#8216;pandas&amp;#8217; way of grouping or aggregating data frames. In subsequent chapters, we will build on this notion to develop more complex ways of &amp;#8220;grouping&amp;#8221; and &amp;#8220;modeling&amp;#8221; variables &amp;#8220;by&amp;#8221; other&amp;nbsp;variables.&lt;/p&gt;
+&lt;p&gt;Both the &lt;code&gt;mean()&lt;/code&gt; and &lt;code&gt;min()&lt;/code&gt; functions have been arranged by the &amp;#8216;pandas&amp;#8217; library to look in the data frame when interpreting variables, but not all Python functions are designed this way. For&amp;nbsp;instance:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[13]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyerr"&gt;
+&lt;pre&gt;
+&lt;span class="ansired"&gt;---------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="ansired"&gt;AttributeError&lt;/span&gt;                            Traceback (most recent call last)
+&lt;span class="ansigreen"&gt;&amp;lt;ipython-input-13-e6382fdf6716&amp;gt;&lt;/span&gt; in &lt;span class="ansicyan"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;&lt;span class="ansiblue"&gt;()&lt;/span&gt;
+&lt;span class="ansigreen"&gt;----&amp;gt; 1&lt;/span&gt;&lt;span class="ansiyellow"&gt; &lt;/span&gt;swim&lt;span class="ansiyellow"&gt;.&lt;/span&gt;year&lt;span class="ansiyellow"&gt;.&lt;/span&gt;sqrt&lt;span class="ansiyellow"&gt;(&lt;/span&gt;&lt;span class="ansiyellow"&gt;)&lt;/span&gt;&lt;span class="ansiyellow"&gt;&lt;/span&gt;
+
+&lt;span class="ansired"&gt;AttributeError&lt;/span&gt;: &amp;apos;Series&amp;apos; object has no attribute &amp;apos;sqrt&amp;apos;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;When you encounter a function that isn&amp;#8217;t supported by data frames, you can use &amp;#8216;numpy&amp;#8217; functions and the special &lt;code&gt;apply&lt;/code&gt; function built-into data frames (note that the &lt;code&gt;func&lt;/code&gt; argument is&amp;nbsp;optional):&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[14]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;func&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# There are 62 cases in total&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[14]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+0    43.646306
+1    43.680659
+2    43.703547
+3    43.726422
+4    43.794977
+Name: year, dtype: float64
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Alternatively, since columns are basically just arrays, we can use built-in numpy functions directly on the&amp;nbsp;columns:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[15]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;year&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c"&gt;# Again, there are 62 cases in total&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[15]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+0    43.646306
+1    43.680659
+2    43.703547
+3    43.726422
+4    43.794977
+Name: year, dtype: float64
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="adding-a-new-variable"&gt;Adding a New&amp;nbsp;Variable&lt;/h3&gt;
+&lt;p&gt;Sometimes you will compute a new quantity from the existing variables and want to treat this as a new variable. Adding a new variable to a data frame can be done similarly to &lt;em&gt;accessing&lt;/em&gt; a variable. For instance, here is how to create a new variable in &lt;code&gt;swim&lt;/code&gt; that holds the &lt;code&gt;time&lt;/code&gt; converted from seconds to units of&amp;nbsp;minutes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[16]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;minutes&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;60.&lt;/span&gt; &lt;span class="c"&gt;# or swim[&amp;#39;time&amp;#39;]/60.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;By default, columns get inserted at the end. The &lt;code&gt;insert&lt;/code&gt; function is available to insert at a particular location in the&amp;nbsp;columns.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[17]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;mins&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;60.&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;You could also, if you want, redeﬁne an existing variable, for&amp;nbsp;instance:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[18]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;time&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mf"&gt;60.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;As always, we can take a quick look at the results of our operations by using the &lt;code&gt;head()&lt;/code&gt; fuction of our data&amp;nbsp;frame:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[19]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;swim&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[19]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+&lt;div class="output_html rendered_html"&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;year&lt;/th&gt;
+      &lt;th&gt;mins&lt;/th&gt;
+      &lt;th&gt;time&lt;/th&gt;
+      &lt;th&gt;sex&lt;/th&gt;
+      &lt;th&gt;minutes&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;0&lt;/th&gt;
+      &lt;td&gt; 1905&lt;/td&gt;
+      &lt;td&gt; 1.096667&lt;/td&gt;
+      &lt;td&gt; 1.096667&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+      &lt;td&gt; 1.096667&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;1&lt;/th&gt;
+      &lt;td&gt; 1908&lt;/td&gt;
+      &lt;td&gt; 1.093333&lt;/td&gt;
+      &lt;td&gt; 1.093333&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+      &lt;td&gt; 1.093333&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;2&lt;/th&gt;
+      &lt;td&gt; 1910&lt;/td&gt;
+      &lt;td&gt; 1.046667&lt;/td&gt;
+      &lt;td&gt; 1.046667&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+      &lt;td&gt; 1.046667&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3&lt;/th&gt;
+      &lt;td&gt; 1912&lt;/td&gt;
+      &lt;td&gt; 1.026667&lt;/td&gt;
+      &lt;td&gt; 1.026667&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+      &lt;td&gt; 1.026667&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4&lt;/th&gt;
+      &lt;td&gt; 1918&lt;/td&gt;
+      &lt;td&gt; 1.023333&lt;/td&gt;
+      &lt;td&gt; 1.023333&lt;/td&gt;
+      &lt;td&gt; M&lt;/td&gt;
+      &lt;td&gt; 1.023333&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Such assignment operations do not change the original file from which the data were read, only the data frame in the current session of Python. This is an advantage, since it means that your data in the data file stay in their original state and therefore won’t be corrupted by operations made during&amp;nbsp;analysis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="sampling-from-a-sample-frame"&gt;Sampling from a Sample&amp;nbsp;Frame&lt;/h2&gt;
+&lt;p&gt;Much of statistical analysis is concerned with the consequences of drawing a sample from the population. Ideally, you will have a sampling frame that lists every member of the population from which the sample is to be drawn. With this in hand, you could treat the individual cases in the sampling frame as if they were cards in a deck of hands. To pick your random sample, shuffle the deck and deal out the desired number of&amp;nbsp;cards.&lt;/p&gt;
+&lt;p&gt;When doing real work in the ﬁeld, you would use the randomly dealt cards to locate the real-world cases they correspond to. Sometimes in these tutorials, however, in order to let you explore the consequences of sampling, you will select a sample from an existing data set. For example, the &lt;code&gt;&amp;quot;kidsfeet.csv&amp;quot;&lt;/code&gt; data set has &lt;code&gt;n=39&lt;/code&gt; cases.&lt;/p&gt;
+&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/kidsfeet.csv"&gt;&lt;code&gt;kidsfeet.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[20]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;kids&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.mosaic-web.org/go/datasets/kidsfeet.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shape&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[20]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+
+&lt;pre&gt;
+(39, 8)
+&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;There are a number of procedures to draw a random sample of 5 cases from this data frame. The preferred option however, is to randomly select a subset of case ids (in this case 5) using &lt;code&gt;np.random.choice&lt;/code&gt;, and return a subsetted data frame using the &lt;code&gt;ix[]&lt;/code&gt; operator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;span class="note left shadow"&gt; The &lt;code&gt;ix[]&lt;/code&gt; property is a bit tricky to figure out at first. For more information, see &lt;a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html"&gt;the official docs&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[21]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;rows&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;choice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ix&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[21]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+&lt;div class="output_html rendered_html"&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt;birthmonth&lt;/th&gt;
+      &lt;th&gt;birthyear&lt;/th&gt;
+      &lt;th&gt;length&lt;/th&gt;
+      &lt;th&gt;width&lt;/th&gt;
+      &lt;th&gt;sex&lt;/th&gt;
+      &lt;th&gt;biggerfoot&lt;/th&gt;
+      &lt;th&gt;domhand&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;23&lt;/th&gt;
+      &lt;td&gt;    Erica&lt;/td&gt;
+      &lt;td&gt;  9&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 24.5&lt;/td&gt;
+      &lt;td&gt; 9.0&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;16&lt;/th&gt;
+      &lt;td&gt; Caroline&lt;/td&gt;
+      &lt;td&gt; 12&lt;/td&gt;
+      &lt;td&gt; 87&lt;/td&gt;
+      &lt;td&gt; 24.0&lt;/td&gt;
+      &lt;td&gt; 8.7&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4 &lt;/th&gt;
+      &lt;td&gt;     Lang&lt;/td&gt;
+      &lt;td&gt;  2&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 25.1&lt;/td&gt;
+      &lt;td&gt; 8.9&lt;/td&gt;
+      &lt;td&gt; B&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;32&lt;/th&gt;
+      &lt;td&gt;    Leigh&lt;/td&gt;
+      &lt;td&gt;  3&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 24.5&lt;/td&gt;
+      &lt;td&gt; 8.6&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;7 &lt;/th&gt;
+      &lt;td&gt;  Caitlin&lt;/td&gt;
+      &lt;td&gt;  6&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 23.0&lt;/td&gt;
+      &lt;td&gt; 8.8&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;&lt;span class="note right shadow"&gt; To make things a bit more concise, you can &lt;code&gt;import np.random.choice as choice&lt;/code&gt;, which will allow you to simply use &lt;code&gt;choice()&lt;/code&gt; without including the library &lt;em&gt;and&lt;/em&gt; module when&amp;nbsp;typing. &lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;This can also be done in a single&amp;nbsp;line:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[22]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ix&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;choice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[22]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+&lt;div class="output_html rendered_html"&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt;birthmonth&lt;/th&gt;
+      &lt;th&gt;birthyear&lt;/th&gt;
+      &lt;th&gt;length&lt;/th&gt;
+      &lt;th&gt;width&lt;/th&gt;
+      &lt;th&gt;sex&lt;/th&gt;
+      &lt;th&gt;biggerfoot&lt;/th&gt;
+      &lt;th&gt;domhand&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;19&lt;/th&gt;
+      &lt;td&gt; Heather&lt;/td&gt;
+      &lt;td&gt; 3&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 25.5&lt;/td&gt;
+      &lt;td&gt; 9.5&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;4 &lt;/th&gt;
+      &lt;td&gt;    Lang&lt;/td&gt;
+      &lt;td&gt; 2&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 25.1&lt;/td&gt;
+      &lt;td&gt; 8.9&lt;/td&gt;
+      &lt;td&gt; B&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;3 &lt;/th&gt;
+      &lt;td&gt;    Josh&lt;/td&gt;
+      &lt;td&gt; 1&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 25.2&lt;/td&gt;
+      &lt;td&gt; 9.8&lt;/td&gt;
+      &lt;td&gt; B&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;31&lt;/th&gt;
+      &lt;td&gt; Caitlin&lt;/td&gt;
+      &lt;td&gt; 7&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 22.5&lt;/td&gt;
+      &lt;td&gt; 8.6&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;7 &lt;/th&gt;
+      &lt;td&gt; Caitlin&lt;/td&gt;
+      &lt;td&gt; 6&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 23.0&lt;/td&gt;
+      &lt;td&gt; 8.8&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;The results returned by the above methods will never contain the same case more than once (because we told the function &lt;em&gt;not&lt;/em&gt; to sample with replacement), just as if you were dealing cards from a shuffled deck. In contrast, &amp;#8216;re-sampling with replacement&amp;#8217; replaces each case after it is dealt so that it can appear more than once in the result. You wouldn’t want to do this to select from a sampling frame, but it turns out that there are valuable statistical uses for this sort of sampling with &lt;strong&gt;replacement&lt;/strong&gt;. You’ll make use of re-sampling in Tutorial 5 (Conﬁdence&amp;nbsp;Intervals).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell vbox"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;
+In&amp;nbsp;[23]:
+&lt;/div&gt;
+&lt;div class="input_area box-flex1"&gt;
+&lt;div class="highlight-ipynb"&gt;&lt;pre class="ipynb"&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;seed&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1237&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# Set seed so results are reproducible&lt;/span&gt;
+&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ix&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;choice&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kids&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output vbox"&gt;
+
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+    Out[23]:&lt;/div&gt;
+&lt;div class="box-flex1 output_subarea output_pyout"&gt;
+
+&lt;div class="output_html rendered_html"&gt;
+&lt;div style="max-height:1000px;max-width:1500px;overflow:auto;"&gt;
+&lt;table border="1" class="dataframe"&gt;
+  &lt;thead&gt;
+    &lt;tr style="text-align: right;"&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;name&lt;/th&gt;
+      &lt;th&gt;birthmonth&lt;/th&gt;
+      &lt;th&gt;birthyear&lt;/th&gt;
+      &lt;th&gt;length&lt;/th&gt;
+      &lt;th&gt;width&lt;/th&gt;
+      &lt;th&gt;sex&lt;/th&gt;
+      &lt;th&gt;biggerfoot&lt;/th&gt;
+      &lt;th&gt;domhand&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;11&lt;/th&gt;
+      &lt;td&gt;      Ray&lt;/td&gt;
+      &lt;td&gt; 3&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 24.8&lt;/td&gt;
+      &lt;td&gt; 8.9&lt;/td&gt;
+      &lt;td&gt; B&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;25&lt;/th&gt;
+      &lt;td&gt;     Glen&lt;/td&gt;
+      &lt;td&gt; 7&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 27.1&lt;/td&gt;
+      &lt;td&gt; 9.4&lt;/td&gt;
+      &lt;td&gt; B&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;36&lt;/th&gt;
+      &lt;td&gt; Teshanna&lt;/td&gt;
+      &lt;td&gt; 3&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 26.0&lt;/td&gt;
+      &lt;td&gt; 9.0&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;7 &lt;/th&gt;
+      &lt;td&gt;  Caitlin&lt;/td&gt;
+      &lt;td&gt; 6&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 23.0&lt;/td&gt;
+      &lt;td&gt; 8.8&lt;/td&gt;
+      &lt;td&gt; G&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;25&lt;/th&gt;
+      &lt;td&gt;     Glen&lt;/td&gt;
+      &lt;td&gt; 7&lt;/td&gt;
+      &lt;td&gt; 88&lt;/td&gt;
+      &lt;td&gt; 27.1&lt;/td&gt;
+      &lt;td&gt; 9.4&lt;/td&gt;
+      &lt;td&gt; B&lt;/td&gt;
+      &lt;td&gt; L&lt;/td&gt;
+      &lt;td&gt; R&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Notice that &amp;#8216;Glen&amp;#8217; was sampled&amp;nbsp;twice.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="reference"&gt;Reference&lt;/h3&gt;
+&lt;p&gt;As with all &amp;#8216;Statistical Modeling: A Fresh Approach for Python&amp;#8217; tutorials, this tutorial is based directly on material from &lt;a href="http://www.mosaic-web.org/go/StatisticalModeling/"&gt;&amp;#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&amp;#8217;&lt;/a&gt; by &lt;a href="http://www.macalester.edu/~kaplan/"&gt;Daniel Kaplan&lt;/a&gt;. This tutorial is based on Chapter 2: Data: Cases, Variables,&amp;nbsp;Samples.&lt;/p&gt;
+&lt;p&gt;I have made an effort to keep the text and explanations consistent between the original (R-based) version and the Python tutorials, in order to keep things comparable. With that in mind, any errors, omissions, and/or differences between the two versions are mine, and any questions, comments, and/or concerns should be &lt;script type="text/javascript"&gt;
+&lt;!--
+h='&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#46;&amp;#x63;&amp;#x6f;&amp;#x6d;';a='&amp;#64;';n='&amp;#x63;&amp;#x61;&amp;#114;&amp;#x73;&amp;#x6f;&amp;#110;&amp;#46;&amp;#102;&amp;#x61;&amp;#114;&amp;#x6d;&amp;#x65;&amp;#114;';e=n+a+h;
+document.write('&lt;a h'+'ref'+'="ma'+'ilto'+':'+e+'"&gt;'+'directed to me'+'&lt;\/'+'a'+'&gt;');
+// --&gt;
+&lt;/script&gt;&lt;noscript&gt;&amp;#100;&amp;#x69;&amp;#114;&amp;#x65;&amp;#x63;&amp;#116;&amp;#x65;&amp;#100;&amp;#32;&amp;#116;&amp;#x6f;&amp;#32;&amp;#x6d;&amp;#x65;&amp;#32;&amp;#40;&amp;#x63;&amp;#x61;&amp;#114;&amp;#x73;&amp;#x6f;&amp;#110;&amp;#46;&amp;#102;&amp;#x61;&amp;#114;&amp;#x6d;&amp;#x65;&amp;#114;&amp;#32;&amp;#x61;&amp;#116;&amp;#32;&amp;#x67;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#32;&amp;#100;&amp;#x6f;&amp;#116;&amp;#32;&amp;#x63;&amp;#x6f;&amp;#x6d;&amp;#x29;&lt;/noscript&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 09 Nov 2013 12:00:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2013-11-09:2013/11/statistical-modeling-python-data/</guid><category>Helpful tips</category><category>Python</category><category>Statistical Modeling</category><category>Teaching</category></item><item><title>A Fresh Approach using Python: Introduction</title><link>http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/</link><description>&lt;p&gt;Welcome to the first in a series of tutorials on using Python for introductory 
 statistical analysis. As I put more of these tutorials online, you should be 
 able to access them easily by &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;clicking&lt;/a&gt; or searching for the relevant 
 category: &amp;#8220;Statistical Modeling for&amp;nbsp;Python&amp;#8221;.&lt;/p&gt;
