@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/statistical-modeling-for-python.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 09 Nov 2013 12:00:00 -0500</lastBuildDate><item><title>Data: Cases, Variables, Samples</title><link>http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/</link><description>&lt;p&gt;The second in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
 statistical analysis, this tutorial covers &lt;strong&gt;data&lt;/strong&gt;, including cases, variables, 
-samples, and a whole lot&amp;nbsp;more.&lt;/p&gt;
+samples, and a whole lot more. As always, the &lt;code&gt;iPython Notebook&lt;/code&gt; associated with
+this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-python"&gt;available here on github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Data used in statistical modeling are usually organized into tables, often created using spreadsheet software. Most people presume that the same software used to create a table of data should be used to display and analyze it. This is part of the reason for the popularity of spreadsheet programs such as &amp;#8216;Excel&amp;#8217; and &amp;#8216;Google&amp;nbsp;Spreadsheets&amp;#8217;.&lt;/p&gt;

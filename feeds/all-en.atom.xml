@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-11-09T12:00:00-05:00</updated><entry><title>Data: Cases, Variables, Samples</title><link href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/" rel="alternate"></link><updated>2013-11-09T12:00:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-09:2013/11/statistical-modeling-python-data/</id><summary type="html">&lt;p&gt;The second in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
 statistical analysis, this tutorial covers &lt;strong&gt;data&lt;/strong&gt;, including cases, variables, 
-samples, and a whole lot&amp;nbsp;more.&lt;/p&gt;
+samples, and a whole lot more. As always, the &lt;code&gt;iPython Notebook&lt;/code&gt; associated with
+this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-python"&gt;available here on github&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Data used in statistical modeling are usually organized into tables, often created using spreadsheet software. Most people presume that the same software used to create a table of data should be used to display and analyze it. This is part of the reason for the popularity of spreadsheet programs such as &amp;#8216;Excel&amp;#8217; and &amp;#8216;Google&amp;nbsp;Spreadsheets&amp;#8217;.&lt;/p&gt;
