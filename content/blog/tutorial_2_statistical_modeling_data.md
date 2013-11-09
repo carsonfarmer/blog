@@ -1,11 +1,10 @@
 Title: Data: Cases, Variables, Samples
-Date: 2013-11-06 12:00
+Date: 2013-11-09 12:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Statistical Modeling for Python
 Tags: Helpful tips, Python, Statistical Modeling, Teaching
 Slug: statistical-modeling-python-data
-Status: draft
 Latex:
 
 The second in a [series of tutorials] on using Python for introductory 
