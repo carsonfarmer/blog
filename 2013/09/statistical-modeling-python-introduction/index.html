@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>A Fresh Approach using Python: Introduction</title>
+        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+            
+<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\(","\)"] ],
+                displayMath: [ ['$$','$$'], ["\[","\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+</script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script src="http://www.carsonfarmer.com/libs/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
+        <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            var loc = [40.7684, -73.9637, 10];
+            function initialize() {
+                var layer = "watercolor";
+                var map = new L.Map("map", {
+                        center: new L.LatLng(loc[0], loc[1]),
+                        zoom: loc[2],
+                        zoomControl: false
+                    });
+                map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
+                map.locate({setView: true, watch: true})
+                  .on('locationfound', function(e) {
+                    var marker = L.marker([e.latitude, e.longitude]).bindPopup('Thanks for stopping by!');
+                    map.addLayer(marker);
+                  });
+            }
+        </script>
+</head> 
+
+<body id="index" class="home" onload="initialize()">
+<div id="map" style="position: fixed;"></div>
+        <header id="banner" class="body">
+                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <form class="form-inline" id="top-search">
+    <div class='input-append'>
+        <input type="text" id="top-query" placeholder="Search..." />
+        <button class="btn add-on" id="top-btn" type="button">
+            <i class="icon-search"></i>
+        </button>
+<div class="dropdown pull-right" id="top-dropdown">
+<a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+<ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+    </div>
+</form>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+<li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
+                                <li class="divider-vertical"></li>
+                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
+                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
+                                        <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
+                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Reserach</a></li>
+                                                <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
+                                        </ul>
+                                    </li>
+                                <li class="dropdown pull-right">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+                                    <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
+                                    <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
+                                        <li>
+                                          <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                                          <i class="icon-rss"></i> atom feed</a>
+                                        </li>
+                                        <li>
+                                          <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                                          <i class="icon-rss"></i> rss feed</a>
+                                        </li>
+                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
+                                            <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
+                                            <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
+                                            <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
+                                            <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
+                                            <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
+                                            <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2013/09/statistical-modeling-python-introduction/" rel="bookmark"
+           title="Permalink to A Fresh Approach using Python: Introduction">A Fresh Approach using Python:&nbsp;Introduction</a></h1>
+      <abbr class="published" title="2013-09-23T12:00:00">
+          <i class="icon-calendar"></i>
+          Mon 23 September 2013
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
+
+    <div class="entry-content">
+      <p>Introducing a series of tutorials on using Python for introductory statistical&nbsp;analysis.</p>
+<p>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Introducing a series of tutorials on using Python for introductory statistical analysis based on the &#8216;Computational Technique&#8217; sections of each chapter from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a>. The goal of this series of tutorials is to show how all of the R analysis and commands used in the book can be done just as easily using the <a href="http://python.org/">Python</a> programming language. This has the dual goal of introducing &#8216;Scientific Python&#8217; to students learning statistics, as well as showcasing the recent advances in statistical computing that have been introduced to Python in recent years. Each tutorial in the series will cover the Computational Technique section of a different chapter from the book, starting with Section 1.4.3 from the introduction (which technically <em>isn&#8217;t</em> a Computational Technique section, but is a useful introduction none-the-less), which is <a href="http://www.mosaic-web.org/go/StatisticalModeling/Chapters/">available online here</a>. Note that many of these tutorials will require you to have read the corresponding chapter(s) from the book in order to be&nbsp;useful.</p>
+<p>All the tutorials assume that Python is installed and running on your computer. To use the notebooks <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">associated with these tutorials</a>, you&#8217;ll also need to have <a href="http://ipython.org/">IPython</a> (with notebook) installed. There are plenty of resources online with information on <a href="http://ipython.org/">IPython</a>, <a href="http://ipython.org/notebook.html">Notebooks</a>, and <a href="http://ipython.org/install.html">installation instructions</a>) for both. You&#8217;ll also need to have the <a href="http://www.scipy.org/">Scientific Python</a> libraries installed for additional statistical functionality (we&#8217;ll also introduce some <a href="http://statsmodels.sourceforge.net/">other statistical libraries</a> in later tutorials), and <a href="http://matplotlib.org/">matplotlib</a> for plotting and&nbsp;visualization.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="the-ipython-command-console">The IPython Command&nbsp;Console</h2>
+<p>Once you have IPython installed, you are ready to perform all sorts of statistical and other mathematical and scientific operations. However, to use the powerful range of tools, functions, commands, and statistical methods available in Python, you first need to learn a little bit about the syntax and meaning of Python commands. Once you have learned this, operations become simple to perform. Before staring this tutorial, read section 1.4 from &#8216;Statistical Modeling: A Fresh Approach&#8217;, which outlines some general concepts surrounding computational statistics (in the context of R). In particular, it provides some explanation of a &#8216;language-based approach&#8217; to statistical computing - which is an important concept throughout the book and this series of&nbsp;tutorials.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="invoking-an-operation">Invoking an&nbsp;Operation</h2>
+<p>People often think of computers as <em>doing things</em>: sending email, playing music, storing files. Your job in using a computer is to tell the computer <em>what</em> to do. There are many different words used to refer to the &#8220;what&#8221;: a procedure, a task, a function, a routine, and so on. Like in the book, I&#8217;ll use the word <strong>computation</strong>. Admittedly, this is a bit circular, but it is easy to remember: computers perform&nbsp;computations.</p>
+<p>Complex computations are built up from simpler computations. This may seem obvious, but it is a powerful idea. An <strong>algorithm</strong> is just a description of a computation in terms of other computations that you already know how to perform. To help distinguish between the computation as a whole and the simpler parts, it is helpful to introduce a new word: an <strong>operator</strong> performs a&nbsp;computation.</p>
+<p>It&#8217;s helpful to think of the computation carried out by an operator as involving four&nbsp;parts:</p>
+<ol style="list-style-type: decimal">
+<li>The name of the&nbsp;operator</li>
+<li>The input&nbsp;arguments</li>
+<li>The output&nbsp;value</li>
+<li>Side&nbsp;effects</li>
+</ol>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A typical operation takes one or more <strong>input arguments</strong> and uses the information in these to produce an <strong>output value</strong>. Along the way, the computer might take some action: display a graph, store a file, make a sound, etc. These actions are called <strong>side effects</strong>.</p>
+<p>Because R is a programing language designed specifically for statistical analysis, many of the &#8216;base&#8217; commands (such as <code>sqrt()</code>) are available &#8216;out-of-the-box&#8217;. However, since Python is a more general-purpose programming language, we usually need to <code>import</code> statistical commands (think of this as adding words to a language) before we can use them. For Scientific Python, the most important library that we need is <code>numpy</code> (Numerical Python), which can be loaded like&nbsp;this:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[1]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span class="note left shadow"> It is best to ensure you are using the latest version of <code>numpy</code>, which is available <a href="http://scipy.org/Download">from here</a>. </span></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To tell the computer to perform a computation - call this <strong>invoking an operation</strong> or giving a <strong>command</strong> - you need to provide the name and the input arguments in a specific format. The computer then returns the output value. For example, the command <code>np.sqrt(25)</code> invokes the square root operator (named <code>sqrt</code> from the <code>numpy</code> library) on the argument <code>25</code>. The output from the computation will, of course, we <code>5</code>.</p>
+<p>The syntax of invoking an operation consists of the operator&#8217;s name, followed by round parentheses. The input arguments go inside the&nbsp;parentheses.</p>
+<p>The software program that you use to invoke operators is called an <strong>interpreter</strong> (the interpreter is the program you are running when you start Python). You enter your commands as a &#8216;dialog&#8217; between you and the interpreter (just like when converting between any two languages!). Commands can be entered as part of a script (a text file with a list of commands to perform) or directly at a &#8216;command&nbsp;prompt&#8217;:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[2]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[2]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+5.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the above situation, the &#8216;prompt&#8217; is <code>In [ ]:</code>, and the &#8216;command&#8217; is <code>np.sqrt(25)</code>. When you press &#8216;Enter&#8217;, the interpreter reads your command and performs the computation. For commands such as the one above, the interpreter will print the output value from the&nbsp;computation:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[3]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[3]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+5.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the above example, the &#8216;output marker&#8217; is <code>Out[ ]:</code>, and the output value is <code>5.0</code>. The dialog continues as the interpreter prints another prompt and waits for your further&nbsp;command.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Often, operations involve more than one argument. The various arguments are separated by commas. For example, here is an operation named <code>arange</code> from the <code>numpy</code> library that produces a range of numbers (increasing values between 3 and&nbsp;10):</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[4]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[4]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([3, 4, 5, 6, 7, 8, 9])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The first argument tells where to start the range and the second tells where to end it. The order of the arguments is important. For instance, <em>here</em> is the range produced when 10 is the first argument, 3 is the second, and the third is -1 (decreasing values between 10 and&nbsp;3):</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[5]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[5]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([10,  9,  8,  7,  6,  5,  4])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For some operators, particularly those that have many input arguments, some of the arguments can be referred to by name rather than position. This is particularly useful when the named argument has a sensible default value. For example, the <code>arange</code> operator from the <code>numpy</code> library can be instructed what type of output values to produce (integers, floats, etc). This is accomplished using an argument named <code>dtype</code>:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[6]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&#39;float&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[6]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([ 10.,   9.,   8.,   7.,   6.,   5.,   4.])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note that all the values in the range now have decimal places. Depending on the circumstances, all four parts of an operation need not be present. For example, the <code>ctime</code> operation from the <code>time</code> library returns the current time and date; no input arguments are&nbsp;required:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[7]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="kn">import</span> <span class="nn">time</span>
+<span class="n">time</span><span class="o">.</span><span class="n">ctime</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[7]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+&apos;Mon Sep 23 15:58:25 2013&apos;
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the above example, we first imported the <code>time</code> library, which provides a series of commands that help us work with dates and times. Next, even though there are no arguments, the parentheses are still used when calling the <code>ctime</code> command. Think of the pair of parentheses as meaning, &#8216;<em>do this</em>&#8216;.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="naming-and-storing-values">Naming and Storing&nbsp;Values</h3>
+<p>Often the value returned by an operation will be used later on. Values can be stored for later use with the <strong>assignment operator</strong>. This has a different syntax that reminds the user that a value is being stored. Here&#8217;s an example of a simple&nbsp;assignment:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[8]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span> <span class="o">=</span> <span class="mi">16</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The command has stored the value 16 under the name <code>x</code>. The syntax is always the same: an equal sign (=) with a name on the left side and a value on the right. Such stored values are called <strong>objects</strong>. Making an assignment to an object defines the object. Once an object has been defined, it can be referred to and used in later computations. Notice that an assignment operation does not return a value or display a value. Its sole purpose is to have the side effects of defining the object and thereby storing a value under the object&#8217;s&nbsp;name.</p>
+<p>To refer to the value stored in the object, just use the object&#8217;s name itself. For&nbsp;instance:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[9]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[9]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+16
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Doing a computation on the value store in an object is much the same (and provides and extremely rich syntax for performing complex&nbsp;calculations):</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[10]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[10]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+4.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can create as many objects as you like and give them names that remind you of their purpose. Some examples: <code>wilma</code>, <code>ages</code>, <code>temp</code>, <code>dog_houses</code>, <code>foo3</code>. There <em>are</em> some general rules for object&nbsp;names:</p>
+<ul>
+<li>Use only letters and numbers and &#8216;underscores&#8217;&nbsp;(_)</li>
+<li>Do <span class="caps">NOT</span> use spaces anywhere in the name (Python won&#8217;t let&nbsp;you)</li>
+<li>A number cannot be the first character in the&nbsp;name</li>
+<li>Capital letters are treated as distinct from lower-case letters (i.e., Python is <em>case-sensitive</em>)
+<ul>
+<li>the objects named <code>wilma</code>, <code>Wilma</code>, and <code>WILMA</code> are all&nbsp;different</li>
+</ul></li>
+<li>If possible, use an &#8216;underscore&#8217; between words (i.e., <code>my_object</code>)</li>
+</ul>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the sake of readability, keep object names short. But if you really must have an object named something like <code>ages_of_children_from_the _clinical_trial</code>, feel free (it&#8217;s just more typing for you&nbsp;later!).</p>
+<p>Objects can store all sorts of things, for example a range of&nbsp;numbers:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[11]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When you assign a new value to an existing object, as just done to <code>x</code> above, the former values of that object is erased from the computer memory. The former value of <code>x</code> was 16, but after the new assignment above, it&nbsp;is:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[12]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[12]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([1, 2, 3, 4, 5, 6])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The value of an object is changed only via the assignment operator. Using an object in a computation does not change the value. For example, suppose you invoke the square-root operator on <code>x</code>:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[13]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[13]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([ 1.        ,  1.41421356,  1.73205081,  2.        ,  2.23606798,
+        2.44948974])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The square roots have been returned as a value, but this doesn&#8217;t change the value of <code>x</code>:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[14]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[14]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([1, 2, 3, 4, 5, 6])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span class="note right shadow" markdown="1"> An assignment command like <code>x=np.sqrt(x)</code> can be confusing to people who are used to algebraic notation. In algebra, the equal sign describes a relationship between the left and right sides. So, \(x = \sqrt{x}\) tells us about how the quantity \(x\) and the quantity \(\sqrt{x}\) are related. Students are usually trained to &#8216;solve&#8217; such a relationship, going through a series of algebraic steps to find values for \(x\) that are consistent with the mathematical statement (for \(x = \sqrt{x}\), the solutions are \(x = 0\) and \(x = 1\)). In contrast, the assignment command <code>x = np.sqrt(x)</code> is a way of replacing the previous values stored in <code>x</code> with new values that are the square-root of the old&nbsp;ones. </span></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you want to change the value of <code>x</code>, you need to use the assignment&nbsp;operator:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[15]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="connecting-computations">Connecting&nbsp;Computations</h3>
+<p>The brilliant thing about organizing operators in terms of unput arguments and output values is that the output of one operator can be used as an input to another. This lets complicated computations be built out of simpler&nbsp;ones.</p>
+<p>For example, suppose you have a list of 10000 voters in a precinct and you want to select a random sample of 20 of them for a survey. The <code>np.arange</code> operator can be used to generate a set of 10000 choices. The <code>np.random.choice</code> operator can then be used to select a subset of these values at&nbsp;random.</p>
+<p>One way to connect the computations is by using objects to store the intermediate&nbsp;outputs:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[16]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">choices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">choices</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> <span class="c"># sample _without_ replacement</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[16]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([7863, 8378, 9128, 3340, 5674, 9055, 6374, 8668, 3768, 6798, 8066,
+       6443, 5154, 5991, 1535, 3580, 8516, 4872, 8618, 7240])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can also pass the output of an operator <em>directly</em> as an argument to another operator. Here&#8217;s another way to accomplish exactly the same thing as the above (note that the values will differ because we are performing a <em>random</em>&nbsp;sample):</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[17]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10000</span><span class="p">),</span> <span class="mi">20</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[17]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+array([5732, 6833, 7705, 4459, 3131, 3515, 4177, 6312, 2820, 2705, 4580,
+       9125, 7395, 1927,  728, 4725, 1854, 6147, 4421, 2756])
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="numbers-and-arithmetic">Numbers and&nbsp;Arithmetic</h3>
+<p>The <code>Python</code> language has a concise notation for arithmetic that looks very much like the traditional&nbsp;one:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[18]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">7.</span> <span class="o">+</span> <span class="mf">2.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[18]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+9.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[19]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">3.</span> <span class="o">*</span> <span class="mf">4.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[19]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+12.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[20]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">5.</span> <span class="o">/</span> <span class="mf">2.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[20]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+2.5
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[21]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">3.</span> <span class="o">-</span> <span class="mf">8.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[21]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+-5.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[22]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="o">-</span><span class="mf">3.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[22]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+-3.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[23]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">5.</span><span class="o">**</span><span class="mf">2.</span> <span class="c"># same as 5^2 (or 5 to the power of 2)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[23]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+25.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Arithmetic operators, like any other operators, can be connected to form more complicated computations. For&nbsp;instance:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[24]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">8.</span> <span class="o">+</span> <span class="mf">4.</span> <span class="o">/</span> <span class="mf">2.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[24]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+10.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The a human reader, the command <code>8+4/2</code> might seem ambiguous. Is it intended to be <code>(8+4)/2</code> or <code>8+(4/2)</code>? The computer uses unambiguous rules to interpret the expression, but it&#8217;s a good idea for you to use parentheses so that you can make sure that what you <em>intend</em> is what the computer carries&nbsp;out:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[25]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="p">(</span><span class="mf">8.</span> <span class="o">+</span> <span class="mf">4.</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[25]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+6.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. \(3^2\) or \(\sqrt{3}\) or \(\sqrt[3]{8}\). This special typography doesn&#8217;t work well with an ordinary keyboard, so <code>Python</code> and most other computer languages uses a different&nbsp;notation:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[26]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">3.</span><span class="o">**</span><span class="mf">2.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[26]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+9.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[27]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">3.</span><span class="p">)</span> <span class="c"># or 3.**0.5</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[27]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+1.7320508075688772
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[28]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="mf">8.</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[28]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+2.0
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There is a large set of mathematical functions: exponentials, logs, trigonometric and inverse trigonometric functions, etc. Some&nbsp;examples:</p>
+<table border="0">
+<tr>
+<th>
+Traditional
+</th>
+<th>
+Python
+</th>
+</tr>
+<tr>
+<td>
+\(e^2\)
+</td>
+<td>
+<code>np.exp(2)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(log_{e}(100)\)
+</td>
+    <td>
+<code>np.log(100)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(log_{10}(100)\)
+</td>
+    <td>
+<code>np.log10(100)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(log_{2}(100)\)
+</td>
+    <td>
+<code>np.log2(100)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(cos(\frac{\pi}{2})\)
+</td>
+    <td>
+<code>np.cos(np.pi/2)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(sin(\frac{\pi}{2})\)
+</td>
+    <td>
+<code>np.sin(np.pi/2)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(tan(\frac{\pi}{2})\)
+</td>
+    <td>
+<code>np.tan(np.pi/2)</code>
+</td>
+</tr>
+<tr>
+    <td>
+\(cos^{-1}(-1)\)
+</td>
+    <td>
+<code>np.acos(-1)</code>
+</td>
+</tr>
+</table>
+
+<p>Numbers can be written in <strong>scientific notation</strong>. For example, the &#8216;universal gravitational constant&#8217; that describes the gravitational attraction between masses is \(6.67428 \times 10^{11}\) (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as <code>6.67428e-11</code>. The Avogadro constant, which gives the number of atoms in a mole, is \(6.02214179 \times 10^{23}\) per mole, or <code>6.02214179e+23</code>.</p>
+<p>The computer language does not directly support the recording of units. This is unfortunate, since in the real world numbers often have units and the units matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because the design engineers specified the engine&#8217;s thrust in units of pounds, while the guidance engineers thought the units were&nbsp;newtons.</p>
+<p>Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, \(sin(\pi) = 0\), however, the computer does not duplicate the mathematical relationship&nbsp;exactly:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[29]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[29]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+1.2246467991473532e-16
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Whether a number like this is properly interpreted as &#8216;close to zero&#8217; depends on the context and, for quantities that have units, on the units themselves. For instance, the unit &#8216;parsec&#8217; is used in astronomy in reporting distances between stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A distance of \(1.22 \times 10^{-16}\) parsecs is tiny in astronomy but translates to about 2.5 meters - not so small on the human scale. In statistics, many calculations relate to probabilities which are always in the range 0 to 1. On this scale, <code>1.22e-16</code> is very close to&nbsp;zero.</p>
+<p>There are several &#8216;special&#8217; numbers in the <code>Python</code> world; two of which are <code>inf</code>, which stands for \(\infty\) (infinity), and <code>nan</code>, which stands for &#8216;not a number&#8217; (nan results when a numerical operation isn&#8217;t define), for&nbsp;instance:</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span class="note right shadow"> Mathematically oriented readers will wonder why <code>Python</code> should have any trouble with a computation like \(\sqrt{-9}\); the result is the imaginary number \(3\jmath\) (imaginary numbers may be represented by a \(\jmath\) or a \(\imath\), depending on the field). <code>Python</code> works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate \(\sqrt{-9}\) for example, simply use <code>np.sqrt(-9+0j)</code>. </span></p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[30]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">1.</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stderr">
+<pre>
+-c:1: RuntimeWarning: divide by zero encountered in double_scalars
+
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[30]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+inf
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[31]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">0.</span><span class="p">)</span> <span class="o">/</span> <span class="mf">0.</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_stream output_stderr">
+<pre>
+-c:1: RuntimeWarning: invalid value encountered in double_scalars
+
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[31]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+nan
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="types-of-objects">Types of&nbsp;Objects</h3>
+<p>Most of the examples used so far have dealt with numbers. But computers work with other kinds of information as well: text, photographs, sounds, sets of data, and so on. The word <strong>type</strong> is used to refer to the <em>kind</em> of information. Modern computer languages support a great variety of types. It&#8217;s important to know about the types of data because operators expect their input arguments to be of specific types. When you use the wrong type of input, the computer might not be able to process your&nbsp;command.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><span class="note left shadow"> In Python, data frames are not &#8216;built in&#8217; as part of the basic language, but the excellent <a href="http://pandas.pydata.org/">&#8216;pandas&#8217;</a> library provides data frames and a whole slew of other functionality to researchers doing data analysis with Python. We will be learning more about &#8216;pandas&#8217; in future&nbsp;tutorials. </span></p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For the purposes of starting computational statistics with Python, it&#8217;s important to distinguish among three basic&nbsp;types:</p>
+<ul>
+<li><strong>numeric</strong> positive and negative numbers, decimal and fractional numbers (<code>floats</code>), and whole numbers (<code>integers</code>) - numbers of the sort encountered so&nbsp;far</li>
+<li><strong>data frames</strong> collections of data (more or less) in the form of a spreadsheet table - the &#8216;Computational Technique&#8217; section from chapter 2 will introduce data frames and the operators and libraries for working with data&nbsp;frames</li>
+<li><strong>strings</strong> textual data - you indicate string data to the computer by enclosing the text in quotation marks (e.g., <code>name = &quot;python&quot;</code>)</li>
+</ul>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="a-note-on-strings">A Note on&nbsp;Strings</h4>
+<p>There is something a bit subtle going on in the previous command involving the string <code>&quot;python&quot;</code>, so look at it carefully. The purpose of the command is to create a new object, called <code>name</code>, which stores a little bit of text data. Notice that the name of the object is not put in quotes, but the text characters&nbsp;are.</p>
+<p>Whenever you refer to an object name, make sure that you don&#8217;t use quotes. For example, in the following, we are first assigning the string <code>&quot;python&quot;</code> to the <code>name</code> object, and then returning (and printing automatically) the <code>name</code> object.</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[32]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;python&quot;</span>
+<span class="n">name</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[32]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+&apos;python&apos;
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you make a command with the object name in quotes, it won&#8217;t be treated as referring to an object. Instead, it will merely mean the text&nbsp;itself:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[33]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="s">&quot;name&quot;</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt output_prompt">
+    Out[33]:</div>
+<div class="box-flex1 output_subarea output_pyout">
+
+
+<pre>
+&apos;name&apos;
+</pre>
+
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Similarly, if you omit the quotation marks from around the text, the computer will treat it as if it were an object name and will look for the object of that name. For instance, the following command directs the computer to look up the value contained in an object named <code>python</code> and insert that value into the object <code>name</code>:</p>
+</div>
+<div class="cell border-box-sizing code_cell vbox">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[34]:
+</div>
+<div class="input_area box-flex1">
+<div class="highlight-ipynb"><pre class="ipynb"><span class="n">name</span> <span class="o">=</span> <span class="n">python</span>
+</pre></div>
+
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output vbox">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="box-flex1 output_subarea output_pyerr">
+<pre>
+<span class="ansired">---------------------------------------------------------------------------</span>
+<span class="ansired">NameError</span>                                 Traceback (most recent call last)
+<span class="ansigreen">&lt;ipython-input-34-43a69bc65ba8&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
+<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>name <span class="ansiyellow">=</span> python<span class="ansiyellow"></span>
+
+<span class="ansired">NameError</span>: name &apos;python&apos; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As it happens, there was no object named <code>python</code> because it had not been defined by any previous assignment command. So, the computer generated an error. For the most part, you will not need to use vary many operators on text data when doing statistical analyses; you just need to remember to include text, such as file names, in quotation marks, <code>&quot;like this&quot;</code>.</p>
+</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="references">References</h3>
+<p>As with all &#8216;Statistical Modeling: A Fresh Approach for Python&#8217; tutorials, this tutorial is based directly on material from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a> by <a href="http://www.macalester.edu/~kaplan/">Daniel Kaplan</a>.</p>
+<p>Another useful source of information for statistics in Python is this <a href="http://work.thaslwanter.at/Stats/html/">introduction to statistics</a> web-book by Thomas Haslwanter which is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported&nbsp;License.</p>
+<p>I have made an effort to keep the text and explanations consistent between the original (R-based) version and the Python tutorials, in order to keep things comparable. With that in mind, any errors, omissions, and/or differences between the two versions are mine, and any questions, comments, and/or concerns should be <script type="text/javascript">
+<!--
+h='&#104;&#x75;&#110;&#116;&#x65;&#114;&#46;&#x63;&#x75;&#110;&#x79;&#46;&#x65;&#100;&#x75;';a='&#64;';n='&#x63;&#x61;&#114;&#x73;&#x6f;&#110;&#46;&#102;&#x61;&#114;&#x6d;&#x65;&#114;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+'directed to me'+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#100;&#x69;&#114;&#x65;&#x63;&#116;&#x65;&#100;&#32;&#116;&#x6f;&#32;&#x6d;&#x65;&#32;&#40;&#x63;&#x61;&#114;&#x73;&#x6f;&#110;&#46;&#102;&#x61;&#114;&#x6d;&#x65;&#114;&#32;&#x61;&#116;&#32;&#104;&#x75;&#110;&#116;&#x65;&#114;&#32;&#100;&#x6f;&#116;&#32;&#x63;&#x75;&#110;&#x79;&#32;&#100;&#x6f;&#116;&#32;&#x65;&#100;&#x75;&#x29;</noscript>.</p>
+</div></p>
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
+    </p>
+    <p class="tag">
+        <i class="icon-tags"></i>
+ <a href="http://www.carsonfarmer.com/tag/helpful-tips.html">Helpful tips</a>
+ <a href="http://www.carsonfarmer.com/tag/python.html">Python</a>
+ <a href="http://www.carsonfarmer.com/tag/statistical-modeling.html">Statistical Modeling</a>
+ <a href="http://www.carsonfarmer.com/tag/teaching.html">Teaching</a>
+    </p>
+    </div><!-- /.entry-content -->
+      <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2013/09/statistical-modeling-python-introduction/";
+          var disqus_url = "http://www.carsonfarmer.com/2013/09/statistical-modeling-python-introduction/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+<div class="twitter">
+        <h2><i class="icon-twitter"></i> twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+            data-link-color="#2A75A9" 
+            data-chrome="nofooter noheader noborders transparent" 
+            data-widget-id="330339195518337025"
+            height="300" lang="EN"
+            data-related="CarsonFarmer">
+            Tweets by @CarsonFarmer
+        </a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,"script","twitter-wjs");
+        </script>
+
+</div>
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+                <address id="about" class="vcard body shadow">
+                                <ul id="links">
+                                    <li><a href="http://www.geo.hunter.cuny.edu/cfarmer/">CUNY Faculty Page</a></li>
+                                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
+                                </ul>
+                Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
+                Hunter College - CUNY | 695 Park Avenue, New York | New York, 10065</br>
+                </address><!-- /#about -->
+                <p style="text-align: center;">This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of <a href="http://python.org">Python</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41110370-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script>
+    $(function() {
+        var search = window.location.search.substring(1)
+        if (search == "feed=rss2") window.location = "http://www.carsonfarmer.com/feeds/all.rss.xml"
+    });
+
+    $(document).ready(function() {
+    
+        //Calculate the height of <header>
+        //Use outerHeight() instead of height() if have padding
+        var aboveHeight = $('.navbar').position().top;
+
+    //when scroll
+        $(window).scroll(function() {
+            //if scrolled down more than the header’s height
+                if ($(window).scrollTop() > aboveHeight){
+                // if yes, add "fixed" class to the <nav>
+                // add padding top to the #content 
+                    // if (!$('nav').hasClass('fixed')) {
+                    //     $('.home_link').show("slide", { direction: "right" }, 250)
+                    // };
+                    $('.navbar').addClass('fixed').addClass('shadow').css('top','0').next() //.addClass('navbar-fixed-top').next()//
+                    $('#content').css('margin-top',aboveHeight+20+'px'); // value is same as the height of the nav
+                } else {
+                // when scroll up or less than aboveHeight,
+                // remove the “fixed” class, and the padding-top
+                    // if ($('nav').hasClass('fixed')) {
+                    //     console.log('test')
+                    //     $('.home_link').hide("slide", { direction: "right" }, 250)
+                    // };
+                    $('.navbar').removeClass('fixed').removeClass('shadow').next()
+                    $('#content').css('margin-top','0px');
+                }
+        });
+        $("#top-query").keydown(function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                site_search();
+                return false;
+            }
+        });
+        $("#top-btn").click(function(event) {
+            event.preventDefault();
+            site_search();
+            return false;
+        });
+    });
+    
+function site_search() {
+    var query = $("#top-query").val();
+    if (query == "") return false;
+    var api = 'http://tapirgo.com/api/1/search.json?';
+    var token = '51980cd33f61b05bbb000ce0';
+    var el = $("#top-results");
+    el.empty();
+    el.append('<li style="padding-left: 10px">Fetching results...</li>')
+    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+        function(data) {
+            // insert function here if needed
+            if (data.length) {
+                el.empty();
+                $.each(data, function(key, val) {
+                    var xx = new Date(val.published_on)+""
+                    if ((/^http\:\/\/www.carsonfarmer.com/).test(val.link)) { // hack to ignore duplicate returns
+                        el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
+                            'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' + '</li>');
+                    }
+                });
+            } else {
+                el.empty();
+                el.append('<li style="padding-left: 10px">No results found...</li>')
+            };
+        $("[data-toggle=tooltip]").tooltip();
+    });
+    $("#top-toggle").dropdown('toggle');
+}
+</script>
+</body>
+</html>

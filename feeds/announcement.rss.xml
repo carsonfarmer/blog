@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 15 Oct 2013 09:40:00 -0400</lastBuildDate><item><title>ftools is dead… long live ftools!</title><link>http://www.carsonfarmer.com/2013/10/ftools-is-no-more/</link><description>&lt;p&gt;I recently decided to drop &lt;code&gt;ftools.ca&lt;/code&gt;, since I hadn&amp;#8217;t updated it in a very long 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/announcement.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 11 Nov 2013 11:57:00 -0500</lastBuildDate><item><title>MSc Positions at University of Victoria</title><link>http://www.carsonfarmer.com/2013/11/spar-msc-positions-2014/</link><description>&lt;p&gt;Two MSc positions are available at the &lt;a href="http://www.uvic.ca/"&gt;University of Victoria&lt;/a&gt; in the 
+&lt;a href="http://geography.uvic.ca/"&gt;Department of Geography&lt;/a&gt;&amp;#8216;s
+&lt;a href="www.geog.uvic.ca/spar"&gt;Spatial Pattern Analysis and Research (&lt;span class="caps"&gt;SPAR&lt;/span&gt;) Lab&lt;/a&gt;. 
+Students will be involved in the development of the thesis topic with potential 
+research areas including web mapping (e.g., bike accidents), mining and mapping 
+social media (people’s hunting activities), spatial environmental modelling, 
+and spatial ecological&amp;nbsp;research.&lt;/p&gt;
+&lt;p&gt;Preference will be given to students with experience in &lt;span class="caps"&gt;GIS&lt;/span&gt;, spatial analysis, 
+spatial statistics, programming, and/or statistics. Funding includes a graduate 
+student stipend, as well as, support through teaching assistantships, research 
+assistantships, and internal fellowships. Students can anticipate funding of 
+about $15K per year. Start date is &lt;strong&gt;September 2014&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;If interested, please contact &lt;a href="mailto:trisalyn@uvic.ca"&gt;Dr. Trisalyn Nelson&lt;/a&gt; by &lt;strong&gt;January 
+15th, 2014&lt;/strong&gt;. &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 11 Nov 2013 11:57:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2013-11-11:2013/11/spar-msc-positions-2014/</guid><category>Update</category><category>Announcement</category><category>Employement</category><category>Spatial Analysis</category><category>Research</category></item><item><title>ftools is dead… long live ftools!</title><link>http://www.carsonfarmer.com/2013/10/ftools-is-no-more/</link><description>&lt;p&gt;I recently decided to drop &lt;code&gt;ftools.ca&lt;/code&gt;, since I hadn&amp;#8217;t updated it in a very long 
 time, and it was really just costing me money to keep a &amp;#8216;dead&amp;#8217; website up and 
 running. Additionally, with the new &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;a href="http://plugins.qgis.org/"&gt;plugin infrastructure&lt;/a&gt;, 
 hosting my own plugins (the website&amp;#8217;s primary purpose) was no longer needed. 

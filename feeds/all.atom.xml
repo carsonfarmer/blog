@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-11-09T12:00:00-05:00</updated><entry><title>Data: Cases, Variables, Samples</title><link href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/" rel="alternate"></link><updated>2013-11-09T12:00:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-09:2013/11/statistical-modeling-python-data/</id><summary type="html">&lt;p&gt;The second in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-11-11T11:57:00-05:00</updated><entry><title>MSc Positions at University of Victoria</title><link href="http://www.carsonfarmer.com/2013/11/spar-msc-positions-2014/" rel="alternate"></link><updated>2013-11-11T11:57:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-11:2013/11/spar-msc-positions-2014/</id><summary type="html">&lt;p&gt;Two MSc positions are available at the &lt;a href="http://www.uvic.ca/"&gt;University of Victoria&lt;/a&gt; in the 
+&lt;a href="http://geography.uvic.ca/"&gt;Department of Geography&lt;/a&gt;&amp;#8216;s
+&lt;a href="www.geog.uvic.ca/spar"&gt;Spatial Pattern Analysis and Research (&lt;span class="caps"&gt;SPAR&lt;/span&gt;) Lab&lt;/a&gt;. 
+Students will be involved in the development of the thesis topic with potential 
+research areas including web mapping (e.g., bike accidents), mining and mapping 
+social media (people’s hunting activities), spatial environmental modelling, 
+and spatial ecological&amp;nbsp;research.&lt;/p&gt;
+&lt;p&gt;Preference will be given to students with experience in &lt;span class="caps"&gt;GIS&lt;/span&gt;, spatial analysis, 
+spatial statistics, programming, and/or statistics. Funding includes a graduate 
+student stipend, as well as, support through teaching assistantships, research 
+assistantships, and internal fellowships. Students can anticipate funding of 
+about $15K per year. Start date is &lt;strong&gt;September 2014&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;If interested, please contact &lt;a href="mailto:trisalyn@uvic.ca"&gt;Dr. Trisalyn Nelson&lt;/a&gt; by &lt;strong&gt;January 
+15th, 2014&lt;/strong&gt;. &lt;/p&gt;</summary><category term="Update"></category><category term="Announcement"></category><category term="Employement"></category><category term="Spatial Analysis"></category><category term="Research"></category></entry><entry><title>Data: Cases, Variables, Samples</title><link href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/" rel="alternate"></link><updated>2013-11-09T12:00:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-09:2013/11/statistical-modeling-python-data/</id><summary type="html">&lt;p&gt;The second in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
 statistical analysis, this tutorial covers &lt;strong&gt;data&lt;/strong&gt;, including cases, variables, 
 samples, and a whole lot more. As always, the &lt;code&gt;iPython Notebook&lt;/code&gt; associated with
 this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-python"&gt;available here on github&lt;/a&gt;.&lt;/p&gt;
