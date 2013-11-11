@@ -25,5 +25,5 @@ If interested, please contact [Dr. Trisalyn Nelson][trisalyn] by **January
 
 [uvic]: http://www.uvic.ca/
 [uvic-geog]: http://geography.uvic.ca/
-[spar]: www.geog.uvic.ca/spar
+[spar]: http://www.geog.uvic.ca/spar
 [trisalyn]: mailto:trisalyn@uvic.ca
