@@ -61,8 +61,7 @@ DISQUS_SITENAME = "carsonfarmer"
 # Which folders should be copied to output/static
 STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt', 
                 'extras/favicon.ico', 'extras/404.html',
-                'extras/CNAME', 'examples'
-               ]
+                'extras/CNAME', 'examples']
 
 EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
                        'extras/404.html': {'path': '404.html'},
