@@ -593,10 +593,10 @@ array([ 5.7])
 <p>There are several basic types of statistical graphics to display the distribution of a variable: histograms, density plots, and boxplots. These work in a manner that&#8217;s similar to <code>mean()</code>, <code>quantile()</code> and so on in terms of syntax, but there are a few important additional items to consider. Firstly, most plotting functions we use will come from the &#8216;matplotlib&#8217; Python library, which integrates nicely with numpy and other Scientific Python libraries. There are several different ways that we can interact with &#8216;matplotlib&#8217;, inlcuding via the <code>pyplot</code> interface (which is simply a submodule of &#8216;matplotlib&#8217; and is useful for &#8216;scripting&#8217;) and the <code>pylab</code> interface, which is useful for interactive&nbsp;plotting.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="note right shadow"> If you prefer to use the <code>pyplot</code> interface, then remember to import it in the usual way at the beginning of your Python session: <code>import matplotlib.pyplot as plt</code> </span></p>
+<p><span class="note right shadow"> If you prefer to use the <code>pyplot</code> interface, then remember to import it in the usual way at the beginning of your Python session: <code>import matplotlib.pyplot</code> </span></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="note left shadow"> If you want interactive plotting (and why wouldn&#8217;t you?!), start &#8216;IPython&#8217; with the <code>--pylab</code> flag. With the <code>pylab</code> flag enabled, you don&#8217;t have to <code>import matplotlib</code>, as it will be done for you automatically): <code>bash ipython --pylab</code> Or, for inline figures in an IPython qtconsole or notebook, use: <code>bash ipython qtconsole [or notebook] --pylab inline</code> </span></p>
+<p><span class="note left shadow"> If you want interactive plotting (and why wouldn&#8217;t you?!), start &#8216;IPython&#8217; with the <code>--pylab</code> flag. With this flag enabled, you don&#8217;t have to <code>import matplotlib</code>, as it will be done for you automatically): <code>ipython --pylab</code> Or, for inline figures in an IPython qtconsole or notebook, use: <code>ipython notebook --pylab inline</code> </span></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="histograms-and-distributions">Histograms and&nbsp;Distributions</h3>
@@ -1023,7 +1023,8 @@ RU5ErkJggg==
 <li>Absolute Frequency or Counts - A simple count of the number of cases that falls into each bin. This is the default, as in:<br /> <code>gal.height.hist()</code></li>
 <li>Normalized - The vertical axis <em>area</em> of the bar gives the relative proportion of cases that fall into the bin. In other words, the areas can be interpreted as probabilities and the area under the entire histogram is equal to 1. Set the <code>normed</code> argument to <code>True</code>, as in:<br /> <code>gal.height.hist(normed=True)</code></li>
 </ul>
-<p><span class="note right shadow" markdown="1"> You can also produce a histogram of relative frequencies, where the vertical axis is scaled so that the height of the bar give the proportion of cases that fall into the bin, using: <code>gal.height.hist(weights=np.zeros_like(gal.height) + 100. / len(gal.height))</code> </span></p>
+<p>You can also produce a histogram of relative frequencies, where the vertical axis is scaled so that the height of the bar give the proportion of cases that fall into the&nbsp;bin:</p>
+<pre><code>gal.height.hist(weights=np.zeros_like(gal.height) + 100. / len(gal.height))</code></pre>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Other useful optional &#8216;pylab&#8217; commands set the labels for the axes and the graph as a whole and color the bars. For&nbsp;example,</p>
