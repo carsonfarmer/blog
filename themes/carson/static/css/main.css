@@ -126,6 +126,10 @@ pre {
     /*overflow: auto;*/
 }
 
+.ipynb {
+	padding-left: 80px;
+}
+
 .output_subarea pre {
     background: transparent;
     border: none;
