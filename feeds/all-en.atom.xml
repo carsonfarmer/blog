@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-11-22T10:49:00-05:00</updated><entry><title>Describing Variation</title><link href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/" rel="alternate"></link><updated>2013-11-22T10:49:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-22:2013/11/statistical-modeling-python-variation/</id><summary type="html">&lt;p&gt;The 3rd in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-12-03T11:57:00-05:00</updated><entry><title>Lectureships (x2) in GeoInformatics at the University of St Andrews</title><link href="http://www.carsonfarmer.com/2013/12/cgi-lecturer-positions-2014/" rel="alternate"></link><updated>2013-12-03T11:57:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-12-03:2013/12/cgi-lecturer-positions-2014/</id><summary type="html">&lt;p&gt;Researchers in the &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;Centre for GeoInformatics (&lt;span class="caps"&gt;CGI&lt;/span&gt;)&lt;/a&gt; in the School of 
+Geography and Geosciences at the University of St Andrews have been selected 
+for a prestigious award under the &lt;a href="http://www.nuffieldfoundation.org/q-step"&gt;Q-Step Quantitative Methods Programme&lt;/a&gt;
+funded by a combination of the Nuffield Foundation and the &lt;span class="caps"&gt;ESRC&lt;/span&gt;. This programme 
+will employ two new lecturers to add substantial new courses to the school of 
+Geography and Geosciences&amp;#8217; existing undergraduate curriculum and help deliver a 
+new MSc in GeoInformatics. They are looking for candidates with research 
+interests in each&amp;nbsp;of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Remote&amp;nbsp;sensing&lt;/li&gt;
+&lt;li&gt;Spatio-temporal analysis, specialization spatial&amp;nbsp;statistics&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more information on these two positions please &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/lectureships-in-geoinformatics-2-posts/"&gt;click here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Should you have any informal queries about the posts, the university, or life 
+in St Andrews, contact the &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/people/faculty/"&gt;&lt;span class="caps"&gt;CGI&lt;/span&gt; folks here&lt;/a&gt;.&lt;/p&gt;</summary><category term="Update"></category><category term="Announcement"></category><category term="Employement"></category><category term="Spatial Analysis"></category><category term="Research"></category></entry><entry><title>Describing Variation</title><link href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/" rel="alternate"></link><updated>2013-11-22T10:49:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-11-22:2013/11/statistical-modeling-python-variation/</id><summary type="html">&lt;p&gt;The 3rd in a &lt;a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html"&gt;series of tutorials&lt;/a&gt; on using Python for introductory 
 statistical analysis, this tutorial covers methods for &lt;strong&gt;describing&lt;/strong&gt; data via 
 simple statistical calculations and statistical graphics. As always, the 
 notebook for this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-python"&gt;available here&lt;/a&gt;.&lt;/p&gt;
