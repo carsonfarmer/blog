@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>Carson Farmer - Statistical Modeling</title>
+        <title>A quick bookmarklet for off-campus library access</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
         <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -91,161 +91,73 @@
                     </div>
                 </div>
         </header><!-- /#banner -->
-        
-        
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/" rel="bookmark"
+           title="Permalink to A quick bookmarklet for off-campus library access">A quick bookmarklet for off-campus library&nbsp;access</a></h1>
+      <abbr class="published" title="2013-12-17T14:56:00">
+          <i class="icon-calendar"></i>
+          Tue 17 December 2013
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
 
-                <section id="content" class="body">
-                    <ol id="posts-list" class="hfeed">
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/12/statistical-modeling-python-group-wise/" rel="bookmark"
-                           title="Permalink to Group-wise Models">Group-wise&nbsp;Models</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-12-09T15:00:00">
-                      <i class="icon-calendar"></i>
-                      Mon 09 December 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
+    <div class="entry-content">
+      <p>I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. <em>Fortunately</em>, Hunter College provides <a href="http://library.hunter.cuny.edu/find/accessfromhome">off-campus access</a> to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. <em>Unfortunately</em>, it turns out to be a huge pain to use anything other than the library search facilities (like <a href="http://scholar.google.com/">Google Scholar</a>) through the proxy server*. In fact, when working off-campus, you actually have to preface each <span class="caps">URL</span> address to licensed resources with 
+<code>http://proxy.wexler.hunter.cuny.edu/login?url=</code> in order to be able to access it. Not very&nbsp;handy&#8230;</p>
+<p><a href="http://en.wikipedia.org/wiki/Bookmarklet">Bookmarklets</a> to the rescue! This problem is actually something that bookmarklets are perfect for. A bookmarklet is (usually) just a small piece of JavaScript that resides in your browser and provides additional functionality to a web page. With that in mind, I decided to create a simple bookmarklet to automatically reload a given page with the above prefix prepended to the <span class="caps">URL</span>; giving me access to the material via the library proxy server, while still being able to use whatever search tools I want. In this case, all the bookmarklet contains is the following JavaScript&nbsp;code:</p>
+<div class="highlight"><pre><span class="nx">javascript</span><span class="o">:</span> <span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="o">=</span><span class="s2">&quot;http://proxy.wexler.hunter.cuny.edu/login?url=&quot;</span><span class="o">+</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span>
+</pre></div>
+
+
+<p>So that the whole link is&nbsp;simply:</p>
+<div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;javascript: location.href=&#39;http://proxy.wexler.hunter.cuny.edu/login?url=&#39;+location.href&quot;</span><span class="nt">&gt;</span>Library Proxy<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+
+<p><span class="quo">&#8216;</span>Installing&#8217; a bookmarklet is as simple as dragging it onto your browser&#8217;s bookmarks toolbar (I think on some versions of Internet Explorer, you might have to right-click and select &#8220;Add to Favorites&#8230;&#8221;). If you drag this <a href="javascript:location.href='http://proxy.wexler.hunter.cuny.edu/login?url='+location.href">Library Proxy</a> link onto your bookmarks bar, you&#8217;ll have a handy little tool to automatically access the current page via the Hunter College library proxy (note that you&#8217;ll need Hunter College credentials for this to work), instantly increasing your productivity by 12.45%&#8230; or&nbsp;so.</p>
+<p><em>*</em> I might just be missing something, in which case, hopefully someone will correct&nbsp;me.</p>
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
+        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
     </p>
-                  </footer>
-                <p>The 3rd in a <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">series of tutorials</a> on using Python for introductory 
-statistical analysis, this tutorial covers methods for <strong>describing</strong> data via 
-simple statistical calculations and statistical graphics. As always, the 
-notebook for this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">available here</a>.</p>
-<p>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In the 1880s, Sir Francis Galton, one of the pioneers of statistics ...</p></div></p>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/12/statistical-modeling-python-group-wise/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/12/statistical-modeling-python-group-wise/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
+    <p class="tag">
+        <i class="icon-tags"></i>
+ <a href="http://www.carsonfarmer.com/tag/helpful-tips.html">Helpful tips</a>
+ <a href="http://www.carsonfarmer.com/tag/html.html">HTML</a>
+ <a href="http://www.carsonfarmer.com/tag/research.html">Research</a>
+ <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
+    </p>
+    </div><!-- /.entry-content -->
+      <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2013/12/bookmarklet_for_off_campus_library_access/";
+          var disqus_url = "http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
 
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/" rel="bookmark"
-                           title="Permalink to Describing Variation">Describing&nbsp;Variation</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-11-22T10:49:00">
-                      <i class="icon-calendar"></i>
-                      Fri 22 November 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
-    </p>
-                  </footer>
-                <p>The 3rd in a <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">series of tutorials</a> on using Python for introductory 
-statistical analysis, this tutorial covers methods for <strong>describing</strong> data via 
-simple statistical calculations and statistical graphics. As always, the 
-notebook for this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">available here</a>.</p>
-<p>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In the 1880s, Sir Francis Galton, one of the pioneers of statistics ...</p></div></p>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/" rel="bookmark"
-                           title="Permalink to Data: Cases, Variables, Samples">Data: Cases, Variables,&nbsp;Samples</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-11-09T12:00:00">
-                      <i class="icon-calendar"></i>
-                      Sat 09 November 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
-    </p>
-                  </footer>
-                <p>The second in a <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">series of tutorials</a> on using Python for introductory 
-statistical analysis, this tutorial covers <strong>data</strong>, including cases, variables, 
-samples, and a whole lot more. As always, the <code>iPython Notebook</code> associated with
-this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">available here on github</a>.</p>
-<p>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Data used in statistical modeling are usually organized into ...</p></div></p>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/" rel="bookmark"
-                           title="Permalink to A Fresh Approach using Python: Introduction">A Fresh Approach using Python:&nbsp;Introduction</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2013-11-01T12:00:00">
-                      <i class="icon-calendar"></i>
-                      Fri 01 November 2013
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
-    </p>
-                  </footer>
-                <p>Welcome to the first in a series of tutorials on using Python for introductory 
-statistical analysis. As I put more of these tutorials online, you should be 
-able to access them easily by <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">clicking</a> or searching for the relevant 
-category: &#8220;Statistical Modeling for&nbsp;Python&#8221;.</p>
-<p>
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This series of tutorials is based ...</p></div></p>
-                <p class="readmore">
-                    <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/">read more</a>
-                </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-<p class="paginator">
-    1 / 1
-</p>            </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body shadow">
 <div class="twitter">
         <h2><i class="icon-twitter"></i> twitter</h2>

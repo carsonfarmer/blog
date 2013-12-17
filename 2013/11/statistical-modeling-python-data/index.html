@@ -156,7 +156,7 @@ this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-pyt
 <p><span class="note left shadow"> An alternative to writing <code>pds.xxx</code> when calling each &#8216;pandas&#8217; operator is to import all available operators from &#8216;pandas&#8217; at once: <code>from pandas import *</code>. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&nbsp;name. </span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
@@ -175,7 +175,7 @@ In&nbsp;[1]:
 <p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i> <a href="http://www.mosaic-web.org/go/datasets/swim100m.csv"><code>swim100m.csv</code></a></span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[2]:
 </div>
@@ -196,7 +196,7 @@ In&nbsp;[2]:
 <p>The type of Python object created by <code>read_csv()</code> is called a data frame and is essentially a tabular layout. To illustrate, here are the ﬁrst several cases of the <code>swim</code> data frame created by the previous use of <code>read_csv()</code>:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[3]:
 </div>
@@ -207,11 +207,11 @@ In&nbsp;[3]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[3]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -274,7 +274,7 @@ In&nbsp;[3]:
 <p>Data frames, like tabular data generally, involve variables and cases. In &#8216;pandas&#8217; data frames, each of the variables is given a name. You can refer to the variable by name in a couple of diﬀerent ways. To see the variable names in a data frame, something you might want to do to remind yourself of how names a spelled and capitalized, use the <code>columns</code> attribute of the data frame&nbsp;object:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[4]:
 </div>
@@ -285,11 +285,11 @@ In&nbsp;[4]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[4]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -309,7 +309,7 @@ Index([u&apos;year&apos;, u&apos;time&apos;, u&apos;sex&apos;], dtype=object)
 <p>Note that we have <strong>not</strong> used brackets <code>()</code> in the above command. This is because <code>columns</code> is not a function; it is an <em>attribute</em> of the data frame. Attributes add &#8216;extra&#8217; information (or metadata) to objects in the form of additional Python objects. In this case, the attributes describe the names (and data types) of the columns. Another way to get quick information about the variables in a data frame is with <code>describe()</code>:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[5]:
 </div>
@@ -320,11 +320,11 @@ In&nbsp;[5]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[5]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -396,7 +396,7 @@ In&nbsp;[5]:
 <p>There are lots of different functions and attributes available for data frames (and any other Python objects). For instance, to see how many cases and variables there are in a data frame, you can use the <code>shape</code> attribute:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[6]:
 </div>
@@ -407,11 +407,11 @@ In&nbsp;[6]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[6]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -438,7 +438,7 @@ In&nbsp;[6]:
 <p>Most of the statistical modeling functions you will encounter in these tutorials are designed to work with data frames and allow you to refer directly to variables within a data frame. For&nbsp;instance:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[7]:
 </div>
@@ -449,11 +449,11 @@ In&nbsp;[7]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[7]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -470,7 +470,7 @@ In&nbsp;[7]:
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[8]:
 </div>
@@ -481,11 +481,11 @@ In&nbsp;[8]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[8]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -505,7 +505,7 @@ In&nbsp;[8]:
 <p>It is also possible to combine &#8216;numpy&#8217; operators with &#8216;pandas&#8217;&nbsp;variables:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[9]:
 </div>
@@ -516,11 +516,11 @@ In&nbsp;[9]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[9]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -537,7 +537,7 @@ In&nbsp;[9]:
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[10]:
 </div>
@@ -548,11 +548,11 @@ In&nbsp;[10]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[10]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -572,7 +572,7 @@ In&nbsp;[10]:
 <p>The <code>swim</code> portion of the above commands tells Python which data frame we want to operate on. Leaving oﬀ that argument leads to an&nbsp;error:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[11]:
 </div>
@@ -583,11 +583,11 @@ In&nbsp;[11]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
+<div class="output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_pyerr">
 <pre>
 <span class="ansired">---------------------------------------------------------------------------</span>
@@ -608,7 +608,7 @@ In&nbsp;[11]:
 <p>The advantage of referring to variables by name becomes evident when you construct statements that involve more than one variable within a data frame. For instance, here&#8217;s a calculation of the mean year, separately for (grouping by) the different&nbsp;sexes:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[12]:
 </div>
@@ -619,11 +619,11 @@ In&nbsp;[12]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[12]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -643,11 +643,11 @@ Name: year, dtype: float64
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You will see much more of the <code>groupby</code> function, starting in Tutorial 4 (Group-wise Models). It&#8217;s the &#8216;pandas&#8217; way of grouping or aggregating data frames. In subsequent chapters, we will build on this notion to develop more complex ways of &quot;grouping&quot; and &quot;modeling&quot; variables &quot;by&quot; other&nbsp;variables.</p>
+<p>You will see much more of the <code>groupby</code> function, starting in Tutorial 4 (Group-wise Models). It&#8217;s the &#8216;pandas&#8217; way of grouping or aggregating data frames. In subsequent chapters, we will build on this notion to develop more complex ways of &#8220;grouping&#8221; and &#8220;modeling&#8221; variables &#8220;by&#8221; other&nbsp;variables.</p>
 <p>Both the <code>mean()</code> and <code>min()</code> functions have been arranged by the &#8216;pandas&#8217; library to look in the data frame when interpreting variables, but not all Python functions are designed this way. For&nbsp;instance:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[13]:
 </div>
@@ -658,11 +658,11 @@ In&nbsp;[13]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt"></div>
+<div class="output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_pyerr">
 <pre>
 <span class="ansired">---------------------------------------------------------------------------</span>
@@ -682,7 +682,7 @@ In&nbsp;[13]:
 <p>When you encounter a function that isn&#8217;t supported by data frames, you can use &#8216;numpy&#8217; functions and the special <code>apply</code> function built-into data frames (note that the <code>func</code> argument is&nbsp;optional):</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[14]:
 </div>
@@ -693,11 +693,11 @@ In&nbsp;[14]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[14]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -722,7 +722,7 @@ Name: year, dtype: float64
 <p>Alternatively, since columns are basically just arrays, we can use built-in numpy functions directly on the&nbsp;columns:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[15]:
 </div>
@@ -733,11 +733,11 @@ In&nbsp;[15]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[15]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -763,7 +763,7 @@ Name: year, dtype: float64
 <p>Sometimes you will compute a new quantity from the existing variables and want to treat this as a new variable. Adding a new variable to a data frame can be done similarly to <em>accessing</em> a variable. For instance, here is how to create a new variable in <code>swim</code> that holds the <code>time</code> converted from seconds to units of&nbsp;minutes:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[16]:
 </div>
@@ -779,7 +779,7 @@ In&nbsp;[16]:
 <p>By default, columns get inserted at the end. The <code>insert</code> function is available to insert at a particular location in the&nbsp;columns.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[17]:
 </div>
@@ -795,7 +795,7 @@ In&nbsp;[17]:
 <p>You could also, if you want, redeﬁne an existing variable, for&nbsp;instance:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[18]:
 </div>
@@ -811,7 +811,7 @@ In&nbsp;[18]:
 <p>As always, we can take a quick look at the results of our operations by using the <code>head()</code> fuction of our data&nbsp;frame:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[19]:
 </div>
@@ -822,11 +822,11 @@ In&nbsp;[19]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[19]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -906,7 +906,7 @@ In&nbsp;[19]:
 <p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i> <a href="http://www.mosaic-web.org/go/datasets/kidsfeet.csv"><code>kidsfeet.csv</code></a></span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[20]:
 </div>
@@ -918,11 +918,11 @@ In&nbsp;[20]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[20]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -945,7 +945,7 @@ In&nbsp;[20]:
 <p><span class="note left shadow"> The <code>ix[]</code> property is a bit tricky to figure out at first. For more information, see <a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html">the official docs</a>. </span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[21]:
 </div>
@@ -957,11 +957,11 @@ In&nbsp;[21]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[21]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -1056,7 +1056,7 @@ In&nbsp;[21]:
 <p>This can also be done in a single&nbsp;line:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[22]:
 </div>
@@ -1067,11 +1067,11 @@ In&nbsp;[22]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[22]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -1163,7 +1163,7 @@ In&nbsp;[22]:
 <p>The results returned by the above methods will never contain the same case more than once (because we told the function <em>not</em> to sample with replacement), just as if you were dealing cards from a shuffled deck. In contrast, &#8216;re-sampling with replacement&#8217; replaces each case after it is dealt so that it can appear more than once in the result. You wouldn’t want to do this to select from a sampling frame, but it turns out that there are valuable statistical uses for this sort of sampling with <strong>replacement</strong>. You’ll make use of re-sampling in Tutorial 5 (Conﬁdence&nbsp;Intervals).</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input hbox">
+<div class="input">
 <div class="prompt input_prompt">
 In&nbsp;[23]:
 </div>
@@ -1175,11 +1175,11 @@ In&nbsp;[23]:
 </div>
 </div>
 
-<div class="vbox output_wrapper">
+<div class="output_wrapper">
 <div class="output vbox">
 
 
-<div class="hbox output_area"><div class="prompt output_prompt">
+<div class="output_area"><div class="prompt output_prompt">
     Out[23]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
