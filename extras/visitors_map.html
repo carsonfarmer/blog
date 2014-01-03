@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Visitors Map</title>
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="screen.css" />
+	<link rel="stylesheet" href="MarkerCluster.css" />
+	<link rel="stylesheet" href="MarkerCluster.Default.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="MarkerCluster.Default.ie.css" /><![endif]-->
+	<script src="leaflet.markercluster-src.js"></script>
+	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
+	<link rel="stylesheet" href="leaflet.awesome-markers.css">
+	<script src="leaflet.awesome-markers.js"></script>
+	<script src="visitor_locations.js"></script>
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css");
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css");
+
+
+</head>
+<body>
+
+	<div id="map"></div>
+	<script type="text/javascript">
+
+		var layer = "watercolor";
+		var loc = [40.7684, -73.9637, 10];
+		var map = new L.Map("map", {
+                        center: new L.LatLng(loc[0], loc[1]),
+                        zoom: loc[2],
+                        zoomControl: false
+                    });
+		map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
+		var markers = L.markerClusterGroup();
+		
+		for (var i = 0; i < visitors.length; i++) {
+			var a = visitors[i];
+			var start = "Only "
+			var end = " visitor..."
+			if (a[3] > 1) {
+				start = "At least ";
+				end = " visitors!";
+			}
+			var place = a[2];
+			var count = a[3];
+			var title = start + count + end;
+			var marker = L.marker(L.latLng(a[0], a[1]), {title: title});
+			marker.bindPopup(place + "<br/>" + title);
+			markers.addLayer(marker);
+		}
+
+		map.addLayer(markers);
+
+	</script>
+	<style>
+    .leaflet-popup-content-wrapper {text-align: center;}
+    </style>
+</body>
+</html>
