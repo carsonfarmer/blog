@@ -5,7 +5,6 @@ Email: carson.farmer@gmail.com
 Category: Announcement
 Tags: Announcement, Update
 Slug: one_year_in_nyc
-Status: draft
 
 One year ago today, January 3rd 2014, [my wife][amanda] and I officially moved to New York City. It has flown by extremely fast for both of us, but we've managed to enjoy the city and all of the benefits that come with it. Some highlights (in no particular order) include:
 
