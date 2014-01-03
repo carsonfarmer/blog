@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-12-17T14:56:00-05:00</updated><entry><title>A quick bookmarklet for off-campus library access</title><link href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/" rel="alternate"></link><updated>2013-12-17T14:56:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-12-17:2013/12/bookmarklet_for_off_campus_library_access/</id><summary type="html">&lt;p&gt;I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. &lt;em&gt;Fortunately&lt;/em&gt;, Hunter College provides &lt;a href="http://library.hunter.cuny.edu/find/accessfromhome"&gt;off-campus access&lt;/a&gt; to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. &lt;em&gt;Unfortunately&lt;/em&gt;, it turns out to be a huge pain to use anything other than the library search facilities (like &lt;a href="http://scholar.google.com/"&gt;Google Scholar&lt;/a&gt;) through the proxy server*. In fact, when working off-campus, you actually have to preface each &lt;span class="caps"&gt;URL&lt;/span&gt; address to licensed resources with 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/all-en.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2014-01-03T17:50:00-05:00</updated><entry><title>One year in New York City</title><link href="http://www.carsonfarmer.com/2014/01/one_year_in_nyc/" rel="alternate"></link><updated>2014-01-03T17:50:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2014-01-03:2014/01/one_year_in_nyc/</id><summary type="html">&lt;p&gt;One year ago today, January 3rd 2014, &lt;a href="https://twitter.com/AmandaFarmerNYC"&gt;my wife&lt;/a&gt; and I officially moved to New York City. It has flown by extremely fast for both of us, but we&amp;#8217;ve managed to enjoy the city and all of the benefits that come with it. Some highlights (in no particular order)&amp;nbsp;include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Starting my own research&amp;nbsp;agenda&lt;/li&gt;
+&lt;li&gt;Skating at Rockefeller&amp;nbsp;Center&lt;/li&gt;
+&lt;li&gt;Seeing Chicago on&amp;nbsp;Broadway&lt;/li&gt;
+&lt;li&gt;Wondering through Manhattan at Christmas&amp;nbsp;time&lt;/li&gt;
+&lt;li&gt;Road-trip to&amp;nbsp;Boston&lt;/li&gt;
+&lt;li&gt;Living in North America again (Europe was wonderful, but its nice to be closer to&amp;nbsp;family)&lt;/li&gt;
+&lt;li&gt;Trip up to&amp;nbsp;Montreal&lt;/li&gt;
+&lt;li&gt;Seeing The Nance on&amp;nbsp;Broadway&lt;/li&gt;
+&lt;li&gt;Staff passes to Macy&amp;#8217;s Thanksgiving Day&amp;nbsp;Parade&lt;/li&gt;
+&lt;li&gt;Meeting new friends and&amp;nbsp;colleagues&lt;/li&gt;
+&lt;li&gt;Seeing the Rockettes at Radio City Music&amp;nbsp;Hall&lt;/li&gt;
+&lt;li&gt;Teaching full courses for the first&amp;nbsp;time&lt;/li&gt;
+&lt;li&gt;Getting my first keynote speaker&amp;nbsp;invite&lt;/li&gt;
+&lt;li&gt;Wedding&amp;nbsp;2.0&lt;/li&gt;
+&lt;li&gt;Getting &lt;em&gt;two&lt;/em&gt;&amp;nbsp;Thanksgivings&lt;/li&gt;
+&lt;li&gt;&lt;span class="caps"&gt;NYC&lt;/span&gt; parades (Pride, St Patrick&amp;#8217;s,&amp;nbsp;Thanksgiving)&lt;/li&gt;
+&lt;li&gt;Movie date-nights in Bryant&amp;nbsp;Park&lt;/li&gt;
+&lt;li&gt;Amazing skyline views from our&amp;nbsp;rooftop&lt;/li&gt;
+&lt;li&gt;Entertaining friends and&amp;nbsp;family&lt;/li&gt;
+&lt;li&gt;Ordering pretty much anything I could possibly want&amp;nbsp;on-line&lt;/li&gt;
+&lt;li&gt;Taking the Subway every day (Sometimes that&amp;nbsp;sucks&amp;#8230;)&lt;/li&gt;
+&lt;li&gt;Getting a new&amp;nbsp;dog&lt;/li&gt;
+&lt;li&gt;Having my own office&amp;nbsp;:-)&lt;/li&gt;
+&lt;li&gt;Celebrating New Year&amp;#8217;s Eve only blocks from Times&amp;nbsp;Square&lt;/li&gt;
+&lt;li&gt;Walking the High&amp;nbsp;Line&lt;/li&gt;
+&lt;li&gt;Seeing the New York Philharmonic in Central Park (With&amp;nbsp;fireworks!)&lt;/li&gt;
+&lt;li&gt;Having access to so many world class restaurants all the&amp;nbsp;time&lt;/li&gt;
+&lt;li&gt;Street vendors (Street&amp;nbsp;meat)&lt;/li&gt;
+&lt;li&gt;Turning&amp;nbsp;30&lt;/li&gt;
+&lt;li&gt;Extreme&amp;nbsp;temperatures&lt;/li&gt;
+&lt;li&gt;And many more things, too numerous to&amp;nbsp;list!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;#8217;s to the next year, may it be even more fun and exciting than the&amp;nbsp;last.&lt;/p&gt;</summary><category term="Announcement"></category><category term="Update"></category></entry><entry><title>A quick bookmarklet for off-campus library access</title><link href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/" rel="alternate"></link><updated>2013-12-17T14:56:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-12-17:2013/12/bookmarklet_for_off_campus_library_access/</id><summary type="html">&lt;p&gt;I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. &lt;em&gt;Fortunately&lt;/em&gt;, Hunter College provides &lt;a href="http://library.hunter.cuny.edu/find/accessfromhome"&gt;off-campus access&lt;/a&gt; to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. &lt;em&gt;Unfortunately&lt;/em&gt;, it turns out to be a huge pain to use anything other than the library search facilities (like &lt;a href="http://scholar.google.com/"&gt;Google Scholar&lt;/a&gt;) through the proxy server*. In fact, when working off-campus, you actually have to preface each &lt;span class="caps"&gt;URL&lt;/span&gt; address to licensed resources with 
 &lt;code&gt;http://proxy.wexler.hunter.cuny.edu/login?url=&lt;/code&gt; in order to be able to access it. Not very&amp;nbsp;handy&amp;#8230;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Bookmarklet"&gt;Bookmarklets&lt;/a&gt; to the rescue! This problem is actually something that bookmarklets are perfect for. A bookmarklet is (usually) just a small piece of JavaScript that resides in your browser and provides additional functionality to a web page. With that in mind, I decided to create a simple bookmarklet to automatically reload a given page with the above prefix prepended to the &lt;span class="caps"&gt;URL&lt;/span&gt;; giving me access to the material via the library proxy server, while still being able to use whatever search tools I want. In this case, all the bookmarklet contains is the following JavaScript&amp;nbsp;code:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http://proxy.wexler.hunter.cuny.edu/login?url=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;

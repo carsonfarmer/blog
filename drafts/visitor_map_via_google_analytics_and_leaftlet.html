@@ -132,7 +132,6 @@ The data (approximate site visitor location) comes from <a href="https://develop
   <span class="p">})();</span>
 
 <span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/script&gt;</span>
 </pre></div>
 
 
@@ -171,7 +170,17 @@ The data (approximate site visitor location) comes from <a href="https://develop
 </pre></div>
 
 
-<p>With all that in place, I just created a Python script that runs the above code every time I update my site, generating a list of visitor locations over the last month. Since I already had a map as my site&#8217;s background, I just updated the Leatleft Javascript to add in the visitor locations using the Cluster plugin. The results look something like this (or, assuming I haven&#8217;t changed things again, just take a look at the background to this&nbsp;page):</p>
+<p>This data required a fair bit of &#8216;cleaning&#8217; before I could use it in Leaftlet, which I did via Pandas. For some areas where lat/long data wasn&#8217;t available via Google Analytics, I used geopy and the GeoNames geocoding <span class="caps">API</span> to fill in the blanks (When a location still couldn&#8217;t be determined, I just specificed &#8216;random&#8217; location in the North Atlantic). With all that in place, I just created a Python script that runs the query and cleanup code every time I update my site, generating a Javascript file with <code>JSON</code> data of visitor locations over the last&nbsp;month:</p>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">visitors</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">[</span><span class="mf">34.597042</span><span class="p">,</span><span class="o">-</span><span class="mf">40.808716</span><span class="p">,</span><span class="s2">&quot;Unknown&quot;</span><span class="p">,</span><span class="mf">11.0</span><span class="p">],</span>
+<span class="p">[</span><span class="mf">40.25</span><span class="p">,</span><span class="mf">45.0</span><span class="p">,</span><span class="s2">&quot;Armenia&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<span class="p">[</span><span class="mf">50.75</span><span class="p">,</span><span class="mf">4.5</span><span class="p">,</span><span class="s2">&quot;Belgium&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">11.75</span><span class="p">,</span><span class="s2">&quot;Gabon&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>And the final results turned out like&nbsp;this:</p>
     <p class="category">
         <i class="icon-certificate"></i>
         <a href="http://www.carsonfarmer.com/category/python.html">Python</a> 
