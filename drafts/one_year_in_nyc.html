@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>One year in New York City</title>
+        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+        <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+        <script src="http://www.carsonfarmer.com/libs/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
+        <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript">
+            var loc = [40.7684, -73.9637, 10];
+            function initialize() {
+                var layer = "watercolor";
+                var map = new L.Map("map", {
+                        center: new L.LatLng(loc[0], loc[1]),
+                        zoom: loc[2],
+                        zoomControl: false
+                    });
+                map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
+                map.locate({setView: true, watch: true})
+                  .on('locationfound', function(e) {
+                    var marker = L.marker([e.latitude, e.longitude]).bindPopup('Thanks for stopping by!');
+                    map.addLayer(marker);
+                  });
+            }
+        </script>
+</head> 
+
+<body id="index" class="home" onload="initialize()">
+<div id="map" style="position: fixed;"></div>
+        <header id="banner" class="body">
+                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
+                <form class="form-inline" id="top-search">
+    <div class='input-append'>
+        <input type="text" id="top-query" placeholder="Search..." />
+        <button class="btn add-on" id="top-btn" type="button">
+            <i class="icon-search"></i>
+        </button>
+<div class="dropdown pull-right" id="top-dropdown">
+<a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+<ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+    </div>
+</form>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+<li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
+                                <li class="divider-vertical"></li>
+                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
+                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
+                                    <li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
+                                        <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
+                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Research</a></li>
+                                                <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
+                                        </ul>
+                                    </li>
+                                <li class="dropdown pull-right">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+                                    <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
+                                    <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
+                                        <li>
+                                          <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                                          <i class="icon-rss"></i> atom feed</a>
+                                        </li>
+                                        <li>
+                                          <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                                          <i class="icon-rss"></i> rss feed</a>
+                                        </li>
+                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
+                                            <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
+                                            <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
+                                            <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
+                                            <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
+                                            <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
+                                            <li><a href="http://cuny.is/cfarmer"><i class="icon-comment-alt"></i> cuny.is</a></li>
+                                            <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2014/01/one_year_in_nyc/" rel="bookmark"
+           title="Permalink to One year in New York City">One year in New York&nbsp;City</a></h1>
+      <abbr class="published" title="2014-01-03T17:50:00">
+          <i class="icon-calendar"></i>
+          Fri 03 January 2014
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
+
+    <div class="entry-content">
+      <p>One year ago today, January 3rd 2014, <a href="https://twitter.com/AmandaFarmerNYC">my wife</a> and I officially moved to New York City. It has flown by extremely fast for both of us, but we&#8217;ve managed to enjoy the city and all of the benefits that come with it. Some highlights (in no particular order)&nbsp;include:</p>
+<ul>
+<li>Starting my own research&nbsp;agenda</li>
+<li>Skating at Rockefeller&nbsp;Center</li>
+<li>Seeing Chicago on&nbsp;Broadway</li>
+<li>Wondering through Manhattan at Christmas&nbsp;time</li>
+<li>Road-trip to&nbsp;Boston</li>
+<li>Living in North America again (Europe was wonderful, but its nice to be closer to&nbsp;family)</li>
+<li>Trip up to&nbsp;Montreal</li>
+<li>Seeing The Nance on&nbsp;Broadway</li>
+<li>Staff passes to Macy&#8217;s Thanksgiving Day&nbsp;Parade</li>
+<li>Meeting new friends and&nbsp;colleagues</li>
+<li>Seeing the Rockettes at Radio City Music&nbsp;Hall</li>
+<li>Teaching full courses for the first&nbsp;time</li>
+<li>Getting my first keynote speaker&nbsp;invite</li>
+<li>Wedding&nbsp;2.0</li>
+<li>Getting <em>two</em>&nbsp;Thanksgivings</li>
+<li><span class="caps">NYC</span> parades (Pride, St Patrick&#8217;s,&nbsp;Thanksgiving)</li>
+<li>Movie date-nights in Bryant&nbsp;Park</li>
+<li>Amazing skyline views from our&nbsp;rooftop</li>
+<li>Entertaining friends and&nbsp;family</li>
+<li>Ordering pretty much anything I could possibly want&nbsp;on-line</li>
+<li>Taking the Subway every day (Sometimes that&nbsp;sucks&#8230;)</li>
+<li>Getting a new&nbsp;dog</li>
+<li>Having my own office&nbsp;:-)</li>
+<li>Celebrating New Year&#8217;s Eve only blocks from Times&nbsp;Square</li>
+<li>Walking the High&nbsp;Line</li>
+<li>Seeing the New York Philharmonic in Central Park (With&nbsp;fireworks!)</li>
+<li>Having access to so many world class restaurants all the&nbsp;time</li>
+<li>Street vendors (Street&nbsp;meat)</li>
+<li>Turning&nbsp;30</li>
+<li>Extreme&nbsp;temperatures</li>
+<li>And many more things, too numerous to&nbsp;list!</li>
+</ul>
+<p>Here&#8217;s to the next year, may it be even more fun and exciting than the&nbsp;last.</p>
+    <p class="category">
+        <i class="icon-certificate"></i>
+        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+    </p>
+    <p class="tag">
+        <i class="icon-tags"></i>
+ <a href="http://www.carsonfarmer.com/tag/announcement.html">Announcement</a>
+ <a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
+    </p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+<div class="twitter">
+        <h2><i class="icon-twitter"></i> twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+            data-link-color="#2A75A9" 
+            data-chrome="nofooter noheader noborders transparent" 
+            data-widget-id="330339195518337025"
+            height="300" lang="EN"
+            data-related="CarsonFarmer">
+            Tweets by @CarsonFarmer
+        </a>
+        <script>
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){
+                    js=d.createElement(s);
+                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js,fjs);
+                }
+            }(document,"script","twitter-wjs");
+        </script>
+
+</div>
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+                <address id="about" class="vcard body shadow">
+                                <ul id="links">
+                                    <li><a href="http://www.geo.hunter.cuny.edu/cfarmer/">CUNY Faculty Page</a></li>
+                                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
+                                </ul>
+                Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
+                Hunter College - CUNY | 695 Park Avenue, New York | New York, 10065</br>
+                </address><!-- /#about -->
+                <p style="text-align: center;">This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of <a href="http://python.org">Python</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41110370-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script>
+    $(function() {
+        var search = window.location.search.substring(1)
+        if (search == "feed=rss2") window.location = "http://www.carsonfarmer.com/feeds/all.rss.xml"
+    });
+
+    $(document).ready(function() {
+    
+        //Calculate the height of <header>
+        //Use outerHeight() instead of height() if have padding
+        var aboveHeight = $('.navbar').position().top;
+
+    //when scroll
+        $(window).scroll(function() {
+            //if scrolled down more than the header’s height
+                if ($(window).scrollTop() > aboveHeight){
+                // if yes, add "fixed" class to the <nav>
+                // add padding top to the #content 
+                    // if (!$('nav').hasClass('fixed')) {
+                    //     $('.home_link').show("slide", { direction: "right" }, 250)
+                    // };
+                    $('.navbar').addClass('fixed').addClass('shadow').css('top','0').next() //.addClass('navbar-fixed-top').next()//
+                    $('#content').css('margin-top',aboveHeight+20+'px'); // value is same as the height of the nav
+                } else {
+                // when scroll up or less than aboveHeight,
+                // remove the “fixed” class, and the padding-top
+                    // if ($('nav').hasClass('fixed')) {
+                    //     console.log('test')
+                    //     $('.home_link').hide("slide", { direction: "right" }, 250)
+                    // };
+                    $('.navbar').removeClass('fixed').removeClass('shadow').next()
+                    $('#content').css('margin-top','0px');
+                }
+        });
+        $("#top-query").keydown(function(event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                site_search();
+                return false;
+            }
+        });
+        $("#top-btn").click(function(event) {
+            event.preventDefault();
+            site_search();
+            return false;
+        });
+    });
+    
+function site_search() {
+    var query = $("#top-query").val();
+    if (query == "") return false;
+    var api = 'http://tapirgo.com/api/1/search.json?';
+    var token = '51980cd33f61b05bbb000ce0';
+    var el = $("#top-results");
+    el.empty();
+    el.append('<li style="padding-left: 10px">Fetching results...</li>')
+    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
+        function(data) {
+            // insert function here if needed
+            if (data.length) {
+                el.empty();
+                $.each(data, function(key, val) {
+                    var xx = new Date(val.published_on)+""
+                    if ((/^http\:\/\/www.carsonfarmer.com/).test(val.link)) { // hack to ignore duplicate returns
+                        el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
+                            'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' + '</li>');
+                    }
+                });
+            } else {
+                el.empty();
+                el.append('<li style="padding-left: 10px">No results found...</li>')
+            };
+        $("[data-toggle=tooltip]").tooltip();
+    });
+    $("#top-toggle").dropdown('toggle');
+}
+</script>
+</body>
+</html>
