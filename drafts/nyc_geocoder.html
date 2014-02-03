@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>One year in New York City</title>
+        <title>NYC Geoclient REST API from Python</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
         <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -95,11 +95,11 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2014/01/one_year_in_nyc/" rel="bookmark"
-           title="Permalink to One year in New York City">One year in New York&nbsp;City</a></h1>
-      <abbr class="published" title="2014-01-03T17:50:00">
+        <a href="http://www.carsonfarmer.com/2014/02/nyc_geocoder/" rel="bookmark"
+           title="Permalink to NYC Geoclient REST API from Python"><span class="caps">NYC</span> Geoclient <span class="caps">REST</span> <span class="caps">API</span> from&nbsp;Python</a></h1>
+      <abbr class="published" title="2014-02-03T11:40:00">
           <i class="icon-calendar"></i>
-          Fri 03 January 2014
+          Mon 03 February 2014
       </abbr>
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -117,49 +117,45 @@
 <script type="IN/Share" data-counter="right"></script>    </header>
 
     <div class="entry-content">
-      <p>One year ago today, January 3rd 2014, <a href="https://twitter.com/AmandaFarmerNYC">my wife</a> and I officially moved to New York City. It has flown by extremely fast for both of us, but we&#8217;ve managed to enjoy the city and all of the benefits that come with it. Some highlights (in no particular order)&nbsp;include:</p>
-<ul>
-<li>Starting my own research&nbsp;agenda</li>
-<li>Skating at Rockefeller&nbsp;Center</li>
-<li>Seeing Chicago on&nbsp;Broadway</li>
-<li>Wondering through Manhattan at Christmas&nbsp;time</li>
-<li>Road-trip to&nbsp;Boston</li>
-<li>Living in North America again (Europe was wonderful, but its nice to be closer to&nbsp;family)</li>
-<li>Trip up to&nbsp;Montreal</li>
-<li>Seeing The Nance on&nbsp;Broadway</li>
-<li>Staff passes to Macy&#8217;s Thanksgiving Day&nbsp;Parade</li>
-<li>Meeting new friends and&nbsp;colleagues</li>
-<li>Seeing the Rockettes at Radio City Music&nbsp;Hall</li>
-<li>Teaching full courses for the first&nbsp;time</li>
-<li>Getting my first keynote speaker&nbsp;invite</li>
-<li>Wedding&nbsp;2.0</li>
-<li>Getting <em>two</em>&nbsp;Thanksgivings</li>
-<li><span class="caps">NYC</span> parades (Pride, St Patrick&#8217;s,&nbsp;Thanksgiving)</li>
-<li>Movie date-nights in Bryant&nbsp;Park</li>
-<li>Amazing skyline views from our&nbsp;rooftop</li>
-<li>Entertaining friends and&nbsp;family</li>
-<li>Ordering pretty much anything I could possibly want&nbsp;on-line</li>
-<li>Taking the Subway every day (Sometimes that&nbsp;sucks&#8230;)</li>
-<li>Getting a new&nbsp;dog</li>
-<li>Having my own office&nbsp;:-)</li>
-<li>Celebrating New Year&#8217;s Eve only blocks from Times&nbsp;Square</li>
-<li>Walking the High&nbsp;Line</li>
-<li>Seeing the New York Philharmonic in Central Park (With&nbsp;fireworks!)</li>
-<li>Having access to so many world class restaurants all the&nbsp;time</li>
-<li>Street vendors (Street&nbsp;meat)</li>
-<li>Turning&nbsp;30</li>
-<li>Extreme&nbsp;temperatures</li>
-<li>And many more things, too numerous to&nbsp;list!</li>
-</ul>
-<p>Here&#8217;s to the next year, may it be even more fun and exciting than the&nbsp;last.</p>
+      <p>Recently, on the <a href="http://www.meetup.com/betanyc/">betaNYC</a> Meetup email list, <a href="http://blog.accursedware.com/">John Krauss</a> and 
+<a href="http://29degreesnorth.blogspot.com/">Tom Swanson</a> both posted Python code for accessing the <a href="http://developer.cityofnewyork.us/api/geoclient-api-beta"><span class="caps">NYC</span> Geoclient 
+<span class="caps">REST</span> <span class="caps">API</span></a>, which is an awesome resource developed by the <a href="http://www.nyc.gov/html/doitt/html/home/home.shtml"><span class="caps">NYC</span> Department 
+of Information Technology and Telecommunications</a> <span class="caps">GIS</span>/Mapping&nbsp;unit.</p>
+<blockquote>
+<p>The Geoclient <span class="caps">API</span> is a RESTful web service interface to the <span class="caps">NYC</span> Department of City Planning’s Geosupport system developed 
+by the Department of Information Technology and Telecommunications <span class="caps">GIS</span>/Mapping unit. Geosupport is a mainframe-based 
+geocoding system used by <span class="caps">NYC</span> government. Geosupport provides coordinate and geographic attributes for supported input 
+locations (address, intersection, blockface). Geoclient exposes the most widely used Geosupport functions and provides them 
+in a more intuitive and modern&nbsp;manner.</p>
+</blockquote>
+<p>This is what John has to say about <a href="https://github.com/talos/nyc-geoclient">his code</a>:</p>
+<blockquote>
+<p>I&#8217;ve been messing around with <span class="caps">NYC</span>&#8217;s geoclient <span class="caps">API</span>.  It&#8217;s quite powerful!  I wrapped the <span class="caps">REST</span> calls in a Python module, 
+which is accessible for all on PyPI.  You can check it out&nbsp;here:</p>
+<p>https://github.com/talos/nyc-geoclient</p>
+<p>And the documentation&nbsp;here:</p>
+<p>http://nyc-geoclient.readthedocs.org/en/latest/index.html</p>
+<p>On a side-note, according to Geoclient, almost 20% of the intersections in the city&#8217;s own collision statistics releases are 
+ambiguous or&nbsp;invalid.</p>
+</blockquote>
+<p>And this is what Tom has to say <a href="https://github.com/tswanson/NYCParkingGeocode">about his</a>:</p>
+<blockquote>
+<p>My code is nowhere near as clean as John’s but if might be of interest that I ran ~3millions records through the <span class="caps">NYC</span> 
+GeoClient in December.  Overall, the services worked great and was able to make ~1,500 calls per min.  I was geocoding 
+the parking ticket data on nyc open&nbsp;data.</p>
+<p>https://github.com/tswanson/NYCParkingGeocode</p>
+</blockquote>
+<p>Note that you need to <a href="http://developer.cityofnewyork.us/">register an app with DoITT</a> (and sign it up 
+for the Geoclient <span class="caps">API</span>) then wait a few days before being able to use the <span class="caps">API</span>.
+So get registered&nbsp;<span class="caps">ASAP</span>!</p>
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a href="http://www.carsonfarmer.com/category/python.html">Python</a> 
     </p>
     <p class="tag">
         <i class="icon-tags"></i>
  <a href="http://www.carsonfarmer.com/tag/announcement.html">Announcement</a>
- <a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
+ <a href="http://www.carsonfarmer.com/tag/python.html">Python</a>
     </p>
     </div><!-- /.entry-content -->
 

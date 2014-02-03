@@ -10,7 +10,7 @@ notebook for this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fr
 &lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/galton.csv"&gt;&lt;code&gt;galton.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[1]:
 &lt;/div&gt;
@@ -29,7 +29,7 @@ In&amp;nbsp;[1]:
 &lt;p&gt;Simple numerical descriptions are easy to compute. Here are the mean, median, standard deviation and variance of the children&amp;#8217;s heights (in&amp;nbsp;inches).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[2]:
 &lt;/div&gt;
@@ -40,11 +40,11 @@ In&amp;nbsp;[2]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[2]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -61,7 +61,7 @@ In&amp;nbsp;[2]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[3]:
 &lt;/div&gt;
@@ -72,11 +72,11 @@ In&amp;nbsp;[3]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[3]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -93,7 +93,7 @@ In&amp;nbsp;[3]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[4]:
 &lt;/div&gt;
@@ -104,11 +104,11 @@ In&amp;nbsp;[4]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[4]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -125,7 +125,7 @@ In&amp;nbsp;[4]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[5]:
 &lt;/div&gt;
@@ -136,11 +136,11 @@ In&amp;nbsp;[5]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[5]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -160,7 +160,7 @@ In&amp;nbsp;[5]:
 &lt;p&gt;Notice that the variance function (&lt;code&gt;var()&lt;/code&gt;) returns the square of the standard deviation (&lt;code&gt;std()&lt;/code&gt;). Having both is merely a convenience. A percentile tells where a given value falls in a distribution. For example, a height of 63 inches is on the short side in Galton’s&amp;nbsp;data:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[6]:
 &lt;/div&gt;
@@ -172,11 +172,11 @@ In&amp;nbsp;[6]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[6]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -200,7 +200,7 @@ In&amp;nbsp;[6]:
 &lt;p&gt;A quantile refers to the same sort of calculation, but inverted. Instead of giving a value in the same units as the distribution, you give a percentage: a number between 0 and 100. The &lt;code&gt;scoreatpercentile()&lt;/code&gt; function then calculates the value whose percentile would be that&amp;nbsp;value:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[7]:
 &lt;/div&gt;
@@ -211,11 +211,11 @@ In&amp;nbsp;[7]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[7]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -238,7 +238,7 @@ In&amp;nbsp;[7]:
 &lt;p&gt;You can also use the following functionality from &amp;#8216;pandas&amp;#8217; which is consistent with how the &amp;#8216;mosaic&amp;#8217; R package calculates quantiles, using the &lt;code&gt;qdata&lt;/code&gt; function, and is a bit simpler. Note that instead of a percentage, a probability is given (a number between 0 and 1), but the output is the&amp;nbsp;same.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[8]:
 &lt;/div&gt;
@@ -249,11 +249,11 @@ In&amp;nbsp;[8]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[8]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -273,7 +273,7 @@ In&amp;nbsp;[8]:
 &lt;p&gt;Building on this, the 25th and 75th percentiles - in other words, the 50 percent coverage interval, can be computed&amp;nbsp;as:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[9]:
 &lt;/div&gt;
@@ -284,11 +284,11 @@ In&amp;nbsp;[9]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[9]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -308,7 +308,7 @@ In&amp;nbsp;[9]:
 &lt;p&gt;The 50 percent coverage interval can &lt;em&gt;also&lt;/em&gt; be computed as a single command using &amp;#8216;list comprehension&amp;#8217; - a &amp;#8216;Pythonic&amp;#8217; way to clearly and concisely construct&amp;nbsp;lists.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[10]:
 &lt;/div&gt;
@@ -319,11 +319,11 @@ In&amp;nbsp;[10]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[10]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -346,7 +346,7 @@ In&amp;nbsp;[10]:
 &lt;p&gt;We can use the same techniques to compute the 2.5th and 97.5th percentiles - in other words, the 95 percent coverage&amp;nbsp;interval:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[11]:
 &lt;/div&gt;
@@ -357,11 +357,11 @@ In&amp;nbsp;[11]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[11]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -381,7 +381,7 @@ In&amp;nbsp;[11]:
 &lt;p&gt;Another simple way to compute different coverage intervals is to provide a &lt;code&gt;percentile_width&lt;/code&gt; argument to the &lt;code&gt;describe()&lt;/code&gt; function:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[12]:
 &lt;/div&gt;
@@ -392,11 +392,11 @@ In&amp;nbsp;[12]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[12]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -418,7 +418,7 @@ Name: height, dtype: float64
 &lt;p&gt;The interquartile range is the width of the 50 percent coverage interval: the diﬀerence between the 75th and 25th&amp;nbsp;percentiles:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[13]:
 &lt;/div&gt;
@@ -429,11 +429,11 @@ In&amp;nbsp;[13]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[13]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -464,7 +464,7 @@ array([ 5.7])
 &lt;p&gt;Constructing a histogram involves dividing the range of a variable up into bins and counting how many cases fall into each bin. This is done in an almost entirely automatic way using the &lt;code&gt;hist()&lt;/code&gt; function from a column in a&amp;nbsp;dataframe:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[14]:
 &lt;/div&gt;
@@ -475,11 +475,11 @@ In&amp;nbsp;[14]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -611,7 +611,7 @@ RU5ErkJggg==
 &lt;p&gt;You can also create a histogram using &amp;#8216;pylab&amp;#8217; commands&amp;nbsp;directly:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[15]:
 &lt;/div&gt;
@@ -622,11 +622,11 @@ In&amp;nbsp;[15]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -734,7 +734,7 @@ B9dw2CJD1CkpAAAAAElFTkSuQmCC
 &lt;p&gt;When constructing a histogram, Python makes an automatic but sensible choice of the number of bins. If you like, you can control this yourself. For&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[16]:
 &lt;/div&gt;
@@ -745,11 +745,11 @@ In&amp;nbsp;[16]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -879,7 +879,7 @@ RU5ErkJggg==
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The horizontal axis of the histogram is always in the units of the variable. For the histograms above, the horizontal axis is in &amp;#8220;inches&amp;#8221; because that is the unit of the height variable in the galton dataset. The vertical axis is conventionally drawn in one of two ways, controlled by an optional argument named &lt;code&gt;normed&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;The horizontal axis of the histogram is always in the units of the variable. For the histograms above, the horizontal axis is in &amp;quot;inches&amp;quot; because that is the unit of the height variable in the galton dataset. The vertical axis is conventionally drawn in one of two ways, controlled by an optional argument named &lt;code&gt;normed&lt;/code&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Absolute Frequency or Counts - A simple count of the number of cases that falls into each bin. This is the default, as in:&lt;br /&gt; &lt;code&gt;gal.height.hist()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Normalized - The vertical axis &lt;em&gt;area&lt;/em&gt; of the bar gives the relative proportion of cases that fall into the bin. In other words, the areas can be interpreted as probabilities and the area under the entire histogram is equal to 1. Set the &lt;code&gt;normed&lt;/code&gt; argument to &lt;code&gt;True&lt;/code&gt;, as in:&lt;br /&gt; &lt;code&gt;gal.height.hist(normed=True)&lt;/code&gt;&lt;/li&gt;
@@ -891,7 +891,7 @@ RU5ErkJggg==
 &lt;p&gt;Other useful optional &amp;#8216;pylab&amp;#8217; commands set the labels for the axes and the graph as a whole and color the bars. For&amp;nbsp;example,&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[17]:
 &lt;/div&gt;
@@ -907,11 +907,11 @@ In&amp;nbsp;[17]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -1131,14 +1131,14 @@ AAAAAElFTkSuQmCC
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The above plot requires multiple lines of commands to produce. Python evaluates each line on its own, updating the plot as each command is issued. Once the histogram is created, we can &amp;#8216;show&amp;#8217; it with &lt;code&gt;show()&lt;/code&gt;. Notice also the use of quotation marks to delimit the labels and names like&amp;nbsp;&amp;#8220;grey&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;The above plot requires multiple lines of commands to produce. Python evaluates each line on its own, updating the plot as each command is issued. Once the histogram is created, we can &amp;#8216;show&amp;#8217; it with &lt;code&gt;show()&lt;/code&gt;. Notice also the use of quotation marks to delimit the labels and names like&amp;nbsp;&amp;quot;grey&amp;quot;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="density-plots"&gt;Density&amp;nbsp;Plots&lt;/h3&gt;
-&lt;p&gt;A density plot avoids the need to create bins and plots out the distribution as a continuous curve. Making a density plot generally involves two operations. First, a density function performs the basic density computation, which is then displayed using the &lt;code&gt;plot()&lt;/code&gt; function. Pandas provides a shorthand for these two operations to produce a simple &amp;#8216;density plot&amp;#8217; (where &lt;code&gt;kind=&amp;quot;kde&amp;quot;&lt;/code&gt; stands for &amp;#8220;kind of plot equals &amp;#8216;kernel density&amp;nbsp;estimator&amp;#8217;&amp;#8221;):&lt;/p&gt;
+&lt;p&gt;A density plot avoids the need to create bins and plots out the distribution as a continuous curve. Making a density plot generally involves two operations. First, a density function performs the basic density computation, which is then displayed using the &lt;code&gt;plot()&lt;/code&gt; function. Pandas provides a shorthand for these two operations to produce a simple &amp;#8216;density plot&amp;#8217; (where &lt;code&gt;kind=&amp;quot;kde&amp;quot;&lt;/code&gt; stands for &amp;quot;kind of plot equals &amp;#8216;kernel density&amp;nbsp;estimator&amp;#8217;&amp;quot;):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[18]:
 &lt;/div&gt;
@@ -1149,11 +1149,11 @@ In&amp;nbsp;[18]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -1372,7 +1372,7 @@ QmCC
 &lt;p&gt;Box-and-whisker plots are made with the &lt;code&gt;boxplot()&lt;/code&gt; command:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[19]:
 &lt;/div&gt;
@@ -1383,11 +1383,11 @@ In&amp;nbsp;[19]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -1485,7 +1485,7 @@ YII=
 &lt;p&gt;Note that instead of using &lt;code&gt;gal.height&lt;/code&gt;, the &lt;code&gt;boxplot()&lt;/code&gt; function operatres on the data frame, and takes the column name via the &lt;code&gt;column&lt;/code&gt; argument. This is because the real power of the box-and-whisker plot is in &lt;em&gt;comparing&lt;/em&gt; distributions. This will be raised again more systematically in later tutorials, but just to illustrate, here is how to compare the heights of males and&amp;nbsp;females:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[20]:
 &lt;/div&gt;
@@ -1496,11 +1496,11 @@ In&amp;nbsp;[20]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_display_data"&gt;
 
 
@@ -1659,7 +1659,7 @@ kTsRkQFx5E5EZEBs7kREBsTmTkRkQGzuREQGxOZORGRA/w+s9D/FODtmvwAAAABJRU5ErkJggg==
 &lt;p&gt;For categorical variables, it makes no sense to compute descriptive statistics such as the mean, standard deviation, or variance. Instead, look at the number of cases at each level of the&amp;nbsp;variable.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[21]:
 &lt;/div&gt;
@@ -1670,11 +1670,11 @@ In&amp;nbsp;[21]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[21]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -1696,7 +1696,7 @@ dtype: int64
 &lt;p&gt;Proportions can be found in a similar way (use &lt;code&gt;float()&lt;/code&gt; to return a &amp;#8216;float&amp;#8217; rather than an&amp;nbsp;&amp;#8216;integer&amp;#8217;):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[22]:
 &lt;/div&gt;
@@ -1707,11 +1707,11 @@ In&amp;nbsp;[22]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[22]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -1756,7 +1756,7 @@ this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-
 &lt;p&gt;&lt;span class="note left shadow"&gt; An alternative to writing &lt;code&gt;pds.xxx&lt;/code&gt; when calling each &amp;#8216;pandas&amp;#8217; operator is to import all available operators from &amp;#8216;pandas&amp;#8217; at once: &lt;code&gt;from pandas import *&lt;/code&gt;. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&amp;nbsp;name. &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[1]:
 &lt;/div&gt;
@@ -1775,7 +1775,7 @@ In&amp;nbsp;[1]:
 &lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/swim100m.csv"&gt;&lt;code&gt;swim100m.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[2]:
 &lt;/div&gt;
@@ -1796,7 +1796,7 @@ In&amp;nbsp;[2]:
 &lt;p&gt;The type of Python object created by &lt;code&gt;read_csv()&lt;/code&gt; is called a data frame and is essentially a tabular layout. To illustrate, here are the ﬁrst several cases of the &lt;code&gt;swim&lt;/code&gt; data frame created by the previous use of &lt;code&gt;read_csv()&lt;/code&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[3]:
 &lt;/div&gt;
@@ -1807,11 +1807,11 @@ In&amp;nbsp;[3]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[3]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -1874,7 +1874,7 @@ In&amp;nbsp;[3]:
 &lt;p&gt;Data frames, like tabular data generally, involve variables and cases. In &amp;#8216;pandas&amp;#8217; data frames, each of the variables is given a name. You can refer to the variable by name in a couple of diﬀerent ways. To see the variable names in a data frame, something you might want to do to remind yourself of how names a spelled and capitalized, use the &lt;code&gt;columns&lt;/code&gt; attribute of the data frame&amp;nbsp;object:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[4]:
 &lt;/div&gt;
@@ -1885,11 +1885,11 @@ In&amp;nbsp;[4]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[4]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -1909,7 +1909,7 @@ Index([u&amp;apos;year&amp;apos;, u&amp;apos;time&amp;apos;, u&amp;apos;sex&amp;
 &lt;p&gt;Note that we have &lt;strong&gt;not&lt;/strong&gt; used brackets &lt;code&gt;()&lt;/code&gt; in the above command. This is because &lt;code&gt;columns&lt;/code&gt; is not a function; it is an &lt;em&gt;attribute&lt;/em&gt; of the data frame. Attributes add &amp;#8216;extra&amp;#8217; information (or metadata) to objects in the form of additional Python objects. In this case, the attributes describe the names (and data types) of the columns. Another way to get quick information about the variables in a data frame is with &lt;code&gt;describe()&lt;/code&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[5]:
 &lt;/div&gt;
@@ -1920,11 +1920,11 @@ In&amp;nbsp;[5]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[5]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -1996,7 +1996,7 @@ In&amp;nbsp;[5]:
 &lt;p&gt;There are lots of different functions and attributes available for data frames (and any other Python objects). For instance, to see how many cases and variables there are in a data frame, you can use the &lt;code&gt;shape&lt;/code&gt; attribute:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[6]:
 &lt;/div&gt;
@@ -2007,11 +2007,11 @@ In&amp;nbsp;[6]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[6]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2038,7 +2038,7 @@ In&amp;nbsp;[6]:
 &lt;p&gt;Most of the statistical modeling functions you will encounter in these tutorials are designed to work with data frames and allow you to refer directly to variables within a data frame. For&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[7]:
 &lt;/div&gt;
@@ -2049,11 +2049,11 @@ In&amp;nbsp;[7]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[7]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2070,7 +2070,7 @@ In&amp;nbsp;[7]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[8]:
 &lt;/div&gt;
@@ -2081,11 +2081,11 @@ In&amp;nbsp;[8]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[8]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2105,7 +2105,7 @@ In&amp;nbsp;[8]:
 &lt;p&gt;It is also possible to combine &amp;#8216;numpy&amp;#8217; operators with &amp;#8216;pandas&amp;#8217;&amp;nbsp;variables:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[9]:
 &lt;/div&gt;
@@ -2116,11 +2116,11 @@ In&amp;nbsp;[9]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[9]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2137,7 +2137,7 @@ In&amp;nbsp;[9]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[10]:
 &lt;/div&gt;
@@ -2148,11 +2148,11 @@ In&amp;nbsp;[10]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[10]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2172,7 +2172,7 @@ In&amp;nbsp;[10]:
 &lt;p&gt;The &lt;code&gt;swim&lt;/code&gt; portion of the above commands tells Python which data frame we want to operate on. Leaving oﬀ that argument leads to an&amp;nbsp;error:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[11]:
 &lt;/div&gt;
@@ -2183,11 +2183,11 @@ In&amp;nbsp;[11]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyerr"&gt;
 &lt;pre&gt;
 &lt;span class="ansired"&gt;---------------------------------------------------------------------------&lt;/span&gt;
@@ -2208,7 +2208,7 @@ In&amp;nbsp;[11]:
 &lt;p&gt;The advantage of referring to variables by name becomes evident when you construct statements that involve more than one variable within a data frame. For instance, here&amp;#8217;s a calculation of the mean year, separately for (grouping by) the different&amp;nbsp;sexes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[12]:
 &lt;/div&gt;
@@ -2219,11 +2219,11 @@ In&amp;nbsp;[12]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[12]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2243,11 +2243,11 @@ Name: year, dtype: float64
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;You will see much more of the &lt;code&gt;groupby&lt;/code&gt; function, starting in Tutorial 4 (Group-wise Models). It&amp;#8217;s the &amp;#8216;pandas&amp;#8217; way of grouping or aggregating data frames. In subsequent chapters, we will build on this notion to develop more complex ways of &amp;#8220;grouping&amp;#8221; and &amp;#8220;modeling&amp;#8221; variables &amp;#8220;by&amp;#8221; other&amp;nbsp;variables.&lt;/p&gt;
+&lt;p&gt;You will see much more of the &lt;code&gt;groupby&lt;/code&gt; function, starting in Tutorial 4 (Group-wise Models). It&amp;#8217;s the &amp;#8216;pandas&amp;#8217; way of grouping or aggregating data frames. In subsequent chapters, we will build on this notion to develop more complex ways of &amp;quot;grouping&amp;quot; and &amp;quot;modeling&amp;quot; variables &amp;quot;by&amp;quot; other&amp;nbsp;variables.&lt;/p&gt;
 &lt;p&gt;Both the &lt;code&gt;mean()&lt;/code&gt; and &lt;code&gt;min()&lt;/code&gt; functions have been arranged by the &amp;#8216;pandas&amp;#8217; library to look in the data frame when interpreting variables, but not all Python functions are designed this way. For&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[13]:
 &lt;/div&gt;
@@ -2258,11 +2258,11 @@ In&amp;nbsp;[13]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyerr"&gt;
 &lt;pre&gt;
 &lt;span class="ansired"&gt;---------------------------------------------------------------------------&lt;/span&gt;
@@ -2282,7 +2282,7 @@ In&amp;nbsp;[13]:
 &lt;p&gt;When you encounter a function that isn&amp;#8217;t supported by data frames, you can use &amp;#8216;numpy&amp;#8217; functions and the special &lt;code&gt;apply&lt;/code&gt; function built-into data frames (note that the &lt;code&gt;func&lt;/code&gt; argument is&amp;nbsp;optional):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[14]:
 &lt;/div&gt;
@@ -2293,11 +2293,11 @@ In&amp;nbsp;[14]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[14]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2322,7 +2322,7 @@ Name: year, dtype: float64
 &lt;p&gt;Alternatively, since columns are basically just arrays, we can use built-in numpy functions directly on the&amp;nbsp;columns:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[15]:
 &lt;/div&gt;
@@ -2333,11 +2333,11 @@ In&amp;nbsp;[15]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[15]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2363,7 +2363,7 @@ Name: year, dtype: float64
 &lt;p&gt;Sometimes you will compute a new quantity from the existing variables and want to treat this as a new variable. Adding a new variable to a data frame can be done similarly to &lt;em&gt;accessing&lt;/em&gt; a variable. For instance, here is how to create a new variable in &lt;code&gt;swim&lt;/code&gt; that holds the &lt;code&gt;time&lt;/code&gt; converted from seconds to units of&amp;nbsp;minutes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[16]:
 &lt;/div&gt;
@@ -2379,7 +2379,7 @@ In&amp;nbsp;[16]:
 &lt;p&gt;By default, columns get inserted at the end. The &lt;code&gt;insert&lt;/code&gt; function is available to insert at a particular location in the&amp;nbsp;columns.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[17]:
 &lt;/div&gt;
@@ -2395,7 +2395,7 @@ In&amp;nbsp;[17]:
 &lt;p&gt;You could also, if you want, redeﬁne an existing variable, for&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[18]:
 &lt;/div&gt;
@@ -2411,7 +2411,7 @@ In&amp;nbsp;[18]:
 &lt;p&gt;As always, we can take a quick look at the results of our operations by using the &lt;code&gt;head()&lt;/code&gt; fuction of our data&amp;nbsp;frame:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[19]:
 &lt;/div&gt;
@@ -2422,11 +2422,11 @@ In&amp;nbsp;[19]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[19]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2506,7 +2506,7 @@ In&amp;nbsp;[19]:
 &lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/kidsfeet.csv"&gt;&lt;code&gt;kidsfeet.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[20]:
 &lt;/div&gt;
@@ -2518,11 +2518,11 @@ In&amp;nbsp;[20]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[20]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2545,7 +2545,7 @@ In&amp;nbsp;[20]:
 &lt;p&gt;&lt;span class="note left shadow"&gt; The &lt;code&gt;ix[]&lt;/code&gt; property is a bit tricky to figure out at first. For more information, see &lt;a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html"&gt;the official docs&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[21]:
 &lt;/div&gt;
@@ -2557,11 +2557,11 @@ In&amp;nbsp;[21]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[21]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2656,7 +2656,7 @@ In&amp;nbsp;[21]:
 &lt;p&gt;This can also be done in a single&amp;nbsp;line:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[22]:
 &lt;/div&gt;
@@ -2667,11 +2667,11 @@ In&amp;nbsp;[22]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[22]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2763,7 +2763,7 @@ In&amp;nbsp;[22]:
 &lt;p&gt;The results returned by the above methods will never contain the same case more than once (because we told the function &lt;em&gt;not&lt;/em&gt; to sample with replacement), just as if you were dealing cards from a shuffled deck. In contrast, &amp;#8216;re-sampling with replacement&amp;#8217; replaces each case after it is dealt so that it can appear more than once in the result. You wouldn’t want to do this to select from a sampling frame, but it turns out that there are valuable statistical uses for this sort of sampling with &lt;strong&gt;replacement&lt;/strong&gt;. You’ll make use of re-sampling in Tutorial 5 (Conﬁdence&amp;nbsp;Intervals).&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[23]:
 &lt;/div&gt;
@@ -2775,11 +2775,11 @@ In&amp;nbsp;[23]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[23]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2894,7 +2894,7 @@ category: &amp;#8220;Statistical Modeling for&amp;nbsp;Python&amp;#8221;.&lt;/p&
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="invoking-an-operation"&gt;Invoking an&amp;nbsp;Operation&lt;/h2&gt;
-&lt;p&gt;People often think of computers as &lt;em&gt;doing things&lt;/em&gt;: sending email, playing music, storing files. Your job in using a computer is to tell the computer &lt;em&gt;what&lt;/em&gt; to do. There are many different words used to refer to the &amp;#8220;what&amp;#8221;: a procedure, a task, a function, a routine, and so on. Like in the book, I&amp;#8217;ll use the word &lt;strong&gt;computation&lt;/strong&gt;. Admittedly, this is a bit circular, but it is easy to remember: computers perform&amp;nbsp;computations.&lt;/p&gt;
+&lt;p&gt;People often think of computers as &lt;em&gt;doing things&lt;/em&gt;: sending email, playing music, storing files. Your job in using a computer is to tell the computer &lt;em&gt;what&lt;/em&gt; to do. There are many different words used to refer to the &amp;quot;what&amp;quot;: a procedure, a task, a function, a routine, and so on. Like in the book, I&amp;#8217;ll use the word &lt;strong&gt;computation&lt;/strong&gt;. Admittedly, this is a bit circular, but it is easy to remember: computers perform&amp;nbsp;computations.&lt;/p&gt;
 &lt;p&gt;Complex computations are built up from simpler computations. This may seem obvious, but it is a powerful idea. An &lt;strong&gt;algorithm&lt;/strong&gt; is just a description of a computation in terms of other computations that you already know how to perform. To help distinguish between the computation as a whole and the simpler parts, it is helpful to introduce a new word: an &lt;strong&gt;operator&lt;/strong&gt; performs a&amp;nbsp;computation.&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s helpful to think of the computation carried out by an operator as involving four&amp;nbsp;parts:&lt;/p&gt;
 &lt;ol style="list-style-type: decimal"&gt;
@@ -2909,7 +2909,7 @@ category: &amp;#8220;Statistical Modeling for&amp;nbsp;Python&amp;#8221;.&lt;/p&
 &lt;p&gt;Because R is a programing language designed specifically for statistical analysis, many of the &amp;#8216;base&amp;#8217; commands (such as &lt;code&gt;sqrt()&lt;/code&gt;) are available &amp;#8216;out-of-the-box&amp;#8217;. However, since Python is a more general-purpose programming language, we usually need to &lt;code&gt;import&lt;/code&gt; statistical commands (think of this as adding words to a language) before we can use them. For Scientific Python, the most important library that we need is &lt;code&gt;numpy&lt;/code&gt; (Numerical Python), which can be loaded like&amp;nbsp;this:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[1]:
 &lt;/div&gt;
@@ -2930,7 +2930,7 @@ In&amp;nbsp;[1]:
 &lt;p&gt;The software program that you use to invoke operators is called an &lt;strong&gt;interpreter&lt;/strong&gt; (the interpreter is the program you are running when you start Python). You enter your commands as a &amp;#8216;dialog&amp;#8217; between you and the interpreter (just like when converting between any two languages!). Commands can be entered as part of a script (a text file with a list of commands to perform) or directly at a &amp;#8216;command&amp;nbsp;prompt&amp;#8217;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[2]:
 &lt;/div&gt;
@@ -2941,11 +2941,11 @@ In&amp;nbsp;[2]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[2]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -2965,7 +2965,7 @@ In&amp;nbsp;[2]:
 &lt;p&gt;In the above situation, the &amp;#8216;prompt&amp;#8217; is &lt;code&gt;In [ ]:&lt;/code&gt;, and the &amp;#8216;command&amp;#8217; is &lt;code&gt;np.sqrt(25)&lt;/code&gt;. When you press &amp;#8216;Enter&amp;#8217;, the interpreter reads your command and performs the computation. For commands such as the one above, the interpreter will print the output value from the&amp;nbsp;computation:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[3]:
 &lt;/div&gt;
@@ -2976,11 +2976,11 @@ In&amp;nbsp;[3]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[3]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3003,7 +3003,7 @@ In&amp;nbsp;[3]:
 &lt;p&gt;Often, operations involve more than one argument. The various arguments are separated by commas. For example, here is an operation named &lt;code&gt;arange&lt;/code&gt; from the &lt;code&gt;numpy&lt;/code&gt; library that produces a range of numbers (increasing values between 3 and&amp;nbsp;10):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[4]:
 &lt;/div&gt;
@@ -3014,11 +3014,11 @@ In&amp;nbsp;[4]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[4]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3038,7 +3038,7 @@ array([3, 4, 5, 6, 7, 8, 9])
 &lt;p&gt;The first argument tells where to start the range and the second tells where to end it. The order of the arguments is important. For instance, &lt;em&gt;here&lt;/em&gt; is the range produced when 10 is the first argument, 3 is the second, and the third is -1 (decreasing values between 10 and&amp;nbsp;3):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[5]:
 &lt;/div&gt;
@@ -3049,11 +3049,11 @@ In&amp;nbsp;[5]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[5]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3073,7 +3073,7 @@ array([10,  9,  8,  7,  6,  5,  4])
 &lt;p&gt;For some operators, particularly those that have many input arguments, some of the arguments can be referred to by name rather than position. This is particularly useful when the named argument has a sensible default value. For example, the &lt;code&gt;arange&lt;/code&gt; operator from the &lt;code&gt;numpy&lt;/code&gt; library can be instructed what type of output values to produce (integers, floats, etc). This is accomplished using an argument named &lt;code&gt;dtype&lt;/code&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[6]:
 &lt;/div&gt;
@@ -3084,11 +3084,11 @@ In&amp;nbsp;[6]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[6]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3108,7 +3108,7 @@ array([ 10.,   9.,   8.,   7.,   6.,   5.,   4.])
 &lt;p&gt;Note that all the values in the range now have decimal places. Depending on the circumstances, all four parts of an operation need not be present. For example, the &lt;code&gt;ctime&lt;/code&gt; operation from the &lt;code&gt;time&lt;/code&gt; library returns the current time and date; no input arguments are&amp;nbsp;required:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[7]:
 &lt;/div&gt;
@@ -3120,11 +3120,11 @@ In&amp;nbsp;[7]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[7]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3148,7 +3148,7 @@ In&amp;nbsp;[7]:
 &lt;p&gt;Often the value returned by an operation will be used later on. Values can be stored for later use with the &lt;strong&gt;assignment operator&lt;/strong&gt;. This has a different syntax that reminds the user that a value is being stored. Here&amp;#8217;s an example of a simple&amp;nbsp;assignment:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[8]:
 &lt;/div&gt;
@@ -3165,7 +3165,7 @@ In&amp;nbsp;[8]:
 &lt;p&gt;To refer to the value stored in the object, just use the object&amp;#8217;s name itself. For&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[9]:
 &lt;/div&gt;
@@ -3176,11 +3176,11 @@ In&amp;nbsp;[9]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[9]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3200,7 +3200,7 @@ In&amp;nbsp;[9]:
 &lt;p&gt;Doing a computation on the value store in an object is much the same (and provides and extremely rich syntax for performing complex&amp;nbsp;calculations):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[10]:
 &lt;/div&gt;
@@ -3211,11 +3211,11 @@ In&amp;nbsp;[10]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[10]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3249,7 +3249,7 @@ In&amp;nbsp;[10]:
 &lt;p&gt;Objects can store all sorts of things, for example a range of&amp;nbsp;numbers:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[11]:
 &lt;/div&gt;
@@ -3265,7 +3265,7 @@ In&amp;nbsp;[11]:
 &lt;p&gt;When you assign a new value to an existing object, as just done to &lt;code&gt;x&lt;/code&gt; above, the former values of that object is erased from the computer memory. The former value of &lt;code&gt;x&lt;/code&gt; was 16, but after the new assignment above, it&amp;nbsp;is:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[12]:
 &lt;/div&gt;
@@ -3276,11 +3276,11 @@ In&amp;nbsp;[12]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[12]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3300,7 +3300,7 @@ array([1, 2, 3, 4, 5, 6])
 &lt;p&gt;The value of an object is changed only via the assignment operator. Using an object in a computation does not change the value. For example, suppose you invoke the square-root operator on &lt;code&gt;x&lt;/code&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[13]:
 &lt;/div&gt;
@@ -3311,11 +3311,11 @@ In&amp;nbsp;[13]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[13]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3336,7 +3336,7 @@ array([ 1.        ,  1.41421356,  1.73205081,  2.        ,  2.23606798,
 &lt;p&gt;The square roots have been returned as a value, but this doesn&amp;#8217;t change the value of &lt;code&gt;x&lt;/code&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[14]:
 &lt;/div&gt;
@@ -3347,11 +3347,11 @@ In&amp;nbsp;[14]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[14]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3374,7 +3374,7 @@ array([1, 2, 3, 4, 5, 6])
 &lt;p&gt;If you want to change the value of &lt;code&gt;x&lt;/code&gt;, you need to use the assignment&amp;nbsp;operator:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[15]:
 &lt;/div&gt;
@@ -3393,7 +3393,7 @@ In&amp;nbsp;[15]:
 &lt;p&gt;One way to connect the computations is by using objects to store the intermediate&amp;nbsp;outputs:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[16]:
 &lt;/div&gt;
@@ -3405,11 +3405,11 @@ In&amp;nbsp;[16]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[16]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3430,7 +3430,7 @@ array([7863, 8378, 9128, 3340, 5674, 9055, 6374, 8668, 3768, 6798, 8066,
 &lt;p&gt;You can also pass the output of an operator &lt;em&gt;directly&lt;/em&gt; as an argument to another operator. Here&amp;#8217;s another way to accomplish exactly the same thing as the above (note that the values will differ because we are performing a &lt;em&gt;random&lt;/em&gt;&amp;nbsp;sample):&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[17]:
 &lt;/div&gt;
@@ -3441,11 +3441,11 @@ In&amp;nbsp;[17]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[17]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3467,7 +3467,7 @@ array([5732, 6833, 7705, 4459, 3131, 3515, 4177, 6312, 2820, 2705, 4580,
 &lt;p&gt;The &lt;code&gt;Python&lt;/code&gt; language has a concise notation for arithmetic that looks very much like the traditional&amp;nbsp;one:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[18]:
 &lt;/div&gt;
@@ -3478,11 +3478,11 @@ In&amp;nbsp;[18]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[18]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3499,7 +3499,7 @@ In&amp;nbsp;[18]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[19]:
 &lt;/div&gt;
@@ -3510,11 +3510,11 @@ In&amp;nbsp;[19]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[19]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3531,7 +3531,7 @@ In&amp;nbsp;[19]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[20]:
 &lt;/div&gt;
@@ -3542,11 +3542,11 @@ In&amp;nbsp;[20]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[20]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3563,7 +3563,7 @@ In&amp;nbsp;[20]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[21]:
 &lt;/div&gt;
@@ -3574,11 +3574,11 @@ In&amp;nbsp;[21]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[21]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3595,7 +3595,7 @@ In&amp;nbsp;[21]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[22]:
 &lt;/div&gt;
@@ -3606,11 +3606,11 @@ In&amp;nbsp;[22]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[22]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3627,7 +3627,7 @@ In&amp;nbsp;[22]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[23]:
 &lt;/div&gt;
@@ -3638,11 +3638,11 @@ In&amp;nbsp;[23]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[23]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3662,7 +3662,7 @@ In&amp;nbsp;[23]:
 &lt;p&gt;Arithmetic operators, like any other operators, can be connected to form more complicated computations. For&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[24]:
 &lt;/div&gt;
@@ -3673,11 +3673,11 @@ In&amp;nbsp;[24]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[24]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3697,7 +3697,7 @@ In&amp;nbsp;[24]:
 &lt;p&gt;The a human reader, the command &lt;code&gt;8+4/2&lt;/code&gt; might seem ambiguous. Is it intended to be &lt;code&gt;(8+4)/2&lt;/code&gt; or &lt;code&gt;8+(4/2)&lt;/code&gt;? The computer uses unambiguous rules to interpret the expression, but it&amp;#8217;s a good idea for you to use parentheses so that you can make sure that what you &lt;em&gt;intend&lt;/em&gt; is what the computer carries&amp;nbsp;out:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[25]:
 &lt;/div&gt;
@@ -3708,11 +3708,11 @@ In&amp;nbsp;[25]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[25]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3732,7 +3732,7 @@ In&amp;nbsp;[25]:
 &lt;p&gt;Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. \(3^2\) or \(\sqrt{3}\) or \(\sqrt[3]{8}\). This special typography doesn&amp;#8217;t work well with an ordinary keyboard, so &lt;code&gt;Python&lt;/code&gt; and most other computer languages uses a different&amp;nbsp;notation:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[26]:
 &lt;/div&gt;
@@ -3743,11 +3743,11 @@ In&amp;nbsp;[26]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[26]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3764,7 +3764,7 @@ In&amp;nbsp;[26]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[27]:
 &lt;/div&gt;
@@ -3775,11 +3775,11 @@ In&amp;nbsp;[27]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[27]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3796,7 +3796,7 @@ In&amp;nbsp;[27]:
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[28]:
 &lt;/div&gt;
@@ -3807,11 +3807,11 @@ In&amp;nbsp;[28]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[28]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3910,7 +3910,7 @@ Python
 &lt;p&gt;Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, \(sin(\pi) = 0\), however, the computer does not duplicate the mathematical relationship&amp;nbsp;exactly:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[29]:
 &lt;/div&gt;
@@ -3921,11 +3921,11 @@ In&amp;nbsp;[29]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[29]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3949,7 +3949,7 @@ In&amp;nbsp;[29]:
 &lt;p&gt;&lt;span class="note right shadow"&gt; Mathematically oriented readers will wonder why &lt;code&gt;Python&lt;/code&gt; should have any trouble with a computation like \(\sqrt{-9}\); the result is the imaginary number \(3\jmath\) (imaginary numbers may be represented by a \(\jmath\) or a \(\imath\), depending on the field). &lt;code&gt;Python&lt;/code&gt; works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate \(\sqrt{-9}\) for example, simply use &lt;code&gt;np.sqrt(-9+0j)&lt;/code&gt;. &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[30]:
 &lt;/div&gt;
@@ -3960,11 +3960,11 @@ In&amp;nbsp;[30]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_stream output_stderr"&gt;
 &lt;pre&gt;
 -c:1: RuntimeWarning: divide by zero encountered in double_scalars
@@ -3973,7 +3973,7 @@ In&amp;nbsp;[30]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[30]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -3990,7 +3990,7 @@ inf
 
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[31]:
 &lt;/div&gt;
@@ -4001,11 +4001,11 @@ In&amp;nbsp;[31]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_stream output_stderr"&gt;
 &lt;pre&gt;
 -c:1: RuntimeWarning: invalid value encountered in double_scalars
@@ -4014,7 +4014,7 @@ In&amp;nbsp;[31]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[31]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -4051,7 +4051,7 @@ nan
 &lt;p&gt;Whenever you refer to an object name, make sure that you don&amp;#8217;t use quotes. For example, in the following, we are first assigning the string &lt;code&gt;&amp;quot;python&amp;quot;&lt;/code&gt; to the &lt;code&gt;name&lt;/code&gt; object, and then returning (and printing automatically) the &lt;code&gt;name&lt;/code&gt; object.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[32]:
 &lt;/div&gt;
@@ -4063,11 +4063,11 @@ In&amp;nbsp;[32]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[32]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -4087,7 +4087,7 @@ In&amp;nbsp;[32]:
 &lt;p&gt;If you make a command with the object name in quotes, it won&amp;#8217;t be treated as referring to an object. Instead, it will merely mean the text&amp;nbsp;itself:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[33]:
 &lt;/div&gt;
@@ -4098,11 +4098,11 @@ In&amp;nbsp;[33]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt output_prompt"&gt;
     Out[33]:&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyout"&gt;
 
@@ -4122,7 +4122,7 @@ In&amp;nbsp;[33]:
 &lt;p&gt;Similarly, if you omit the quotation marks from around the text, the computer will treat it as if it were an object name and will look for the object of that name. For instance, the following command directs the computer to look up the value contained in an object named &lt;code&gt;python&lt;/code&gt; and insert that value into the object &lt;code&gt;name&lt;/code&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
-&lt;div class="input"&gt;
+&lt;div class="input hbox"&gt;
 &lt;div class="prompt input_prompt"&gt;
 In&amp;nbsp;[34]:
 &lt;/div&gt;
@@ -4133,11 +4133,11 @@ In&amp;nbsp;[34]:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="output_wrapper"&gt;
+&lt;div class="vbox output_wrapper"&gt;
 &lt;div class="output vbox"&gt;
 
 
-&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="hbox output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
 &lt;div class="box-flex1 output_subarea output_pyerr"&gt;
 &lt;pre&gt;
 &lt;span class="ansired"&gt;---------------------------------------------------------------------------&lt;/span&gt;

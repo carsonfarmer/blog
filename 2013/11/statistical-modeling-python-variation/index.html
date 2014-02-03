@@ -149,7 +149,7 @@ notebook for this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh
 <p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i> <a href="http://www.mosaic-web.org/go/datasets/galton.csv"><code>galton.csv</code></a></span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[1]:
 </div>
@@ -168,7 +168,7 @@ In&nbsp;[1]:
 <p>Simple numerical descriptions are easy to compute. Here are the mean, median, standard deviation and variance of the children&#8217;s heights (in&nbsp;inches).</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[2]:
 </div>
@@ -179,11 +179,11 @@ In&nbsp;[2]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[2]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -200,7 +200,7 @@ In&nbsp;[2]:
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[3]:
 </div>
@@ -211,11 +211,11 @@ In&nbsp;[3]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[3]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -232,7 +232,7 @@ In&nbsp;[3]:
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[4]:
 </div>
@@ -243,11 +243,11 @@ In&nbsp;[4]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[4]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -264,7 +264,7 @@ In&nbsp;[4]:
 
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[5]:
 </div>
@@ -275,11 +275,11 @@ In&nbsp;[5]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[5]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -299,7 +299,7 @@ In&nbsp;[5]:
 <p>Notice that the variance function (<code>var()</code>) returns the square of the standard deviation (<code>std()</code>). Having both is merely a convenience. A percentile tells where a given value falls in a distribution. For example, a height of 63 inches is on the short side in Galton’s&nbsp;data:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[6]:
 </div>
@@ -311,11 +311,11 @@ In&nbsp;[6]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[6]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -339,7 +339,7 @@ In&nbsp;[6]:
 <p>A quantile refers to the same sort of calculation, but inverted. Instead of giving a value in the same units as the distribution, you give a percentage: a number between 0 and 100. The <code>scoreatpercentile()</code> function then calculates the value whose percentile would be that&nbsp;value:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[7]:
 </div>
@@ -350,11 +350,11 @@ In&nbsp;[7]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[7]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -377,7 +377,7 @@ In&nbsp;[7]:
 <p>You can also use the following functionality from &#8216;pandas&#8217; which is consistent with how the &#8216;mosaic&#8217; R package calculates quantiles, using the <code>qdata</code> function, and is a bit simpler. Note that instead of a percentage, a probability is given (a number between 0 and 1), but the output is the&nbsp;same.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[8]:
 </div>
@@ -388,11 +388,11 @@ In&nbsp;[8]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[8]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -412,7 +412,7 @@ In&nbsp;[8]:
 <p>Building on this, the 25th and 75th percentiles - in other words, the 50 percent coverage interval, can be computed&nbsp;as:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[9]:
 </div>
@@ -423,11 +423,11 @@ In&nbsp;[9]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[9]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -447,7 +447,7 @@ In&nbsp;[9]:
 <p>The 50 percent coverage interval can <em>also</em> be computed as a single command using &#8216;list comprehension&#8217; - a &#8216;Pythonic&#8217; way to clearly and concisely construct&nbsp;lists.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[10]:
 </div>
@@ -458,11 +458,11 @@ In&nbsp;[10]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[10]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -485,7 +485,7 @@ In&nbsp;[10]:
 <p>We can use the same techniques to compute the 2.5th and 97.5th percentiles - in other words, the 95 percent coverage&nbsp;interval:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[11]:
 </div>
@@ -496,11 +496,11 @@ In&nbsp;[11]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[11]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -520,7 +520,7 @@ In&nbsp;[11]:
 <p>Another simple way to compute different coverage intervals is to provide a <code>percentile_width</code> argument to the <code>describe()</code> function:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[12]:
 </div>
@@ -531,11 +531,11 @@ In&nbsp;[12]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[12]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -557,7 +557,7 @@ Name: height, dtype: float64
 <p>The interquartile range is the width of the 50 percent coverage interval: the diﬀerence between the 75th and 25th&nbsp;percentiles:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[13]:
 </div>
@@ -568,11 +568,11 @@ In&nbsp;[13]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[13]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -603,7 +603,7 @@ array([ 5.7])
 <p>Constructing a histogram involves dividing the range of a variable up into bins and counting how many cases fall into each bin. This is done in an almost entirely automatic way using the <code>hist()</code> function from a column in a&nbsp;dataframe:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[14]:
 </div>
@@ -614,11 +614,11 @@ In&nbsp;[14]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -750,7 +750,7 @@ RU5ErkJggg==
 <p>You can also create a histogram using &#8216;pylab&#8217; commands&nbsp;directly:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[15]:
 </div>
@@ -761,11 +761,11 @@ In&nbsp;[15]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -873,7 +873,7 @@ B9dw2CJD1CkpAAAAAElFTkSuQmCC
 <p>When constructing a histogram, Python makes an automatic but sensible choice of the number of bins. If you like, you can control this yourself. For&nbsp;instance:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[16]:
 </div>
@@ -884,11 +884,11 @@ In&nbsp;[16]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -1018,7 +1018,7 @@ RU5ErkJggg==
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The horizontal axis of the histogram is always in the units of the variable. For the histograms above, the horizontal axis is in &#8220;inches&#8221; because that is the unit of the height variable in the galton dataset. The vertical axis is conventionally drawn in one of two ways, controlled by an optional argument named <code>normed</code>:</p>
+<p>The horizontal axis of the histogram is always in the units of the variable. For the histograms above, the horizontal axis is in &quot;inches&quot; because that is the unit of the height variable in the galton dataset. The vertical axis is conventionally drawn in one of two ways, controlled by an optional argument named <code>normed</code>:</p>
 <ul>
 <li>Absolute Frequency or Counts - A simple count of the number of cases that falls into each bin. This is the default, as in:<br /> <code>gal.height.hist()</code></li>
 <li>Normalized - The vertical axis <em>area</em> of the bar gives the relative proportion of cases that fall into the bin. In other words, the areas can be interpreted as probabilities and the area under the entire histogram is equal to 1. Set the <code>normed</code> argument to <code>True</code>, as in:<br /> <code>gal.height.hist(normed=True)</code></li>
@@ -1030,7 +1030,7 @@ RU5ErkJggg==
 <p>Other useful optional &#8216;pylab&#8217; commands set the labels for the axes and the graph as a whole and color the bars. For&nbsp;example,</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[17]:
 </div>
@@ -1046,11 +1046,11 @@ In&nbsp;[17]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -1270,14 +1270,14 @@ AAAAAElFTkSuQmCC
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The above plot requires multiple lines of commands to produce. Python evaluates each line on its own, updating the plot as each command is issued. Once the histogram is created, we can &#8216;show&#8217; it with <code>show()</code>. Notice also the use of quotation marks to delimit the labels and names like&nbsp;&#8220;grey&#8221;.</p>
+<p>The above plot requires multiple lines of commands to produce. Python evaluates each line on its own, updating the plot as each command is issued. Once the histogram is created, we can &#8216;show&#8217; it with <code>show()</code>. Notice also the use of quotation marks to delimit the labels and names like&nbsp;&quot;grey&quot;.</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="density-plots">Density&nbsp;Plots</h3>
-<p>A density plot avoids the need to create bins and plots out the distribution as a continuous curve. Making a density plot generally involves two operations. First, a density function performs the basic density computation, which is then displayed using the <code>plot()</code> function. Pandas provides a shorthand for these two operations to produce a simple &#8216;density plot&#8217; (where <code>kind=&quot;kde&quot;</code> stands for &#8220;kind of plot equals &#8216;kernel density&nbsp;estimator&#8217;&#8221;):</p>
+<p>A density plot avoids the need to create bins and plots out the distribution as a continuous curve. Making a density plot generally involves two operations. First, a density function performs the basic density computation, which is then displayed using the <code>plot()</code> function. Pandas provides a shorthand for these two operations to produce a simple &#8216;density plot&#8217; (where <code>kind=&quot;kde&quot;</code> stands for &quot;kind of plot equals &#8216;kernel density&nbsp;estimator&#8217;&quot;):</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[18]:
 </div>
@@ -1288,11 +1288,11 @@ In&nbsp;[18]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -1511,7 +1511,7 @@ QmCC
 <p>Box-and-whisker plots are made with the <code>boxplot()</code> command:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[19]:
 </div>
@@ -1522,11 +1522,11 @@ In&nbsp;[19]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -1624,7 +1624,7 @@ YII=
 <p>Note that instead of using <code>gal.height</code>, the <code>boxplot()</code> function operatres on the data frame, and takes the column name via the <code>column</code> argument. This is because the real power of the box-and-whisker plot is in <em>comparing</em> distributions. This will be raised again more systematically in later tutorials, but just to illustrate, here is how to compare the heights of males and&nbsp;females:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[20]:
 </div>
@@ -1635,11 +1635,11 @@ In&nbsp;[20]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt"></div>
+<div class="hbox output_area"><div class="prompt"></div>
 <div class="box-flex1 output_subarea output_display_data">
 
 
@@ -1798,7 +1798,7 @@ kTsRkQFx5E5EZEBs7kREBsTmTkRkQGzuREQGxOZORGRA/w+s9D/FODtmvwAAAABJRU5ErkJggg==
 <p>For categorical variables, it makes no sense to compute descriptive statistics such as the mean, standard deviation, or variance. Instead, look at the number of cases at each level of the&nbsp;variable.</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[21]:
 </div>
@@ -1809,11 +1809,11 @@ In&nbsp;[21]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[21]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
@@ -1835,7 +1835,7 @@ dtype: int64
 <p>Proportions can be found in a similar way (use <code>float()</code> to return a &#8216;float&#8217; rather than an&nbsp;&#8216;integer&#8217;):</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
-<div class="input">
+<div class="input hbox">
 <div class="prompt input_prompt">
 In&nbsp;[22]:
 </div>
@@ -1846,11 +1846,11 @@ In&nbsp;[22]:
 </div>
 </div>
 
-<div class="output_wrapper">
+<div class="vbox output_wrapper">
 <div class="output vbox">
 
 
-<div class="output_area"><div class="prompt output_prompt">
+<div class="hbox output_area"><div class="prompt output_prompt">
     Out[22]:</div>
 <div class="box-flex1 output_subarea output_pyout">
 
