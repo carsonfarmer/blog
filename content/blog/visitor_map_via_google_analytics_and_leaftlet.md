@@ -24,7 +24,6 @@ The data (approximate site visitor location) comes from [Google Analytics][ga], 
   })();
 
 </script>
-</script>
 ```
 
 After you have this setup, it's just a matter of waiting until you get enough site traffic to make this a worthwhile mapping exercise... Once the wait is over, its time to grab the data from Google Analytics. I used some information and pointers from this [blog-post][blog-post] to get me started, and set up the query parameters using the [Google Analytics Query Explorer][ga-explorer]. All I really needed were unqiue visits and the locations that they came from, anything else is just bonus information. In the following snippet, "ga:XXXXXXXX" is replaced with the namespaced view ID of the profile from which to request data (see the Query Explorer for details):
@@ -63,8 +62,18 @@ Once you have the above feed, you can grab the relevant data using something lik
 ```python
 data = [[r.value for r in row.metric] + [r.value for r in row.dimension] for row in feed.entry]
 ```
+This data required a fair bit of 'cleaning' before I could use it in Leaftlet, which I did via Pandas. For some areas where lat/long data wasn't available via Google Analytics, I used geopy and the GeoNames geocoding API to fill in the blanks (When a location still couldn't be determined, I just specificed 'random' location in the North Atlantic). With all that in place, I just created a Python script that runs the query and cleanup code every time I update my site, generating a Javascript file with `JSON` data of visitor locations over the last month:
 
-With all that in place, I just created a Python script that runs the above code every time I update my site, generating a list of visitor locations over the last month. Since I already had a map as my site's background, I just updated the Leatleft Javascript to add in the visitor locations using the Cluster plugin. The results look something like this (or, assuming I haven't changed things again, just take a look at the background to this page):
+```javascript
+var visitors = [
+[34.597042,-40.808716,"Unknown",11.0],
+[40.25,45.0,"Armenia",1.0],
+[50.75,4.5,"Belgium",1.0],
+[-1.0,11.75,"Gabon",1.0],
+...
+```
+
+And the final results turned out like this:
 
 [pelican]: ...
 [leaflet]: ...
