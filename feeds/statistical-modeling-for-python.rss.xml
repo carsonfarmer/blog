@@ -340,7 +340,7 @@ In&amp;nbsp;[10]:
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;span class="note right shadow"&gt; &lt;a href="http://www.secnetix.de/olli/Python/list_comprehensions.hawk"&gt;List comprehensions&lt;/a&gt; can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:&lt;br /&gt;\(S = \{ x^{2} : \{x \in 0 \dots 9\} \}\)&lt;br /&gt;\(V = (1, 2, 4, 8, \dots, 2^{12})\)&lt;br /&gt;\(M = \{x\) \(|\) \(x\) \(\in S\) and \(x\) even\(\}\)&lt;br /&gt;You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:&lt;br /&gt;&lt;code&gt;S = [x**2 for x in range(10)]&lt;/code&gt;&lt;br /&gt;&lt;code&gt;V = [2**i for i in range(13)]&lt;/code&gt;&lt;br /&gt;&lt;code&gt;M = [x for x in S if x % 2 == 0]&lt;/code&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="note right shadow"&gt; &lt;a href="http://www.secnetix.de/olli/Python/list_comprehensions.hawk"&gt;List comprehensions&lt;/a&gt; can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:&lt;br /&gt;&lt;span class="math"&gt;\(S = \{ x^{2} : \{x \in 0 \dots 9\} \}\)&lt;/span&gt;&lt;br /&gt;&lt;span class="math"&gt;\(V = (1, 2, 4, 8, \dots, 2^{12})\)&lt;/span&gt;&lt;br /&gt;&lt;span class="math"&gt;\(M = \{x\)&lt;/span&gt; &lt;span class="math"&gt;\(|\)&lt;/span&gt; &lt;span class="math"&gt;\(x\)&lt;/span&gt; &lt;span class="math"&gt;\(\in S\)&lt;/span&gt; and &lt;span class="math"&gt;\(x\)&lt;/span&gt; even&lt;span class="math"&gt;\(\}\)&lt;/span&gt;&lt;br /&gt;You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:&lt;br /&gt;&lt;code&gt;S = [x**2 for x in range(10)]&lt;/code&gt;&lt;br /&gt;&lt;code&gt;V = [2**i for i in range(13)]&lt;/code&gt;&lt;br /&gt;&lt;code&gt;M = [x for x in S if x % 2 == 0]&lt;/code&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;We can use the same techniques to compute the 2.5th and 97.5th percentiles - in other words, the 95 percent coverage&amp;nbsp;interval:&lt;/p&gt;
@@ -457,7 +457,11 @@ array([ 5.7])
 &lt;p&gt;&lt;span class="note right shadow"&gt; If you prefer to use the &lt;code&gt;pyplot&lt;/code&gt; interface, then remember to import it in the usual way at the beginning of your Python session: &lt;code&gt;import matplotlib.pyplot&lt;/code&gt; &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;span class="note left shadow"&gt; If you want interactive plotting (and why wouldn&amp;#8217;t you?!), start &amp;#8216;IPython&amp;#8217; with the &lt;code&gt;--pylab&lt;/code&gt; flag. With this flag enabled, you don&amp;#8217;t have to &lt;code&gt;import matplotlib&lt;/code&gt;, as it will be done for you automatically): &lt;code&gt;ipython --pylab&lt;/code&gt; Or, for inline figures in an IPython qtconsole or notebook, use: &lt;code&gt;ipython notebook --pylab inline&lt;/code&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="note left shadow"&gt; If you want interactive plotting (and why wouldn&amp;#8217;t you?!), start &amp;#8216;IPython&amp;#8217; with the &lt;code&gt;--pylab&lt;/code&gt; flag. With this flag enabled, you don&amp;#8217;t have to &lt;code&gt;import matplotlib&lt;/code&gt;, as it will be done for you&amp;nbsp;automatically):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ipython --pylab&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or, for inline figures in an IPython qtconsole or notebook,&amp;nbsp;use:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ipython notebook --pylab inline&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h3 id="histograms-and-distributions"&gt;Histograms and&amp;nbsp;Distributions&lt;/h3&gt;
@@ -3368,7 +3372,7 @@ array([1, 2, 3, 4, 5, 6])
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;span class="note right shadow" markdown="1"&gt; An assignment command like &lt;code&gt;x=np.sqrt(x)&lt;/code&gt; can be confusing to people who are used to algebraic notation. In algebra, the equal sign describes a relationship between the left and right sides. So, \(x = \sqrt{x}\) tells us about how the quantity \(x\) and the quantity \(\sqrt{x}\) are related. Students are usually trained to &amp;#8216;solve&amp;#8217; such a relationship, going through a series of algebraic steps to find values for \(x\) that are consistent with the mathematical statement (for \(x = \sqrt{x}\), the solutions are \(x = 0\) and \(x = 1\)). In contrast, the assignment command &lt;code&gt;x = np.sqrt(x)&lt;/code&gt; is a way of replacing the previous values stored in &lt;code&gt;x&lt;/code&gt; with new values that are the square-root of the old&amp;nbsp;ones. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="note right shadow" markdown="1"&gt; An assignment command like &lt;code&gt;x=np.sqrt(x)&lt;/code&gt; can be confusing to people who are used to algebraic notation. In algebra, the equal sign describes a relationship between the left and right sides. So, &lt;span class="math"&gt;\(x = \sqrt{x}\)&lt;/span&gt; tells us about how the quantity &lt;span class="math"&gt;\(x\)&lt;/span&gt; and the quantity &lt;span class="math"&gt;\(\sqrt{x}\)&lt;/span&gt; are related. Students are usually trained to &amp;#8216;solve&amp;#8217; such a relationship, going through a series of algebraic steps to find values for &lt;span class="math"&gt;\(x\)&lt;/span&gt; that are consistent with the mathematical statement (for &lt;span class="math"&gt;\(x = \sqrt{x}\)&lt;/span&gt;, the solutions are &lt;span class="math"&gt;\(x = 0\)&lt;/span&gt; and &lt;span class="math"&gt;\(x = 1\)&lt;/span&gt;). In contrast, the assignment command &lt;code&gt;x = np.sqrt(x)&lt;/code&gt; is a way of replacing the previous values stored in &lt;code&gt;x&lt;/code&gt; with new values that are the square-root of the old&amp;nbsp;ones. &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;If you want to change the value of &lt;code&gt;x&lt;/code&gt;, you need to use the assignment&amp;nbsp;operator:&lt;/p&gt;
@@ -3729,7 +3733,7 @@ In&amp;nbsp;[25]:
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. \(3^2\) or \(\sqrt{3}\) or \(\sqrt[3]{8}\). This special typography doesn&amp;#8217;t work well with an ordinary keyboard, so &lt;code&gt;Python&lt;/code&gt; and most other computer languages uses a different&amp;nbsp;notation:&lt;/p&gt;
+&lt;p&gt;Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. &lt;span class="math"&gt;\(3^2\)&lt;/span&gt; or &lt;span class="math"&gt;\(\sqrt{3}\)&lt;/span&gt; or &lt;span class="math"&gt;\(\sqrt[3]{8}\)&lt;/span&gt;. This special typography doesn&amp;#8217;t work well with an ordinary keyboard, so &lt;code&gt;Python&lt;/code&gt; and most other computer languages uses a different&amp;nbsp;notation:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;
@@ -3840,7 +3844,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;
-\(e^2\)
+&lt;span class="math"&gt;\(e^2\)&lt;/span&gt;
 &lt;/td&gt;
 &lt;td&gt;
 &lt;code&gt;np.exp(2)&lt;/code&gt;
@@ -3848,7 +3852,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\log_{e}(100)\)
+&lt;span class="math"&gt;\(\log_{e}(100)\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.log(100)&lt;/code&gt;
@@ -3856,7 +3860,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\log_{10}(100)\)
+&lt;span class="math"&gt;\(\log_{10}(100)\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.log10(100)&lt;/code&gt;
@@ -3864,7 +3868,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\log_{2}(100)\)
+&lt;span class="math"&gt;\(\log_{2}(100)\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.log2(100)&lt;/code&gt;
@@ -3872,7 +3876,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\cos(\frac{\pi}{2})\)
+&lt;span class="math"&gt;\(\cos(\frac{\pi}{2})\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.cos(np.pi/2)&lt;/code&gt;
@@ -3880,7 +3884,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\sin(\frac{\pi}{2})\)
+&lt;span class="math"&gt;\(\sin(\frac{\pi}{2})\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.sin(np.pi/2)&lt;/code&gt;
@@ -3888,7 +3892,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\tan(\frac{\pi}{2})\)
+&lt;span class="math"&gt;\(\tan(\frac{\pi}{2})\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.tan(np.pi/2)&lt;/code&gt;
@@ -3896,7 +3900,7 @@ Python
 &lt;/tr&gt;
 &lt;tr&gt;
     &lt;td&gt;
-\(\cos^{-1}(-1)\)
+&lt;span class="math"&gt;\(\cos^{-1}(-1)\)&lt;/span&gt;
 &lt;/td&gt;
     &lt;td&gt;
 &lt;code&gt;np.acos(-1)&lt;/code&gt;
@@ -3904,10 +3908,10 @@ Python
 &lt;/tr&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Numbers can be written in &lt;strong&gt;scientific notation&lt;/strong&gt;. For example, the &amp;#8216;universal gravitational constant&amp;#8217; that describes the gravitational attraction between masses is \(6.67428 \times 10^{11}\) (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as &lt;code&gt;6.67428e-11&lt;/code&gt;. The Avogadro constant, which gives the number of atoms in a mole, is \(6.02214179 \times 10^{23}\) per mole, or &lt;code&gt;6.02214179e+23&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Numbers can be written in &lt;strong&gt;scientific notation&lt;/strong&gt;. For example, the &amp;#8216;universal gravitational constant&amp;#8217; that describes the gravitational attraction between masses is &lt;span class="math"&gt;\(6.67428 \times 10^{11}\)&lt;/span&gt; (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as &lt;code&gt;6.67428e-11&lt;/code&gt;. The Avogadro constant, which gives the number of atoms in a mole, is &lt;span class="math"&gt;\(6.02214179 \times 10^{23}\)&lt;/span&gt; per mole, or &lt;code&gt;6.02214179e+23&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The computer language does not directly support the recording of units. This is unfortunate, since in the real world numbers often have units and the units matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because the design engineers specified the engine&amp;#8217;s thrust in units of pounds, while the guidance engineers thought the units were&amp;nbsp;newtons.&lt;/p&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt; There are &lt;em&gt;some&lt;/em&gt; Python packages for handling units, including &lt;a href="https://pint.readthedocs.org/en/latest/"&gt;pint&lt;/a&gt;, &lt;a href="http://pythonhosted.org/quantities/"&gt;quantities&lt;/a&gt;, &lt;a href="https://pypi.python.org/pypi/units/"&gt;units&lt;/a&gt;, &lt;a href="http://docs.sympy.org/latest/modules/physics/units.html"&gt;sympy.physics.units&lt;/a&gt;, &lt;a href="http://conference.scipy.org/scipy2013/presentation_detail.php?id=174"&gt;etc&lt;/a&gt;. &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, \(sin(\pi) = 0\), however, the computer does not duplicate the mathematical relationship&amp;nbsp;exactly:&lt;/p&gt;
+&lt;p&gt;Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, &lt;span class="math"&gt;\(sin(\pi) = 0\)&lt;/span&gt;, however, the computer does not duplicate the mathematical relationship&amp;nbsp;exactly:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;
@@ -3942,11 +3946,11 @@ In&amp;nbsp;[29]:
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Whether a number like this is properly interpreted as &amp;#8216;close to zero&amp;#8217; depends on the context and, for quantities that have units, on the units themselves. For instance, the unit &amp;#8216;parsec&amp;#8217; is used in astronomy in reporting distances between stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A distance of \(1.22 \times 10^{-16}\) parsecs is tiny in astronomy but translates to about 2.5 meters - not so small on the human scale. In statistics, many calculations relate to probabilities which are always in the range 0 to 1. On this scale, &lt;code&gt;1.22e-16&lt;/code&gt; is very close to&amp;nbsp;zero.&lt;/p&gt;
-&lt;p&gt;There are several &amp;#8216;special&amp;#8217; numbers in the &lt;code&gt;Python&lt;/code&gt; world; two of which are &lt;code&gt;inf&lt;/code&gt;, which stands for \(\infty\) (infinity), and &lt;code&gt;nan&lt;/code&gt;, which stands for &amp;#8216;not a number&amp;#8217; (nan results when a numerical operation isn&amp;#8217;t define), for&amp;nbsp;instance:&lt;/p&gt;
+&lt;p&gt;Whether a number like this is properly interpreted as &amp;#8216;close to zero&amp;#8217; depends on the context and, for quantities that have units, on the units themselves. For instance, the unit &amp;#8216;parsec&amp;#8217; is used in astronomy in reporting distances between stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A distance of &lt;span class="math"&gt;\(1.22 \times 10^{-16}\)&lt;/span&gt; parsecs is tiny in astronomy but translates to about 2.5 meters - not so small on the human scale. In statistics, many calculations relate to probabilities which are always in the range 0 to 1. On this scale, &lt;code&gt;1.22e-16&lt;/code&gt; is very close to&amp;nbsp;zero.&lt;/p&gt;
+&lt;p&gt;There are several &amp;#8216;special&amp;#8217; numbers in the &lt;code&gt;Python&lt;/code&gt; world; two of which are &lt;code&gt;inf&lt;/code&gt;, which stands for &lt;span class="math"&gt;\(\infty\)&lt;/span&gt; (infinity), and &lt;code&gt;nan&lt;/code&gt;, which stands for &amp;#8216;not a number&amp;#8217; (nan results when a numerical operation isn&amp;#8217;t define), for&amp;nbsp;instance:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;span class="note right shadow"&gt; Mathematically oriented readers will wonder why &lt;code&gt;Python&lt;/code&gt; should have any trouble with a computation like \(\sqrt{-9}\); the result is the imaginary number \(3\jmath\) (imaginary numbers may be represented by a \(\jmath\) or a \(\imath\), depending on the field). &lt;code&gt;Python&lt;/code&gt; works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate \(\sqrt{-9}\) for example, simply use &lt;code&gt;np.sqrt(-9+0j)&lt;/code&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="note right shadow"&gt; Mathematically oriented readers will wonder why &lt;code&gt;Python&lt;/code&gt; should have any trouble with a computation like &lt;span class="math"&gt;\(\sqrt{-9}\)&lt;/span&gt;; the result is the imaginary number &lt;span class="math"&gt;\(3\jmath\)&lt;/span&gt; (imaginary numbers may be represented by a &lt;span class="math"&gt;\(\jmath\)&lt;/span&gt; or a &lt;span class="math"&gt;\(\imath\)&lt;/span&gt;, depending on the field). &lt;code&gt;Python&lt;/code&gt; works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate &lt;span class="math"&gt;\(\sqrt{-9}\)&lt;/span&gt; for example, simply use &lt;code&gt;np.sqrt(-9+0j)&lt;/code&gt;. &lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
 &lt;div class="input hbox"&gt;

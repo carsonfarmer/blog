@@ -627,7 +627,7 @@ array([1, 2, 3, 4, 5, 6])
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="note right shadow" markdown="1"> An assignment command like <code>x=np.sqrt(x)</code> can be confusing to people who are used to algebraic notation. In algebra, the equal sign describes a relationship between the left and right sides. So, \(x = \sqrt{x}\) tells us about how the quantity \(x\) and the quantity \(\sqrt{x}\) are related. Students are usually trained to &#8216;solve&#8217; such a relationship, going through a series of algebraic steps to find values for \(x\) that are consistent with the mathematical statement (for \(x = \sqrt{x}\), the solutions are \(x = 0\) and \(x = 1\)). In contrast, the assignment command <code>x = np.sqrt(x)</code> is a way of replacing the previous values stored in <code>x</code> with new values that are the square-root of the old&nbsp;ones. </span></p>
+<p><span class="note right shadow" markdown="1"> An assignment command like <code>x=np.sqrt(x)</code> can be confusing to people who are used to algebraic notation. In algebra, the equal sign describes a relationship between the left and right sides. So, <span class="math">\(x = \sqrt{x}\)</span> tells us about how the quantity <span class="math">\(x\)</span> and the quantity <span class="math">\(\sqrt{x}\)</span> are related. Students are usually trained to &#8216;solve&#8217; such a relationship, going through a series of algebraic steps to find values for <span class="math">\(x\)</span> that are consistent with the mathematical statement (for <span class="math">\(x = \sqrt{x}\)</span>, the solutions are <span class="math">\(x = 0\)</span> and <span class="math">\(x = 1\)</span>). In contrast, the assignment command <code>x = np.sqrt(x)</code> is a way of replacing the previous values stored in <code>x</code> with new values that are the square-root of the old&nbsp;ones. </span></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>If you want to change the value of <code>x</code>, you need to use the assignment&nbsp;operator:</p>
@@ -988,7 +988,7 @@ In&nbsp;[25]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. \(3^2\) or \(\sqrt{3}\) or \(\sqrt[3]{8}\). This special typography doesn&#8217;t work well with an ordinary keyboard, so <code>Python</code> and most other computer languages uses a different&nbsp;notation:</p>
+<p>Traditional mathematical notations uses superscripts and radicals to indicate exponentials and roots, e.g. <span class="math">\(3^2\)</span> or <span class="math">\(\sqrt{3}\)</span> or <span class="math">\(\sqrt[3]{8}\)</span>. This special typography doesn&#8217;t work well with an ordinary keyboard, so <code>Python</code> and most other computer languages uses a different&nbsp;notation:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
@@ -1099,7 +1099,7 @@ Python
 </tr>
 <tr>
 <td>
-\(e^2\)
+<span class="math">\(e^2\)</span>
 </td>
 <td>
 <code>np.exp(2)</code>
@@ -1107,7 +1107,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\log_{e}(100)\)
+<span class="math">\(\log_{e}(100)\)</span>
 </td>
     <td>
 <code>np.log(100)</code>
@@ -1115,7 +1115,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\log_{10}(100)\)
+<span class="math">\(\log_{10}(100)\)</span>
 </td>
     <td>
 <code>np.log10(100)</code>
@@ -1123,7 +1123,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\log_{2}(100)\)
+<span class="math">\(\log_{2}(100)\)</span>
 </td>
     <td>
 <code>np.log2(100)</code>
@@ -1131,7 +1131,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\cos(\frac{\pi}{2})\)
+<span class="math">\(\cos(\frac{\pi}{2})\)</span>
 </td>
     <td>
 <code>np.cos(np.pi/2)</code>
@@ -1139,7 +1139,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\sin(\frac{\pi}{2})\)
+<span class="math">\(\sin(\frac{\pi}{2})\)</span>
 </td>
     <td>
 <code>np.sin(np.pi/2)</code>
@@ -1147,7 +1147,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\tan(\frac{\pi}{2})\)
+<span class="math">\(\tan(\frac{\pi}{2})\)</span>
 </td>
     <td>
 <code>np.tan(np.pi/2)</code>
@@ -1155,7 +1155,7 @@ Python
 </tr>
 <tr>
     <td>
-\(\cos^{-1}(-1)\)
+<span class="math">\(\cos^{-1}(-1)\)</span>
 </td>
     <td>
 <code>np.acos(-1)</code>
@@ -1163,10 +1163,10 @@ Python
 </tr>
 </table>
 
-<p>Numbers can be written in <strong>scientific notation</strong>. For example, the &#8216;universal gravitational constant&#8217; that describes the gravitational attraction between masses is \(6.67428 \times 10^{11}\) (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as <code>6.67428e-11</code>. The Avogadro constant, which gives the number of atoms in a mole, is \(6.02214179 \times 10^{23}\) per mole, or <code>6.02214179e+23</code>.</p>
+<p>Numbers can be written in <strong>scientific notation</strong>. For example, the &#8216;universal gravitational constant&#8217; that describes the gravitational attraction between masses is <span class="math">\(6.67428 \times 10^{11}\)</span> (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as <code>6.67428e-11</code>. The Avogadro constant, which gives the number of atoms in a mole, is <span class="math">\(6.02214179 \times 10^{23}\)</span> per mole, or <code>6.02214179e+23</code>.</p>
 <p>The computer language does not directly support the recording of units. This is unfortunate, since in the real world numbers often have units and the units matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because the design engineers specified the engine&#8217;s thrust in units of pounds, while the guidance engineers thought the units were&nbsp;newtons.</p>
 <p><span class="note right shadow"> There are <em>some</em> Python packages for handling units, including <a href="https://pint.readthedocs.org/en/latest/">pint</a>, <a href="http://pythonhosted.org/quantities/">quantities</a>, <a href="https://pypi.python.org/pypi/units/">units</a>, <a href="http://docs.sympy.org/latest/modules/physics/units.html">sympy.physics.units</a>, <a href="http://conference.scipy.org/scipy2013/presentation_detail.php?id=174">etc</a>. </span></p>
-<p>Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, \(sin(\pi) = 0\), however, the computer does not duplicate the mathematical relationship&nbsp;exactly:</p>
+<p>Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, <span class="math">\(sin(\pi) = 0\)</span>, however, the computer does not duplicate the mathematical relationship&nbsp;exactly:</p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">
@@ -1201,11 +1201,11 @@ In&nbsp;[29]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Whether a number like this is properly interpreted as &#8216;close to zero&#8217; depends on the context and, for quantities that have units, on the units themselves. For instance, the unit &#8216;parsec&#8217; is used in astronomy in reporting distances between stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A distance of \(1.22 \times 10^{-16}\) parsecs is tiny in astronomy but translates to about 2.5 meters - not so small on the human scale. In statistics, many calculations relate to probabilities which are always in the range 0 to 1. On this scale, <code>1.22e-16</code> is very close to&nbsp;zero.</p>
-<p>There are several &#8216;special&#8217; numbers in the <code>Python</code> world; two of which are <code>inf</code>, which stands for \(\infty\) (infinity), and <code>nan</code>, which stands for &#8216;not a number&#8217; (nan results when a numerical operation isn&#8217;t define), for&nbsp;instance:</p>
+<p>Whether a number like this is properly interpreted as &#8216;close to zero&#8217; depends on the context and, for quantities that have units, on the units themselves. For instance, the unit &#8216;parsec&#8217; is used in astronomy in reporting distances between stars. The closest start to the Sun is Proxima, at a distance of 1.3 parsecs. A distance of <span class="math">\(1.22 \times 10^{-16}\)</span> parsecs is tiny in astronomy but translates to about 2.5 meters - not so small on the human scale. In statistics, many calculations relate to probabilities which are always in the range 0 to 1. On this scale, <code>1.22e-16</code> is very close to&nbsp;zero.</p>
+<p>There are several &#8216;special&#8217; numbers in the <code>Python</code> world; two of which are <code>inf</code>, which stands for <span class="math">\(\infty\)</span> (infinity), and <code>nan</code>, which stands for &#8216;not a number&#8217; (nan results when a numerical operation isn&#8217;t define), for&nbsp;instance:</p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="note right shadow"> Mathematically oriented readers will wonder why <code>Python</code> should have any trouble with a computation like \(\sqrt{-9}\); the result is the imaginary number \(3\jmath\) (imaginary numbers may be represented by a \(\jmath\) or a \(\imath\), depending on the field). <code>Python</code> works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate \(\sqrt{-9}\) for example, simply use <code>np.sqrt(-9+0j)</code>. </span></p>
+<p><span class="note right shadow"> Mathematically oriented readers will wonder why <code>Python</code> should have any trouble with a computation like <span class="math">\(\sqrt{-9}\)</span>; the result is the imaginary number <span class="math">\(3\jmath\)</span> (imaginary numbers may be represented by a <span class="math">\(\jmath\)</span> or a <span class="math">\(\imath\)</span>, depending on the field). <code>Python</code> works with complex numbers, but you have to explicitly tell the system that this is what you want to do. To calculate <span class="math">\(\sqrt{-9}\)</span> for example, simply use <code>np.sqrt(-9+0j)</code>. </span></p>
 </div>
 <div class="cell border-box-sizing code_cell vbox">
 <div class="input hbox">

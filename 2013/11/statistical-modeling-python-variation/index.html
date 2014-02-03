@@ -479,7 +479,7 @@ In&nbsp;[10]:
 
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="note right shadow"> <a href="http://www.secnetix.de/olli/Python/list_comprehensions.hawk">List comprehensions</a> can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:<br />\(S = \{ x^{2} : \{x \in 0 \dots 9\} \}\)<br />\(V = (1, 2, 4, 8, \dots, 2^{12})\)<br />\(M = \{x\) \(|\) \(x\) \(\in S\) and \(x\) even\(\}\)<br />You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:<br /><code>S = [x**2 for x in range(10)]</code><br /><code>V = [2**i for i in range(13)]</code><br /><code>M = [x for x in S if x % 2 == 0]</code><br /></span></p>
+<p><span class="note right shadow"> <a href="http://www.secnetix.de/olli/Python/list_comprehensions.hawk">List comprehensions</a> can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:<br /><span class="math">\(S = \{ x^{2} : \{x \in 0 \dots 9\} \}\)</span><br /><span class="math">\(V = (1, 2, 4, 8, \dots, 2^{12})\)</span><br /><span class="math">\(M = \{x\)</span> <span class="math">\(|\)</span> <span class="math">\(x\)</span> <span class="math">\(\in S\)</span> and <span class="math">\(x\)</span> even<span class="math">\(\}\)</span><br />You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:<br /><code>S = [x**2 for x in range(10)]</code><br /><code>V = [2**i for i in range(13)]</code><br /><code>M = [x for x in S if x % 2 == 0]</code><br /></span></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>We can use the same techniques to compute the 2.5th and 97.5th percentiles - in other words, the 95 percent coverage&nbsp;interval:</p>
@@ -596,7 +596,11 @@ array([ 5.7])
 <p><span class="note right shadow"> If you prefer to use the <code>pyplot</code> interface, then remember to import it in the usual way at the beginning of your Python session: <code>import matplotlib.pyplot</code> </span></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><span class="note left shadow"> If you want interactive plotting (and why wouldn&#8217;t you?!), start &#8216;IPython&#8217; with the <code>--pylab</code> flag. With this flag enabled, you don&#8217;t have to <code>import matplotlib</code>, as it will be done for you automatically): <code>ipython --pylab</code> Or, for inline figures in an IPython qtconsole or notebook, use: <code>ipython notebook --pylab inline</code> </span></p>
+<p><span class="note left shadow"> If you want interactive plotting (and why wouldn&#8217;t you?!), start &#8216;IPython&#8217; with the <code>--pylab</code> flag. With this flag enabled, you don&#8217;t have to <code>import matplotlib</code>, as it will be done for you&nbsp;automatically):</p>
+<pre><code>ipython --pylab</code></pre>
+<p>Or, for inline figures in an IPython qtconsole or notebook,&nbsp;use:</p>
+<pre><code>ipython notebook --pylab inline</code></pre>
+<p></span></p>
 </div>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="histograms-and-distributions">Histograms and&nbsp;Distributions</h3>
