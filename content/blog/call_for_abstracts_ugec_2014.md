@@ -10,7 +10,7 @@ Slug: call_for_abstracts_ugec_2014
 announce that we will begin accepting abstracts for our 2nd International 
 Conference on February 7th.**
 
-[![UGEC 2014 Conference Header][logo]][conf]{.center}
+[![UGEC 2014 Conference Header][logo]{.center}][conf]
 
 We invite abstract submissions for oral and poster presentations. We 
 particularly encourage contributions that exhibit an innovative set of 
