@@ -5,13 +5,12 @@ Email: carson.farmer@gmail.com
 Category: Announcement
 Tags: Announcement
 Slug: call_for_abstracts_ugec_2014
-Status: draft
 
 **The Urbanization and Global Environmental Change Project is pleased to 
 announce that we will begin accepting abstracts for our 2nd International 
 Conference on February 7th.**
 
-[![UGEC 2014 Conference Header][logo]][conf]
+[![UGEC 2014 Conference Header][logo]][conf]{.center}
 
 We invite abstract submissions for oral and poster presentations. We 
 particularly encourage contributions that exhibit an innovative set of 
