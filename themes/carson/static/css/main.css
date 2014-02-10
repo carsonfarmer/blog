@@ -365,9 +365,10 @@ aside, nav, article, figure {
 }
 
 /***** Layout *****/
-.body {clear: both; margin: 0 auto; width: 800px;}
-img.right, figure.right {float: right; margin: 0 0 1em 2em;}
-img.left, figure.left {float: left; margin: 0 2em 1em 0;}
+.body { clear: both; margin: 0 auto; width: 800px; }
+img.right, figure.right { float: right; margin: 0 0 1em 2em; }
+img.left, figure.left { float: left; margin: 0 2em 1em 0; }
+img.center, figure.center { margin: 0 auto; display: block; }
 
 /*
 	Header
