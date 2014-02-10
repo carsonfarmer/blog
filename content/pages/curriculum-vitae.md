@@ -8,13 +8,13 @@ Location: 53.38461, -6.60057, 8
 
 |                     |                      |
 | ------------------  |  -------------------
-| 2013 --- present | **Assistant Professor of GIScience**
+| 2013 -- present | **Assistant Professor of GIScience**
 || Department of Geography, Hunter College
 || City University of New York
-| 2013 --- present | **Associate Director**
+| 2013 -- present | **Associate Director**
 || Center for Advanced Research of Spatial Information (CARSI)
 || City University of New York
-| 2014 --- present | **Assistant Professor**
+| 2014 -- present | **Assistant Professor**
 || Earth and Environmental Sciences, The Graduate Center
 || City University of New York
 
@@ -22,16 +22,16 @@ Location: 53.38461, -6.60057, 8
 
 |                     |                      |
 | ------------------  |  -------------------
-|  2008 --- 2011 | **PhD in Geocomputation**
+|  2008 -- 2011 | **PhD in Geocomputation**
 || National University of Ireland, Maynooth, Ireland
 || Thesis: Commuting flows & local labour markets: Spatial interaction 
 || modelling of travel-to-work
 || Advisor: Prof. A. Stewart Fotheringham
-|  2006 --- 2008 | **MSc in Geography**
+|  2006 -- 2008 | **MSc in Geography**
 || University of Victoria, Victoria, B.C., Canada
 || Thesis: Spatial time-series analysis of satellite derived snow water equivalence
 || Advisor: Dr. Trisalyn A. Nelson
-|  2001 --- 2006 | **BSc, Honours (with Distinction), in Geography**
+|  2001 -- 2006 | **BSc, Honours (with Distinction), in Geography**
 || University of Victoria, Victoria, B.C., Canada
 || Thesis: Mapping the effects of the modifiable areal unit problem on local 
 || measures of spatial autocorrelation
@@ -41,10 +41,10 @@ Location: 53.38461, -6.60057, 8
 
 |                     |                      |
 | ------------------  |  -------------------
-2012 --- 2014 | Research Fellowship, Centre for GeoInformatics, University of St Andrews
-2008 --- 2012 | Doctoral Fellowship, Social Science & Humanities Research Council of Canada
+2012 -- 2014 | Research Fellowship, Centre for GeoInformatics, University of St Andrews
+2008 -- 2012 | Doctoral Fellowship, Social Science & Humanities Research Council of Canada
 2011 | Postgraduate Travel Fund/Collins Kitchin Fund, NUI Maynooth
-2008 --- 2011 | PhD Fellowship, Irish Social Sciences Platform
+2008 -- 2011 | PhD Fellowship, Irish Social Sciences Platform
 2007 | Derrick Sewell Graduate Scholarship, University of Victoria
 2007 | Physical Geography Student Paper Presentation Award, CAG
 2006 | Derrick Sewell Graduate Scholarship, University of Victoria
@@ -204,13 +204,13 @@ Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Meth
 | 2012 - present | Reviewer (International Journal of Geographical Information Science)
 | June 2012 | Session Chair (Canadian Association of Geographers AGM, Waterloo, ON, Canada)
 | 2011 - present | Member (Regional Studies Association)
-| 2009 --- present | Reviewer (Transactions in GIS)
-| 2008 --- present | Reviewer (Remote Sensing of Environment)
-| 2008 --- 2011 | Member (National University of Ireland, Maynooth Graduate Feedback Council)
-| 2007 --- present | Member (American Association of Geographers)
-| 2007 --- present | Member (Canadian Association of Geographers)
+| 2009 -- present | Reviewer (Transactions in GIS)
+| 2008 -- present | Reviewer (Remote Sensing of Environment)
+| 2008 -- 2011 | Member (National University of Ireland, Maynooth Graduate Feedback Council)
+| 2007 -- present | Member (American Association of Geographers)
+| 2007 -- present | Member (Canadian Association of Geographers)
 | 2009 |  Reviewer (FOSS4G 2009 Conference Scientific Committee)
-| 2006 --- 2008 | Organizer (Spatial Analysis Salon, Department of Geography, University of Victoria)
+| 2006 -- 2008 | Organizer (Spatial Analysis Salon, Department of Geography, University of Victoria)
 | 2008 | Session Chair (American Association of Geographers AGM, Boston, USA)
 | 2007 | Organizer (Geography Graduate Student Conference, University of Victoria)
 
