@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 07 Feb 2014 12:00:00 -0500</lastBuildDate><item><title>Call for Abstracts: 2nd International Conference UREC 2014</title><link>http://www.carsonfarmer.com/2014/02/call_for_abstracts_ugec_2014/</link><description>&lt;p&gt;&lt;strong&gt;The Urbanization and Global Environmental Change Project is pleased to 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 21 Feb 2014 17:00:00 -0500</lastBuildDate><item><title>Call for Abstracts: 2nd International Conference UREC 2014</title><link>http://www.carsonfarmer.com/2014/02/guest_speaker_feb_2014/</link><description>&lt;p&gt;Please join us &lt;strong&gt;Wednesday, February 26th&lt;/strong&gt; from &lt;strong&gt;3:00 to 5:00 pm&lt;/strong&gt; in the Hunter College Geography 
+Conference Room (&lt;strong&gt;Hunter North 1004&lt;/strong&gt;) for a talk by guest speaker Eric Brelsford, who will be talking 
+about &lt;em&gt;Free &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Open Source Software for Geospatial Applications&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Topic&lt;/strong&gt;:
+Eric will give us an overview of the Free &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Open Source Software for Geospatial Applications (&lt;span class="caps"&gt;FOSS4G&lt;/span&gt;) 
+terrain, followed by a few examples of workflow. What tools are out there for making useful and interesting 
+online maps? What is &amp;#8220;open source&amp;#8221; software and how is it different from other software? Where does it fit in 
+with the history of web mapping, who are the people (and what is the technology) on the cutting&amp;nbsp;edge? &lt;/p&gt;
+&lt;p&gt;Eric will then discuss which programs talk to each other, what types of things you can do with each platform. 
+He&amp;#8217;ll talk about (and hopefully have time to walk us through) CartoDB (and cartocss), geojson, TileMill, and 
+more, depending on what we have time to cover. If there&amp;#8217;s interest, he can go over using javascript libraries 
+like leaflet to customize these online&amp;nbsp;maps. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bio&lt;/strong&gt;:
+Eric teaches web mapping (mostly open source) at The New School and co-runs &lt;a href="http://596acres.org/"&gt;596 Acres&lt;/a&gt;. He&amp;#8217;s 
+never taken a &lt;span class="caps"&gt;GIS&lt;/span&gt; class or used ArcGIS, but has produced maps &lt;a href="http://596acres.org/"&gt;here&lt;/a&gt; and &lt;a href="http://www.growingcitiesmovie.com/"&gt;here&lt;/a&gt; and &lt;a href="http://groundedinphilly.org/"&gt;here&lt;/a&gt; 
+(among other places). He&amp;#8217;s also active in the Open Street Map community and just started a thing called 
+Maptime (an idea that originated on the west coast, &amp;#8220;Our mission is to create a safe space where 
+interdisciplinary communities can learn, socialize, and code maps with each other (and for each other)&amp;#8221;), 
+where he led its first&amp;nbsp;meeting. &lt;/p&gt;
+&lt;p&gt;He&amp;#8217;s also on the internet &lt;a href="https://twitter.com/ebrelsford"&gt;@ebrelsford&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 21 Feb 2014 17:00:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2014-02-21:2014/02/guest_speaker_feb_2014/</guid><category>Announcement</category></item><item><title>Call for Abstracts: 2nd International Conference UREC 2014</title><link>http://www.carsonfarmer.com/2014/02/call_for_abstracts_ugec_2014/</link><description>&lt;p&gt;&lt;strong&gt;The Urbanization and Global Environmental Change Project is pleased to 
 announce that we will begin accepting abstracts for our 2nd International 
 Conference on February&amp;nbsp;7th.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ugec2014.org/"&gt;&lt;img alt="UGEC 2014 Conference Header" class="center" src="http://www.carsonfarmer.com/images/ugec_conf_2014.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1599,7 +1618,7 @@ YII=
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The median is represented by the red line in the middle. Outliers, if any, are marked by &lt;code&gt;x&lt;/code&gt;&amp;#8216;s outside the&amp;nbsp;whiskers.&lt;/p&gt;
+&lt;p&gt;The median is represented by the red line in the middle. Outliers, if any, are marked by &lt;code&gt;x&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;s outside the&amp;nbsp;whiskers.&lt;/p&gt;
 &lt;p&gt;Note that instead of using &lt;code&gt;gal.height&lt;/code&gt;, the &lt;code&gt;boxplot()&lt;/code&gt; function operatres on the data frame, and takes the column name via the &lt;code&gt;column&lt;/code&gt; argument. This is because the real power of the box-and-whisker plot is in &lt;em&gt;comparing&lt;/em&gt; distributions. This will be raised again more systematically in later tutorials, but just to illustrate, here is how to compare the heights of males and&amp;nbsp;females:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;
@@ -4408,7 +4427,7 @@ added a few&amp;nbsp;more]:&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://ipython.org/"&gt;ipython&lt;/a&gt; - For a wondering interactive environment in which to&amp;nbsp;play&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://code.google.com/p/freetype-py/"&gt;freetype-py&lt;/a&gt; - For converting font glyphs to polygons (odd I&amp;nbsp;know&amp;#8230;)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pypi.python.org/pypi/GDAL/"&gt;ogr/gdal&lt;/a&gt; - For reading, writing, and transforming geospatial data&amp;nbsp;formats&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.qgis.org/pyqgis-cookbook/"&gt;pyqgis&lt;/a&gt; - For anything and everything&amp;nbsp;&lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.qgis.org/pyqgis-cookbook/"&gt;pyqgis&lt;/a&gt; - For anything and everything &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://toblerity.github.io/fiona/"&gt;fiona&lt;/a&gt; - For making it &lt;em&gt;easy&lt;/em&gt; to read/write geospatial data&amp;nbsp;formats&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://matplotlib.org/"&gt;matplotlib&lt;/a&gt; - For all my plotting&amp;nbsp;needs&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://networkx.github.io/"&gt;networkx&lt;/a&gt; - For working with networks&amp;nbsp;(duh!)&lt;/li&gt;
@@ -4989,7 +5008,7 @@ directly from the console, though I&amp;#8217;m pretty sure I could have done th
 from R as well. Next, I needed to extract the unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses from
 the logs. I found this nice grep one-liner from &lt;a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/"&gt;here&lt;/a&gt;, which I
 modified to grab all unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses that &amp;#8216;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#8217; something from the&amp;nbsp;site:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
+&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5016,7 +5035,7 @@ packages: &lt;code&gt;RCurl&lt;/code&gt;, &lt;code&gt;rjson&lt;/code&gt;, and &l
 &lt;p&gt;Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&amp;nbsp;working:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;addresses &lt;span class="o"&gt;=&lt;/span&gt; read.table&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ip_addresses.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-library&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;RDSTK&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+library&lt;span class="p"&gt;(&lt;/span&gt;RDSTK&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;?&lt;/span&gt; ip2coordinates
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -5047,13 +5066,13 @@ from a hexagonal sample of the grid, and then finally d) create a
 &lt;span class="c1"&gt;# make the output into a Spatial* object&lt;/span&gt;
 coordinates&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;longitude&lt;span class="o"&gt;+&lt;/span&gt;latitude
 library&lt;span class="p"&gt;(&lt;/span&gt;maptools&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# need this for the following function&lt;/span&gt;
-sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="caps"&gt;SG&lt;/span&gt;
+sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;SG
 hex_pts &lt;span class="o"&gt;=&lt;/span&gt; spsample&lt;span class="p"&gt;(&lt;/span&gt;sg&lt;span class="p"&gt;,&lt;/span&gt; type&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;hexagonal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; cellsize&lt;span class="o"&gt;=&lt;/span&gt;sg&lt;span class="o"&gt;@&lt;/span&gt;grid&lt;span class="o"&gt;@&lt;/span&gt;cellsize&lt;span class="p"&gt;)&lt;/span&gt;
 hex_poly &lt;span class="o"&gt;=&lt;/span&gt; HexPoints2SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;hex_pts&lt;span class="p"&gt;)&lt;/span&gt;
-pts_poly &lt;span class="o"&gt;=&lt;/span&gt; over&lt;span class="p"&gt;(&lt;/span&gt;hex_poly&lt;span class="p"&gt;,&lt;/span&gt; out&lt;span class="p"&gt;,&lt;/span&gt; returnList&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+pts_poly &lt;span class="o"&gt;=&lt;/span&gt; over&lt;span class="p"&gt;(&lt;/span&gt;hex_poly&lt;span class="p"&gt;,&lt;/span&gt; out&lt;span class="p"&gt;,&lt;/span&gt; returnList&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 pts_poly_count &lt;span class="o"&gt;=&lt;/span&gt; sapply&lt;span class="p"&gt;(&lt;/span&gt;pts_poly&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;))&lt;/span&gt;
 poly &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;,&lt;/span&gt; data.frame&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;count&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;pts_poly_count&lt;span class="p"&gt;),&lt;/span&gt; 
-    match.&lt;span class="caps"&gt;ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;FALSE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    match.ID&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;FALSE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5116,16 +5135,16 @@ tdm &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; TermDocumentMatrix&lt;span clas
 &lt;span class="c1"&gt;# convert to matrix&lt;/span&gt;
 m &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; as.matrix&lt;span class="p"&gt;(&lt;/span&gt;tdm&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# count up re-occuring words&lt;/span&gt;
-v &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; sort&lt;span class="p"&gt;(&lt;/span&gt;rowSums&lt;span class="p"&gt;(&lt;/span&gt;m&lt;span class="p"&gt;),&lt;/span&gt; decreasing&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+v &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; sort&lt;span class="p"&gt;(&lt;/span&gt;rowSums&lt;span class="p"&gt;(&lt;/span&gt;m&lt;span class="p"&gt;),&lt;/span&gt; decreasing&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# create dataframe for word cloud&lt;/span&gt;
 d &lt;span class="o"&gt;&amp;lt;-&lt;/span&gt; data.frame&lt;span class="p"&gt;(&lt;/span&gt;word &lt;span class="o"&gt;=&lt;/span&gt; names&lt;span class="p"&gt;(&lt;/span&gt;v&lt;span class="p"&gt;),&lt;/span&gt; freq&lt;span class="o"&gt;=&lt;/span&gt;v&lt;span class="p"&gt;)&lt;/span&gt;
 png&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wordcloud.png&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; width&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1280&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; height&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;800&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-wordcloud&lt;span class="p"&gt;(&lt;/span&gt;d&lt;span class="o"&gt;$&lt;/span&gt;word&lt;span class="p"&gt;,&lt;/span&gt;d&lt;span class="o"&gt;$&lt;/span&gt;freq&lt;span class="p"&gt;,&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.3&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; vfont&lt;span class="o"&gt;=&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sans serif&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plain&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+wordcloud&lt;span class="p"&gt;(&lt;/span&gt;d&lt;span class="o"&gt;$&lt;/span&gt;word&lt;span class="p"&gt;,&lt;/span&gt;d&lt;span class="o"&gt;$&lt;/span&gt;freq&lt;span class="p"&gt;,&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.3&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="m"&gt;.15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; vfont&lt;span class="o"&gt;=&lt;/span&gt;c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sans serif&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plain&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 dev.off&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;I actually got this snippet from &lt;a href="http://onertipaday.blogspot.com/2011/07/word-cloud-in-r.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed:+OneRTipADay+(One+R+Tip+A+Day)"&gt;One R Tip A Day&lt;/a&gt; via &lt;a href="http://www.r-bloggers.com/"&gt;R-bloggers&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 09 Nov 2011 12:16:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2011-11-09:2011/11/its-about-time/</guid><category>Announcement</category><category>PhD</category><category>R</category><category>snippet</category><category>Update</category><category>Helpful tips</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
+&lt;p&gt;I actually got this snippet from &lt;a href="http://onertipaday.blogspot.com/2011/07/word-cloud-in-r.html?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed:+OneRTipADay+(One+R+Tip+A+Day)"&gt;One R Tip A Day&lt;/a&gt; via &lt;a href="http://www.r-bloggers.com/"&gt;R-bloggers&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 09 Nov 2011 12:16:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2011-11-09:2011/11/its-about-time/</guid><category>Announcement</category><category>PhD</category><category>R</category><category>snippet</category><category>Update</category><category>Helpful tips</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
 for &lt;span class="caps"&gt;QGIS&lt;/span&gt; at this point. However, to date non of the fTools functions
 (Vector menu) have taken advantage of this capability. If a tool needed
 to create a new field in the input vector layer, it simply wrote a new
@@ -5195,7 +5214,7 @@ on how to (safely) cancel a currently running R command on the
 processing side, I&amp;#8217;d be very interested to hear&amp;nbsp;them.&lt;/p&gt;
 &lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 06 Nov 2010 01:00:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-11-06:2010/11/because-its-friday/</guid><category>Multiprocessing</category><category>Python</category><category>R</category><category>Statistics</category><category>Free open-source software (FOSS)</category></item><item><title>Evolution is beautiful…</title><link>http://www.carsonfarmer.com/2010/10/evolution-is-beautiful/</link><description>&lt;p&gt;Check out &lt;a href="http://vimeo.com/16148504"&gt;this video&lt;/a&gt; of the evolution of OpenSteetMap in Europe! It
 sure is cool to see how much ground a bunch of nerds with &lt;span class="caps"&gt;GPS&lt;/span&gt; units can
-cover! Link courtesy of &lt;a href="http://slashgeo.org/"&gt;slashgeo.org&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 27 Oct 2010 16:33:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-10-27:2010/10/evolution-is-beautiful/</guid><category>Data</category><category>Free</category><category>Open-source</category><category>OpenStreetMap</category></item><item><title>pgRouting, OpenStreetMap, and QGIS</title><link>http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/</link><description>&lt;p&gt;I mentioned &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;a few posts back&lt;/a&gt; that there was a great resource for
+cover! Link courtesy of &lt;a href="http://slashgeo.org/"&gt;slashgeo.org&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 27 Oct 2010 16:33:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-10-27:2010/10/evolution-is-beautiful/</guid><category>Data</category><category>Free</category><category>Open-source</category><category>OpenStreetMap</category></item><item><title>pgRouting, OpenStreetMap, and QGIS</title><link>http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/</link><description>&lt;p&gt;I mentioned &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;a few posts back&lt;/a&gt; that there was a great resource for
 downloading OpenStreetMap data, and that it was relatively easy to
 import osm data into &lt;code&gt;PostgreSQL&lt;/code&gt;/&lt;code&gt;PostGIS&lt;/code&gt; for use with &lt;code&gt;pgRouting&lt;/code&gt; to
 calculate shortest paths and various other network-based operations. In
@@ -5217,12 +5236,12 @@ the required software packages, as well as subversion and&amp;nbsp;cmake.&lt;/p&
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;To be able to run the driving distance algorithms we need&amp;nbsp;&lt;span class="caps"&gt;CGAL&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;To be able to run the driving distance algorithms we need &lt;span class="caps"&gt;CGAL&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libcgal*
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;And the traveling sales person algorithm requires&amp;nbsp;&lt;span class="caps"&gt;GAUL&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;And the traveling sales person algorithm requires &lt;span class="caps"&gt;GAUL&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
 tar -xzf gaul-devel-0.1850-0.tar.gz &lt;span class="nb"&gt;cd &lt;/span&gt;gaul-devel-0.1850-0/
 ./configure --disable-slang
@@ -5237,7 +5256,7 @@ have subversion, or you don&amp;#8217;t want to have the latest trunk version of
 &lt;code&gt;pgRouting&lt;/code&gt;, you can also &lt;a href="http://pgrouting.postlbs.org/wiki/pgRoutingDownload"&gt;download it manually&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
 &lt;span class="nb"&gt;cd &lt;/span&gt;pgrouting/
-cmake -DWITH_TSP&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="caps"&gt;ON&lt;/span&gt; -DWITH_DD&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="caps"&gt;ON&lt;/span&gt; . make
+cmake -DWITH_TSP&lt;span class="o"&gt;=&lt;/span&gt;ON -DWITH_DD&lt;span class="o"&gt;=&lt;/span&gt;ON . make
 sudo make install
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -5249,7 +5268,7 @@ sudo make install
 
 
 &lt;p&gt;Scroll to the bottom, and make sure you change the &lt;code&gt;METHOD&lt;/code&gt; to&amp;nbsp;&amp;#8216;trust&amp;#8217;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# &lt;span class="caps"&gt;TYPE&lt;/span&gt;  &lt;span class="caps"&gt;DATABASE&lt;/span&gt;    &lt;span class="caps"&gt;USER&lt;/span&gt;        &lt;span class="caps"&gt;CIDR&lt;/span&gt;-&lt;span class="caps"&gt;ADDRESS&lt;/span&gt;          &lt;span class="caps"&gt;METHOD&lt;/span&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD&lt;/span&gt;
 &lt;span class="n"&gt;local&lt;/span&gt;   &lt;span class="n"&gt;all&lt;/span&gt;         &lt;span class="n"&gt;all&lt;/span&gt;                               &lt;span class="n"&gt;trust&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -5375,7 +5394,7 @@ shortest path&amp;nbsp;query:&lt;/p&gt;
 bring you the question to the ultimate&amp;nbsp;answer!&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;
     &lt;a href="http://www.carsonfarmer.com/images/hitchhikersguide.jpg"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/hitchhikersguide-300x123.jpg" /&gt;&lt;/a&gt;
-&lt;/center&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 10 Oct 2010 19:37:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-10-10:2010/10/happy-42-day/</guid><category>42 day</category></item><item><title>Adding a bit of class(ification) to QGIS…</title><link>http://www.carsonfarmer.com/2010/09/adding-a-bit-of-classification-to-qgis/</link><description>&lt;p&gt;In my &lt;a href="http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/"&gt;last post&lt;/a&gt;, I implemented several classification algorithms for
+&lt;/center&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sun, 10 Oct 2010 19:37:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-10-10:2010/10/happy-42-day/</guid><category>42 day</category></item><item><title>Adding a bit of class(ification) to QGIS…</title><link>http://www.carsonfarmer.com/2010/09/adding-a-bit-of-classification-to-qgis/</link><description>&lt;p&gt;In my &lt;a href="http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/"&gt;last post&lt;/a&gt;, I implemented several classification algorithms for
 quantitative data which could be used directly from the Python console
 in &lt;span class="caps"&gt;QGIS&lt;/span&gt;. While this was a handy addition to my PyQGIS toolkit, it wasn&amp;#8217;t
 quite handy enough for me, so I decided to (re)implement the same
@@ -5437,13 +5456,13 @@ things up while maintaining a statistically representative sample.
 Comments are more than welcome. I have also posted the diff file to the
 &lt;span class="caps"&gt;QGIS&lt;/span&gt; developers mailing list for evaluation, and once I tidy up a few
 issues I&amp;#8217;ll commit to this trunk, making it available for future
-versions of&amp;nbsp;&lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
+versions of &lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Just to remind you of how important it is to carefully consider the
 classification scheme you use when presenting your data, here is a
 graphic of the 5 different classification schemes (soon to be) available
 in &lt;span class="caps"&gt;QGIS&lt;/span&gt;. All 5 methods are grouping the same underlying data (2007
 population) into the same number of classes&amp;nbsp;(5).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/class_intervals.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/class_intervals-300x118.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 29 Sep 2010 00:40:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-29:2010/09/adding-a-bit-of-classification-to-qgis/</guid><category>ArcGIS</category><category>C++</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category><category>Python</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/class_intervals.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/class_intervals-300x118.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 29 Sep 2010 00:40:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-29:2010/09/adding-a-bit-of-classification-to-qgis/</guid><category>ArcGIS</category><category>C++</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category><category>Python</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
 not, I&amp;#8217;m playing around with my data in a &lt;span class="caps"&gt;GIS&lt;/span&gt; to tease out interesting
 or informative spatial patterns, or to ensure that I&amp;#8217;m getting the
 results that I&amp;#8217;m expecting. As a result, I am constantly trying out
@@ -5467,7 +5486,7 @@ moving data between &lt;span class="caps"&gt;QGIS&lt;/span&gt; and R, while slig
 tool&lt;/a&gt; (shameless plug!), is not optimal when all I really want to do
 is fiddle around with different classification schemes. So I decided to
 reimplement the Jenks algorithm in Python so that I could do things
-directly from the Python console in&amp;nbsp;&lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
+directly from the Python console in &lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Obviously I didn&amp;#8217;t really want to implement this algorithm from scratch,
 so I had a look at the R code from the &lt;code&gt;classInterval&lt;/code&gt; function in the
 classInt package (ah open source!), as well as the handy Python script
@@ -5498,11 +5517,11 @@ Europe. It currently also features &lt;a href="http://labs.geofabrik.de/haiti/"&
 &lt;p&gt;Now that I have the &lt;span class="caps"&gt;OSM&lt;/span&gt; data downloaded, it should be relatively easy to
 import it into my PostGIS database using &lt;a href="http://pgrouting.postlbs.org/"&gt;pgRouting&lt;/a&gt; and the
 &lt;a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting"&gt;osm2pgrouting&lt;/a&gt; import tool. More to come on this topic once I get
-things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>Ireland</category><category>OpenStreetMap</category><category>PostGIS</category><category>Road Networks</category><category>Helpful tips</category><category>Networks</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
+things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>Ireland</category><category>OpenStreetMap</category><category>PostGIS</category><category>Road Networks</category><category>Helpful tips</category><category>Networks</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
 visualise the results of a &lt;code&gt;SELECT&lt;/code&gt; statement on a &lt;a href="http://postgis.refractions.net/"&gt;PostGIS&lt;/a&gt; database
 that returns spatial data in &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt;. In other words, can we map the
 results of something&amp;nbsp;like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="caps"&gt;FROM&lt;/span&gt; spatial_table &lt;span class="caps"&gt;GROUP&lt;/span&gt; &lt;span class="caps"&gt;BY&lt;/span&gt; id;
+&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; FROM spatial_table GROUP BY id;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -5551,7 +5570,7 @@ advantage of a multicore processor:
 library&lt;span class="p"&gt;(&lt;/span&gt;foreach&lt;span class="p"&gt;)&lt;/span&gt;
 library&lt;span class="p"&gt;(&lt;/span&gt;igraph&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# Jaccard coeficcient function (taken from package fpc)&lt;/span&gt;
-clujaccard &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;,&lt;/span&gt; c2&lt;span class="p"&gt;,&lt;/span&gt; zerobyzero &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;&lt;span class="caps"&gt;NA&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+clujaccard &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;,&lt;/span&gt; c2&lt;span class="p"&gt;,&lt;/span&gt; zerobyzero &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;NA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;sum&lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         out &lt;span class="o"&gt;=&lt;/span&gt; zerobyzero
     &lt;span class="kr"&gt;else&lt;/span&gt;
@@ -5567,7 +5586,7 @@ moc &lt;span class="o"&gt;=&lt;/span&gt; community.to.membership&lt;span class="
 noc &lt;span class="o"&gt;=&lt;/span&gt; length&lt;span class="p"&gt;(&lt;/span&gt;unique&lt;span class="p"&gt;(&lt;/span&gt;moc&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;# count the number original clusters&lt;/span&gt;
 bg &lt;span class="o"&gt;=&lt;/span&gt; g &lt;span class="c1"&gt;# make a copy of g for bootstrapping&lt;/span&gt;
 clusters &lt;span class="o"&gt;=&lt;/span&gt; foreach&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="o"&gt;=&lt;/span&gt;seq&lt;span class="p"&gt;(&lt;/span&gt;B&lt;span class="p"&gt;),&lt;/span&gt; .combine&lt;span class="o"&gt;=&lt;/span&gt;cbind&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%dopar%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    E&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight &lt;span class="o"&gt;=&lt;/span&gt; sample&lt;span class="p"&gt;(&lt;/span&gt;E&lt;span class="p"&gt;(&lt;/span&gt;g&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight&lt;span class="p"&gt;,&lt;/span&gt; replace&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# resample the edge weights&lt;/span&gt;
+    E&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight &lt;span class="o"&gt;=&lt;/span&gt; sample&lt;span class="p"&gt;(&lt;/span&gt;E&lt;span class="p"&gt;(&lt;/span&gt;g&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight&lt;span class="p"&gt;,&lt;/span&gt; replace&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# resample the edge weights&lt;/span&gt;
     fg &lt;span class="o"&gt;=&lt;/span&gt; fastgreedy.community&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# compute bootstrap clustering&lt;/span&gt;
     mm &lt;span class="o"&gt;=&lt;/span&gt; which.max&lt;span class="p"&gt;(&lt;/span&gt;fg&lt;span class="o"&gt;$&lt;/span&gt;modularity&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# find level of max modularity&lt;/span&gt;
     mbc &lt;span class="o"&gt;=&lt;/span&gt; community.to.membership&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;,&lt;/span&gt; fg&lt;span class="o"&gt;$&lt;/span&gt;merges&lt;span class="p"&gt;,&lt;/span&gt; mm&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;membership &lt;span class="c1"&gt;# get membership&lt;/span&gt;
@@ -5674,7 +5693,7 @@ will expand upon the existing features and introduce additional ones
 for professional users &amp;#8212;- these will be available for a (very
 reasonable)&amp;nbsp;fee.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;It&amp;#8217;s also not &lt;em&gt;free&lt;/em&gt; as in &lt;em&gt;freedom&lt;/em&gt;&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 14 Apr 2010 23:57:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-04-14:2010/04/why-im-not-going-to-use-mendeley/</guid><category>Mendeley</category><category>Open-source</category><category>Publications</category><category>Zotero</category><category>Research</category></item><item><title>Speeding up geoprocessing in QGIS</title><link>http://www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/</link><description>&lt;p&gt;Last night I had an uncontrollable urge to make geopoprocessing in &lt;span class="caps"&gt;QGIS&lt;/span&gt;
+&lt;p&gt;It&amp;#8217;s also not &lt;em&gt;free&lt;/em&gt; as in &lt;em&gt;freedom&lt;/em&gt;&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 14 Apr 2010 23:57:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-04-14:2010/04/why-im-not-going-to-use-mendeley/</guid><category>Mendeley</category><category>Open-source</category><category>Publications</category><category>Zotero</category><category>Research</category></item><item><title>Speeding up geoprocessing in QGIS</title><link>http://www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/</link><description>&lt;p&gt;Last night I had an uncontrollable urge to make geopoprocessing in &lt;span class="caps"&gt;QGIS&lt;/span&gt;
 better, faster and more fun! I had come across a couple of posts
 (&lt;a href="http://lin-ear-th-inking.blogspot.com/search?q=cascaded"&gt;here&lt;/a&gt;, &lt;a href="http://blog.cleverelephant.ca/2009/01/must-faster-unions-in-postgis-14.html"&gt;here&lt;/a&gt;) on the idea of a cascaded union operation, and
 since it has recently been added to &lt;a href="http://trac.osgeo.org/geos/"&gt;&lt;span class="caps"&gt;GEOS&lt;/span&gt;&lt;/a&gt; (which &lt;span class="caps"&gt;QGIS&lt;/span&gt; uses for its
@@ -5903,12 +5922,12 @@ the input point layer.
     &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; seq&lt;span class="p"&gt;(&lt;/span&gt;along&lt;span class="o"&gt;=&lt;/span&gt;polys&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
         pcrds &lt;span class="o"&gt;=&lt;/span&gt; cbind&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
         pcrds &lt;span class="o"&gt;=&lt;/span&gt; rbind&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;,&lt;/span&gt; pcrds&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,])&lt;/span&gt;
-        polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="caps"&gt;ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
+        polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; ID&lt;span class="o"&gt;=&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="caps"&gt;SP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;polys&lt;span class="p"&gt;)&lt;/span&gt;
-    voronoi &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;SP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; data&lt;span class="o"&gt;=&lt;/span&gt;data.frame&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; 
-        y&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; row.names&lt;span class="o"&gt;=&lt;/span&gt;sapply&lt;span class="p"&gt;(&lt;/span&gt;slot&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;SP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;polygons&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-        &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; slot&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;&lt;span class="caps"&gt;ID&lt;/span&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+    SP &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;polys&lt;span class="p"&gt;)&lt;/span&gt;
+    voronoi &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; data&lt;span class="o"&gt;=&lt;/span&gt;data.frame&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; 
+        y&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; row.names&lt;span class="o"&gt;=&lt;/span&gt;sapply&lt;span class="p"&gt;(&lt;/span&gt;slot&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;polygons&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+        &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; slot&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;ID&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -5955,7 +5974,7 @@ basically a syntax conversion chart between Matlab/Octave, Python, and
 R&amp;#8230;&amp;nbsp;brilliant!&lt;/p&gt;
 &lt;p&gt;Check out Vidar Bronken Gundersen&amp;#8217;s &lt;a href="http://mathesaurus.sourceforge.net/"&gt;Mathesaurus&lt;/a&gt; site for this, and
 other useful resources for converting between different mathematical
-computation&amp;nbsp;environments.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 12 Aug 2009 15:29:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-08-12:2009/08/python-matlab-and-r/</guid><category>Matlab</category><category>Python</category><category>R</category><category>Free open-source software (FOSS)</category></item><item><title>FOSS4G and teaching GIS</title><link>http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/</link><description>&lt;p&gt;Two quicks notes to&amp;nbsp;share:&lt;/p&gt;
+computation&amp;nbsp;environments.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 12 Aug 2009 15:29:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-08-12:2009/08/python-matlab-and-r/</guid><category>Matlab</category><category>Python</category><category>R</category><category>Free open-source software (FOSS)</category></item><item><title>FOSS4G and teaching GIS</title><link>http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/</link><description>&lt;p&gt;Two quicks notes to&amp;nbsp;share:&lt;/p&gt;
 &lt;p&gt;Firstly, please check out this &lt;a href="http://linfiniti.com/dla/"&gt;excellent introduction to &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/a&gt; by Tim
 Sutton, Otto Dassau, and Marcelle Sutton in partnership with the Chief
 Directorate for Spatial Planning &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Information, Department of Land
@@ -6152,7 +6171,7 @@ a beautiful &lt;span class="caps"&gt;OSM&lt;/span&gt; powered map on your&amp;nb
 &lt;li&gt;Browse the OpenStreetMap and find the area you want to map, using
    the zoom tools to zoom right in to your area of&amp;nbsp;interest.&lt;/li&gt;
 &lt;li&gt;Select the export&amp;nbsp;tab.&lt;/li&gt;
-&lt;li&gt;When choosing the export format, select &amp;#8220;Embeddable&amp;nbsp;&lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;#8221;.&lt;/li&gt;
+&lt;li&gt;When choosing the export format, select &amp;#8220;Embeddable &lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;#8221;.&lt;/li&gt;
 &lt;li&gt;If you want, pop in a marker symbol so everyone knows where to&amp;nbsp;look&amp;#8230;&lt;/li&gt;
 &lt;li&gt;Copy the provided &lt;span class="caps"&gt;HTML&lt;/span&gt; code, and paste into your site wherever you want the map to show&amp;nbsp;up.&lt;/li&gt;
 &lt;/ol&gt;
@@ -6274,7 +6293,7 @@ y &lt;span class="o"&gt;=&lt;/span&gt; readGDAL&lt;span class="p"&gt;(&lt;/span&
 y.grid &lt;span class="o"&gt;=&lt;/span&gt; y&lt;span class="o"&gt;@&lt;/span&gt;grid
 y.coords &lt;span class="o"&gt;=&lt;/span&gt; coordinates&lt;span class="p"&gt;(&lt;/span&gt;y.grid&lt;span class="p"&gt;)&lt;/span&gt; 
 image&lt;span class="p"&gt;(&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
-identify&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;y.coords&lt;span class="p"&gt;,&lt;/span&gt; y&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+identify&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;y.coords&lt;span class="p"&gt;,&lt;/span&gt; y&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 

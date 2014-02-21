@@ -46,7 +46,7 @@ and forth done via a duplex (two-way) pipe. I&amp;#8217;ve &lt;a href="http://ww
 for anyone interested in having a play with it. If anyone has any ideas
 on how to (safely) cancel a currently running R command on the
 processing side, I&amp;#8217;d be very interested to hear&amp;nbsp;them.&lt;/p&gt;
-&lt;p&gt;Carson&lt;/p&gt;</summary><category term="Multiprocessing"></category><category term="Python"></category><category term="R"></category><category term="Statistics"></category><category term="Free open-source software (FOSS)"></category></entry><entry><title>Playing around with classification algorithms: Python and QGIS</title><link href="http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/" rel="alternate"></link><updated>2010-09-23T10:56:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-09-23:2010/09/playing-around-with-classification-algorithms-python-and-qgis/</id><summary type="html">&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
+&lt;p&gt;Carson&lt;/p&gt;</summary><category term="Multiprocessing"></category><category term="Python"></category><category term="R"></category><category term="Statistics"></category><category term="Free open-source software (FOSS)"></category></entry><entry><title>Playing around with classification algorithms: Python and QGIS</title><link href="http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/" rel="alternate"></link><updated>2010-09-23T10:56:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2010-09-23:2010/09/playing-around-with-classification-algorithms-python-and-qgis/</id><summary type="html">&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
 not, I&amp;#8217;m playing around with my data in a &lt;span class="caps"&gt;GIS&lt;/span&gt; to tease out interesting
 or informative spatial patterns, or to ensure that I&amp;#8217;m getting the
 results that I&amp;#8217;m expecting. As a result, I am constantly trying out
@@ -70,7 +70,7 @@ moving data between &lt;span class="caps"&gt;QGIS&lt;/span&gt; and R, while slig
 tool&lt;/a&gt; (shameless plug!), is not optimal when all I really want to do
 is fiddle around with different classification schemes. So I decided to
 reimplement the Jenks algorithm in Python so that I could do things
-directly from the Python console in&amp;nbsp;&lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
+directly from the Python console in &lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Obviously I didn&amp;#8217;t really want to implement this algorithm from scratch,
 so I had a look at the R code from the &lt;code&gt;classInterval&lt;/code&gt; function in the
 classInt package (ah open source!), as well as the handy Python script
