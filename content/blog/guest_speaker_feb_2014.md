@@ -1,4 +1,4 @@
-Title: Call for Abstracts: 2nd International Conference UREC 2014
+Title: Eric Brelsford Guest Speaker
 Date: 2014-02-21 17:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
