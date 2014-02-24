@@ -10,6 +10,8 @@ Please join us **Wednesday, February 26th** from **3:00 to 5:00 pm** in the Hunt
 Conference Room (**Hunter North 1004**) for a talk by guest speaker Eric Brelsford, who will be talking 
 about *Free & Open Source Software for Geospatial Applications*.
 
+UPDATE: If you can't make it in person, check out a [live feed of the talk here][live-link].
+
 **Topic**:
 Eric will give us an overview of the Free & Open Source Software for Geospatial Applications (FOSS4G) 
 terrain, followed by a few examples of workflow. What tools are out there for making useful and interesting 
@@ -35,3 +37,4 @@ He's also on the internet [@ebrelsford][twitter].
 [two]: http://www.growingcitiesmovie.com/
 [three]: http://groundedinphilly.org/
 [twitter]: https://twitter.com/ebrelsford
+[live-link]: https://plus.google.com/u/0/events/ca20rt7putlltjhl1k6iqppt44o
