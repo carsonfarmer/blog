@@ -27,7 +27,7 @@ added a few&amp;nbsp;more]:&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://ipython.org/"&gt;ipython&lt;/a&gt; - For a wondering interactive environment in which to&amp;nbsp;play&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://code.google.com/p/freetype-py/"&gt;freetype-py&lt;/a&gt; - For converting font glyphs to polygons (odd I&amp;nbsp;know&amp;#8230;)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://pypi.python.org/pypi/GDAL/"&gt;ogr/gdal&lt;/a&gt; - For reading, writing, and transforming geospatial data&amp;nbsp;formats&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.qgis.org/pyqgis-cookbook/"&gt;pyqgis&lt;/a&gt; - For anything and everything &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.qgis.org/pyqgis-cookbook/"&gt;pyqgis&lt;/a&gt; - For anything and everything&amp;nbsp;&lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://toblerity.github.io/fiona/"&gt;fiona&lt;/a&gt; - For making it &lt;em&gt;easy&lt;/em&gt; to read/write geospatial data&amp;nbsp;formats&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://matplotlib.org/"&gt;matplotlib&lt;/a&gt; - For all my plotting&amp;nbsp;needs&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://networkx.github.io/"&gt;networkx&lt;/a&gt; - For working with networks&amp;nbsp;(duh!)&lt;/li&gt;
@@ -130,7 +130,7 @@ directly from the console, though I&amp;#8217;m pretty sure I could have done th
 from R as well. Next, I needed to extract the unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses from
 the logs. I found this nice grep one-liner from &lt;a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/"&gt;here&lt;/a&gt;, which I
 modified to grab all unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses that &amp;#8216;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#8217; something from the&amp;nbsp;site:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
+&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -157,7 +157,7 @@ packages: &lt;code&gt;RCurl&lt;/code&gt;, &lt;code&gt;rjson&lt;/code&gt;, and &l
 &lt;p&gt;Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&amp;nbsp;working:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;addresses &lt;span class="o"&gt;=&lt;/span&gt; read.table&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ip_addresses.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-library&lt;span class="p"&gt;(&lt;/span&gt;RDSTK&lt;span class="p"&gt;)&lt;/span&gt;
+library&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;RDSTK&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;?&lt;/span&gt; ip2coordinates
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -188,13 +188,13 @@ from a hexagonal sample of the grid, and then finally d) create a
 &lt;span class="c1"&gt;# make the output into a Spatial* object&lt;/span&gt;
 coordinates&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;longitude&lt;span class="o"&gt;+&lt;/span&gt;latitude
 library&lt;span class="p"&gt;(&lt;/span&gt;maptools&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# need this for the following function&lt;/span&gt;
-sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;SG
+sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;&lt;span class="caps"&gt;SG&lt;/span&gt;
 hex_pts &lt;span class="o"&gt;=&lt;/span&gt; spsample&lt;span class="p"&gt;(&lt;/span&gt;sg&lt;span class="p"&gt;,&lt;/span&gt; type&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;hexagonal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; cellsize&lt;span class="o"&gt;=&lt;/span&gt;sg&lt;span class="o"&gt;@&lt;/span&gt;grid&lt;span class="o"&gt;@&lt;/span&gt;cellsize&lt;span class="p"&gt;)&lt;/span&gt;
 hex_poly &lt;span class="o"&gt;=&lt;/span&gt; HexPoints2SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;hex_pts&lt;span class="p"&gt;)&lt;/span&gt;
-pts_poly &lt;span class="o"&gt;=&lt;/span&gt; over&lt;span class="p"&gt;(&lt;/span&gt;hex_poly&lt;span class="p"&gt;,&lt;/span&gt; out&lt;span class="p"&gt;,&lt;/span&gt; returnList&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+pts_poly &lt;span class="o"&gt;=&lt;/span&gt; over&lt;span class="p"&gt;(&lt;/span&gt;hex_poly&lt;span class="p"&gt;,&lt;/span&gt; out&lt;span class="p"&gt;,&lt;/span&gt; returnList&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;TRUE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 pts_poly_count &lt;span class="o"&gt;=&lt;/span&gt; sapply&lt;span class="p"&gt;(&lt;/span&gt;pts_poly&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;))&lt;/span&gt;
 poly &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;,&lt;/span&gt; data.frame&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;count&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;pts_poly_count&lt;span class="p"&gt;),&lt;/span&gt; 
-    match.ID&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;FALSE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    match.&lt;span class="caps"&gt;ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;FALSE&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -214,7 +214,7 @@ spplot&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;[&lt;/span&g
 &lt;p&gt;I then used &lt;a href="http://inkscape.org/"&gt;Inkscape&lt;/a&gt; to tweak the final product, adding titles and
 labels and modifying the colour key to look like something a bit more
 suited to the map at hand. In the end I had a nice map of my blog
-readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 30 Mar 2012 17:46:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-03-30:2012/03/because-its-fun-to-map-stuff/</guid><category>Data Science Toolkit</category><category>Hexagonal Grid</category><category>IP Addreses</category><category>Mapping</category><category>R spatial</category><category>Free open-source software (FOSS)</category><category>How to</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
+readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 30 Mar 2012 17:46:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-03-30:2012/03/because-its-fun-to-map-stuff/</guid><category>Data Science Toolkit</category><category>Hexagonal Grid</category><category>IP Addreses</category><category>Mapping</category><category>R spatial</category><category>Free open-source software (FOSS)</category><category>How to</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
 for &lt;span class="caps"&gt;QGIS&lt;/span&gt; at this point. However, to date non of the fTools functions
 (Vector menu) have taken advantage of this capability. If a tool needed
 to create a new field in the input vector layer, it simply wrote a new
@@ -261,7 +261,7 @@ layer, and computes the correct information accordingly (outputting a
 count for points, and line lengths for lines). For both functions, the
 last argument can be a boolean specifying whether to update selected
 features only (&lt;code&gt;default=False&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;C&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 12 Mar 2011 18:43:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2011-03-12:2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</guid><category>Geographic information science/systems (GIS)</category><category>Geometry</category><category>PyQGIS</category><category>Python</category><category>QGIS</category><category>Free open-source software (FOSS)</category></item><item><title>pgRouting, OpenStreetMap, and QGIS</title><link>http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/</link><description>&lt;p&gt;I mentioned &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;a few posts back&lt;/a&gt; that there was a great resource for
+&lt;p&gt;C&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 12 Mar 2011 18:43:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2011-03-12:2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</guid><category>Geographic information science/systems (GIS)</category><category>Geometry</category><category>PyQGIS</category><category>Python</category><category>QGIS</category><category>Free open-source software (FOSS)</category></item><item><title>pgRouting, OpenStreetMap, and QGIS</title><link>http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/</link><description>&lt;p&gt;I mentioned &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;a few posts back&lt;/a&gt; that there was a great resource for
 downloading OpenStreetMap data, and that it was relatively easy to
 import osm data into &lt;code&gt;PostgreSQL&lt;/code&gt;/&lt;code&gt;PostGIS&lt;/code&gt; for use with &lt;code&gt;pgRouting&lt;/code&gt; to
 calculate shortest paths and various other network-based operations. In
@@ -283,12 +283,12 @@ the required software packages, as well as subversion and&amp;nbsp;cmake.&lt;/p&
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;To be able to run the driving distance algorithms we need &lt;span class="caps"&gt;CGAL&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;To be able to run the driving distance algorithms we need&amp;nbsp;&lt;span class="caps"&gt;CGAL&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install libcgal*
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;And the traveling sales person algorithm requires &lt;span class="caps"&gt;GAUL&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;And the traveling sales person algorithm requires&amp;nbsp;&lt;span class="caps"&gt;GAUL&lt;/span&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
 tar -xzf gaul-devel-0.1850-0.tar.gz &lt;span class="nb"&gt;cd &lt;/span&gt;gaul-devel-0.1850-0/
 ./configure --disable-slang
@@ -303,7 +303,7 @@ have subversion, or you don&amp;#8217;t want to have the latest trunk version of
 &lt;code&gt;pgRouting&lt;/code&gt;, you can also &lt;a href="http://pgrouting.postlbs.org/wiki/pgRoutingDownload"&gt;download it manually&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
 &lt;span class="nb"&gt;cd &lt;/span&gt;pgrouting/
-cmake -DWITH_TSP&lt;span class="o"&gt;=&lt;/span&gt;ON -DWITH_DD&lt;span class="o"&gt;=&lt;/span&gt;ON . make
+cmake -DWITH_TSP&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="caps"&gt;ON&lt;/span&gt; -DWITH_DD&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="caps"&gt;ON&lt;/span&gt; . make
 sudo make install
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -315,7 +315,7 @@ sudo make install
 
 
 &lt;p&gt;Scroll to the bottom, and make sure you change the &lt;code&gt;METHOD&lt;/code&gt; to&amp;nbsp;&amp;#8216;trust&amp;#8217;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# &lt;span class="caps"&gt;TYPE&lt;/span&gt;  &lt;span class="caps"&gt;DATABASE&lt;/span&gt;    &lt;span class="caps"&gt;USER&lt;/span&gt;        &lt;span class="caps"&gt;CIDR&lt;/span&gt;-&lt;span class="caps"&gt;ADDRESS&lt;/span&gt;          &lt;span class="caps"&gt;METHOD&lt;/span&gt;&lt;/span&gt;
 &lt;span class="n"&gt;local&lt;/span&gt;   &lt;span class="n"&gt;all&lt;/span&gt;         &lt;span class="n"&gt;all&lt;/span&gt;                               &lt;span class="n"&gt;trust&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -450,11 +450,11 @@ Europe. It currently also features &lt;a href="http://labs.geofabrik.de/haiti/"&
 &lt;p&gt;Now that I have the &lt;span class="caps"&gt;OSM&lt;/span&gt; data downloaded, it should be relatively easy to
 import it into my PostGIS database using &lt;a href="http://pgrouting.postlbs.org/"&gt;pgRouting&lt;/a&gt; and the
 &lt;a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting"&gt;osm2pgrouting&lt;/a&gt; import tool. More to come on this topic once I get
-things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>Ireland</category><category>OpenStreetMap</category><category>PostGIS</category><category>Road Networks</category><category>Helpful tips</category><category>Networks</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
+things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>Ireland</category><category>OpenStreetMap</category><category>PostGIS</category><category>Road Networks</category><category>Helpful tips</category><category>Networks</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
 visualise the results of a &lt;code&gt;SELECT&lt;/code&gt; statement on a &lt;a href="http://postgis.refractions.net/"&gt;PostGIS&lt;/a&gt; database
 that returns spatial data in &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt;. In other words, can we map the
 results of something&amp;nbsp;like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; FROM spatial_table GROUP BY id;
+&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="caps"&gt;FROM&lt;/span&gt; spatial_table &lt;span class="caps"&gt;GROUP&lt;/span&gt; &lt;span class="caps"&gt;BY&lt;/span&gt; id;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -507,12 +507,12 @@ the input point layer.
     &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; seq&lt;span class="p"&gt;(&lt;/span&gt;along&lt;span class="o"&gt;=&lt;/span&gt;polys&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
         pcrds &lt;span class="o"&gt;=&lt;/span&gt; cbind&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
         pcrds &lt;span class="o"&gt;=&lt;/span&gt; rbind&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;,&lt;/span&gt; pcrds&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,])&lt;/span&gt;
-        polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; ID&lt;span class="o"&gt;=&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
+        polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; &lt;span class="caps"&gt;ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
-    SP &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;polys&lt;span class="p"&gt;)&lt;/span&gt;
-    voronoi &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; data&lt;span class="o"&gt;=&lt;/span&gt;data.frame&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; 
-        y&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; row.names&lt;span class="o"&gt;=&lt;/span&gt;sapply&lt;span class="p"&gt;(&lt;/span&gt;slot&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;polygons&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
-        &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; slot&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;ID&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+    &lt;span class="caps"&gt;SP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;polys&lt;span class="p"&gt;)&lt;/span&gt;
+    voronoi &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;SP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; data&lt;span class="o"&gt;=&lt;/span&gt;data.frame&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; 
+        y&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; row.names&lt;span class="o"&gt;=&lt;/span&gt;sapply&lt;span class="p"&gt;(&lt;/span&gt;slot&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="caps"&gt;SP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;polygons&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+        &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; slot&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;&lt;span class="caps"&gt;ID&lt;/span&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -717,7 +717,7 @@ a beautiful &lt;span class="caps"&gt;OSM&lt;/span&gt; powered map on your&amp;nb
 &lt;li&gt;Browse the OpenStreetMap and find the area you want to map, using
    the zoom tools to zoom right in to your area of&amp;nbsp;interest.&lt;/li&gt;
 &lt;li&gt;Select the export&amp;nbsp;tab.&lt;/li&gt;
-&lt;li&gt;When choosing the export format, select &amp;#8220;Embeddable &lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;#8221;.&lt;/li&gt;
+&lt;li&gt;When choosing the export format, select &amp;#8220;Embeddable&amp;nbsp;&lt;span class="caps"&gt;HTML&lt;/span&gt;&amp;#8221;.&lt;/li&gt;
 &lt;li&gt;If you want, pop in a marker symbol so everyone knows where to&amp;nbsp;look&amp;#8230;&lt;/li&gt;
 &lt;li&gt;Copy the provided &lt;span class="caps"&gt;HTML&lt;/span&gt; code, and paste into your site wherever you want the map to show&amp;nbsp;up.&lt;/li&gt;
 &lt;/ol&gt;
@@ -839,7 +839,7 @@ y &lt;span class="o"&gt;=&lt;/span&gt; readGDAL&lt;span class="p"&gt;(&lt;/span&
 y.grid &lt;span class="o"&gt;=&lt;/span&gt; y&lt;span class="o"&gt;@&lt;/span&gt;grid
 y.coords &lt;span class="o"&gt;=&lt;/span&gt; coordinates&lt;span class="p"&gt;(&lt;/span&gt;y.grid&lt;span class="p"&gt;)&lt;/span&gt; 
 image&lt;span class="p"&gt;(&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
-identify&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;y.coords&lt;span class="p"&gt;,&lt;/span&gt; y&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+identify&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;y.coords&lt;span class="p"&gt;,&lt;/span&gt; y&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;&lt;span class="caps"&gt;NULL&lt;/span&gt;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
