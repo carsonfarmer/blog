@@ -62,7 +62,7 @@ Once you have the above feed, you can grab the relevant data using something lik
 ```python
 data = [[r.value for r in row.metric] + [r.value for r in row.dimension] for row in feed.entry]
 ```
-This data required a fair bit of 'cleaning' before I could use it in Leaftlet, which I did via Pandas. For some areas where lat/long data wasn't available via Google Analytics, I used geopy and the GeoNames geocoding API to fill in the blanks (When a location still couldn't be determined, I just specificed 'random' location in the North Atlantic). With all that in place, I just created a Python script that runs the query and cleanup code every time I update my site, generating a Javascript file with `JSON` data of visitor locations over the last month:
+This data required a fair bit of 'cleaning' before I could use it in Leaftlet, which I did via Pandas. For some areas where lat/long data wasn't available via Google Analytics, I used geopy and the GeoNames geocoding API to fill in the blanks (When a location still couldn't be determined, I just specified 'random' location in the North Atlantic). With all that in place, I just created a Python script that runs the query and cleanup code every time I update my site, generating a Javascript file with `JSON` data of visitor locations over the last month:
 
 ```javascript
 var visitors = [
