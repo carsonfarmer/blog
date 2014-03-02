@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/python.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-02-12T22:31:00-05:00</updated><entry><title>Will it Python?</title><link href="http://www.carsonfarmer.com/2013/02/will-it-python/" rel="alternate"></link><updated>2013-02-12T22:31:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-02-12:2013/02/will-it-python/</id><summary type="html">&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/python.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2014-03-01T19:53:00-05:00</updated><entry><title>NYC Geoclient REST API from Python</title><link href="http://www.carsonfarmer.com/2014/03/nyc_geocoder/" rel="alternate"></link><updated>2014-03-01T19:53:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2014-03-01:2014/03/nyc_geocoder/</id><summary type="html">&lt;p&gt;Recently, on the &lt;a href="http://www.meetup.com/betanyc/"&gt;betaNYC&lt;/a&gt; Meetup email list, &lt;a href="http://blog.accursedware.com/"&gt;John Krauss&lt;/a&gt; and 
+&lt;a href="http://29degreesnorth.blogspot.com/"&gt;Tom Swanson&lt;/a&gt; both posted Python code for accessing the &lt;a href="http://developer.cityofnewyork.us/api/geoclient-api-beta"&gt;&lt;span class="caps"&gt;NYC&lt;/span&gt; Geoclient 
+&lt;span class="caps"&gt;REST&lt;/span&gt; &lt;span class="caps"&gt;API&lt;/span&gt;&lt;/a&gt;, which is an awesome resource developed by the &lt;a href="http://www.nyc.gov/html/doitt/html/home/home.shtml"&gt;&lt;span class="caps"&gt;NYC&lt;/span&gt; Department 
+of Information Technology and Telecommunications&lt;/a&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt;/Mapping&amp;nbsp;unit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Geoclient &lt;span class="caps"&gt;API&lt;/span&gt; is a RESTful web service interface to the &lt;span class="caps"&gt;NYC&lt;/span&gt; Department of City Planning’s Geosupport system developed 
+by the Department of Information Technology and Telecommunications &lt;span class="caps"&gt;GIS&lt;/span&gt;/Mapping unit. Geosupport is a mainframe-based 
+geocoding system used by &lt;span class="caps"&gt;NYC&lt;/span&gt; government. Geosupport provides coordinate and geographic attributes for supported input 
+locations (address, intersection, blockface). Geoclient exposes the most widely used Geosupport functions and provides them 
+in a more intuitive and modern&amp;nbsp;manner.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is what John has to say about &lt;a href="https://github.com/talos/nyc-geoclient"&gt;his code&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;#8217;ve been messing around with &lt;span class="caps"&gt;NYC&lt;/span&gt;&amp;#8217;s geoclient &lt;span class="caps"&gt;API&lt;/span&gt;.  It&amp;#8217;s quite powerful!  I wrapped the &lt;span class="caps"&gt;REST&lt;/span&gt; calls in a Python module, 
+which is accessible for all on PyPI.  You can check it out&amp;nbsp;here:&lt;/p&gt;
+&lt;p&gt;https://github.com/talos/nyc-geoclient&lt;/p&gt;
+&lt;p&gt;And the documentation&amp;nbsp;here:&lt;/p&gt;
+&lt;p&gt;http://nyc-geoclient.readthedocs.org/en/latest/index.html&lt;/p&gt;
+&lt;p&gt;On a side-note, according to Geoclient, almost 20% of the intersections in the city&amp;#8217;s own collision statistics releases are 
+ambiguous or&amp;nbsp;invalid.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And this is what Tom has to say &lt;a href="https://github.com/tswanson/NYCParkingGeocode"&gt;about his&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;My code is nowhere near as clean as John’s but if might be of interest that I ran ~3millions records through the &lt;span class="caps"&gt;NYC&lt;/span&gt; 
+GeoClient in December.  Overall, the services worked great and was able to make ~1,500 calls per min.  I was geocoding 
+the parking ticket data on nyc open&amp;nbsp;data.&lt;/p&gt;
+&lt;p&gt;https://github.com/tswanson/NYCParkingGeocode&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In addition to the above two Python implementations, &lt;a href="http://gonzalez.io"&gt;Edgar Gonzalez&lt;/a&gt; also recently released a ruby gem for the &lt;span class="caps"&gt;NYC&lt;/span&gt; GeoClient&amp;nbsp;&lt;span class="caps"&gt;API&lt;/span&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Github: http://github.com/edgar/NYCGeoClient&lt;br /&gt;
+Rubygems:&amp;nbsp;http://rubygems.org/gems/nyc_geo_client&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Note that you need to &lt;a href="http://developer.cityofnewyork.us/"&gt;register an app with DoITT&lt;/a&gt; (and sign it up 
+for the Geoclient &lt;span class="caps"&gt;API&lt;/span&gt;) then wait a few days before being able to use the &lt;span class="caps"&gt;API&lt;/span&gt;.
+So get registered&amp;nbsp;&lt;span class="caps"&gt;ASAP&lt;/span&gt;!&lt;/p&gt;</summary><category term="Announcement"></category><category term="Python"></category><category term="Geocoding"></category></entry><entry><title>Will it Python?</title><link href="http://www.carsonfarmer.com/2013/02/will-it-python/" rel="alternate"></link><updated>2013-02-12T22:31:00-05:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-02-12:2013/02/will-it-python/</id><summary type="html">&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
 &lt;a href="http://slendrmeans.wordpress.com/"&gt;Carl Vogel&lt;/a&gt;. This blog has an excellent (growing) collection of
 Python examples based on porting code and examples from R to Python. In
 general, it is useful for those &amp;#8220;interested in the Python data analysis
