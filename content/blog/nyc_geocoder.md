@@ -1,11 +1,10 @@
 Title: NYC Geoclient REST API from Python
-Date: 2014-02-03 11:40
+Date: 2014-03-01 19:53
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Python
-Tags: Announcement, Python
+Tags: Announcement, Python, Geocoding
 Slug: nyc_geocoder
-Status: draft
 
 Recently, on the [betaNYC][] Meetup email list, [John Krauss][krauss] and 
 [Tom Swanson][swanson] both posted Python code for accessing the [NYC Geoclient 
@@ -40,6 +39,11 @@ And this is what Tom has to say [about his](https://github.com/tswanson/NYCParki
 > 
 > https://github.com/tswanson/NYCParkingGeocode
 
+In addition to the above two Python implementations, [Edgar Gonzalez][edgar-home] also recently released a ruby gem for the NYC GeoClient API:
+
+> Github: http://github.com/edgar/NYCGeoClient  
+> Rubygems: http://rubygems.org/gems/nyc_geo_client
+
 Note that you need to [register an app with DoITT][developer] (and sign it up 
 for the Geoclient API) then wait a few days before being able to use the API.
 So get registered ASAP!
@@ -50,3 +54,5 @@ So get registered ASAP!
 [rest]: http://developer.cityofnewyork.us/api/geoclient-api-beta
 [doit]: http://www.nyc.gov/html/doitt/html/home/home.shtml
 [developer]: http://developer.cityofnewyork.us/
+[edgar-home]: http://gonzalez.io
+
