@@ -1485,7 +1485,7 @@ YII=
 
 &lt;/div&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The median is represented by the red line in the middle. Outliers, if any, are marked by &lt;code&gt;x&lt;/code&gt;&amp;#8216;s outside the&amp;nbsp;whiskers.&lt;/p&gt;
+&lt;p&gt;The median is represented by the red line in the middle. Outliers, if any, are marked by &lt;code&gt;x&lt;/code&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;s outside the&amp;nbsp;whiskers.&lt;/p&gt;
 &lt;p&gt;Note that instead of using &lt;code&gt;gal.height&lt;/code&gt;, the &lt;code&gt;boxplot()&lt;/code&gt; function operatres on the data frame, and takes the column name via the &lt;code&gt;column&lt;/code&gt; argument. This is because the real power of the box-and-whisker plot is in &lt;em&gt;comparing&lt;/em&gt; distributions. This will be raised again more systematically in later tutorials, but just to illustrate, here is how to compare the heights of males and&amp;nbsp;females:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell vbox"&gt;

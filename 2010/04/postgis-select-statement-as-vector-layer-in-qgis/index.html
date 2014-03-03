@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <title>PostGIS ‘select’ statement as vector layer in QGIS</title>
+        <title>PostGIS ‘select’ statement as vector layer in QGIS</title>
         <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
         <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
         <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
@@ -96,7 +96,7 @@
     <header>
       <h1 class="entry-title">
         <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/" rel="bookmark"
-           title="Permalink to PostGIS ‘select’ statement as vector layer in QGIS">PostGIS &#8216;select&#8217; statement as vector layer in&nbsp;<span class="caps">QGIS</span></a></h1>
+           title="Permalink to PostGIS ‘select’ statement as vector layer in QGIS">PostGIS &#8216;select&#8217; statement as vector layer in <span class="caps">QGIS</span></a></h1>
       <abbr class="published" title="2010-04-27T17:40:00">
           <i class="icon-calendar"></i>
           Tue 27 April 2010
@@ -121,7 +121,7 @@
 visualise the results of a <code>SELECT</code> statement on a <a href="http://postgis.refractions.net/">PostGIS</a> database
 that returns spatial data in <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a>. In other words, can we map the
 results of something&nbsp;like:</p>
-<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
+<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> FROM spatial_table GROUP BY id;
 </pre></div>
 
 
