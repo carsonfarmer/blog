@@ -45,7 +45,7 @@ In addition to the above two Python implementations, [Edgar Gonzalez][edgar-home
 > Rubygems: http://rubygems.org/gems/nyc_geo_client
 
 Note that you need to [register an app with DoITT][developer] (and sign it up 
-for the Geoclient API) then wait a few days before being able to use the API.
+for the Geoclient API) <s>then wait a few days before being able</s> to use the API.
 So get registered ASAP!
 
 [betaNYC]: http://www.meetup.com/betanyc/
