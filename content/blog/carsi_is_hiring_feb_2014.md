@@ -9,7 +9,7 @@ Status: draft
 
 We have two openings for undergraduate research assistants here at the [Center for Advanced Research of Spatial Information][carsi]. You can find the [original announcement][original] on [Dr. Carsten Keßler][carsten]'s website. In short, we are looking for
 
-[![carsi logo][image]][carsi] {.right}
+[![carsi logo][image]{.right}][carsi]
 
 1. A student who can help us move our website over to WordPress ([detailed description][wordpress]); and
 2. A student who can support us with Android app development in the enviroCar project ([detailed description][envirocar]).
