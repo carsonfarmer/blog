@@ -1,11 +1,10 @@
 Title: CARSI is looking for research assistants
-Date: 2014-03-05 12:00
+Date: 2014-03-05 14:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Speaker
 Tags: Update, Speaker, FOSS4G
 Slug: carsi_is_hiring_feb_2014
-Status: draft
 
 We have two openings for undergraduate research assistants here at the [Center for Advanced Research of Spatial Information][carsi]. You can find the [original announcement][original] on [Dr. Carsten Keßler][carsten]'s website. In short, we are looking for
 
