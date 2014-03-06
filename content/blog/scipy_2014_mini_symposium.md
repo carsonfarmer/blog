@@ -39,6 +39,8 @@ If you decide to submit an abstract, be sure to select GIS as your chosen mini-s
 * May 6th:           Early-bird registration ends (or after 150 registrants)
 * July 6-12th:       2 days of tutorials, 3 days of conference, 2 days of sprints
 
+Hope to see you in Austin!
+
 [scipy]: https://conference.scipy.org/scipy2014/
 [about]: https://conference.scipy.org/scipy2014/about/
 [conf-map]: https://www.google.com/maps/place/AT%26T+Executive+Education+and+Conference+Center/@30.282362,-97.7401074,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x7ef52b1ad3321879
