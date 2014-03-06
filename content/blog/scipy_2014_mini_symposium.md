@@ -1,4 +1,4 @@
-Title: Register for SciPy 2014 GIS Mini-Symposium
+Title: SciPy 2014 Geospatial Data in Science
 Date: 2014-03-06 13:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
@@ -8,13 +8,13 @@ Slug: scipy_2014_mini_symposium
 
 [![SciPy 2014 Logo][image]{.left}][scipy]
 
-I have recently been asked to chair the *GIS Mini-Symposium* for [SciPy 2014][scipy] in Austin, Texas this coming July. The conference is being held at the [AT&T Executive Education and Conference Center][conf-map] at the University of Texas campus in Austin, Texas from **July 6th to 12th 2014**. It promises to be an awesome gathering of scientific Python users, developers, and organizations. You can checkout the [conference announcement][about] on the [SciPy 2014 website][scipy], where you can [register][sign-up] to submit a proposal and/or abstract, and generally find out all about the SciPy community and conference.
+I have recently been asked to help out with the **Geospatial Data in Science** track for [SciPy 2014][scipy] in Austin, Texas this coming July. The conference is being held at the [AT&T Executive Education and Conference Center][conf-map] at the University of Texas campus in Austin, Texas from **July 6th to 12th 2014**. It promises to be an awesome gathering of scientific Python users, developers, and organizations. You can checkout the [conference announcement][about] on the [SciPy 2014 website][scipy], where you can [register][sign-up] to submit a proposal and/or abstract, and generally find out all about the SciPy community and conference.
 
 <!--more-->
 
-I'm really excited about the GIS Mini-Symposium, especially because the two main *Specialized Tracks* (which run parallel to the main conference) for the conference this year are **Scientific Computing in Education** *and* **Geospatial Data in Science**. In particular, the geospatial track "will focus on libraries, tools and techniques for processing Geospatial data of all types and for all purposes -- from low-volume to high-volume, local and global".
+I'm really excited about the conference, especially because the two main *Specialized Tracks* (which run parallel to the main conference) for the conference this year are **Scientific Computing in Education** *and* **Geospatial Data in Science**; both topics near and dear to my heart! In particular, the geospatial track "will focus on libraries, tools and techniques for processing Geospatial data of all types and for all purposes -- from low-volume to high-volume, local and global". Cool stuff!
 
-In addition to these two specialized tracks, we have *Domain-specific Mini-symposia*, of which **GIS** is one.
+In addition to these two specialized tracks, we have *Domain-specific Mini-symposia* which you might be interested in:
 
 > Introduced in 2012, mini-symposia are held to discuss scientific computing applied to a specific scientific domain/industry during a half afternoon after the general conference. Their goal is to promote industry specific libraries and tools, and gather people with similar interests for discussions.
 
@@ -26,9 +26,8 @@ Mini-symposia on the following topics will take place this year:
 * Vision, Visualization, and Imaging
 * Computational Social Science and Digital Humanities
 * Engineering
-* Geographic Information Systems/Science
 
-If you decide to submit an abstract, be sure to select GIS as your chosen mini-symposium. If you have any questions, feel free to [get in touch][me]. And don't forget, submission deadline is **March 14th, 2014**!
+If you decide to submit an abstract, be sure to select *Geospatial Data in Science* as your "Topic Track". If you have any questions, feel free to [get in touch][me]. And don't forget, submission deadline is **March 14th, 2014**!
 
 #### Important Dates
 
