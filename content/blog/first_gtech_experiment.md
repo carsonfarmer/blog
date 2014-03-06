@@ -6,7 +6,7 @@ Category: Speaker
 Tags: Update, Speaker, FOSS4G
 Slug: first_gtech_experiement
 
-In case you missed [Eric Brelsford's][twitter] talk last Wednesday on *Free & Open Source Software for Geospatial Applications*, I've embedded the recording below for your viewing pleasure (Eric's slides are [also available][slides]). This is the first in a series of talks organized within the department of [Geography][geog] at [Hunter College][hunter], CUNY around GIS and Technology (we're calling them GTECH Experiments). Each talk is organized by a student (thanks go to [Mara Gittleman][mara] this time), and features a member of the wider geo-technology community. Stay tuned for news and events around GTECH Experiments in the future! For now, check out the video below:
+In case you missed [Eric Brelsford's][twitter] talk last Wednesday on *Free & Open Source Software for Geospatial Applications*, I've embedded the recording below for your viewing pleasure (Eric's slides are [also available][slides]). This is the first in a series of talks organized within the department of [Geography][geog] at [Hunter College][hunter], CUNY around GIS and Technology (we're calling them GTECH Experiments). Each talk is organized by a student (thanks go to [Mara Gittleman][mara] this time), and features a member of the wider geo-technology community. Check out the video below:
 
 <div class="youtube" align="center">
 <iframe width="640" height="360" 
@@ -15,6 +15,9 @@ In case you missed [Eric Brelsford's][twitter] talk last Wednesday on *Free & Op
 </iframe>
 </div>
 
+Stay tuned for news and events around GTECH Experiments in the future!
+
+<!--more-->
 
 [slides]: http://ebrelsford.github.io/talks/2014/Hunter/
 [mara]: https://twitter.com/maragittleman
