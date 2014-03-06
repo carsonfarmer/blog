@@ -8,11 +8,11 @@ Slug: scipy_2014_mini_symposium
 
 [![SciPy 2014 Logo][image]{.left}][scipy]
 
-I have recently been asked to chair the *GIS Mini-Symposium* for [SciPy 2014][scipy] in Austin, Texas this coming July. The conference, which is being held at the [AT&T Executive Education and Conference Center][conf-map] at the University of Texas campus in Austin, Texas from **July 6th to 12th 2014**, promises to be an awesome gathering of scientific Python users, developers, and organizations. You can checkout the [conference announcement][about] on the [SciPy 2014 website][scipy], where you can [register][sign-up] to submit a proposal and/or abstract, and generally find out all about the SciPy community and conference.
+I have recently been asked to chair the *GIS Mini-Symposium* for [SciPy 2014][scipy] in Austin, Texas this coming July. The conference is being held at the [AT&T Executive Education and Conference Center][conf-map] at the University of Texas campus in Austin, Texas from **July 6th to 12th 2014**. It promises to be an awesome gathering of scientific Python users, developers, and organizations. You can checkout the [conference announcement][about] on the [SciPy 2014 website][scipy], where you can [register][sign-up] to submit a proposal and/or abstract, and generally find out all about the SciPy community and conference.
 
 <!--more-->
 
-I'm really excited about the GIS Mini-Symposium, especially because the two main *Specialized Tracks* (which run parallell to the main conference) for the conference this year are **Scientific Computing in Education** *and* **Geospatial Data in Science**. In particular, the geospatial track "will focus on libraries, tools and techniques for processing Geospatial data of all types and for all purposes -- from low-volume to high-volume, local and global".
+I'm really excited about the GIS Mini-Symposium, especially because the two main *Specialized Tracks* (which run parallel to the main conference) for the conference this year are **Scientific Computing in Education** *and* **Geospatial Data in Science**. In particular, the geospatial track "will focus on libraries, tools and techniques for processing Geospatial data of all types and for all purposes -- from low-volume to high-volume, local and global".
 
 In addition to these two specialized tracks, we have *Domain-specific Mini-symposia*, of which **GIS** is one.
 
@@ -32,14 +32,12 @@ If you decide to submit an abstract, be sure to select GIS as your chosen mini-s
 
 #### Important Dates
 
---------------    -----------------------------------
-**March 14th**    Presentation abstracts, poster, tutorial submission deadline. Application for sponsorship deadline.
-April 17th        Speakers selected
-April 22nd        Sponsorship acceptance deadline
-May 1st           Speaker schedule announced
-May 6th           Early-bird registration ends (or after 150 registrants)
-July 6-12th       2 days of tutorials, 3 days of conference, 2 days of sprints
---------------    -----------------------------------
+* **March 14th**:    Presentation abstracts, poster, tutorial submission deadline. Application for sponsorship deadline.
+* April 17th:        Speakers selected
+* April 22nd:        Sponsorship acceptance deadline
+* May 1st:           Speaker schedule announced
+* May 6th:           Early-bird registration ends (or after 150 registrants)
+* July 6-12th:       2 days of tutorials, 3 days of conference, 2 days of sprints
 
 [scipy]: https://conference.scipy.org/scipy2014/
 [about]: https://conference.scipy.org/scipy2014/about/
