@@ -8,6 +8,15 @@ Icon: fa-info-circle
 
 My research interests fall under the general banner of "complexity in urban systems". I am particularly interested in movements and flows of individuals, information, and commodities within urban environments, and the development and implementation of novel spatial analysis methods and software aimed at characterizing these flows.
 
+
+
+
+
+
+
+
+
+
 If you'd like to get in touch, please [contact me][link].
 
 [image]: {filename}/images/carson_circle_300.png
