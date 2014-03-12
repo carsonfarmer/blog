@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>pgRouting, OpenStreetMap, and QGIS</title>
+    <title>pgRouting, OpenStreetMap, and QGIS</title>
     <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
@@ -72,7 +72,7 @@
     <header>
       <h1 class="entry-title">
         <a href="http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/" rel="bookmark"
-           title="Permalink to pgRouting, OpenStreetMap, and QGIS">pgRouting, OpenStreetMap, and&nbsp;<span class="caps">QGIS</span></a></h1>
+           title="Permalink to pgRouting, OpenStreetMap, and QGIS">pgRouting, OpenStreetMap, and <span class="caps">QGIS</span></a></h1>
       <abbr class="published" title="2010-10-14T12:26:00">
           <i class="icon-calendar"></i>
           Thu 14 October 2010
@@ -115,12 +115,12 @@ the required software packages, as well as subversion and&nbsp;cmake.</p>
 </pre></div>
 
 
-<p>To be able to run the driving distance algorithms we need&nbsp;<span class="caps">CGAL</span>:</p>
+<p>To be able to run the driving distance algorithms we need <span class="caps">CGAL</span>:</p>
 <div class="highlight"><pre>sudo apt-get install libcgal*
 </pre></div>
 
 
-<p>And the traveling sales person algorithm requires&nbsp;<span class="caps">GAUL</span>:</p>
+<p>And the traveling sales person algorithm requires <span class="caps">GAUL</span>:</p>
 <div class="highlight"><pre>wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
 tar -xzf gaul-devel-0.1850-0.tar.gz <span class="nb">cd </span>gaul-devel-0.1850-0/
 ./configure --disable-slang
@@ -135,7 +135,7 @@ have subversion, or you don&#8217;t want to have the latest trunk version of
 <code>pgRouting</code>, you can also <a href="http://pgrouting.postlbs.org/wiki/pgRoutingDownload">download it manually</a>.</p>
 <div class="highlight"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
 <span class="nb">cd </span>pgrouting/
-cmake -DWITH_TSP<span class="o">=</span><span class="caps">ON</span> -DWITH_DD<span class="o">=</span><span class="caps">ON</span> . make
+cmake -DWITH_TSP<span class="o">=</span>ON -DWITH_DD<span class="o">=</span>ON . make
 sudo make install
 </pre></div>
 
@@ -147,7 +147,7 @@ sudo make install
 
 
 <p>Scroll to the bottom, and make sure you change the <code>METHOD</code> to&nbsp;&#8216;trust&#8217;.</p>
-<div class="highlight"><pre><span class="cp"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
+<div class="highlight"><pre><span class="cp"># TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD</span>
 <span class="n">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
 </pre></div>
 
