@@ -9,12 +9,14 @@ Slug: esri_and_open_source
 [![ESRI & Open Source][image]{.right}][blog-post]
 
 Here's a [blog post from ESRI][blog-post] about ESRI's transition to open source, open development, and social coding.[*](#kessler) It features [GitHub][github] pretty prominently. Here's a particularly nice snippet from the post:
-  
-  
-  
-  
-  
-  
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+   
 > The value is clear: through active and public collaboration we can effectively deliver a platform that empowers anyone with the freedom and ownership to customize solutions to their own domain. Our community spans the entire domain of government, science, education, commercial, and industrial practice. As a company it would be impossible for us to effectively serve every users need. Instead, open-source enables the community to scale itself.
 
 <!--more-->
