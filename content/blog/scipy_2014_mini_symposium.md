@@ -2,7 +2,7 @@ Title: SciPy 2014 Geospatial Data in Science
 Date: 2014-03-06 13:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Annoucement
+Category: Announcement
 Tags: Update, Announcement, FOSS4G, Python, GIS
 Slug: scipy_2014_mini_symposium
 

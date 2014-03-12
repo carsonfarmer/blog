@@ -60,7 +60,7 @@ STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt',
                 'extras/CNAME', 'examples']
 
 EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
-                       'extras/404.html': {'path': '404.html'},
+                       #'extras/404.html': {'path': '404.html'},
                        'extras/CNAME': {'path': 'CNAME'},
                        'examples' : {'path': 'examples'}
                       }

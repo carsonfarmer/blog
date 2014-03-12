@@ -2,7 +2,7 @@ Title: View spatial data attribute tables in R
 Date: 2008-10-14 13:44
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: Free open-source software (FOSS), Geographic information science/systems (GIS), How to, R spatial
 Slug: view-spatial-data-attribute-tables-in-r
 

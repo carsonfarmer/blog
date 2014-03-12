@@ -3,7 +3,7 @@ Date: 2009-10-20 16:24
 Author: cfarmer
 Email:  carson.farmer@gmail.com
 Category: Networks
-Tags: Community structure, Directed, Modularity, Networks, Weighted, Helpful tips, Research
+Tags: Community structure, Directed, Modularity, Networks, Weighted, Helpful tip, Research
 Slug: community-structure-in-directed-weighted-networks
 Latex:
 

@@ -2,7 +2,7 @@ Title: 'Watch' long running processes
 Date: 2009-07-08 12:23
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: long running, PostGIS, watch, Free open-source software (FOSS), How to, Linux
 Slug: keep-an-eye-on-long-running-processes
 

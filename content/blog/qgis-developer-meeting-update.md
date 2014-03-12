@@ -3,7 +3,7 @@ Date: 2009-11-11 17:33
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: C++, geoprocessing, Python, QGIS, Free open-source software (FOSS), Geographic information science/systems (GIS), Helpful tips, How to
+Tags: C++, geoprocessing, Python, QGIS, Free open-source software (FOSS), Geographic information science/systems (GIS), Helpful tip, How to
 Slug: qgis-developer-meeting-update
 
 Last week I attended the 2009 QGIS Developers Meeting in Vienna,

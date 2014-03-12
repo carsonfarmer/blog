@@ -3,7 +3,7 @@ Date: 2013-12-20 11:34
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Python
-Tags: Helpful tips, Python, Visualization, Mapping
+Tags: Helpful tip, Python, Visualization, Mapping
 Slug: visitor_map_via_google_analytics_and_leaftlet
 Status: draft
 

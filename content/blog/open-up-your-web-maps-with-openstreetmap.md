@@ -2,7 +2,7 @@ Title: Open up your online maps with OpenStreetMap
 Date: 2009-01-26 23:27
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: Online Maps, Open-access, Open-source, OpenStreetMap, Geographic information science/systems (GIS)
 Slug: open-up-your-web-maps-with-openstreetmap
 

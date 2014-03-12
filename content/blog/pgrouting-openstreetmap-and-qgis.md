@@ -2,7 +2,7 @@ Title: pgRouting, OpenStreetMap, and QGIS
 Date: 2010-10-14 12:26
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: Networks, OpenStreeMap, pgRouting, PostgreSQL/PostGIS, QGIS, Free open-source software (FOSS), Geographic information science/systems (GIS), How to, Networks
 Slug: pgrouting-openstreetmap-and-qgis
 

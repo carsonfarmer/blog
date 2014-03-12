@@ -2,7 +2,7 @@ Title: gedit: The ultimate LaTeX editor
 Date: 2008-12-12 00:56
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: gedit, LaTeX, Free open-source software (FOSS), How to, Linux
 Slug: gedit-the-ultimate-latex-editor
 Latex:

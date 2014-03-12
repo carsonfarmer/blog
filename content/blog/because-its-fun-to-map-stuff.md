@@ -2,7 +2,7 @@ Title: Because its fun to map stuff...
 Date: 2012-03-30 17:46
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: Data Science Toolkit, Hexagonal Grid, IP Addreses, Mapping, R spatial, Free open-source software (FOSS), How to
 Slug: because-its-fun-to-map-stuff
 

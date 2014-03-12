@@ -2,7 +2,7 @@ Title: Voronoi polygons with R
 Date: 2009-09-16 22:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: R, Tesselation, Voronoi polygons, Free open-source software (FOSS), How to, R spatial
 Slug: voronoi-polygons-with-r
 

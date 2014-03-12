@@ -2,7 +2,7 @@ Title: PostGIS 'select' statement as vector layer in QGIS
 Date: 2010-04-27 17:40
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: PostGIS, QGIS, Query, Vector, Free open-source software (FOSS), Geographic information science/systems (GIS), How to
 Slug: postgis-select-statement-as-vector-layer-in-qgis
 

@@ -2,7 +2,7 @@ Title: Quick guide to setting up a PostGIS database
 Date: 2008-11-28 12:01
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: PostGIS, Quick Guide, Ubuntu, Free open-source software (FOSS), Geographic information science/systems (GIS), How to, Linux
 Slug: quick-guide-to-setting-up-postgis-database
 

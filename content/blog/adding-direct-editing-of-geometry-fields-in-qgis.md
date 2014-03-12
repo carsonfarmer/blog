@@ -2,7 +2,7 @@ Title: Adding direct editing of geometry fields in QGIS
 Date: 2011-03-12 18:43
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: Geographic information science/systems (GIS), Geometry, PyQGIS, Python, QGIS, Free open-source software (FOSS)
 Slug: adding-direct-editing-of-geometry-fields-in-qgis
 

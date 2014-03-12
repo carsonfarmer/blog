@@ -2,7 +2,7 @@ Title: manageR and rpy2 installation problems
 Date: 2012-10-06 14:26
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tips
+Category: Helpful tip
 Tags: manageR, Python, QGIS, R spatial, rpy2, Spatial, Free open-source software (FOSS)
 Slug: manager-and-rpy2-installation-problems
 

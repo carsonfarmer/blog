@@ -3,7 +3,7 @@ Date: 2013-11-22 10:49
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Statistical Modeling for Python
-Tags: Helpful tips, Python, Statistical Modeling, Teaching
+Tags: Helpful tip, Python, Statistical Modeling, Teaching
 Slug: statistical-modeling-python-variation
 Latex:
 
