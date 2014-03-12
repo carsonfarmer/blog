@@ -13,9 +13,6 @@ Here's a [blog post from ESRI][blog-post] about ESRI's transition to open source
 </br>
 </br>
 </br>
-</br>
-</br>
-</br>
    
 > The value is clear: through active and public collaboration we can effectively deliver a platform that empowers anyone with the freedom and ownership to customize solutions to their own domain. Our community spans the entire domain of government, science, education, commercial, and industrial practice. As a company it would be impossible for us to effectively serve every users need. Instead, open-source enables the community to scale itself.
 
