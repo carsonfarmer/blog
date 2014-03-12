@@ -2,6 +2,8 @@ Title: Links
 Date: 2008-08-23 07:53
 Author: cfarmer
 Slug: links
+Icon: fa-external-link
+Status: hidden
 
 ### Personal
 

@@ -2,7 +2,7 @@ Title: Research
 Date: 2008-09-23 09:47
 Author: cfarmer
 Slug: research
-Location: 56.3400, -2.7944, 5
+Icon: fa-globe
 
 ### Background
 
