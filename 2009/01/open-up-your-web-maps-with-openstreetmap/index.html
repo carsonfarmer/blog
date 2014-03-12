@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Open up your online maps with OpenStreetMap</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
-        <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-        <script src="http://www.carsonfarmer.com/libs/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
-        <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
-        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
-        <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <script type="text/javascript">
-            var loc = [40.7684, -73.9637, 10];
-            function initialize() {
-                var layer = "watercolor";
-                var map = new L.Map("map", {
-                        center: new L.LatLng(loc[0], loc[1]),
-                        zoom: loc[2],
-                        zoomControl: false
-                    });
-                map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
-                map.locate({setView: true, watch: true})
-                  .on('locationfound', function(e) {
-                    var marker = L.marker([e.latitude, e.longitude]).bindPopup('Thanks for stopping by!');
-                    map.addLayer(marker);
-                  });
-            }
-        </script>
+    <meta charset="utf-8">
+    <title>Open up your online maps with OpenStreetMap</title>
+    <link rel="stylesheet" href="../../../theme/css/main.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="../../../libs/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script> -->
+    <!-- <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" /> -->
+    <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+    <!-- <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script> -->
+    <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script> -->
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head> 
 
-<body id="index" class="home" onload="initialize()">
-<div id="map" style="position: fixed;"></div>
+<body id="index" class="home">
+<img id="bg" src="../../../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
-                <form class="form-inline" id="top-search">
-    <div class='input-append'>
-        <input type="text" id="top-query" placeholder="Search..." />
-        <button class="btn add-on" id="top-btn" type="button">
-            <i class="icon-search"></i>
-        </button>
-<div class="dropdown pull-right" id="top-dropdown">
-<a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-<ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
-    </div>
-</form>
-                <div class="navbar">
+                <!-- <h1><a href="../../../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1> -->
+                <div class="navbar navbar-fixed-top sticky" role='navigation'>
                     <div class="navbar-inner">
                         <ul class="nav">
-<li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
-                                <li class="divider-vertical"></li>
-                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
-                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
-                                    <li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
-                                        <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
-                                        <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
-                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Research</a></li>
-                                                <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
-                                        </ul>
+                            <form class="navbar-search pull-right">
+                            <div class='input-append'>
+                            <input type="text" class="search-query" id="top-query" placeholder="Search...">
+                            <div class="dropdown pull-right" id="top-dropdown">
+                            <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+                            <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+                            </div>
+                            </form>
+<li><a class="brand" id="home" href="../../../">
+                                    <img src="../../../theme/images/title.svg" id="title" class="svg"></img>
+                                </a></li>
+                                    <li><a href="../../../about/"><i class="fa fa-info-circle"></i> About</a></li>
+                                    <li><a href="../../../curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
+                                    <li><a href="../../../research/"><i class="fa fa-globe"></i> Research</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+                                <i class="fa fa-group"></i> Social<span class="caret"></span></a>
+                                <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
+                                    <li>
+                                      <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                                      <i class="fa fa-rss"></i> atom feed</a>
                                     </li>
-                                <li class="dropdown pull-right">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
-                                    <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
-                                    <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
-                                        <li>
-                                          <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
-                                          <i class="icon-rss"></i> atom feed</a>
-                                        </li>
-                                        <li>
-                                          <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
-                                          <i class="icon-rss"></i> rss feed</a>
-                                        </li>
-                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
-                                            <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
-                                            <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
-                                            <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
-                                            <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
-                                            <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
-                                            <li><a href="http://cuny.is/cfarmer"><i class="icon-comment-alt"></i> cuny.is</a></li>
-                                            <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
-                                    </ul>
-                                </li>
+                                    <li>
+                                      <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                                      <i class="fa fa-rss"></i> rss feed</a>
+                                    </li>
+                                        <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
+                                        <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
+                                        <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
+                                        <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
+                                        <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
+                                        <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
+                                        <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
+                                        <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +71,7 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2009/01/open-up-your-web-maps-with-openstreetmap/" rel="bookmark"
+        <a href="../../../2009/01/open-up-your-web-maps-with-openstreetmap/" rel="bookmark"
            title="Permalink to Open up your online maps with OpenStreetMap">Open up your online maps with&nbsp;OpenStreetMap</a></h1>
       <abbr class="published" title="2009-01-26T23:27:00">
           <i class="icon-calendar"></i>
@@ -148,7 +124,7 @@ a beautiful <span class="caps">OSM</span> powered map on your&nbsp;website.</p>
 <li>Browse the OpenStreetMap and find the area you want to map, using
    the zoom tools to zoom right in to your area of&nbsp;interest.</li>
 <li>Select the export&nbsp;tab.</li>
-<li>When choosing the export format, select &#8220;Embeddable <span class="caps">HTML</span>&#8221;.</li>
+<li>When choosing the export format, select &#8220;Embeddable&nbsp;<span class="caps">HTML</span>&#8221;.</li>
 <li>If you want, pop in a marker symbol so everyone knows where to&nbsp;look&#8230;</li>
 <li>Copy the provided <span class="caps">HTML</span> code, and paste into your site wherever you want the map to show&nbsp;up.</li>
 </ol>
@@ -158,22 +134,22 @@ Maynooth has created an extremely rich, usable, and downright decent map
 of Maynooth. Nice work Blazej&nbsp;Ciepluch!</p>
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../../../category/helpful-tips.html">Helpful tips</a> 
     </p>
     <p class="tag">
         <i class="icon-tags"></i>
- <a href="http://www.carsonfarmer.com/tag/online-maps.html">Online Maps</a>
- <a href="http://www.carsonfarmer.com/tag/open-access.html">Open-access</a>
- <a href="http://www.carsonfarmer.com/tag/open-source.html">Open-source</a>
- <a href="http://www.carsonfarmer.com/tag/openstreetmap.html">OpenStreetMap</a>
- <a href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
+ <a href="../../../tag/online-maps.html">Online Maps</a>
+ <a href="../../../tag/open-access.html">Open-access</a>
+ <a href="../../../tag/open-source.html">Open-source</a>
+ <a href="../../../tag/openstreetmap.html">OpenStreetMap</a>
+ <a href="../../../tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
     </p>
     </div><!-- /.entry-content -->
       <div class="comments">
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2009/01/open-up-your-web-maps-with-openstreetmap/";
-          var disqus_url = "http://www.carsonfarmer.com/2009/01/open-up-your-web-maps-with-openstreetmap/";
+          var disqus_url = "../../../2009/01/open-up-your-web-maps-with-openstreetmap/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
@@ -186,41 +162,46 @@ of Maynooth. Nice work Blazej&nbsp;Ciepluch!</p>
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-        <h2><i class="icon-twitter"></i> twitter</h2>
-        <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
-            data-link-color="#2A75A9" 
-            data-chrome="nofooter noheader noborders transparent" 
-            data-widget-id="330339195518337025"
-            height="300" lang="EN"
-            data-related="CarsonFarmer">
-            Tweets by @CarsonFarmer
-        </a>
-        <script>
-            !function(d,s,id){
-                var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
-                if(!d.getElementById(id)){
-                    js=d.createElement(s);
-                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js,fjs);
-                }
-            }(document,"script","twitter-wjs");
-        </script>
+    <h2><i class="icon-twitter"></i> twitter</h2>
+    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
 
+        data-chrome="nofooter noheader noborders transparent" 
+        data-widget-id="330339195518337025"
+        height="300" lang="EN"
+        data-related="CarsonFarmer">
+        Tweets by @CarsonFarmer
+    </a>
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","twitter-wjs");
+    </script>
 </div>
         
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
-                <address id="about" class="vcard body shadow">
-                                <ul id="links">
-                                    <li><a href="http://www.geo.hunter.cuny.edu/cfarmer/">CUNY Faculty Page</a></li>
-                                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
-                                </ul>
-                Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
-                Hunter College - CUNY | 695 Park Avenue, New York | New York, 10065</br>
-                </address><!-- /#about -->
-                <p style="text-align: center;">This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, 
-                which takes great advantage of <a href="http://python.org">Python</a>.</p>
+            <address id="about" class="vcard body shadow">
+                <ul id="links">
+                    <li><a href="../../../contact/">Contact me</a></li>
+                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
+                </ul>
+                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
+                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            </address><!-- /#about -->
+            <p style="text-align: center; color: #fff;">This blog is proudly 
+                powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of 
+                <a href="http://python.org">Python</a>.</br>
+                Icons are courtesy of 
+                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
+                and the styling is mostly done via 
+                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
         </footer><!-- /#contentinfo -->
 
     <script type="text/javascript">
@@ -242,82 +223,6 @@ of Maynooth. Nice work Blazej&nbsp;Ciepluch!</p>
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script>
-    $(function() {
-        var search = window.location.search.substring(1)
-        if (search == "feed=rss2") window.location = "http://www.carsonfarmer.com/feeds/all.rss.xml"
-    });
-
-    $(document).ready(function() {
-    
-        //Calculate the height of <header>
-        //Use outerHeight() instead of height() if have padding
-        var aboveHeight = $('.navbar').position().top;
-
-    //when scroll
-        $(window).scroll(function() {
-            //if scrolled down more than the header’s height
-                if ($(window).scrollTop() > aboveHeight){
-                // if yes, add "fixed" class to the <nav>
-                // add padding top to the #content 
-                    // if (!$('nav').hasClass('fixed')) {
-                    //     $('.home_link').show("slide", { direction: "right" }, 250)
-                    // };
-                    $('.navbar').addClass('fixed').addClass('shadow').css('top','0').next() //.addClass('navbar-fixed-top').next()//
-                    $('#content').css('margin-top',aboveHeight+20+'px'); // value is same as the height of the nav
-                } else {
-                // when scroll up or less than aboveHeight,
-                // remove the “fixed” class, and the padding-top
-                    // if ($('nav').hasClass('fixed')) {
-                    //     console.log('test')
-                    //     $('.home_link').hide("slide", { direction: "right" }, 250)
-                    // };
-                    $('.navbar').removeClass('fixed').removeClass('shadow').next()
-                    $('#content').css('margin-top','0px');
-                }
-        });
-        $("#top-query").keydown(function(event) {
-            if (event.keyCode == 13) {
-                event.preventDefault();
-                site_search();
-                return false;
-            }
-        });
-        $("#top-btn").click(function(event) {
-            event.preventDefault();
-            site_search();
-            return false;
-        });
-    });
-    
-function site_search() {
-    var query = $("#top-query").val();
-    if (query == "") return false;
-    var api = 'http://tapirgo.com/api/1/search.json?';
-    var token = '51980cd33f61b05bbb000ce0';
-    var el = $("#top-results");
-    el.empty();
-    el.append('<li style="padding-left: 10px">Fetching results...</li>')
-    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
-        function(data) {
-            // insert function here if needed
-            if (data.length) {
-                el.empty();
-                $.each(data, function(key, val) {
-                    var xx = new Date(val.published_on)+""
-                    if ((/^http\:\/\/www.carsonfarmer.com/).test(val.link)) { // hack to ignore duplicate returns
-                        el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
-                            'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' + '</li>');
-                    }
-                });
-            } else {
-                el.empty();
-                el.append('<li style="padding-left: 10px">No results found...</li>')
-            };
-        $("[data-toggle=tooltip]").tooltip();
-    });
-    $("#top-toggle").dropdown('toggle');
-}
-</script>
+<script src="../../../theme/js/tools.js"></script>
 </body>
 </html>

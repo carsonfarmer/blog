@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8">
-        <title>Carson Farmer - cfarmer</title>
-        <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
-        <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-        <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-        <script src="http://www.carsonfarmer.com/libs/bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script>
-        <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
-        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
-        <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>-->
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <script type="text/javascript">
-            var loc = [40.7684, -73.9637, 10];
-            function initialize() {
-                var layer = "watercolor";
-                var map = new L.Map("map", {
-                        center: new L.LatLng(loc[0], loc[1]),
-                        zoom: loc[2],
-                        zoomControl: false
-                    });
-                map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
-                map.locate({setView: true, watch: true})
-                  .on('locationfound', function(e) {
-                    var marker = L.marker([e.latitude, e.longitude]).bindPopup('Thanks for stopping by!');
-                    map.addLayer(marker);
-                  });
-            }
-        </script>
+    <meta charset="utf-8">
+    <title>Carson Farmer - cfarmer</title>
+    <link rel="stylesheet" href="../theme/css/main.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script> -->
+    <!-- <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" /> -->
+    <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
+    <!-- <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script> -->
+    <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script> -->
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head> 
 
-<body id="index" class="home" onload="initialize()">
-<div id="map" style="position: fixed;"></div>
+<body id="index" class="home">
+<img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
         <header id="banner" class="body">
-                <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1>
-                <form class="form-inline" id="top-search">
-    <div class='input-append'>
-        <input type="text" id="top-query" placeholder="Search..." />
-        <button class="btn add-on" id="top-btn" type="button">
-            <i class="icon-search"></i>
-        </button>
-<div class="dropdown pull-right" id="top-dropdown">
-<a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-<ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
-    </div>
-</form>
-                <div class="navbar">
+                <!-- <h1><a href="../">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1> -->
+                <div class="navbar navbar-fixed-top sticky" role='navigation'>
                     <div class="navbar-inner">
                         <ul class="nav">
-<li><a id="home" href="http://www.carsonfarmer.com/"><i class="icon-home"></i></a></li>
-                                <li class="divider-vertical"></li>
-                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="icon-info-sign"></i> About</a></li>
-                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="icon-rocket"></i> Curriculum Vitae</a></li>
-                                    <li class="dropdown">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" id="Work-drop" role="button" href="#">
-                                        <i class="icon-globe"></i> Work<i class="icon-chevron-down"></i></a>
-                                        <ul class="dropdown-menu" role="menu" id="Work-menu" aria-labelledby="Work-drop">
-                                                <li><a href="http://www.carsonfarmer.com/research/"><i class="icon-bar-chart"></i> Research</a></li>
-                                                <li><a href="http://www.carsonfarmer.com/spatial-software/"><i class="icon-code"></i> Software</a></li>
-                                        </ul>
+                            <form class="navbar-search pull-right">
+                            <div class='input-append'>
+                            <input type="text" class="search-query" id="top-query" placeholder="Search...">
+                            <div class="dropdown pull-right" id="top-dropdown">
+                            <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+                            <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+                            </div>
+                            </form>
+<li><a class="brand" id="home" href="../">
+                                    <img src="../theme/images/title.svg" id="title" class="svg"></img>
+                                </a></li>
+                                    <li><a href="../about/"><i class="fa fa-info-circle"></i> About</a></li>
+                                    <li><a href="../curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
+                                    <li><a href="../research/"><i class="fa fa-globe"></i> Research</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+                                <i class="fa fa-group"></i> Social<span class="caret"></span></a>
+                                <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
+                                    <li>
+                                      <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                                      <i class="fa fa-rss"></i> atom feed</a>
                                     </li>
-                                <li class="dropdown pull-right">
-                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
-                                    <i class="icon-group"></i> Social<i class="icon-chevron-down"></i></a>
-                                    <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
-                                        <li>
-                                          <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
-                                          <i class="icon-rss"></i> atom feed</a>
-                                        </li>
-                                        <li>
-                                          <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
-                                          <i class="icon-rss"></i> rss feed</a>
-                                        </li>
-                                            <li><a href="https://twitter.com/CarsonFarmer"><i class="icon-twitter"></i> twitter</a></li>
-                                            <li><a href="https://github.com/cfarmer"><i class="icon-github"></i> github</a></li>
-                                            <li><a href="http://about.me/carson.farmer"><i class="icon-user"></i> about.me</a></li>
-                                            <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="icon-book"></i> academia.edu</a></li>
-                                            <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="icon-linkedin"></i> linkedin</a></li>
-                                            <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="icon-google-plus"></i> google+</a></li>
-                                            <li><a href="http://cuny.is/cfarmer"><i class="icon-comment-alt"></i> cuny.is</a></li>
-                                            <li><a href="mailto:carson.farmer@gmail.com"><i class="icon-envelope"></i> email</a></li>
-                                    </ul>
-                                </li>
+                                    <li>
+                                      <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                                      <i class="fa fa-rss"></i> rss feed</a>
+                                    </li>
+                                        <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
+                                        <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
+                                        <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
+                                        <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
+                                        <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
+                                        <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
+                                        <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
+                                        <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -98,7 +74,7 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/" rel="bookmark"
+                    <h1><a href="../2013/10/reimagine-new-york-streets/" rel="bookmark"
                            title="Permalink to Re-imagining New York Streets">Re-imagining New York&nbsp;Streets</a></h1>
                 </header>
                 
@@ -109,12 +85,12 @@
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/transportation.html">Transportation</a> 
+        <a href="../category/transportation.html">Transportation</a> 
     </p>
                   </footer>
                 <p>Here&#8217;s a <a href="http://www.ted.com/talks/janette_sadik_khan_new_york_s_streets_not_so_mean_any_more.html"><span class="caps">TED</span> talk</a> from Janette Sadik-Khan, the New York City Transportation 
@@ -135,16 +111,16 @@ programs she&#8217;s helped&nbsp;develop.</p>
 
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/">read more</a>
+                    <a class="readmore" href="../2013/10/reimagine-new-york-streets/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/reimagine-new-york-streets/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/10/reimagine-new-york-streets/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/" rel="bookmark"
+                    <h1><a href="../2013/10/public-transportation-time-warp/" rel="bookmark"
                            title="Permalink to Public transportation time warp">Public transportation time&nbsp;warp</a></h1>
                 </header>
                 
@@ -155,12 +131,12 @@ programs she&#8217;s helped&nbsp;develop.</p>
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/visualisation.html">Visualisation</a> 
+        <a href="../category/visualisation.html">Visualisation</a> 
     </p>
                   </footer>
                 <p>I recently came across two extremely cool videos while preparing lectures for my
@@ -192,16 +168,16 @@ original Translink footage <a href="http://www.youtube.com/watch?feature=player_
 
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/">read more</a>
+                    <a class="readmore" href="../2013/10/public-transportation-time-warp/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/10/public-transportation-time-warp/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="bookmark"
+                    <h1><a href="../2013/09/maps-art-other-experiments/" rel="bookmark"
                            title="Permalink to Maps as Art and Other Experiments">Maps as Art and Other&nbsp;Experiments</a></h1>
                 </header>
                 
@@ -212,12 +188,12 @@ original Translink footage <a href="http://www.youtube.com/watch?feature=player_
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/visualisation.html">Visualisation</a> 
+        <a href="../category/visualisation.html">Visualisation</a> 
     </p>
                   </footer>
                 <p>With the recent (and long anticipated) release of <a href="http://www.qgis.org/">Quantum <span class="caps">GIS</span> 2.0</a>, 
@@ -234,16 +210,16 @@ IPython magic:
 
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/">read more</a>
+                    <a class="readmore" href="../2013/09/maps-art-other-experiments/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/09/maps-art-other-experiments/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/" rel="bookmark"
+                    <h1><a href="../2013/09/researcher-position-geoInformatics/" rel="bookmark"
                            title="Permalink to Early Stage Researcher Position in GeoInformatics">Early Stage Researcher Position in&nbsp;GeoInformatics</a></h1>
                 </header>
                 
@@ -254,12 +230,12 @@ IPython magic:
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>This is just a quick note about a great opportunity for early career researchers 
@@ -268,16 +244,16 @@ interested in the field of <a href="http://en.wikipedia.org/wiki/Geoinformatics"
 available to start right away. These are really great opportunities for ...</p>
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/">read more</a>
+                    <a class="readmore" href="../2013/09/researcher-position-geoInformatics/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/09/researcher-position-geoInformatics/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/09/researcher-position-geoInformatics/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/" rel="bookmark"
+                    <h1><a href="../2013/07/essential-python-geo-libraries/" rel="bookmark"
                            title="Permalink to Essential Python Geospatial Libraries">Essential Python Geospatial&nbsp;Libraries</a></h1>
                 </header>
                 
@@ -288,12 +264,12 @@ available to start right away. These are really great opportunities for ...</p>
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tips.html">Helpful tips</a> 
+        <a href="../category/helpful-tips.html">Helpful tips</a> 
     </p>
                   </footer>
                 <p>Just so I don&#8217;t forget, here is a list of really awesome Python libraries that
@@ -311,7 +287,7 @@ added a few&nbsp;more]:</p>
 <li><a href="http://ipython.org/">ipython</a> - For a wondering interactive environment in which to&nbsp;play</li>
 <li><a href="https://code.google.com/p/freetype-py/">freetype-py</a> - For converting font glyphs to polygons (odd I&nbsp;know&#8230;)</li>
 <li><a href="https://pypi.python.org/pypi/GDAL/">ogr/gdal</a> - For reading, writing, and transforming geospatial data&nbsp;formats</li>
-<li><a href="http://www.qgis.org/pyqgis-cookbook/">pyqgis</a> - For anything and everything <span class="caps">GIS</span></li>
+<li><a href="http://www.qgis.org/pyqgis-cookbook/">pyqgis</a> - For anything and everything&nbsp;<span class="caps">GIS</span></li>
 <li><a href="http://toblerity.github.io/fiona/">fiona</a> - For making it <em>easy</em> to read/write geospatial data&nbsp;formats</li>
 <li><a href="http://matplotlib.org/">matplotlib</a> - For all my plotting&nbsp;needs</li>
 <li><a href="http://networkx.github.io/">networkx</a> - For working with networks&nbsp;(duh!)</li>
@@ -329,16 +305,16 @@ added a few&nbsp;more]:</p>
 
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/">read more</a>
+                    <a class="readmore" href="../2013/07/essential-python-geo-libraries/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/07/essential-python-geo-libraries/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/" rel="bookmark"
+                    <h1><a href="../2013/06/nyc-panel-climate-change/" rel="bookmark"
                            title="Permalink to New York City Panel on Climate Change">New York City Panel on Climate&nbsp;Change</a></h1>
                 </header>
                 
@@ -349,12 +325,12 @@ added a few&nbsp;more]:</p>
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>This was recently announced on the <a href="http://www.geo.hunter.cuny.edu/">Hunter Geography Department</a>&nbsp;website:</p>
@@ -365,16 +341,16 @@ added a few&nbsp;more]:</p>
 release of the <span class="caps">NYC</span> Special Initiative ...</p></blockquote>
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/">read more</a>
+                    <a class="readmore" href="../2013/06/nyc-panel-climate-change/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/06/nyc-panel-climate-change/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/" rel="bookmark"
+                    <h1><a href="../2013/06/new-journal-spatial-demography/" rel="bookmark"
                            title="Permalink to New Journal: Spatial Demography">New Journal: Spatial&nbsp;Demography</a></h1>
                 </header>
                 
@@ -385,12 +361,12 @@ release of the <span class="caps">NYC</span> Special Initiative ...</p></blockqu
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>I have recently joined the <a href="http://spatialdemography.org/editors-2/editorial-board/">editorial team</a> at <a href="http://spatialdemography.org/">Spatial Demography</a>
@@ -409,16 +385,16 @@ notes, and book reviews on a wide range of topics of interest to the social&nbsp
 
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/">read more</a>
+                    <a class="readmore" href="../2013/06/new-journal-spatial-demography/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/06/new-journal-spatial-demography/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/06/new-journal-spatial-demography/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/" rel="bookmark"
+                    <h1><a href="../2013/05/guest-speaker-june-2013/" rel="bookmark"
                            title="Permalink to Tim Stojanovic Guest Lecture">Tim Stojanovic Guest&nbsp;Lecture</a></h1>
                 </header>
                 
@@ -429,12 +405,12 @@ notes, and book reviews on a wide range of topics of interest to the social&nbsp
                   </abbr>
                       <address class="vcard author">
                           <i class="icon-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="icon-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/guest-speaker.html">Guest speaker</a> 
+        <a href="../category/guest-speaker.html">Guest speaker</a> 
     </p>
                   </footer>
                 <p><a href="http://www.st-andrews.ac.uk/gsd/people/tas21/">Dr. Tim Stojanovic</a> will be coming to the <a href="http://www.geo.hunter.cuny.edu/">Department of Geography 
@@ -446,58 +422,63 @@ here</a>.
 
                 <p class="readmore">
                     <i class="icon-book"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/">read more</a>
+                    <a class="readmore" href="../2013/05/guest-speaker-june-2013/">read more</a>
                 </p>
-    <p><i class="icon-comments"></i> <a href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/#disqus_thread">comments</a></p>
+    <p><i class="icon-comments"></i> <a href="../2013/05/guest-speaker-june-2013/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-            <a href="http://www.carsonfarmer.com/author/cfarmer2.html">
-                <i class="icon-arrow-left"></i>
+            <a class="left-arrow" href="../author/cfarmer2.html">
+                <i class="fa fa-arrow-circle-left fa-4x"></i>
             </a>
     3 / 10
-        <a href="http://www.carsonfarmer.com/author/cfarmer4.html">
-            <i class="icon-arrow-right"></i>
+        <a class="right-arrow" href="../author/cfarmer4.html">
+            <i class="fa fa-arrow-circle-right fa-4x"></i>
         </a>
 </p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">
-        <h2><i class="icon-twitter"></i> twitter</h2>
-        <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
-            data-link-color="#2A75A9" 
-            data-chrome="nofooter noheader noborders transparent" 
-            data-widget-id="330339195518337025"
-            height="300" lang="EN"
-            data-related="CarsonFarmer">
-            Tweets by @CarsonFarmer
-        </a>
-        <script>
-            !function(d,s,id){
-                var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
-                if(!d.getElementById(id)){
-                    js=d.createElement(s);
-                    js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore(js,fjs);
-                }
-            }(document,"script","twitter-wjs");
-        </script>
+    <h2><i class="icon-twitter"></i> twitter</h2>
+    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
 
+        data-chrome="nofooter noheader noborders transparent" 
+        data-widget-id="330339195518337025"
+        height="300" lang="EN"
+        data-related="CarsonFarmer">
+        Tweets by @CarsonFarmer
+    </a>
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","twitter-wjs");
+    </script>
 </div>
         
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
-                <address id="about" class="vcard body shadow">
-                                <ul id="links">
-                                    <li><a href="http://www.geo.hunter.cuny.edu/cfarmer/">CUNY Faculty Page</a></li>
-                                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
-                                </ul>
-                Carson Farmer| Assistant Professor of GIScience | Department Geography</br>
-                Hunter College - CUNY | 695 Park Avenue, New York | New York, 10065</br>
-                </address><!-- /#about -->
-                <p style="text-align: center;">This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, 
-                which takes great advantage of <a href="http://python.org">Python</a>.</p>
+            <address id="about" class="vcard body shadow">
+                <ul id="links">
+                    <li><a href="../contact/">Contact me</a></li>
+                    <li><a href="http://www.carsilab.org/">CARSI Lab</a></li>
+                </ul>
+                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
+                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            </address><!-- /#about -->
+            <p style="text-align: center; color: #fff;">This blog is proudly 
+                powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of 
+                <a href="http://python.org">Python</a>.</br>
+                Icons are courtesy of 
+                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
+                and the styling is mostly done via 
+                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
         </footer><!-- /#contentinfo -->
 
     <script type="text/javascript">
@@ -519,82 +500,6 @@ here</a>.
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script>
-    $(function() {
-        var search = window.location.search.substring(1)
-        if (search == "feed=rss2") window.location = "http://www.carsonfarmer.com/feeds/all.rss.xml"
-    });
-
-    $(document).ready(function() {
-    
-        //Calculate the height of <header>
-        //Use outerHeight() instead of height() if have padding
-        var aboveHeight = $('.navbar').position().top;
-
-    //when scroll
-        $(window).scroll(function() {
-            //if scrolled down more than the header’s height
-                if ($(window).scrollTop() > aboveHeight){
-                // if yes, add "fixed" class to the <nav>
-                // add padding top to the #content 
-                    // if (!$('nav').hasClass('fixed')) {
-                    //     $('.home_link').show("slide", { direction: "right" }, 250)
-                    // };
-                    $('.navbar').addClass('fixed').addClass('shadow').css('top','0').next() //.addClass('navbar-fixed-top').next()//
-                    $('#content').css('margin-top',aboveHeight+20+'px'); // value is same as the height of the nav
-                } else {
-                // when scroll up or less than aboveHeight,
-                // remove the “fixed” class, and the padding-top
-                    // if ($('nav').hasClass('fixed')) {
-                    //     console.log('test')
-                    //     $('.home_link').hide("slide", { direction: "right" }, 250)
-                    // };
-                    $('.navbar').removeClass('fixed').removeClass('shadow').next()
-                    $('#content').css('margin-top','0px');
-                }
-        });
-        $("#top-query").keydown(function(event) {
-            if (event.keyCode == 13) {
-                event.preventDefault();
-                site_search();
-                return false;
-            }
-        });
-        $("#top-btn").click(function(event) {
-            event.preventDefault();
-            site_search();
-            return false;
-        });
-    });
-    
-function site_search() {
-    var query = $("#top-query").val();
-    if (query == "") return false;
-    var api = 'http://tapirgo.com/api/1/search.json?';
-    var token = '51980cd33f61b05bbb000ce0';
-    var el = $("#top-results");
-    el.empty();
-    el.append('<li style="padding-left: 10px">Fetching results...</li>')
-    $.getJSON(api + 'token=' + token + '&query=' + query + '&callback=?', 
-        function(data) {
-            // insert function here if needed
-            if (data.length) {
-                el.empty();
-                $.each(data, function(key, val) {
-                    var xx = new Date(val.published_on)+""
-                    if ((/^http\:\/\/www.carsonfarmer.com/).test(val.link)) { // hack to ignore duplicate returns
-                        el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
-                            'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' + '</li>');
-                    }
-                });
-            } else {
-                el.empty();
-                el.append('<li style="padding-left: 10px">No results found...</li>')
-            };
-        $("[data-toggle=tooltip]").tooltip();
-    });
-    $("#top-toggle").dropdown('toggle');
-}
-</script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

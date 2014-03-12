@@ -27,14 +27,14 @@ GeoClient in December.  Overall, the services worked great and was able to make 
 the parking ticket data on nyc open&amp;nbsp;data.&lt;/p&gt;
 &lt;p&gt;https://github.com/tswanson/NYCParkingGeocode&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;In addition to the above two Python implementations, &lt;a href="http://gonzalez.io"&gt;Edgar Gonzalez&lt;/a&gt; also recently released a ruby gem for the &lt;span class="caps"&gt;NYC&lt;/span&gt; GeoClient &lt;span class="caps"&gt;API&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;In addition to the above two Python implementations, &lt;a href="http://gonzalez.io"&gt;Edgar Gonzalez&lt;/a&gt; also recently released a ruby gem for the &lt;span class="caps"&gt;NYC&lt;/span&gt; GeoClient&amp;nbsp;&lt;span class="caps"&gt;API&lt;/span&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Github: http://github.com/edgar/NYCGeoClient&lt;br /&gt;
 Rubygems:&amp;nbsp;http://rubygems.org/gems/nyc_geo_client&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Note that you need to &lt;a href="http://developer.cityofnewyork.us/"&gt;register an app with DoITT&lt;/a&gt; (and sign it up 
 for the Geoclient &lt;span class="caps"&gt;API&lt;/span&gt;) &lt;s&gt;then wait a few days before being able&lt;/s&gt; to use the &lt;span class="caps"&gt;API&lt;/span&gt;.
-So get registered &lt;span class="caps"&gt;ASAP&lt;/span&gt;!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 01 Mar 2014 19:53:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2014-03-01:2014/03/nyc_geocoder/</guid><category>Announcement</category><category>Python</category><category>Geocoding</category></item><item><title>Will it Python?</title><link>http://www.carsonfarmer.com/2013/02/will-it-python/</link><description>&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
+So get registered&amp;nbsp;&lt;span class="caps"&gt;ASAP&lt;/span&gt;!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 01 Mar 2014 19:53:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2014-03-01:2014/03/nyc_geocoder/</guid><category>Announcement</category><category>Python</category><category>Geocoding</category></item><item><title>Will it Python?</title><link>http://www.carsonfarmer.com/2013/02/will-it-python/</link><description>&lt;p&gt;Over the past few weeks, I&amp;#8217;ve been following a really great blog by
 &lt;a href="http://slendrmeans.wordpress.com/"&gt;Carl Vogel&lt;/a&gt;. This blog has an excellent (growing) collection of
 Python examples based on porting code and examples from R to Python. In
 general, it is useful for those &amp;#8220;interested in the Python data analysis
@@ -81,7 +81,7 @@ and forth done via a duplex (two-way) pipe. I&amp;#8217;ve &lt;a href="http://ww
 for anyone interested in having a play with it. If anyone has any ideas
 on how to (safely) cancel a currently running R command on the
 processing side, I&amp;#8217;d be very interested to hear&amp;nbsp;them.&lt;/p&gt;
-&lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 06 Nov 2010 01:00:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-11-06:2010/11/because-its-friday/</guid><category>Multiprocessing</category><category>Python</category><category>R</category><category>Statistics</category><category>Free open-source software (FOSS)</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
+&lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 06 Nov 2010 01:00:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-11-06:2010/11/because-its-friday/</guid><category>Multiprocessing</category><category>Python</category><category>R</category><category>Statistics</category><category>Free open-source software (FOSS)</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
 not, I&amp;#8217;m playing around with my data in a &lt;span class="caps"&gt;GIS&lt;/span&gt; to tease out interesting
 or informative spatial patterns, or to ensure that I&amp;#8217;m getting the
 results that I&amp;#8217;m expecting. As a result, I am constantly trying out
@@ -105,7 +105,7 @@ moving data between &lt;span class="caps"&gt;QGIS&lt;/span&gt; and R, while slig
 tool&lt;/a&gt; (shameless plug!), is not optimal when all I really want to do
 is fiddle around with different classification schemes. So I decided to
 reimplement the Jenks algorithm in Python so that I could do things
-directly from the Python console in &lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
+directly from the Python console in&amp;nbsp;&lt;span class="caps"&gt;QGIS&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Obviously I didn&amp;#8217;t really want to implement this algorithm from scratch,
 so I had a look at the R code from the &lt;code&gt;classInterval&lt;/code&gt; function in the
 classInt package (ah open source!), as well as the handy Python script
