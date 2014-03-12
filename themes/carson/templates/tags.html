@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} &mdash; Tags{% endblock %}
+{% block content %}
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <h1 class="entry-title">Tags &hellip;</h1>
+        <ul>
+        {% for tag, article in tags %}
+            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></li>
+        {% endfor %}
+        </ul>
+  </article>
+</section>
+{% endblock %}
