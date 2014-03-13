@@ -32,6 +32,12 @@ body {
 /*    text-align: left;*/
 }
 
+img #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 /* Headings */
 h1 {font-size: 2em }
 h2 {font-size: 1.571em}	/* 22px */
