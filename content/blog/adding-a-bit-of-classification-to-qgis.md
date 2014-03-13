@@ -84,4 +84,4 @@ population) into the same number of classes (5).
 [image]: |filename|/images/class_intervals-300x118.png
 [class_int]: |filename|/images/class_intervals.png
 [ESRI forum]: http://mappingcenter.esri.com/index.cfm?fa=ask.answers&q=541
-[last post]: |filename|playing-around-with-classification-algorithms-python-and-qgis.md
+[last post]: {filename}playing-around-classification-algorithms.md

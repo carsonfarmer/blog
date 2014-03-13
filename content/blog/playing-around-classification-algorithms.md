@@ -3,14 +3,14 @@ Date: 2010-09-23 10:56
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Python
-Tags: Classification, Jenks, Python, QGIS, R, Free open-source software (FOSS), Geographic information science/systems (GIS)
+Tags: Classification, Jenks, Python, QGIS, R, FOSS, GIS
 Slug: playing-around-with-classification-algorithms-python-and-qgis
 
-Data visualisation is part of my everyday work-flow. More often than
+Data visualization is part of my everyday work-flow. More often than
 not, I'm playing around with my data in a GIS to tease out interesting
 or informative spatial patterns, or to ensure that I'm getting the
 results that I'm expecting. As a result, I am constantly trying out
-different classification schemes to help me generalise spatial patterns,
+different classification schemes to help me generalize spatial patterns,
 highlight outliers and/or patterns, or just plain [mess around with my
 data][].
 <!--more-->
@@ -22,7 +22,7 @@ revealing when used in the right context, I often need something that
 better represents the 'actual' distribution of values in my data. For
 this, I usually turn to the [Jenks Optimisation][] (or Natural Breaks)
 classification. Essentially, this classification algorithm generates
-class intervals that minimise within group variance, and maximise
+class intervals that minimize within group variance, and maximize
 between group variance. In this way, given a certain number (`k`) of
 classes, we arrive at an 'optimal' classification of our data into `k`
 classes. In the past, I would import my data into [R][], and calculate
