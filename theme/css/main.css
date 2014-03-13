@@ -364,6 +364,7 @@ tfoot td {}
 header, section, footer, aside, nav, article, figure {
     display: block;
     position: relative;
+    overflow: hidden;
 }
 
 /***** Layout *****/
