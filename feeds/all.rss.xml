@@ -5550,11 +5550,11 @@ classification scheme you use when presenting your data, here is a
 graphic of the 5 different classification schemes (soon to be) available
 in &lt;span class="caps"&gt;QGIS&lt;/span&gt;. All 5 methods are grouping the same underlying data (2007
 population) into the same number of classes&amp;nbsp;(5).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/class_intervals.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/class_intervals-300x118.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 29 Sep 2010 00:40:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-29:2010/09/adding-a-bit-of-classification-to-qgis/</guid><category>ArcGIS</category><category>C++</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category><category>Python</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualisation is part of my everyday work-flow. More often than
+&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/class_intervals.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/class_intervals-300x118.png" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 29 Sep 2010 00:40:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-29:2010/09/adding-a-bit-of-classification-to-qgis/</guid><category>ArcGIS</category><category>C++</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category><category>Python</category></item><item><title>Playing around with classification algorithms: Python and QGIS</title><link>http://www.carsonfarmer.com/2010/09/playing-around-with-classification-algorithms-python-and-qgis/</link><description>&lt;p&gt;Data visualization is part of my everyday work-flow. More often than
 not, I&amp;#8217;m playing around with my data in a &lt;span class="caps"&gt;GIS&lt;/span&gt; to tease out interesting
 or informative spatial patterns, or to ensure that I&amp;#8217;m getting the
 results that I&amp;#8217;m expecting. As a result, I am constantly trying out
-different classification schemes to help me generalise spatial patterns,
+different classification schemes to help me generalize spatial patterns,
 highlight outliers and/or patterns, or just plain &lt;a href="http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm"&gt;mess around with my
 data&lt;/a&gt;.
 &lt;/p&gt;
@@ -5565,7 +5565,7 @@ revealing when used in the right context, I often need something that
 better represents the &amp;#8216;actual&amp;#8217; distribution of values in my data. For
 this, I usually turn to the &lt;a href="http://en.wikipedia.org/wiki/Jenks_Natural_Breaks_Optimization"&gt;Jenks Optimisation&lt;/a&gt; (or Natural Breaks)
 classification. Essentially, this classification algorithm generates
-class intervals that minimise within group variance, and maximise
+class intervals that minimize within group variance, and maximize
 between group variance. In this way, given a certain number (&lt;code&gt;k&lt;/code&gt;) of
 classes, we arrive at an &amp;#8216;optimal&amp;#8217; classification of our data into &lt;code&gt;k&lt;/code&gt;
 classes. In the past, I would import my data into &lt;a href="http://www.r-project.org/"&gt;R&lt;/a&gt;, and calculate
@@ -5587,7 +5587,7 @@ don&amp;#8217;t know, R&amp;#8217;s pretty algorithm basically computes a sequen
 &amp;#8216;n+1&amp;#8217; equally spaced &amp;#8216;round&amp;#8217; values which cover the range of our input
 data, such that the class breaks are 1, 2 or 5 times a power of 10. The
 Python script is &lt;a href="http://www.carsonfarmer.com/uploads/class_intervals.py"&gt;available here&lt;/a&gt;, and has a version of the pretty
-algorithm based on code from the &lt;a href="https://r-forge.r-project.org/projects/labeling/"&gt;labeling&lt;/a&gt;&amp;nbsp;package.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 23 Sep 2010 10:56:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-23:2010/09/playing-around-with-classification-algorithms-python-and-qgis/</guid><category>Classification</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>R</category><category>Free open-source software (FOSS)</category><category>Geographic information science/systems (GIS)</category></item><item><title>New online GIS resource</title><link>http://www.carsonfarmer.com/2010/07/new-online-gis-resource/</link><description>&lt;p&gt;The new Geographic Information Systems Stack Exchange site is now open
+algorithm based on code from the &lt;a href="https://r-forge.r-project.org/projects/labeling/"&gt;labeling&lt;/a&gt;&amp;nbsp;package.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 23 Sep 2010 10:56:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-09-23:2010/09/playing-around-with-classification-algorithms-python-and-qgis/</guid><category>Classification</category><category>Jenks</category><category>Python</category><category>QGIS</category><category>R</category><category>FOSS</category><category>GIS</category></item><item><title>New online GIS resource</title><link>http://www.carsonfarmer.com/2010/07/new-online-gis-resource/</link><description>&lt;p&gt;The new Geographic Information Systems Stack Exchange site is now open
 to the&amp;nbsp;public!&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s brand new, and has the potential to be an extremely valuable
 resource for &lt;span class="caps"&gt;GIS&lt;/span&gt; professionals, academics, enthusiasts, and just about
