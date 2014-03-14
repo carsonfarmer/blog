@@ -8,7 +8,7 @@
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
            title="Permalink to {{ article.title|striptags }}">{{ article.title}}</a></h1>
       <abbr class="published" title="{{ article.date.isoformat() }}">
-          <i class="icon-calendar"></i>
+          <i class="fa fa-calendar"></i>
           {{ article.locale_date }}
       </abbr>
       {% include 'twitter.html' %}

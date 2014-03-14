@@ -1,7 +1,8 @@
 {% if article.tags %}
     <p class="tag">
-        <i class="icon-tags"></i>
-        {% for tag in article.tags %} <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+        <i class="fa fa-tags"></i>
+        {% for tag in article.tags %}
+		<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
         {% endfor %}
     </p>
 {% endif %}

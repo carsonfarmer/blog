@@ -1,9 +1,6 @@
 {% if article.category %}
     <p class="category">
-        <i class="icon-certificate"></i>
+        <i class="fa fa-certificate"></i>
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> 
-        {% if PDF_PROCESSOR %}
-            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">get the pdf</a>
-        {% endif %}
     </p>
 {% endif %}
