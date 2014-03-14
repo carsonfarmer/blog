@@ -74,7 +74,7 @@
         <a href="http://www.carsonfarmer.com/2011/11/its-about-time/" rel="bookmark"
            title="Permalink to It’s about time…">It&#8217;s about&nbsp;time&#8230;</a></h1>
       <abbr class="published" title="2011-11-09T12:16:00">
-          <i class="icon-calendar"></i>
+          <i class="fa fa-calendar"></i>
           Wed 09 November 2011
       </abbr>
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
@@ -128,28 +128,28 @@ tdm <span class="o">&lt;-</span> TermDocumentMatrix<span class="p">(</span>corpu
 <span class="c1"># convert to matrix</span>
 m <span class="o">&lt;-</span> as.matrix<span class="p">(</span>tdm<span class="p">)</span>
 <span class="c1"># count up re-occuring words</span>
-v <span class="o">&lt;-</span> sort<span class="p">(</span>rowSums<span class="p">(</span>m<span class="p">),</span> decreasing<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span>
+v <span class="o">&lt;-</span> sort<span class="p">(</span>rowSums<span class="p">(</span>m<span class="p">),</span> decreasing<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
 <span class="c1"># create dataframe for word cloud</span>
 d <span class="o">&lt;-</span> data.frame<span class="p">(</span>word <span class="o">=</span> names<span class="p">(</span>v<span class="p">),</span> freq<span class="o">=</span>v<span class="p">)</span>
 png<span class="p">(</span><span class="s">&quot;wordcloud.png&quot;</span><span class="p">,</span> width<span class="o">=</span><span class="m">1280</span><span class="p">,</span> height<span class="o">=</span><span class="m">800</span><span class="p">)</span>
-wordcloud<span class="p">(</span>d<span class="o">$</span>word<span class="p">,</span>d<span class="o">$</span>freq<span class="p">,</span>c<span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">.3</span><span class="p">),</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">,</span><span class="m">.15</span><span class="p">,</span> vfont<span class="o">=</span>c<span class="p">(</span><span class="s">&quot;sans serif&quot;</span><span class="p">,</span><span class="s">&quot;plain&quot;</span><span class="p">))</span>
+wordcloud<span class="p">(</span>d<span class="o">$</span>word<span class="p">,</span>d<span class="o">$</span>freq<span class="p">,</span>c<span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">.3</span><span class="p">),</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="kc">TRUE</span><span class="p">,</span><span class="m">.15</span><span class="p">,</span> vfont<span class="o">=</span>c<span class="p">(</span><span class="s">&quot;sans serif&quot;</span><span class="p">,</span><span class="s">&quot;plain&quot;</span><span class="p">))</span>
 dev.off<span class="p">()</span>
 </pre></div>
 
 
 <p>I actually got this snippet from <a href="http://onertipaday.blogspot.com/2011/07/word-cloud-in-r.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+OneRTipADay+(One+R+Tip+A+Day)">One R Tip A Day</a> via <a href="http://www.r-bloggers.com/">R-bloggers</a>.</p>
     <p class="category">
-        <i class="icon-certificate"></i>
+        <i class="fa fa-certificate"></i>
         <a href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
     </p>
     <p class="tag">
-        <i class="icon-tags"></i>
- <a href="http://www.carsonfarmer.com/tag/announcement.html">Announcement</a>
- <a href="http://www.carsonfarmer.com/tag/phd.html">PhD</a>
- <a href="http://www.carsonfarmer.com/tag/r.html">R</a>
- <a href="http://www.carsonfarmer.com/tag/snippet.html">snippet</a>
- <a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
- <a href="http://www.carsonfarmer.com/tag/helpful-tip.html">Helpful tip</a>
+        <i class="fa fa-tags"></i>
+		<a href="http://www.carsonfarmer.com/tag/announcement.html">Announcement</a>
+		<a href="http://www.carsonfarmer.com/tag/phd.html">PhD</a>
+		<a href="http://www.carsonfarmer.com/tag/r.html">R</a>
+		<a href="http://www.carsonfarmer.com/tag/snippet.html">snippet</a>
+		<a href="http://www.carsonfarmer.com/tag/update.html">Update</a>
+		<a href="http://www.carsonfarmer.com/tag/helpful-tip.html">Helpful tip</a>
     </p>
     </div><!-- /.entry-content -->
       <div class="comments">
@@ -169,7 +169,7 @@ dev.off<span class="p">()</span>
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="icon-twitter"></i> twitter</h2>
+    <h2><i class="fa fa-twitter"></i> twitter</h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -194,8 +194,8 @@ dev.off<span class="p">()</span>
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="http://www.carsonfarmer.com/categories.html">Categories</a></li>
-                    <li><a href="http://www.carsonfarmer.com/tags.html">Tags</a></li>
+                    <li><a href="http://www.carsonfarmer.com/categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
+                    <li><a href="http://www.carsonfarmer.com/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>

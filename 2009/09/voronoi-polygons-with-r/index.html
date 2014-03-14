@@ -74,7 +74,7 @@
         <a href="http://www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/" rel="bookmark"
            title="Permalink to Voronoi polygons with R">Voronoi polygons with&nbsp;R</a></h1>
       <abbr class="published" title="2009-09-16T22:30:00">
-          <i class="icon-calendar"></i>
+          <i class="fa fa-calendar"></i>
           Wed 16 September 2009
       </abbr>
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
@@ -109,12 +109,12 @@ the input point layer.
     <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
         pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
         pcrds <span class="o">=</span> rbind<span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
-        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> <span class="caps">ID</span><span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
+        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
     <span class="p">}</span>
-    <span class="caps">SP</span> <span class="o">=</span> SpatialPolygons<span class="p">(</span>polys<span class="p">)</span>
-    voronoi <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span><span class="caps">SP</span><span class="p">,</span> data<span class="o">=</span>data.frame<span class="p">(</span>x<span class="o">=</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> 
-        y<span class="o">=</span>crds<span class="p">[,</span><span class="m">2</span><span class="p">],</span> row.names<span class="o">=</span>sapply<span class="p">(</span>slot<span class="p">(</span><span class="caps">SP</span><span class="p">,</span> <span class="s">&#39;polygons&#39;</span><span class="p">),</span> 
-        <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> slot<span class="p">(</span>x<span class="p">,</span> <span class="s">&#39;<span class="caps">ID</span>&#39;</span><span class="p">))))</span>
+    SP <span class="o">=</span> SpatialPolygons<span class="p">(</span>polys<span class="p">)</span>
+    voronoi <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>SP<span class="p">,</span> data<span class="o">=</span>data.frame<span class="p">(</span>x<span class="o">=</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> 
+        y<span class="o">=</span>crds<span class="p">[,</span><span class="m">2</span><span class="p">],</span> row.names<span class="o">=</span>sapply<span class="p">(</span>slot<span class="p">(</span>SP<span class="p">,</span> <span class="s">&#39;polygons&#39;</span><span class="p">),</span> 
+        <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> slot<span class="p">(</span>x<span class="p">,</span> <span class="s">&#39;ID&#39;</span><span class="p">))))</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -125,17 +125,17 @@ library:</p>
 <span class="o">?</span>writeOGR
 </pre></div>
     <p class="category">
-        <i class="icon-certificate"></i>
+        <i class="fa fa-certificate"></i>
         <a href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
     </p>
     <p class="tag">
-        <i class="icon-tags"></i>
- <a href="http://www.carsonfarmer.com/tag/r.html">R</a>
- <a href="http://www.carsonfarmer.com/tag/tesselation.html">Tesselation</a>
- <a href="http://www.carsonfarmer.com/tag/voronoi-polygons.html">Voronoi polygons</a>
- <a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
- <a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
- <a href="http://www.carsonfarmer.com/tag/r-spatial.html">R spatial</a>
+        <i class="fa fa-tags"></i>
+		<a href="http://www.carsonfarmer.com/tag/r.html">R</a>
+		<a href="http://www.carsonfarmer.com/tag/tesselation.html">Tesselation</a>
+		<a href="http://www.carsonfarmer.com/tag/voronoi-polygons.html">Voronoi polygons</a>
+		<a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+		<a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
+		<a href="http://www.carsonfarmer.com/tag/r-spatial.html">R spatial</a>
     </p>
     </div><!-- /.entry-content -->
       <div class="comments">
@@ -155,7 +155,7 @@ library:</p>
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="icon-twitter"></i> twitter</h2>
+    <h2><i class="fa fa-twitter"></i> twitter</h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -180,8 +180,8 @@ library:</p>
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="http://www.carsonfarmer.com/categories.html">Categories</a></li>
-                    <li><a href="http://www.carsonfarmer.com/tags.html">Tags</a></li>
+                    <li><a href="http://www.carsonfarmer.com/categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
+                    <li><a href="http://www.carsonfarmer.com/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
