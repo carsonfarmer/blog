@@ -4,7 +4,7 @@ Author: cfarmer
 Slug: curriculum-vitae
 Icon: fa-rocket
 
-### Current Positions
+### <i class="fa fa-briefcase"></i> Current Positions
 
 |                     |                      |
 | ------------------  |  -------------------
@@ -18,7 +18,7 @@ Icon: fa-rocket
 || Earth and Environmental Sciences, The Graduate Center
 || City University of New York
 
-### Education
+### <i class="fa fa-book"></i> Education
 
 |                     |                      |
 | ------------------  |  -------------------
@@ -37,7 +37,7 @@ Icon: fa-rocket
 || measures of spatial autocorrelation
 || Advisor: Dr. Ian J. O’Connell
 
-### Awards & Scholarships
+### <i class="fa fa-trophy"></i> Awards & Scholarships
 
 |                     |                      |
 | ------------------  |  -------------------
@@ -51,7 +51,7 @@ Icon: fa-rocket
 2006 | Student Paper Presentation Award, Canadian Cartographic Association
 2006 | Ross Fund Undergraduate Scholarship, University of Victoria
 
-### Publications & Presentations
+### <i class="fa fa-file-text"></i> Publications & Presentations
 
 #### Refereed Publications
     
@@ -190,11 +190,11 @@ Icon: fa-rocket
     spatial autocorrelation. *Western Canadian Association of
     Geographers*. March 10-11, Kamloops, B.C.
     
-### Teaching
+### <i class="fa fa-compass"></i> Teaching
 
 Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Methods
 
-### Academic Service
+### <i class="fa fa-cloud"></i> Academic Service
 
 |                     |                                       |
 | ------------------  |  ------------------------------------ |
@@ -214,7 +214,7 @@ Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Meth
 | 2008 | Session Chair (American Association of Geographers AGM, Boston, USA)
 | 2007 | Organizer (Geography Graduate Student Conference, University of Victoria)
 
-### Impact & Outreach
+### <i class="fa fa-bullhorn"></i> Impact & Outreach
 
 * Visualisation work appears in [article on Wired.co.uk](http://www.wired.co.uk/news/archive/2012-05/25/fatfonts)
 * Visualisation featured in [University of St Andrews Press Release](http://www.st-andrews.ac.uk/news/archive/2012/Title,90003,en.html)
