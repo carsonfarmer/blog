@@ -190,11 +190,11 @@ Icon: fa-rocket
     spatial autocorrelation. *Western Canadian Association of
     Geographers*. March 10-11, Kamloops, B.C.
     
-### <i class="fa fa-compass"></i> Teaching
+### <i class="fa fa-lighbulb-o"></i> Teaching
 
 Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Methods
 
-### <i class="fa fa-cloud"></i> Academic Service
+### <i class="fa fa-compass"></i> Academic Service
 
 |                     |                                       |
 | ------------------  |  ------------------------------------ |
