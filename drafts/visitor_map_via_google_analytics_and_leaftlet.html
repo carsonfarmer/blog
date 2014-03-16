@@ -3,75 +3,71 @@
 <head>
     <meta charset="utf-8">
     <title>Creating a visitor map using Google Analytics and Leaftlet</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
-    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../theme/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
     <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap/js/bootstrap.min.js"></script>
-    
-    <!-- <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script> -->
-    <!-- <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" /> -->
-    <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
-    <!-- <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script> -->
-    <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script> -->
-    <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </head> 
 
 <body id="index" class="home">
-<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+<img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
         <header id="banner" class="body">
-                <!-- <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1> -->
-                <div class="navbar navbar-fixed-top sticky" role='navigation'>
-                    <div class="navbar-inner">
-                        <ul class="nav">
-                            <form class="navbar-search pull-right">
-                            <div class='input-append'>
-                            <input type="text" class="search-query" id="top-query" placeholder="Search...">
-                            <div class="dropdown pull-right" id="top-dropdown">
-                            <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-                            <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
-                            </div>
-                            </form>
-<li><a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                                    <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
-                                </a></li>
-                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="fa fa-info-circle"></i> About</a></li>
-                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
-                                    <li><a href="http://www.carsonfarmer.com/research/"><i class="fa fa-globe"></i> Research</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
-                                <i class="fa fa-group"></i> Social<span class="caret"></span></a>
-                                <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
-                                    <li>
-                                      <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
-                                      <i class="fa fa-rss"></i> atom feed</a>
-                                    </li>
-                                    <li>
-                                      <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
-                                      <i class="fa fa-rss"></i> rss feed</a>
-                                    </li>
-                                        <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
-                                        <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
-                                        <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
-                                        <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
-                                        <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
-                                        <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
-                                        <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
-                                        <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <nav class="navbar navbar-default navbar-fixed-top sticky" role='navigation'>
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<a class="brand" id="home" href="../">
+                            <img src="../theme/images/title.svg" id="title" class="svg"></img>
+                        </a>
+					
+				        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-menu">
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				        </button>
+				    </div> <!-- /.navbar-header -->
+
+					<!-- Collect the nav links and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+	                    <ul class="nav navbar-nav">
+		                    <li><a href="../about/"><i class="fa fa-info-circle"></i> About</a></li>
+		                    <li><a href="../curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
+		                    <li><a href="../research/"><i class="fa fa-globe"></i> Research</a></li>
+ 
+	                        <li class="dropdown">
+	                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+	                            <i class="fa fa-group"></i> Social<b class="caret"></b></a>
+	                            <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
+	                                <li>
+	                                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+	                                  <i class="fa fa-rss"></i> atom feed</a>
+	                                </li>
+	                                <li>
+	                                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+	                                  <i class="fa fa-rss"></i> rss feed</a>
+	                                </li>
+	                                    <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
+	                                    <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
+	                                    <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
+	                                    <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
+	                                    <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
+	                                    <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
+	                                    <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
+	                                    <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </div> <!-- /.navbar-collapse -->
+				</div> <!-- /.container-fluid -->
+            </nav>
         </header>
 <section id="content" class="body">
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/" rel="bookmark"
+        <a href="../2013/12/visitor_map_via_google_analytics_and_leaftlet/" rel="bookmark"
            title="Permalink to Creating a visitor map using Google Analytics and Leaftlet">Creating a visitor map using Google Analytics and&nbsp;Leaftlet</a></h1>
       <abbr class="published" title="2013-12-20T11:34:00">
           <i class="fa fa-calendar"></i>
@@ -94,11 +90,11 @@
 
     <div class="entry-content">
       <p>Since moving my blog over to <a href="...">Pelican</a>, I have slowly been adding new functionality to get things &#8216;just right&#8217;. Being a map geek, one of the things that I have been missing is a nice visitors map. There are lots of simple plugins and tools to add one of these automatically to your site, but I figured I&#8217;d do it right and implement this myself using <a href="...">Leaflet</a> and the very nice <a href="...">Cluster plugin</a> to get similar functionality using tools that I know and trust.
-The data (approximate site visitor location) comes from <a href="https://developers.google.com/analytics/devguides/collection/gajs/asyncTracking">Google Analytics</a>, which I have setup for my site using the following snippet of JavaScript (replacing <span class="caps">UA</span>-<span class="caps">XXXXX</span>-X with your web property <span class="caps">ID</span>):</p>
+The data (approximate site visitor location) comes from <a href="https://developers.google.com/analytics/devguides/collection/gajs/asyncTracking">Google Analytics</a>, which I have setup for my site using the following snippet of JavaScript (replacing <span class="caps">UA</span>-<span class="caps">XXXXX</span>-X with your web property&nbsp;<span class="caps">ID</span>):</p>
 <div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
 
   <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span>
-  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-XXXXX-X&#39;</span><span class="p">]);</span>
+  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;<span class="caps">UA</span>-<span class="caps">XXXXX</span>-X&#39;</span><span class="p">]);</span>
   <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
 
   <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -124,12 +120,12 @@ The data (approximate site visitor location) comes from <a href="https://develop
     <span class="s">&quot;password&quot;</span><span class="p">,</span> 
     <span class="n">source</span><span class="o">=</span><span class="s">&quot;www.mywebsite.com&quot;</span><span class="p">,</span> 
     <span class="n">service</span><span class="o">=</span><span class="n">my_client</span><span class="o">.</span><span class="n">auth_service</span><span class="p">,</span> 
-    <span class="n">account_type</span><span class="o">=</span><span class="s">&quot;GOOGLE&quot;</span><span class="p">,)</span>
+    <span class="n">account_type</span><span class="o">=</span><span class="s">&quot;<span class="caps">GOOGLE</span>&quot;</span><span class="p">,)</span>
 
 <span class="n">account_query</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">AccountFeedQuery</span><span class="p">()</span>
 
 <span class="n">data_query</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">DataFeedQuery</span><span class="p">({</span>
-    <span class="s">&quot;ids&quot;</span><span class="p">:</span> <span class="s">&quot;ga:XXXXXXXX&quot;</span><span class="p">,</span>
+    <span class="s">&quot;ids&quot;</span><span class="p">:</span> <span class="s">&quot;ga:<span class="caps">XXXXXXXX</span>&quot;</span><span class="p">,</span>
     <span class="s">&quot;dimensions&quot;</span><span class="p">:</span> <span class="s">&quot;ga:city,ga:latitude,ga:longitude,ga:region,ga:country&quot;</span><span class="p">,</span>
     <span class="s">&quot;metrics&quot;</span><span class="p">:</span><span class="s">&quot;ga:uniqueEvents&quot;</span><span class="p">,</span>
     <span class="s">&quot;start-date&quot;</span><span class="p">:</span> <span class="n">last</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">),</span>
@@ -159,14 +155,14 @@ The data (approximate site visitor location) comes from <a href="https://develop
 <p>And the final results turned out like&nbsp;this:</p>
     <p class="category">
         <i class="fa fa-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/python.html">Python</a> 
+        <a href="../category/python.html">Python</a> 
     </p>
     <p class="tag">
         <i class="fa fa-tags"></i>
-		<a href="http://www.carsonfarmer.com/tag/helpful-tip.html">Helpful tip</a>
-		<a href="http://www.carsonfarmer.com/tag/python.html">Python</a>
-		<a href="http://www.carsonfarmer.com/tag/visualization.html">Visualization</a>
-		<a href="http://www.carsonfarmer.com/tag/mapping.html">Mapping</a>
+		<a href="../tag/helpful-tip.html">Helpful tip</a>
+		<a href="../tag/python.html">Python</a>
+		<a href="../tag/visualization.html">Visualization</a>
+		<a href="../tag/mapping.html">Mapping</a>
     </p>
     </div><!-- /.entry-content -->
 
@@ -199,8 +195,8 @@ The data (approximate site visitor location) comes from <a href="https://develop
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="http://www.carsonfarmer.com/categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
-                    <li><a href="http://www.carsonfarmer.com/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+                    <li><a href="../categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
+                    <li><a href="../tags.html"><i class="fa fa-tags"></i> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
@@ -234,6 +230,6 @@ The data (approximate site visitor location) comes from <a href="https://develop
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

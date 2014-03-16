@@ -3,75 +3,71 @@
 <head>
     <meta charset="utf-8">
     <title>Because its fun to map stuff…</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
-    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../../theme/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
     <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap/js/bootstrap.min.js"></script>
-    
-    <!-- <script type="text/javascript" src="http://leaflet.cloudmade.com/dist/leaflet.js"></script> -->
-    <!-- <link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.css" /> -->
-    <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.cloudmade.com/dist/leaflet.ie.css" /><![endif]-->
-    <!-- <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script> -->
-    <!--<script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script> -->
-    <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="../../../libs/bootstrap/js/bootstrap.min.js"></script>
 </head> 
 
 <body id="index" class="home">
-<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+<img id="bg" src="../../../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
         <header id="banner" class="body">
-                <!-- <h1><a href="http://www.carsonfarmer.com/">Carson Farmer  <strong>www.carsonfarmer.com</strong></a></h1> -->
-                <div class="navbar navbar-fixed-top sticky" role='navigation'>
-                    <div class="navbar-inner">
-                        <ul class="nav">
-                            <form class="navbar-search pull-right">
-                            <div class='input-append'>
-                            <input type="text" class="search-query" id="top-query" placeholder="Search...">
-                            <div class="dropdown pull-right" id="top-dropdown">
-                            <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-                            <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
-                            </div>
-                            </form>
-<li><a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                                    <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
-                                </a></li>
-                                    <li><a href="http://www.carsonfarmer.com/about/"><i class="fa fa-info-circle"></i> About</a></li>
-                                    <li><a href="http://www.carsonfarmer.com/curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
-                                    <li><a href="http://www.carsonfarmer.com/research/"><i class="fa fa-globe"></i> Research</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
-                                <i class="fa fa-group"></i> Social<span class="caret"></span></a>
-                                <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
-                                    <li>
-                                      <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
-                                      <i class="fa fa-rss"></i> atom feed</a>
-                                    </li>
-                                    <li>
-                                      <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
-                                      <i class="fa fa-rss"></i> rss feed</a>
-                                    </li>
-                                        <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
-                                        <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
-                                        <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
-                                        <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
-                                        <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
-                                        <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
-                                        <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
-                                        <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+            <nav class="navbar navbar-default navbar-fixed-top sticky" role='navigation'>
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+<a class="brand" id="home" href="../../../">
+                            <img src="../../../theme/images/title.svg" id="title" class="svg"></img>
+                        </a>
+					
+				        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-menu">
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				          <span class="icon-bar"></span>
+				        </button>
+				    </div> <!-- /.navbar-header -->
+
+					<!-- Collect the nav links and other content for toggling -->
+	                <div class="collapse navbar-collapse" id="navbar-collapse-menu">
+	                    <ul class="nav navbar-nav">
+		                    <li><a href="../../../about/"><i class="fa fa-info-circle"></i> About</a></li>
+		                    <li><a href="../../../curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
+		                    <li><a href="../../../research/"><i class="fa fa-globe"></i> Research</a></li>
+ 
+	                        <li class="dropdown">
+	                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
+	                            <i class="fa fa-group"></i> Social<b class="caret"></b></a>
+	                            <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
+	                                <li>
+	                                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+	                                  <i class="fa fa-rss"></i> atom feed</a>
+	                                </li>
+	                                <li>
+	                                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+	                                  <i class="fa fa-rss"></i> rss feed</a>
+	                                </li>
+	                                    <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
+	                                    <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
+	                                    <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
+	                                    <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
+	                                    <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
+	                                    <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
+	                                    <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
+	                                    <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </div> <!-- /.navbar-collapse -->
+				</div> <!-- /.container-fluid -->
+            </nav>
         </header>
 <section id="content" class="body">
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
+        <a href="../../../2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
            title="Permalink to Because its fun to map stuff…">Because its fun to map&nbsp;stuff&#8230;</a></h1>
       <abbr class="published" title="2012-03-30T17:46:00">
           <i class="fa fa-calendar"></i>
@@ -105,14 +101,14 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 <code>http://www.carsonfarmer.com/</code> between 2009 and&nbsp;2011:</p>
-<p><a href="http://www.carsonfarmer.com/images/website_visitors.svg"><img alt="Visitors map" src="http://www.carsonfarmer.com/images/website_visitors.svg" /></a></p>
+<p><a href="../../../images/website_visitors.svg"><img alt="Visitors map" src="../../../images/website_visitors.svg" /></a></p>
 <h3>Work-flow</h3>
 <p>Firstly, I downloaded the logs for <code>www.carsonfarmer.com</code>. I did this
 directly from the console, though I&#8217;m pretty sure I could have done this
 from R as well. Next, I needed to extract the unique <span class="caps">IP</span> addresses from
 the logs. I found this nice grep one-liner from <a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/">here</a>, which I
 modified to grab all unique <span class="caps">IP</span> addresses that &#8216;<span class="caps">GET</span>&#8217; something from the&nbsp;site:</p>
-<div class="highlight"><pre>grep <span class="s1">&#39;GET&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
+<div class="highlight"><pre>grep <span class="s1">&#39;<span class="caps">GET</span>&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
 </pre></div>
 
 
@@ -139,7 +135,7 @@ packages: <code>RCurl</code>, <code>rjson</code>, and <code>plyr</code>):</p>
 <p>Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&nbsp;working:</p>
 <div class="highlight"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
-library<span class="p">(</span>RDSTK<span class="p">)</span>
+library<span class="p">(</span><span class="caps">RDSTK</span><span class="p">)</span>
 <span class="o">?</span> ip2coordinates
 </pre></div>
 
@@ -170,13 +166,13 @@ from a hexagonal sample of the grid, and then finally d) create a
 <span class="c1"># make the output into a Spatial* object</span>
 coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> <span class="o">~</span>longitude<span class="o">+</span>latitude
 library<span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
-sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc">NULL</span><span class="p">)</span><span class="o">$</span>SG
+sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc"><span class="caps">NULL</span></span><span class="p">)</span><span class="o">$</span><span class="caps">SG</span>
 hex_pts <span class="o">=</span> spsample<span class="p">(</span>sg<span class="p">,</span> type<span class="o">=</span><span class="s">&#39;hexagonal&#39;</span><span class="p">,</span> cellsize<span class="o">=</span>sg<span class="o">@</span>grid<span class="o">@</span>cellsize<span class="p">)</span>
 hex_poly <span class="o">=</span> HexPoints2SpatialPolygons<span class="p">(</span>hex_pts<span class="p">)</span>
-pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span>
 pts_poly_count <span class="o">=</span> sapply<span class="p">(</span>pts_poly<span class="p">,</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> nrow<span class="p">(</span>x<span class="p">))</span>
 poly <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>poly<span class="p">,</span> data.frame<span class="p">(</span><span class="s">&#39;count&#39;</span><span class="o">=</span>pts_poly_count<span class="p">),</span> 
-    match.ID<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
+    match.<span class="caps">ID</span><span class="o">=</span><span class="kc"><span class="caps">FALSE</span></span><span class="p">)</span>
 </pre></div>
 
 
@@ -199,24 +195,24 @@ suited to the map at hand. In the end I had a nice map of my blog
 readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!</p>
     <p class="category">
         <i class="fa fa-certificate"></i>
-        <a href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
+        <a href="../../../category/helpful-tip.html">Helpful tip</a> 
     </p>
     <p class="tag">
         <i class="fa fa-tags"></i>
-		<a href="http://www.carsonfarmer.com/tag/data-science-toolkit.html">Data Science Toolkit</a>
-		<a href="http://www.carsonfarmer.com/tag/hexagonal-grid.html">Hexagonal Grid</a>
-		<a href="http://www.carsonfarmer.com/tag/ip-addreses.html">IP Addreses</a>
-		<a href="http://www.carsonfarmer.com/tag/mapping.html">Mapping</a>
-		<a href="http://www.carsonfarmer.com/tag/r-spatial.html">R spatial</a>
-		<a href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
-		<a href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
+		<a href="../../../tag/data-science-toolkit.html">Data Science Toolkit</a>
+		<a href="../../../tag/hexagonal-grid.html">Hexagonal Grid</a>
+		<a href="../../../tag/ip-addreses.html">IP Addreses</a>
+		<a href="../../../tag/mapping.html">Mapping</a>
+		<a href="../../../tag/r-spatial.html">R spatial</a>
+		<a href="../../../tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+		<a href="../../../tag/how-to.html">How to</a>
     </p>
     </div><!-- /.entry-content -->
       <div class="comments">
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2012/03/because-its-fun-to-map-stuff/";
-          var disqus_url = "http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/";
+          var disqus_url = "../../../2012/03/because-its-fun-to-map-stuff/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
@@ -254,8 +250,8 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="http://www.carsonfarmer.com/categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
-                    <li><a href="http://www.carsonfarmer.com/tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+                    <li><a href="../../../categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
+                    <li><a href="../../../tags.html"><i class="fa fa-tags"></i> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
@@ -289,6 +285,6 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../../../theme/js/tools.js"></script>
 </body>
 </html>
