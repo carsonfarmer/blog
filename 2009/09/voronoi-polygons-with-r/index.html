@@ -144,12 +144,12 @@ the input point layer.
     <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
         pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
         pcrds <span class="o">=</span> rbind<span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
-        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> <span class="caps">ID</span><span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
+        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
     <span class="p">}</span>
-    <span class="caps">SP</span> <span class="o">=</span> SpatialPolygons<span class="p">(</span>polys<span class="p">)</span>
-    voronoi <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span><span class="caps">SP</span><span class="p">,</span> data<span class="o">=</span>data.frame<span class="p">(</span>x<span class="o">=</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> 
-        y<span class="o">=</span>crds<span class="p">[,</span><span class="m">2</span><span class="p">],</span> row.names<span class="o">=</span>sapply<span class="p">(</span>slot<span class="p">(</span><span class="caps">SP</span><span class="p">,</span> <span class="s">&#39;polygons&#39;</span><span class="p">),</span> 
-        <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> slot<span class="p">(</span>x<span class="p">,</span> <span class="s">&#39;<span class="caps">ID</span>&#39;</span><span class="p">))))</span>
+    SP <span class="o">=</span> SpatialPolygons<span class="p">(</span>polys<span class="p">)</span>
+    voronoi <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>SP<span class="p">,</span> data<span class="o">=</span>data.frame<span class="p">(</span>x<span class="o">=</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> 
+        y<span class="o">=</span>crds<span class="p">[,</span><span class="m">2</span><span class="p">],</span> row.names<span class="o">=</span>sapply<span class="p">(</span>slot<span class="p">(</span>SP<span class="p">,</span> <span class="s">&#39;polygons&#39;</span><span class="p">),</span> 
+        <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> slot<span class="p">(</span>x<span class="p">,</span> <span class="s">&#39;ID&#39;</span><span class="p">))))</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -215,14 +215,16 @@ library:</p>
         }(document,"script","twitter-wjs");
     </script>
 </div>
-        
-        </section><!-- /#extras -->
+<div class="visitors_map">
+  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+  <a href="../../../visitors_map/"><img src="../../../uploads/map-thumb.png"></a>
+</div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="../../../categories.html"><i class="fa fa-certificate fa-fw"></i> Categories</a></li>
-                    <li><a href="../../../tags.html"><i class="fa fa-tags fa-fw"></i> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../../../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../../../tags.html"> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>

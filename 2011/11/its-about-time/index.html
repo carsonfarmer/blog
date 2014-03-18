@@ -163,11 +163,11 @@ tdm <span class="o">&lt;-</span> TermDocumentMatrix<span class="p">(</span>corpu
 <span class="c1"># convert to matrix</span>
 m <span class="o">&lt;-</span> as.matrix<span class="p">(</span>tdm<span class="p">)</span>
 <span class="c1"># count up re-occuring words</span>
-v <span class="o">&lt;-</span> sort<span class="p">(</span>rowSums<span class="p">(</span>m<span class="p">),</span> decreasing<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span>
+v <span class="o">&lt;-</span> sort<span class="p">(</span>rowSums<span class="p">(</span>m<span class="p">),</span> decreasing<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
 <span class="c1"># create dataframe for word cloud</span>
 d <span class="o">&lt;-</span> data.frame<span class="p">(</span>word <span class="o">=</span> names<span class="p">(</span>v<span class="p">),</span> freq<span class="o">=</span>v<span class="p">)</span>
 png<span class="p">(</span><span class="s">&quot;wordcloud.png&quot;</span><span class="p">,</span> width<span class="o">=</span><span class="m">1280</span><span class="p">,</span> height<span class="o">=</span><span class="m">800</span><span class="p">)</span>
-wordcloud<span class="p">(</span>d<span class="o">$</span>word<span class="p">,</span>d<span class="o">$</span>freq<span class="p">,</span>c<span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">.3</span><span class="p">),</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">,</span><span class="m">.15</span><span class="p">,</span> vfont<span class="o">=</span>c<span class="p">(</span><span class="s">&quot;sans serif&quot;</span><span class="p">,</span><span class="s">&quot;plain&quot;</span><span class="p">))</span>
+wordcloud<span class="p">(</span>d<span class="o">$</span>word<span class="p">,</span>d<span class="o">$</span>freq<span class="p">,</span>c<span class="p">(</span><span class="m">8</span><span class="p">,</span><span class="m">.3</span><span class="p">),</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="kc">TRUE</span><span class="p">,</span><span class="m">.15</span><span class="p">,</span> vfont<span class="o">=</span>c<span class="p">(</span><span class="s">&quot;sans serif&quot;</span><span class="p">,</span><span class="s">&quot;plain&quot;</span><span class="p">))</span>
 dev.off<span class="p">()</span>
 </pre></div>
 
@@ -229,14 +229,16 @@ dev.off<span class="p">()</span>
         }(document,"script","twitter-wjs");
     </script>
 </div>
-        
-        </section><!-- /#extras -->
+<div class="visitors_map">
+  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+  <a href="../../../visitors_map/"><img src="../../../uploads/map-thumb.png"></a>
+</div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="../../../categories.html"><i class="fa fa-certificate fa-fw"></i> Categories</a></li>
-                    <li><a href="../../../tags.html"><i class="fa fa-tags fa-fw"></i> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../../../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../../../tags.html"> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
