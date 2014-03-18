@@ -16,6 +16,7 @@
 # A lot of the following code came from:
 # http://ilian.i-n-i.org/retrieving-google-analytics-data-with-python/
 
+print "importing libraries..."
 import gdata.analytics.client as client
 import pandas as pd
 import datetime
@@ -46,6 +47,7 @@ data_query = client.DataFeedQuery({
 	"max-results": "5000",
 	})
 
+print "getting feed from client..."
 feed = my_client.GetDataFeed(data_query)
 
 data = [[r.value for r in row.metric] + [r.value for r in row.dimension] for row in feed.entry]
@@ -65,6 +67,7 @@ def combine_places(row):
 df["title"] = df.apply(combine_places, axis=1)
 no_lat_lon = (df.lat == 0) & (df.long == 0) & (df.title != "__unknown__")
 
+print "geocoding missing places..."
 gn = geocoders.GeoNames(username="cfarmer")
 
 def geocode(s):
@@ -86,6 +89,7 @@ df.long[no_lat_lon] = ddf.long
 
 df = df[df.title != "__unknown__"]
 
+print "writing to file..."
 json = df[["lat", "long", "title", "visits"]].to_json(orient='values')
 json = json.replace("],[","],\n[")
 json = json.replace("[[", "[\n[")
@@ -102,3 +106,5 @@ with open('../content/extras/visitors_map.js', 'w+') as f:
 # http://stackoverflow.com/questions/1197172/how-can-i-take-a-screenshot-image-of-a-website-using-python
 from subprocess import call
 call(["webkit2png", "file://%s" % os.path.abspath("visitors_map.html"), "--thumb", "--delay=2", "--width=600", "--height=1100", "--filename=../content/extras/map"])
+
+print "done!"
