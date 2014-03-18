@@ -4,12 +4,11 @@
 &lt;p&gt;I&amp;#8217;m a real &amp;#8216;end-user&amp;#8217; of qgis and I want to improve my skills a little&amp;#8230; I&amp;#8217;ve found many python tutorials online but I don&amp;#8217;t know which are any good. Can anyone point me to some good&amp;nbsp;resources?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The responses were useful, but not&amp;nbsp;exhaustive:&lt;/p&gt;
-&lt;dl class="dl-horizontal"&gt;
-&lt;dt&gt;The PyQGIS Programmer&amp;#8217;s&amp;nbsp;Guide&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://locatepress.com/ppg"&gt;http://locatepress.com/ppg&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;PyQGIS developer&amp;nbsp;cookbook&lt;/dt&gt;&lt;dd&gt;&lt;a href=" http://www.qgis.org/en/docs/pyqgis_developer_cookbook/"&gt;http://www.qgis.org/en/docs/pyqgis_developer_cookbook/&lt;/a&gt;&lt;/dd&gt;
-&lt;dt&gt;Geoprocessing with Python using &lt;span class="caps"&gt;FOSS&lt;/span&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://www.gis.usu.edu/~chrisg/python/2009/"&gt;http://www.gis.usu.edu/~chrisg/python/2009/&lt;/a&gt;&lt;/dd&gt;
-&lt;/dl&gt;
-
+&lt;ul&gt;
+&lt;li&gt;The PyQGIS Programmer&amp;#8217;s Guide: &lt;a href=""&gt;http://locatepress.com/ppg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PyQGIS developer cookbook: &lt;a href=""&gt;http://www.qgis.org/en/docs/pyqgis_developer_cookbook/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Geoprocessing with Python using &lt;span class="caps"&gt;FOSS&lt;/span&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt;: &lt;a href=""&gt;http://www.gis.usu.edu/~chrisg/python/2009/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Do you have another suggestion? Please sound off in the comments&amp;nbsp;below!&lt;/p&gt;
 </summary><category term="Python"></category><category term="QGIS"></category><category term="FOSS4G"></category><category term="Helpful tip"></category><category term="GIS"></category></entry><entry><title>Submission deadline extended!</title><link href="http://www.carsonfarmer.com/2014/03/scipy_2014_submission_extended/" rel="alternate"></link><updated>2014-03-16T15:30:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2014-03-16:2014/03/scipy_2014_submission_extended/</id><summary type="html">&lt;p&gt;&lt;a href="https://conference.scipy.org/scipy2014/"&gt;&lt;img alt="SciPy 2014 Logo" class="left" src="http://www.carsonfarmer.com/images/scipy2014_logo_simple.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Due to popular demand, the deadline for submitting talks, tutorials and posters has been extended to &lt;strong&gt;April 1, 2014&lt;/strong&gt; - no &amp;#8216;foolin!&amp;#8217;. We encourage submissions related to general scientific computing with Python, one of the two special themes for this year, or the domain-specific mini-symposia held during the conference. Take a look at a &lt;a href="http://conference.scipy.org/past.html"&gt;few talks&lt;/a&gt; from previous years, our &lt;a href="https://conference.scipy.org/scipy2014/participate/presentations/"&gt;guidelines for this year&lt;/a&gt;, and we look forward to reviewing&amp;nbsp;submissions!&lt;/p&gt;

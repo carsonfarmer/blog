@@ -112,18 +112,18 @@ p.readmore {
     margin: 0;
 }
 
-dl {margin: 0 0 1.5em 0;}
+/*dl {margin: 0 0 1.5em 0;}
 dt {font-weight: bold;}
-dd {margin-left: 1.5em;}
+dd {margin-left: 1.5em;}*/
 
-pre {
+/*pre {
     padding: 10px;
     margin: 10px;
-}
+}*/
 
-.ipynb {
+/*.ipynb {
     padding-left: 80px;
-}
+}*/
 
 .output_subarea pre {
     background: transparent;
@@ -843,7 +843,7 @@ article header .published {
 }
 
 .prompt {
-    width: 70px;
+    width: 80px;
     text-align: right;
     font-family: monospace;
     float: left;
