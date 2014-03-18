@@ -799,7 +799,7 @@ input[type="color"]:focus,
 
 /***** Sections *****/
 /* Blog */
-.hentry {
+.hentry, .page {
 	  display: block;
 	  clear: both;
 	  background: #fff;
@@ -808,6 +808,10 @@ input[type="color"]:focus,
 	  border-radius: 10px;
 	  -moz-border-radius: 10px;
 	  -webkit-border-radius: 10px;		
+}
+
+.page {
+	overflow: hidden;
 }
 
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
