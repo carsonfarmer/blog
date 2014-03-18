@@ -352,16 +352,10 @@ tbody .alt th {}
 tfoot td {}
 */
 /* HTML5 tags */
-header, section, footer, aside, nav, figure {
+header, section, footer, aside, nav, figure, article {
     display: block;
     position: relative;
 }
-
-article {
-    display: block;
-    overflow: hidden;
-}
-
 
 /***** Layout *****/
 .body {
