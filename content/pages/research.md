@@ -4,7 +4,7 @@ Author: cfarmer
 Slug: research
 Icon: fa-globe
 
-### Background
+### <i class="fa fa-clock-o"></i> Background
 
 [![Background][image0]{.right}][link0]
 
@@ -24,7 +24,7 @@ completed my PhD in September 2011, under the supervision of Prof. A.
 Stewart Fotheringham. My dissertation was entitled "Commuting flows &
 local labour markets: Spatial interaction modelling of travel-to-work".
 
-### Current & Future Research
+### <i class="fa fa-bar-chart-o"></i> Current & Future Research
 
 [![Current & Future Research][image1]{.left}][link1]
 
@@ -59,8 +59,8 @@ the use of spatial analysis methods and data-driven research to help
 explore the complex hierarchies and interactions within urban
 environments.
 
-### PhD Research
-*Commuting flows & local labour markets: Spatial interaction modelling of travel-to-work*
+###  <i class="fa fa-truck"></i> PhD Research
+*Commuting flows & local labour markets: Spatial interaction modeling of travel-to-work*
 
 [![PhD Research][image2]{.right}][link2]
 One of the most promising approaches to mitigating land-use and
@@ -73,13 +73,13 @@ employment, housing, and the many spatial processes underlying
 commuting. However, in order to understand the commuting process, it is
 important to examine the milieu within which commuting takes place: the
 local labour market (LLM). In my PhD research, the interplay between
-commuting and LLMs is explored through the use of regionalisation
+commuting and LLMs is explored through the use of regionalization
 techniques and spatial interaction models. I try to show that LLM
 characteristics play a significant role in intra-regional commuting
 patterns and that a failure to account for LLM conditions may seriously
 hinder the applicability of models of commuting. Specifically, I suggest
 that there are many different LLMs across Ireland and that these LLMs
-characterise the commuting patterns of population sub-groups. By
+characterize the commuting patterns of population sub-groups. By
 incorporating these LLMs into models of commuting, I show that in
 addition to distance and working population size, the spatial structure
 of origins and destinations and a number of non-spatial attributes such
@@ -96,7 +96,7 @@ takes place. This research is funded in part by the ISSP, StratAG, and
 SSHRC, and is being completed under the supervision of Prof. Stewart
 Fotheringham.
 
-### MSc Research
+### <i class="fa fa-tint"></i> MSc Research
 *Spatial time-series analysis of satellite derived snow water equivalence*
 
 [![MSc Research][image3]{.left}][link3]

@@ -4,9 +4,12 @@
 <section id="content" class="body">
   <article class="hentry shadow">
     <h1 class="entry-title">Tags &hellip;</h1>
-        <ul>
+        <ul class="badge-list">
         {% for tag, article in tags %}
-            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a></li>
+          <li>
+            <span class="badge pull-left">{{ article|length }}</span>
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>
+          </li>
         {% endfor %}
         </ul>
   </article>

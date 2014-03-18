@@ -30,7 +30,7 @@ function site_search() {
                 $.each(data, function(key, val) {
                     var xx = new Date(val.published_on)+""
                     if ((/^http\:\/\/www.carsonfarmer.com/).test(val.link)) { // hack to ignore duplicate returns
-                        el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="right" ' + 
+                        el.append('<li><a href="' + val.link + '" data-toggle="tooltip" data-placement="left" ' + 
                             'title="'+ xx.substring(0,15) + '">' + val.title + '</a>' + '</li>');
                     }
                 });

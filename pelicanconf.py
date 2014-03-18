@@ -55,15 +55,17 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISQUS_SITENAME = "carsonfarmer"
 
 # Which folders should be copied to output/static
-STATIC_PATHS = ['images', 'uploads', 'libs', 'javascipt', 
-                'extras/favicon.ico', 'extras/404.html',
-                'extras/CNAME', 'examples']
+STATIC_PATHS = ['images', 'uploads', 'libs/bootstrap-3.1.1/dist', 
+                'extras/favicon.ico', 'extras/CNAME', 'examples']
 
 EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
-                       #'extras/404.html': {'path': '404.html'},
                        'extras/CNAME': {'path': 'CNAME'},
-                       'examples' : {'path': 'examples'}
+                       'examples' : {'path': 'examples'},
                       }
+                      
+PAGE_EXCLUDES = ["libs"]
+ARTICLE_DIR = "blog"
+ARTICLE_EXCLUDES = ["pages", "libs"]
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/CarsonFarmer', 'fa-twitter'),
@@ -80,4 +82,4 @@ TWITTER_WIDGET_ID = '330339195518337025'
 DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True

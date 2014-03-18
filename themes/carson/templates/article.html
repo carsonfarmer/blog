@@ -16,7 +16,7 @@
 
     <div class="entry-content">
       {{ article.content }}
-      {% include 'article_infos.html' %}
+      {% include 'categorylist.html' %}
       {% include 'taglist.html' %}
     </div><!-- /.entry-content -->
     {% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
