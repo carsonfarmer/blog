@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -7,62 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
     <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
-    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
 </head> 
 
 <body id="index" class="home">
 <img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
-        <header id="banner" class="body">
-            <nav class="navbar navbar-default navbar-fixed-top sticky" role='navigation'>
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
+        <!-- <header id="banner" class="body"> -->
+<nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 <a class="brand" id="home" href="../">
-                            <img src="../theme/images/title.svg" id="title" class="svg"></img>
-                        </a>
-					
-				        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-menu">
-				          <span class="icon-bar"></span>
-				          <span class="icon-bar"></span>
-				          <span class="icon-bar"></span>
-				        </button>
-				    </div> <!-- /.navbar-header -->
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
+            </a>
+	
+        </div>
 
-					<!-- Collect the nav links and other content for toggling -->
-	                <div class="collapse navbar-collapse" id="navbar-collapse-menu">
-	                    <ul class="nav navbar-nav">
-		                    <li><a href="../about/"><i class="fa fa-info-circle"></i> About</a></li>
-		                    <li><a href="../curriculum-vitae/"><i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae</a></li>
-		                    <li><a href="../research/"><i class="fa fa-globe"></i> Research</a></li>
- 
-	                        <li class="dropdown">
-	                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" id="social-drop" href="#">
-	                            <i class="fa fa-group"></i> Social<b class="caret"></b></a>
-	                            <ul class="dropdown-menu pull-right" role="menu" id="social-menu" aria-labelledby="social-drop">
-	                                <li>
-	                                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
-	                                  <i class="fa fa-rss"></i> atom feed</a>
-	                                </li>
-	                                <li>
-	                                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
-	                                  <i class="fa fa-rss"></i> rss feed</a>
-	                                </li>
-	                                    <li><a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a></li>
-	                                    <li><a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a></li>
-	                                    <li><a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a></li>
-	                                    <li><a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a></li>
-	                                    <li><a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a></li>
-	                                    <li><a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a></li>
-	                                    <li><a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a></li>
-	                                    <li><a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a></li>
-	                            </ul>
-	                        </li>
-	                    </ul>
-	                </div> <!-- /.navbar-collapse -->
-				</div> <!-- /.container-fluid -->
-            </nav>
-        </header>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../about/">
+                  <i class="fa fa-info-circle"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="../curriculum-vitae/">
+                  <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
+              </a>
+            </li>
+            <li>
+              <a href="../research/">
+                  <i class="fa fa-globe"></i> Research
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-group"></i> Social <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> atom feed</a>
+                </li>
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> rss feed</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                </li>
+                <li>
+                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
+                </li>
+                <li>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
+                </li>
+                <li>
+                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
+                </li>
+                <li>
+                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-right">
+            <div class="input-append">
+              <input type="search" class="form-control" id="top-query" placeholder="  ">
+            <div class="dropdown pull-right" id="top-dropdown">
+              <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <!-- </header> -->
         
         
 
@@ -76,17 +115,17 @@
                 
                 <div class="entry-content">
                   <abbr class="published" title="2014-03-16T15:30:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Sun 16 March 2014
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/update.html">Update</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/update.html">Update</a> 
     </p>
                   </footer>
                 <p><a href="https://conference.scipy.org/scipy2014/"><img alt="SciPy 2014 Logo" class="left" src="http://www.carsonfarmer.com/images/scipy2014_logo_simple.png" /></a></p>
@@ -94,7 +133,7 @@
 <p><a href="https://conference.scipy.org/scipy2014/">Submit your abstracts today</a>!</p>
 
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2014/03/scipy_2014_submission_extended/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2014/03/scipy_2014_submission_extended/#disqus_thread">comments</a></p>
@@ -110,24 +149,24 @@
                 
                 <div class="entry-content">
                   <abbr class="published" title="2014-03-06T13:30:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Thu 06 March 2014
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/announcement.html">Announcement</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p><a href="https://conference.scipy.org/scipy2014/"><img alt="SciPy 2014 Logo" class="left" src="http://www.carsonfarmer.com/images/scipy2014_logo_simple.png" /></a></p>
 <p>I have recently been asked to help out with the <strong>Geospatial Data in Science</strong> track for <a href="https://conference.scipy.org/scipy2014/">SciPy 2014</a> in Austin, Texas this coming July. The conference is being held at the <a href="https://www.google.com/maps/place/AT%26T+Executive+Education+and+Conference+Center/@30.282362,-97.7401074,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x7ef52b1ad3321879"><span class="caps">AT</span>&amp;T Executive Education and Conference Center</a> at the University of Texas campus in Austin, Texas from <strong>July 6th to 12th 2014</strong>. It promises to be an awesome gathering of scientific Python users, developers, and organizations. You can checkout the <a href="https://conference.scipy.org/scipy2014/about/">conference announcement</a> on the <a href="https://conference.scipy.org/scipy2014/">SciPy 2014 website</a>, where you can <a href="https://conference.scipy.org/scipy2014/account/signup/">register</a> to submit a proposal and/or abstract, and generally find out all about the SciPy community and&nbsp;conference.</p>
 
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2014/03/scipy_2014_mini_symposium/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2014/03/scipy_2014_mini_symposium/#disqus_thread">comments</a></p>
@@ -143,17 +182,17 @@
                 
                 <div class="entry-content">
                   <abbr class="published" title="2014-03-05T14:00:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Wed 05 March 2014
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/announcement.html">Announcement</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>We have two openings for undergraduate research assistants here at the <a href="http://carsilab.org/">Center for Advanced Research of Spatial Information</a>. You can find the <a href="http://carsten.io/openings/">original announcement</a> on <a href="http://carsten.io/contact/">Dr. Carsten Keßler</a>&#8216;s website. In short, we are looking&nbsp;for</p>
@@ -165,7 +204,7 @@
 <p>If either of these topics sounds interesting to you, please get in touch with <a href="http://www.carsonfarmer.com/contact/">myself</a> or <a href="http://carsten.io/contact/">Dr. Carsten Keßler</a>.</p>
 
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2014/03/carsi_is_hiring_feb_2014/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2014/03/carsi_is_hiring_feb_2014/#disqus_thread">comments</a></p>
@@ -181,17 +220,17 @@
                 
                 <div class="entry-content">
                   <abbr class="published" title="2014-03-05T12:00:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Wed 05 March 2014
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/speaker.html">Speaker</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/speaker.html">Speaker</a> 
     </p>
                   </footer>
                 <p>In case you missed <a href="https://twitter.com/ebrelsford">Eric Brelsford&#8217;s</a> talk last Wednesday on <em>Free <span class="amp">&amp;</span> Open Source Software for Geospatial Applications</em>, I&#8217;ve embedded the recording below for your viewing pleasure (Eric&#8217;s slides are <a href="http://ebrelsford.github.io/talks/2014/Hunter/">also available</a>). This is the first in a series of talks organized within the department of <a href="http://www.geo.hunter.cuny.edu/">Geography</a> at <a href="http://www.hunter.cuny.edu/main/">Hunter College</a>, <span class="caps">CUNY</span> around <span class="caps">GIS</span> and Technology (we&#8217;re calling them <span class="caps">GTECH</span> Experiments). Each talk is organized by a student (thanks go to <a href="https://twitter.com/maragittleman">Mara Gittleman</a> this time), and features a member of the wider geo-technology community. Check out the video&nbsp;below:</p>
@@ -205,7 +244,7 @@
 <p>Stay tuned for news and events around <span class="caps">GTECH</span> Experiments in the&nbsp;future!</p>
 
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2014/03/first_gtech_experiement/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2014/03/first_gtech_experiement/#disqus_thread">comments</a></p>
@@ -221,22 +260,22 @@
                 
                 <div class="entry-content">
                   <abbr class="published" title="2014-01-03T17:50:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Fri 03 January 2014
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/announcement.html">Announcement</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>One year ago today, January 3rd 2014, <a href="https://twitter.com/AmandaFarmerNYC">my wife</a> and I officially moved to New York City. It has flown by extremely fast for both of us, but we&#8217;ve managed to enjoy the city and all of the benefits that come with it. Some highlights (in no particular order ...</p>
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2014/01/one_year_in_nyc/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2014/01/one_year_in_nyc/#disqus_thread">comments</a></p>
@@ -252,17 +291,17 @@
                 
                 <div class="entry-content">
                   <abbr class="published" title="2013-12-03T11:57:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Tue 03 December 2013
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/announcement.html">Announcement</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>Researchers in the <a href="http://www.st-andrews.ac.uk/geoinformatics/">Centre for GeoInformatics (<span class="caps">CGI</span>)</a> in the School of 
@@ -271,7 +310,7 @@ for a prestigious award under the <a href="http://www.nuffieldfoundation.org/q-s
 funded by a combination of the Nuffield Foundation and the <span class="caps">ESRC</span>. This programme 
 will employ two new ...</p>
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2013/12/cgi-lecturer-positions-2014/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2013/12/cgi-lecturer-positions-2014/#disqus_thread">comments</a></p>
@@ -287,17 +326,17 @@ will employ two new ...</p>
                 
                 <div class="entry-content">
                   <abbr class="published" title="2013-11-11T11:57:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Mon 11 November 2013
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/announcement.html">Announcement</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>Two MSc positions are available at the <a href="http://www.uvic.ca/">University of Victoria</a> in the 
@@ -307,7 +346,7 @@ Students will be involved in the development of the thesis topic with potential
 research areas including web mapping (e.g., bike accidents), mining and mapping 
 social media ...</p>
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2013/11/spar-msc-positions-2014/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2013/11/spar-msc-positions-2014/#disqus_thread">comments</a></p>
@@ -323,17 +362,17 @@ social media ...</p>
                 
                 <div class="entry-content">
                   <abbr class="published" title="2013-10-15T09:40:00">
-                      <i class="icon-calendar"></i>
+                      <i class="fa fa-calendar"></i>
                       Tue 15 October 2013
                   </abbr>
                       <address class="vcard author">
-                          <i class="icon-user"></i>
+                          <i class="fa fa-user"></i>
                           <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
-        <i class="fa fa-certificate"></i>
-        <a href="../category/announcement.html">Announcement</a> 
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>I recently decided to drop <code>ftools.ca</code>, since I hadn&#8217;t updated it in a very long 
@@ -356,7 +395,7 @@ the code from github, update it for <span class="caps">QGIS</span> 2.0, and subm
 will (more than likely) happily&nbsp;accept.</p>
 
                 <p class="readmore">
-                    <i class="icon-book"></i>
+                    <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2013/10/ftools-is-no-more/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="../2013/10/ftools-is-no-more/#disqus_thread">comments</a></p>
@@ -396,13 +435,63 @@ will (more than likely) happily&nbsp;accept.</p>
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><a href="../categories.html"><i class="fa fa-certificate"></i> Categories</a></li>
-                    <li><a href="../tags.html"><i class="fa fa-tags"></i> Tags</a></li>
+                    <li><a href="../categories.html"><i class="fa fa-certificate fa-fw"></i> Categories</a></li>
+                    <li><a href="../tags.html"><i class="fa fa-tags fa-fw"></i> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            <p class="social-icons attribution">
+                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                    <i class="fa fa-github fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
+                    <i class="fa fa-book fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
+                    <i class="fa fa-linkedin fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
+                    <i class="fa fa-google-plus fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
+                    <i class="fa fa-comment-o fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                    <i class="fa fa-envelope fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+            </p>
             </address><!-- /#about -->
-            <p style="text-align: center; color: #fff;">This blog is proudly 
+            <p class="attribution">This blog is proudly 
                 powered by <a href="http://getpelican.com/">Pelican</a>, 
                 which takes great advantage of 
                 <a href="http://python.org">Python</a>.</br>
