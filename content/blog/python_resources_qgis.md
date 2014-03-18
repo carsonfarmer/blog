@@ -13,9 +13,9 @@ There's a discussion thread on the QGIS LinkedIn Group page about Python tutoria
 The responses were useful, but not exhaustive:
 
 <dl class="dl-horizontal">
-<dt>The PyQGIS Programmer's Guide</dt><dd>http://locatepress.com/ppg</dd>
-<dt>PyQGIS developer cookbook</dt><dd> http://www.qgis.org/en/docs/pyqgis_developer_cookbook/</dd>
-<dt>Geoprocessing with Python using FOSS GIS</dt><dd>http://www.gis.usu.edu/~chrisg/python/2009/</dd>
+<dt>The PyQGIS Programmer's Guide</dt><dd><a href="http://locatepress.com/ppg">http://locatepress.com/ppg</a></dd>
+<dt>PyQGIS developer cookbook</dt><dd><a href=" http://www.qgis.org/en/docs/pyqgis_developer_cookbook/">http://www.qgis.org/en/docs/pyqgis_developer_cookbook/</a></dd>
+<dt>Geoprocessing with Python using FOSS GIS</dt><dd><a href="http://www.gis.usu.edu/~chrisg/python/2009/">http://www.gis.usu.edu/~chrisg/python/2009/</a></dd>
 </dl>
 
 Do you have another suggestion? Please sound off in the comments below!
