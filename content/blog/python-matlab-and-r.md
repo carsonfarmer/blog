@@ -3,7 +3,7 @@ Date: 2009-08-12 15:29
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Matlab, Python, R, Free open-source software (FOSS)
+Tags: Matlab, Python, R, FOSS
 Slug: python-matlab-and-r
 
 One project I'm working on at the moment involves exploring a dynamic

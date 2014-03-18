@@ -2,8 +2,8 @@ Title: cartogram updates
 Date: 2012-08-10 14:07
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Visualisation
-Tags: Cartogram, Olympics, Update, Visualisation, Update
+Category: Visualization
+Tags: Cartogram, Olympics, Update, Visualization, Update
 Slug: cartogram-updates
 
 It seems my [Olympic medals cartogram][] is getting a bit more attention

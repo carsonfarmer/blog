@@ -3,7 +3,7 @@ Date: 2008-10-14 13:44
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Free open-source software (FOSS), Geographic information science/systems (GIS), How to, R spatial
+Tags: FOSS, GIS, How-To, R spatial
 Slug: view-spatial-data-attribute-tables-in-r
 
 Many GIS offer the ability to view the attribute table of a vector

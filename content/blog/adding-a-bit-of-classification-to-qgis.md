@@ -3,7 +3,7 @@ Date: 2010-09-29 00:40
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: ArcGIS, C++, Jenks, Python, QGIS, Free open-source software (FOSS), Geographic information science/systems (GIS), Python
+Tags: ArcGIS, C++, Jenks, Python, QGIS, FOSS, GIS, Python
 Slug: adding-a-bit-of-classification-to-qgis
 
 In my [last post][], I implemented several classification algorithms for

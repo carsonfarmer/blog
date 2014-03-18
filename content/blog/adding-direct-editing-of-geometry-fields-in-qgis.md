@@ -3,7 +3,7 @@ Date: 2011-03-12 18:43
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Geographic information science/systems (GIS), Geometry, PyQGIS, Python, QGIS, Free open-source software (FOSS)
+Tags: GIS, Geometry, PyQGIS, Python, QGIS, FOSS
 Slug: adding-direct-editing-of-geometry-fields-in-qgis
 
 Being able to add/remove attributes isn't actually a very new feature

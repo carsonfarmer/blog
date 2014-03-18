@@ -3,7 +3,7 @@ Date: 2009-01-28 12:14
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: News
-Tags: New York Times, R, Spatial statistics, Free open-source software (FOSS), R spatial
+Tags: News, R, Spatial Statistics, FOSS
 Slug: r-featured-in-new-york-times
 
 I'm sure everyone has seen this already, but I'm going to post it

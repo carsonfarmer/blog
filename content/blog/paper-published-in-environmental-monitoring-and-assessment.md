@@ -2,7 +2,7 @@ Title: Paper published in Environmental Monitoring and Assessment
 Date: 2012-07-30 18:02
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Research paper
+Category: Publications
 Tags: News, Research
 Slug: paper-published-in-environmental-monitoring-and-assessment
 

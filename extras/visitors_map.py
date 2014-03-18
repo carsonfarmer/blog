@@ -16,15 +16,25 @@
 # A lot of the following code came from:
 # http://ilian.i-n-i.org/retrieving-google-analytics-data-with-python/
 
-print "importing libraries..."
+import datetime
+import sys
+try:
+    file_time = os.path.getmtime('../content/extras/visitors_map.js')
+    file_date = datetime.datetime.fromtimestamp(file_time).date()
+    if today == file_date:
+        print "already computed map for today... exiting!"
+        sys.exit() # No need to do anything, we've already done this today!
+except OSError, err: # File doesn't exist!
+    pass # Just pass through, we need to create it...
+
 import gdata.analytics.client as client
 import pandas as pd
-import datetime
+
 from geopy import geocoders
 import os.path
 
 today = datetime.date.today()
-last = today - datetime.timedelta(days=30)
+last = today - datetime.timedelta(days=30)    
 
 my_client = client.AnalyticsClient(source="www.carsonfarmer.com")
 token = my_client.client_login(

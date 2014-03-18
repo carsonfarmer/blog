@@ -2,12 +2,12 @@ Title: Olympic cartogram
 Date: 2012-08-02 12:18
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Visualisation
-Tags: Cartogram, Olympics, Visualisation
+Category: Visualization
+Tags: Cartogram, Olympics, Visualization
 Slug: olympic-cartogram
 
 The London 2012 Summer Olympics have generated quite a bit of buzz in
-terms of visualisations and interesting data analysis. In fact, news
+terms of Visualizations and interesting data analysis. In fact, news
 sites here in the UK are doing all sorts of cools things with Olympic
 data, and [The Guardian][] has an [entire series][] devoted to Olympic
 data. A colleague of mine also pointed out a [cool graphic][] on [The
@@ -23,7 +23,7 @@ so I thought The Telegraph's graphic was pretty fun. Having said that,
 I'm always a sucker for a more 'traditional' rubber-sheet cartogram,
 which is generally less abstract than a bubble plot, but can sometimes
 lead to [dramatic results][]. Since I felt like the only person on the
-internet without their own Olympics visualisation, I decided to throw
+internet without their own Olympics Visualization, I decided to throw
 together a cartogram to visualise Olympic medal achievements. Drawing
 inspiration from The Telegraph graphic, I created a rubber-sheet
 cartogram based on an [iterative warping method][]. The 'live' version

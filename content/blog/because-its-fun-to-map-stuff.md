@@ -3,7 +3,7 @@ Date: 2012-03-30 17:46
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Data Science Toolkit, Hexagonal Grid, IP Addreses, Mapping, R spatial, Free open-source software (FOSS), How to
+Tags: Data Science, Internet, Mapping, R, FOSS, How-To
 Slug: because-its-fun-to-map-stuff
 
 Its been quite a while since my last post, and its Friday and I was

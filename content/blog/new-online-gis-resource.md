@@ -3,7 +3,7 @@ Date: 2010-07-29 20:59
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Forum, GIS, Online resource, Geographic information science/systems (GIS)
+Tags: Forum, GIS, Online resource, GIS
 Slug: new-online-gis-resource
 
 The new Geographic Information Systems Stack Exchange site is now open

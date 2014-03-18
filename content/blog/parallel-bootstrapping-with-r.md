@@ -3,7 +3,7 @@ Date: 2010-04-21 15:34
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Bootstrapping, Cluster, Networks, R, Free open-source software (FOSS), How to, Networks, Research
+Tags: Bootstrapping, Cluster, Networks, R, FOSS, How-To, Networks, Research
 Slug: parallel-bootstrapping-with-r
 
 In a [recent post][], I mentioned that I was testing the stability of

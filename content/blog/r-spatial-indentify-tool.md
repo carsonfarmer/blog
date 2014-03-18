@@ -3,7 +3,7 @@ Date: 2008-09-23 12:36
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Free open-source software (FOSS), Geographic information science/systems (GIS), How to, Linux, R spatial
+Tags: FOSS, GIS, How-To, Linux, R spatial
 Slug: r-spatial-indentify-tool
 
 This is useful for visually exploring R spatial data such as

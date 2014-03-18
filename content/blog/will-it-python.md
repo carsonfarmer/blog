@@ -3,7 +3,7 @@ Date: 2013-02-12 22:31
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Python
-Tags: Free open-source software (FOSS), Helpful tip, How to, R
+Tags: FOSS, Helpful tip, How-To, R
 Slug: will-it-python
 
 Over the past few weeks, I've been following a really great blog by

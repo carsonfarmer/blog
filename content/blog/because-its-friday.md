@@ -3,7 +3,7 @@ Date: 2010-11-06 01:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Python
-Tags: Multiprocessing, Python, R, Statistics, Free open-source software (FOSS)
+Tags: Multiprocessing, Python, R, Statistics, FOSS
 Slug: because-its-friday
 
 My two favorite scientific programming languages are [Python][] and

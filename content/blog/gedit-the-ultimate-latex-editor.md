@@ -3,7 +3,7 @@ Date: 2008-12-12 00:56
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: gedit, LaTeX, Free open-source software (FOSS), How to, Linux
+Tags: LaTeX, FOSS, How-To, Linux
 Slug: gedit-the-ultimate-latex-editor
 Latex:
 

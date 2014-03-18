@@ -3,7 +3,7 @@ Date: 2009-01-12 15:31
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Coordinates, Spatial data, Spatial reference systems, WGS84, Geographic information science/systems (GIS)
+Tags: Coordinates, Spatial data, Spatial reference systems, WGS84, GIS
 Slug: understanding-spatial-reference-systems
 
 For those of you who are still unclear about what exactly a spatial

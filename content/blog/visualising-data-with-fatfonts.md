@@ -2,17 +2,17 @@ Title: Visualising data with FatFonts
 Date: 2012-05-26 20:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Visualisation
+Category: Visualization
 Tags: Research, FatFonts, News, Feature
 Slug: visualising-data-with-fatfonts
 
 I recently posted an [article on the CGI blog][] about some
-visualisations that I produced with researchers from [St Andrews'
+Visualizations that I produced with researchers from [St Andrews'
 Computer Human Interaction Research Group (SACHI)][] using [FatFonts][],
-a tpographic visualisation technique developed by SACHI co-founder
+a tpographic Visualization technique developed by SACHI co-founder
 [Miguel Nacenta][] and colleagues ([Uta Hinrichs][], and [Sheelagh
 Carpendale][]).
-The initial visualisations are now on-line, and feature flow matrices for 
+The initial Visualizations are now on-line, and feature flow matrices for 
 [English internal migration][] and [commuting between Irish local labour markets][]. We
 have also produced several inforgraphics based on global oceans data
 that [Dr Timothy Stojanovic][] and I are working with as part of

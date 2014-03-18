@@ -3,7 +3,7 @@ Date: 2008-11-28 12:01
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: PostGIS, Quick Guide, Ubuntu, Free open-source software (FOSS), Geographic information science/systems (GIS), How to, Linux
+Tags: PostGIS, Quick Guide, Ubuntu, FOSS, GIS, How-To, Linux
 Slug: quick-guide-to-setting-up-postgis-database
 
 Recently I decided to seriously start using PostGIS to manage my spatial

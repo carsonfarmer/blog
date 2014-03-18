@@ -3,7 +3,7 @@ Date: 2009-09-25 10:48
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Free open-source software (FOSS), Masterclass, Geographic information science/systems (GIS)
+Tags: FOSS, Masterclass, GIS
 Slug: introduction-to-open-source-geospatial-software
 
 Announcing an opportunity to learn about the leading edge free and

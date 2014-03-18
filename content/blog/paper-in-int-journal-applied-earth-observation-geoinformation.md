@@ -2,7 +2,7 @@ Title: Paper published in International Journal of Applied Earth Observation and
 Date: 2012-04-13 15:48
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Research paper
+Category: Publications
 Tags: Community structure, Journal article, Land cover, Land use, Remote sensing, Announcement
 Slug: paper-in-int-journal-applied-earth-observation-geoinformation
 

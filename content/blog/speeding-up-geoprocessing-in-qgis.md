@@ -3,7 +3,7 @@ Date: 2010-04-01 14:55
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: C++, geoprocessing, Python, QGIS, Free open-source software (FOSS), Geographic information science/systems (GIS)
+Tags: C++, geoprocessing, Python, QGIS, FOSS, GIS
 Slug: speeding-up-geoprocessing-in-qgis
 
 Last night I had an uncontrollable urge to make geopoprocessing in QGIS

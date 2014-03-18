@@ -2,8 +2,8 @@ Title: Remote Sensing of Environment paper published
 Date: 2009-10-06 13:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Research paper
-Tags: Publication, Remote sensing, SWE, Announcement, Geographic information science/systems (GIS)
+Category: Publications
+Tags: Publication, Remote sensing, SWE, Announcement, GIS
 Slug: remote-sensing-of-environment-paper-published
 
 My latest article, "Identification of snow cover regimes through spatial

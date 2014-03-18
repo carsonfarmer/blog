@@ -3,7 +3,7 @@ Date: 2010-04-14 23:57
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Opinion
-Tags: Mendeley, Open-source, Publications, Zotero, Research
+Tags: FOSS, Publications, Research
 Slug: why-im-not-going-to-use-mendeley
 
 Besides the obvious: "It's not open source!", I'm also not making the

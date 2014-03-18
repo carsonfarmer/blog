@@ -3,7 +3,7 @@ Date: 2012-10-06 14:26
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: manageR, Python, QGIS, R spatial, rpy2, Spatial, Free open-source software (FOSS)
+Tags: Python, QGIS, R, Spatial, FOSS
 Slug: manager-and-rpy2-installation-problems
 
 Unfortunately, I haven't had much time recently to update or work on

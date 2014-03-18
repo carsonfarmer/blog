@@ -3,7 +3,7 @@ Date: 2009-07-20 10:45
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Conference, GIS, Teaching, Free open-source software (FOSS)
+Tags: Conference, GIS, Teaching, FOSS
 Slug: foss4g-and-teaching-gis
 
 Two quicks notes to share:

@@ -3,7 +3,7 @@ Date: 2009-09-16 22:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: R, Tesselation, Voronoi polygons, Free open-source software (FOSS), How to, R spatial
+Tags: R, Tesselation, Voronoi polygons, FOSS, How-To, R spatial
 Slug: voronoi-polygons-with-r
 
 To create a nice bounded Voronoi polygons tessellation of a point layer

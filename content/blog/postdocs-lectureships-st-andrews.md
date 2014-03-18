@@ -12,7 +12,7 @@ Andrews][] in Scotland has the following open positions:
 1. [Lectureship in Geoinformatics][], permanent position, application
    DL 21 Dec 2012
 2. [Postdoctoral researcher in Geoinformatics][], preferably Visual
-   Analytics/Visualisation (three year fixed post, application DL 7 Dec 2012)
+   Analytics/Visualization (three year fixed post, application DL 7 Dec 2012)
 3. [Postdoctoral researcher in Geoinformatics][1] (two year fixed post,
    application DL 21 Dec 2012)
 

@@ -3,7 +3,7 @@ Date: 2009-07-02 15:28
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: PyQT, Python, Syntax highlighting, Free open-source software (FOSS)
+Tags: PyQT, Python, Syntax highlighting, FOSS
 Slug: syntax-highlighting-with-pyqt
 
 A few months ago I decided to add syntax highlighting capabilities to a

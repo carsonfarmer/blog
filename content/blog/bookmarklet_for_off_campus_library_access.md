@@ -3,7 +3,7 @@ Date: 2013-12-17 14:56
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Helpful tip, HTML, Research, How to
+Tags: Helpful tip, HTML, Research, How-To
 Slug: bookmarklet_for_off_campus_library_access
 
 I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. _Fortunately_, Hunter College provides [off-campus access][access-home] to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. _Unfortunately_, it turns out to be a huge pain to use anything other than the library search facilities (like [Google Scholar][scholar]) through the proxy server*. In fact, when working off-campus, you actually have to preface each URL address to licensed resources with 

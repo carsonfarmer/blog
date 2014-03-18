@@ -2,8 +2,8 @@ Title: Public transportation time warp
 Date: 2013-10-01 13:15
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Visualisation
-Tags: Visualisation, Transportation, Video, Links
+Category: Visualization
+Tags: Visualization, Transportation, Video, Links
 Slug: public-transportation-time-warp
 
 I recently came across two extremely cool videos while preparing lectures for my

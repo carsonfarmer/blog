@@ -2,8 +2,8 @@ Title: Environment and Planning A paper published
 Date: 2011-12-01 13:52
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Research paper
-Tags: Community structure, Commuting, Environment and Planning A, Functional regions, Journal article, Networks, Research
+Category: Publications
+Tags: Networks, Commuting, Publications, Research, News
 Slug: environment-and-planning-a-paper-published
 
 My latest article, "Network-based functional regions", has recently been

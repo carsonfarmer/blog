@@ -3,7 +3,7 @@ Date: 2010-10-14 12:26
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: Networks, OpenStreeMap, pgRouting, PostgreSQL/PostGIS, QGIS, Free open-source software (FOSS), Geographic information science/systems (GIS), How to, Networks
+Tags: Networks, OpenStreeMap, Databases, QGIS, FOSS, GIS, How-To
 Slug: pgrouting-openstreetmap-and-qgis
 
 I mentioned [a few posts back][a few posts back] that there was a great resource for

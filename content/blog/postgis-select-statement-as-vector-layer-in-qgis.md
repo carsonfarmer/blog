@@ -3,7 +3,7 @@ Date: 2010-04-27 17:40
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Helpful tip
-Tags: PostGIS, QGIS, Query, Vector, Free open-source software (FOSS), Geographic information science/systems (GIS), How to
+Tags: PostGIS, QGIS, Query, Vector, FOSS, GIS, How-To
 Slug: postgis-select-statement-as-vector-layer-in-qgis
 
 Several colleagues of mine have asked whether it is possible to

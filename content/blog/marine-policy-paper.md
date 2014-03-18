@@ -2,8 +2,8 @@ Title: Paper published in Marine Policy
 Date: 2013-03-20 14:52
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Research paper
-Tags: Global Dataset, Human Impacts, Marine Policy, Policy, Research, Sustainability
+Category: Publications
+Tags: Global, Policy, Research, Sustainability
 Slug: marine-policy-paper
 
 An article I worked on with [Dr Tim Stojanovic][1], "The development of

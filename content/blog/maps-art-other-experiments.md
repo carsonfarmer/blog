@@ -2,8 +2,8 @@ Title: Maps as Art and Other Experiments
 Date: 2013-09-27 17:25
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Visualisation
-Tags: Visualisation, Python, Open Source, IPython, Mapping
+Category: Visualization
+Tags: Visualization, Python, Open Source, IPython, Mapping
 Slug: maps-art-other-experiments
 
 With the recent (and long anticipated) release of [Quantum GIS 2.0][qgis], 

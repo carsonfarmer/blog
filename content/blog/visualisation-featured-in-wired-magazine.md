@@ -1,10 +1,10 @@
-Title: Visualisation featured on wired.co.uk
+Title: Visualization featured on wired.co.uk
 Date: 2012-05-29 00:01
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: FatFonts, Infographic, Visualisation, Wired
-Slug: visualisation-featured-in-wired-magazine
+Tags: FatFonts, Infographic, Visualization, Wired
+Slug: Visualization-featured-in-wired-magazine
 
 A few weeks back the [CGI][] and I were approached by [Miguel Nacenta][]
 from [SACHI][] about putting together an infographic for an article on
