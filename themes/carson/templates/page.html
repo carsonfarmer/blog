@@ -2,7 +2,7 @@
 {% block title %}{{ page.title }}{% endblock %}
 {% block content %}        
 <section id="content" class="body">
-  <div class="hentry shadow">
+  <div class="page shadow">
     <h1 class="entry-title">{{ page.title }}</h1>
     {% import 'translations.html' as translations with context %}
     {{ translations.translations_for(page) }}
