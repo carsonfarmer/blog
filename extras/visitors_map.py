@@ -17,7 +17,7 @@
 # http://ilian.i-n-i.org/retrieving-google-analytics-data-with-python/
 
 import datetime
-import sys
+import sys, os.path
 try:
     file_time = os.path.getmtime('../content/extras/visitors_map.js')
     file_date = datetime.datetime.fromtimestamp(file_time).date()
@@ -31,7 +31,6 @@ import gdata.analytics.client as client
 import pandas as pd
 
 from geopy import geocoders
-import os.path
 
 today = datetime.date.today()
 last = today - datetime.timedelta(days=30)    
