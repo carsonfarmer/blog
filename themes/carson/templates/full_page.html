@@ -91,44 +91,9 @@
 
         <!-- </header> -->
         {% block content %}
+		{{ page.content }}
         {% endblock %}
-        <section id="extras" class="body shadow">
-		{% include 'twitter_feed.html' %}
-		{% include 'map_thumb.html' %}
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body ">
-            <address id="about" class="vcard body shadow">
-                <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="{{ SITEURL }}/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="{{ SITEURL }}/tags.html"> Tags</a></li>
-                </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
-            <p class="social-icons attribution">
-                {% for name, link, icon in SOCIAL %}
-                  <a href="{{ link }}" data-toggle="tooltip" title="" data-original-title="{{ name }}" data-placement="bottom">
-                    <i class="fa {{ icon }} fa-lg"></i>
-                  </a>
-                  <script >
-                  $("[data-toggle=tooltip]").tooltip();
-                  </script>
-                {% endfor %}
-            </p>
-            </address><!-- /#about -->
-            <p class="attribution">This blog is proudly 
-                powered by <a href="http://getpelican.com/">Pelican</a>, 
-                which takes great advantage of 
-                <a href="http://python.org">Python</a>.</br>
-                Icons are courtesy of 
-                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
-                and the styling is mostly done via 
-                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
-        </footer><!-- /#contentinfo -->
-
 {% include 'analytics.html' %}
-{% include 'piwik.html' %}
-{% include 'disqus_script.html' %}
 <script src="{{ SITEURL }}/theme/js/tools.js"></script>
 </body>
 </html>

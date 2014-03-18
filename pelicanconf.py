@@ -54,12 +54,15 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 DISQUS_SITENAME = "carsonfarmer"
 
-# Which folders should be copied to output/static
+# Which folders should be copied to output
 STATIC_PATHS = ['images', 'uploads', 'libs/bootstrap-3.1.1/dist', 
-                'extras/favicon.ico', 'extras/CNAME', 'examples']
+                'extras/favicon.ico', 'extras/CNAME', 'examples',
+                'libs/leaflet', 'extras/visitors_map.js', 'extras/map-thumb.png']
 
 EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
                        'extras/CNAME': {'path': 'CNAME'},
+                       'extras/visitors_map.js' : {'path': 'uploads/visitors_map.js'},
+                       'extras/map-thumb.png' : {'path': 'uploads/map-thumb.png'},
                        'examples' : {'path': 'examples'},
                       }
                       

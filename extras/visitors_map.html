@@ -7,35 +7,40 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
 	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="screen.css" />
-	<link rel="stylesheet" href="MarkerCluster.css" />
-	<link rel="stylesheet" href="MarkerCluster.Default.css" />
+	<link rel="stylesheet" href="libs/leaflet/MarkerCluster.css" />
+	<link rel="stylesheet" href="libs/leaflet/MarkerCluster.Default.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="MarkerCluster.Default.ie.css" /><![endif]-->
-	<script src="leaflet.markercluster-src.js"></script>
+	<script src="libs/leaflet/leaflet.markercluster-src.js"></script>
 	<script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
-	<link rel="stylesheet" href="leaflet.awesome-markers.css">
-	<script src="leaflet.awesome-markers.js"></script>
-	<script src="visitor_locations.js"></script>
-
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css");
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css");
-
-
+	<!-- <link rel="stylesheet" href="libs/leaflet/leaflet.awesome-markers.css"> -->
+	<!-- <script src="libs/leaftlet/leaflet.awesome-markers.js"></script> -->
+	<script src="../content/extras/visitors_map.js"></script>
+	<style>
+	#map {
+		top: 0px;
+		left: 0px; 
+	    position: fixed;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	</style>
 </head>
 <body>
 
 	<div id="map"></div>
 	<script type="text/javascript">
 
-		var layer = "watercolor";
-		var loc = [40.7684, -73.9637, 10];
+		var layer = "toner";
+		var loc = [34,-34, 3];
 		var map = new L.Map("map", {
                         center: new L.LatLng(loc[0], loc[1]),
                         zoom: loc[2],
                         zoomControl: false
                     });
 		map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
-		var markers = L.markerClusterGroup();
+		var markers = L.markerClusterGroup({maxClusterRadius:50});
 		
 		for (var i = 0; i < visitors.length; i++) {
 			var a = visitors[i];

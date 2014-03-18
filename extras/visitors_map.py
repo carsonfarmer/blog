@@ -20,6 +20,7 @@ import gdata.analytics.client as client
 import pandas as pd
 import datetime
 from geopy import geocoders
+import os.path
 
 today = datetime.date.today()
 last = today - datetime.timedelta(days=30)
@@ -58,38 +59,46 @@ def combine_places(row):
 	city = row.city + ", " if len(row.city) else ""
 	region = row.region + ", " if len(row.region) else ""
 	if city + region + row.country == "":
-		return "Unknown"
+		return "__unknown__"
 	return city + region + row.country
 
 df["title"] = df.apply(combine_places, axis=1)
-no_lat_lon = (df.lat == 0) & (df.long == 0)
+no_lat_lon = (df.lat == 0) & (df.long == 0) & (df.title != "__unknown__")
 
 gn = geocoders.GeoNames(username="cfarmer")
 
 def geocode(s):
-	if s == "Unknown":
-		# Just place it in the North Atlantic
-		return s, (34.597042,-40.808716)
-	return gn.geocode(s)
+    try:
+        return s, list(gn.geocode(s).point)
+    except:
+        pass
+  	# Just place it in the North Atlantic
+    return s, [34.597042,-40.808716, 0.0]
 
 # Keep things in pieces in case of failures
-res = [geocode(s) for s in df.title[no_lat_lon]
+res = [geocode(s) for s in df.title[no_lat_lon]]
 ser = [pd.Series(s[1]) for s in res]
 ddf = pd.DataFrame(ser, index=df[no_lat_lon].index)
-ddf.columns = ["lat", "long"]
+ddf.columns = ["lat", "long", "elev"]
 
 df.lat[no_lat_lon] = ddf.lat
 df.long[no_lat_lon] = ddf.long
+
+df = df[df.title != "__unknown__"]
 
 json = df[["lat", "long", "title", "visits"]].to_json(orient='values')
 json = json.replace("],[","],\n[")
 json = json.replace("[[", "[\n[")
 json = json.replace("]]", "]\n];")
 
-with open('visitor_locations.js', 'w+') as f:
+with open('../content/extras/visitors_map.js', 'w+') as f:
     f.write('var visitors = ')
     f.write(json)
 
 # How to create a custom Icon:
 # https://github.com/Leaflet/Leaflet/blob/master/src/layer/marker/DivIcon.js
 # https://github.com/Leaflet/Leaflet/tree/master/src/layer/marker
+
+# http://stackoverflow.com/questions/1197172/how-can-i-take-a-screenshot-image-of-a-website-using-python
+from subprocess import call
+call(["webkit2png", "file://%s" % os.path.abspath("visitors_map.html"), "--thumb", "--delay=2", "--width=600", "--height=1100", "--filename=../content/extras/map"])
