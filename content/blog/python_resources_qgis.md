@@ -12,7 +12,7 @@ There's a discussion thread on the QGIS LinkedIn Group page about Python tutoria
 
 The responses were useful, but not exhaustive:
 
-<dl>
+<dl class="dl-horizontal">
 <dt>The PyQGIS Programmer's Guide</dt><dd>http://locatepress.com/ppg</dd>
 <dt>PyQGIS developer cookbook</dt><dd> http://www.qgis.org/en/docs/pyqgis_developer_cookbook/</dd>
 <dt>Geoprocessing with Python using FOSS GIS</dt><dd>http://www.gis.usu.edu/~chrisg/python/2009/</dd>
