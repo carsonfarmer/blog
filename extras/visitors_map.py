@@ -18,6 +18,8 @@
 
 import datetime
 import sys, os.path
+today = datetime.date.today()
+
 try:
     file_time = os.path.getmtime('../content/extras/visitors_map.js')
     file_date = datetime.datetime.fromtimestamp(file_time).date()
@@ -32,7 +34,6 @@ import pandas as pd
 
 from geopy import geocoders
 
-today = datetime.date.today()
 last = today - datetime.timedelta(days=30)    
 
 my_client = client.AnalyticsClient(source="www.carsonfarmer.com")
