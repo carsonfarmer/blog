@@ -90,7 +90,7 @@ em, i {font-style: italic;}
 */
 .hfeed ol {
     list-style: outside decimal;
-    margin-left: -40px;
+/*    margin-left: -40px;*/
 }
 
 /*li { margin-top: 0.5em;}*/

@@ -4,7 +4,7 @@
 &lt;p&gt;I&amp;#8217;m a real &amp;#8216;end-user&amp;#8217; of qgis and I want to improve my skills a little&amp;#8230; I&amp;#8217;ve found many python tutorials online but I don&amp;#8217;t know which are any good. Can anyone point me to some good&amp;nbsp;resources?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The responses were useful, but not&amp;nbsp;exhaustive:&lt;/p&gt;
-&lt;dl&gt;
+&lt;dl class="dl-horizontal"&gt;
 &lt;dt&gt;The PyQGIS Programmer&amp;#8217;s&amp;nbsp;Guide&lt;/dt&gt;&lt;dd&gt;http://locatepress.com/ppg&lt;/dd&gt;
 &lt;dt&gt;PyQGIS developer&amp;nbsp;cookbook&lt;/dt&gt;&lt;dd&gt; http://www.qgis.org/en/docs/pyqgis_developer_cookbook/&lt;/dd&gt;
 &lt;dt&gt;Geoprocessing with Python using &lt;span class="caps"&gt;FOSS&lt;/span&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;http://www.gis.usu.edu/~chrisg/python/2009/&lt;/dd&gt;
