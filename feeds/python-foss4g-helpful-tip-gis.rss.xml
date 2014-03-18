@@ -5,9 +5,9 @@
 &lt;/blockquote&gt;
 &lt;p&gt;The responses were useful, but not&amp;nbsp;exhaustive:&lt;/p&gt;
 &lt;dl class="dl-horizontal"&gt;
-&lt;dt&gt;The PyQGIS Programmer&amp;#8217;s&amp;nbsp;Guide&lt;/dt&gt;&lt;dd&gt;http://locatepress.com/ppg&lt;/dd&gt;
-&lt;dt&gt;PyQGIS developer&amp;nbsp;cookbook&lt;/dt&gt;&lt;dd&gt; http://www.qgis.org/en/docs/pyqgis_developer_cookbook/&lt;/dd&gt;
-&lt;dt&gt;Geoprocessing with Python using &lt;span class="caps"&gt;FOSS&lt;/span&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;http://www.gis.usu.edu/~chrisg/python/2009/&lt;/dd&gt;
+&lt;dt&gt;The PyQGIS Programmer&amp;#8217;s&amp;nbsp;Guide&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://locatepress.com/ppg"&gt;http://locatepress.com/ppg&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;PyQGIS developer&amp;nbsp;cookbook&lt;/dt&gt;&lt;dd&gt;&lt;a href=" http://www.qgis.org/en/docs/pyqgis_developer_cookbook/"&gt;http://www.qgis.org/en/docs/pyqgis_developer_cookbook/&lt;/a&gt;&lt;/dd&gt;
+&lt;dt&gt;Geoprocessing with Python using &lt;span class="caps"&gt;FOSS&lt;/span&gt; &lt;span class="caps"&gt;GIS&lt;/span&gt;&lt;/dt&gt;&lt;dd&gt;&lt;a href="http://www.gis.usu.edu/~chrisg/python/2009/"&gt;http://www.gis.usu.edu/~chrisg/python/2009/&lt;/a&gt;&lt;/dd&gt;
 &lt;/dl&gt;
 
 &lt;p&gt;Do you have another suggestion? Please sound off in the comments&amp;nbsp;below!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 18 Mar 2014 18:45:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2014-03-18:2014/03/python_resources_qgis/</guid><category>Python</category><category>QGIS</category><category></category></item></channel></rss>
