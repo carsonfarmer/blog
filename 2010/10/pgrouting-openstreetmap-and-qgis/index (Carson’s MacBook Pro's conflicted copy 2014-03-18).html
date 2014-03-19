@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>pgRouting, OpenStreetMap, and QGIS</title>
+    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+</head> 
+
+<body id="index" class="home">
+<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+        <!-- <header id="banner" class="body"> -->
+<nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="brand" id="home" href="http://www.carsonfarmer.com/">
+                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+            </a>
+	
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="http://www.carsonfarmer.com/about/">
+                  <i class="fa fa-info-circle"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+                  <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/research/">
+                  <i class="fa fa-globe"></i> Research
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-group"></i> Social <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> atom feed</a>
+                </li>
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> rss feed</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                </li>
+                <li>
+                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
+                </li>
+                <li>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
+                </li>
+                <li>
+                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
+                </li>
+                <li>
+                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-right">
+            <div class="input-append">
+              <input type="search" class="form-control" id="top-query" placeholder="  ">
+            <div class="dropdown pull-right" id="top-dropdown">
+              <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <!-- </header> -->
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/" rel="bookmark"
+           title="Permalink to pgRouting, OpenStreetMap, and QGIS">pgRouting, OpenStreetMap, and&nbsp;<span class="caps">QGIS</span></a></h1>
+      <abbr class="published" title="2010-10-14T12:26:00">
+          <i class="fa fa-calendar"></i>
+          Thu 14 October 2010
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
+
+    <div class="entry-content">
+      <p>I mentioned <a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">a few posts back</a> that there was a great resource for
+downloading OpenStreetMap data, and that it was relatively easy to
+import osm data into <code>PostgreSQL</code>/<code>PostGIS</code> for use with <code>pgRouting</code> to
+calculate shortest paths and various other network-based operations. In
+this post, I&#8217;ll outline the steps required to get all this up and going,
+and provide a quick example to show how this can be combined with <span class="caps">QGIS</span>
+to visualise the computed shortest path directly.
+</p>
+<p>Firstly, we need to install all the required packages. I&#8217;m assuming you
+already have <code>PostgreSQL</code> and <code>PostGIS</code> installed, but if not, have a <a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/">look
+here</a> for a quick guide to getting things set up (Note that the latest
+version of <code>PostgreSQL</code> is now&nbsp;8.4).</p>
+<div class="highlight"><pre>sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
+</pre></div>
+
+
+<p>If you don&#8217;t have them already, you might also need tools for building
+the required software packages, as well as subversion and&nbsp;cmake.</p>
+<div class="highlight"><pre>sudo apt-get install build-essential subversion cmake
+</pre></div>
+
+
+<p>To be able to run the driving distance algorithms we need&nbsp;<span class="caps">CGAL</span>:</p>
+<div class="highlight"><pre>sudo apt-get install libcgal*
+</pre></div>
+
+
+<p>And the traveling sales person algorithm requires&nbsp;<span class="caps">GAUL</span>:</p>
+<div class="highlight"><pre>wget http://downloads.sourceforge.net/gaul/gaul-devel-0.1850-0.tar.gz
+tar -xzf gaul-devel-0.1850-0.tar.gz <span class="nb">cd </span>gaul-devel-0.1850-0/
+./configure --disable-slang
+make
+sudo make install
+sudo ldconfig
+</pre></div>
+
+
+<p>Now it&#8217;s time to download, build, and install <code>pgRouting</code>. If you don&#8217;t
+have subversion, or you don&#8217;t want to have the latest trunk version of
+<code>pgRouting</code>, you can also <a href="http://pgrouting.postlbs.org/wiki/pgRoutingDownload">download it manually</a>.</p>
+<div class="highlight"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/trunk pgrouting
+<span class="nb">cd </span>pgrouting/
+cmake -DWITH_TSP<span class="o">=</span><span class="caps">ON</span> -DWITH_DD<span class="o">=</span><span class="caps">ON</span> . make
+sudo make install
+</pre></div>
+
+
+<p>Once we&#8217;ve got that installed and ready to go, we need to set up
+<code>PostgreSQL</code> so that it &#8216;trusts&#8217; local database&nbsp;connections.</p>
+<div class="highlight"><pre>sudo gedit /etc/postgresql/8.4/main/pg_hba.conf
+</pre></div>
+
+
+<p>Scroll to the bottom, and make sure you change the <code>METHOD</code> to&nbsp;&#8216;trust&#8217;.</p>
+<div class="highlight"><pre><span class="cp"># <span class="caps">TYPE</span>  <span class="caps">DATABASE</span>    <span class="caps">USER</span>        <span class="caps">CIDR</span>-<span class="caps">ADDRESS</span>          <span class="caps">METHOD</span></span>
+<span class="n">local</span>   <span class="n">all</span>         <span class="n">all</span>                               <span class="n">trust</span>
+</pre></div>
+
+
+<p>And now that we&#8217;ve made these changes, we need to restart <code>PostgreSQL</code></p>
+<div class="highlight"><pre>sudo /etc/init.d/postgresql-8.4 restart
+</pre></div>
+
+
+<p>Next we simply create a routing database to store our data&nbsp;in&#8230;</p>
+<div class="highlight"><pre>createdb -U postgres routing createlang -U postgres plpgsql routing
+</pre></div>
+
+
+<p>&#8230;add the <code>PostGIS</code> functions&#8230;</p>
+<div class="highlight"><pre>psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql routing
+psql -U postgres -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql routing
+</pre></div>
+
+
+<p>&#8230;add all the <code>pgRouting</code> functions&#8230;</p>
+<div class="highlight"><pre>psql -U postgres -f /usr/share/postlbs/routing_core.sql routing
+psql -U postgres -f /usr/share/postlbs/routing_core_wrappers.sql routing
+psql -U postgres -f /usr/share/postlbs/routing_topology.sql routing
+</pre></div>
+
+
+<p>&#8230;including the traveling salesman&nbsp;functions&#8230;</p>
+<div class="highlight"><pre>psql -U postgres -f /usr/share/postlbs/routing_tsp.sql routing
+psql -U postgres -f /usr/share/postlbs/routing_tsp_wrappers.sql routing
+</pre></div>
+
+
+<p>&#8230;and finally the driving distance&nbsp;functions.</p>
+<div class="highlight"><pre>psql -U postgres -f /usr/share/postlbs/routing_dd.sql routing
+psql -U postgres -f /usr/share/postlbs/routing_dd_wrappers.sql routing
+</pre></div>
+
+
+<p>We now have a fully working <code>pgRouting</code> database ready to be populated
+with data! So in order to do that relatively painlessly, we first
+install the <a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting">osm2pgrouting</a> tool, which will help us import our osm
+data directly into our <code>pgRouting</code> database with the correct structure and&nbsp;everything.</p>
+<div class="highlight"><pre>svn checkout http://pgrouting.postlbs.org/svn/pgrouting/tools/osm2pgrouting/trunk osm2pgrouting
+<span class="nb">cd </span>osm2pgrouting/
+make
+</pre></div>
+
+
+<p>Once that&#8217;s finished building, we can go ahead and download our osm data
+from <a href="http://download.geofabrik.de/osm/">http://download.geofabrik.de/osm/</a>. See this <a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">previous post</a>
+for details. For this example, I&#8217;ll be using the osm data for&nbsp;Ireland</p>
+<div class="highlight"><pre>wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
+bzip2 -d ireland.osm.bz2
+</pre></div>
+
+
+<p>Once we have that downloaded and extracted, we&#8217;re ready to import the
+osm data into our database using the <code>osm2pgrouting</code> tool</p>
+<div class="highlight"><pre>./osm2pgrouting -file /home/cfarmer/Downloads/ireland.osm -conf mapconfig.xml -dbname routing -user postgres -clean
+</pre></div>
+
+
+<p>Once that is finished (could take a long time) we&#8217;re ready to query the
+network (Note that the values 52343 and 39219 represent network node&nbsp;ids)&#8230;</p>
+<div class="highlight"><pre>psql -U postgres routing
+<span class="k">select</span> * from shortest_path
+    <span class="o">(</span><span class="s1">&#39;select gid as id,</span>
+<span class="s1">        source::int4,</span>
+<span class="s1">        target::int4,</span>
+<span class="s1">        length::double precision as cost</span>
+<span class="s1">        from ways&#39;</span>,
+    52343, 39219, <span class="nb">false</span>, <span class="nb">false</span><span class="o">)</span>;
+</pre></div>
+
+
+<p>&#8230;to produce something like&nbsp;this:</p>
+<div class="highlight"><pre><span class="n">vertex_id</span> <span class="o">|</span> <span class="n">edge_id</span> <span class="o">|</span>        <span class="n">cost</span>
+<span class="o">----------+---------+---------------------</span>
+<span class="err">   </span> <span class="mi">52343</span> <span class="o">|</span>   <span class="mi">78055</span> <span class="o">|</span>   <span class="mf">0.217641978736602</span>
+<span class="err">   </span> <span class="mi">52341</span> <span class="o">|</span>   <span class="mi">78052</span> <span class="o">|</span>  <span class="mf">0.0230665826613562</span>
+<span class="err">   </span> <span class="mi">52342</span> <span class="o">|</span>   <span class="mi">78053</span> <span class="o">|</span>  <span class="mf">0.0839311516838216</span>
+<span class="err">   </span> <span class="mi">20390</span> <span class="o">|</span>   <span class="mi">28717</span> <span class="o">|</span>   <span class="mf">0.166809293071158</span>
+<span class="err">   </span> <span class="mi">20389</span> <span class="o">|</span>   <span class="mi">28716</span> <span class="o">|</span>   <span class="mf">0.493120178133836</span>
+<span class="err">   </span> <span class="mi">20388</span> <span class="o">|</span>   <span class="mi">28715</span> <span class="o">|</span>   <span class="mf">0.271165901884914</span>
+<span class="err">   </span> <span class="mi">20387</span> <span class="o">|</span>  <span class="mi">112841</span> <span class="o">|</span>   <span class="mf">0.101669458767093</span>
+<span class="err">   </span> <span class="mi">14183</span> <span class="o">|</span>   <span class="mi">22893</span> <span class="o">|</span>   <span class="mf">0.106433172954507</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>Assuming your database is structured as <code>pgRouting</code> expects (which it
+should be if you&#8217;ve used <code>osm2pgrouting</code>), you can use the some of the
+functions which return geometries for use with other <code>PostGIS</code> functions:</p>
+<div class="highlight"><pre><span class="k">select</span> * from dijkstra_sp<span class="o">(</span><span class="s1">&#39;ways&#39;</span>, 52343, 39219<span class="o">)</span>;
+</pre></div>
+
+
+<div class="highlight"><pre><span class="n">id</span>  <span class="o">|</span>  <span class="n">gid</span>   <span class="o">|</span>          <span class="n">the_geom</span>
+<span class="o">----+--------+----------------------------</span>
+<span class="err"> </span> <span class="mi">1</span> <span class="o">|</span>  <span class="mi">78055</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">2</span> <span class="o">|</span>  <span class="mi">78052</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">3</span> <span class="o">|</span>  <span class="mi">78053</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">4</span> <span class="o">|</span>  <span class="mi">28717</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">5</span> <span class="o">|</span>  <span class="mi">28716</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">6</span> <span class="o">|</span>  <span class="mi">28715</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">7</span> <span class="o">|</span> <span class="mi">112841</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="err"> </span> <span class="mi">8</span> <span class="o">|</span>  <span class="mi">22893</span> <span class="o">|</span> <span class="mf">0105000020E610000001000</span><span class="p">...</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>These queries are all fine and dandy, and can easily be used to
+calculate the distances of shortest paths etc, but what I really want to
+do is visualise this output in a <span class="caps">GIS</span> so I can get an idea of what these
+shortest paths looks like. In <em>another</em> <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/">previous post</a>, I mentioned
+how we could visualise spatial <code>SQL</code> queries directly in <span class="caps">QGIS</span> from both
+the Python console, and using a handy plugin. We can do the same thing
+here using <code>pgRouting</code> to produce a lovely spatial representation of our
+shortest path&nbsp;query:</p>
+<p><a href="http://www.carsonfarmer.com/images/shortest_path.png"><img alt="image" src="http://www.carsonfarmer.com/images/shortest_path-300x213.png" title="shortest_path" /></a></p>
+<p>And there you go, a full fledged routing library built right into our&nbsp;database!</p>
+    <p class="category">
+        <i class="fa fa-certificate fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
+    </p>
+    <p class="tag">
+        <i class="fa fa-tags fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/openstreemap.html">OpenStreeMap</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/pgrouting.html">pgRouting</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/postgresqlpostgis.html">PostgreSQL/PostGIS</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/qgis.html">QGIS</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/free-open-source-software-foss.html">Free open-source software (FOSS)</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/geographic-information-sciencesystems-gis.html">Geographic information science/systems (GIS)</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/how-to.html">How to</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+        </span>
+    </p>
+    </div><!-- /.entry-content -->
+      <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2010/10/pgrouting-openstreetmap-and-qgis/";
+          var disqus_url = "http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+<div class="twitter">
+    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+        data-chrome="nofooter noheader noborders transparent" 
+        data-widget-id="330339195518337025"
+        height="300" lang="EN"
+        data-related="CarsonFarmer">
+        Tweets by @CarsonFarmer
+    </a>
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","twitter-wjs");
+    </script>
+</div>
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+            <address id="about" class="vcard body shadow">
+                <ul id="links">
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                </ul>
+                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
+                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            <p class="social-icons attribution">
+                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                    <i class="fa fa-github fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
+                    <i class="fa fa-book fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
+                    <i class="fa fa-linkedin fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
+                    <i class="fa fa-google-plus fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
+                    <i class="fa fa-comment-o fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                    <i class="fa fa-envelope fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+            </p>
+            </address><!-- /#about -->
+            <p class="attribution">This blog is proudly 
+                powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of 
+                <a href="http://python.org">Python</a>.</br>
+                Icons are courtesy of 
+                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
+                and the styling is mostly done via 
+                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41110370-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+</body>
+</html>

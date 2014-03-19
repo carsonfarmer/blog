@@ -486,6 +486,10 @@ input[type="color"]:focus,
     float: right;
 }*/
   
+.share-list a{
+  margin: 0em 0.5em;
+}
+  
 .badge-list {
   list-style: none;
 }
@@ -673,11 +677,15 @@ input[type="color"]:focus,
 }
 
 #extras a:link, #extras a:visited {
-	color: #444;
-	display: block;
-	/*border-bottom: 1px solid #F4E3E3;*/
-	text-decoration: none;
-	padding: .3em .25em;
+    color: #444;
+    display: block;
+    /*border-bottom: 1px solid #F4E3E3;*/
+    text-decoration: none;
+    padding: .3em .25em;
+}
+
+#extras h2 a {
+    display: inline!important;
 }
 
 #extras a:hover, #extras a:active {color: #fff;}

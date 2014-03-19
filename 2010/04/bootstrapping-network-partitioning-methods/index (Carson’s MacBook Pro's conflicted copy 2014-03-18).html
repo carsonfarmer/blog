@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrapping network partitioning methods</title>
+    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+</head> 
+
+<body id="index" class="home">
+<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+        <!-- <header id="banner" class="body"> -->
+<nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="brand" id="home" href="http://www.carsonfarmer.com/">
+                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+            </a>
+	
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="http://www.carsonfarmer.com/about/">
+                  <i class="fa fa-info-circle"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+                  <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/research/">
+                  <i class="fa fa-globe"></i> Research
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-group"></i> Social <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> atom feed</a>
+                </li>
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> rss feed</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                </li>
+                <li>
+                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
+                </li>
+                <li>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
+                </li>
+                <li>
+                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
+                </li>
+                <li>
+                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-right">
+            <div class="input-append">
+              <input type="search" class="form-control" id="top-query" placeholder="  ">
+            <div class="dropdown pull-right" id="top-dropdown">
+              <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <!-- </header> -->
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2010/04/bootstrapping-network-partitioning-methods/" rel="bookmark"
+           title="Permalink to Bootstrapping network partitioning methods">Bootstrapping network partitioning&nbsp;methods</a></h1>
+      <abbr class="published" title="2010-04-17T14:26:00">
+          <i class="fa fa-calendar"></i>
+          Sat 17 April 2010
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
+
+    <div class="entry-content">
+      <p>My PhD research at the moment focuses on network-based algorithms for
+delineating functional regions (geographical regions within which a
+large majority of the local population seeks employment, and the
+majority of local employers recruit their labour). Currently I&#8217;m using a
+network partitioning algorithm based on <a href="http://en.wikipedia.org/wiki/Modularity_(networks)">modularity maximisation</a>. I
+have found my results to be quite good so far, but, &#8216;quite good&#8217; isn&#8217;t
+really a very scientific description of validity, so obviously some
+others means of validation is required. Enter bootstrap resampling!
+</p>
+<p>Bootstrapping can be used to assess the <strong>validity</strong> of a
+particular network partitioning by measuring the <strong>stability</strong> of the
+detected partitions (or clusters). Here, a cluster may be thought of as
+stable if, for example, it remains relatively invariant to random- or
+sampling-error and noise. In this sense, we&#8217;re interested in
+distinguishing between clusters which reﬂect the true nature of the
+dataset, and those generated as a result of random effects, data
+uncertainties, or measurement&nbsp;error.</p>
+<p>The process works like&nbsp;this:</p>
+<ol>
+<li>Generate a large number of random &#8216;bootstrap samples&#8217; from a
+   (directed) weighted&nbsp;network,</li>
+<li>Apply some network partitioning algorithm to the original&nbsp;network,</li>
+<li>(Re)apply the network partitioning algorithm to each bootstrap&nbsp;sample,</li>
+<li>For each cluster in the original network partitioning, the most
+   similar cluster in each bootstrap replicate is found using the
+   <a href="http://en.wikipedia.org/wiki/Jaccard_index">Jaccard coeffcient</a> <code>γ</code> as a measure of similarity, and
+   similarity is&nbsp;recorded,</li>
+<li>The stability of each cluster is assessed based on the mean Jaccard
+   similarity over all resampled&nbsp;datasets.</li>
+</ol>
+<p>Once the above process is run, we get an estimate of how stable each
+cluster is. We can then use this information to decide which clusters to
+keep, and which ones need to be merged with their closest neighbour.
+There are several ways to specify how we resample the data. If we assume
+no specific structure in the dataset, regular non-parametric bootstrap
+resampling will work fine, however, alternative resampling strategies
+include: a) replacing network edge weights with noise, b) adding a small
+amount of noise to (a percentage of) the network edges, or c) using only
+a subset of the original network (i.e., generating a subgraph of the
+original&nbsp;network).</p>
+<p>I tested this process on a computer generated network with three
+predefined clusters using resampling strategy (<em><code>b</code></em>) above, by adding
+random noise to <em><code>k</code></em> percent of the network edges, and observed the
+effect of increasing levels of uncertainty by applying the resampling
+technique to increasing values of <em><code>k</code></em>. The results show just what we
+would expect: as more noise is added to the dataset, the stability of
+the detected clusters goes down. The nice bit however, is that for
+<em><code>k &lt;= 0.5</code></em>, the detected clusters remained relatively stable
+(<em><code>γ &gt;= 0.6</code></em>), meaning the network partitioning algorithm I was using
+is doing a pretty good job.&nbsp;Nice!</p>
+<p>This bootstrapping process is part of a paper I&#8217;m working on at the
+moment, and uses a geographical variant of <a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/">this algorithm</a> to detect
+functional regions in travel to work data. I&#8217;ll post more on the
+algorithm and my bootstrapping implementation in R (using the very cool
+<a href="http://cran.r-project.org/web/packages/foreach/index.html">foreach</a> package) here&nbsp;soon.</p>
+<h3>References</h3>
+<p>Leicht, E. A., <span class="amp">&amp;</span> Newman, <span class="caps">M. E. J.</span>(2008). <a href="http://prl.aps.org/abstract/PRL/v100/i11/e118703">Community structure in
+directed networks</a>. <em>Physical Review Letters</em>, 100(11),&nbsp;118703.</p>
+<p>Hennig, C. (2007). <a href="http://www.sciencedirect.com/science/article/B6V8V-4MJJMV8-1/2/303f8dd772cd73d54aea3a224b188005">Cluster-wise assessment of cluster stability</a>.
+<em>Computational Statistics <span class="amp">&amp;</span> Data Analysis</em>, 52(1),&nbsp;258-271.</p>
+    <p class="category">
+        <i class="fa fa-certificate fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/networks.html">Networks</a> 
+    </p>
+    <p class="tag">
+        <i class="fa fa-tags fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/bootstrapping.html">Bootstrapping</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/r.html">R</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/stability.html">Stability</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/uncertainty.html">Uncertainty</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/validity.html">Validity</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/how-to.html">How-to</a>
+        </span>
+    </p>
+    </div><!-- /.entry-content -->
+      <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2010/04/bootstrapping-network-partitioning-methods/";
+          var disqus_url = "http://www.carsonfarmer.com/2010/04/bootstrapping-network-partitioning-methods/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+<div class="twitter">
+    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+        data-chrome="nofooter noheader noborders transparent" 
+        data-widget-id="330339195518337025"
+        height="300" lang="EN"
+        data-related="CarsonFarmer">
+        Tweets by @CarsonFarmer
+    </a>
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","twitter-wjs");
+    </script>
+</div>
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+            <address id="about" class="vcard body shadow">
+                <ul id="links">
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                </ul>
+                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
+                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            <p class="social-icons attribution">
+                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                    <i class="fa fa-github fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
+                    <i class="fa fa-book fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
+                    <i class="fa fa-linkedin fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
+                    <i class="fa fa-google-plus fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
+                    <i class="fa fa-comment-o fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                    <i class="fa fa-envelope fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+            </p>
+            </address><!-- /#about -->
+            <p class="attribution">This blog is proudly 
+                powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of 
+                <a href="http://python.org">Python</a>.</br>
+                Icons are courtesy of 
+                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
+                and the styling is mostly done via 
+                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41110370-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+</body>
+</html>

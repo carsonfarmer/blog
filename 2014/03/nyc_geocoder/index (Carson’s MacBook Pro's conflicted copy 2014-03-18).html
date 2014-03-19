@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYC Geoclient REST API from Python</title>
+    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+</head> 
+
+<body id="index" class="home">
+<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+        <!-- <header id="banner" class="body"> -->
+<nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="brand" id="home" href="http://www.carsonfarmer.com/">
+                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+            </a>
+	
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="http://www.carsonfarmer.com/about/">
+                  <i class="fa fa-info-circle"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+                  <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/research/">
+                  <i class="fa fa-globe"></i> Research
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-group"></i> Social <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> atom feed</a>
+                </li>
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> rss feed</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                </li>
+                <li>
+                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
+                </li>
+                <li>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
+                </li>
+                <li>
+                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
+                </li>
+                <li>
+                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-right">
+            <div class="input-append">
+              <input type="search" class="form-control" id="top-query" placeholder="  ">
+            <div class="dropdown pull-right" id="top-dropdown">
+              <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <!-- </header> -->
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2014/03/nyc_geocoder/" rel="bookmark"
+           title="Permalink to NYC Geoclient REST API from Python"><span class="caps">NYC</span> Geoclient <span class="caps">REST</span> <span class="caps">API</span> from&nbsp;Python</a></h1>
+      <abbr class="published" title="2014-03-01T19:53:00">
+          <i class="fa fa-calendar"></i>
+          Sat 01 March 2014
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
+
+    <div class="entry-content">
+      <p>Recently, on the <a href="http://www.meetup.com/betanyc/">betaNYC</a> Meetup email list, <a href="http://blog.accursedware.com/">John Krauss</a> and 
+<a href="http://29degreesnorth.blogspot.com/">Tom Swanson</a> both posted Python code for accessing the <a href="http://developer.cityofnewyork.us/api/geoclient-api-beta"><span class="caps">NYC</span> Geoclient 
+<span class="caps">REST</span> <span class="caps">API</span></a>, which is an awesome resource developed by the <a href="http://www.nyc.gov/html/doitt/html/home/home.shtml"><span class="caps">NYC</span> Department 
+of Information Technology and Telecommunications</a> <span class="caps">GIS</span>/Mapping&nbsp;unit.</p>
+<blockquote>
+<p>The Geoclient <span class="caps">API</span> is a RESTful web service interface to the <span class="caps">NYC</span> Department of City Planning’s Geosupport system developed 
+by the Department of Information Technology and Telecommunications <span class="caps">GIS</span>/Mapping unit. Geosupport is a mainframe-based 
+geocoding system used by <span class="caps">NYC</span> government. Geosupport provides coordinate and geographic attributes for supported input 
+locations (address, intersection, blockface). Geoclient exposes the most widely used Geosupport functions and provides them 
+in a more intuitive and modern&nbsp;manner.</p>
+</blockquote>
+<p>This is what John has to say about <a href="https://github.com/talos/nyc-geoclient">his code</a>:</p>
+<blockquote>
+<p>I&#8217;ve been messing around with <span class="caps">NYC</span>&#8217;s geoclient <span class="caps">API</span>.  It&#8217;s quite powerful!  I wrapped the <span class="caps">REST</span> calls in a Python module, 
+which is accessible for all on PyPI.  You can check it out&nbsp;here:</p>
+<p>https://github.com/talos/nyc-geoclient</p>
+<p>And the documentation&nbsp;here:</p>
+<p>http://nyc-geoclient.readthedocs.org/en/latest/index.html</p>
+<p>On a side-note, according to Geoclient, almost 20% of the intersections in the city&#8217;s own collision statistics releases are 
+ambiguous or&nbsp;invalid.</p>
+</blockquote>
+<p>And this is what Tom has to say <a href="https://github.com/tswanson/NYCParkingGeocode">about his</a>:</p>
+<blockquote>
+<p>My code is nowhere near as clean as John’s but if might be of interest that I ran ~3millions records through the <span class="caps">NYC</span> 
+GeoClient in December.  Overall, the services worked great and was able to make ~1,500 calls per min.  I was geocoding 
+the parking ticket data on nyc open&nbsp;data.</p>
+<p>https://github.com/tswanson/NYCParkingGeocode</p>
+</blockquote>
+<p>In addition to the above two Python implementations, <a href="http://gonzalez.io">Edgar Gonzalez</a> also recently released a ruby gem for the <span class="caps">NYC</span> GeoClient&nbsp;<span class="caps">API</span>:</p>
+<blockquote>
+<p>Github: http://github.com/edgar/NYCGeoClient<br />
+Rubygems:&nbsp;http://rubygems.org/gems/nyc_geo_client</p>
+</blockquote>
+<p>Note that you need to <a href="http://developer.cityofnewyork.us/">register an app with DoITT</a> (and sign it up 
+for the Geoclient <span class="caps">API</span>) <s>then wait a few days before being able</s> to use the <span class="caps">API</span>.
+So get registered&nbsp;<span class="caps">ASAP</span>!</p>
+    <p class="category">
+        <i class="fa fa-certificate fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/python.html">Python</a> 
+    </p>
+    <p class="tag">
+        <i class="fa fa-tags fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/announcement.html">Announcement</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/python.html">Python</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/geocoding.html">Geocoding</a>
+        </span>
+    </p>
+    </div><!-- /.entry-content -->
+      <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+          var disqus_identifier = "2014/03/nyc_geocoder/";
+          var disqus_url = "http://www.carsonfarmer.com/2014/03/nyc_geocoder/";
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+      </div>
+
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+<div class="twitter">
+    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+        data-chrome="nofooter noheader noborders transparent" 
+        data-widget-id="330339195518337025"
+        height="300" lang="EN"
+        data-related="CarsonFarmer">
+        Tweets by @CarsonFarmer
+    </a>
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","twitter-wjs");
+    </script>
+</div>
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+            <address id="about" class="vcard body shadow">
+                <ul id="links">
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                </ul>
+                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
+                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            <p class="social-icons attribution">
+                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                    <i class="fa fa-github fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
+                    <i class="fa fa-book fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
+                    <i class="fa fa-linkedin fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
+                    <i class="fa fa-google-plus fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
+                    <i class="fa fa-comment-o fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                    <i class="fa fa-envelope fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+            </p>
+            </address><!-- /#about -->
+            <p class="attribution">This blog is proudly 
+                powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of 
+                <a href="http://python.org">Python</a>.</br>
+                Icons are courtesy of 
+                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
+                and the styling is mostly done via 
+                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41110370-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+</body>
+</html>

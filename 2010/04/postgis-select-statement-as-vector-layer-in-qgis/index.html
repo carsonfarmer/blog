@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PostGIS ‘select’ statement as vector layer in QGIS</title>
+    <title>PostGIS ‘select’ statement as vector layer in QGIS</title>
     <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
@@ -107,32 +107,49 @@
     <header>
       <h1 class="entry-title">
         <a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/" rel="bookmark"
-           title="Permalink to PostGIS ‘select’ statement as vector layer in QGIS">PostGIS &#8216;select&#8217; statement as vector layer in <span class="caps">QGIS</span></a></h1>
+           title="Permalink to PostGIS ‘select’ statement as vector layer in QGIS">PostGIS &#8216;select&#8217; statement as vector layer in&nbsp;<span class="caps">QGIS</span></a></h1>
       <abbr class="published" title="2010-04-27T17:40:00">
           <i class="fa fa-calendar"></i>
           Tue 27 April 2010
       </abbr>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-size="medium"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/Share" data-counter="right"></script>    </header>
+<div class="share-list">
+<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/&text=PostGIS%20%E2%80%98select%E2%80%99%20statement%20as%20vector%20layer%20in%C2%A0QGIS&hashtags=PostGIS,QGIS,Query,Vector,FOSS,GIS,How-To,&via=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-twitter-square fa-2x"></i> Tweet
+</a>
+<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/" 
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-google-plus-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/&title=PostGIS%20%E2%80%98select%E2%80%99%20statement%20as%20vector%20layer%20in%C2%A0QGIS&summary=Several%20colleagues%20of%20mine%20have%20asked%20whether%20it%20is%20possible%20to%20visualise%20the%20results%20of%20a%20SELECT%20statement%20on%20a%20PostGIS%20database%20that%20returns%20spatial%20data%20in%20QGIS.%20In%20other%20words%2C%20can%20we%20map%20the%20results%20of%20something%C2%A0like%3A%20SELECT%20id%2C%20st_union%28the_geom%29%20FROM%20spatial_table%20GROUP%20BY%20id%3B%20My%20usual%20answer%20to%20this%20in%20the%20past%20has%20been%20%E2%80%9Cnot%20yet%E2%80%A6%E2%80%9D%2C%20but%20now%20thanks%20to%20Giuseppe%20Sucameli%20and%20J%C3%BCrgen%20E.%20Fischer%2C%20the%20answer%20is%20a%20resounding%20%E2%80%9Cyes%21%E2%80%9D.%20A%20recent%20patch%20to%20QGIS%20trunk%20now%20makes%20custom%20Postgres%20queries%20possible%20via%20the%20postgres%20data%20provider.&source=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-linkedin-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/&name=PostGIS%20%E2%80%98select%E2%80%99%20statement%20as%20vector%20layer%20in%C2%A0QGIS&description=Several%20colleagues%20of%20mine%20have%20asked%20whether%20it%20is%20possible%20to%20visualise%20the%20results%20of%20a%20SELECT%20statement%20on%20a%20PostGIS%20database%20that%20returns%20spatial%20data%20in%20QGIS.%20In%20other%20words%2C%20can%20we%20map%20the%20results%20of%20something%C2%A0like%3A%20SELECT%20id%2C%20st_union%28the_geom%29%20FROM%20spatial_table%20GROUP%20BY%20id%3B%20My%20usual%20answer%20to%20this%20in%20the%20past%20has%20been%20%E2%80%9Cnot%20yet%E2%80%A6%E2%80%9D%2C%20but%20now%20thanks%20to%20Giuseppe%20Sucameli%20and%20J%C3%BCrgen%20E.%20Fischer%2C%20the%20answer%20is%20a%20resounding%20%E2%80%9Cyes%21%E2%80%9D.%20A%20recent%20patch%20to%20QGIS%20trunk%20now%20makes%20custom%20Postgres%20queries%20possible%20via%20the%20postgres%20data%20provider."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-tumblr-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/&p[title]=PostGIS%20%E2%80%98select%E2%80%99%20statement%20as%20vector%20layer%20in%C2%A0QGIS&p[summary]=Several%20colleagues%20of%20mine%20have%20asked%20whether%20it%20is%20possible%20to%20visualise%20the%20results%20of%20a%20SELECT%20statement%20on%20a%20PostGIS%20database%20that%20returns%20spatial%20data%20in%20QGIS.%20In%20other%20words%2C%20can%20we%20map%20the%20results%20of%20something%C2%A0like%3A%20SELECT%20id%2C%20st_union%28the_geom%29%20FROM%20spatial_table%20GROUP%20BY%20id%3B%20My%20usual%20answer%20to%20this%20in%20the%20past%20has%20been%20%E2%80%9Cnot%20yet%E2%80%A6%E2%80%9D%2C%20but%20now%20thanks%20to%20Giuseppe%20Sucameli%20and%20J%C3%BCrgen%20E.%20Fischer%2C%20the%20answer%20is%20a%20resounding%20%E2%80%9Cyes%21%E2%80%9D.%20A%20recent%20patch%20to%20QGIS%20trunk%20now%20makes%20custom%20Postgres%20queries%20possible%20via%20the%20postgres%20data%20provider."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-facebook-square fa-2x"></i> Share
+</a>
+
+</div>    </header>
 
     <div class="entry-content">
       <p>Several colleagues of mine have asked whether it is possible to
 visualise the results of a <code>SELECT</code> statement on a <a href="http://postgis.refractions.net/">PostGIS</a> database
 that returns spatial data in <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a>. In other words, can we map the
 results of something&nbsp;like:</p>
-<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> FROM spatial_table GROUP BY id;
+<div class="highlight"><pre>SELECT id, st_union<span class="o">(</span>the_geom<span class="o">)</span> <span class="caps">FROM</span> spatial_table <span class="caps">GROUP</span> <span class="caps">BY</span> id;
 </pre></div>
 
 
@@ -209,7 +226,12 @@ access this handy feature via the <code>QGIS</code> <code>Python</code> console:
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    
+    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i> twitter
+        </a>
+        </h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -229,7 +251,12 @@ access this handy feature via the <code>QGIS</code> <code>Python</code> console:
     </script>
 </div>
 <div class="visitors_map">
-  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+    
+    <h2><a href="http://www.carsonfarmer.com/visitors_map/"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=800');return false;">
+    <i class="fa fa-map-marker"></i> recent visitors
+        </a>
+        </h2>
   <a href="http://www.carsonfarmer.com/visitors_map/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 

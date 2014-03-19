@@ -112,28 +112,45 @@
           <i class="fa fa-calendar"></i>
           Fri 20 December 2013
       </abbr>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-size="medium"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/Share" data-counter="right"></script>    </header>
+<div class="share-list">
+<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&text=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&hashtags=Helpful tip,Python,Visualization,Mapping,&via=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-twitter-square fa-2x"></i> Tweet
+</a>
+<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/" 
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-google-plus-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&title=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&summary=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20...&source=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-linkedin-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&name=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&description=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20..."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-tumblr-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&p[title]=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&p[summary]=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20..."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-facebook-square fa-2x"></i> Share
+</a>
+
+</div>    </header>
 
     <div class="entry-content">
       <p>Since moving my blog over to <a href="...">Pelican</a>, I have slowly been adding new functionality to get things &#8216;just right&#8217;. Being a map geek, one of the things that I have been missing is a nice visitors map. There are lots of simple plugins and tools to add one of these automatically to your site, but I figured I&#8217;d do it right and implement this myself using <a href="...">Leaflet</a> and the very nice <a href="...">Cluster plugin</a> to get similar functionality using tools that I know and trust.
-The data (approximate site visitor location) comes from <a href="https://developers.google.com/analytics/devguides/collection/gajs/asyncTracking">Google Analytics</a>, which I have setup for my site using the following snippet of JavaScript (replacing <span class="caps">UA</span>-<span class="caps">XXXXX</span>-X with your web property <span class="caps">ID</span>):</p>
+The data (approximate site visitor location) comes from <a href="https://developers.google.com/analytics/devguides/collection/gajs/asyncTracking">Google Analytics</a>, which I have setup for my site using the following snippet of JavaScript (replacing <span class="caps">UA</span>-<span class="caps">XXXXX</span>-X with your web property&nbsp;<span class="caps">ID</span>):</p>
 <div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
 
   <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span>
-  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;UA-XXXXX-X&#39;</span><span class="p">]);</span>
+  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;<span class="caps">UA</span>-<span class="caps">XXXXX</span>-X&#39;</span><span class="p">]);</span>
   <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
 
   <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
@@ -159,12 +176,12 @@ The data (approximate site visitor location) comes from <a href="https://develop
     <span class="s">&quot;password&quot;</span><span class="p">,</span> 
     <span class="n">source</span><span class="o">=</span><span class="s">&quot;www.mywebsite.com&quot;</span><span class="p">,</span> 
     <span class="n">service</span><span class="o">=</span><span class="n">my_client</span><span class="o">.</span><span class="n">auth_service</span><span class="p">,</span> 
-    <span class="n">account_type</span><span class="o">=</span><span class="s">&quot;GOOGLE&quot;</span><span class="p">,)</span>
+    <span class="n">account_type</span><span class="o">=</span><span class="s">&quot;<span class="caps">GOOGLE</span>&quot;</span><span class="p">,)</span>
 
 <span class="n">account_query</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">AccountFeedQuery</span><span class="p">()</span>
 
 <span class="n">data_query</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">DataFeedQuery</span><span class="p">({</span>
-    <span class="s">&quot;ids&quot;</span><span class="p">:</span> <span class="s">&quot;ga:XXXXXXXX&quot;</span><span class="p">,</span>
+    <span class="s">&quot;ids&quot;</span><span class="p">:</span> <span class="s">&quot;ga:<span class="caps">XXXXXXXX</span>&quot;</span><span class="p">,</span>
     <span class="s">&quot;dimensions&quot;</span><span class="p">:</span> <span class="s">&quot;ga:city,ga:latitude,ga:longitude,ga:region,ga:country&quot;</span><span class="p">,</span>
     <span class="s">&quot;metrics&quot;</span><span class="p">:</span><span class="s">&quot;ga:uniqueEvents&quot;</span><span class="p">,</span>
     <span class="s">&quot;start-date&quot;</span><span class="p">:</span> <span class="n">last</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">),</span>
@@ -213,7 +230,12 @@ The data (approximate site visitor location) comes from <a href="https://develop
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    
+    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i> twitter
+        </a>
+        </h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -233,7 +255,12 @@ The data (approximate site visitor location) comes from <a href="https://develop
     </script>
 </div>
 <div class="visitors_map">
-  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+    
+    <h2><a href="http://www.carsonfarmer.com/visitors_map/"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=800');return false;">
+    <i class="fa fa-map-marker"></i> recent visitors
+        </a>
+        </h2>
   <a href="http://www.carsonfarmer.com/visitors_map/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 

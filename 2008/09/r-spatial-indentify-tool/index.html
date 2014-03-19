@@ -112,20 +112,37 @@
           <i class="fa fa-calendar"></i>
           Tue 23 September 2008
       </abbr>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-size="medium"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/Share" data-counter="right"></script>    </header>
+<div class="share-list">
+<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/&text=R%20spatial%20indentify%C2%A0tool&hashtags=FOSS,GIS,How-To,Linux,R spatial,&via=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-twitter-square fa-2x"></i> Tweet
+</a>
+<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" 
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-google-plus-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/&title=R%20spatial%20indentify%C2%A0tool&summary=This%20is%20useful%20for%20visually%20exploring%20R%20spatial%20data%20such%20as%20SpatialPointDataFrames%20or%20SpatialGridDataFrames.%20By%20clicking%20on%20various%20features%2C%20the%20value%20at%20that%20point%20will%20be%C2%A0displayed.%20library%28rgdal%29%20y%20%3D%20readGDAL%28system.file%28%22pictures/Rlogo.jpg%22%2C%20package%3D%22rgdal%22%29%5B1%5D%2C%20band%3D1%29%20y.grid%20%3D%20y%40grid%20y.coords%20%3D%20coordinates%28y.grid%20...&source=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-linkedin-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/&name=R%20spatial%20indentify%C2%A0tool&description=This%20is%20useful%20for%20visually%20exploring%20R%20spatial%20data%20such%20as%20SpatialPointDataFrames%20or%20SpatialGridDataFrames.%20By%20clicking%20on%20various%20features%2C%20the%20value%20at%20that%20point%20will%20be%C2%A0displayed.%20library%28rgdal%29%20y%20%3D%20readGDAL%28system.file%28%22pictures/Rlogo.jpg%22%2C%20package%3D%22rgdal%22%29%5B1%5D%2C%20band%3D1%29%20y.grid%20%3D%20y%40grid%20y.coords%20%3D%20coordinates%28y.grid%20..."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-tumblr-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/&p[title]=R%20spatial%20indentify%C2%A0tool&p[summary]=This%20is%20useful%20for%20visually%20exploring%20R%20spatial%20data%20such%20as%20SpatialPointDataFrames%20or%20SpatialGridDataFrames.%20By%20clicking%20on%20various%20features%2C%20the%20value%20at%20that%20point%20will%20be%C2%A0displayed.%20library%28rgdal%29%20y%20%3D%20readGDAL%28system.file%28%22pictures/Rlogo.jpg%22%2C%20package%3D%22rgdal%22%29%5B1%5D%2C%20band%3D1%29%20y.grid%20%3D%20y%40grid%20y.coords%20%3D%20coordinates%28y.grid%20..."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-facebook-square fa-2x"></i> Share
+</a>
+
+</div>    </header>
 
     <div class="entry-content">
       <p>This is useful for visually exploring R spatial data such as
@@ -136,7 +153,7 @@ y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span clas
 y.grid <span class="o">=</span> y<span class="o">@</span>grid
 y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid<span class="p">)</span> 
 image<span class="p">(</span>y<span class="p">)</span>
-identify<span class="p">(</span>x<span class="o">=</span>y.coords<span class="p">,</span> y<span class="o">=</span><span class="kc">NULL</span><span class="p">,</span> n<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+identify<span class="p">(</span>x<span class="o">=</span>y.coords<span class="p">,</span> y<span class="o">=</span><span class="kc"><span class="caps">NULL</span></span><span class="p">,</span> n<span class="o">=</span><span class="m">1</span><span class="p">)</span>
 </pre></div>
 
 
@@ -178,7 +195,12 @@ number of features to&nbsp;identify.</p>
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    
+    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i> twitter
+        </a>
+        </h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -198,7 +220,12 @@ number of features to&nbsp;identify.</p>
     </script>
 </div>
 <div class="visitors_map">
-  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+    
+    <h2><a href="http://www.carsonfarmer.com/visitors_map/"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=800');return false;">
+    <i class="fa fa-map-marker"></i> recent visitors
+        </a>
+        </h2>
   <a href="http://www.carsonfarmer.com/visitors_map/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 

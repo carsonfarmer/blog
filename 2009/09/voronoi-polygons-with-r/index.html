@@ -112,20 +112,37 @@
           <i class="fa fa-calendar"></i>
           Wed 16 September 2009
       </abbr>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-size="medium"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/Share" data-counter="right"></script>    </header>
+<div class="share-list">
+<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/&text=Voronoi%20polygons%20with%C2%A0R&hashtags=R,Tesselation,Voronoi polygons,FOSS,How-To,R spatial,&via=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-twitter-square fa-2x"></i> Tweet
+</a>
+<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/" 
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-google-plus-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/&title=Voronoi%20polygons%20with%C2%A0R&summary=To%20create%20a%20nice%20bounded%20Voronoi%20polygons%20tessellation%20of%20a%20point%20layer%20in%20R%2C%20we%20need%20two%20libraries%3A%20sp%20and%20deldir.%20The%20following%20function%20takes%20a%20SpatialPointsDataFrame%20as%20input%2C%20and%20returns%20a%20SpatialPolygonsDataFrame%20that%20represents%20the%20Voronoi%20tessellation%20of%20the%20input%20point%20layer.&source=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-linkedin-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/&name=Voronoi%20polygons%20with%C2%A0R&description=To%20create%20a%20nice%20bounded%20Voronoi%20polygons%20tessellation%20of%20a%20point%20layer%20in%20R%2C%20we%20need%20two%20libraries%3A%20sp%20and%20deldir.%20The%20following%20function%20takes%20a%20SpatialPointsDataFrame%20as%20input%2C%20and%20returns%20a%20SpatialPolygonsDataFrame%20that%20represents%20the%20Voronoi%20tessellation%20of%20the%20input%20point%20layer."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-tumblr-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/&p[title]=Voronoi%20polygons%20with%C2%A0R&p[summary]=To%20create%20a%20nice%20bounded%20Voronoi%20polygons%20tessellation%20of%20a%20point%20layer%20in%20R%2C%20we%20need%20two%20libraries%3A%20sp%20and%20deldir.%20The%20following%20function%20takes%20a%20SpatialPointsDataFrame%20as%20input%2C%20and%20returns%20a%20SpatialPolygonsDataFrame%20that%20represents%20the%20Voronoi%20tessellation%20of%20the%20input%20point%20layer."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-facebook-square fa-2x"></i> Share
+</a>
+
+</div>    </header>
 
     <div class="entry-content">
       <p>To create a nice bounded Voronoi polygons tessellation of a point layer
@@ -144,12 +161,12 @@ the input point layer.
     <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> seq<span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
         pcrds <span class="o">=</span> cbind<span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
         pcrds <span class="o">=</span> rbind<span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
-        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
+        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span>list<span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> <span class="caps">ID</span><span class="o">=</span>as.character<span class="p">(</span>i<span class="p">))</span>
     <span class="p">}</span>
-    SP <span class="o">=</span> SpatialPolygons<span class="p">(</span>polys<span class="p">)</span>
-    voronoi <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>SP<span class="p">,</span> data<span class="o">=</span>data.frame<span class="p">(</span>x<span class="o">=</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> 
-        y<span class="o">=</span>crds<span class="p">[,</span><span class="m">2</span><span class="p">],</span> row.names<span class="o">=</span>sapply<span class="p">(</span>slot<span class="p">(</span>SP<span class="p">,</span> <span class="s">&#39;polygons&#39;</span><span class="p">),</span> 
-        <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> slot<span class="p">(</span>x<span class="p">,</span> <span class="s">&#39;ID&#39;</span><span class="p">))))</span>
+    <span class="caps">SP</span> <span class="o">=</span> SpatialPolygons<span class="p">(</span>polys<span class="p">)</span>
+    voronoi <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span><span class="caps">SP</span><span class="p">,</span> data<span class="o">=</span>data.frame<span class="p">(</span>x<span class="o">=</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> 
+        y<span class="o">=</span>crds<span class="p">[,</span><span class="m">2</span><span class="p">],</span> row.names<span class="o">=</span>sapply<span class="p">(</span>slot<span class="p">(</span><span class="caps">SP</span><span class="p">,</span> <span class="s">&#39;polygons&#39;</span><span class="p">),</span> 
+        <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> slot<span class="p">(</span>x<span class="p">,</span> <span class="s">&#39;<span class="caps">ID</span>&#39;</span><span class="p">))))</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -196,7 +213,12 @@ library:</p>
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    
+    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i> twitter
+        </a>
+        </h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -216,7 +238,12 @@ library:</p>
     </script>
 </div>
 <div class="visitors_map">
-  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+    
+    <h2><a href="http://www.carsonfarmer.com/visitors_map/"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=800');return false;">
+    <i class="fa fa-map-marker"></i> recent visitors
+        </a>
+        </h2>
   <a href="http://www.carsonfarmer.com/visitors_map/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Speeding up geoprocessing in QGIS</title>
+    <title>Speeding up geoprocessing in QGIS</title>
     <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
@@ -107,25 +107,42 @@
     <header>
       <h1 class="entry-title">
         <a href="http://www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/" rel="bookmark"
-           title="Permalink to Speeding up geoprocessing in QGIS">Speeding up geoprocessing in <span class="caps">QGIS</span></a></h1>
+           title="Permalink to Speeding up geoprocessing in QGIS">Speeding up geoprocessing in&nbsp;<span class="caps">QGIS</span></a></h1>
       <abbr class="published" title="2010-04-01T14:55:00">
           <i class="fa fa-calendar"></i>
           Thu 01 April 2010
       </abbr>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-size="medium"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/Share" data-counter="right"></script>    </header>
+<div class="share-list">
+<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/&text=Speeding%20up%20geoprocessing%20in%C2%A0QGIS&hashtags=C++,geoprocessing,Python,QGIS,FOSS,GIS,&via=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-twitter-square fa-2x"></i> Tweet
+</a>
+<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/" 
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-google-plus-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/&title=Speeding%20up%20geoprocessing%20in%C2%A0QGIS&summary=Last%20night%20I%20had%20an%20uncontrollable%20urge%20to%20make%20geopoprocessing%20in%20QGIS%20better%2C%20faster%20and%20more%20fun%21%20I%20had%20come%20across%20a%20couple%20of%20posts%20%28here%2C%20here%29%20on%20the%20idea%20of%20a%20cascaded%20union%20operation%2C%20and%20since%20it%20has%20recently%20been%20added%20to%20GEOS%20%28which%20QGIS%20uses%20for%20its%20geometry%20operations%29%2C%20I%20thought%20I%E2%80%99d%20give%20a%20much%20needed%20boost%20to%20the%20fTools%20union%20tool%20and%20related%20functions.&source=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-linkedin-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/&name=Speeding%20up%20geoprocessing%20in%C2%A0QGIS&description=Last%20night%20I%20had%20an%20uncontrollable%20urge%20to%20make%20geopoprocessing%20in%20QGIS%20better%2C%20faster%20and%20more%20fun%21%20I%20had%20come%20across%20a%20couple%20of%20posts%20%28here%2C%20here%29%20on%20the%20idea%20of%20a%20cascaded%20union%20operation%2C%20and%20since%20it%20has%20recently%20been%20added%20to%20GEOS%20%28which%20QGIS%20uses%20for%20its%20geometry%20operations%29%2C%20I%20thought%20I%E2%80%99d%20give%20a%20much%20needed%20boost%20to%20the%20fTools%20union%20tool%20and%20related%20functions."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-tumblr-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2010/04/speeding-up-geoprocessing-in-qgis/&p[title]=Speeding%20up%20geoprocessing%20in%C2%A0QGIS&p[summary]=Last%20night%20I%20had%20an%20uncontrollable%20urge%20to%20make%20geopoprocessing%20in%20QGIS%20better%2C%20faster%20and%20more%20fun%21%20I%20had%20come%20across%20a%20couple%20of%20posts%20%28here%2C%20here%29%20on%20the%20idea%20of%20a%20cascaded%20union%20operation%2C%20and%20since%20it%20has%20recently%20been%20added%20to%20GEOS%20%28which%20QGIS%20uses%20for%20its%20geometry%20operations%29%2C%20I%20thought%20I%E2%80%99d%20give%20a%20much%20needed%20boost%20to%20the%20fTools%20union%20tool%20and%20related%20functions."
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-facebook-square fa-2x"></i> Share
+</a>
+
+</div>    </header>
 
     <div class="entry-content">
       <p>Last night I had an uncontrollable urge to make geopoprocessing in <span class="caps">QGIS</span>
@@ -231,7 +248,12 @@ speed, which is always a good&nbsp;thing.</p>
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    
+    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i> twitter
+        </a>
+        </h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -251,7 +273,12 @@ speed, which is always a good&nbsp;thing.</p>
     </script>
 </div>
 <div class="visitors_map">
-  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+    
+    <h2><a href="http://www.carsonfarmer.com/visitors_map/"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=800');return false;">
+    <i class="fa fa-map-marker"></i> recent visitors
+        </a>
+        </h2>
   <a href="http://www.carsonfarmer.com/visitors_map/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 

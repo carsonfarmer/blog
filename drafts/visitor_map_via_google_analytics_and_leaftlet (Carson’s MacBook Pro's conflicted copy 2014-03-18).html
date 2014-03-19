@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Creating a visitor map using Google Analytics and Leaftlet</title>
+    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+</head> 
+
+<body id="index" class="home">
+<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+        <!-- <header id="banner" class="body"> -->
+<nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="brand" id="home" href="http://www.carsonfarmer.com/">
+                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+            </a>
+	
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="http://www.carsonfarmer.com/about/">
+                  <i class="fa fa-info-circle"></i> About
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+                  <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
+              </a>
+            </li>
+            <li>
+              <a href="http://www.carsonfarmer.com/research/">
+                  <i class="fa fa-globe"></i> Research
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-group"></i> Social <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> atom feed</a>
+                </li>
+                <li>
+                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <i class="fa fa-rss"></i> rss feed</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                </li>
+                <li>
+                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                </li>
+                <li>
+                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
+                </li>
+                <li>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
+                </li>
+                <li>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
+                </li>
+                <li>
+                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
+                </li>
+                <li>
+                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-search pull-right">
+            <div class="input-append">
+              <input type="search" class="form-control" id="top-query" placeholder="  ">
+            <div class="dropdown pull-right" id="top-dropdown">
+              <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <!-- </header> -->
+<section id="content" class="body">
+  <article class="hentry shadow">
+    <header>
+      <h1 class="entry-title">
+        <a href="http://www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/" rel="bookmark"
+           title="Permalink to Creating a visitor map using Google Analytics and Leaftlet">Creating a visitor map using Google Analytics and&nbsp;Leaftlet</a></h1>
+      <abbr class="published" title="2013-12-20T11:34:00">
+          <i class="fa fa-calendar"></i>
+          Fri 20 December 2013
+      </abbr>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="right"></script>    </header>
+
+    <div class="entry-content">
+      <p>Since moving my blog over to <a href="...">Pelican</a>, I have slowly been adding new functionality to get things &#8216;just right&#8217;. Being a map geek, one of the things that I have been missing is a nice visitors map. There are lots of simple plugins and tools to add one of these automatically to your site, but I figured I&#8217;d do it right and implement this myself using <a href="...">Leaflet</a> and the very nice <a href="...">Cluster plugin</a> to get similar functionality using tools that I know and trust.
+The data (approximate site visitor location) comes from <a href="https://developers.google.com/analytics/devguides/collection/gajs/asyncTracking">Google Analytics</a>, which I have setup for my site using the following snippet of JavaScript (replacing <span class="caps">UA</span>-<span class="caps">XXXXX</span>-X with your web property&nbsp;<span class="caps">ID</span>):</p>
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
+
+  <span class="kd">var</span> <span class="nx">_gaq</span> <span class="o">=</span> <span class="nx">_gaq</span> <span class="o">||</span> <span class="p">[];</span>
+  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_setAccount&#39;</span><span class="p">,</span> <span class="s1">&#39;<span class="caps">UA</span>-<span class="caps">XXXXX</span>-X&#39;</span><span class="p">]);</span>
+  <span class="nx">_gaq</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="s1">&#39;_trackPageview&#39;</span><span class="p">]);</span>
+
+  <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">ga</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">);</span> <span class="nx">ga</span><span class="p">.</span><span class="nx">type</span> <span class="o">=</span> <span class="s1">&#39;text/javascript&#39;</span><span class="p">;</span> <span class="nx">ga</span><span class="p">.</span><span class="nx">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="nx">ga</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;https:&#39;</span> <span class="o">==</span> <span class="nb">document</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">protocol</span> <span class="o">?</span> <span class="s1">&#39;https://ssl&#39;</span> <span class="o">:</span> <span class="s1">&#39;http://www&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.google-analytics.com/ga.js&#39;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;script&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span> <span class="nx">s</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">ga</span><span class="p">,</span> <span class="nx">s</span><span class="p">);</span>
+  <span class="p">})();</span>
+
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+
+<p>After you have this setup, it&#8217;s just a matter of waiting until you get enough site traffic to make this a worthwhile mapping exercise&#8230; Once the wait is over, its time to grab the data from Google Analytics. I used some information and pointers from this <a href="http://ilian.i-n-i.org/retrieving-google-analytics-data-with-python/">blog-post</a> to get me started, and set up the query parameters using the <a href="http://ga-dev-tools.appspot.com/explorer/">Google Analytics Query Explorer</a>. All I really needed were unqiue visits and the locations that they came from, anything else is just bonus information. In the following snippet, &#8220;ga:<span class="caps">XXXXXXXX</span>&#8221; is replaced with the namespaced view <span class="caps">ID</span> of the profile from which to request data (see the Query Explorer for&nbsp;details):</p>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">gdata.analytics.client</span> <span class="kn">as</span> <span class="nn">client</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="n">last</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="n">my_client</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">AnalyticsClient</span><span class="p">(</span><span class="n">source</span><span class="o">=</span><span class="s">&quot;www.mywebsite.com&quot;</span><span class="p">)</span>
+<span class="n">token</span> <span class="o">=</span> <span class="n">my_client</span><span class="o">.</span><span class="n">client_login</span><span class="p">(</span>
+    <span class="s">&quot;username&quot;</span><span class="p">,</span> 
+    <span class="s">&quot;password&quot;</span><span class="p">,</span> 
+    <span class="n">source</span><span class="o">=</span><span class="s">&quot;www.mywebsite.com&quot;</span><span class="p">,</span> 
+    <span class="n">service</span><span class="o">=</span><span class="n">my_client</span><span class="o">.</span><span class="n">auth_service</span><span class="p">,</span> 
+    <span class="n">account_type</span><span class="o">=</span><span class="s">&quot;<span class="caps">GOOGLE</span>&quot;</span><span class="p">,)</span>
+
+<span class="n">account_query</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">AccountFeedQuery</span><span class="p">()</span>
+
+<span class="n">data_query</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">DataFeedQuery</span><span class="p">({</span>
+    <span class="s">&quot;ids&quot;</span><span class="p">:</span> <span class="s">&quot;ga:<span class="caps">XXXXXXXX</span>&quot;</span><span class="p">,</span>
+    <span class="s">&quot;dimensions&quot;</span><span class="p">:</span> <span class="s">&quot;ga:city,ga:latitude,ga:longitude,ga:region,ga:country&quot;</span><span class="p">,</span>
+    <span class="s">&quot;metrics&quot;</span><span class="p">:</span><span class="s">&quot;ga:uniqueEvents&quot;</span><span class="p">,</span>
+    <span class="s">&quot;start-date&quot;</span><span class="p">:</span> <span class="n">last</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">),</span>
+    <span class="s">&quot;end-date&quot;</span><span class="p">:</span> <span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y-%m-</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">),</span>
+    <span class="s">&quot;max-results&quot;</span><span class="p">:</span> <span class="s">&quot;5000&quot;</span><span class="p">,</span>
+    <span class="p">})</span>
+
+<span class="n">feed</span> <span class="o">=</span> <span class="n">my_client</span><span class="o">.</span><span class="n">GetDataFeed</span><span class="p">(</span><span class="n">data_query</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Once you have the above feed, you can grab the relevant data using something like&nbsp;this:</p>
+<div class="highlight"><pre><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="n">r</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">metric</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">r</span><span class="o">.</span><span class="n">value</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">row</span><span class="o">.</span><span class="n">dimension</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">feed</span><span class="o">.</span><span class="n">entry</span><span class="p">]</span>
+</pre></div>
+
+
+<p>This data required a fair bit of &#8216;cleaning&#8217; before I could use it in Leaftlet, which I did via Pandas. For some areas where lat/long data wasn&#8217;t available via Google Analytics, I used geopy and the GeoNames geocoding <span class="caps">API</span> to fill in the blanks (When a location still couldn&#8217;t be determined, I just specified &#8216;random&#8217; location in the North Atlantic). With all that in place, I just created a Python script that runs the query and cleanup code every time I update my site, generating a Javascript file with <code>JSON</code> data of visitor locations over the last&nbsp;month:</p>
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">visitors</span> <span class="o">=</span> <span class="p">[</span>
+<span class="p">[</span><span class="mf">34.597042</span><span class="p">,</span><span class="o">-</span><span class="mf">40.808716</span><span class="p">,</span><span class="s2">&quot;Unknown&quot;</span><span class="p">,</span><span class="mf">11.0</span><span class="p">],</span>
+<span class="p">[</span><span class="mf">40.25</span><span class="p">,</span><span class="mf">45.0</span><span class="p">,</span><span class="s2">&quot;Armenia&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<span class="p">[</span><span class="mf">50.75</span><span class="p">,</span><span class="mf">4.5</span><span class="p">,</span><span class="s2">&quot;Belgium&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<span class="p">[</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">11.75</span><span class="p">,</span><span class="s2">&quot;Gabon&quot;</span><span class="p">,</span><span class="mf">1.0</span><span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>And the final results turned out like&nbsp;this:</p>
+    <p class="category">
+        <i class="fa fa-certificate fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/python.html">Python</a> 
+    </p>
+    <p class="tag">
+        <i class="fa fa-tags fa-fw fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/helpful-tip.html">Helpful tip</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/python.html">Python</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/visualization.html">Visualization</a>
+        </span>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/mapping.html">Mapping</a>
+        </span>
+    </p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body shadow">
+<div class="twitter">
+    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+        data-chrome="nofooter noheader noborders transparent" 
+        data-widget-id="330339195518337025"
+        height="300" lang="EN"
+        data-related="CarsonFarmer">
+        Tweets by @CarsonFarmer
+    </a>
+    <script>
+        !function(d,s,id){
+            var js,fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+            if(!d.getElementById(id)){
+                js=d.createElement(s);
+                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js,fjs);
+            }
+        }(document,"script","twitter-wjs");
+    </script>
+</div>
+        
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body ">
+            <address id="about" class="vcard body shadow">
+                <ul id="links">
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                </ul>
+                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
+                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+            <p class="social-icons attribution">
+                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                    <i class="fa fa-twitter fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                    <i class="fa fa-github fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                    <i class="fa fa-user fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
+                    <i class="fa fa-book fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
+                    <i class="fa fa-linkedin fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
+                    <i class="fa fa-google-plus fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
+                    <i class="fa fa-comment-o fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                    <i class="fa fa-envelope fa-lg"></i>
+                  </a>
+                  <script >
+                  $("[data-toggle=tooltip]").tooltip();
+                  </script>
+            </p>
+            </address><!-- /#about -->
+            <p class="attribution">This blog is proudly 
+                powered by <a href="http://getpelican.com/">Pelican</a>, 
+                which takes great advantage of 
+                <a href="http://python.org">Python</a>.</br>
+                Icons are courtesy of 
+                <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a> 
+                and the styling is mostly done via 
+                <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41110370-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'carsonfarmer';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+</body>
+</html>

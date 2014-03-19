@@ -112,20 +112,37 @@
           <i class="fa fa-calendar"></i>
           Wed 21 April 2010
       </abbr>
-<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="CarsonFarmer">Tweet</a>
-<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<div class="g-plusone" data-size="medium"></div>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-<script src="//platform.linkedin.com/in.js" type="text/javascript">
- lang: en_US
-</script>
-<script type="IN/Share" data-counter="right"></script>    </header>
+<div class="share-list">
+<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/&text=Parallel%20bootstrapping%20with%C2%A0R&hashtags=Bootstrapping,Cluster,Networks,R,FOSS,How-To,Networks,Research,&via=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-twitter-square fa-2x"></i> Tweet
+</a>
+<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/" 
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-google-plus-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/&title=Parallel%20bootstrapping%20with%C2%A0R&summary=In%20a%20recent%20post%2C%20I%20mentioned%20that%20I%20was%20testing%20the%20stability%20of%20clusters%20generated%20from%20a%20modified%20network%20partitioning%20algorithm%20using%20bootstrap%20resampling%20techniques.%20I%20also%20mentioned%20that%20I%20was%20doing%20this%20in%20R%2C%20using%20the%20very%20nice%20foreach%20package%20published%20by%20REvolution%20Computing.%20To%20show%20just%20how%20nice%20this%20package%20is%2C%20below%20is%20a%20minimal%20example%20of%20bootstrapping%20a%20network%20partitioning%20algorithm%20which%20takes%20advantage%20of%20a%20multicore%20processor%3A&source=CarsonFarmer"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-linkedin-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/&name=Parallel%20bootstrapping%20with%C2%A0R&description=In%20a%20recent%20post%2C%20I%20mentioned%20that%20I%20was%20testing%20the%20stability%20of%20clusters%20generated%20from%20a%20modified%20network%20partitioning%20algorithm%20using%20bootstrap%20resampling%20techniques.%20I%20also%20mentioned%20that%20I%20was%20doing%20this%20in%20R%2C%20using%20the%20very%20nice%20foreach%20package%20published%20by%20REvolution%20Computing.%20To%20show%20just%20how%20nice%20this%20package%20is%2C%20below%20is%20a%20minimal%20example%20of%20bootstrapping%20a%20network%20partitioning%20algorithm%20which%20takes%20advantage%20of%20a%20multicore%20processor%3A"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-tumblr-square fa-2x"></i> Share
+</a>
+
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/&p[title]=Parallel%20bootstrapping%20with%C2%A0R&p[summary]=In%20a%20recent%20post%2C%20I%20mentioned%20that%20I%20was%20testing%20the%20stability%20of%20clusters%20generated%20from%20a%20modified%20network%20partitioning%20algorithm%20using%20bootstrap%20resampling%20techniques.%20I%20also%20mentioned%20that%20I%20was%20doing%20this%20in%20R%2C%20using%20the%20very%20nice%20foreach%20package%20published%20by%20REvolution%20Computing.%20To%20show%20just%20how%20nice%20this%20package%20is%2C%20below%20is%20a%20minimal%20example%20of%20bootstrapping%20a%20network%20partitioning%20algorithm%20which%20takes%20advantage%20of%20a%20multicore%20processor%3A"
+  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
+  class="label label-primary">
+  <i class="fa fa-facebook-square fa-2x"></i> Share
+</a>
+
+</div>    </header>
 
     <div class="entry-content">
       <p>In a <a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/">recent post</a>, I mentioned that I was testing the stability of
@@ -140,7 +157,7 @@ advantage of a multicore processor:
 library<span class="p">(</span>foreach<span class="p">)</span>
 library<span class="p">(</span>igraph<span class="p">)</span>
 <span class="c1"># Jaccard coeficcient function (taken from package fpc)</span>
-clujaccard <span class="o">=</span> <span class="kr">function</span> <span class="p">(</span>c1<span class="p">,</span> c2<span class="p">,</span> zerobyzero <span class="o">=</span> <span class="kc">NA</span><span class="p">)</span> <span class="p">{</span>
+clujaccard <span class="o">=</span> <span class="kr">function</span> <span class="p">(</span>c1<span class="p">,</span> c2<span class="p">,</span> zerobyzero <span class="o">=</span> <span class="kc"><span class="caps">NA</span></span><span class="p">)</span> <span class="p">{</span>
     <span class="kr">if</span> <span class="p">(</span>sum<span class="p">(</span>c1<span class="p">)</span> <span class="o">+</span> sum<span class="p">(</span>c2<span class="p">)</span> <span class="o">-</span> sum<span class="p">(</span>c1 <span class="o">&amp;</span> c2<span class="p">)</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span>
         out <span class="o">=</span> zerobyzero
     <span class="kr">else</span>
@@ -156,7 +173,7 @@ moc <span class="o">=</span> community.to.membership<span class="p">(</span>g<sp
 noc <span class="o">=</span> length<span class="p">(</span>unique<span class="p">(</span>moc<span class="p">))</span> <span class="c1"># count the number original clusters</span>
 bg <span class="o">=</span> g <span class="c1"># make a copy of g for bootstrapping</span>
 clusters <span class="o">=</span> foreach<span class="p">(</span>i<span class="o">=</span>seq<span class="p">(</span>B<span class="p">),</span> .combine<span class="o">=</span>cbind<span class="p">)</span> <span class="o">%dopar%</span> <span class="p">{</span>
-    E<span class="p">(</span>bg<span class="p">)</span><span class="o">$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)</span><span class="o">$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
+    E<span class="p">(</span>bg<span class="p">)</span><span class="o">$</span>weight <span class="o">=</span> sample<span class="p">(</span>E<span class="p">(</span>g<span class="p">)</span><span class="o">$</span>weight<span class="p">,</span> replace<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span> <span class="c1"># resample the edge weights</span>
     fg <span class="o">=</span> fastgreedy.community<span class="p">(</span>bg<span class="p">)</span> <span class="c1"># compute bootstrap clustering</span>
     mm <span class="o">=</span> which.max<span class="p">(</span>fg<span class="o">$</span>modularity<span class="p">)</span> <span class="c1"># find level of max modularity</span>
     mbc <span class="o">=</span> community.to.membership<span class="p">(</span>bg<span class="p">,</span> fg<span class="o">$</span>merges<span class="p">,</span> mm<span class="p">)</span><span class="o">$</span>membership <span class="c1"># get membership</span>
@@ -233,7 +250,12 @@ community detection algorithm on a computer with 4 cores, and was
 </section>
         <section id="extras" class="body shadow">
 <div class="twitter">
-    <h2><i class="fa fa-twitter"></i> twitter</h2>
+    
+    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
+    <i class="fa fa-twitter"></i> twitter
+        </a>
+        </h2>
     <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="330339195518337025"
@@ -253,7 +275,12 @@ community detection algorithm on a computer with 4 cores, and was
     </script>
 </div>
 <div class="visitors_map">
-  <h2 id="visitors_map"><i class="fa fa-map-marker"></i> recent visitors</h2>
+    
+    <h2><a href="http://www.carsonfarmer.com/visitors_map/"
+      onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=800');return false;">
+    <i class="fa fa-map-marker"></i> recent visitors
+        </a>
+        </h2>
   <a href="http://www.carsonfarmer.com/visitors_map/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
