@@ -5,7 +5,7 @@
   <article class="hentry shadow">
     <h1 class="entry-title">Tags &hellip;</h1>
         <ul class="badge-list">
-        {% for tag, article in tags %}
+        {% for tag, article in tags|sort %}
           <li>
             <span class="badge pull-left">{{ article|length }}</span>
             <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag.name }}</a>
