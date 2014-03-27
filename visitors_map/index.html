@@ -109,6 +109,7 @@
 <link rel="stylesheet" href="../libs/leaflet/MarkerCluster.Default.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="MarkerCluster.Default.ie.css" /><![endif]-->
 <script src="../libs/leaflet/leaflet.markercluster-src.js"></script>
+<script src="../libs/leaflet/leaflet-heat.js"></script>
 <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
 <script src="../uploads/visitors_map.js"></script></p>
 <div id="map"></div>
@@ -123,8 +124,9 @@
                     zoom: loc[2],
                     zoomControl: false
                 });
-    map.addLayer(new L.StamenTileLayer(layer, {opacity: 0.6}));
-    var markers = L.markerClusterGroup({maxClusterRadius:50});
+    var stamen = new L.StamenTileLayer(layer, {opacity: 0.6});
+    var heat = new L.heatLayer(visitors, {radius:40, max:4, maxZoom:2});
+    var markers = L.markerClusterGroup({maxClusterRadius: 50, showCoverageOnHover: false});
 
     for (var i = 0; i < visitors.length; i++) {
         var a = visitors[i];
@@ -141,9 +143,11 @@
         marker.bindPopup(place + "<br/>" + title);
         markers.addLayer(marker);
     }
-
+    markers.bringToFront();
+    map.addLayer(stamen);
     map.addLayer(markers);
     new L.Control.Zoom({ position: 'topright' }).addTo(map);
+    L.control.layers(null, {'Clusters': markers, 'Heatmap': heat}).addTo(map);
 
 </script>
     <script type="text/javascript">
