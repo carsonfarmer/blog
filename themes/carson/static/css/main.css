@@ -705,19 +705,21 @@ input[type="color"]:focus,
 	
 	/* Social */
 #extras .social {
-		float: right;
-		width: 150px;
-		padding: 0 10px;
+	float: right;
+	width: 150px;
+	padding: 0 10px;
 }
 
 .bold_title {
-	margin: 80px 40px;
-	position: relative;
+/*    top: 80px;
+    left: 40px;
+    position: fixed;*/
 	color: #fff;
 	background: #e057b8;
 	width: 375px;
 	text-align: center;
 	height: 35px;
+    z-index: 10;
 }
 	
 #extras .twitter {

@@ -19,9 +19,7 @@
 </head> 
 
 <body id="index" class="home">
-<img id="bg" src="{{ SITEURL }}/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
-{% include 'github.html' %}
-        <!-- <header id="banner" class="body"> -->
+<!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -88,10 +86,9 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         {% block content %}
-		{{ page.content }}
+        {{ page.content }}
         {% endblock %}
 {% include 'analytics.html' %}
 <script src="{{ SITEURL }}/theme/js/tools.js"></script>

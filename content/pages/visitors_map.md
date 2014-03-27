@@ -1,7 +1,7 @@
 Title: Visitors
-Date: 2008-09-23 09:47
+Date: 2014-03-23 12:00
 Author: cfarmer
-Slug: visitors_map
+Slug: maps/visitors
 Icon: fa-map-marker
 Status: hidden
 Template: full_page
@@ -9,13 +9,13 @@ Template: full_page
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
 <script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
-<link rel="stylesheet" href="../libs/leaflet/MarkerCluster.css" />
-<link rel="stylesheet" href="../libs/leaflet/MarkerCluster.Default.css" />
+<link rel="stylesheet" href="../../libs/leaflet/MarkerCluster.css" />
+<link rel="stylesheet" href="../../libs/leaflet/MarkerCluster.Default.css" />
 <!--[if lte IE 8]><link rel="stylesheet" href="MarkerCluster.Default.ie.css" /><![endif]-->
-<script src="../libs/leaflet/leaflet.markercluster-src.js"></script>
-<script src="../libs/leaflet/leaflet-heat.js"></script>
+<script src="../../libs/leaflet/leaflet.markercluster-src.js"></script>
+<script src="../../libs/leaflet/leaflet-heat.js"></script>
 <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.3"></script>
-<script src="../uploads/visitors_map.js"></script>
+<script src="../../uploads/visitors_map.js"></script>
 
 <div id="map"></div>
 ## <i class="fa fa-map-marker"></i> Recent visitors to carsonfarmer.com {.bold_title}
