@@ -71,6 +71,8 @@ PAGE_EXCLUDES = ["libs"]
 ARTICLE_DIR = "blog"
 ARTICLE_EXCLUDES = ["pages", "libs"]
 
+SUMMARY_MAX_LENGTH = 100
+
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/CarsonFarmer', 'fa-twitter'),
           ('github', 'https://github.com/cfarmer', 'fa-github'),
