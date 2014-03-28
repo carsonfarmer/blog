@@ -19,9 +19,9 @@ I've added a few nice interactive features to the map, including a popover featu
 To produce the visualization, I leaned heavily on [D3js][], [colorbrewer][], Twitter's [Bootstrap][], [jQuery][], and some helpful examples from [here][here-one], [here][here-two], and [here][here-three] (among others). The code is based on the [d3-cartogram][] example by [Shawn Allen][] at [Stamen][].
 
 [previous posts]: {filename}olympic-cartogram.md
-[image]: {filename}/images/irish_famine.png
+[image]: {filename}/images/irish-famine.png
 [D3js]: http://d3js.org/
-[irish-famine]: {filename}/pages/irish-famine.md
+[irish-famine]: {filename}/pages/irish_famine.md
 [paper]: http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf
 [sparkline]: http://en.wikipedia.org/wiki/Sparkline
 [Great Famine]: http://en.wikipedia.org/wiki/Great_Famine_(Ireland)
