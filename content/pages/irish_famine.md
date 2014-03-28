@@ -3,7 +3,6 @@ Date: 2014-03-27 12:00
 Author: cfarmer
 Slug: maps/irish_famine
 Icon: fa-map-marker
-Status: hidden
 Template: full_page
 
 <script src="http://d3js.org/d3.v3.min.js"></script>

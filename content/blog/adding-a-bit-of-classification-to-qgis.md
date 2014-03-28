@@ -14,7 +14,6 @@ algorithms in C++ so that they could be added directly to the QGIS API.
 Before I did that however, I wanted to fix a few issues, and speed
 things up a bit, particularly for the Jenks Natural Breaks algorithm,
 which can be quite slow for large datasets.
-<!--more-->
 
 After porting everything over to C++, I noticed that things were still
 a little too slow for large datasets. My first thought was to limit the
