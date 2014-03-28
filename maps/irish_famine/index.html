@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Carson Farmer</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
     <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
 </head> 
 
 <body id="index" class="home">
@@ -23,8 +23,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../../">
+                <img src="../../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -33,17 +33,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -111,48 +111,48 @@
 <p><link rel="stylesheet" href="../../libs/cartogram/style.css">
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script></p>
+<p><img id="bg" src="../../images/famine/bg-1024.png" style="position: fixed; top: 0; left: 0;">
 <div id="map">
 <div class="bold_title">
     <h2><i class="fa fa-map-marker"></i> After the Irish&nbsp;famine</h2>
 </div>
   <div id="map-container">
-    <div class="floater">
+    <div class="floater shadow">
       <label>Scale by population from</label>&nbsp;<label id="yearlabel" name="yearlabel">1841</label>
       <div class="slider" id="year" name="year"></div>
       <span id="status"></span><br/>
         <div class="share-list">
-            <a href="#" class="modal-toggle" data-toggle="modal" data-target="#myModal">Click here for details!</a><br/>
-            <a href="http://twitter.com/share?url={{ (SITEURL +  '/' + article.url)|urlencode }}&text={{article.title|striptags|urlencode}}&hashtags={% for tag in article.tags%}{{tag}},{% endfor %}&via=CarsonFarmer"
+            <a href="http://twitter.com/share?url=http://www.carsonfarmer.com/maps/irish_famine&text=After the Irish Famine&hashtags=famine,irish,cartogram,d3js&via=CarsonFarmer"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-twitter-square fa-2x"></i>
             </a>
-            <a href="https://plus.google.com/share?url={{ (SITEURL +  '/' + article.url)|urlencode }}" 
+            <a href="https://plus.google.com/share?url=http://www.carsonfarmer.com/maps/irish_famine" 
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-google-plus-square fa-2x"></i>
             </a>
-            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ (SITEURL +  '/' + article.url)|urlencode }}&title={{article.title|striptags|urlencode}}&summary={{article.summary|striptags|urlencode}}&source=CarsonFarmer"
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.carsonfarmer.com/maps/irish_famine&title=After the Irish Famine&source=CarsonFarmer"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-linkedin-square fa-2x"></i>
             </a>
-            <a href="http://www.tumblr.com/share/link?url={{ (SITEURL +  '/' + article.url)|urlencode }}&name={{article.title|striptags|urlencode}}&description={{article.summary|striptags|urlencode}}"
+            <a href="http://www.tumblr.com/share/link?url=http://www.carsonfarmer.com/maps/irish_famine&name=After the Irish Famine"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-tumblr-square fa-2x"></i>
             </a>
-            <a href="http://www.facebook.com/sharer.php?s=100&p[url]={{ (SITEURL +  '/' + article.url)|urlencode }}&p[title]={{article.title|striptags|urlencode}}&p[summary]={{article.summary|striptags|urlencode}}"
+            <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://www.carsonfarmer.com/maps/irish_famine&p[title]=After the Irish Famine"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-facebook-square fa-2x"></i>
             </a>
+            <a href="#" class="modal-toggle label label-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle fa-2x"></i></a>
         </div>
     </div>
     <svg id="d3map"></svg>
   </div>
-</div>
-
+</div> </p>
 <!-- Modal -->
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -193,7 +193,7 @@
         <p>Code based heavily on the 
   <a href="https://github.com/shawnbot/d3-cartogram">d3-cartogram</a>
   example by <a href="http://stamen.com/studio/shawn">Shawn Allen</a> at 
-  <a href="http://stamen.com">Stamen</a></p>
+  <a href="http://stamen.com">Stamen</a>.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -203,6 +203,7 @@
 </div>
 
 <script>
+
   var percent = (function() {
         var fmt = d3.format(".2f");
         return function(n) { return fmt(n) + "%"; };
@@ -467,6 +468,12 @@
     }
 
 </script>
+
+<script src="../../theme/js/tools.js"></script>
+
+<script>
+size_background("../../images/famine/")
+</script>
     <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-41110370-1']);
@@ -477,6 +484,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
     </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../../theme/js/tools.js"></script>
 </body>
 </html>

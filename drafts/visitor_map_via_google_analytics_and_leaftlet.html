@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
     <title>Creating a visitor map using Google Analytics and Leaftlet</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
     <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
 </head> 
 
 <body id="index" class="home">
-<img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
+<img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;">
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
       <div class="container-fluid">
@@ -24,8 +24,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../">
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -34,17 +34,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -106,37 +106,37 @@
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/" rel="bookmark"
+        <a href="../2013/12/visitor_map_via_google_analytics_and_leaftlet/" rel="bookmark"
            title="Permalink to Creating a visitor map using Google Analytics and Leaftlet">Creating a visitor map using Google Analytics and&nbsp;Leaftlet</a></h1>
       <abbr class="published" title="2013-12-20T11:34:00">
           <i class="fa fa-calendar"></i>
           Fri 20 December 2013
       </abbr>
 <div class="share-list">
-<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&text=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&hashtags=Helpful tip,Python,Visualization,Mapping,&via=CarsonFarmer"
+<a href="http://twitter.com/share?url=../2013/12/visitor_map_via_google_analytics_and_leaftlet/&text=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&hashtags=Helpful tip,Python,Visualization,Mapping,&via=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-twitter-square fa-2x"></i> Tweet
 </a>
-<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/" 
+<a href="https://plus.google.com/share?url=../2013/12/visitor_map_via_google_analytics_and_leaftlet/" 
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-google-plus-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&title=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&summary=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20...&source=CarsonFarmer"
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=../2013/12/visitor_map_via_google_analytics_and_leaftlet/&title=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&summary=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20...&source=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-linkedin-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&name=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&description=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20..."
+<a href="http://www.tumblr.com/share/link?url=../2013/12/visitor_map_via_google_analytics_and_leaftlet/&name=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&description=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20..."
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-tumblr-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2013/12/visitor_map_via_google_analytics_and_leaftlet/&p[title]=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&p[summary]=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20..."
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=../2013/12/visitor_map_via_google_analytics_and_leaftlet/&p[title]=Creating%20a%20visitor%20map%20using%20Google%20Analytics%20and%C2%A0Leaftlet&p[summary]=Since%20moving%20my%20blog%20over%20to%20Pelican%2C%20I%20have%20slowly%20been%20adding%20new%20functionality%20to%20get%20things%20%E2%80%98just%20right%E2%80%99.%20Being%20a%20map%20geek%2C%20one%20of%20the%20things%20that%20I%20have%20been%20missing%20is%20a%20nice%20visitors%20map.%20There%20are%20lots%20of%20simple%20plugins%20and%20tools%20to%20add%20one%20of%20these%20..."
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-facebook-square fa-2x"></i> Share
@@ -211,17 +211,17 @@ The data (approximate site visitor location) comes from <a href="https://develop
 <p>And the final results turned out like&nbsp;this:</p>
     <p class="category">
         <i class="fa fa-certificate fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/python.html">Python</a> 
+        <a class="label label-primary" href="../category/python.html">Python</a> 
     </p>
     <p class="tag">
         <i class="fa fa-tags fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/helpful-tip.html">Helpful tip</a>
+        <a class="label label-primary" href="../tag/helpful-tip.html">Helpful tip</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/python.html">Python</a>
+        <a class="label label-primary" href="../tag/python.html">Python</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/visualization.html">Visualization</a>
+        <a class="label label-primary" href="../tag/visualization.html">Visualization</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/mapping.html">Mapping</a>
+        <a class="label label-primary" href="../tag/mapping.html">Mapping</a>
         </span>
     </p>
     </div><!-- /.entry-content -->
@@ -256,19 +256,19 @@ The data (approximate site visitor location) comes from <a href="https://develop
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../maps/visitors/"><img src="../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../tags.html"> Tags</a></li>
                 </ul>
                 Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
                 Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
@@ -297,9 +297,9 @@ The data (approximate site visitor location) comes from <a href="https://develop
                   <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
-				<script >
-				$("[data-toggle=tooltip]").tooltip();
-				</script>
+                <script >
+                $("[data-toggle=tooltip]").tooltip();
+                </script>
             </p>
             </address><!-- /#about -->
             <p class="attribution">This blog is proudly 
@@ -331,6 +331,9 @@ The data (approximate site visitor location) comes from <a href="https://develop
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
+<script>
+size_background("/theme/images/bg/")
+</script>
 </body>
 </html>
