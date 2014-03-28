@@ -265,7 +265,10 @@ Geography <span class="amp">&amp;</span> Sustainable Development in which <span 
 interdiciplinary PhD Studentship co-funded by the Economic and Social
 Research Council and <span class="caps">HOME</span> Housing Association. Suitable candidates
 should apply by <strong>23 November 2012</strong> for a start date of <strong>1 January
-2013</strong>. Have a look at the <a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/"><span class="caps">CGI</span> vacancies ...</a></p>
+2013</strong>. Have a look at the <a href="http://www.st-andrews.ac.uk/geoinformatics/jobs-and-studentship/"><span class="caps">CGI</span> vacancies webpage</a> for more details.
+This is a great opportunity for students interested in using and
+developing state-of-the-art methods in geoinformatics and applying them
+to fundamental questions in the social housing&nbsp;sector.</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/10/phd-position-in-geoinformatics-and-housing-research/">read more</a>
@@ -300,7 +303,11 @@ should apply by <strong>23 November 2012</strong> for a start date of <strong>1 
 <p>I am very excited to announce that I will soon be moving to New York to
 take up a faculty position in the <a href="http://www.geo.hunter.cuny.edu/">Department of Geography</a> at <a href="http://www.hunter.cuny.edu/">Hunter
 College</a> of the <a href="http://www.cuny.edu/">City University of New York</a>. The plans have been
-in motion for quite a while, and now that my ...</p>
+in motion for quite a while, and now that my wife and I have started to
+pack up our stuff, I thought I&#8217;d post something here to make it
+&#8216;official&#8217;. I start full time in <span class="caps">NY</span> at the end of January, at which
+point I will be diving head first into teaching and research. I am
+really looking forward ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/10/carson-moves-to-the-big-apple/">read more</a>
@@ -377,7 +384,10 @@ comments to help others with more specific problems?
 I&#8217;ve updated a few things and wanted to highlight/explain them a bit&nbsp;here.</p>
 <p><a href="http://www.carsonfarmer.com/examples/olympic_countries/"><img alt="image" src="http://www.carsonfarmer.com/images/grenada.png" title="Grenada" /></a></p>
 <p>Firstly, you can now explore the medal data together with
-population <strong>and</strong> <span class="caps">GDP ...</span></p>
+population <strong>and</strong> <span class="caps">GDP</span> as well as without any warping to get a feel for
+how much things change. Secondly, in order to be able to display the map
+in a way that is familiar to most people (i.e., landscape style), I had
+to take a few liberties in terms of representation. For ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/08/cartogram-updates/">read more</a>
@@ -411,7 +421,20 @@ population <strong>and</strong> <span class="caps">GDP ...</span></p>
                 <p>This is just a quick post to document an annoyance (and solution) that
 I&#8217;ve recently discovered when trying to scale a webpage embedded in
 another page using an <code>iframe</code>. When trying to come up with a nice way
-to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit ...</p>
+to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit based
+browsers were not behaving as they should. After a lot of fiddling
+about, I discovered that the following <code>css</code> seems to fix the&nbsp;issues:</p>
+<div class="highlight"><pre><span class="nf">#wrap</span> <span class="p">{</span>  
+    <span class="k">width</span><span class="o">:</span> <span class="m">630px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#frame</span> <span class="p">{</span>  
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">zoom</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz ...</span></pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/">read more</a>

@@ -133,7 +133,8 @@
         <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
     </p>
                   </footer>
-                <p>I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. <em>Fortunately</em>, Hunter College provides <a href="http://library.hunter.cuny.edu/find/accessfromhome">off-campus access</a> to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. <em>Unfortunately</em>, it ...</p>
+                <p>I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. <em>Fortunately</em>, Hunter College provides <a href="http://library.hunter.cuny.edu/find/accessfromhome">off-campus access</a> to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. <em>Unfortunately</em>, it turns out to be a huge pain to use anything other than the library search facilities (like <a href="http://scholar.google.com/">Google Scholar</a>) through the proxy server*. In fact, when working off-campus, you actually have to preface each <span class="caps">URL</span> address to licensed resources with 
+<code>http://proxy.wexler.hunter.cuny.edu/login?url=</code> in order ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/">read more</a>
@@ -167,7 +168,20 @@
                 <p>This is just a quick post to document an annoyance (and solution) that
 I&#8217;ve recently discovered when trying to scale a webpage embedded in
 another page using an <code>iframe</code>. When trying to come up with a nice way
-to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit ...</p>
+to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit based
+browsers were not behaving as they should. After a lot of fiddling
+about, I discovered that the following <code>css</code> seems to fix the&nbsp;issues:</p>
+<div class="highlight"><pre><span class="nf">#wrap</span> <span class="p">{</span>  
+    <span class="k">width</span><span class="o">:</span> <span class="m">630px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#frame</span> <span class="p">{</span>  
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">zoom</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz ...</span></pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/">read more</a>

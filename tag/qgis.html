@@ -354,7 +354,11 @@ to visualise the computed shortest path directly.
 quantitative data which could be used directly from the Python console
 in <span class="caps">QGIS</span>. While this was a handy addition to my PyQGIS toolkit, it wasn&#8217;t
 quite handy enough for me, so I decided to (re)implement the same
-algorithms ...</p>
+algorithms in C++ so that they could be added directly to the <span class="caps">QGIS</span> <span class="caps">API</span>.
+Before I did that however, I wanted to fix a few issues, and speed
+things up a bit, particularly for the Jenks Natural Breaks algorithm,
+which can be quite slow for large&nbsp;datasets.</p>
+<p>After porting everything over ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2010/09/adding-a-bit-of-classification-to-qgis/">read more</a>

@@ -214,7 +214,15 @@ features, the value at that point will be&nbsp;displayed.</p>
 <div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
 y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
 y.grid <span class="o">=</span> y<span class="o">@</span>grid
-y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
+y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid<span class="p">)</span> 
+image<span class="p">(</span>y<span class="p">)</span>
+identify<span class="p">(</span>x<span class="o">=</span>y.coords<span class="p">,</span> y<span class="o">=</span><span class="kc">NULL</span><span class="p">,</span> n<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p>where <code>x</code> and <code>y</code> refer to coordinates (in this case because <code>y.coords</code>
+contains both <code>x</code> and <code>y</code> coordinates, <code>y</code> can be set to <code>NULL</code>), and <code>n</code> is the
+number of features to&nbsp;identify.</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
@@ -249,7 +257,14 @@ y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...<
 files.There are plenty of scripts out there which will accomplish this,
 but I was interested in something simple, and preferably a single line
 command. After a lot of Google-ing, I ended up finding <a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487">this post</a>,
-which ...</p>
+which does a great job of explaining how to do this in linux. The basic
+command&nbsp;is:</p>
+<div class="highlight"><pre>find . -name <span class="s2">&quot;\*.py&quot;</span> -print | xargs sed -i <span class="s1">&#39;s/foo/bar/g&#39;</span>
+</pre></div>
+
+
+<p>where <code>find . -name "*.py"</code> is used to find all python files (recursively) in 
+your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/">read more</a>

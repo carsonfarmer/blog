@@ -172,7 +172,12 @@ geospatial academics on the editorial board.
 Sutton, Otto Dassau, and Marcelle Sutton in partnership with the Chief
 Directorate for Spatial Planning <span class="amp">&amp;</span> Information, Department of Land
 Affairs, Eastern Cape, South Africa, and the Spatial Information
-Management Unit, Office of the Premier ...</p>
+Management Unit, Office of the Premier, Eastern Cape, South Africa. They
+use <span class="caps">QGIS</span> to present some basic <span class="caps">GIS</span> concepts and skills, and I
+particularly like their section on Coordinate Reference&nbsp;Systems.</p>
+<p>Secondly, don&#8217;t forget to checkout the <a href="http://2009.foss4g.org/"><span class="caps">FOSS4G</span> 2009 Free and open source
+software for geospatial</a> conference in Sydney in October. There will
+be loads ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/">read more</a>
@@ -250,7 +255,11 @@ accurate) and bigger (more data).
 reference system is, how it is used, and what it means for your data, I
 found a pretty good quick guide to <a href="http://www.sharpgis.net/post/2007/05/05/Spatial-references2c-coordinate-systems2c-projections2c-datums2c-ellipsoids-e28093-confusing.aspx">spatial references, coordinate
 systems, projections, datums and ellipsoids</a>. This article was written
-by Morten Nielsen ...</p>
+by Morten Nielsen (who works for <span class="caps">ESRI</span>), and it does a good job of
+quickly and simply describing what makes up a spatial reference system,
+and some of the errors that people make when talking about their spatial&nbsp;data.</p>
+<p>Having a good grasp of this stuff is important when working with spatial
+data ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2009/01/understanding-spatial-reference-systems/">read more</a>
@@ -362,7 +371,15 @@ features, the value at that point will be&nbsp;displayed.</p>
 <div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
 y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
 y.grid <span class="o">=</span> y<span class="o">@</span>grid
-y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid ...</pre></div>
+y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid<span class="p">)</span> 
+image<span class="p">(</span>y<span class="p">)</span>
+identify<span class="p">(</span>x<span class="o">=</span>y.coords<span class="p">,</span> y<span class="o">=</span><span class="kc">NULL</span><span class="p">,</span> n<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p>where <code>x</code> and <code>y</code> refer to coordinates (in this case because <code>y.coords</code>
+contains both <code>x</code> and <code>y</code> coordinates, <code>y</code> can be set to <code>NULL</code>), and <code>n</code> is the
+number of features to&nbsp;identify.</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>

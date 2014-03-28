@@ -137,7 +137,11 @@
 quantitative data which could be used directly from the Python console
 in <span class="caps">QGIS</span>. While this was a handy addition to my PyQGIS toolkit, it wasn&#8217;t
 quite handy enough for me, so I decided to (re)implement the same
-algorithms ...</p>
+algorithms in C++ so that they could be added directly to the <span class="caps">QGIS</span> <span class="caps">API</span>.
+Before I did that however, I wanted to fix a few issues, and speed
+things up a bit, particularly for the Jenks Natural Breaks algorithm,
+which can be quite slow for large&nbsp;datasets.</p>
+<p>After porting everything over ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2010/09/adding-a-bit-of-classification-to-qgis/">read more</a>
@@ -211,7 +215,7 @@ to the&nbsp;public!</p>
 <p>It&#8217;s brand new, and has the potential to be an extremely valuable
 resource for <span class="caps">GIS</span> professionals, academics, enthusiasts, and just about
 anyone else looking for answers to <span class="caps">GIS</span> related questions.
-Check it out here: <a href="http://gis.stackexchange.com">http ...</a></p>
+Check it out here: <a href="http://gis.stackexchange.com">http://gis.stackexchange.com</a></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2010/07/new-online-gis-resource/">read more</a>
@@ -246,7 +250,11 @@ Check it out here: <a href="http://gis.stackexchange.com">http ...</a></p>
 need country-wide road network data for Ireland. In the past, getting
 decent road network data for an area this large was quite a task (not to
 mention expensive and time consuming), however, with OpenStreetMap we
-have access ...</p>
+have access to this type of data instantly, and for free! In order to
+download full country coverage all at once, all I had to do was turn to
+this <a href="http://download.geofabrik.de/osm/">extremely useful site</a>, which provides links for daily excerpts
+of OpenStreetMap data for any country in Europe plus several non-country
+regions such ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">read more</a>
@@ -402,7 +410,11 @@ switch from <a href="http://www.zotero.org/">Zotero</a> to <a href="http://www.m
 management needs due to the answer to this question on the Mendeley <span class="caps">FAQ</span>&nbsp;page:</p>
 <blockquote>
 <p><strong>Is Mendeley&nbsp;free?</strong></p>
-<p>The straight answer would be yes and no. Yes, it ...</p></blockquote>
+<p>The straight answer would be yes and no. Yes, it&#8217;s free, because:
+Everything you get when you sign up to Mendeley is completely free and
+will always remain free - including the features described in <a href="http://www.mendeley.com/faq/#what-is-mendeley">What is&nbsp;Mendeley?</a></p>
+<p>No, it&#8217;s not <em>completely</em> free, because: At a later point in time, we
+will expand upon the existing features and introduce ...</p></blockquote>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2010/04/why-im-not-going-to-use-mendeley/">read more</a>

@@ -133,7 +133,8 @@
         <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
     </p>
                   </footer>
-                <p>I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. <em>Fortunately</em>, Hunter College provides <a href="http://library.hunter.cuny.edu/find/accessfromhome">off-campus access</a> to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. <em>Unfortunately</em>, it ...</p>
+                <p>I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. <em>Fortunately</em>, Hunter College provides <a href="http://library.hunter.cuny.edu/find/accessfromhome">off-campus access</a> to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. <em>Unfortunately</em>, it turns out to be a huge pain to use anything other than the library search facilities (like <a href="http://scholar.google.com/">Google Scholar</a>) through the proxy server*. In fact, when working off-campus, you actually have to preface each <span class="caps">URL</span> address to licensed resources with 
+<code>http://proxy.wexler.hunter.cuny.edu/login?url=</code> in order ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/">read more</a>
@@ -269,7 +270,20 @@ comments to help others with more specific problems?
                 <p>This is just a quick post to document an annoyance (and solution) that
 I&#8217;ve recently discovered when trying to scale a webpage embedded in
 another page using an <code>iframe</code>. When trying to come up with a nice way
-to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit ...</p>
+to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit based
+browsers were not behaving as they should. After a lot of fiddling
+about, I discovered that the following <code>css</code> seems to fix the&nbsp;issues:</p>
+<div class="highlight"><pre><span class="nf">#wrap</span> <span class="p">{</span>  
+    <span class="k">width</span><span class="o">:</span> <span class="m">630px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#frame</span> <span class="p">{</span>  
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">zoom</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz ...</span></pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/">read more</a>
@@ -304,7 +318,10 @@ to embed <a href="examples/olympic_countries/">this page</a> inside <a href="htt
 feeling creative, so I decided to map something! I&#8217;ve been looking for
 an excuse to produce a nice graphic like the one <a href="http://underdark.wordpress.com/about/">Anita Graser</a>
 created to represent Vienna’s green-spaces. She used <a href="http://qgis.org/">Quantum
-<span class="caps">GIS ...</span></a></p>
+<span class="caps">GIS</span></a> to produce a <a href="http://underdark.wordpress.com/2012/03/04/mapping-density-with-hexagonal-grids/">hexagonal grid</a> for representing the density of
+Viennese trees instead of the standard heat map or kernel density map,
+and the results are quite nice! I&#8217;m a huge fan of <span class="caps">QGIS</span>, but I tend to do
+most of my work in R, so I decided to ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/">read more</a>
@@ -422,7 +439,11 @@ to visualise the computed shortest path directly.
 need country-wide road network data for Ireland. In the past, getting
 decent road network data for an area this large was quite a task (not to
 mention expensive and time consuming), however, with OpenStreetMap we
-have access ...</p>
+have access to this type of data instantly, and for free! In order to
+download full country coverage all at once, all I had to do was turn to
+this <a href="http://download.geofabrik.de/osm/">extremely useful site</a>, which provides links for daily excerpts
+of OpenStreetMap data for any country in Europe plus several non-country
+regions such ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/">read more</a>
