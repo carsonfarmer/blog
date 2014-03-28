@@ -111,9 +111,9 @@
                     <i class="fa {{ icon }} fa-lg"></i>
                   </a>
                 {% endfor %}
-				<script >
-				$("[data-toggle=tooltip]").tooltip();
-				</script>
+                <script >
+                $("[data-toggle=tooltip]").tooltip();
+                </script>
             </p>
             </address><!-- /#about -->
             <p class="attribution">This blog is proudly 
@@ -130,5 +130,8 @@
 {% include 'piwik.html' %}
 {% include 'disqus_script.html' %}
 <script src="{{ SITEURL }}/theme/js/tools.js"></script>
+<script>
+size_background("/theme/images/bg/")
+</script>
 </body>
 </html>

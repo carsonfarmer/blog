@@ -1,5 +1,5 @@
 Title: After the Irish famine
-Date: 2014-03-23 12:00
+Date: 2014-03-27 12:00
 Author: cfarmer
 Slug: maps/irish_famine
 Icon: fa-map-marker
@@ -14,42 +14,43 @@ Template: full_page
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
+<img id="bg" src="{filename}/images/famine/bg-1024.png" style="position: fixed; top: 0; left: 0;">
 <div id="map">
 <div class="bold_title">
     <h2><i class="fa fa-map-marker"></i> After the Irish famine</h2>
 </div>
   <div id="map-container">
-    <div class="floater">
+    <div class="floater shadow">
       <label>Scale by population from</label>&nbsp;<label id="yearlabel" name="yearlabel">1841</label>
       <div class="slider" id="year" name="year"></div>
       <span id="status"></span><br/>
         <div class="share-list">
-            <a href="#" class="modal-toggle" data-toggle="modal" data-target="#myModal">Click here for details!</a><br/>
-            <a href="http://twitter.com/share?url={{ (SITEURL +  '/' + article.url)|urlencode }}&text={{article.title|striptags|urlencode}}&hashtags={% for tag in article.tags%}{{tag}},{% endfor %}&via=CarsonFarmer"
+            <a href="http://twitter.com/share?url=http://www.carsonfarmer.com/maps/irish_famine&text=After the Irish Famine&hashtags=famine,irish,cartogram,d3js&via=CarsonFarmer"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-twitter-square fa-2x"></i>
             </a>
-            <a href="https://plus.google.com/share?url={{ (SITEURL +  '/' + article.url)|urlencode }}" 
+            <a href="https://plus.google.com/share?url=http://www.carsonfarmer.com/maps/irish_famine" 
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-google-plus-square fa-2x"></i>
             </a>
-            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ (SITEURL +  '/' + article.url)|urlencode }}&title={{article.title|striptags|urlencode}}&summary={{article.summary|striptags|urlencode}}&source=CarsonFarmer"
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.carsonfarmer.com/maps/irish_famine&title=After the Irish Famine&source=CarsonFarmer"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-linkedin-square fa-2x"></i>
             </a>
-            <a href="http://www.tumblr.com/share/link?url={{ (SITEURL +  '/' + article.url)|urlencode }}&name={{article.title|striptags|urlencode}}&description={{article.summary|striptags|urlencode}}"
+            <a href="http://www.tumblr.com/share/link?url=http://www.carsonfarmer.com/maps/irish_famine&name=After the Irish Famine"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-tumblr-square fa-2x"></i>
             </a>
-            <a href="http://www.facebook.com/sharer.php?s=100&p[url]={{ (SITEURL +  '/' + article.url)|urlencode }}&p[title]={{article.title|striptags|urlencode}}&p[summary]={{article.summary|striptags|urlencode}}"
+            <a href="http://www.facebook.com/sharer.php?s=100&p[url]=http://www.carsonfarmer.com/maps/irish_famine&p[title]=After the Irish Famine"
               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
               class="label label-primary">
               <i class="fa fa-facebook-square fa-2x"></i>
             </a>
+            <a href="#" class="modal-toggle label label-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-info-circle fa-2x"></i></a>
         </div>
     </div>
     <svg id="d3map"></svg>
@@ -95,7 +96,7 @@ Template: full_page
         <p>Code based heavily on the 
   <a href="https://github.com/shawnbot/d3-cartogram">d3-cartogram</a>
   example by <a href="http://stamen.com/studio/shawn">Shawn Allen</a> at 
-  <a href="http://stamen.com">Stamen</a></p>
+  <a href="http://stamen.com">Stamen</a>.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -105,6 +106,7 @@ Template: full_page
 </div>
 
 <script>
+
   var percent = (function() {
         var fmt = d3.format(".2f");
         return function(n) { return fmt(n) + "%"; };
@@ -368,4 +370,8 @@ Template: full_page
       d3.select("#yearlabel").text(" "+year);
     }
 
+</script>
+<script src="../../theme/js/tools.js"></script>
+<script>
+size_background("../../images/famine/")
 </script>

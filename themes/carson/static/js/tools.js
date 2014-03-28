@@ -43,7 +43,7 @@ function site_search() {
         $("#top-toggle").dropdown('toggle');
     }  
 
-(function() {
+function size_background(loc) {
     var win = $(window);
     win.resize(function() {
         var win_w = win.width(),
@@ -64,7 +64,7 @@ function site_search() {
             }
           }
           // Set the new image
-          bg.attr('src', '/theme/images/bg/bg-' + chosen + '.png');
+          bg.attr('src', loc+'bg-' + chosen + '.png');
           // for testing...
           // console.log('Chosen background: ' + chosen);
         }
@@ -75,7 +75,7 @@ function site_search() {
           bg.css({width: '100%', height: 'auto'});
         }
       }).resize();
-    })(jQuery);
+    };
     
     
 /*
