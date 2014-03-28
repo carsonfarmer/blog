@@ -497,8 +497,7 @@ quite handy enough for me, so I decided to (re)implement the same
 algorithms in C++ so that they could be added directly to the &lt;span class="caps"&gt;QGIS&lt;/span&gt; &lt;span class="caps"&gt;API&lt;/span&gt;.
 Before I did that however, I wanted to fix a few issues, and speed
 things up a bit, particularly for the Jenks Natural Breaks algorithm,
-which can be quite slow for large datasets.
-&lt;/p&gt;
+which can be quite slow for large&amp;nbsp;datasets.&lt;/p&gt;
 &lt;p&gt;After porting everything over to C++, I noticed that things were still
 a little too slow for large datasets. My first thought was to limit the
 amount of data that the algorithm had to go through by taking a random
