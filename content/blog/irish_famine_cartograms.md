@@ -6,13 +6,13 @@ Category: Visualization
 Tags: Cartogram, D3js, Demography, Visualization, Javascript
 Slug: irish_famine_cartograms
 
-In celebration of St Patrick's day last week, I decided to dig up an old dataset from when I was living/working in Ireland on historical Irish populations by county, and have a play with [D3js][] and cartograms. If you've read any of my [previous posts][], you'll know that I like cartograms as a useful and fun way to visualize data. The [Great Famine][] was an important and significant event in Irish (and global) history, and cartograms provide a fun and informative way to explore the resultant population change in Ireland from around the Famine era (and beyond). [Click here][irish-famine] to view it 'live'.
-
 [![Population cartogram][image]{.right}][irish-famine]
 
-<!--more-->
+In celebration of St Patrick's day last week, I decided to dig up an old dataset from when I was living/working in Ireland on historical Irish populations by county, and have a play with [D3js][] and cartograms. If you've read any of my [previous posts][], you'll know that I like cartograms as a useful and fun way to visualize data. The [Great Famine][] was an important and significant event in Irish (and global) history, and cartograms provide a fun and informative way to explore the resultant population change in Ireland from around the Famine era (and beyond). [Click here][irish-famine] to view it 'live'.
 
 The cartogram 'time-series' provides a simple visualization of population change in Ireland after the Famine era. It uses [continuous area cartograms][paper] and population estimates from 1841 to 2001 to demonstrate change. The cool thing about this visualization is how dramatically it emphasizes population loss from 1841 to 1851 (and beyond), and how, even in modern Ireland, many counties remain well below their pre-famine population levels. As a whole, the population of Ireland remains less than 70% of its pre-famine levels!
+
+<!--more-->
 
 I've added a few nice interactive features to the map, including a popover feature that gives you additional information on mouse over. This includes county name, total population for the give year, and a nice little [sparkline][] showing population change over time (with the current year highlighted for reference). This gives you a quick feel for the population change over time, and was pretty easy to do using D3js and Twitter Bootstrap.
 
@@ -21,7 +21,7 @@ To produce the visualization, I leaned heavily on [D3js][], [colorbrewer][], Twi
 [previous posts]: {filename}olympic-cartogram.md
 [image]: {filename}/images/irish-famine.png
 [D3js]: http://d3js.org/
-[irish-famine]: {filename}/maps/irish_famine/
+[irish-famine]: {filename}/pages/irish-famine.md
 [paper]: http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf
 [sparkline]: http://en.wikipedia.org/wiki/Sparkline
 [Great Famine]: http://en.wikipedia.org/wiki/Great_Famine_(Ireland)
