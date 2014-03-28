@@ -24,7 +24,7 @@ I'm always a sucker for a more 'traditional' rubber-sheet cartogram,
 which is generally less abstract than a bubble plot, but can sometimes
 lead to [dramatic results][]. Since I felt like the only person on the
 internet without their own Olympics Visualization, I decided to throw
-together a cartogram to visualise Olympic medal achievements. Drawing
+together a cartogram to visualize Olympic medal achievements. Drawing
 inspiration from The Telegraph graphic, I created a rubber-sheet
 cartogram based on an [iterative warping method][]. The 'live' version
 of the cartogram is [available here][] (or by clicking on the image
@@ -32,7 +32,7 @@ below). [UPDATE] If you'd like to include the map on a web page, you can
 now do that by including this in your HTML source:
 
 ```html
-<iframe src="http://www.carsonfarmer.com/examples/olympic_countries_map.html" width=1230 height=545\></iframe>
+<iframe src="http://www.carsonfarmer.com/examples/olympic_countries/map.html" width=1230 height=545\></iframe>
 ```
 <!--more-->
 
@@ -69,8 +69,8 @@ in the comments!
 [representations of space]: http://www.unicef.org/sowc2012/urbanmap/
 [iterative warping method]: http://lambert.nico.free.fr/tp/biblio/Dougeniketal1985.pdf
 [dramatic results]: http://www.worldmapper.org/
-[available here]: examples/olympic_countries/
-[image]: |filename|/images/olympic_carto.png "Olympic cartogram"
+[available here]: {filename}/examples/olympic_countries/
+[image]: {filename}/images/olympic_carto.png "Olympic cartogram"
 [Python]: http://www.python.org/
 [pandas]: http://pandas.pydata.org/
 [ujson]: https://github.com/esnme/ultrajson
