@@ -4,6 +4,7 @@ Author: cfarmer
 Slug: maps/irish_famine
 Icon: fa-map-marker
 Template: full_page
+Status: hidden
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script src="http://d3js.org/topojson.v1.min.js"></script>
