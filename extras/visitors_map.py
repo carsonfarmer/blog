@@ -17,45 +17,49 @@
 # http://ilian.i-n-i.org/retrieving-google-analytics-data-with-python/
 
 import datetime
-import sys, os.path
+import sys
+import os.path
 today = datetime.date.today()
+import keyring
+kr = keyring.get_keyring()
+pwd = kr.get_password('google-analytics', 'cfarmer')
 
 try:
     file_time = os.path.getmtime('../content/extras/visitors_map.js')
     file_date = datetime.datetime.fromtimestamp(file_time).date()
     if today == file_date:
         print "already computed map for today... exiting!"
-        sys.exit() # No need to do anything, we've already done this today!
-except OSError, err: # File doesn't exist!
-    pass # Just pass through, we need to create it...
+        sys.exit()  # No need to do anything, we've already done this today!
+except OSError, err:  # File doesn't exist!
+    pass  # Just pass through, we need to create it...
 
 import gdata.analytics.client as client
 import pandas as pd
 
 from geopy import geocoders
 
-last = today - datetime.timedelta(days=30)    
+last = today - datetime.timedelta(days=30)
 
 my_client = client.AnalyticsClient(source="www.carsonfarmer.com")
 token = my_client.client_login(
-	"carson.farmer", 
-	"hunter695park", 
-	source="www.carsonfarmer.com", 
-	service=my_client.auth_service, 
-	account_type="GOOGLE",)
+    "carson.farmer",
+    pwd,
+    source="www.carsonfarmer.com",
+    service=my_client.auth_service,
+    account_type="GOOGLE",)
 
 # token = my_client.auth_token
 
 account_query = client.AccountFeedQuery()
 
 data_query = client.DataFeedQuery({
-	"ids": "ga:72662650",
-	"dimensions": "ga:city,ga:latitude,ga:longitude,ga:region,ga:country",
-	"metrics":"ga:uniqueEvents",
-	"start-date": last.strftime("%Y-%m-%d"),
-	"end-date": today.strftime("%Y-%m-%d"),
-	"max-results": "5000",
-	})
+    "ids": "ga:72662650",
+    "dimensions": "ga:city,ga:latitude,ga:longitude,ga:region,ga:country",
+    "metrics": "ga:uniqueEvents",
+    "start-date": last.strftime("%Y-%m-%d"),
+    "end-date": today.strftime("%Y-%m-%d"),
+    "max-results": "5000",
+    })
 
 print "getting feed from client..."
 feed = my_client.GetDataFeed(data_query)
