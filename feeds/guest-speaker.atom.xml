@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/guest-speaker.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-10-10T12:41:00-04:00</updated><entry><title>Nathan Storey Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/" rel="alternate"></link><updated>2013-10-10T12:41:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-10-10:2013/10/guest-speaker-nathan-storey/</id><summary type="html">&lt;p&gt;&lt;a href="https://twitter.com/npstorey"&gt;Nathan Storey&lt;/a&gt; will be speaking to my spatial data analysis class 
-later today, October 10th, 2013, and you are invited to attend! Nathan is a 
-former &lt;a href="http://www.hunteruap.org/"&gt;Hunter Urban Affairs&lt;/a&gt; student and current Open Data Guru working 
-with &lt;a href="http://www.ontodia.com/"&gt;Ontodia&lt;/a&gt; doing &lt;span class="caps"&gt;GIS&lt;/span&gt;/open data projects for &lt;span class="caps"&gt;NYC&lt;/span&gt;. Check out 
-&lt;a href="http://nyc.pediacities.com/"&gt;PediaCities&lt;/a&gt;, their platform to curate, organize, and link data 
-about&amp;nbsp;cities.&lt;/p&gt;
-&lt;p&gt;This will be a great opportunity to see &lt;span class="caps"&gt;GIS&lt;/span&gt; data applied to real-world problem 
-sets here in &lt;span class="caps"&gt;NYC&lt;/span&gt;. The discussion will go approx 1 hour, beginning at 5:35 in 
-the large lab of Hunter College, &lt;span class="caps"&gt;CUNY&lt;/span&gt;, North Building, Room 1090B.  Due to the 
-location, no refreshments will be served, but its a good opportunity to feed 
-your brain&amp;nbsp;:)&lt;/p&gt;
-&lt;p&gt;Here is what Nathan (the speaker) has to say about this&amp;nbsp;talk:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;I will be speaking to Carson Farmer&amp;#8217;s spatial data analysis class next week 
-about open data in &lt;span class="caps"&gt;NYC&lt;/span&gt;, data discovery, and &lt;a href="http://nyc.pediacities.com/"&gt;PediaCities&lt;/a&gt;, a 
-data encyclopedia project I&amp;#8217;ve been working on for the past 6&amp;nbsp;months. &lt;/p&gt;
-&lt;/blockquote&gt;
-</summary><category term="Guest Speaker"></category><category term="Open Data"></category><category term="Open Source"></category><category term="Data"></category></entry><entry><title>Tim Stojanovic Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/" rel="alternate"></link><updated>2013-05-28T18:29:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-05-28:2013/05/guest-speaker-june-2013/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr. Tim Stojanovic&lt;/a&gt; will be coming to the &lt;a href="http://www.geo.hunter.cuny.edu/"&gt;Department of Geography 
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Carson Farmer</title><link href="http://www.carsonfarmer.com/" rel="alternate"></link><link href="http://www.carsonfarmer.com/feeds/guest-speaker.atom.xml" rel="self"></link><id>http://www.carsonfarmer.com/</id><updated>2013-05-28T18:29:00-04:00</updated><entry><title>Tim Stojanovic Guest Lecture</title><link href="http://www.carsonfarmer.com/2013/05/guest-speaker-june-2013/" rel="alternate"></link><updated>2013-05-28T18:29:00-04:00</updated><author><name>cfarmer</name></author><id>tag:www.carsonfarmer.com,2013-05-28:2013/05/guest-speaker-june-2013/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.st-andrews.ac.uk/gsd/people/tas21/"&gt;Dr. Tim Stojanovic&lt;/a&gt; will be coming to the &lt;a href="http://www.geo.hunter.cuny.edu/"&gt;Department of Geography 
 at Hunter College&lt;/a&gt;, &lt;span class="caps"&gt;CUNY&lt;/span&gt; next week to give a talk entitled: &amp;#8220;Analysing 
 Change in the Human Development of the World’s Oceans&amp;#8221;. The talk will be held 
 on &lt;strong&gt;June 5th, 2013&lt;/strong&gt; at &lt;strong&gt;3:00 p.m.&lt;/strong&gt; in the Hunter North building, room 1004.
