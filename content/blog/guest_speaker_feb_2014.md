@@ -3,7 +3,7 @@ Date: 2014-02-21 17:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Announcement
+Tags: Announcement, GTECH Experiment, Speaker
 Slug: guest_speaker_feb_2014
 
 Please join us **Wednesday, February 26th** from **3:00 to 5:00 pm** in the Hunter College Geography 

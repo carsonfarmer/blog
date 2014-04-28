@@ -2,8 +2,8 @@ Title: Nathan Storey Guest Lecture
 Date: 2013-10-10 12:41
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Guest Speaker
-Tags: Guest Speaker, Open Data, Open Source, Data
+Category: Speaker
+Tags: Speaker, Open Data, FOSS4G
 Slug: guest-speaker-nathan-storey
 
 [Nathan Storey][nathan] will be speaking to my spatial data analysis class 

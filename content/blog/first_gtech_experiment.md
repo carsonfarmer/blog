@@ -3,7 +3,7 @@ Date: 2014-03-05 12:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Speaker
-Tags: Update, Speaker, FOSS4G
+Tags: Update, Speaker, FOSS4G, GTECH Experiment
 Slug: first_gtech_experiement
 
 In case you missed [Eric Brelsford's][twitter] talk last Wednesday on *Free & Open Source Software for Geospatial Applications*, I've embedded the recording below for your viewing pleasure (Eric's slides are [also available][slides]). This is the first in a series of talks organized within the department of [Geography][geog] at [Hunter College][hunter], CUNY around GIS and Technology (we're calling them GTECH Experiments). Each talk is organized by a student (thanks go to [Mara Gittleman][mara] this time), and features a member of the wider geo-technology community. Check out the video below:
