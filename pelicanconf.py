@@ -28,7 +28,7 @@ MARKUP = ("md", "ipynb")
 PLUGIN_PATH = "pelican-plugins/"
 PLUGINS = ['gravatar', 'latex', 'summary', 'liquid_tags.notebook']
 
-NOTEBOOK_DIR = 'notebooks' 
+NOTEBOOK_DIR = 'notebooks'
 
 SUMMARY_END_MARKER = "<!--more-->"
 
@@ -55,7 +55,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISQUS_SITENAME = "carsonfarmer"
 
 # Which folders should be copied to output
-STATIC_PATHS = ['images', 'uploads', 'libs/bootstrap-3.1.1/dist', 
+STATIC_PATHS = ['images', 'uploads', 'libs/bootstrap-3.1.1/dist',
                 'extras/favicon.ico', 'extras/CNAME', 'examples',
                 'libs/leaflet', 'extras/visitors_map.js', 'libs/cartogram',
                 'extras/map-thumb.png']
@@ -66,7 +66,7 @@ EXTRA_PATH_METADATA = {'extras/favicon.ico': {'path': 'favicon.ico'},
                        'extras/map-thumb.png' : {'path': 'uploads/map-thumb.png'},
                        'examples' : {'path': 'examples'},
                       }
-                      
+
 PAGE_EXCLUDES = ["libs"]
 ARTICLE_DIR = "blog"
 ARTICLE_EXCLUDES = ["pages", "libs"]
@@ -84,7 +84,7 @@ SOCIAL = (('twitter', 'https://twitter.com/CarsonFarmer', 'fa-twitter'),
           ('email', 'mailto:carson.farmer@gmail.com', 'fa-envelope'),)
 
 TWITTER_USERNAME = 'CarsonFarmer'
-TWITTER_WIDGET_ID = '330339195518337025'
+TWITTER_WIDGET_ID = '460846751906144256'
 DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
