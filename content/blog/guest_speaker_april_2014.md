@@ -22,7 +22,7 @@ Robert Buchanan from the New School will discuss a [separate project][water-2] o
 
 Both tools have been employed by the NY Surfriders Foundation chapter as ways to monitor overall water quality and respond to deficiencies in government efforts to ensure clean and safe water for humans and other species to enjoy.
 
-We hope you join us if you have time, it should be a great discussion on the ways you can employ easy to use FOSS4G tools to support community service and non-profit causes of all kinds. Stay tuned for the flyer!
+We hope you join us if you have time, it should be a great discussion on the ways you can employ easy to use FOSS4G tools to support community service and non-profit causes of all kinds. Checkout the [flyer here][flyer]!
 
 For any questions, contact [Gene via email](mailto: erichte@hunter.cuny.edu).
 
@@ -32,3 +32,4 @@ Hope to see you there!
 [sewage]: http://nijel.org/nysewage/
 [water-2]: http://www.nycwatertrail.org/water_quality.html
 [feed]: https://plus.google.com/u/0/events/cctokhnpg32mkqta02cs3c83me8
+[flyer]: {filename}/uploads/GIS-Society-Announcement.pdf
