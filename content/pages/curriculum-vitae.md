@@ -41,6 +41,7 @@ Icon: fa-rocket
 
 |                     |                      |
 | ------------------  |  -------------------
+2014 | PSC CUNY Research Award, Hunter College, CUNY
 2012 -- 2014 | Research Fellowship, Centre for GeoInformatics, University of St Andrews
 2008 -- 2012 | Doctoral Fellowship, Social Science & Humanities Research Council of Canada
 2011 | Postgraduate Travel Fund/Collins Kitchin Fund, NUI Maynooth
@@ -111,7 +112,13 @@ Icon: fa-rocket
     85p.
 
 #### Presentations
- 
+
+* Farmer, C. J. Q. and Marcotullio, P. (2014) Agent-based models for spatially-explicit 
+    population projections. AAG Annual General Meeting. April 8th-12th, Tampa,
+    Florida, USA.
+* Farmer, C. J. Q. (2013) Cities as agents of growth: Agent models for 
+    population projections. Meeting on Global Spatial Population Projections: 
+    What Can Be Done Now? September 20th, 2013, New York, NY.
 * Carson, C. J. Q. (2012) [Building streaming GIScience from context,
     theory, and intelligence](http://stko.geog.ucsb.edu/gibda2012/gibda2012_submission_4.pdf).
     7th International Conference, GIScience 2012. September 19th-21st, 
@@ -194,15 +201,29 @@ Icon: fa-rocket
 
 Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Methods
 
+#### Student Supervision
+
+|                     |                                       |
+| ------------------  |  ------------------------------------ |
+| Taylor Oshan* | MS Thesis Advisor (Hunter College, CUNY)
+| Kristina Schmidt | MS Thesis Advisor (Hunter College, CUNY)
+| Adele Balders | MS Thesis Advisor (Hunter College, CUNY)
+| Joan Lee | MS Thesis Advisor (Hunter College, CUNY)
+| Kristin Graves | Thesis Co-Advisor (Hunter College, CUNY)
+| Silvia Lorenzo | Thesis Co-Advisor (Hunter College, CUNY)
+| * Completed | 
+
 ### <i class="fa fa-compass"></i> Academic Service
 
 |                     |                                       |
 | ------------------  |  ------------------------------------ |
+| July 2014 | Program Committee Member (2014 International SciPy Conference)
+| 2013 - present | Committee Member (Public Health Certificate, Hunter College)
 | 2013 - present | Editorial Board Member (Spatial Demography)
 | 2012 - present | Reviewer (Journal of Spatial Science)
 | 2012 - present | Reviewer (Computers, Environment and Urban Systems)
 | 2012 - present | Reviewer (International Journal of Geographical Information Science)
-| June 2012 | Session Chair (Canadian Association of Geographers AGM, Waterloo, ON, Canada)
+June 2013 | Co-Organizer and Co-Chair/Presenter (GIScience Study Group Special Sessions, CAG AGM)
 | 2011 - present | Member (Regional Studies Association)
 | 2009 -- present | Reviewer (Transactions in GIS)
 | 2008 -- present | Reviewer (Remote Sensing of Environment)

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+# from mdx_grid_tables import GridTableExtension
 
 AUTHOR = u'Carson J. Q. Farmer'
 SITENAME = u'Carson Farmer'
@@ -43,7 +44,7 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 THEME = "themes/carson"
 #CSS_FILE = "wide.css"
 
-MD_EXTENSIONS = (['codehilite(css_class=highlight)', 'extra', 'fenced_code'])
+MD_EXTENSIONS = (['codehilite(css_class=highlight)', 'extra', 'fenced_code', ])
 
 # Some useful defaults and menu settings
 DEFAULT_CATEGORY = 'News'
