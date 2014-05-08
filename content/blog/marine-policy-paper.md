@@ -2,7 +2,7 @@ Title: Paper published in Marine Policy
 Date: 2013-03-20 14:52
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Publications
+Category: Publication
 Tags: Global, Policy, Research, Sustainability
 Slug: marine-policy-paper
 

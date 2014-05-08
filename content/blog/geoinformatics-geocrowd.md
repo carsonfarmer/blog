@@ -3,7 +3,7 @@ Date: 2013-09-23 11:57
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Update, Announcement, Employement, GeoInformatics, Research
+Tags: Update, Announcement, Employment, GeoInformatics, Research
 Slug: researcher-position-geoInformatics
 
 This is just a quick note about a great opportunity for early career researchers 

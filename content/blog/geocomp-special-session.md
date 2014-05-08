@@ -3,7 +3,7 @@ Date: 2013-03-15 17:15
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Computational, Science, Conference, Geocomputation, Modeling, Research
+Tags: Conference, Geocomputation, Modeling, Research, Announcement
 Slug: geocomp-special-session
 
 Special session titled "Geocomputational landscapes and spaces" at the

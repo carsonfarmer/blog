@@ -3,7 +3,7 @@ Date: 2012-11-08 16:54
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Employement, GeoInformatics, Lecturship, Postdoc, Research, Scotland, St Andrews
+Tags: Employment, Research, Travel, Annoucement
 Slug: postdocs-lectureships-st-andrews
 
 The [Centre for GeoInformatics (CGI)][] at the [University of St

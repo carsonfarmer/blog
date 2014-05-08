@@ -2,8 +2,8 @@ Title: R spatial indentify tool
 Date: 2008-09-23 12:36
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: FOSS, GIS, How-To, Linux, R spatial
+Category: Helpful Tip
+Tags: FOSS, GIS, How-To, Linux, R
 Slug: r-spatial-indentify-tool
 
 This is useful for visually exploring R spatial data such as

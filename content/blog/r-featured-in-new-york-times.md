@@ -3,7 +3,7 @@ Date: 2009-01-28 12:14
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: News
-Tags: News, R, Spatial Statistics, FOSS
+Tags: News, R, Statistics, FOSS
 Slug: r-featured-in-new-york-times
 
 I'm sure everyone has seen this already, but I'm going to post it

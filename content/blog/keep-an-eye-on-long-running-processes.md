@@ -2,8 +2,8 @@ Title: 'Watch' long running processes
 Date: 2009-07-08 12:23
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: long running, PostGIS, watch, FOSS, How-To, Linux
+Category: Helpful Tip
+Tags: PostGIS, FOSS, How-To, Linux
 Slug: keep-an-eye-on-long-running-processes
 
 The other day I was loading a shapefile of approximately 11 million

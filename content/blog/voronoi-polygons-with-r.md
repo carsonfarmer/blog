@@ -2,8 +2,8 @@ Title: Voronoi polygons with R
 Date: 2009-09-16 22:30
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: R, Tesselation, Voronoi polygons, FOSS, How-To, R spatial
+Category: Helpful Tip
+Tags: R, FOSS, How-To
 Slug: voronoi-polygons-with-r
 
 To create a nice bounded Voronoi polygons tessellation of a point layer

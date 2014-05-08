@@ -3,7 +3,7 @@ Date: 2011-11-09 12:16
 Author: cfarmer
 Email:carson.farmer@gmail.com
 Category: Announcement
-Tags: Announcement, PhD, R, snippet, Update, Helpful tip
+Tags: Announcement, Research, R, Update, Helpful Tip
 Slug: its-about-time
 
 Well its been a long time since my last post, but I *do* have a

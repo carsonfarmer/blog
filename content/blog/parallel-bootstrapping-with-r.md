@@ -2,7 +2,7 @@ Title: Parallel bootstrapping  with R
 Date: 2010-04-21 15:34
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
+Category: Helpful Tip
 Tags: Bootstrapping, Cluster, Networks, R, FOSS, How-To, Networks, Research
 Slug: parallel-bootstrapping-with-r
 

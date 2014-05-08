@@ -2,8 +2,8 @@ Title: Quick guide to setting up a PostGIS database
 Date: 2008-11-28 12:01
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: PostGIS, Quick Guide, Ubuntu, FOSS, GIS, How-To, Linux
+Category: Helpful Tip
+Tags: PostGIS, FOSS, GIS, How-To, Linux
 Slug: quick-guide-to-setting-up-postgis-database
 
 Recently I decided to seriously start using PostGIS to manage my spatial

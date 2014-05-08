@@ -3,7 +3,7 @@ Date: 2013-01-20 21:55
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Citizen Science, Climate Change, Research, RinkWatch
+Tags: Citizen Science, Sustainability, Research
 Slug: science-canadian-style
 
 Recently, a [colleague of mine][] from Wilfred Laurier University has

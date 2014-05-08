@@ -2,7 +2,7 @@ Title: Cross-browser iframe scaling
 Date: 2012-08-06 18:18
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
+Category: Helpful Tip
 Tags: CSS, HTML, iframe, scaling
 Slug: cross-browser-iframe-scaling
 

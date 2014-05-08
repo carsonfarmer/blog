@@ -2,8 +2,8 @@ Title: Understanding spatial reference systems
 Date: 2009-01-12 15:31
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: Coordinates, Spatial data, Spatial reference systems, WGS84, GIS
+Category: Helpful Tip
+Tags: Spatial Data, Spatial Reference Systems, GIS
 Slug: understanding-spatial-reference-systems
 
 For those of you who are still unclear about what exactly a spatial

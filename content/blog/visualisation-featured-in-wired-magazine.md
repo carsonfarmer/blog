@@ -3,7 +3,7 @@ Date: 2012-05-29 00:01
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: FatFonts, Infographic, Visualization, Wired
+Tags: Announcement, Visualization, Media
 Slug: Visualization-featured-in-wired-magazine
 
 A few weeks back the [CGI][] and I were approached by [Miguel Nacenta][]

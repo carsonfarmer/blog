@@ -2,7 +2,7 @@ Title: Python, Matlab, and R
 Date: 2009-08-12 15:29
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
+Category: Helpful Tip
 Tags: Matlab, Python, R, FOSS
 Slug: python-matlab-and-r
 

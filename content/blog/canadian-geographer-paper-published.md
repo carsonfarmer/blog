@@ -2,7 +2,7 @@ Title: Canadian Geographer paper published
 Date: 2009-10-12 12:32
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Publications
+Category: Publication
 Tags: Canadian Geographer, Publication, Research, Announcement
 Slug: canadian-geographer-paper-published
 

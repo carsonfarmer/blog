@@ -2,8 +2,8 @@ Title: Syntax highlighting with PyQt
 Date: 2009-07-02 15:28
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: PyQT, Python, Syntax highlighting, FOSS
+Category: Helpful Tip
+Tags: Python, Coding, FOSS, UX, Helpful Tip
 Slug: syntax-highlighting-with-pyqt
 
 A few months ago I decided to add syntax highlighting capabilities to a

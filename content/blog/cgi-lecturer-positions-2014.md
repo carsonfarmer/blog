@@ -3,7 +3,7 @@ Date: 2013-12-03 11:57
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Update, Announcement, Employement, Spatial Analysis, Research
+Tags: Update, Announcement, Employment, Spatial Analysis, Research
 Slug: cgi-lecturer-positions-2014
 
 Researchers in the [Centre for GeoInformatics (CGI)][cgi] in the School of 

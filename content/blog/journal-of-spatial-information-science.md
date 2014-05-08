@@ -3,7 +3,7 @@ Date: 2009-09-10 11:19
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Journal, Open-access, Peer-review, Spatial information analysis, GIS
+Tags: Announcement, Open Access, Publication, GIS
 Slug: journal-of-spatial-information-science
 
 Check out the [Journal of Spatial Information Science][], a new,

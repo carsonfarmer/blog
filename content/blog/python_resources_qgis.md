@@ -3,7 +3,7 @@ Date: 2014-03-18 18:45
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Python
-Tags: Python, QGIS, FOSS4G, Helpful tip, GIS
+Tags: Python, QGIS, FOSS4G, Helpful Tip, GIS
 Slug: python_resources_qgis
 
 There's a discussion thread on the QGIS LinkedIn Group page about Python tutorials and resources. There were a few good suggestions, so I thought I'd share these with others. It starts with a *very* common question from a GIS (or any software that supports scripting) user:

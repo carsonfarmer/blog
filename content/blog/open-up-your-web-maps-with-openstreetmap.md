@@ -2,8 +2,8 @@ Title: Open up your online maps with OpenStreetMap
 Date: 2009-01-26 23:27
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: Online Maps, Open-access, Open-source, OpenStreetMap, GIS
+Category: Helpful Tip
+Tags: Online Maps, Open Access, Open Source, OSM, GIS
 Slug: open-up-your-web-maps-with-openstreetmap
 
 OpenStreetMap (OSM) is a project designed to create and provide free

@@ -2,8 +2,8 @@ Title: Find and replace multiple files
 Date: 2008-09-08 09:09
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: Helpful tip, Linux, How-To
+Category: Helpful Tip
+Tags: Helpful Tip, Linux, How-To
 Slug: find-and-replace-multiple-files
 
 Recently, I had to do a find and replace over several individual python

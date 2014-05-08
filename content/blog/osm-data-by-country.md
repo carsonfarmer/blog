@@ -2,8 +2,8 @@ Title: OSM data by country
 Date: 2010-05-13 12:05
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
-Tags: Ireland, OpenStreetMap, PostGIS, Road Networks, Helpful tip, Networks, Research
+Category: Helpful Tip
+Tags: OSM, PostGIS, Networks, Helpful Tip, Research
 Slug: osm-data-by-country
 
 For part of a traffic simulation project I am currently working on we

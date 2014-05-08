@@ -3,7 +3,7 @@ Date: 2014-04-03 12:00
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Visualization
-Tags: Python, R, FOSS4G, Helpful tip, GIS
+Tags: Python, R, FOSS4G, Helpful Tip, GIS
 Slug: aspect_ratio_plotting_long_lat
 Status: draft
 

@@ -3,7 +3,7 @@ Date: 2013-10-15 09:40
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Update, Announcement, Web, QGIS, Cartogram
+Tags: Update, Announcement, Internet, QGIS, Cartogram
 Slug: ftools-is-no-more
 
 I recently decided to drop `ftools.ca`, since I hadn't updated it in a very long 

@@ -3,7 +3,7 @@ Date: 2013-02-14 03:38
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Funny
-Tags: Funny, xkcd, Quote, Comic
+Tags: Funny, Quote, Comic
 Slug: humans-as-systems
 
 From [xkcd][] comes another brilliant insight into the human condition:

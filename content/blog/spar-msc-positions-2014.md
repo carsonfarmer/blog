@@ -3,7 +3,7 @@ Date: 2013-11-11 11:57
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Update, Announcement, Employement, Spatial Analysis, Research
+Tags: Update, Announcement, Employment, Spatial Analysis, Research
 Slug: spar-msc-positions-2014
 
 Two MSc positions are available at the [University of Victoria][uvic] in the 

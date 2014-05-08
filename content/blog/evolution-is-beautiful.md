@@ -3,7 +3,7 @@ Date: 2010-10-27 16:33
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Announcement
-Tags: Data, Free, Open-source, OpenStreetMap
+Tags: Data, FOSS, Open Source, OSM
 Slug: evolution-is-beautiful
 
 Check out [this video][] of the evolution of OpenSteetMap in Europe! It

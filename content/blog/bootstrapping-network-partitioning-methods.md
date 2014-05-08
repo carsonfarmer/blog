@@ -3,7 +3,7 @@ Date: 2010-04-17 14:26
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Networks
-Tags: Bootstrapping, Networks, R, Stability, Uncertainty, Validity, How-to
+Tags: Networks, R, Uncertainty, How-to
 Slug: bootstrapping-network-partitioning-methods
 
 My PhD research at the moment focuses on network-based algorithms for

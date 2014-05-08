@@ -2,7 +2,7 @@ Title: Because its fun to map stuff...
 Date: 2012-03-30 17:46
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Helpful tip
+Category: Helpful Tip
 Tags: Data Science, Internet, Mapping, R, FOSS, How-To
 Slug: because-its-fun-to-map-stuff
 
