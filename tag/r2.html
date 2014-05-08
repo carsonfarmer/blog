@@ -125,7 +125,7 @@
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>To create a nice bounded Voronoi polygons tessellation of a point layer
@@ -161,7 +161,7 @@ the input point layer.
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful tip</a> 
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>One project I&#8217;m working on at the moment involves exploring a dynamic
@@ -218,6 +218,87 @@ information&nbsp;analysis.</p>
                     <a class="readmore" href="http://www.carsonfarmer.com/2009/01/r-featured-in-new-york-times/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/01/r-featured-in-new-york-times/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/" rel="bookmark"
+                           title="Permalink to View spatial data attribute tables in R">View spatial data attribute tables in&nbsp;R</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2008-10-14T13:44:00">
+                      <i class="fa fa-calendar"></i>
+                      Tue 14 October 2008
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="fa fa-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+    </p>
+                  </footer>
+                <p>Many <span class="caps">GIS</span> offer the ability to view the attribute table of a vector
+layer. While this is perhaps less obvious in the R environment, it is
+not impossible. The following command allows you to visually inspect,
+and change any data.frame (or other vector, matrix, etc.), including
+Spatial*DataFrames.
+
+                <p class="readmore">
+                    <i class="fa fa-eye"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/">read more</a>
+                </p>
+    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
+                    <h1><a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" rel="bookmark"
+                           title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2008-09-23T12:36:00">
+                      <i class="fa fa-calendar"></i>
+                      Tue 23 September 2008
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="fa fa-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+    </p>
+                  </footer>
+                <p>This is useful for visually exploring R spatial data such as
+<code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
+features, the value at that point will be&nbsp;displayed.</p>
+<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
+y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+y.grid <span class="o">=</span> y<span class="o">@</span>grid
+y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid<span class="p">)</span> 
+image<span class="p">(</span>y<span class="p">)</span>
+identify<span class="p">(</span>x<span class="o">=</span>y.coords<span class="p">,</span> y<span class="o">=</span><span class="kc">NULL</span><span class="p">,</span> n<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p>where <code>x</code> and <code>y</code> refer to coordinates (in this case because <code>y.coords</code>
+contains both <code>x</code> and <code>y</code> coordinates, <code>y</code> can be set to <code>NULL</code>), and <code>n</code> is the
+number of features to&nbsp;identify.</p>
+                <p class="readmore">
+                    <i class="fa fa-eye"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
+                </p>
+    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
