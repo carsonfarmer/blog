@@ -4,7 +4,8 @@ Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Annoucement
 Tags: Annoucement, Coding, Visualization, FOSS4G, Sustainability
-Slug: playing-with-citibike-trip-histories
+Slug: google-summer-of-code-2014
+Status: draft
 
 [![Chord flow diagram with time slider][image]{.right}][viz] 
 
