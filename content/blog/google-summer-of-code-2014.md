@@ -3,7 +3,7 @@ Date: 2014-05-08 11:18
 Author: cfarmer
 Email: carson.farmer@gmail.com
 Category: Annoucement
-Tags: Annoucement, Coding, Visualization, FOSS4G, Sustainability
+Tags: Annoucement, Coding, UX, FOSS4G, Sustainability
 Slug: google-summer-of-code-2014
 
 [![Google Summer of Code 2014 Logo][image]{.left}][gsoc] 
