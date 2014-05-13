@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Carson Farmer &mdash; Articles tagged Climate Change</title>
+    <title>Carson Farmer - cfarmer</title>
     <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
@@ -109,14 +109,14 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2014/05/guest_speaker_may_2014/" rel="bookmark"
-                           title="Permalink to Stephen Flood Guest Speaker">Stephen Flood Guest&nbsp;Speaker</a></h1>
+                    <h1><a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/" rel="bookmark"
+                           title="Permalink to Find and replace multiple files">Find and replace multiple&nbsp;files</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2014-05-13T12:00:00">
+                  <abbr class="published" title="2008-09-08T09:09:00">
                       <i class="fa fa-calendar"></i>
-                      Tue 13 May 2014
+                      Mon 08 September 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
@@ -125,22 +125,35 @@
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/speaker.html">Speaker</a> 
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
-                <p>Please join us <strong>Wednesday, May 21st</strong> from <strong>4:00-6:00 pm</strong> in the Hunter College Geography 
-Conference Room (<strong>Hunter North 1004</strong>) for a talk by guest speaker Stephen Flood, who will be talking about <em>Communicating across disciplines in the climate change sphere</em>.</p>
-<p>If you can&#8217;t make it in person, there will also be a <a href="https://plus.google.com/u/0/events/ccludsocarc92guqs3p8370lr6g">live feed available here</a> (the feed will also be recorded, so you can view it at a later date as&nbsp;well).</p>
-<p><strong>Topic</strong>: This seminar will leverage the work carried out in the Climate Changes Impacts and Implications for New Zealand (<span class="caps">CCII</span>) project to demonstrate some ...</p>
+                <p>Recently, I had to do a find and replace over several individual python
+files.There are plenty of scripts out there which will accomplish this,
+but I was interested in something simple, and preferably a single line
+command. After a lot of Google-ing, I ended up finding <a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487">this post</a>,
+which does a great job of explaining how to do this in linux. The basic
+command&nbsp;is:</p>
+<div class="highlight"><pre>find . -name <span class="s2">&quot;\*.py&quot;</span> -print | xargs sed -i <span class="s1">&#39;s/foo/bar/g&#39;</span>
+</pre></div>
+
+
+<p>where <code>find . -name "*.py"</code> is used to find all python files (recursively) in 
+your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2014/05/guest_speaker_may_2014/">read more</a>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2014/05/guest_speaker_may_2014/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
-            </section><!-- /#content -->
+<p class="paginator">
+            <a class="left-arrow" href="http://www.carsonfarmer.com/author/cfarmer11.html">
+                <i class="fa fa-arrow-circle-left fa-4x"></i>
+            </a>
+    12 / 12
+</p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">
     
