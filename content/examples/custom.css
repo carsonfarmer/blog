@@ -1,0 +1,146 @@
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+/*@import url("font-mfizz-1.2/font-mfizz.css"); http://mfizz.com/oss/font-mfizz/icon-python*/
+
+body {
+    /*font-size: 30px;*/
+    color: black;
+    font-family: Palatino, serif;
+}
+
+h2 i.fa {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.address {
+    margin: 0 !important;
+    font-size: .8em !important;
+    margin-left: 47px !important;
+    line-height: 1em;
+}
+
+.rendered_html table {
+    font-size: 80%;
+}
+
+.text-danger {
+    color: #a94442;
+}
+
+.mono {
+    font-family: "Andale Mono", monospace;
+}
+
+#educator, #scientist, #user, #developer {
+    color: white;
+    text-align: center;
+}
+
+.reveal h1 {
+    color: inherit;
+}
+
+.rendered_html pre, .rendered_html code {
+	background-color: rgb(240, 240, 240);
+}
+
+.reveal pre {
+	width: inherit;
+	padding: 0.4em;
+	margin: 0px;
+	font-family: monospace, sans-serif;
+	font-size: 80%;
+	box-shadow: 1px 1px 1px rgba(220, 220, 220, 0.6);
+}
+
+/*.reveal ul {
+    list-style: none;
+}
+
+.reveal li {
+    list-style: none;
+}*/
+
+.reveal em {
+    margin: 0;
+    font-style: italic;
+}
+
+.quote {
+    padding-bottom: 1em;
+}
+
+.reveal h1 {
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+}
+
+.reveal h2 {
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+}
+
+.reveal i.fa {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
+.reveal img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.orange {
+    color: #FF8C00;
+}
+
+.green {
+    color: #4daf4a;
+}
+
+.blue {
+    color: #377eb8;
+}
+
+.purple {
+    color: #984ea3;
+}
+
+/*.fa-stack {
+    line-height: 1.8em;
+}*/
+
+.stacked-line-height {
+    line-height: 1.1em !important;
+}
+
+.stacked-line-height-2 {
+    line-height: 2.2em !important;
+}
+
+.reveal .slides {
+    text-align: left;
+}
+
+.reveal span {
+    vertical-align: middle;
+}
+
+a, a:hover, a:visited {
+    color: #ff7f00;
+    text-decoration: none;
+}
+
+.reveal a:not(.image), .reveal a:not(.image):hover {
+    color: #ff7f00;
+    text-decoration: none; 
+}
+
+a.roll {
+    color: #ff7f00;
+    text-decoration: none; 
+}
+
+.right {
+    float: right;
+}
