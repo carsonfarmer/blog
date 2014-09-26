@@ -56,19 +56,15 @@ Icon: fa-rocket
 
 #### Refereed Publications
     
-* Stojanovic T. and Farmer C. J. Q., (2013) [The development of world oceans & 
-    coasts and concepts of sustainability](http://dx.doi.org/10.1016/j.marpol.2013.02.005). 
+* Stojanovic T. and Farmer C. J. Q., (2013) [The development of world oceans & coasts and concepts of sustainability](http://dx.doi.org/10.1016/j.marpol.2013.02.005). 
     *Marine Policy.* 42: 157-165.
 * Andrew, M. E., T. A. Nelson, M. A. Wulder, G. W. Hobart, N. C.
-    Coops, and C. J. Q. Farmer (2012) [Ecosystem classifications based
-    on summer and winter conditions](http://link.springer.com/article/10.1007/s10661-012-2773-z).
+    Coops, and C. J. Q. Farmer (2012) [Ecosystem classifications based on summer and winter conditions](http://link.springer.com/article/10.1007/s10661-012-2773-z).
     *Environmental Monitoring and Assessment*. July 2012: 1-23.
 * Comber, A. J., Brunsdon, C. F., and Farmer, C. J. Q. (2012)
-    [Community detection in spatial networks: Inferring land use from a
-    planar graph of land cover objects](http://www.sciencedirect.com/science/article/pii/S0303243412000220).
+    [Community detection in spatial networks: Inferring land use from a planar graph of land cover objects](http://www.sciencedirect.com/science/article/pii/S0303243412000220).
     *International Journal of Applied Earth Observation and Geoinformation*, 18: 274---282.
-* Farmer, C. J. Q. and Fotheringham, A. S. (2011) [Network-based
-    functional regions](http://www.envplan.com/abstract.cgi?id=a44136). 
+* Farmer, C. J. Q. and Fotheringham, A. S. (2011) [Network-based functional regions](http://www.envplan.com/abstract.cgi?id=a44136). 
     *Environment and Planning A*. 43 (11): 2723-2741.
 * Kaiser, C., Walsh, F., Farmer, C., and Pozdnoukhov, A. (2010)
     [User-Centric Time-Distance Representation of Road Networks](http://www.springerlink.com/content/j875303x7l367606/).
@@ -78,18 +74,13 @@ Icon: fa-rocket
     Conference, GIScience 2010*, Zurich, Switzerland: Springer Berlin /
     Heidelberg, pp. 85-99.
 * Farmer, C. J. Q., Nelson, T. A., Wulder, M. A., and Derksen, C.
-    (2010) [Identification of snow cover regimes through spatial and
-    temporal clustering of satellite microwave brightness
-    temperatures](http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V6V-4XBWW8F-2&_user=107385&_coverDate=10/01/2009&_rdoc=10&_fmt=high&_orig=browse&_srch=doc-info(#toc#5824#9999#999999999#99999#FLA#display#Articles)&_cdi=5824&_sort=d&_docanchor=&_ct=17&_acct=C000008338&_version=1&_urlVersion=0&_userid=107385&md5=82d4de26eb83baa51d0087c11b124e15).
+    (2010) [Identification of snow cover regimes through spatial and temporal clustering of satellite microwave brightness temperatures](http://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6V6V-4XBWW8F-2&_user=107385&_coverDate=10/01/2009&_rdoc=10&_fmt=high&_orig=browse&_srch=doc-info(#toc#5824#9999#999999999#99999#FLA#display#Articles)&_cdi=5824&_sort=d&_docanchor=&_ct=17&_acct=C000008338&_version=1&_urlVersion=0&_userid=107385&md5=82d4de26eb83baa51d0087c11b124e15).
     *Remote Sensing of Environment*. 114 (1): 199-210.
 * Farmer, C. J. Q., Nelson, T. A., Wulder, M. A., and Derksen, C.
-    (2009) [Spatial-temporal patterns of snow cover in western
-    Canada](http://www3.interscience.wiley.com/journal/122636489/abstract).
+    (2009) [Spatial-temporal patterns of snow cover in western Canada](http://www3.interscience.wiley.com/journal/122636489/abstract).
     *The Canadian Geographer*, 53 (4): 473-487.
 * Robertson, C., Farmer, C. J. Q., Nelson, T. A., Mackenzie, I. K.,
-    Wulder, M. A., and White, J. A. (2008) [Determination of the
-    compositional change (1999-2006) in the pine forests of British
-    Columbia due to mountain pine beetle infestation.](http://www.springerlink.com/content/an4n1j30m4117tw6/)
+    Wulder, M. A., and White, J. A. (2008) [Determination of the compositional change (1999-2006) in the pine forests of British Columbia due to mountain pine beetle infestation.](http://www.springerlink.com/content/an4n1j30m4117tw6/)
     *Environmental Monitoring and Assessment*, DOI: 10.1007/s10661-008-0607-9.
 * Robertson, C. and Farmer, C. J. (2008) Developing an open-source
     framework for surveillance and analysis of emerging zoonotic
@@ -113,22 +104,30 @@ Icon: fa-rocket
 
 #### Presentations
 
+* Farmer, C. J. Q. (2014) [Streaming GIScience: Data as flows, flows as data](). 
+    Invited Keynote, GEOCROWD - Creating a Geospatial Knowledge World, Summer School II, July 14th-17th, 
+    St Andrews, Scotland, UK.
+* Farmer, C. J. Q. (2014) [Light-weight real-time event detection with Python](http://carsonfarmer.com/presentations/scipy2014/). 
+    Scientific Computing with Python (SciPy 2014), July 6th-12th, Austin, Texas, USA.
+    [[Video](http://www.pyvideo.org/video/2781/light-weight-real-time-event-detection-with-pytho)]
+* Farmer, C. J. Q. (2014) [Geospatial data in Python: Database, desktop, and the web](https://github.com/cfarmer/python_geospatial). 
+    Scientific Computing with Python (SciPy 2014), July 6th-12th, Austin, Texas, USA. 
+    [[Part 1](http://www.pyvideo.org/video/2709/geospatial-data-in-python-database-desktop-and), 
+     [Part 2](http://www.pyvideo.org/video/2710/geospatial-data-in-python-database-desktop-and-0), 
+     [Part 3](http://www.pyvideo.org/video/2761/geospatial-data-in-python-database-desktop-and-1)]
 * Farmer, C. J. Q. and Marcotullio, P. (2014) Agent-based models for spatially-explicit 
     population projections. AAG Annual General Meeting. April 8th-12th, Tampa,
     Florida, USA.
 * Farmer, C. J. Q. (2013) Cities as agents of growth: Agent models for 
     population projections. Meeting on Global Spatial Population Projections: 
     What Can Be Done Now? September 20th, 2013, New York, NY.
-* Carson, C. J. Q. (2012) [Building streaming GIScience from context,
-    theory, and intelligence](http://stko.geog.ucsb.edu/gibda2012/gibda2012_submission_4.pdf).
+* Farmer, C. J. Q. (2012) [Building streaming GIScience from context, theory, and intelligence](http://stko.geog.ucsb.edu/gibda2012/gibda2012_submission_4.pdf).
     7th International Conference, GIScience 2012. September 19th-21st, 
     Columbus, Ohio, USA.
-* Carson, C. J. Q. (2012) The Centre for Geoinformatics at St Andrews:
-    Multi-disciplinary opportunities for collaboration. [Interaction and
-    Visualisation Technologies in the Library](https://sachi.cs.st-andrews.ac.uk/activities/workshops/interaction-and-visualisation-technologies-in-the-library-open-session/).
+* Farmer, C. J. Q. (2012) The Centre for Geoinformatics at St Andrews:
+    Multi-disciplinary opportunities for collaboration. [Interaction and Visualisation Technologies in the Library](https://sachi.cs.st-andrews.ac.uk/activities/workshops/interaction-and-visualisation-technologies-in-the-library-open-session/).
     July 6th 2012, St Andrews, Scotland.
-* Farmer, C. J. Q. (2012) [Exploring spatio-temporal dynamics of
-    networks](http://www.st-andrews.ac.uk/geoinformatics/wp-content/uploads/Exploring-spatio-temporal-dynamics-of-networks.pdf).
+* Farmer, C. J. Q. (2012) [Exploring spatio-temporal dynamics of networks](http://www.st-andrews.ac.uk/geoinformatics/wp-content/uploads/Exploring-spatio-temporal-dynamics-of-networks.pdf).
     EPSRC workshop and launch, Featured speaker. June 27th 2012, St Andrews, Scotland.
 * Farmer, C. J. Q. (2012) Spatial interaction modelling of commuting
     flows within local labour markets. Centre for GeoInformatics Seminar
@@ -139,8 +138,7 @@ Icon: fa-rocket
 * Farmer, C. J. Q (2012) Choice-set generation for spatial interaction
     models. AAG Annual General Meeting. February 22nd-28th, New York,
     N.Y., USA.
-* Farmer, C. J. Q. and Fotheringham, A. S. (2011) [Communities in
-    commuting networks](http://www.carsonfarmer.com/wp-content/uploads/2011/09/farmer_fotheringham_communities_commuting_network.pdf).
+* Farmer, C. J. Q. and Fotheringham, A. S. (2011) [Communities in commuting networks](http://www.carsonfarmer.com/wp-content/uploads/2011/09/farmer_fotheringham_communities_commuting_network.pdf).
     Joint ICA/ISPRS Workshop, Our Complex World:
     Representation, Analysis and Modeling, Agust 10-12th, Simon Fraser
     University, Burnaby, B.C., Canada.
@@ -199,46 +197,49 @@ Icon: fa-rocket
     
 ### <i class="fa fa-lightbulb-o"></i> Teaching
 
-Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Methods
+#### Courses
+
+Introduction to GIScience, Advanced GIS, Spatial Data Analysis, Transportation Geography, Quantitative Methods
 
 #### Student Supervision
 
 |                     |                                       |
-| ------------------  |  ------------------------------------ |
-| Taylor Oshan* | MS Thesis Advisor (Hunter College, CUNY)
-| Kristina Schmidt | MS Thesis Advisor (Hunter College, CUNY)
-| Adele Balders | MS Thesis Advisor (Hunter College, CUNY)
-| Joan Lee | MS Thesis Advisor (Hunter College, CUNY)
-| Kristin Graves | Thesis Co-Advisor (Hunter College, CUNY)
-| Silvia Lorenzo | Thesis Co-Advisor (Hunter College, CUNY)
-| * Completed | 
+| ------------------  |  ------------------------------------ 
+Taylor Oshan\* | MS Thesis Advisor (Hunter College, CUNY)
+Kristina Schmidt | MS Thesis Advisor (Hunter College, CUNY)
+Adele Balders | MS Thesis Advisor (Hunter College, CUNY)
+Joan Lee | MS Thesis Advisor (Hunter College, CUNY)
+Kristin Graves | Thesis Co-Advisor (Hunter College, CUNY)
+Silvia Lorenzo | Thesis Co-Advisor (Hunter College, CUNY)
+
+\* Completed
 
 ### <i class="fa fa-compass"></i> Academic Service
 
 |                     |                                       |
-| ------------------  |  ------------------------------------ |
-| July 2014 | Program Committee Member (2014 International SciPy Conference)
-| 2013 - present | Committee Member (Public Health Certificate, Hunter College)
-| 2013 - present | Editorial Board Member (Spatial Demography)
-| 2012 - present | Reviewer (Journal of Spatial Science)
-| 2012 - present | Reviewer (Computers, Environment and Urban Systems)
-| 2012 - present | Reviewer (International Journal of Geographical Information Science)
+| ------------------  |  ------------------------------------ 
+July 2014 | Program Committee Member (2014 International SciPy Conference)
+2013 - present | Committee Member (Public Health Certificate, Hunter College)
+2013 - present | Editorial Board Member (Spatial Demography)
+2012 - present | Reviewer (Journal of Spatial Science)
+2012 - present | Reviewer (Computers, Environment and Urban Systems)
+2012 - present | Reviewer (International Journal of Geographical Information Science)
 June 2013 | Co-Organizer and Co-Chair/Presenter (GIScience Study Group Special Sessions, CAG AGM)
-| 2011 - present | Member (Regional Studies Association)
-| 2009 -- present | Reviewer (Transactions in GIS)
-| 2008 -- present | Reviewer (Remote Sensing of Environment)
-| 2008 -- 2011 | Member (National University of Ireland, Maynooth Graduate Feedback Council)
-| 2007 -- present | Member (American Association of Geographers)
-| 2007 -- present | Member (Canadian Association of Geographers)
-| 2009 |  Reviewer (FOSS4G 2009 Conference Scientific Committee)
-| 2006 -- 2008 | Organizer (Spatial Analysis Salon, Department of Geography, University of Victoria)
-| 2008 | Session Chair (American Association of Geographers AGM, Boston, USA)
-| 2007 | Organizer (Geography Graduate Student Conference, University of Victoria)
+2011 - present | Member (Regional Studies Association)
+2009 -- present | Reviewer (Transactions in GIS)
+2008 -- present | Reviewer (Remote Sensing of Environment)
+2008 -- 2011 | Member (National University of Ireland, Maynooth Graduate Feedback Council)
+2007 -- present | Member (American Association of Geographers)
+2007 -- present | Member (Canadian Association of Geographers)
+2009 |  Reviewer (FOSS4G 2009 Conference Scientific Committee)
+2006 -- 2008 | Organizer (Spatial Analysis Salon, Department of Geography, University of Victoria)
+2008 | Session Chair (American Association of Geographers AGM, Boston, USA)
+2007 | Organizer (Geography Graduate Student Conference, University of Victoria)
 
 ### <i class="fa fa-bullhorn"></i> Impact & Outreach
 
-* Visualisation work appears in [article on Wired.co.uk](http://www.wired.co.uk/news/archive/2012-05/25/fatfonts)
-* Visualisation featured in [University of St Andrews Press Release](http://www.st-andrews.ac.uk/news/archive/2012/Title,90003,en.html)
+* Visualization work appears in [article on Wired.co.uk](http://www.wired.co.uk/news/archive/2012-05/25/fatfonts)
+* Visualization featured in [University of St Andrews Press Release](http://www.st-andrews.ac.uk/news/archive/2012/Title,90003,en.html)
 * Profile in National University of Ireland, Maynooth
   [09/10 Presidents Report](http://www.nuim.ie/publications/presidents/presidentsreport0910.pdf)
 * Analysis and visualization featured in news (10-12 August 2012):
