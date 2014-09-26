@@ -6,7 +6,9 @@ Category: Announcement
 Tags: Announcement, Climate Change, EnviroCar
 Slug: become_citizen_scientist
 
-<a href="https://www.flickr.com/photos/joiseyshowaa/7454479488" title="World Class Traffic Jam 2 by joiseyshowaa, on Flickr"><img src="https://farm9.staticflickr.com/8162/7454479488_9cf64433d6_s.jpg" width="75" height="75" alt="World Class Traffic Jam 2"></a>
+<a href="https://www.flickr.com/photos/joiseyshowaa/7454479488" title="World Class Traffic Jam 2 by joiseyshowaa, on Flickr">
+	<img src="https://farm9.staticflickr.com/8162/7454479488_9cf64433d6_c.jpg" width="800" height="581" alt="World Class Traffic Jam 2">
+</a>
 
 ## Do you have an Android phone? Do you use a car on a regular basis?
 
