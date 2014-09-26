@@ -164,7 +164,7 @@ directly from the console, though I&#8217;m pretty sure I could have done this
 from R as well. Next, I needed to extract the unique <span class="caps">IP</span> addresses from
 the logs. I found this nice grep one-liner from <a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/">here</a>, which I
 modified to grab all unique <span class="caps">IP</span> addresses that &#8216;<span class="caps">GET</span>&#8217; something from the&nbsp;site:</p>
-<div class="highlight"><pre>grep <span class="s1">&#39;<span class="caps">GET</span>&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
+<div class="highlight"><pre>grep <span class="s1">&#39;GET&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
 </pre></div>
 
 
@@ -191,7 +191,7 @@ packages: <code>RCurl</code>, <code>rjson</code>, and <code>plyr</code>):</p>
 <p>Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&nbsp;working:</p>
 <div class="highlight"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
-library<span class="p">(</span><span class="caps">RDSTK</span><span class="p">)</span>
+library<span class="p">(</span>RDSTK<span class="p">)</span>
 <span class="o">?</span> ip2coordinates
 </pre></div>
 
@@ -222,13 +222,13 @@ from a hexagonal sample of the grid, and then finally d) create a
 <span class="c1"># make the output into a Spatial* object</span>
 coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> <span class="o">~</span>longitude<span class="o">+</span>latitude
 library<span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
-sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc"><span class="caps">NULL</span></span><span class="p">)</span><span class="o">$</span><span class="caps">SG</span>
+sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc">NULL</span><span class="p">)</span><span class="o">$</span>SG
 hex_pts <span class="o">=</span> spsample<span class="p">(</span>sg<span class="p">,</span> type<span class="o">=</span><span class="s">&#39;hexagonal&#39;</span><span class="p">,</span> cellsize<span class="o">=</span>sg<span class="o">@</span>grid<span class="o">@</span>cellsize<span class="p">)</span>
 hex_poly <span class="o">=</span> HexPoints2SpatialPolygons<span class="p">(</span>hex_pts<span class="p">)</span>
-pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc"><span class="caps">TRUE</span></span><span class="p">)</span>
+pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
 pts_poly_count <span class="o">=</span> sapply<span class="p">(</span>pts_poly<span class="p">,</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> nrow<span class="p">(</span>x<span class="p">))</span>
 poly <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>poly<span class="p">,</span> data.frame<span class="p">(</span><span class="s">&#39;count&#39;</span><span class="o">=</span>pts_poly_count<span class="p">),</span> 
-    match.<span class="caps">ID</span><span class="o">=</span><span class="kc"><span class="caps">FALSE</span></span><span class="p">)</span>
+    match.ID<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
 </pre></div>
 
 
