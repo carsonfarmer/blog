@@ -2,8 +2,8 @@ Title: Google Summer of Code 2014
 Date: 2014-05-08 11:18
 Author: cfarmer
 Email: carson.farmer@gmail.com
-Category: Annoucement
-Tags: Annoucement, Coding, UX, FOSS4G, Sustainability
+Category: Announcement
+Tags: Announcement, Coding, UX, FOSS4G, Sustainability
 Slug: google-summer-of-code-2014
 
 [![Google Summer of Code 2014 Logo][image]{.left}][gsoc] 
