@@ -109,6 +109,53 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
+                    <h1><a href="http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/" rel="bookmark"
+                           title="Permalink to Cross-browser iframe scaling">Cross-browser iframe&nbsp;scaling</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                  <abbr class="published" title="2012-08-06T18:18:00">
+                      <i class="fa fa-calendar"></i>
+                      Mon 06 August 2012
+                  </abbr>
+                      <address class="vcard author">
+                          <i class="fa fa-user"></i>
+                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                      </address>
+                  <footer class="post-info">
+    <p class="category">
+        <i class="fa fa-certificate fa-lg"></i>
+        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+    </p>
+                  </footer>
+                <p>This is just a quick post to document an annoyance (and solution) that
+I&#8217;ve recently discovered when trying to scale a webpage embedded in
+another page using an <code>iframe</code>. When trying to come up with a nice way
+to embed <a href="examples/olympic_countries/">this page</a> inside <a href="http://www.st-andrews.ac.uk/geoinformatics/">this page</a>, I found that webkit based
+browsers were not behaving as they should. After a lot of fiddling
+about, I discovered that the following <code>css</code> seems to fix the&nbsp;issues:</p>
+<div class="highlight"><pre><span class="nf">#wrap</span> <span class="p">{</span>  
+    <span class="k">width</span><span class="o">:</span> <span class="m">630px</span><span class="p">;</span>
+    <span class="k">height</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#frame</span> <span class="p">{</span>  
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">zoom</span><span class="o">:</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">ms</span><span class="o">-</span><span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
+    <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">transform</span><span class="o">:</span> <span class="n">scale</span><span class="p">(</span><span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+    <span class="o">-</span><span class="n">moz ...</span></pre></div>
+                <p class="readmore">
+                    <i class="fa fa-eye"></i>
+                    <a class="readmore" href="http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/">read more</a>
+                </p>
+    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/#disqus_thread">comments</a></p>
+                </div><!-- /.entry-content -->
+            </article></li>
+        
+
+            <li><article class="hentry shadow">    
+                <header>
                     <h1><a href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/" rel="bookmark"
                            title="Permalink to Olympic cartogram">Olympic&nbsp;cartogram</a></h1>
                 </header>
@@ -409,52 +456,6 @@ Observation and Geoinformation</em>, 18:&nbsp;274–282</p>
                     <a class="readmore" href="http://www.carsonfarmer.com/2012/04/paper-in-int-journal-applied-earth-observation-geoinformation/">read more</a>
                 </p>
     <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/04/paper-in-int-journal-applied-earth-observation-geoinformation/#disqus_thread">comments</a></p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-
-            <li><article class="hentry shadow">    
-                <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/" rel="bookmark"
-                           title="Permalink to Research dissemination and interactive visuals">Research dissemination and interactive&nbsp;visuals</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                  <abbr class="published" title="2012-04-10T22:12:00">
-                      <i class="fa fa-calendar"></i>
-                      Tue 10 April 2012
-                  </abbr>
-                      <address class="vcard author">
-                          <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
-                      </address>
-                  <footer class="post-info">
-    <p class="category">
-        <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
-    </p>
-                  </footer>
-                <p>One of my goals for this year is to spend more time and effort
-developing effective Visualizations for my various research projects, in
-an effort to make my research more accessible to others. This is one
-thing that I think many academics are particularly bad at: letting
-others know what they are up to, and why it might be something worth
-looking at. In order to avoid this pitfall, I plan to focus on producing
-interactive, web-based visuals suitable for a more general audience <em>in
-addition</em> to more traditional forms of research dissemination such as
-journals and conference papers. It is my hope that by doing this, I will
-be making my research more readily available to those who might actually
-be able to use it, and maybe even create some compelling Visualizations
-in the process. While I&#8217;m not quite ready to start creating full-blown
-interactive websites yet, I thought it might be a good idea to start
-with something small to get the ball rolling; so I put together an
-<a href="/examples/visitors/">upgraded version</a> of my <a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/">previous map</a> of visitors to www.carsonfarmer.com.
-
-                <p class="readmore">
-                    <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/">read more</a>
-                </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
