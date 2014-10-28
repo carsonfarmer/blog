@@ -1,7 +1,7 @@
 Title: History of Social Media in 90 Seconds?
 Date: 2014-10-28 12:33
 Author: cfarmer
-Email: carsonfarmer@gmail.com
+Email: carson.farmer@gmail.com
 Category: Social Media
 Tags: Video, Internet, 
 Slug: history-of-social-media
