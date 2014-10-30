@@ -6,6 +6,8 @@ Category: Announcement
 Tags: Announcement, Speaker, News, Presentation
 Slug: workshop-on-geospatial-computing
 
+[![Geospatial Computing Workshop][image]{.left}][link] 
+
 Hey all, I'll be running a half-day workshop on Geospatial Computing with Python at the upcoming **Interdisciplinary Workshop on Geospatial Computing (IWGC-2014)** on **November 20-21, 2014** at **TheMuseum, Kitchener, Ontario**. Its going to be a really great event, with lots of experts in the field of geospatial computing. It is particularly relevant to students who have an interest in geospatial computing.
 
 Organizers: Colin Robertson (Laurier), Graham Taylor (Guelph), Rob Feick (Waterloo)
@@ -37,3 +39,6 @@ The deadline for poster abstract submissions is **November 8th**.
 Cost: **Totally Free!**
 
 Space is limited for this event. We hope to see you in November!
+
+[image]: {filename}/images/geocomputing.png
+[link]: http://thespatiallab.org/?page_id=6576
