@@ -1,4 +1,4 @@
-Title: History of Social Media in 90 Seconds?
+Title: History of Social Media in 90 Seconds
 Date: 2014-10-28 12:33
 Author: cfarmer
 Email: carson.farmer@gmail.com
