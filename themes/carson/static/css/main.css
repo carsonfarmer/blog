@@ -18,23 +18,25 @@
 
 /***** Global *****/
 /* Body */
-/*body {*/
+body {
 /*    background: #000000;*/
 /*    color: #36364d;*/
     /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
-    /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
-    /*background-attachment:fixed;*/
+    background: rgba(251,251,251,1) url(../images/bg/robots.png) no-repeat;
+    background-size: 80% auto;
+    background-attachment:fixed;
+
     /*font-size: 87.5%; /* Base font size: 14px */
 /*    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";*/
 /*    line-height: 1.429;*/
 /*    margin: 0;*/
 /*    padding: 0; */
 /*    text-align: left;*/
-/*}*/
+}
 
 /* Headings */
 /*h1 {font-size: 2em }*/
-/*h2 {font-size: 1.571em} */
+/*h2 {font-size: 1.571e autom} */
 /*h3 {font-size: 1.429em} */
 /*h4 {font-size: 1.286em} */
 /*h5 {font-size: 1.143em}  */
