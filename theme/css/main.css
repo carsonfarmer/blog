@@ -24,6 +24,7 @@ body {
     /*background: #d1d1d1 url(../images/side-bg.png) no-repeat;*/
     background: rgba(251,251,251,1) url(../images/bg/robots.png) no-repeat;
     background-size: 80% auto;
+    background-position:left bottom;
     background-attachment:fixed;
 
     /*font-size: 87.5%; /* Base font size: 14px */
