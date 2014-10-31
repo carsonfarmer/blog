@@ -886,6 +886,7 @@ article header .published {
 
 .paginator {
     text-align: center;
+    color: #ffffff;
 }
 
 .paginator i {
@@ -894,7 +895,7 @@ article header .published {
 
 .paginator a, .paginator a:link, .paginator a:visited {
     text-decoration: none;
-    color: #36364d;
+    color: #ffffff;
 }
 .paginator a:hover, .paginator a:active {
     color: #e057b8;
