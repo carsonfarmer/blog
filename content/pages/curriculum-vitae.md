@@ -58,6 +58,7 @@ Icon: fa-rocket
     
 * Stojanovic T. and Farmer C. J. Q., (2013) [The development of world oceans & coasts and concepts of sustainability](http://dx.doi.org/10.1016/j.marpol.2013.02.005). 
     *Marine Policy.* 42: 157-165.
+* Farmer, C. J. Q. and Pozdnoukhov, A. (2012) [Building streaming GIScience from context, theory, and intelligence](http://stko.geog.ucsb.edu/gibda2012/gibda2012_submission_4.pdf), *Proceedings of the Workshop on GIScience in the Big Data Age*. Columbus, Ohio.
 * Andrew, M. E., T. A. Nelson, M. A. Wulder, G. W. Hobart, N. C.
     Coops, and C. J. Q. Farmer (2012) [Ecosystem classifications based on summer and winter conditions](http://link.springer.com/article/10.1007/s10661-012-2773-z).
     *Environmental Monitoring and Assessment*. July 2012: 1-23.
@@ -104,6 +105,9 @@ Icon: fa-rocket
 
 #### Presentations
 
+* Farmer, C. J. Q. (2014) Geospatial data in Python: Database, desktop, and the web.
+    Invited Keynote, Interdisciplinary Workshop on Geospatial Computing, Kitchener,
+    Ontario, Canada. [[Video](http://youtu.be/rE9m3W3i38k)]
 * Farmer, C. J. Q. (2014) [Streaming GIScience: Data as flows, flows as data](). 
     Invited Keynote, GEOCROWD - Creating a Geospatial Knowledge World, Summer School II, July 14th-17th, 
     St Andrews, Scotland, UK.
@@ -121,7 +125,8 @@ Icon: fa-rocket
 * Farmer, C. J. Q. (2013) Cities as agents of growth: Agent models for 
     population projections. Meeting on Global Spatial Population Projections: 
     What Can Be Done Now? September 20th, 2013, New York, NY.
-* Farmer, C. J. Q. (2012) [Building streaming GIScience from context, theory, and intelligence](http://stko.geog.ucsb.edu/gibda2012/gibda2012_submission_4.pdf).
+* Farmer, C. J. Q. (2012) Building streaming GIScience from context, theory, and intelligence.
+    Workshop on GIScience in the Big Data Age, GIScience 2012, Columbus, Ohio.
     7th International Conference, GIScience 2012. September 19th-21st, 
     Columbus, Ohio, USA.
 * Farmer, C. J. Q. (2012) The Centre for Geoinformatics at St Andrews:
