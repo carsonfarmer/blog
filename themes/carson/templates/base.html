@@ -16,7 +16,11 @@
     {% endif %}
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
     <script src="{{ SITEURL }}/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="{{ SITEURL }}/libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="{{ SITEURL }}/libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="{{ SITEURL }}/libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
+
 
 <body id="index" class="home">
 <!-- <img id="bg" src="{{ SITEURL }}/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
@@ -77,12 +81,14 @@
             </li>
           {% endif %}
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="{{ SITEURL }}/search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
@@ -103,8 +109,7 @@
                     <li><i class="fa fa-certificate fa-fw"></i><a href="{{ SITEURL }}/categories.html"> Categories</a></li>
                     <li><i class="fa fa-tags fa-fw"></i><a href="{{ SITEURL }}/tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
                 {% for name, link, icon in SOCIAL %}
                   <a href="{{ link }}" data-toggle="tooltip" title="" data-original-title="{{ name }}" data-placement="bottom">

@@ -1,16 +1,20 @@
      $(document).ready(function() {
     
-        $("#top-query").keydown(function(event) {
-            if (event.keyCode == 13) {
-                event.preventDefault();
-                site_search();
-                return false;
-            }
-        });
-        $("#top-btn").click(function(event) {
-            event.preventDefault();
-            site_search();
-            return false;
+        // $("#top-query").keydown(function(event) {
+        //     if (event.keyCode == 13) {
+        //         event.preventDefault();
+        //         site_search();
+        //         return false;
+        //     }
+        // });
+        // $("#top-btn").click(function(event) {
+        //     event.preventDefault();
+        //     site_search();
+        //     return false;
+        // });
+        $('#tipue_search_input').tipuesearch({
+            'mode': 'json',
+            'contentLocation': '/tipuesearch_content.json'
         });
     });
     

@@ -6,9 +6,9 @@ Icon: fa-info-circle
 
 [![carson_farmer_border][image]{.right .contact}][link]
 
-My research interests fall under the general banner of "complexity in urban systems". I am particularly interested in movements and flows of individuals, information, and commodities within urban environments, and the development and implementation of novel spatial analysis methods and software aimed at characterizing these flows.
+My research tends to fall under the general banner of <b>computational GIScience</b> and encompasses work on networks, transportation, big data, snow/water processes, and geospatial algorithms. Beginning Fall 2015, I will be Assistant Professor in the Geography Department of the University of Colorado at Boulder where I will focus on spatial-temporal analysis and data-intensive modeling of dynamic geographical processes. I am a strong advocate for open source software and open data, and I enjoy cycling, snowboarding, and collecting robots.
 
-If you'd like to get in touch, please [<i class="fa fa-envelope"></i> contact me][link].
+If you'd like to get in touch, please [contact me][link].
 
 [image]: {filename}/images/carson_circle_300.png
 [link]: {filename}/pages/contact.md
@@ -16,8 +16,8 @@ If you'd like to get in touch, please [<i class="fa fa-envelope"></i> contact me
 <script  type='text/javascript'>
 $(document).ready(function(){
     $(".contact").hover(
-        function() {$(this).attr("src","http://www.carsonfarmer.com/images/carson_circle_300_contact.png");},
-        function() {$(this).attr("src","http://www.carsonfarmer.com/images/carson_circle_300.png");
+        function() {$(this).attr("src","../images/carson_circle_300_contact.png");},
+        function() {$(this).attr("src","../images/carson_circle_300.png");
     });
 });
 </script>

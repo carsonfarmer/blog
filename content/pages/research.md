@@ -8,56 +8,29 @@ Icon: fa-globe
 
 [![Background][image0]{.right}][link0]
 
-I completed a BSc (honours with distinction) in Geography at the
-University of Victoria, in British Columbia, Canada in 2006. There, my
-studies focused on GIS, spatial statistics, and housing prices, and led
-directly to a fully funded MSc the following September. During my MSc
-studies, I was awarded the Derrick Sewell Graduate Research Scholarship
-in both 2006 and 2007, as well as two paper presentation awards at
-national conferences in Ottawa and Saskatoon. My MSc research focused on
-spatial-temporal aspects of snow cover and water content, and
-spatial-temporal analysis methods in general. Prior to completing my MSc
-dissertation in the summer of 2008, I was successful in obtaining PhD
-fellowships from the Irish Social Sciences Platform (ISSP) and the
-Social Sciences and Humanities Research Council (SSHRC) of Canada. I
-completed my PhD in September 2011, under the supervision of Prof. A.
-Stewart Fotheringham. My dissertation was entitled "Commuting flows &
-local labour markets: Spatial interaction modelling of travel-to-work".
+Beginning Fall 2015, I will be Assistant Professor in the Geography Department of the University of Colorado at Boulder where I will focus on spatial-temporal analysis and data-intensive modeling of dynamic geographical processes. Prior to joining the faculty at Colorado I was Associate Director of the Center for Advanced Research of Spatial Information (CARSI) and Assistant Professor of GIScience at Hunter College of the City University of New York (CUNY). In 2012, I held a postdoctoral position at the University of St Andrews in Scotland, and in 2011 I completed a PhD funded by the Irish Social Sciences Platform (ISSP) and the Social Sciences and Humanities Research Council (SSHRC) of Canada at the National Center for Geocomputation (NCG) at the University of Maynooth (formerly National University of Ireland Maynooth) in Ireland. Both my undergraduate and Masters were completed in the Geography Department at the University of Victoria, in B.C. Canada (my hometown!). 
 
 ### <i class="fa fa-bar-chart-o"></i> Current & Future Research
 
 [![Current & Future Research][image1]{.left}][link1]
 
 My current and future research interests are ultimately concerned with
-modelling and understanding spatial processes. While much of the current
-work on modelling urban dynamics is concerned with networks and abstract
-representations of space, I also see the city as a sociological system
-made up of individuals who often behave in unexpected or inventive
-ways. In this vein, I am as much interested in *theories* of
-interactions, cities, and human dynamics as I am in the *methods* and
+modelling and understanding spatial processes. My work tends to fall under the general banner of 'computational GIScience' and encompasses work on networks, transportation, big-data, snow/water processes, and geospatial algorithms. I am as much interested in *theories* of
+interactions of human and environmental processes as I am in the *methods* and
 *models* designed to characterize them. As part of my long-term research
 goals, I continue to incorporate theories of spatial interaction,
-urban geography, and GIScience into my work on complex urban systems and
-dynamics. Examples of the types of questions I am interested in
-answering include "how does the spatial structure and temporal
-dynamics of cities and regions contribute to the spatial-temporal
-patterns of various urban processes, such as housing prices and
-development, labour markets, and human mobility?" and "how does our
-understanding of aggregate movements within urban environments help
-us to understand the behaviour of individuals, and how can we
-effectively integrate human and urban processes at multiple scales?".
+time-geography, and GIScience into my work on complex systems and
+dynamics.
 
 My primary interest is in flow and movement data associated with
-underlying networks within urban environments, be they infrastructural,
-social, spatial, or a combination of all three. Spatial models are my
+underlying networks within human and natural environments. Spatial models are my
 primary means of quantitatively characterizing urban processes, and are
 used to explore data at a range of spatial and temporal resolutions. I
 also have a keen interest in developing new approaches to solving
 geographical problems by fostering expanded use of ideas and methods
-from outside geography and GIScience. In particular, I aim to promote
-the use of spatial analysis methods and data-driven research to help
-explore the complex hierarchies and interactions within urban
-environments.
+from outside geography and GIScience (such as data-streams and computer graphics).
+Additionally, I aim to promote the use of spatial analysis methods in data-intensive research to help
+explore the complex hierarchies and interactions within, across, and between human and natural systems.
 
 ###  <i class="fa fa-truck"></i> PhD Research
 *Commuting flows & local labour markets: Spatial interaction modeling of travel-to-work*

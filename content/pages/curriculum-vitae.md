@@ -4,18 +4,21 @@ Author: cfarmer
 Slug: curriculum-vitae
 Icon: fa-rocket
 
-### <i class="fa fa-briefcase"></i> Current Positions
+### <i class="fa fa-briefcase"></i> Academic Positions
 
 |                     |                      |
 | ------------------  |  -------------------
-| 2013 -- present | **Assistant Professor of GIScience**
+| 2015 -- present | **Assistant Professor**
+|| Department of Geography
+|| University of Colorado at Boulder
+| 2014 -- 2015 | **Assistant Professor**
+|| Earth and Environmental Sciences, The Graduate Center
+|| City University of New York
+| 2013 -- 2015 | **Assistant Professor of GIScience**
 || Department of Geography, Hunter College
 || City University of New York
-| 2013 -- present | **Associate Director**
+| 2013 -- 2015 | **Associate Director**
 || Center for Advanced Research of Spatial Information (CARSI)
-|| City University of New York
-| 2014 -- present | **Assistant Professor**
-|| Earth and Environmental Sciences, The Graduate Center
 || City University of New York
 
 ### <i class="fa fa-book"></i> Education

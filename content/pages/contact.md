@@ -6,31 +6,20 @@ Slug: contact
 Status: hidden
 Icon: fa-envelope
 
-<iframe width="425" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-    src="http://www.openstreetmap.org/export/embed.html?bbox=-74,40.7463,-73.9274,40.7905&amp;layer=mapnik&amp;marker=40.76870,-73.96504" 
+<iframe width="425" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+    src="http://www.openstreetmap.org/export/embed.html?bbox=-105.3167,39.9892,-105.2316,40.0271&amp;layer=mapnik&amp;marker=40.00815750046493,-105.27417182922363"
     style="float: right;">
 </iframe>
 
 Dr. Carson J. Q. Farmer  
-Associate Director, [CARSI Lab][carsi]  
-Assistant Professor of GIScience  
-[Department Geography][geo]  
-[Hunter College][hunter] - [CUNY][cuny]  
-695 Park Avenue, New York  
-New York, 10065  
+Assistant Professor, [Department Geography][geo]  
+[University of Colorado at Boulder][uni]  
+[Guggenheim 110, 260 UCB][loc]  
+Boulder, CO, 80309-0260, USA  
 [about.me/carson.farmer][about_me]
 
-<br/>
-<br/>
 
-<p style="text-align: right;">
-<small>
-    <a href="http://www.openstreetmap.org/?lat=40.7684&amp;lon=-73.9637&amp;zoom=13&amp;layers=M&amp;mlat=40.76870&amp;mlon=-73.96504">View Larger Map</a>
-</small>
-</p>
-
-[carsi]: http://www.carsilab.org/
 [about_me]: http://about.me/carson.farmer
-[geo]: http://www.geo.hunter.cuny.edu/
-[hunter]: http://www.hunter.cuny.edu/
-[cuny]: http://www.cuny.edu/
+[geo]: http://geography.colorado.edu
+[uni]: http://www.colorado.edu
+[loc]: http://www.openstreetmap.org/?mlat=40.0082&amp;mlon=-105.2742#map=18/40.0082/-105.2742

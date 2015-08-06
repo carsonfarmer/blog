@@ -15,6 +15,7 @@
 @import url("../../libs/bootstrap-3.1.1/dist/css/bootstrap.min.css");
 @import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url("../../libs/tipuesearch/tipuesearch.css");
 
 /***** Global *****/
 /* Body */
@@ -337,14 +338,19 @@ q:before {
 
 
 /* Tables */
-/*table {margin: .5em auto 1.5em auto; width: 98%;}*/
+/*table {
+    margin: .5em auto 1.5em auto;
+    width: 98%;
+}*/
 
 /* Thead */
-/*thead th {padding: .5em .4em; text-align: left;}
-thead td {}
-*/
+thead th {padding: .5em .4em; text-align: left;}
+/*thead td {}*/
+
 /* Tbody */
-/*tbody td {padding: .5em .4em;}*/
+tbody td {
+    padding: 0em .4em;
+}
 /*tbody th {}*/
 
 /*tbody .alt td {}
@@ -763,7 +769,7 @@ input[type="color"]:focus,
   	overflow: hidden;
   	padding: 20px;
   	text-align: left;
-  	width: 760px;
+  	width: 800px;
   	border-radius: 10px;
 	  -moz-border-radius: 10px;
 	  -webkit-border-radius: 10px;
