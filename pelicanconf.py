@@ -26,7 +26,7 @@ IGNORE_FILES = ['.#*', '*~']
 
 MARKUP = ("md", "ipynb")
 
-PLUGIN_PATHS = ["pelican-plugins",]
+PLUGIN_PATHS = ["pelican-plugins"]
 PLUGINS = ['gravatar', 'latex', 'summary', 'liquid_tags.notebook',
            'liquid_tags.youtube', 'liquid_tags.vimeo', 'liquid_tags.img',
            'liquid_tags.gram', 'liquid_tags.include_code', 'tipue_search']
