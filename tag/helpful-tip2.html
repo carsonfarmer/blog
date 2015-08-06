@@ -174,8 +174,7 @@ the meeting <a href="http://qgis.org/en/developer-meeting.html">(hackfest)</a> o
 a few words</a> about our progress as well. I&#8217;m not going to repeat what
 others have said, but I <em>would</em> like to give a quick update on the work
 that I was doing at the meeting, and show off the new geoprocessing
-features now available to all <span class="caps">QGIS</span> developers (Python and C++).
-
+features now available to all <span class="caps">QGIS</span> developers (Python ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/11/qgis-developer-meeting-update/">read more</a>
@@ -213,7 +212,11 @@ common, is that they can each be represented as a series of vertices (or
 nodes) and edges (or links). This <a href="http://toreopsahl.com/2008/11/28/network-weighted-network/">blog entry</a> presents a nice
 description of networks, highlighting the differences between various
 network types (directed, undirected, weighted, unweighted, etc.).
-
+<!--more--></p>
+<p>According to <a href="http://arxiv.org/abs/0709.4500">this paper</a>, many
+networks are found to display &#8220;community structure&#8221;, which basically
+refers to groupings of vertices where <em>within</em>-group edge connections
+are more dense than <em>between ...</em></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/10/community-structure-in-directed-weighted-networks/">read more</a>
@@ -250,7 +253,12 @@ based application, the obvious choice for implementing syntax
 highlighting was to use Qt&#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
-
+<!--more--></p>
+<p>The Python file used in this example is <a href="../uploads/highlighter.py">available here</a>.
+To implement syntax highlighting, we need to subclass
+QSyntaxHighlighter, reimplement the <code>highlightBlock</code> function, and
+specify several highlighting rules. Generally, a rule consists of a
+QRegExp pattern and a ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/07/syntax-highlighting-with-pyqt/">read more</a>

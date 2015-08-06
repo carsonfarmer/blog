@@ -135,7 +135,14 @@ in R, using the very nice <a href="http://cran.r-project.org/web/packages/foreac
 Computing</a>. To show just how nice this package is, below is a minimal
 example of bootstrapping a network partitioning algorithm which takes
 advantage of a multicore processor:
-
+<!--more--></p>
+<div class="highlight"><pre><span class="kn">library</span><span class="p">(</span>doMC<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>foreach<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>igraph<span class="p">)</span>
+<span class="c1"># Jaccard coeficcient function (taken from package fpc)</span>
+clujaccard <span class="o">=</span> <span class="kr">function</span> <span class="p">(</span>c1<span class="p">,</span> c2<span class="p">,</span> zerobyzero <span class="o">=</span> <span class="kc">NA</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">if</span> <span class="p">(</span><span class="kp">sum</span><span class="p">(</span>c1<span class="p">)</span> <span class="o">+</span> <span class="kp">sum</span><span class="p">(</span>c2<span class="p">)</span> <span class="o">-</span> <span class="kp">sum</span><span class="p">(</span>c1 <span class="o">&amp;</span> c2<span class="p">)</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span>
+        out ...</pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2010/04/parallel-bootstrapping-with-r/">read more</a>

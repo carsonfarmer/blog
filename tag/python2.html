@@ -140,25 +140,7 @@ added a few&nbsp;more]:</p>
 <li><a href="http://statsmodels.sourceforge.net/">statsmodels</a> - For models and stats in Python (otherwise I&#8217;d use&nbsp;R)</li>
 <li><a href="http://www.numpy.org/">numpy</a> - For pretty much anything that involves&nbsp;arrays</li>
 <li><a href="https://code.google.com/p/geopy/">geopy</a> - For geolocating and things like&nbsp;that</li>
-<li><a href="http://ipython.org/">ipython</a> - For a wondering interactive environment in which to&nbsp;play</li>
-<li><a href="https://code.google.com/p/freetype-py/">freetype-py</a> - For converting font glyphs to polygons (odd I&nbsp;know&#8230;)</li>
-<li><a href="https://pypi.python.org/pypi/GDAL/">ogr/gdal</a> - For reading, writing, and transforming geospatial data&nbsp;formats</li>
-<li><a href="http://www.qgis.org/pyqgis-cookbook/">pyqgis</a> - For anything and everything <span class="caps">GIS</span></li>
-<li><a href="http://toblerity.github.io/fiona/">fiona</a> - For making it <em>easy</em> to read/write geospatial data&nbsp;formats</li>
-<li><a href="http://matplotlib.org/">matplotlib</a> - For all my plotting&nbsp;needs</li>
-<li><a href="http://networkx.github.io/">networkx</a> - For working with networks&nbsp;(duh!)</li>
-<li><a href="http://docs.getpelican.com/en/3.2/">pelican</a> - For blogging about all this&nbsp;stuff&#8230;</li>
-<li><a href="http://pythonhosted.org/PySAL/">pysal</a> - For all your spatial econometrics needs (and&nbsp;more)</li>
-<li><a href="https://pypi.python.org/pypi/descartes">descartes</a> - For plotting geometries in&nbsp;matplotlib</li>
-</ul>
-<p>Based on Twitter and some of the comments below, I should also&nbsp;add:</p>
-<ul>
-<li><a href="http://geographiclib.sourceforge.net/">geographiclib</a> - For solving geodesic&nbsp;problems</li>
-<li><a href="https://code.google.com/p/pyshp/">pyshp</a> - For reading and writing shapefiles (in <em>pure</em>&nbsp;Python)</li>
-<li><a href="https://code.google.com/p/pyproj/">pyproj</a> - For conversions between&nbsp;projections</li>
-</ul>
-<p>Any others I&#8217;ve&nbsp;missed?</p>
-
+<li><a href="http://ipython.org/">ipython</a> - For a wondering interactive environment in which to ...</li></ul>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2013/07/essential-python-geo-libraries/">read more</a>
@@ -196,10 +178,7 @@ having trouble installing <code>manageR</code> (and the required <code>rpy2</cod
 system to get things working at all! I have had some individuals provide
 possible fixes and suggestions on how to get things working properly on
 various platforms, and I&#8217;m going to use this post to amalgamate them,
-and hopefully create a one stop post for all your <code>rpy2</code> and <code>manageR</code>
-needs. I&#8217;m also hoping that people will post potential fixes in the
-comments to help others with more specific problems?
-
+and hopefully create a one stop post for all your <code>rpy2</code> and ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2012/10/manager-and-rpy2-installation-problems/">read more</a>
@@ -238,13 +217,7 @@ version of the vector layer to disk with the additional fields added.
 There have been several requests to allow some tools to add/update
 attributes directly on the input layers, so I went ahead and created a
 script to test this functionality out. I&#8217;ve 
-<a href="|filname|/uploads/add_geometry_information.py">provided a copy here</a> 
-for anyone who would like to test it out before I add it to <span class="caps">QGIS</span>
-permanently. Basically, the script will replace/update three of the
-Vector menu tools, including <code>Analysis \&gt; Sum line lengths</code>, <code>Analysis
-\&gt; Points in polygon</code>, and <code>Geometry tools \&gt; Add/Export geometry
-info</code>.
-
+<a href="|filname|/uploads/add_geometry_information.py">provided a ...</a></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2011/03/adding-direct-editing-of-geometry-fields-in-qgis/">read more</a>
@@ -360,7 +333,10 @@ results that I&#8217;m expecting. As a result, I am constantly trying out
 different classification schemes to help me generalize spatial patterns,
 highlight outliers and/or patterns, or just plain <a href="http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm">mess around with my
 data</a>.
-
+<!--more--></p>
+<p>Unfortunately, <a href="http://www.qgis.org/"><span class="caps">QGIS</span></a> (which has been my primary <span class="caps">GIS</span> for several years
+now) only <strike>has</strike> had &#8216;Equal Interval&#8217; and &#8216;Quantiles&#8217; classification algorithms
+implemented. While these classification schemes are ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2010/09/playing-around-with-classification-algorithms-python-and-qgis/">read more</a>
@@ -397,7 +373,10 @@ better, faster and more fun! I had come across a couple of posts
 since it has recently been added to <a href="http://trac.osgeo.org/geos/"><span class="caps">GEOS</span></a> (which <span class="caps">QGIS</span> uses for its
 geometry operations), I thought I&#8217;d give a much needed boost to the
 fTools union tool and related functions.
-
+<!--more--></p>
+<p>This required a bit of mucking about with <a href="http://doc.qgis.org/stable/classQgsGeometry.html">QgsGeometry</a>, but in the
+end it really didn&#8217;t take too much hacking to get things working
+properly. I was able to add a ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2010/04/speeding-up-geoprocessing-in-qgis/">read more</a>
@@ -435,8 +414,7 @@ the meeting <a href="http://qgis.org/en/developer-meeting.html">(hackfest)</a> o
 a few words</a> about our progress as well. I&#8217;m not going to repeat what
 others have said, but I <em>would</em> like to give a quick update on the work
 that I was doing at the meeting, and show off the new geoprocessing
-features now available to all <span class="caps">QGIS</span> developers (Python and C++).
-
+features now available to all <span class="caps">QGIS</span> developers (Python ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/11/qgis-developer-meeting-update/">read more</a>

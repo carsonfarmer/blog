@@ -170,7 +170,12 @@ based application, the obvious choice for implementing syntax
 highlighting was to use Qt&#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
-
+<!--more--></p>
+<p>The Python file used in this example is <a href="../uploads/highlighter.py">available here</a>.
+To implement syntax highlighting, we need to subclass
+QSyntaxHighlighter, reimplement the <code>highlightBlock</code> function, and
+specify several highlighting rules. Generally, a rule consists of a
+QRegExp pattern and a ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/07/syntax-highlighting-with-pyqt/">read more</a>

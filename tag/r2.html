@@ -133,7 +133,20 @@ in <code>R</code>, we need two libraries: <code>sp</code> and <code>deldir</code
 takes a <code>SpatialPointsDataFrame</code> as input, and returns a
 <code>SpatialPolygonsDataFrame</code> that represents the Voronoi tessellation of
 the input point layer.
-
+<!--more--></p>
+<div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
+    <span class="kn">require</span><span class="p">(</span>deldir<span class="p">)</span>
+    crds <span class="o">=</span> layer<span class="o">@</span>coords
+    z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
+    w <span class="o">=</span> tile.list<span class="p">(</span>z<span class="p">)</span>
+    polys <span class="o">=</span> <span class="kt">vector</span><span class="p">(</span>mode<span class="o">=</span><span class="s">&#39;list&#39;</span><span class="p">,</span> length<span class="o">=</span><span class="kp">length</span><span class="p">(</span>w<span class="p">))</span>
+    <span class="kn">require</span><span class="p">(</span>sp<span class="p">)</span>
+    <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="kp">seq</span><span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
+        pcrds <span class="o">=</span> <span class="kp">cbind</span><span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
+        pcrds <span class="o">=</span> <span class="kp">rbind</span><span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
+        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span><span class="kt">list</span><span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span><span class="kp">as.character</span><span class="p">(</span>i<span class="p">))</span>
+    <span class="p">}</span>
+    SP ...</pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/09/voronoi-polygons-with-r/">read more</a>
@@ -172,9 +185,7 @@ small scale simulated road network, and most of the original code
 Pozdnoukhov</a>), was done in Matlab. Since this work is eventually going
 to have to run on relatively large datasets, and probably behind the
 scenes on a server somewhere, we decided that Python was the way to go.
-The goal therefore was to reproduce the Matlab code using only Python
-libraries, and the fewer additional libraries required, the better.
-
+The goal therefore was to reproduce the Matlab ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/08/python-matlab-and-r/">read more</a>
@@ -248,7 +259,24 @@ layer. While this is perhaps less obvious in the R environment, it is
 not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
+<!--more--></p>
+<div class="highlight"><pre><span class="kp">invisible</span><span class="p">(</span>edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">))</span>
+</pre></div>
 
+
+<p>Note: <code>invisible</code> allows you to close the viewer without filling the
+console with the attributes of the table. You could also&nbsp;use:</p>
+<div class="highlight"><pre>new_data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
+</pre></div>
+
+
+<p>to assign changes made to the data to a new variable, or&nbsp;use:</p>
+<div class="highlight"><pre>spatial_layer<span class="o">@</span>data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
+</pre></div>
+
+
+<p>or,</p>
+<div class="highlight"><pre>fix<span class="p">(</span>spatial_layer ...</pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2008/10/view-spatial-data-attribute-tables-in-r/">read more</a>
