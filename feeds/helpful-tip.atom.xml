@@ -817,12 +817,12 @@ First, get all the basic&amp;nbsp;plugins:&lt;/p&gt;
 &lt;p&gt;and enable them in gedit by going to &lt;code&gt;Edit &amp;gt; Preferences &amp;gt; Plugins&lt;/code&gt;, and
 checking the ones that you&amp;nbsp;want.&lt;/p&gt;
 &lt;p&gt;Second, make sure you have all the required dependencies for the actual
-$\LaTeX$ plugin:
+&lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; plugin:
 1. The plugin is written in Python 2.4 and relies on PyGTK 2.4: &lt;code&gt;sudo apt-get install python-gtk2&lt;/code&gt;
 2. Ensure that you have rubber installed. It is used for automated document 
 compiling: &lt;code&gt;sudo apt-get install rubber&lt;/code&gt;
 3. To use the &lt;span class="caps"&gt;DVI&lt;/span&gt; inverse search you need the Python bindings for D-&lt;span class="caps"&gt;BUS&lt;/span&gt;: &lt;code&gt;sudo apt-get install python-dbus&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Third, download the latest version of the $\LaTeX$ plugin from &lt;a href="http://live.gnome.org/Gedit/LaTeXPlugin"&gt;here&lt;/a&gt;,
+&lt;p&gt;Third, download the latest version of the &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; plugin from &lt;a href="http://live.gnome.org/Gedit/LaTeXPlugin"&gt;here&lt;/a&gt;,
 and extract and copy the contained folder and a file to
 &lt;code&gt;~/.gnome2/gedit/plugins&lt;/code&gt;. You may have to create &lt;code&gt;gedit/plugins&lt;/code&gt; if you 
 haven&amp;#8217;t installed any other plugins&amp;nbsp;yet.&lt;/p&gt;
@@ -831,11 +831,67 @@ dialog as we did with the other&amp;nbsp;plugins.&lt;/p&gt;
 &lt;p&gt;Now you have an editor with all sorts of handy functions, including
 inline spell check, code completion, tag, symbol, and character
 insertion, a file and document browser, and an embedded terminal, as
-well as tools to automatically create new $\LaTeX$ files, insert graphics,
+well as tools to automatically create new &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; files, insert graphics,
 tables, and matrices, and a fantastic dialog for automatically inserting
 BibTeX entries. Also, if you&amp;#8217;re an R user who creates reports etc. you
 can use Sweave directly from gedit to embed R code in your LaTeX&amp;nbsp;documents.&lt;/p&gt;
-&lt;p&gt;All this in a lightweight text editor,&amp;nbsp;nice!&lt;/p&gt;</summary><category term="LaTeX"></category><category term="FOSS"></category><category term="How-To"></category><category term="Linux"></category></entry><entry><title>Quick guide to setting up a PostGIS database</title><link href="http://carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/" rel="alternate"></link><updated>2008-11-28T12:01:00-05:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2008-11-28:2008/11/quick-guide-to-setting-up-postgis-database/</id><summary type="html">&lt;p&gt;Recently I decided to seriously start using PostGIS to manage my spatial
+&lt;p&gt;All this in a lightweight text editor,&amp;nbsp;nice!&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="LaTeX"></category><category term="FOSS"></category><category term="How-To"></category><category term="Linux"></category></entry><entry><title>Quick guide to setting up a PostGIS database</title><link href="http://carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/" rel="alternate"></link><updated>2008-11-28T12:01:00-05:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2008-11-28:2008/11/quick-guide-to-setting-up-postgis-database/</id><summary type="html">&lt;p&gt;Recently I decided to seriously start using PostGIS to manage my spatial
 data. As I have several projects on the go, organizing and managing my
 data effectively has become extremely important, and PostGIS is by far
 the most convenient way to do this. There is lots of documentation out

@@ -133,20 +133,7 @@ in <code>R</code>, we need two libraries: <code>sp</code> and <code>deldir</code
 takes a <code>SpatialPointsDataFrame</code> as input, and returns a
 <code>SpatialPolygonsDataFrame</code> that represents the Voronoi tessellation of
 the input point layer.
-<!--more--></p>
-<div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
-    <span class="kn">require</span><span class="p">(</span>deldir<span class="p">)</span>
-    crds <span class="o">=</span> layer<span class="o">@</span>coords
-    z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
-    w <span class="o">=</span> tile.list<span class="p">(</span>z<span class="p">)</span>
-    polys <span class="o">=</span> <span class="kt">vector</span><span class="p">(</span>mode<span class="o">=</span><span class="s">&#39;list&#39;</span><span class="p">,</span> length<span class="o">=</span><span class="kp">length</span><span class="p">(</span>w<span class="p">))</span>
-    <span class="kn">require</span><span class="p">(</span>sp<span class="p">)</span>
-    <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="kp">seq</span><span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
-        pcrds <span class="o">=</span> <span class="kp">cbind</span><span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
-        pcrds <span class="o">=</span> <span class="kp">rbind</span><span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
-        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span><span class="kt">list</span><span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span><span class="kp">as.character</span><span class="p">(</span>i<span class="p">))</span>
-    <span class="p">}</span>
-    SP ...</pre></div>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/09/voronoi-polygons-with-r/">read more</a>
@@ -188,9 +175,7 @@ when the process has finished, using the following&nbsp;command:</p>
 </pre></div>
 
 
-<!--more-->
 
-<p>In this case, the three parameters <code>b</code>, <code>e</code>, and <code>n</code> tell ...</p></!--more-->
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/07/keep-an-eye-on-long-running-processes/">read more</a>
@@ -235,8 +220,63 @@ First, get all the basic&nbsp;plugins:</p>
 <p>and enable them in gedit by going to <code>Edit &gt; Preferences &gt; Plugins</code>, and
 checking the ones that you&nbsp;want.</p>
 <p>Second, make sure you have all the required dependencies for the actual
-$\LaTeX$ plugin:
-1. The plugin is written in Python ...</p>
+<span class="math">\(\LaTeX\)</span> plugin:
+1. The plugin is written in Python ...</p><script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2008/12/gedit-the-ultimate-latex-editor/">read more</a>
@@ -275,8 +315,7 @@ there that explains in detail how to set up PostGIS, but by far the best
 reference I&#8217;ve found is from <a href="http://tim.linfiniti.com/" title="Tim Sutton's blog">Tim Sutton&#8217;s blog</a>, mainly because he
 uses Ubuntu, and sudo-apt gets everything you need to have PostGIS
 working in minutes.
-<!--more--></p>
-<p>Here is a <a href="http://tim.linfiniti.com/page/3" title="Setting Up Postgis on Ubuntu">link to the article</a>, and below ...</p>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2008/11/quick-guide-to-setting-up-postgis-database/">read more</a>
@@ -312,24 +351,7 @@ layer. While this is perhaps less obvious in the R environment, it is
 not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
-<!--more--></p>
-<div class="highlight"><pre><span class="kp">invisible</span><span class="p">(</span>edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">))</span>
-</pre></div>
 
-
-<p>Note: <code>invisible</code> allows you to close the viewer without filling the
-console with the attributes of the table. You could also&nbsp;use:</p>
-<div class="highlight"><pre>new_data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
-</pre></div>
-
-
-<p>to assign changes made to the data to a new variable, or&nbsp;use:</p>
-<div class="highlight"><pre>spatial_layer<span class="o">@</span>data <span class="o">=</span> edit<span class="p">(</span>spatial_layer<span class="o">@</span>data<span class="p">)</span>
-</pre></div>
-
-
-<p>or,</p>
-<div class="highlight"><pre>fix<span class="p">(</span>spatial_layer ...</pre></div>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2008/10/view-spatial-data-attribute-tables-in-r/">read more</a>

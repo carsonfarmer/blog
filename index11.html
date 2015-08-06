@@ -212,20 +212,7 @@ in <code>R</code>, we need two libraries: <code>sp</code> and <code>deldir</code
 takes a <code>SpatialPointsDataFrame</code> as input, and returns a
 <code>SpatialPolygonsDataFrame</code> that represents the Voronoi tessellation of
 the input point layer.
-<!--more--></p>
-<div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
-    <span class="kn">require</span><span class="p">(</span>deldir<span class="p">)</span>
-    crds <span class="o">=</span> layer<span class="o">@</span>coords
-    z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
-    w <span class="o">=</span> tile.list<span class="p">(</span>z<span class="p">)</span>
-    polys <span class="o">=</span> <span class="kt">vector</span><span class="p">(</span>mode<span class="o">=</span><span class="s">&#39;list&#39;</span><span class="p">,</span> length<span class="o">=</span><span class="kp">length</span><span class="p">(</span>w<span class="p">))</span>
-    <span class="kn">require</span><span class="p">(</span>sp<span class="p">)</span>
-    <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="kp">seq</span><span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
-        pcrds <span class="o">=</span> <span class="kp">cbind</span><span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
-        pcrds <span class="o">=</span> <span class="kp">rbind</span><span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
-        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span><span class="kt">list</span><span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span><span class="kp">as.character</span><span class="p">(</span>i<span class="p">))</span>
-    <span class="p">}</span>
-    SP ...</pre></div>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="./2009/09/voronoi-polygons-with-r/">read more</a>
@@ -259,18 +246,7 @@ the input point layer.
                 <p>Check out the <a href="http://josis.org/index.php/josis/index">Journal of Spatial Information Science</a>, a new,
 peer-reviewed, open-access journal with a range of well established
 geospatial academics on the editorial board.
-<!--more--></p>
-<blockquote>
-<p>The Journal of Spatial Information Science (<span class="caps">JOSIS</span>) is an
-international, interdisciplinary, open-access journal dedicated to
-publishing high-quality, original research articles in spatial
-information science. The journal aims to publish research spanning the
-theoretical foundations of spatial and geographical information
-science, through computation with geospatial information, to
-technologies for geographical information&nbsp;use.</p>
-<p><span class="caps">JOSIS</span> is run as a service to the geographic information science
-community, supported entirely through the efforts of volunteers. <span class="caps">JOSIS</span>
-does not aim to ...</p></blockquote>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="./2009/09/journal-of-spatial-information-science/">read more</a>
@@ -309,7 +285,9 @@ small scale simulated road network, and most of the original code
 Pozdnoukhov</a>), was done in Matlab. Since this work is eventually going
 to have to run on relatively large datasets, and probably behind the
 scenes on a server somewhere, we decided that Python was the way to go.
-The goal therefore was to reproduce the Matlab ...</p>
+The goal therefore was to reproduce the Matlab code using only Python
+libraries, and the fewer additional libraries required, the better.
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="./2009/08/python-matlab-and-r/">read more</a>
@@ -392,9 +370,7 @@ when the process has finished, using the following&nbsp;command:</p>
 </pre></div>
 
 
-<!--more-->
 
-<p>In this case, the three parameters <code>b</code>, <code>e</code>, and <code>n</code> tell ...</p></!--more-->
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="./2009/07/keep-an-eye-on-long-running-processes/">read more</a>
@@ -431,12 +407,7 @@ based application, the obvious choice for implementing syntax
 highlighting was to use Qt&#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
-<!--more--></p>
-<p>The Python file used in this example is <a href="./uploads/highlighter.py">available here</a>.
-To implement syntax highlighting, we need to subclass
-QSyntaxHighlighter, reimplement the <code>highlightBlock</code> function, and
-specify several highlighting rules. Generally, a rule consists of a
-QRegExp pattern and a ...</p>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="./2009/07/syntax-highlighting-with-pyqt/">read more</a>

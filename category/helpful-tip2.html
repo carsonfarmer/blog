@@ -140,8 +140,7 @@ results of something&nbsp;like:</p>
 to Giuseppe Sucameli and Jürgen E. Fischer, the answer is a resounding
 &#8220;yes!&#8221;. A <a href="https://trac.osgeo.org/qgis/changeset/13340">recent patch</a> to <span class="caps">QGIS</span> trunk now makes custom Postgres
 queries possible via the postgres data provider.
-<!--more--></p>
-<p><strike>Unfortunately there is no user interface implemented ...</strike></p>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2010/04/postgis-select-statement-as-vector-layer-in-qgis/">read more</a>
@@ -179,14 +178,7 @@ in R, using the very nice <a href="http://cran.r-project.org/web/packages/foreac
 Computing</a>. To show just how nice this package is, below is a minimal
 example of bootstrapping a network partitioning algorithm which takes
 advantage of a multicore processor:
-<!--more--></p>
-<div class="highlight"><pre><span class="kn">library</span><span class="p">(</span>doMC<span class="p">)</span>
-<span class="kn">library</span><span class="p">(</span>foreach<span class="p">)</span>
-<span class="kn">library</span><span class="p">(</span>igraph<span class="p">)</span>
-<span class="c1"># Jaccard coeficcient function (taken from package fpc)</span>
-clujaccard <span class="o">=</span> <span class="kr">function</span> <span class="p">(</span>c1<span class="p">,</span> c2<span class="p">,</span> zerobyzero <span class="o">=</span> <span class="kc">NA</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kr">if</span> <span class="p">(</span><span class="kp">sum</span><span class="p">(</span>c1<span class="p">)</span> <span class="o">+</span> <span class="kp">sum</span><span class="p">(</span>c2<span class="p">)</span> <span class="o">-</span> <span class="kp">sum</span><span class="p">(</span>c1 <span class="o">&amp;</span> c2<span class="p">)</span> <span class="o">==</span> <span class="m">0</span><span class="p">)</span>
-        out ...</pre></div>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2010/04/parallel-bootstrapping-with-r/">read more</a>
@@ -222,20 +214,7 @@ in <code>R</code>, we need two libraries: <code>sp</code> and <code>deldir</code
 takes a <code>SpatialPointsDataFrame</code> as input, and returns a
 <code>SpatialPolygonsDataFrame</code> that represents the Voronoi tessellation of
 the input point layer.
-<!--more--></p>
-<div class="highlight"><pre>voronoipolygons <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>layer<span class="p">)</span> <span class="p">{</span>
-    <span class="kn">require</span><span class="p">(</span>deldir<span class="p">)</span>
-    crds <span class="o">=</span> layer<span class="o">@</span>coords
-    z <span class="o">=</span> deldir<span class="p">(</span>crds<span class="p">[,</span><span class="m">1</span><span class="p">],</span> crds<span class="p">[,</span><span class="m">2</span><span class="p">])</span>
-    w <span class="o">=</span> tile.list<span class="p">(</span>z<span class="p">)</span>
-    polys <span class="o">=</span> <span class="kt">vector</span><span class="p">(</span>mode<span class="o">=</span><span class="s">&#39;list&#39;</span><span class="p">,</span> length<span class="o">=</span><span class="kp">length</span><span class="p">(</span>w<span class="p">))</span>
-    <span class="kn">require</span><span class="p">(</span>sp<span class="p">)</span>
-    <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="kp">seq</span><span class="p">(</span>along<span class="o">=</span>polys<span class="p">))</span> <span class="p">{</span>
-        pcrds <span class="o">=</span> <span class="kp">cbind</span><span class="p">(</span>w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>x<span class="p">,</span> w<span class="p">[[</span>i<span class="p">]]</span><span class="o">$</span>y<span class="p">)</span>
-        pcrds <span class="o">=</span> <span class="kp">rbind</span><span class="p">(</span>pcrds<span class="p">,</span> pcrds<span class="p">[</span><span class="m">1</span><span class="p">,])</span>
-        polys<span class="p">[[</span>i<span class="p">]]</span> <span class="o">=</span> Polygons<span class="p">(</span><span class="kt">list</span><span class="p">(</span>Polygon<span class="p">(</span>pcrds<span class="p">)),</span> ID<span class="o">=</span><span class="kp">as.character</span><span class="p">(</span>i<span class="p">))</span>
-    <span class="p">}</span>
-    SP ...</pre></div>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/09/voronoi-polygons-with-r/">read more</a>
@@ -274,7 +253,9 @@ small scale simulated road network, and most of the original code
 Pozdnoukhov</a>), was done in Matlab. Since this work is eventually going
 to have to run on relatively large datasets, and probably behind the
 scenes on a server somewhere, we decided that Python was the way to go.
-The goal therefore was to reproduce the Matlab ...</p>
+The goal therefore was to reproduce the Matlab code using only Python
+libraries, and the fewer additional libraries required, the better.
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/08/python-matlab-and-r/">read more</a>
@@ -316,9 +297,7 @@ when the process has finished, using the following&nbsp;command:</p>
 </pre></div>
 
 
-<!--more-->
 
-<p>In this case, the three parameters <code>b</code>, <code>e</code>, and <code>n</code> tell ...</p></!--more-->
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/07/keep-an-eye-on-long-running-processes/">read more</a>
@@ -355,12 +334,7 @@ based application, the obvious choice for implementing syntax
 highlighting was to use Qt&#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
-<!--more--></p>
-<p>The Python file used in this example is <a href="../uploads/highlighter.py">available here</a>.
-To implement syntax highlighting, we need to subclass
-QSyntaxHighlighter, reimplement the <code>highlightBlock</code> function, and
-specify several highlighting rules. Generally, a rule consists of a
-QRegExp pattern and a ...</p>
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/07/syntax-highlighting-with-pyqt/">read more</a>
@@ -400,7 +374,10 @@ download, and use <span class="caps">OSM</span> data to their hearts content. Ac
 as free actually have legal or technical restrictions on their use,
 holding back people from using them in creative, productive or
 unexpected ways.&#8221; There are now tones of websites and open-source
-software projects ...</p>
+software projects that incorporate <span class="caps">OSM</span> data, and the growing popularity
+of the site means that the data is only going to get better (more
+accurate) and bigger (more data).
+
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
                     <a class="readmore" href="../2009/01/open-up-your-web-maps-with-openstreetmap/">read more</a>
