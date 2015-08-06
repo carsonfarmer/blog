@@ -26,7 +26,7 @@ IGNORE_FILES = ['.#*', '*~']
 
 MARKUP = ("md", "ipynb")
 
-PLUGIN_PATH = "pelican-plugins/"
+PLUGIN_PATHs = ["pelican-plugins/",]
 PLUGINS = ['gravatar', 'latex', 'summary', 'liquid_tags.notebook',
            'liquid_tags.youtube', 'liquid_tags.vimeo', 'liquid_tags.img',
            'liquid_tags.gram', 'liquid_tags.include_code', 'tipue_search']
@@ -72,7 +72,7 @@ EXTRA_PATH_METADATA = {
 }
 
 PAGE_EXCLUDES = ["libs"]
-ARTICLE_DIR = "blog"
+ARTICLE_PATHS = ["blog"]
 ARTICLE_EXCLUDES = ["pages", "libs"]
 
 SUMMARY_MAX_LENGTH = 100
