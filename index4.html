@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Carson Farmer</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="./theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="./libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="./libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="./libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="./libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="./theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="./">
+                <img src="./theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="./about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="./curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="./research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,26 +83,24 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="./search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         
         
@@ -110,55 +109,55 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/" rel="bookmark"
+                    <h1><a href="./2013/12/bookmarklet_for_off_campus_library_access/" rel="bookmark"
                            title="Permalink to A quick bookmarklet for off-campus library access">A quick bookmarklet for off-campus library&nbsp;access</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-12-17T14:56:00">
+                  <abbr class="published" title="2013-12-17T14:56:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Tue 17 December 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="./category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. <em>Fortunately</em>, Hunter College provides <a href="http://library.hunter.cuny.edu/find/accessfromhome">off-campus access</a> to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. <em>Unfortunately</em>, it turns out to be a huge pain to use anything other than the library search facilities (like <a href="http://scholar.google.com/">Google Scholar</a>) through the proxy server*. In fact, when working off-campus, you actually have to preface each <span class="caps">URL</span> address to licensed resources with 
 <code>http://proxy.wexler.hunter.cuny.edu/login?url=</code> in order ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/">read more</a>
+                    <a class="readmore" href="./2013/12/bookmarklet_for_off_campus_library_access/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/12/bookmarklet_for_off_campus_library_access/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/12/cgi-lecturer-positions-2014/" rel="bookmark"
+                    <h1><a href="./2013/12/cgi-lecturer-positions-2014/" rel="bookmark"
                            title="Permalink to Lectureships (x2) in GeoInformatics at the University of St Andrews">Lectureships (x2) in GeoInformatics at the University of St&nbsp;Andrews</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-12-03T11:57:00">
+                  <abbr class="published" title="2013-12-03T11:57:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Tue 03 December 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="./category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>Researchers in the <a href="http://www.st-andrews.ac.uk/geoinformatics/">Centre for GeoInformatics (<span class="caps">CGI</span>)</a> in the School of 
@@ -176,67 +175,73 @@ interests in each&nbsp;of:</p>
 <p>For more information on these two positions please ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/12/cgi-lecturer-positions-2014/">read more</a>
+                    <a class="readmore" href="./2013/12/cgi-lecturer-positions-2014/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/12/cgi-lecturer-positions-2014/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/12/cgi-lecturer-positions-2014/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/" rel="bookmark"
+                    <h1><a href="./2013/11/statistical-modeling-python-variation/" rel="bookmark"
                            title="Permalink to Describing Variation">Describing&nbsp;Variation</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-11-22T10:49:00">
+                  <abbr class="published" title="2013-11-22T10:49:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Fri 22 November 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
+        <a class="label label-primary" href="./category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
     </p>
                   </footer>
                 <p>The 3rd in a <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">series of tutorials</a> on using Python for introductory 
 statistical analysis, this tutorial covers methods for <strong>describing</strong> data via 
 simple statistical calculations and statistical graphics. As always, the 
 notebook for this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">available here</a>.</p>
-<p>{% notebook tutorial_3_statistical_modeling_describing_variation.ipynb&nbsp;%}</p>
+<p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the 1880s, Sir Francis Galton, one of the pioneers of statistics, collected data on the heights of approximately 900 adult children and their parents in London. Galton was interested in studying the relationship between a full-grown child&#8217;s height and his or her mother&#8217;s and father&#8217;s height. In order to do so, Galton collected height measurements from about 200 ...</p></div></div></div></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/">read more</a>
+                    <a class="readmore" href="./2013/11/statistical-modeling-python-variation/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-variation/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/11/statistical-modeling-python-variation/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/spar-msc-positions-2014/" rel="bookmark"
+                    <h1><a href="./2013/11/spar-msc-positions-2014/" rel="bookmark"
                            title="Permalink to MSc Positions at University of Victoria">MSc Positions at University of&nbsp;Victoria</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-11-11T11:57:00">
+                  <abbr class="published" title="2013-11-11T11:57:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Mon 11 November 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="./category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>Two MSc positions are available at the <a href="http://www.uvic.ca/">University of Victoria</a> in the 
@@ -252,102 +257,115 @@ student stipend, as well as, support through teaching assistantships, research
 assistantships, and internal fellowships. Students can anticipate ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/spar-msc-positions-2014/">read more</a>
+                    <a class="readmore" href="./2013/11/spar-msc-positions-2014/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/spar-msc-positions-2014/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/11/spar-msc-positions-2014/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/" rel="bookmark"
+                    <h1><a href="./2013/11/statistical-modeling-python-data/" rel="bookmark"
                            title="Permalink to Data: Cases, Variables, Samples">Data: Cases, Variables,&nbsp;Samples</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-11-09T12:00:00">
+                  <abbr class="published" title="2013-11-09T12:00:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Sat 09 November 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
+        <a class="label label-primary" href="./category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
     </p>
                   </footer>
                 <p>The second in a <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">series of tutorials</a> on using Python for introductory 
 statistical analysis, this tutorial covers <strong>data</strong>, including cases, variables, 
 samples, and a whole lot more. As always, the <code>iPython Notebook</code> associated with
 this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-python">available here on github</a>.</p>
-<p>{% notebook tutorial_2_statistical_modeling_data.ipynb&nbsp;%}</p>
+<p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Data used in statistical modeling are usually organized into tables, often created using spreadsheet software. Most people presume that the same software used to create a table of data should be used to display and analyze it. This is part of the reason for the popularity of spreadsheet programs such as &#8216;Excel&#8217; and &#8216;Google&nbsp;Spreadsheets&#8217;.</p>
+<p>For serious statistical work ...</p></div></div></div></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/">read more</a>
+                    <a class="readmore" href="./2013/11/statistical-modeling-python-data/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-data/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/11/statistical-modeling-python-data/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/" rel="bookmark"
+                    <h1><a href="./2013/11/statistical-modeling-python-introduction/" rel="bookmark"
                            title="Permalink to A Fresh Approach using Python: Introduction">A Fresh Approach using Python:&nbsp;Introduction</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-11-01T12:00:00">
+                  <abbr class="published" title="2013-11-01T12:00:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Fri 01 November 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
+        <a class="label label-primary" href="./category/statistical-modeling-for-python.html">Statistical Modeling for Python</a> 
     </p>
                   </footer>
                 <p>Welcome to the first in a series of tutorials on using Python for introductory 
 statistical analysis. As I put more of these tutorials online, you should be 
 able to access them easily by <a href="http://www.carsonfarmer.com/category/statistical-modeling-for-python.html">clicking</a> or searching for the relevant 
 category: &#8220;Statistical Modeling for&nbsp;Python&#8221;.</p>
-<p>{% notebook tutorial_1_statistical_modeling_introduction.ipynb&nbsp;%}</p>
+<p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This series of tutorials is based on the &#8216;Computational Technique&#8217; sections of each chapter from <a href="http://www.mosaic-web.org/go/StatisticalModeling/">&#8216;Statistical Modeling: A Fresh Approach (2nd Edition)&#8217;</a>. The goal of this series of tutorials is to show how all of the R analysis and commands used in the book can be done just as easily using the <a href="http://python.org/">Python</a> programming language. This ...</p></div></div></div></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/">read more</a>
+                    <a class="readmore" href="./2013/11/statistical-modeling-python-introduction/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/11/statistical-modeling-python-introduction/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/11/statistical-modeling-python-introduction/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/10/ftools-is-no-more/" rel="bookmark"
+                    <h1><a href="./2013/10/ftools-is-no-more/" rel="bookmark"
                            title="Permalink to ftools is dead… long live ftools!">ftools is dead&#8230; long live&nbsp;ftools!</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-10-15T09:40:00">
+                  <abbr class="published" title="2013-10-15T09:40:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Tue 15 October 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="./category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>I recently decided to drop <code>ftools.ca</code>, since I hadn&#8217;t updated it in a very long 
@@ -364,39 +382,39 @@ one part of ftools.ca is missed: my old cartogram plugin. If I
 have some spare time, I&#8217;ll try to update the plugin to the latest and 
 greatest <a href="http://www.qgis.org/en/docs/pyqgis_developer_cookbook/plugins.html"><span class="caps">QGIS</span> 2.0 standards</a> and upload it to the new <span class="caps">QGIS</span> plugins 
 system. In the mean time, for those out there who would like to use it right 
-away, you can get the <a href="http://www.carsonfarmer.com/uploads/cartogram.zip">original code from here</a> or <a href="https://github.com/cfarmer/cartogram-plugin">grab it from 
+away, you can get the <a href="./uploads/cartogram.zip">original code from here</a> or <a href="https://github.com/cfarmer/cartogram-plugin">grab it from 
 github</a>. In fact, if someone is able and willing, they can grab 
 the code from github, update it for <span class="caps">QGIS</span> 2.0, and submit a pull request which I 
 will (more than likely) happily&nbsp;accept.</p>
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/ftools-is-no-more/">read more</a>
+                    <a class="readmore" href="./2013/10/ftools-is-no-more/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/ftools-is-no-more/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/10/ftools-is-no-more/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/" rel="bookmark"
+                    <h1><a href="./2013/10/guest-speaker-nathan-storey/" rel="bookmark"
                            title="Permalink to Nathan Storey Guest Lecture">Nathan Storey Guest&nbsp;Lecture</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-10-10T12:41:00">
+                  <abbr class="published" title="2013-10-10T12:41:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Thu 10 October 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="./author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/speaker.html">Speaker</a> 
+        <a class="label label-primary" href="./category/speaker.html">Speaker</a> 
     </p>
                   </footer>
                 <p><a href="https://twitter.com/npstorey">Nathan Storey</a> will be speaking to my spatial data analysis class 
@@ -419,35 +437,35 @@ data encyclopedia project I&#8217;ve been working on for the past 6&nbsp;months.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/">read more</a>
+                    <a class="readmore" href="./2013/10/guest-speaker-nathan-storey/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/guest-speaker-nathan-storey/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="./2013/10/guest-speaker-nathan-storey/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-            <a class="left-arrow" href="http://www.carsonfarmer.com/index3.html">
+            <a class="left-arrow" href="./index3.html">
                 <i class="fa fa-arrow-circle-left fa-4x"></i>
             </a>
     4 / 12
-        <a class="right-arrow" href="http://www.carsonfarmer.com/index5.html">
+        <a class="right-arrow" href="./index5.html">
             <i class="fa fa-arrow-circle-right fa-4x"></i>
         </a>
 </p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -463,34 +481,30 @@ data encyclopedia project I&#8217;ve been working on for the past 6&nbsp;months.
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="./maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="./maps/visitors/"><img src="./uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="./categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="./tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -498,10 +512,7 @@ data encyclopedia project I&#8217;ve been working on for the past 6&nbsp;months.
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -538,6 +549,6 @@ data encyclopedia project I&#8217;ve been working on for the past 6&nbsp;months.
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="./theme/js/tools.js"></script>
 </body>
 </html>

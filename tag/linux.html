@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Carson Farmer &mdash; Articles tagged Linux</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../">
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,26 +83,24 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         
         
@@ -110,23 +109,23 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/" rel="bookmark"
+                    <h1><a href="../2009/07/keep-an-eye-on-long-running-processes/" rel="bookmark"
                            title="Permalink to ‘Watch’ long running processes"><span class="quo">&#8216;</span>Watch&#8217; long running&nbsp;processes</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-07-08T12:23:00">
+                  <abbr class="published" title="2009-07-08T12:23:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Wed 08 July 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>The other day I was loading a shapefile of approximately 11 million
@@ -136,39 +135,39 @@ checking the console, I decided to &#8216;watch&#8217; the process using the *ni
 command <code>watch</code>. I discovered this handy tool a while ago, and have
 found that for long running processes, I can use <code>watch</code> to notify me
 when the process has finished, using the following&nbsp;command:</p>
-<div class="highlight"><pre>watch -ben 1 <span class="s2">&quot;ps u -C shp2pgsql&quot;</span>
+<div class="highlight"><pre>watch -ben <span class="m">1</span> <span class="s2">&quot;ps u -C shp2pgsql&quot;</span>
 </pre></div>
 
 
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/">read more</a>
+                    <a class="readmore" href="../2009/07/keep-an-eye-on-long-running-processes/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2009/07/keep-an-eye-on-long-running-processes/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
+                    <h1><a href="../2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
                            title="Permalink to gedit: The ultimate LaTeX editor">gedit: The ultimate LaTeX&nbsp;editor</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-12-12T00:56:00">
+                  <abbr class="published" title="2008-12-12T00:56:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Fri 12 December 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>Out of the box <em>gedit</em> is a basic text editor, but it comes equipped
@@ -176,35 +175,100 @@ with about 12 standard plugins, and another 9 readily available. In
 addition to this, there are a range of &#8216;third-party&#8217; plugins developed
 to do various specific tasks, such as assist you in writing and
 exporting LaTeX documents!
+<!--more-->
+First, get all the basic&nbsp;plugins:</p>
+<div class="highlight"><pre>sudo apt-get install gedit-plugins<span class="sb">`</span>
+</pre></div>
 
+
+<p>and enable them in gedit by going to <code>Edit &gt; Preferences &gt; Plugins</code>, and
+checking the ones that you&nbsp;want.</p>
+<p>Second, make sure you have all the required dependencies for the actual
+<span class="math">\(\LaTeX\)</span> plugin:
+1. The plugin is written in Python ...</p><script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/">read more</a>
+                    <a class="readmore" href="../2008/12/gedit-the-ultimate-latex-editor/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/12/gedit-the-ultimate-latex-editor/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/" rel="bookmark"
+                    <h1><a href="../2008/11/quick-guide-to-setting-up-postgis-database/" rel="bookmark"
                            title="Permalink to Quick guide to setting up a PostGIS database">Quick guide to setting up a PostGIS&nbsp;database</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-11-28T12:01:00">
+                  <abbr class="published" title="2008-11-28T12:01:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Fri 28 November 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>Recently I decided to seriously start using PostGIS to manage my spatial
@@ -218,39 +282,39 @@ working in minutes.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/">read more</a>
+                    <a class="readmore" href="../2008/11/quick-guide-to-setting-up-postgis-database/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/11/quick-guide-to-setting-up-postgis-database/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/" rel="bookmark"
+                    <h1><a href="../2008/09/r-spatial-indentify-tool/" rel="bookmark"
                            title="Permalink to R spatial indentify tool">R spatial indentify&nbsp;tool</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-09-23T12:36:00">
+                  <abbr class="published" title="2008-09-23T12:36:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Tue 23 September 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>This is useful for visually exploring R spatial data such as
 <code>SpatialPointDataFrames</code> or <code>SpatialGridDataFrames</code>. By clicking on various
 features, the value at that point will be&nbsp;displayed.</p>
-<div class="highlight"><pre>library<span class="p">(</span>rgdal<span class="p">)</span>
-y <span class="o">=</span> readGDAL<span class="p">(</span>system.file<span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+<div class="highlight"><pre><span class="kn">library</span><span class="p">(</span>rgdal<span class="p">)</span>
+y <span class="o">=</span> readGDAL<span class="p">(</span><span class="kp">system.file</span><span class="p">(</span><span class="s">&quot;pictures/Rlogo.jpg&quot;</span><span class="p">,</span> package<span class="o">=</span><span class="s">&quot;rgdal&quot;</span><span class="p">)[</span><span class="m">1</span><span class="p">],</span> band<span class="o">=</span><span class="m">1</span><span class="p">)</span>
 y.grid <span class="o">=</span> y<span class="o">@</span>grid
 y.coords <span class="o">=</span> coordinates<span class="p">(</span>y.grid<span class="p">)</span> 
 image<span class="p">(</span>y<span class="p">)</span>
@@ -263,32 +327,32 @@ contains both <code>x</code> and <code>y</code> coordinates, <code>y</code> can 
 number of features to&nbsp;identify.</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/">read more</a>
+                    <a class="readmore" href="../2008/09/r-spatial-indentify-tool/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/09/r-spatial-indentify-tool/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/" rel="bookmark"
+                    <h1><a href="../2008/09/find-and-replace-multiple-files/" rel="bookmark"
                            title="Permalink to Find and replace multiple files">Find and replace multiple&nbsp;files</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-09-08T09:09:00">
+                  <abbr class="published" title="2008-09-08T09:09:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Mon 08 September 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>Recently, I had to do a find and replace over several individual python
@@ -297,7 +361,7 @@ but I was interested in something simple, and preferably a single line
 command. After a lot of Google-ing, I ended up finding <a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487">this post</a>,
 which does a great job of explaining how to do this in linux. The basic
 command&nbsp;is:</p>
-<div class="highlight"><pre>find . -name <span class="s2">&quot;\*.py&quot;</span> -print | xargs sed -i <span class="s1">&#39;s/foo/bar/g&#39;</span>
+<div class="highlight"><pre>find . -name <span class="s2">&quot;\*.py&quot;</span> -print <span class="p">|</span> xargs sed -i <span class="s1">&#39;s/foo/bar/g&#39;</span>
 </pre></div>
 
 
@@ -305,9 +369,9 @@ command&nbsp;is:</p>
 your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/">read more</a>
+                    <a class="readmore" href="../2008/09/find-and-replace-multiple-files/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/09/find-and-replace-multiple-files/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
@@ -317,17 +381,17 @@ your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -343,34 +407,30 @@ your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../maps/visitors/"><img src="../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -378,10 +438,7 @@ your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -418,6 +475,6 @@ your directory,  and <code>xargs sed -i 's/foo/bar/g ...</code></p>
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

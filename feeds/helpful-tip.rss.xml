@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/helpful-tip.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 17 Dec 2013 14:56:00 -0500</lastBuildDate><item><title>A quick bookmarklet for off-campus library access</title><link>http://www.carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/</link><description>&lt;p&gt;I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. &lt;em&gt;Fortunately&lt;/em&gt;, Hunter College provides &lt;a href="http://library.hunter.cuny.edu/find/accessfromhome"&gt;off-campus access&lt;/a&gt; to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. &lt;em&gt;Unfortunately&lt;/em&gt;, it turns out to be a huge pain to use anything other than the library search facilities (like &lt;a href="http://scholar.google.com/"&gt;Google Scholar&lt;/a&gt;) through the proxy server*. In fact, when working off-campus, you actually have to preface each &lt;span class="caps"&gt;URL&lt;/span&gt; address to licensed resources with 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://carsonfarmer.com/</link><description>carsonfarmer.com</description><atom:link href="http://carsonfarmer.com/feeds/helpful-tip.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 17 Dec 2013 14:56:00 -0500</lastBuildDate><item><title>A quick bookmarklet for off-campus library access</title><link>http://carsonfarmer.com/2013/12/bookmarklet_for_off_campus_library_access/</link><description>&lt;p&gt;I have been doing a fair bit of research off-campus lately, and as usual, have been having trouble accessing research materials (mainly academic publications) from home. &lt;em&gt;Fortunately&lt;/em&gt;, Hunter College provides &lt;a href="http://library.hunter.cuny.edu/find/accessfromhome"&gt;off-campus access&lt;/a&gt; to all electronic resources available to Hunter students, faculty and staff via their Library proxy server. &lt;em&gt;Unfortunately&lt;/em&gt;, it turns out to be a huge pain to use anything other than the library search facilities (like &lt;a href="http://scholar.google.com/"&gt;Google Scholar&lt;/a&gt;) through the proxy server*. In fact, when working off-campus, you actually have to preface each &lt;span class="caps"&gt;URL&lt;/span&gt; address to licensed resources with 
 &lt;code&gt;http://proxy.wexler.hunter.cuny.edu/login?url=&lt;/code&gt; in order to be able to access it. Not very&amp;nbsp;handy&amp;#8230;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://en.wikipedia.org/wiki/Bookmarklet"&gt;Bookmarklets&lt;/a&gt; to the rescue! This problem is actually something that bookmarklets are perfect for. A bookmarklet is (usually) just a small piece of JavaScript that resides in your browser and provides additional functionality to a web page. With that in mind, I decided to create a simple bookmarklet to automatically reload a given page with the above prefix prepended to the &lt;span class="caps"&gt;URL&lt;/span&gt;; giving me access to the material via the library proxy server, while still being able to use whatever search tools I want. In this case, all the bookmarklet contains is the following JavaScript&amp;nbsp;code:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http://proxy.wexler.hunter.cuny.edu/login?url=&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;
@@ -12,7 +12,7 @@
 
 
 &lt;p&gt;&lt;span class="quo"&gt;&amp;#8216;&lt;/span&gt;Installing&amp;#8217; a bookmarklet is as simple as dragging it onto your browser&amp;#8217;s bookmarks toolbar (I think on some versions of Internet Explorer, you might have to right-click and select &amp;#8220;Add to Favorites&amp;#8230;&amp;#8221;). If you drag this &lt;a href="javascript:location.href='http://proxy.wexler.hunter.cuny.edu/login?url='+location.href"&gt;Library Proxy&lt;/a&gt; link onto your bookmarks bar, you&amp;#8217;ll have a handy little tool to automatically access the current page via the Hunter College library proxy (note that you&amp;#8217;ll need Hunter College credentials for this to work), instantly increasing your productivity by 12.45%&amp;#8230; or&amp;nbsp;so.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;*&lt;/em&gt; I might just be missing something, in which case, hopefully someone will correct&amp;nbsp;me.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 17 Dec 2013 14:56:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2013-12-17:2013/12/bookmarklet_for_off_campus_library_access/</guid><category>Helpful Tip</category><category>HTML</category><category>Research</category><category>How-To</category></item><item><title>Essential Python Geospatial Libraries</title><link>http://www.carsonfarmer.com/2013/07/essential-python-geo-libraries/</link><description>&lt;p&gt;Just so I don&amp;#8217;t forget, here is a list of really awesome Python libraries that
+&lt;p&gt;&lt;em&gt;*&lt;/em&gt; I might just be missing something, in which case, hopefully someone will correct&amp;nbsp;me.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 17 Dec 2013 14:56:00 -0500</pubDate><guid>tag:carsonfarmer.com,2013-12-17:2013/12/bookmarklet_for_off_campus_library_access/</guid><category>Helpful Tip</category><category>HTML</category><category>Research</category><category>How-To</category></item><item><title>Essential Python Geospatial Libraries</title><link>http://carsonfarmer.com/2013/07/essential-python-geo-libraries/</link><description>&lt;p&gt;Just so I don&amp;#8217;t forget, here is a list of really awesome Python libraries that
 I&amp;#8217;m using these days to do lots of fun things with spatial data [&lt;span class="caps"&gt;UPDATE&lt;/span&gt;: I&amp;#8217;ve 
 added a few&amp;nbsp;more]:&lt;/p&gt;
 &lt;ul&gt;
@@ -42,7 +42,7 @@ added a few&amp;nbsp;more]:&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://code.google.com/p/pyproj/"&gt;pyproj&lt;/a&gt; - For conversions between&amp;nbsp;projections&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Any others I&amp;#8217;ve&amp;nbsp;missed?&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 12 Jul 2013 17:25:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2013-07-12:2013/07/essential-python-geo-libraries/</guid><category>Update</category><category>Helpful Tip</category><category>Python</category><category>GIS</category><category>Open Source</category></item><item><title>manageR and rpy2 installation problems</title><link>http://www.carsonfarmer.com/2012/10/manager-and-rpy2-installation-problems/</link><description>&lt;p&gt;Unfortunately, I haven&amp;#8217;t had much time recently to update or work on
+&lt;!--more--&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 12 Jul 2013 17:25:00 -0400</pubDate><guid>tag:carsonfarmer.com,2013-07-12:2013/07/essential-python-geo-libraries/</guid><category>Update</category><category>Helpful Tip</category><category>Python</category><category>GIS</category><category>Open Source</category></item><item><title>manageR and rpy2 installation problems</title><link>http://carsonfarmer.com/2012/10/manager-and-rpy2-installation-problems/</link><description>&lt;p&gt;Unfortunately, I haven&amp;#8217;t had much time recently to update or work on
 &lt;code&gt;manageR&lt;/code&gt;, but I&amp;#8217;m hoping that will change in the next few months&amp;#8230;
 Having said that, there are quite a few people out there that have been
 having trouble installing &lt;code&gt;manageR&lt;/code&gt; (and the required &lt;code&gt;rpy2&lt;/code&gt;) on their
@@ -52,7 +52,7 @@ various platforms, and I&amp;#8217;m going to use this post to amalgamate them,
 and hopefully create a one stop post for all your &lt;code&gt;rpy2&lt;/code&gt; and &lt;code&gt;manageR&lt;/code&gt;
 needs. I&amp;#8217;m also hoping that people will post potential fixes in the
 comments to help others with more specific problems?
-
+&lt;!--more--&gt;
 For now, I have the following potential fix for &lt;code&gt;OSX&lt;/code&gt; (Lion 10.7.2 at&amp;nbsp;least):&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Update &lt;code&gt;R&lt;/code&gt; to latest version (&lt;a href="http://www.r-project.org/"&gt;binary from r-project.org&lt;/a&gt;);&lt;/li&gt;
@@ -68,7 +68,7 @@ potential fix is courtesy of &lt;a href="http://gis.stackexchange.com/questions/
 Windows? Perhaps someone out there has a Windows build they&amp;#8217;d like to
 share? As far as I know (i.e., it works for me), things are working fine
 on Linux, but if someone else has a different experience, please share
-in the&amp;nbsp;comments.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 06 Oct 2012 14:26:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-10-06:2012/10/manager-and-rpy2-installation-problems/</guid><category>Python</category><category>QGIS</category><category>R</category><category>Spatial</category><category>FOSS</category></item><item><title>Cross-browser iframe scaling</title><link>http://www.carsonfarmer.com/2012/08/cross-browser-iframe-scaling/</link><description>&lt;p&gt;This is just a quick post to document an annoyance (and solution) that
+in the&amp;nbsp;comments.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 06 Oct 2012 14:26:00 -0400</pubDate><guid>tag:carsonfarmer.com,2012-10-06:2012/10/manager-and-rpy2-installation-problems/</guid><category>Python</category><category>QGIS</category><category>R</category><category>Spatial</category><category>FOSS</category></item><item><title>Cross-browser iframe scaling</title><link>http://carsonfarmer.com/2012/08/cross-browser-iframe-scaling/</link><description>&lt;p&gt;This is just a quick post to document an annoyance (and solution) that
 I&amp;#8217;ve recently discovered when trying to scale a webpage embedded in
 another page using an &lt;code&gt;iframe&lt;/code&gt;. When trying to come up with a nice way
 to embed &lt;a href="examples/olympic_countries/"&gt;this page&lt;/a&gt; inside &lt;a href="http://www.st-andrews.ac.uk/geoinformatics/"&gt;this page&lt;/a&gt;, I found that webkit based
@@ -111,7 +111,7 @@ the following &lt;code&gt;HTML&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;Hopefully this post will save someone (or me in the future) some
 frustration and time. The above fix was cobbled together based on
 suggestions from &lt;a href="http://stackoverflow.com/questions/166160/how-can-i-scale-the-content-of-an-iframe"&gt;here&lt;/a&gt; (see answers from &lt;code&gt;Kip&lt;/code&gt;, &lt;code&gt;lxs&lt;/code&gt;, and &lt;code&gt;r3cgm&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 06 Aug 2012 18:18:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-08-06:2012/08/cross-browser-iframe-scaling/</guid><category>CSS</category><category>HTML</category><category>iframe</category><category>scaling</category></item><item><title>Because its fun to map stuff…</title><link>http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/</link><description>&lt;p&gt;Its been quite a while since my last post, and its Friday and I was
+&lt;p&gt;Carson&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 06 Aug 2012 18:18:00 -0400</pubDate><guid>tag:carsonfarmer.com,2012-08-06:2012/08/cross-browser-iframe-scaling/</guid><category>CSS</category><category>HTML</category><category>iframe</category><category>scaling</category></item><item><title>Because its fun to map stuff…</title><link>http://carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/</link><description>&lt;p&gt;Its been quite a while since my last post, and its Friday and I was
 feeling creative, so I decided to map something! I&amp;#8217;ve been looking for
 an excuse to produce a nice graphic like the one &lt;a href="http://underdark.wordpress.com/about/"&gt;Anita Graser&lt;/a&gt;
 created to represent Vienna’s green-spaces. She used &lt;a href="http://qgis.org/"&gt;Quantum
@@ -123,14 +123,14 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 &lt;code&gt;http://www.carsonfarmer.com/&lt;/code&gt; between 2009 and&amp;nbsp;2011:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://www.carsonfarmer.com/images/website_visitors.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://carsonfarmer.com/images/website_visitors.svg"&gt;&lt;img alt="Visitors map" src="http://carsonfarmer.com/images/website_visitors.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Work-flow&lt;/h3&gt;
 &lt;p&gt;Firstly, I downloaded the logs for &lt;code&gt;www.carsonfarmer.com&lt;/code&gt;. I did this
 directly from the console, though I&amp;#8217;m pretty sure I could have done this
 from R as well. Next, I needed to extract the unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses from
 the logs. I found this nice grep one-liner from &lt;a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/"&gt;here&lt;/a&gt;, which I
 modified to grab all unique &lt;span class="caps"&gt;IP&lt;/span&gt; addresses that &amp;#8216;&lt;span class="caps"&gt;GET&lt;/span&gt;&amp;#8217; something from the&amp;nbsp;site:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt; access.log | cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 | sort | uniq &amp;gt; ip_addresses.log
+&lt;div class="highlight"&gt;&lt;pre&gt;grep &lt;span class="s1"&gt;&amp;#39;GET&amp;#39;&lt;/span&gt; access.log &lt;span class="p"&gt;|&lt;/span&gt; cut -d&lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f1 &lt;span class="p"&gt;|&lt;/span&gt; sort &lt;span class="p"&gt;|&lt;/span&gt; uniq &amp;gt; ip_addresses.log
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -157,7 +157,7 @@ packages: &lt;code&gt;RCurl&lt;/code&gt;, &lt;code&gt;rjson&lt;/code&gt;, and &l
 &lt;p&gt;Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&amp;nbsp;working:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;addresses &lt;span class="o"&gt;=&lt;/span&gt; read.table&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;ip_addresses.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;address&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-library&lt;span class="p"&gt;(&lt;/span&gt;RDSTK&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;RDSTK&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;?&lt;/span&gt; ip2coordinates
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -167,13 +167,13 @@ within a single string with comma-separated &lt;span class="caps"&gt;IP&lt;/span
 only do a few IPs at a time (about 100 I think?) so I had to do this
 part in a loop (it probably isn&amp;#8217;t polite to slam &lt;span class="caps"&gt;DSTK&lt;/span&gt; with 1,000s of
 requests, so be&amp;nbsp;nice!).&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ips &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;paste&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;as.character&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 out &lt;span class="o"&gt;=&lt;/span&gt; ip2coordinates&lt;span class="p"&gt;(&lt;/span&gt;ips&lt;span class="p"&gt;)&lt;/span&gt;
 last &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;
-s &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;(&lt;/span&gt;seq&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;160&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;))&lt;/span&gt;
+s &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;seq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;160&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kp"&gt;nrow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="m"&gt;80&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="kp"&gt;nrow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; s&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    ips &lt;span class="o"&gt;=&lt;/span&gt; paste&lt;span class="p"&gt;(&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[(&lt;/span&gt;last&lt;span class="m"&gt;+1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;i&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    out &lt;span class="o"&gt;=&lt;/span&gt; rbind&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; ip2coordinates&lt;span class="p"&gt;(&lt;/span&gt;ips&lt;span class="p"&gt;))&lt;/span&gt;
+    ips &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;paste&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;as.character&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;addresses&lt;span class="o"&gt;$&lt;/span&gt;address&lt;span class="p"&gt;[(&lt;/span&gt;last&lt;span class="m"&gt;+1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;i&lt;span class="p"&gt;]),&lt;/span&gt; collapse&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    out &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;rbind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; ip2coordinates&lt;span class="p"&gt;(&lt;/span&gt;ips&lt;span class="p"&gt;))&lt;/span&gt;
     last &lt;span class="o"&gt;=&lt;/span&gt; i
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -184,37 +184,37 @@ returned &lt;code&gt;data.frame&lt;/code&gt; to a &lt;code&gt;SpatialPointsDataF
 &lt;code&gt;SpatialGrid&lt;/code&gt; based on the points, c) create a &lt;code&gt;SpatialPolygons&lt;/code&gt; object
 from a hexagonal sample of the grid, and then finally d) create a
 &lt;code&gt;SpatialPolygonsDataFrame&lt;/code&gt; for&amp;nbsp;plotting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# make the output into a Spatial* object&lt;/span&gt;
 coordinates&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;longitude&lt;span class="o"&gt;+&lt;/span&gt;latitude
-library&lt;span class="p"&gt;(&lt;/span&gt;maptools&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# need this for the following function&lt;/span&gt;
+&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;maptools&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# need this for the following function&lt;/span&gt;
 sg &lt;span class="o"&gt;=&lt;/span&gt; Sobj_SpatialGrid&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;,&lt;/span&gt; maxDim&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;200&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; n&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;SG
 hex_pts &lt;span class="o"&gt;=&lt;/span&gt; spsample&lt;span class="p"&gt;(&lt;/span&gt;sg&lt;span class="p"&gt;,&lt;/span&gt; type&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;hexagonal&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; cellsize&lt;span class="o"&gt;=&lt;/span&gt;sg&lt;span class="o"&gt;@&lt;/span&gt;grid&lt;span class="o"&gt;@&lt;/span&gt;cellsize&lt;span class="p"&gt;)&lt;/span&gt;
 hex_poly &lt;span class="o"&gt;=&lt;/span&gt; HexPoints2SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;hex_pts&lt;span class="p"&gt;)&lt;/span&gt;
 pts_poly &lt;span class="o"&gt;=&lt;/span&gt; over&lt;span class="p"&gt;(&lt;/span&gt;hex_poly&lt;span class="p"&gt;,&lt;/span&gt; out&lt;span class="p"&gt;,&lt;/span&gt; returnList&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-pts_poly_count &lt;span class="o"&gt;=&lt;/span&gt; sapply&lt;span class="p"&gt;(&lt;/span&gt;pts_poly&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; nrow&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;))&lt;/span&gt;
-poly &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;,&lt;/span&gt; data.frame&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;count&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;pts_poly_count&lt;span class="p"&gt;),&lt;/span&gt; 
+pts_poly_count &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;sapply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;pts_poly&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="kp"&gt;nrow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;))&lt;/span&gt;
+poly &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;data.frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;count&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;pts_poly_count&lt;span class="p"&gt;),&lt;/span&gt; 
     match.ID&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;FALSE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Ok, now for some&amp;nbsp;plotting!&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# pick some reasonable break points&lt;/span&gt;
-breaks &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;20.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;50.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;100.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;500.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;2000.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+breaks &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;10.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;20.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;50.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;100.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;500.0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;2000.0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# use RColorBrewer to get a nice blue palette&lt;/span&gt;
-library&lt;span class="p"&gt;(&lt;/span&gt;RColorBrewer&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;RColorBrewer&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# don&amp;#39;t use the lightest colour, it looks washed out&lt;/span&gt;
 cols &lt;span class="o"&gt;=&lt;/span&gt; brewer.pal&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Blues&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="m"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; 
 &lt;span class="c1"&gt;# plot the grid, which produces something close to our final product&lt;/span&gt;
 spplot&lt;span class="p"&gt;(&lt;/span&gt;poly&lt;span class="p"&gt;[&lt;/span&gt;poly&lt;span class="o"&gt;$&lt;/span&gt;count&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,],&lt;/span&gt; col&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;white&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; col.regions&lt;span class="o"&gt;=&lt;/span&gt;cols&lt;span class="p"&gt;,&lt;/span&gt; at&lt;span class="o"&gt;=&lt;/span&gt;breaks&lt;span class="p"&gt;,&lt;/span&gt; 
-       par.settings&lt;span class="o"&gt;=&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;axis.line&lt;span class="o"&gt;=&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;col&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;transparent&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+       par.settings&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kt"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;axis.line&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kt"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;col&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;transparent&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;I then used &lt;a href="http://inkscape.org/"&gt;Inkscape&lt;/a&gt; to tweak the final product, adding titles and
 labels and modifying the colour key to look like something a bit more
 suited to the map at hand. In the end I had a nice map of my blog
-readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 30 Mar 2012 17:46:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2012-03-30:2012/03/because-its-fun-to-map-stuff/</guid><category>Data Science</category><category>Internet</category><category>Mapping</category><category>R</category><category>FOSS</category><category>How-To</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://www.carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
+readers, and an excellent way to procrastinate on a sunny Friday&amp;nbsp;afternoon!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 30 Mar 2012 17:46:00 -0400</pubDate><guid>tag:carsonfarmer.com,2012-03-30:2012/03/because-its-fun-to-map-stuff/</guid><category>Data Science</category><category>Internet</category><category>Mapping</category><category>R</category><category>FOSS</category><category>How-To</category></item><item><title>Adding direct editing of geometry fields in QGIS</title><link>http://carsonfarmer.com/2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</link><description>&lt;p&gt;Being able to add/remove attributes isn&amp;#8217;t actually a very new feature
 for &lt;span class="caps"&gt;QGIS&lt;/span&gt; at this point. However, to date non of the fTools functions
 (Vector menu) have taken advantage of this capability. If a tool needed
 to create a new field in the input vector layer, it simply wrote a new
@@ -228,7 +228,7 @@ permanently. Basically, the script will replace/update three of the
 Vector menu tools, including &lt;code&gt;Analysis \&amp;gt; Sum line lengths&lt;/code&gt;, &lt;code&gt;Analysis
 \&amp;gt; Points in polygon&lt;/code&gt;, and &lt;code&gt;Geometry tools \&amp;gt; Add/Export geometry
 info&lt;/code&gt;.
-
+&lt;!--more--&gt;
 Here are some examples of the script&amp;#8217;s usage from the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Add geometry information (assumes that the target layer in first
@@ -261,16 +261,16 @@ layer, and computes the correct information accordingly (outputting a
 count for points, and line lengths for lines). For both functions, the
 last argument can be a boolean specifying whether to update selected
 features only (&lt;code&gt;default=False&lt;/code&gt;).&lt;/p&gt;
-&lt;p&gt;C&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 12 Mar 2011 18:43:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2011-03-12:2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</guid><category>GIS</category><category>Python</category><category>QGIS</category><category>FOSS</category></item><item><title>pgRouting, OpenStreetMap, and QGIS</title><link>http://www.carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/</link><description>&lt;p&gt;I mentioned &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;a few posts back&lt;/a&gt; that there was a great resource for
+&lt;p&gt;C&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 12 Mar 2011 18:43:00 -0500</pubDate><guid>tag:carsonfarmer.com,2011-03-12:2011/03/adding-direct-editing-of-geometry-fields-in-qgis/</guid><category>GIS</category><category>Python</category><category>QGIS</category><category>FOSS</category></item><item><title>pgRouting, OpenStreetMap, and QGIS</title><link>http://carsonfarmer.com/2010/10/pgrouting-openstreetmap-and-qgis/</link><description>&lt;p&gt;I mentioned &lt;a href="http://carsonfarmer.com/2010/05/osm-data-by-country/"&gt;a few posts back&lt;/a&gt; that there was a great resource for
 downloading OpenStreetMap data, and that it was relatively easy to
 import osm data into &lt;code&gt;PostgreSQL&lt;/code&gt;/&lt;code&gt;PostGIS&lt;/code&gt; for use with &lt;code&gt;pgRouting&lt;/code&gt; to
 calculate shortest paths and various other network-based operations. In
 this post, I&amp;#8217;ll outline the steps required to get all this up and going,
 and provide a quick example to show how this can be combined with &lt;span class="caps"&gt;QGIS&lt;/span&gt;
 to visualise the computed shortest path directly.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Firstly, we need to install all the required packages. I&amp;#8217;m assuming you
-already have &lt;code&gt;PostgreSQL&lt;/code&gt; and &lt;code&gt;PostGIS&lt;/code&gt; installed, but if not, have a &lt;a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/"&gt;look
+already have &lt;code&gt;PostgreSQL&lt;/code&gt; and &lt;code&gt;PostGIS&lt;/code&gt; installed, but if not, have a &lt;a href="http://carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/"&gt;look
 here&lt;/a&gt; for a quick guide to getting things set up (Note that the latest
 version of &lt;code&gt;PostgreSQL&lt;/code&gt; is now&amp;nbsp;8.4).&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install postgresql-server-dev-8.4 libboost-graph-dev
@@ -315,8 +315,8 @@ sudo make install
 
 
 &lt;p&gt;Scroll to the bottom, and make sure you change the &lt;code&gt;METHOD&lt;/code&gt; to&amp;nbsp;&amp;#8216;trust&amp;#8217;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;# TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD&lt;/span&gt;
-&lt;span class="n"&gt;local&lt;/span&gt;   &lt;span class="n"&gt;all&lt;/span&gt;         &lt;span class="n"&gt;all&lt;/span&gt;                               &lt;span class="n"&gt;trust&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
+local   all         all                               trust
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -366,7 +366,7 @@ make
 
 
 &lt;p&gt;Once that&amp;#8217;s finished building, we can go ahead and download our osm data
-from &lt;a href="http://download.geofabrik.de/osm/"&gt;http://download.geofabrik.de/osm/&lt;/a&gt;. See this &lt;a href="http://www.carsonfarmer.com/2010/05/osm-data-by-country/"&gt;previous post&lt;/a&gt;
+from &lt;a href="http://download.geofabrik.de/osm/"&gt;http://download.geofabrik.de/osm/&lt;/a&gt;. See this &lt;a href="http://carsonfarmer.com/2010/05/osm-data-by-country/"&gt;previous post&lt;/a&gt;
 for details. For this example, I&amp;#8217;ll be using the osm data for&amp;nbsp;Ireland&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;wget http://download.geofabrik.de/osm/europe/ireland.osm.bz2
 bzip2 -d ireland.osm.bz2
@@ -388,56 +388,56 @@ network (Note that the values 52343 and 39219 represent network node&amp;nbsp;id
 &lt;span class="s1"&gt;        target::int4,&lt;/span&gt;
 &lt;span class="s1"&gt;        length::double precision as cost&lt;/span&gt;
 &lt;span class="s1"&gt;        from ways&amp;#39;&lt;/span&gt;,
-    52343, 39219, &lt;span class="nb"&gt;false&lt;/span&gt;, &lt;span class="nb"&gt;false&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;;
+    52343, 39219, &lt;span class="nb"&gt;false&lt;/span&gt;, &lt;span class="nb"&gt;false&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;&amp;#8230;to produce something like&amp;nbsp;this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;vertex_id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;edge_id&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;        &lt;span class="n"&gt;cost&lt;/span&gt;
-&lt;span class="o"&gt;----------+---------+---------------------&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;52343&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;78055&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.217641978736602&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;52341&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;78052&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mf"&gt;0.0230665826613562&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;52342&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;78053&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mf"&gt;0.0839311516838216&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;20390&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;28717&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.166809293071158&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;20389&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;28716&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.493120178133836&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;20388&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;28715&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.271165901884914&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;20387&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;112841&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.101669458767093&lt;/span&gt;
-&lt;span class="err"&gt;   &lt;/span&gt; &lt;span class="mi"&gt;14183&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mi"&gt;22893&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;   &lt;span class="mf"&gt;0.106433172954507&lt;/span&gt;
-&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;vertex_id | edge_id |        cost
+----------+---------+---------------------
+    52343 |   78055 |   0.217641978736602
+    52341 |   78052 |  0.0230665826613562
+    52342 |   78053 |  0.0839311516838216
+    20390 |   28717 |   0.166809293071158
+    20389 |   28716 |   0.493120178133836
+    20388 |   28715 |   0.271165901884914
+    20387 |  112841 |   0.101669458767093
+    14183 |   22893 |   0.106433172954507
+...
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Assuming your database is structured as &lt;code&gt;pgRouting&lt;/code&gt; expects (which it
 should be if you&amp;#8217;ve used &lt;code&gt;osm2pgrouting&lt;/code&gt;), you can use the some of the
 functions which return geometries for use with other &lt;code&gt;PostGIS&lt;/code&gt; functions:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; * from dijkstra_sp&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ways&amp;#39;&lt;/span&gt;, 52343, 39219&lt;span class="o"&gt;)&lt;/span&gt;;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;select&lt;/span&gt; * from dijkstra_sp&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;ways&amp;#39;&lt;/span&gt;, 52343, 39219&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;id&lt;/span&gt;  &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="n"&gt;gid&lt;/span&gt;   &lt;span class="o"&gt;|&lt;/span&gt;          &lt;span class="n"&gt;the_geom&lt;/span&gt;
-&lt;span class="o"&gt;----+--------+----------------------------&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78055&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78052&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;78053&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28717&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28716&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;6&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;28715&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mi"&gt;112841&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="err"&gt; &lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;  &lt;span class="mi"&gt;22893&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="mf"&gt;0105000020E610000001000&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;id  |  gid   |          the_geom
+----+--------+----------------------------
+  1 |  78055 | 0105000020E610000001000...
+  2 |  78052 | 0105000020E610000001000...
+  3 |  78053 | 0105000020E610000001000...
+  4 |  28717 | 0105000020E610000001000...
+  5 |  28716 | 0105000020E610000001000...
+  6 |  28715 | 0105000020E610000001000...
+  7 | 112841 | 0105000020E610000001000...
+  8 |  22893 | 0105000020E610000001000...
+...
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;These queries are all fine and dandy, and can easily be used to
 calculate the distances of shortest paths etc, but what I really want to
 do is visualise this output in a &lt;span class="caps"&gt;GIS&lt;/span&gt; so I can get an idea of what these
-shortest paths looks like. In &lt;em&gt;another&lt;/em&gt; &lt;a href="http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/"&gt;previous post&lt;/a&gt;, I mentioned
+shortest paths looks like. In &lt;em&gt;another&lt;/em&gt; &lt;a href="http://carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/"&gt;previous post&lt;/a&gt;, I mentioned
 how we could visualise spatial &lt;code&gt;SQL&lt;/code&gt; queries directly in &lt;span class="caps"&gt;QGIS&lt;/span&gt; from both
 the Python console, and using a handy plugin. We can do the same thing
 here using &lt;code&gt;pgRouting&lt;/code&gt; to produce a lovely spatial representation of our
 shortest path&amp;nbsp;query:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/shortest_path.png"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/shortest_path-300x213.png" title="shortest_path" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;And there you go, a full fledged routing library built right into our&amp;nbsp;database!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 14 Oct 2010 12:26:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-10-14:2010/10/pgrouting-openstreetmap-and-qgis/</guid><category>Networks</category><category>OpenStreeMap</category><category>Databases</category><category>QGIS</category><category>FOSS</category><category>GIS</category><category>How-To</category></item><item><title>OSM data by country</title><link>http://www.carsonfarmer.com/2010/05/osm-data-by-country/</link><description>&lt;p&gt;For part of a traffic simulation project I am currently working on we
+&lt;p&gt;&lt;a href="http://carsonfarmer.com/images/shortest_path.png"&gt;&lt;img alt="image" src="http://carsonfarmer.com/images/shortest_path-300x213.png" title="shortest_path" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And there you go, a full fledged routing library built right into our&amp;nbsp;database!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 14 Oct 2010 12:26:00 -0400</pubDate><guid>tag:carsonfarmer.com,2010-10-14:2010/10/pgrouting-openstreetmap-and-qgis/</guid><category>Networks</category><category>OpenStreeMap</category><category>Databases</category><category>QGIS</category><category>FOSS</category><category>GIS</category><category>How-To</category></item><item><title>OSM data by country</title><link>http://carsonfarmer.com/2010/05/osm-data-by-country/</link><description>&lt;p&gt;For part of a traffic simulation project I am currently working on we
 need country-wide road network data for Ireland. In the past, getting
 decent road network data for an area this large was quite a task (not to
 mention expensive and time consuming), however, with OpenStreetMap we
@@ -450,11 +450,11 @@ Europe. It currently also features &lt;a href="http://labs.geofabrik.de/haiti/"&
 &lt;p&gt;Now that I have the &lt;span class="caps"&gt;OSM&lt;/span&gt; data downloaded, it should be relatively easy to
 import it into my PostGIS database using &lt;a href="http://pgrouting.postlbs.org/"&gt;pgRouting&lt;/a&gt; and the
 &lt;a href="http://pgrouting.postlbs.org/wiki/tools/osm2pgrouting"&gt;osm2pgrouting&lt;/a&gt; import tool. More to come on this topic once I get
-things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>OSM</category><category>PostGIS</category><category>Networks</category><category>Helpful Tip</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://www.carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
+things working&amp;nbsp;nicely&amp;#8230;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 13 May 2010 12:05:00 -0400</pubDate><guid>tag:carsonfarmer.com,2010-05-13:2010/05/osm-data-by-country/</guid><category>OSM</category><category>PostGIS</category><category>Networks</category><category>Helpful Tip</category><category>Research</category></item><item><title>PostGIS ‘select’ statement as vector layer in QGIS</title><link>http://carsonfarmer.com/2010/04/postgis-select-statement-as-vector-layer-in-qgis/</link><description>&lt;p&gt;Several colleagues of mine have asked whether it is possible to
 visualise the results of a &lt;code&gt;SELECT&lt;/code&gt; statement on a &lt;a href="http://postgis.refractions.net/"&gt;PostGIS&lt;/a&gt; database
 that returns spatial data in &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt;. In other words, can we map the
 results of something&amp;nbsp;like:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; FROM spatial_table GROUP BY id;
+&lt;div class="highlight"&gt;&lt;pre&gt;SELECT id, st_union&lt;span class="o"&gt;(&lt;/span&gt;the_geom&lt;span class="o"&gt;)&lt;/span&gt; FROM spatial_table GROUP BY id&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -462,7 +462,7 @@ results of something&amp;nbsp;like:&lt;/p&gt;
 to Giuseppe Sucameli and Jürgen E. Fischer, the answer is a resounding
 &amp;#8220;yes!&amp;#8221;. A &lt;a href="https://trac.osgeo.org/qgis/changeset/13340"&gt;recent patch&lt;/a&gt; to &lt;span class="caps"&gt;QGIS&lt;/span&gt; trunk now makes custom Postgres
 queries possible via the postgres data provider.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strike&gt;Unfortunately there is no user interface implemented to take advantage
 of this functionality (yet!)&lt;/strike&gt;There is now a plugin available from the
 &lt;a href="http://www.faunalia.it/qgis/plugins.xml"&gt;Faunalia python plugin repository&lt;/a&gt; called &lt;code&gt;RT Sql Layer&lt;/code&gt; which provides
@@ -491,56 +491,56 @@ access this handy feature via the &lt;code&gt;QGIS&lt;/code&gt; &lt;code&gt;Pyth
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Just another one of the many new features being added to &lt;span class="caps"&gt;QGIS&lt;/span&gt; every&amp;nbsp;day!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 27 Apr 2010 17:40:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-04-27:2010/04/postgis-select-statement-as-vector-layer-in-qgis/</guid><category>PostGIS</category><category>QGIS</category><category>FOSS</category><category>GIS</category><category>How-To</category></item><item><title>Parallel bootstrapping with R</title><link>http://www.carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/</link><description>&lt;p&gt;In a &lt;a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/"&gt;recent post&lt;/a&gt;, I mentioned that I was testing the stability of
+&lt;p&gt;Just another one of the many new features being added to &lt;span class="caps"&gt;QGIS&lt;/span&gt; every&amp;nbsp;day!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 27 Apr 2010 17:40:00 -0400</pubDate><guid>tag:carsonfarmer.com,2010-04-27:2010/04/postgis-select-statement-as-vector-layer-in-qgis/</guid><category>PostGIS</category><category>QGIS</category><category>FOSS</category><category>GIS</category><category>How-To</category></item><item><title>Parallel bootstrapping with R</title><link>http://carsonfarmer.com/2010/04/parallel-bootstrapping-with-r/</link><description>&lt;p&gt;In a &lt;a href="http://carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/"&gt;recent post&lt;/a&gt;, I mentioned that I was testing the stability of
 clusters generated from a modified network partitioning algorithm using
 bootstrap resampling techniques. I also mentioned that I was doing this
 in R, using the very nice &lt;a href="http://cran.r-project.org/web/packages/foreach/index.html"&gt;foreach&lt;/a&gt; package published by &lt;a href="http://www.revolution-computing.com/"&gt;REvolution
 Computing&lt;/a&gt;. To show just how nice this package is, below is a minimal
 example of bootstrapping a network partitioning algorithm which takes
 advantage of a multicore processor:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
-library&lt;span class="p"&gt;(&lt;/span&gt;foreach&lt;span class="p"&gt;)&lt;/span&gt;
-library&lt;span class="p"&gt;(&lt;/span&gt;igraph&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;foreach&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;igraph&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="c1"&gt;# Jaccard coeficcient function (taken from package fpc)&lt;/span&gt;
 clujaccard &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;,&lt;/span&gt; c2&lt;span class="p"&gt;,&lt;/span&gt; zerobyzero &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;NA&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;sum&lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
         out &lt;span class="o"&gt;=&lt;/span&gt; zerobyzero
-    &lt;span class="kr"&gt;else&lt;/span&gt;
-        out &lt;span class="o"&gt;=&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;sum&lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; sum&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="kp"&gt;else&lt;/span&gt;
+        out &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c1&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c2&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="kp"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;c1 &lt;span class="o"&gt;&amp;amp;&lt;/span&gt; c2&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="kr"&gt;return&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;out&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 registerDoMC&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="c1"&gt;# registers the parallel backend&lt;/span&gt;
 B &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;1000&lt;/span&gt; &lt;span class="c1"&gt;# number of bootstrap replicates to create&lt;/span&gt;
-load&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;igraph_network.Rdata&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# load a previously saved network (network name: g)&lt;/span&gt;
+&lt;span class="kp"&gt;load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;igraph_network.Rdata&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# load a previously saved network (network name: g)&lt;/span&gt;
 fg &lt;span class="o"&gt;=&lt;/span&gt; fastgreedy.community&lt;span class="p"&gt;(&lt;/span&gt;g&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# compute original clustering&lt;/span&gt;
-mm &lt;span class="o"&gt;=&lt;/span&gt; which.max&lt;span class="p"&gt;(&lt;/span&gt;fg&lt;span class="o"&gt;$&lt;/span&gt;modularity&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# find level of max modularity&lt;/span&gt;
+mm &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;which.max&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;fg&lt;span class="o"&gt;$&lt;/span&gt;modularity&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# find level of max modularity&lt;/span&gt;
 moc &lt;span class="o"&gt;=&lt;/span&gt; community.to.membership&lt;span class="p"&gt;(&lt;/span&gt;g&lt;span class="p"&gt;,&lt;/span&gt; fg&lt;span class="o"&gt;$&lt;/span&gt;merges&lt;span class="p"&gt;,&lt;/span&gt; mm&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;membership &lt;span class="c1"&gt;# get membership&lt;/span&gt;
-noc &lt;span class="o"&gt;=&lt;/span&gt; length&lt;span class="p"&gt;(&lt;/span&gt;unique&lt;span class="p"&gt;(&lt;/span&gt;moc&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;# count the number original clusters&lt;/span&gt;
+noc &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;length&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;unique&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;moc&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;# count the number original clusters&lt;/span&gt;
 bg &lt;span class="o"&gt;=&lt;/span&gt; g &lt;span class="c1"&gt;# make a copy of g for bootstrapping&lt;/span&gt;
-clusters &lt;span class="o"&gt;=&lt;/span&gt; foreach&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="o"&gt;=&lt;/span&gt;seq&lt;span class="p"&gt;(&lt;/span&gt;B&lt;span class="p"&gt;),&lt;/span&gt; .combine&lt;span class="o"&gt;=&lt;/span&gt;cbind&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%dopar%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    E&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight &lt;span class="o"&gt;=&lt;/span&gt; sample&lt;span class="p"&gt;(&lt;/span&gt;E&lt;span class="p"&gt;(&lt;/span&gt;g&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight&lt;span class="p"&gt;,&lt;/span&gt; replace&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# resample the edge weights&lt;/span&gt;
+clusters &lt;span class="o"&gt;=&lt;/span&gt; foreach&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kp"&gt;seq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;B&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="m"&gt;.&lt;/span&gt;combine&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kp"&gt;cbind&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;%dopar%&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    E&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;sample&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;E&lt;span class="p"&gt;(&lt;/span&gt;g&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;weight&lt;span class="p"&gt;,&lt;/span&gt; replace&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;TRUE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# resample the edge weights&lt;/span&gt;
     fg &lt;span class="o"&gt;=&lt;/span&gt; fastgreedy.community&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# compute bootstrap clustering&lt;/span&gt;
-    mm &lt;span class="o"&gt;=&lt;/span&gt; which.max&lt;span class="p"&gt;(&lt;/span&gt;fg&lt;span class="o"&gt;$&lt;/span&gt;modularity&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# find level of max modularity&lt;/span&gt;
+    mm &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;which.max&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;fg&lt;span class="o"&gt;$&lt;/span&gt;modularity&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# find level of max modularity&lt;/span&gt;
     mbc &lt;span class="o"&gt;=&lt;/span&gt; community.to.membership&lt;span class="p"&gt;(&lt;/span&gt;bg&lt;span class="p"&gt;,&lt;/span&gt; fg&lt;span class="o"&gt;$&lt;/span&gt;merges&lt;span class="p"&gt;,&lt;/span&gt; mm&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;membership &lt;span class="c1"&gt;# get membership&lt;/span&gt;
-    nbc &lt;span class="o"&gt;=&lt;/span&gt; length&lt;span class="p"&gt;(&lt;/span&gt;unique&lt;span class="p"&gt;(&lt;/span&gt;mbc&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;# count the number new clusters&lt;/span&gt;
-    bootresult &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;()&lt;/span&gt;
-    &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;j &lt;span class="kr"&gt;in&lt;/span&gt; seq&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; noc&lt;span class="m"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;# for each of the original clusters...&lt;/span&gt;
+    nbc &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;length&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;unique&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;mbc&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;# count the number new clusters&lt;/span&gt;
+    bootresult &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;c&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;j &lt;span class="kr"&gt;in&lt;/span&gt; &lt;span class="kp"&gt;seq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; noc&lt;span class="m"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;# for each of the original clusters...&lt;/span&gt;
         maxgamma &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
         &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;nbc &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-            &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;k &lt;span class="kr"&gt;in&lt;/span&gt; seq&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; nbc&lt;span class="m"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;# for each of the new clusters...&lt;/span&gt;
-                bv &lt;span class="o"&gt;=&lt;/span&gt; as.vector&lt;span class="p"&gt;(&lt;/span&gt;mbc &lt;span class="o"&gt;==&lt;/span&gt; k&lt;span class="p"&gt;)&lt;/span&gt;
-                ov &lt;span class="o"&gt;=&lt;/span&gt; as.vector&lt;span class="p"&gt;(&lt;/span&gt;moc &lt;span class="o"&gt;==&lt;/span&gt; j&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;k &lt;span class="kr"&gt;in&lt;/span&gt; &lt;span class="kp"&gt;seq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; nbc&lt;span class="m"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; &lt;span class="c1"&gt;# for each of the new clusters...&lt;/span&gt;
+                bv &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;as.vector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;mbc &lt;span class="o"&gt;==&lt;/span&gt; k&lt;span class="p"&gt;)&lt;/span&gt;
+                ov &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;as.vector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;moc &lt;span class="o"&gt;==&lt;/span&gt; j&lt;span class="p"&gt;)&lt;/span&gt;
                 jc &lt;span class="o"&gt;=&lt;/span&gt; clujaccard&lt;span class="p"&gt;(&lt;/span&gt;ov&lt;span class="p"&gt;,&lt;/span&gt; bv&lt;span class="p"&gt;,&lt;/span&gt; zerobyzero&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
                 &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;jc &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; maxgamma&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# if these two clusters are most similar...&lt;/span&gt;
                     maxgamma &lt;span class="o"&gt;=&lt;/span&gt; jc
             &lt;span class="p"&gt;}&lt;/span&gt;
         &lt;span class="p"&gt;}&lt;/span&gt;
-        bootresult &lt;span class="o"&gt;=&lt;/span&gt; c&lt;span class="p"&gt;(&lt;/span&gt;bootresult&lt;span class="p"&gt;,&lt;/span&gt; maxgamma&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# combine results&lt;/span&gt;
+        bootresult &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;c&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;bootresult&lt;span class="p"&gt;,&lt;/span&gt; maxgamma&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# combine results&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="kr"&gt;return&lt;/span&gt; bootresult &lt;span class="c1"&gt;# return the results of this iteration (and cbind with the rest)&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-bootmean &lt;span class="o"&gt;=&lt;/span&gt; apply&lt;span class="p"&gt;(&lt;/span&gt;clusters&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; mean&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# mean Jaccard coefficient for each cluster&lt;/span&gt;
+bootmean &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;apply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;clusters&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kp"&gt;mean&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# mean Jaccard coefficient for each cluster&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -554,27 +554,27 @@ only &amp;#8216;extra&amp;#8217; bits required to make this run on multiple core
 to run the loops in parallel. I ran a similar analysis using a different
 community detection algorithm on a computer with 4 cores, and was
 (finally) able to take full advantage of my processing&amp;nbsp;power:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/foreachcpu.png"&gt;&lt;img alt="cpu_usage" src="http://www.carsonfarmer.com/images/foreachcpu-300x114.png" title="foreachcpu" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 21 Apr 2010 15:34:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-04-21:2010/04/parallel-bootstrapping-with-r/</guid><category>Bootstrapping</category><category>Cluster</category><category>Networks</category><category>R</category><category>FOSS</category><category>How-To</category><category>Networks</category><category>Research</category></item><item><title>Voronoi polygons with R</title><link>http://www.carsonfarmer.com/2009/09/voronoi-polygons-with-r/</link><description>&lt;p&gt;To create a nice bounded Voronoi polygons tessellation of a point layer
+&lt;p&gt;&lt;a href="http://carsonfarmer.com/images/foreachcpu.png"&gt;&lt;img alt="cpu_usage" src="http://carsonfarmer.com/images/foreachcpu-300x114.png" title="foreachcpu" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 21 Apr 2010 15:34:00 -0400</pubDate><guid>tag:carsonfarmer.com,2010-04-21:2010/04/parallel-bootstrapping-with-r/</guid><category>Bootstrapping</category><category>Cluster</category><category>Networks</category><category>R</category><category>FOSS</category><category>How-To</category><category>Networks</category><category>Research</category></item><item><title>Voronoi polygons with R</title><link>http://carsonfarmer.com/2009/09/voronoi-polygons-with-r/</link><description>&lt;p&gt;To create a nice bounded Voronoi polygons tessellation of a point layer
 in &lt;code&gt;R&lt;/code&gt;, we need two libraries: &lt;code&gt;sp&lt;/code&gt; and &lt;code&gt;deldir&lt;/code&gt;. The following function
 takes a &lt;code&gt;SpatialPointsDataFrame&lt;/code&gt; as input, and returns a
 &lt;code&gt;SpatialPolygonsDataFrame&lt;/code&gt; that represents the Voronoi tessellation of
 the input point layer.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;voronoipolygons &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;layer&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    require&lt;span class="p"&gt;(&lt;/span&gt;deldir&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="kn"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;deldir&lt;span class="p"&gt;)&lt;/span&gt;
     crds &lt;span class="o"&gt;=&lt;/span&gt; layer&lt;span class="o"&gt;@&lt;/span&gt;coords
     z &lt;span class="o"&gt;=&lt;/span&gt; deldir&lt;span class="p"&gt;(&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
     w &lt;span class="o"&gt;=&lt;/span&gt; tile.list&lt;span class="p"&gt;(&lt;/span&gt;z&lt;span class="p"&gt;)&lt;/span&gt;
-    polys &lt;span class="o"&gt;=&lt;/span&gt; vector&lt;span class="p"&gt;(&lt;/span&gt;mode&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;list&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; length&lt;span class="o"&gt;=&lt;/span&gt;length&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;))&lt;/span&gt;
-    require&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; seq&lt;span class="p"&gt;(&lt;/span&gt;along&lt;span class="o"&gt;=&lt;/span&gt;polys&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-        pcrds &lt;span class="o"&gt;=&lt;/span&gt; cbind&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
-        pcrds &lt;span class="o"&gt;=&lt;/span&gt; rbind&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;,&lt;/span&gt; pcrds&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,])&lt;/span&gt;
-        polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;list&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; ID&lt;span class="o"&gt;=&lt;/span&gt;as.character&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
+    polys &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kt"&gt;vector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;mode&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;list&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; length&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kp"&gt;length&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="kn"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;sp&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="kr"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;i &lt;span class="kr"&gt;in&lt;/span&gt; &lt;span class="kp"&gt;seq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;along&lt;span class="o"&gt;=&lt;/span&gt;polys&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        pcrds &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;cbind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; w&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt;&lt;span class="o"&gt;$&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
+        pcrds &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kp"&gt;rbind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;,&lt;/span&gt; pcrds&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,])&lt;/span&gt;
+        polys&lt;span class="p"&gt;[[&lt;/span&gt;i&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; Polygons&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;Polygon&lt;span class="p"&gt;(&lt;/span&gt;pcrds&lt;span class="p"&gt;)),&lt;/span&gt; ID&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kp"&gt;as.character&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;i&lt;span class="p"&gt;))&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     SP &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygons&lt;span class="p"&gt;(&lt;/span&gt;polys&lt;span class="p"&gt;)&lt;/span&gt;
-    voronoi &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; data&lt;span class="o"&gt;=&lt;/span&gt;data.frame&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; 
-        y&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; row.names&lt;span class="o"&gt;=&lt;/span&gt;sapply&lt;span class="p"&gt;(&lt;/span&gt;slot&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;polygons&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
+    voronoi &lt;span class="o"&gt;=&lt;/span&gt; SpatialPolygonsDataFrame&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; data&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kt"&gt;data.frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; 
+        y&lt;span class="o"&gt;=&lt;/span&gt;crds&lt;span class="p"&gt;[,&lt;/span&gt;&lt;span class="m"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; row.names&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kp"&gt;sapply&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;slot&lt;span class="p"&gt;(&lt;/span&gt;SP&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;polygons&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; 
         &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;)&lt;/span&gt; slot&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;ID&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -582,9 +582,9 @@ the input point layer.
 
 &lt;p&gt;To save the output to shapefile, simply use&lt;code&gt;writeOGR&lt;/code&gt; from the &lt;code&gt;rgdal&lt;/code&gt;
 library:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="o"&gt;?&lt;/span&gt;writeOGR
-&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 16 Sep 2009 22:30:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-09-16:2009/09/voronoi-polygons-with-r/</guid><category>R</category><category>FOSS</category><category>How-To</category></item><item><title>Python, Matlab, and R</title><link>http://www.carsonfarmer.com/2009/08/python-matlab-and-r/</link><description>&lt;p&gt;One project I&amp;#8217;m working on at the moment involves exploring a dynamic
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 16 Sep 2009 22:30:00 -0400</pubDate><guid>tag:carsonfarmer.com,2009-09-16:2009/09/voronoi-polygons-with-r/</guid><category>R</category><category>FOSS</category><category>How-To</category></item><item><title>Python, Matlab, and R</title><link>http://carsonfarmer.com/2009/08/python-matlab-and-r/</link><description>&lt;p&gt;One project I&amp;#8217;m working on at the moment involves exploring a dynamic
 extension of the Isomap algorithm for visualising constantly varying
 real-world road networks. Currently, we are testing out the method on a
 small scale simulated road network, and most of the original code
@@ -594,27 +594,27 @@ to have to run on relatively large datasets, and probably behind the
 scenes on a server somewhere, we decided that Python was the way to go.
 The goal therefore was to reproduce the Matlab code using only Python
 libraries, and the fewer additional libraries required, the better.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;The most difficult stage in all this was to convert the Matlab code to
 Python code, while still remaining relatively fast and simple. The
 solution is of course the NumPy Python library, and nothing could have
-made this conversion more simple than this &lt;a href="http://www.carsonfarmer.com/uploads/matlab-python-xref.pdf"&gt;pdf document&lt;/a&gt;. It is
+made this conversion more simple than this &lt;a href="http://carsonfarmer.com/uploads/matlab-python-xref.pdf"&gt;pdf document&lt;/a&gt;. It is
 basically a syntax conversion chart between Matlab/Octave, Python, and
 R&amp;#8230;&amp;nbsp;brilliant!&lt;/p&gt;
 &lt;p&gt;Check out Vidar Bronken Gundersen&amp;#8217;s &lt;a href="http://mathesaurus.sourceforge.net/"&gt;Mathesaurus&lt;/a&gt; site for this, and
 other useful resources for converting between different mathematical
-computation&amp;nbsp;environments.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 12 Aug 2009 15:29:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-08-12:2009/08/python-matlab-and-r/</guid><category>Matlab</category><category>Python</category><category>R</category><category>FOSS</category></item><item><title>‘Watch’ long running processes</title><link>http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/</link><description>&lt;p&gt;The other day I was loading a shapefile of approximately 11 million
+computation&amp;nbsp;environments.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 12 Aug 2009 15:29:00 -0400</pubDate><guid>tag:carsonfarmer.com,2009-08-12:2009/08/python-matlab-and-r/</guid><category>Matlab</category><category>Python</category><category>R</category><category>FOSS</category></item><item><title>‘Watch’ long running processes</title><link>http://carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/</link><description>&lt;p&gt;The other day I was loading a shapefile of approximately 11 million
 records into a PostGIS database (stay tuned for more on that later) and
 I wanted to know when shp2pgsql was done. Instead of continually
 checking the console, I decided to &amp;#8216;watch&amp;#8217; the process using the *nix
 command &lt;code&gt;watch&lt;/code&gt;. I discovered this handy tool a while ago, and have
 found that for long running processes, I can use &lt;code&gt;watch&lt;/code&gt; to notify me
 when the process has finished, using the following&amp;nbsp;command:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;watch -ben 1 &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;watch -ben &lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-
+&lt;!--more--&gt;
 
 &lt;p&gt;In this case, the three parameters &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;e&lt;/code&gt;, and &lt;code&gt;n&lt;/code&gt; tell &lt;code&gt;watch&lt;/code&gt; to
 &lt;code&gt;[b]&lt;/code&gt;eep if the command has a non-zero exit (in this case when &lt;code&gt;shp2pgsql&lt;/code&gt;
@@ -627,7 +627,7 @@ tells &lt;code&gt;ps&lt;/code&gt; to report the process matching the name &lt;co
 &lt;code&gt;shp2pgsql&lt;/code&gt; is no longer running, &lt;code&gt;ps u -C&lt;/code&gt; will have a non-zero exit,
 and I get my beep: very handy!
 This can be made even more useful by changing the above command&amp;nbsp;to:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;watch -ben 1 &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;; mail -s &lt;span class="s2"&gt;&amp;quot;Process complete!&amp;quot;&lt;/span&gt; email.address@some.one &amp;lt; /home/username/email_text.txt
+&lt;div class="highlight"&gt;&lt;pre&gt;watch -ben &lt;span class="m"&gt;1&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;ps u -C shp2pgsql&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; mail -s &lt;span class="s2"&gt;&amp;quot;Process complete!&amp;quot;&lt;/span&gt; email.address@some.one &amp;lt; /home/username/email_text.txt
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -638,14 +638,14 @@ about the running process to a file and send this with the email, but
 for my purposes, the above works just&amp;nbsp;fine.&lt;/p&gt;
 &lt;p&gt;The next step is figuring out how to make my computer text me when a
 long process is complete&amp;#8230; and thanks to &lt;a href="https://twitter.com/w_dowling"&gt;Will&lt;/a&gt;, I may be &lt;a href="http://o2sms.sourceforge.net/"&gt;one step
-closer&lt;/a&gt; to this&amp;nbsp;goal.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 08 Jul 2009 12:23:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-07-08:2009/07/keep-an-eye-on-long-running-processes/</guid><category>PostGIS</category><category>FOSS</category><category>How-To</category><category>Linux</category></item><item><title>Syntax highlighting with PyQt</title><link>http://www.carsonfarmer.com/2009/07/syntax-highlighting-with-pyqt/</link><description>&lt;p&gt;A few months ago I decided to add syntax highlighting capabilities to a
+closer&lt;/a&gt; to this&amp;nbsp;goal.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Wed, 08 Jul 2009 12:23:00 -0400</pubDate><guid>tag:carsonfarmer.com,2009-07-08:2009/07/keep-an-eye-on-long-running-processes/</guid><category>PostGIS</category><category>FOSS</category><category>How-To</category><category>Linux</category></item><item><title>Syntax highlighting with PyQt</title><link>http://carsonfarmer.com/2009/07/syntax-highlighting-with-pyqt/</link><description>&lt;p&gt;A few months ago I decided to add syntax highlighting capabilities to a
 &lt;a href="http://www.ftools.ca/plugins.html"&gt;piece of software&lt;/a&gt; that I have been working on. Since it is a PyQt
 based application, the obvious choice for implementing syntax
 highlighting was to use Qt&amp;#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&amp;#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
-&lt;/p&gt;
-&lt;p&gt;The Python file used in this example is &lt;a href="http://www.carsonfarmer.com/uploads/highlighter.py"&gt;available here&lt;/a&gt;.
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;The Python file used in this example is &lt;a href="http://carsonfarmer.com/uploads/highlighter.py"&gt;available here&lt;/a&gt;.
 To implement syntax highlighting, we need to subclass
 QSyntaxHighlighter, reimplement the &lt;code&gt;highlightBlock&lt;/code&gt; function, and
 specify several highlighting rules. Generally, a rule consists of a
@@ -749,7 +749,7 @@ applied to, as the following test application&amp;nbsp;demonstrates:&lt;/p&gt;
 
 
 &lt;p&gt;Once implemented, the above example produces output like&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.carsonfarmer.com/images/screenshot.png" title="screenshot"&gt;&lt;img alt="image" src="http://www.carsonfarmer.com/images/screenshot.png" title="screenshot" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 02 Jul 2009 15:28:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-07-02:2009/07/syntax-highlighting-with-pyqt/</guid><category>Python</category><category>Coding</category><category>FOSS</category><category>UX</category><category>Helpful Tip</category></item><item><title>Open up your online maps with OpenStreetMap</title><link>http://www.carsonfarmer.com/2009/01/open-up-your-web-maps-with-openstreetmap/</link><description>&lt;p&gt;OpenStreetMap (&lt;span class="caps"&gt;OSM&lt;/span&gt;) is a project designed to create and provide free
+&lt;p&gt;&lt;a href="http://carsonfarmer.com/images/screenshot.png" title="screenshot"&gt;&lt;img alt="image" src="http://carsonfarmer.com/images/screenshot.png" title="screenshot" /&gt;&lt;/a&gt;&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Thu, 02 Jul 2009 15:28:00 -0400</pubDate><guid>tag:carsonfarmer.com,2009-07-02:2009/07/syntax-highlighting-with-pyqt/</guid><category>Python</category><category>Coding</category><category>FOSS</category><category>UX</category><category>Helpful Tip</category></item><item><title>Open up your online maps with OpenStreetMap</title><link>http://carsonfarmer.com/2009/01/open-up-your-web-maps-with-openstreetmap/</link><description>&lt;p&gt;OpenStreetMap (&lt;span class="caps"&gt;OSM&lt;/span&gt;) is a project designed to create and provide free
 spatial data (street maps) to anyone and everyone who wants them. It is
 based on an open-source &lt;a href="http://wiki.openstreetmap.org/wiki/FAQ#Why_OpenStreetMap.3F" title="OpenStreetMap Philosophy"&gt;philosophy&lt;/a&gt;, and combines wiki-like user
 generated data, with &lt;a href="http://www.opengeodata.org/?p=262"&gt;free access&lt;/a&gt;, allowing users to create, edit,
@@ -761,7 +761,7 @@ unexpected ways.&amp;#8221; There are now tones of websites and open-source
 software projects that incorporate &lt;span class="caps"&gt;OSM&lt;/span&gt; data, and the growing popularity
 of the site means that the data is only going to get better (more
 accurate) and bigger (more data).
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Essentially, OpenStreetMap contributors go out into the world
 with handheld &lt;span class="caps"&gt;GPS&lt;/span&gt; units, and an insatiable need to map everything around
 them. They track their own movements down streets and trails, and along
@@ -787,7 +787,7 @@ a beautiful &lt;span class="caps"&gt;OSM&lt;/span&gt; powered map on your&amp;nb
 &lt;p&gt;For an example, check out &lt;a href="/contact"&gt;my contact page&lt;/a&gt;. As you can see, &lt;strike&gt;there
 aren&amp;#8217;t a lot of people collecting data in Maynooth&amp;#8230;&lt;/strike&gt;, recent work in
 Maynooth has created an extremely rich, usable, and downright decent map
-of Maynooth. Nice work Blazej&amp;nbsp;Ciepluch!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 26 Jan 2009 23:27:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2009-01-26:2009/01/open-up-your-web-maps-with-openstreetmap/</guid><category>Online Maps</category><category>Open Access</category><category>Open Source</category><category>OSM</category><category>GIS</category></item><item><title>Understanding spatial reference systems</title><link>http://www.carsonfarmer.com/2009/01/understanding-spatial-reference-systems/</link><description>&lt;p&gt;For those of you who are still unclear about what exactly a spatial
+of Maynooth. Nice work Blazej&amp;nbsp;Ciepluch!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 26 Jan 2009 23:27:00 -0500</pubDate><guid>tag:carsonfarmer.com,2009-01-26:2009/01/open-up-your-web-maps-with-openstreetmap/</guid><category>Online Maps</category><category>Open Access</category><category>Open Source</category><category>OSM</category><category>GIS</category></item><item><title>Understanding spatial reference systems</title><link>http://carsonfarmer.com/2009/01/understanding-spatial-reference-systems/</link><description>&lt;p&gt;For those of you who are still unclear about what exactly a spatial
 reference system is, how it is used, and what it means for your data, I
 found a pretty good quick guide to &lt;a href="http://www.sharpgis.net/post/2007/05/05/Spatial-references2c-coordinate-systems2c-projections2c-datums2c-ellipsoids-e28093-confusing.aspx"&gt;spatial references, coordinate
 systems, projections, datums and ellipsoids&lt;/a&gt;. This article was written
@@ -803,12 +803,12 @@ the links below if you want to learn a little bit&amp;nbsp;more:&lt;/p&gt;
 &lt;li&gt;&lt;a href="http://spatialreference.org/"&gt;spatialreference.org/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html"&gt;Carlos A. Furuti&amp;#8217;s Map Projection&amp;nbsp;Pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.kartografie.nl/geometrics/Map%20projections/mappro.html"&gt;Knippers, &lt;span class="caps"&gt;R.A.&lt;/span&gt;- Map&amp;nbsp;projections&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 12 Jan 2009 15:31:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2009-01-12:2009/01/understanding-spatial-reference-systems/</guid><category>Spatial Data</category><category>Spatial Reference Systems</category><category>GIS</category></item><item><title>gedit: The ultimate LaTeX editor</title><link>http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/</link><description>&lt;p&gt;Out of the box &lt;em&gt;gedit&lt;/em&gt; is a basic text editor, but it comes equipped
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 12 Jan 2009 15:31:00 -0500</pubDate><guid>tag:carsonfarmer.com,2009-01-12:2009/01/understanding-spatial-reference-systems/</guid><category>Spatial Data</category><category>Spatial Reference Systems</category><category>GIS</category></item><item><title>gedit: The ultimate LaTeX editor</title><link>http://carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/</link><description>&lt;p&gt;Out of the box &lt;em&gt;gedit&lt;/em&gt; is a basic text editor, but it comes equipped
 with about 12 standard plugins, and another 9 readily available. In
 addition to this, there are a range of &amp;#8216;third-party&amp;#8217; plugins developed
 to do various specific tasks, such as assist you in writing and
 exporting LaTeX documents!
-
+&lt;!--more--&gt;
 First, get all the basic&amp;nbsp;plugins:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gedit-plugins&lt;span class="sb"&gt;`&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -817,12 +817,12 @@ First, get all the basic&amp;nbsp;plugins:&lt;/p&gt;
 &lt;p&gt;and enable them in gedit by going to &lt;code&gt;Edit &amp;gt; Preferences &amp;gt; Plugins&lt;/code&gt;, and
 checking the ones that you&amp;nbsp;want.&lt;/p&gt;
 &lt;p&gt;Second, make sure you have all the required dependencies for the actual
-$\LaTeX$ plugin:
+&lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; plugin:
 1. The plugin is written in Python 2.4 and relies on PyGTK 2.4: &lt;code&gt;sudo apt-get install python-gtk2&lt;/code&gt;
 2. Ensure that you have rubber installed. It is used for automated document 
 compiling: &lt;code&gt;sudo apt-get install rubber&lt;/code&gt;
 3. To use the &lt;span class="caps"&gt;DVI&lt;/span&gt; inverse search you need the Python bindings for D-&lt;span class="caps"&gt;BUS&lt;/span&gt;: &lt;code&gt;sudo apt-get install python-dbus&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Third, download the latest version of the $\LaTeX$ plugin from &lt;a href="http://live.gnome.org/Gedit/LaTeXPlugin"&gt;here&lt;/a&gt;,
+&lt;p&gt;Third, download the latest version of the &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; plugin from &lt;a href="http://live.gnome.org/Gedit/LaTeXPlugin"&gt;here&lt;/a&gt;,
 and extract and copy the contained folder and a file to
 &lt;code&gt;~/.gnome2/gedit/plugins&lt;/code&gt;. You may have to create &lt;code&gt;gedit/plugins&lt;/code&gt; if you 
 haven&amp;#8217;t installed any other plugins&amp;nbsp;yet.&lt;/p&gt;
@@ -831,11 +831,67 @@ dialog as we did with the other&amp;nbsp;plugins.&lt;/p&gt;
 &lt;p&gt;Now you have an editor with all sorts of handy functions, including
 inline spell check, code completion, tag, symbol, and character
 insertion, a file and document browser, and an embedded terminal, as
-well as tools to automatically create new $\LaTeX$ files, insert graphics,
+well as tools to automatically create new &lt;span class="math"&gt;\(\LaTeX\)&lt;/span&gt; files, insert graphics,
 tables, and matrices, and a fantastic dialog for automatically inserting
 BibTeX entries. Also, if you&amp;#8217;re an R user who creates reports etc. you
 can use Sweave directly from gedit to embed R code in your LaTeX&amp;nbsp;documents.&lt;/p&gt;
-&lt;p&gt;All this in a lightweight text editor,&amp;nbsp;nice!&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 12 Dec 2008 00:56:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2008-12-12:2008/12/gedit-the-ultimate-latex-editor/</guid><category>LaTeX</category><category>FOSS</category><category>How-To</category><category>Linux</category></item><item><title>Quick guide to setting up a PostGIS database</title><link>http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/</link><description>&lt;p&gt;Recently I decided to seriously start using PostGIS to manage my spatial
+&lt;p&gt;All this in a lightweight text editor,&amp;nbsp;nice!&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 12 Dec 2008 00:56:00 -0500</pubDate><guid>tag:carsonfarmer.com,2008-12-12:2008/12/gedit-the-ultimate-latex-editor/</guid><category>LaTeX</category><category>FOSS</category><category>How-To</category><category>Linux</category></item><item><title>Quick guide to setting up a PostGIS database</title><link>http://carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/</link><description>&lt;p&gt;Recently I decided to seriously start using PostGIS to manage my spatial
 data. As I have several projects on the go, organizing and managing my
 data effectively has become extremely important, and PostGIS is by far
 the most convenient way to do this. There is lots of documentation out
@@ -843,7 +899,7 @@ there that explains in detail how to set up PostGIS, but by far the best
 reference I&amp;#8217;ve found is from &lt;a href="http://tim.linfiniti.com/" title="Tim Sutton's blog"&gt;Tim Sutton&amp;#8217;s blog&lt;/a&gt;, mainly because he
 uses Ubuntu, and sudo-apt gets everything you need to have PostGIS
 working in minutes.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Here is a &lt;a href="http://tim.linfiniti.com/page/3" title="Setting Up Postgis on Ubuntu"&gt;link to the article&lt;/a&gt;, and below is a quote from his&amp;nbsp;blog:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Another reason I love Ubuntu - getting postgis + postgresql is really&amp;nbsp;easy&amp;#8230;&lt;/p&gt;
@@ -868,13 +924,13 @@ psql qgis &amp;lt; /usr/share/postgresql-8.3-postgis/spatial_ref_sys.sql
 
 &lt;blockquote&gt;
 &lt;p&gt;Easy&amp;nbsp;peasy.&lt;/p&gt;
-&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 28 Nov 2008 12:01:00 -0500</pubDate><guid>tag:www.carsonfarmer.com,2008-11-28:2008/11/quick-guide-to-setting-up-postgis-database/</guid><category>PostGIS</category><category>FOSS</category><category>GIS</category><category>How-To</category><category>Linux</category></item><item><title>View spatial data attribute tables in R</title><link>http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/</link><description>&lt;p&gt;Many &lt;span class="caps"&gt;GIS&lt;/span&gt; offer the ability to view the attribute table of a vector
+&lt;/blockquote&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Fri, 28 Nov 2008 12:01:00 -0500</pubDate><guid>tag:carsonfarmer.com,2008-11-28:2008/11/quick-guide-to-setting-up-postgis-database/</guid><category>PostGIS</category><category>FOSS</category><category>GIS</category><category>How-To</category><category>Linux</category></item><item><title>View spatial data attribute tables in R</title><link>http://carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/</link><description>&lt;p&gt;Many &lt;span class="caps"&gt;GIS&lt;/span&gt; offer the ability to view the attribute table of a vector
 layer. While this is perhaps less obvious in the R environment, it is
 not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;invisible&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;!--more--&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kp"&gt;invisible&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -894,11 +950,11 @@ console with the attributes of the table. You could also&amp;nbsp;use:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;to make changes to the Spatial*DataFrame&amp;nbsp;itself.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 14 Oct 2008 13:44:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2008-10-14:2008/10/view-spatial-data-attribute-tables-in-r/</guid><category>FOSS</category><category>GIS</category><category>How-To</category><category>R</category></item><item><title>R spatial indentify tool</title><link>http://www.carsonfarmer.com/2008/09/r-spatial-indentify-tool/</link><description>&lt;p&gt;This is useful for visually exploring R spatial data such as
+&lt;p&gt;to make changes to the Spatial*DataFrame&amp;nbsp;itself.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 14 Oct 2008 13:44:00 -0400</pubDate><guid>tag:carsonfarmer.com,2008-10-14:2008/10/view-spatial-data-attribute-tables-in-r/</guid><category>FOSS</category><category>GIS</category><category>How-To</category><category>R</category></item><item><title>R spatial indentify tool</title><link>http://carsonfarmer.com/2008/09/r-spatial-indentify-tool/</link><description>&lt;p&gt;This is useful for visually exploring R spatial data such as
 &lt;code&gt;SpatialPointDataFrames&lt;/code&gt; or &lt;code&gt;SpatialGridDataFrames&lt;/code&gt;. By clicking on various
 features, the value at that point will be&amp;nbsp;displayed.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;library&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
-y &lt;span class="o"&gt;=&lt;/span&gt; readGDAL&lt;span class="p"&gt;(&lt;/span&gt;system.file&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pictures/Rlogo.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rgdal&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; band&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;rgdal&lt;span class="p"&gt;)&lt;/span&gt;
+y &lt;span class="o"&gt;=&lt;/span&gt; readGDAL&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kp"&gt;system.file&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;pictures/Rlogo.jpg&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; package&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;rgdal&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; band&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 y.grid &lt;span class="o"&gt;=&lt;/span&gt; y&lt;span class="o"&gt;@&lt;/span&gt;grid
 y.coords &lt;span class="o"&gt;=&lt;/span&gt; coordinates&lt;span class="p"&gt;(&lt;/span&gt;y.grid&lt;span class="p"&gt;)&lt;/span&gt; 
 image&lt;span class="p"&gt;(&lt;/span&gt;y&lt;span class="p"&gt;)&lt;/span&gt;
@@ -908,13 +964,13 @@ identify&lt;span class="p"&gt;(&lt;/span&gt;x&lt;span class="o"&gt;=&lt;/span&gt
 
 &lt;p&gt;where &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; refer to coordinates (in this case because &lt;code&gt;y.coords&lt;/code&gt;
 contains both &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt; coordinates, &lt;code&gt;y&lt;/code&gt; can be set to &lt;code&gt;NULL&lt;/code&gt;), and &lt;code&gt;n&lt;/code&gt; is the
-number of features to&amp;nbsp;identify.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 23 Sep 2008 12:36:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2008-09-23:2008/09/r-spatial-indentify-tool/</guid><category>FOSS</category><category>GIS</category><category>How-To</category><category>Linux</category><category>R</category></item><item><title>Find and replace multiple files</title><link>http://www.carsonfarmer.com/2008/09/find-and-replace-multiple-files/</link><description>&lt;p&gt;Recently, I had to do a find and replace over several individual python
+number of features to&amp;nbsp;identify.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 23 Sep 2008 12:36:00 -0400</pubDate><guid>tag:carsonfarmer.com,2008-09-23:2008/09/r-spatial-indentify-tool/</guid><category>FOSS</category><category>GIS</category><category>How-To</category><category>Linux</category><category>R</category></item><item><title>Find and replace multiple files</title><link>http://carsonfarmer.com/2008/09/find-and-replace-multiple-files/</link><description>&lt;p&gt;Recently, I had to do a find and replace over several individual python
 files.There are plenty of scripts out there which will accomplish this,
 but I was interested in something simple, and preferably a single line
 command. After a lot of Google-ing, I ended up finding &lt;a href="http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/#comment-26487"&gt;this post&lt;/a&gt;,
 which does a great job of explaining how to do this in linux. The basic
 command&amp;nbsp;is:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;find . -name &lt;span class="s2"&gt;&amp;quot;\*.py&amp;quot;&lt;/span&gt; -print | xargs sed -i &lt;span class="s1"&gt;&amp;#39;s/foo/bar/g&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;find . -name &lt;span class="s2"&gt;&amp;quot;\*.py&amp;quot;&lt;/span&gt; -print &lt;span class="p"&gt;|&lt;/span&gt; xargs sed -i &lt;span class="s1"&gt;&amp;#39;s/foo/bar/g&amp;#39;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -922,4 +978,4 @@ command&amp;nbsp;is:&lt;/p&gt;
 your directory,  and &lt;code&gt;xargs sed -i 's/foo/bar/g'&lt;/code&gt; is used to replace all 
 occurrences of &amp;#8216;foo&amp;#8217; in the files with &amp;#8216;bar&amp;#8217;.
 The link above gives a good explanation of each command (find, xargs, sed), 
-and how they combine together to create this useful single line&amp;nbsp;command.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 08 Sep 2008 09:09:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2008-09-08:2008/09/find-and-replace-multiple-files/</guid><category>Helpful Tip</category><category>Linux</category><category>How-To</category></item></channel></rss>
+and how they combine together to create this useful single line&amp;nbsp;command.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Mon, 08 Sep 2008 09:09:00 -0400</pubDate><guid>tag:carsonfarmer.com,2008-09-08:2008/09/find-and-replace-multiple-files/</guid><category>Helpful Tip</category><category>Linux</category><category>How-To</category></item></channel></rss>

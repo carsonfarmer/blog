@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Research</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../">
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li class="active">
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,26 +83,24 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         
 <section id="content" class="body">
@@ -109,55 +108,28 @@
     <h1 class="entry-title">Research</h1>
     
     <h3><i class="fa fa-clock-o"></i>&nbsp;Background</h3>
-<p><a href="http://www.carsonfarmer.com/images/carson-pres-small.jpg"><img alt="Background" class="right" src="http://www.carsonfarmer.com/images/carson-pres-small.jpg" /></a></p>
-<p>I completed a BSc (honours with distinction) in Geography at the
-University of Victoria, in British Columbia, Canada in 2006. There, my
-studies focused on <span class="caps">GIS</span>, spatial statistics, and housing prices, and led
-directly to a fully funded MSc the following September. During my MSc
-studies, I was awarded the Derrick Sewell Graduate Research Scholarship
-in both 2006 and 2007, as well as two paper presentation awards at
-national conferences in Ottawa and Saskatoon. My MSc research focused on
-spatial-temporal aspects of snow cover and water content, and
-spatial-temporal analysis methods in general. Prior to completing my MSc
-dissertation in the summer of 2008, I was successful in obtaining PhD
-fellowships from the Irish Social Sciences Platform (<span class="caps">ISSP</span>) and the
-Social Sciences and Humanities Research Council (<span class="caps">SSHRC</span>) of Canada. I
-completed my PhD in September 2011, under the supervision of Prof. A.
-Stewart Fotheringham. My dissertation was entitled &#8220;Commuting flows <span class="amp">&amp;</span>
-local labour markets: Spatial interaction modelling of&nbsp;travel-to-work&#8221;.</p>
+<p><a href="../images/carson-pres-small.jpg"><img alt="Background" class="right" src="../images/carson-pres-small.jpg" /></a></p>
+<p>Beginning Fall 2015, I will be Assistant Professor in the Geography Department of the University of Colorado at Boulder where I will focus on spatial-temporal analysis and data-intensive modeling of dynamic geographical processes. Prior to joining the faculty at Colorado I was Associate Director of the Center for Advanced Research of Spatial Information (<span class="caps">CARSI</span>) and Assistant Professor of GIScience at Hunter College of the City University of New York (<span class="caps">CUNY</span>). In 2012, I held a postdoctoral position at the University of St Andrews in Scotland, and in 2011 I completed a PhD funded by the Irish Social Sciences Platform (<span class="caps">ISSP</span>) and the Social Sciences and Humanities Research Council (<span class="caps">SSHRC</span>) of Canada at the National Center for Geocomputation (<span class="caps">NCG</span>) at the University of Maynooth (formerly National University of Ireland Maynooth) in Ireland. Both my undergraduate and Masters were completed in the Geography Department at the University of Victoria, in <span class="caps">B.C.</span> Canada (my&nbsp;hometown!). </p>
 <h3><i class="fa fa-bar-chart-o"></i> Current <span class="amp">&amp;</span> Future&nbsp;Research</h3>
-<p><a href="http://www.carsonfarmer.com/images/blurred_workers.png"><img alt="Current &amp; Future Research" class="left" src="http://www.carsonfarmer.com/images/blurred_workers.png" /></a></p>
+<p><a href="../images/blurred_workers.png"><img alt="Current &amp; Future Research" class="left" src="../images/blurred_workers.png" /></a></p>
 <p>My current and future research interests are ultimately concerned with
-modelling and understanding spatial processes. While much of the current
-work on modelling urban dynamics is concerned with networks and abstract
-representations of space, I also see the city as a sociological system
-made up of individuals who often behave in unexpected or inventive
-ways. In this vein, I am as much interested in <em>theories</em> of
-interactions, cities, and human dynamics as I am in the <em>methods</em> and
+modelling and understanding spatial processes. My work tends to fall under the general banner of &#8216;computational GIScience&#8217; and encompasses work on networks, transportation, big-data, snow/water processes, and geospatial algorithms. I am as much interested in <em>theories</em> of
+interactions of human and environmental processes as I am in the <em>methods</em> and
 <em>models</em> designed to characterize them. As part of my long-term research
 goals, I continue to incorporate theories of spatial interaction,
-urban geography, and GIScience into my work on complex urban systems and
-dynamics. Examples of the types of questions I am interested in
-answering include &#8220;how does the spatial structure and temporal
-dynamics of cities and regions contribute to the spatial-temporal
-patterns of various urban processes, such as housing prices and
-development, labour markets, and human mobility?&#8221; and &#8220;how does our
-understanding of aggregate movements within urban environments help
-us to understand the behaviour of individuals, and how can we
-effectively integrate human and urban processes at multiple&nbsp;scales?&#8221;.</p>
+time-geography, and GIScience into my work on complex systems and&nbsp;dynamics.</p>
 <p>My primary interest is in flow and movement data associated with
-underlying networks within urban environments, be they infrastructural,
-social, spatial, or a combination of all three. Spatial models are my
+underlying networks within human and natural environments. Spatial models are my
 primary means of quantitatively characterizing urban processes, and are
 used to explore data at a range of spatial and temporal resolutions. I
 also have a keen interest in developing new approaches to solving
 geographical problems by fostering expanded use of ideas and methods
-from outside geography and GIScience. In particular, I aim to promote
-the use of spatial analysis methods and data-driven research to help
-explore the complex hierarchies and interactions within urban&nbsp;environments.</p>
+from outside geography and GIScience (such as data-streams and computer graphics).
+Additionally, I aim to promote the use of spatial analysis methods in data-intensive research to help
+explore the complex hierarchies and interactions within, across, and between human and natural&nbsp;systems.</p>
 <h3><i class="fa fa-truck"></i> PhD&nbsp;Research</h3>
 <p><em>Commuting flows <span class="amp">&amp;</span> local labour markets: Spatial interaction modeling of&nbsp;travel-to-work</em></p>
-<p><a href="http://www.carsonfarmer.com/images/congestion.png"><img alt="PhD Research" class="right" src="http://www.carsonfarmer.com/images/congestion.png" /></a>
+<p><a href="../images/congestion.png"><img alt="PhD Research" class="right" src="../images/congestion.png" /></a>
 One of the most promising approaches to mitigating land-use and
 transportation problems is continued research on urban commuting.
 Commuting is essential to many individuals, allowing them to participate
@@ -191,7 +163,7 @@ takes place. This research is funded in part by the <span class="caps">ISSP</spa
 <span class="caps">SSHRC</span>, and is being completed under the supervision of Prof. Stewart&nbsp;Fotheringham.</p>
 <h3><i class="fa fa-tint"></i> MSc&nbsp;Research</h3>
 <p><em>Spatial time-series analysis of satellite derived snow water&nbsp;equivalence</em></p>
-<p><a href="http://www.carsonfarmer.com/images/alberta_snow.png"><img alt="MSc Research" class="left" src="http://www.carsonfarmer.com/images/alberta_snow.png" /></a>
+<p><a href="../images/alberta_snow.png"><img alt="MSc Research" class="left" src="../images/alberta_snow.png" /></a>
 My MSc research focused primarily on examining the spatial-temporal
 characteristics of snow water equivalence (<span class="caps">SWE</span>) in Canada, and comparing
 these characteristics to known or hypothesized climate and ecological
@@ -217,17 +189,17 @@ land-cover, of which terrestrial snow cover and <span class="caps">SWE</span> pl
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -243,34 +215,30 @@ land-cover, of which terrestrial snow cover and <span class="caps">SWE</span> pl
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../maps/visitors/"><img src="../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -278,10 +246,7 @@ land-cover, of which terrestrial snow cover and <span class="caps">SWE</span> pl
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -318,6 +283,6 @@ land-cover, of which terrestrial snow cover and <span class="caps">SWE</span> pl
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

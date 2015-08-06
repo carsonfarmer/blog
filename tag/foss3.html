@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Carson Farmer &mdash; Articles tagged FOSS</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../">
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,26 +83,24 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         
         
@@ -110,23 +109,23 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/08/python-matlab-and-r/" rel="bookmark"
+                    <h1><a href="../2009/08/python-matlab-and-r/" rel="bookmark"
                            title="Permalink to Python, Matlab, and R">Python, Matlab, and&nbsp;R</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-08-12T15:29:00">
+                  <abbr class="published" title="2009-08-12T15:29:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Wed 12 August 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>One project I&#8217;m working on at the moment involves exploring a dynamic
@@ -142,32 +141,32 @@ libraries, and the fewer additional libraries required, the better.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/08/python-matlab-and-r/">read more</a>
+                    <a class="readmore" href="../2009/08/python-matlab-and-r/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/08/python-matlab-and-r/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2009/08/python-matlab-and-r/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/" rel="bookmark"
+                    <h1><a href="../2009/07/foss4g-and-teaching-gis/" rel="bookmark"
                            title="Permalink to FOSS4G and teaching GIS"><span class="caps">FOSS4G</span> and teaching <span class="caps">GIS</span></a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-07-20T10:45:00">
+                  <abbr class="published" title="2009-07-20T10:45:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Mon 20 July 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>Two quicks notes to&nbsp;share:</p>
@@ -183,32 +182,32 @@ software for geospatial</a> conference in Sydney in October. There will
 be loads ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/">read more</a>
+                    <a class="readmore" href="../2009/07/foss4g-and-teaching-gis/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/07/foss4g-and-teaching-gis/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2009/07/foss4g-and-teaching-gis/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/" rel="bookmark"
+                    <h1><a href="../2009/07/keep-an-eye-on-long-running-processes/" rel="bookmark"
                            title="Permalink to ‘Watch’ long running processes"><span class="quo">&#8216;</span>Watch&#8217; long running&nbsp;processes</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-07-08T12:23:00">
+                  <abbr class="published" title="2009-07-08T12:23:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Wed 08 July 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>The other day I was loading a shapefile of approximately 11 million
@@ -218,39 +217,39 @@ checking the console, I decided to &#8216;watch&#8217; the process using the *ni
 command <code>watch</code>. I discovered this handy tool a while ago, and have
 found that for long running processes, I can use <code>watch</code> to notify me
 when the process has finished, using the following&nbsp;command:</p>
-<div class="highlight"><pre>watch -ben 1 <span class="s2">&quot;ps u -C shp2pgsql&quot;</span>
+<div class="highlight"><pre>watch -ben <span class="m">1</span> <span class="s2">&quot;ps u -C shp2pgsql&quot;</span>
 </pre></div>
 
 
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/">read more</a>
+                    <a class="readmore" href="../2009/07/keep-an-eye-on-long-running-processes/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/07/keep-an-eye-on-long-running-processes/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2009/07/keep-an-eye-on-long-running-processes/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/07/syntax-highlighting-with-pyqt/" rel="bookmark"
+                    <h1><a href="../2009/07/syntax-highlighting-with-pyqt/" rel="bookmark"
                            title="Permalink to Syntax highlighting with PyQt">Syntax highlighting with&nbsp;PyQt</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-07-02T15:28:00">
+                  <abbr class="published" title="2009-07-02T15:28:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Thu 02 July 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>A few months ago I decided to add syntax highlighting capabilities to a
@@ -262,32 +261,32 @@ Python, so I decided to post my own.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/07/syntax-highlighting-with-pyqt/">read more</a>
+                    <a class="readmore" href="../2009/07/syntax-highlighting-with-pyqt/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/07/syntax-highlighting-with-pyqt/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2009/07/syntax-highlighting-with-pyqt/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2009/01/r-featured-in-new-york-times/" rel="bookmark"
+                    <h1><a href="../2009/01/r-featured-in-new-york-times/" rel="bookmark"
                            title="Permalink to R featured in New York Times">R featured in New York&nbsp;Times</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2009-01-28T12:14:00">
+                  <abbr class="published" title="2009-01-28T12:14:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Wed 28 January 2009
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/news.html">News</a> 
+        <a class="label label-primary" href="../category/news.html">News</a> 
     </p>
                   </footer>
                 <p>I&#8217;m sure everyone has seen this already, but I&#8217;m going to post it
@@ -300,32 +299,32 @@ choice for researchers using spatial statistics and geographic
 information&nbsp;analysis.</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2009/01/r-featured-in-new-york-times/">read more</a>
+                    <a class="readmore" href="../2009/01/r-featured-in-new-york-times/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2009/01/r-featured-in-new-york-times/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2009/01/r-featured-in-new-york-times/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
+                    <h1><a href="../2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
                            title="Permalink to gedit: The ultimate LaTeX editor">gedit: The ultimate LaTeX&nbsp;editor</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-12-12T00:56:00">
+                  <abbr class="published" title="2008-12-12T00:56:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Fri 12 December 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>Out of the box <em>gedit</em> is a basic text editor, but it comes equipped
@@ -333,35 +332,100 @@ with about 12 standard plugins, and another 9 readily available. In
 addition to this, there are a range of &#8216;third-party&#8217; plugins developed
 to do various specific tasks, such as assist you in writing and
 exporting LaTeX documents!
+<!--more-->
+First, get all the basic&nbsp;plugins:</p>
+<div class="highlight"><pre>sudo apt-get install gedit-plugins<span class="sb">`</span>
+</pre></div>
 
+
+<p>and enable them in gedit by going to <code>Edit &gt; Preferences &gt; Plugins</code>, and
+checking the ones that you&nbsp;want.</p>
+<p>Second, make sure you have all the required dependencies for the actual
+<span class="math">\(\LaTeX\)</span> plugin:
+1. The plugin is written in Python ...</p><script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/">read more</a>
+                    <a class="readmore" href="../2008/12/gedit-the-ultimate-latex-editor/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/12/gedit-the-ultimate-latex-editor/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/" rel="bookmark"
+                    <h1><a href="../2008/11/quick-guide-to-setting-up-postgis-database/" rel="bookmark"
                            title="Permalink to Quick guide to setting up a PostGIS database">Quick guide to setting up a PostGIS&nbsp;database</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-11-28T12:01:00">
+                  <abbr class="published" title="2008-11-28T12:01:00-05:00">
                       <i class="fa fa-calendar"></i>
                       Fri 28 November 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>Recently I decided to seriously start using PostGIS to manage my spatial
@@ -375,32 +439,32 @@ working in minutes.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/">read more</a>
+                    <a class="readmore" href="../2008/11/quick-guide-to-setting-up-postgis-database/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/11/quick-guide-to-setting-up-postgis-database/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/" rel="bookmark"
+                    <h1><a href="../2008/10/view-spatial-data-attribute-tables-in-r/" rel="bookmark"
                            title="Permalink to View spatial data attribute tables in R">View spatial data attribute tables in&nbsp;R</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2008-10-14T13:44:00">
+                  <abbr class="published" title="2008-10-14T13:44:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Tue 14 October 2008
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../category/helpful-tip.html">Helpful Tip</a> 
     </p>
                   </footer>
                 <p>Many <span class="caps">GIS</span> offer the ability to view the attribute table of a vector
@@ -411,35 +475,35 @@ Spatial*DataFrames.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/">read more</a>
+                    <a class="readmore" href="../2008/10/view-spatial-data-attribute-tables-in-r/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2008/10/view-spatial-data-attribute-tables-in-r/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2008/10/view-spatial-data-attribute-tables-in-r/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-            <a class="left-arrow" href="http://www.carsonfarmer.com/tag/foss2.html">
+            <a class="left-arrow" href="../tag/foss2.html">
                 <i class="fa fa-arrow-circle-left fa-4x"></i>
             </a>
     3 / 4
-        <a class="right-arrow" href="http://www.carsonfarmer.com/tag/foss4.html">
+        <a class="right-arrow" href="../tag/foss4.html">
             <i class="fa fa-arrow-circle-right fa-4x"></i>
         </a>
 </p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -455,34 +519,30 @@ Spatial*DataFrames.
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../maps/visitors/"><img src="../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -490,10 +550,7 @@ Spatial*DataFrames.
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -530,6 +587,6 @@ Spatial*DataFrames.
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

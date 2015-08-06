@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Carson Farmer &mdash; Articles tagged News</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../">
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,26 +83,24 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         
         
@@ -110,125 +109,125 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2014/10/workshop-on-geospatial-computing/" rel="bookmark"
+                    <h1><a href="../2014/10/workshop-on-geospatial-computing/" rel="bookmark"
                            title="Permalink to Interdisciplinary Workshop on Geospatial Computing">Interdisciplinary Workshop on Geospatial&nbsp;Computing</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2014-10-30T14:00:00">
+                  <abbr class="published" title="2014-10-30T14:00:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Thu 30 October 2014
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
-                <p><a href="http://thespatiallab.org/?page_id=6576"><img alt="Geospatial Computing Workshop" class="left" src="http://www.carsonfarmer.com/images/geocomputing.png" /></a> </p>
+                <p><a href="http://thespatiallab.org/?page_id=6576"><img alt="Geospatial Computing Workshop" class="left" src="../images/geocomputing.png" /></a> </p>
 <p>Hey all, I&#8217;ll be running a half-day workshop on Geospatial Computing with Python at the upcoming <strong>Interdisciplinary Workshop on Geospatial Computing (<span class="caps">IWGC</span>-2014)</strong> on <strong>November 20-21, 2014</strong> at <strong>TheMuseum, Kitchener, Ontario</strong>. Its going to be a really great event, with lots of experts in the field of geospatial computing. It is particularly relevant to students who have an interest in geospatial&nbsp;computing.</p>
 <p>Organizers: Colin Robertson (Laurier), Graham Taylor (Guelph), Rob Feick&nbsp;(Waterloo)</p>
 <p>We invite participants to an Interdisciplinary Workshop on Geospatial Computing. The workshop is aimed broadly at bringing together disparate communities working with geospatial tools and data. We ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2014/10/workshop-on-geospatial-computing/">read more</a>
+                    <a class="readmore" href="../2014/10/workshop-on-geospatial-computing/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2014/10/workshop-on-geospatial-computing/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2014/10/workshop-on-geospatial-computing/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2014/09/geos-seminar-graduate-center/" rel="bookmark"
+                    <h1><a href="../2014/09/geos-seminar-graduate-center/" rel="bookmark"
                            title="Permalink to GEOS seminar series at the Graduate Center"><span class="caps">GEOS</span> seminar series at the Graduate&nbsp;Center</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2014-09-30T23:00:00">
+                  <abbr class="published" title="2014-09-30T23:00:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Tue 30 September 2014
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>The Geography, Earth Science and Oceanography Seminars (<span class="caps">GEOS</span>) is hosting myself and Prof Sean Ahearn this Thursday to give a talk on &#8220;Computational GIScience: Current Research at the <span class="caps">CARSI</span>&nbsp;Lab&#8221;.</p>
 <p><CENTER>
-<img alt="GEOS Seminar Series Announcement" src="http://www.carsonfarmer.com/images/GEOS-Oct-2-Ahearn-Farmer.jpg" />
+<img alt="GEOS Seminar Series Announcement" src="../images/GEOS-Oct-2-Ahearn-Farmer.jpg" />
 </CENTER></p>
 <p>The talk will feature a bunch of the fun and exciting stuff we&#8217;re doing at <span class="caps">CARSI</span>, including our EnviroCar project and some of my recent work with spatial data flows. The talks will start around 5:30 <span class="caps">PM</span> on Thursday October 2nd 2014 in the Science Center, Room 4102 at the <span class="caps">CUNY</span> Graduate Center (365 5th Avenue, <span class="caps">NYC</span>). I&#8217;m told that light snacks and refreshments will be served ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2014/09/geos-seminar-graduate-center/">read more</a>
+                    <a class="readmore" href="../2014/09/geos-seminar-graduate-center/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2014/09/geos-seminar-graduate-center/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2014/09/geos-seminar-graduate-center/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2014/03/esri_and_open_source/" rel="bookmark"
+                    <h1><a href="../2014/03/esri_and_open_source/" rel="bookmark"
                            title="Permalink to ESRI and Open Source"><span class="caps">ESRI</span> and Open&nbsp;Source</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2014-03-12T13:30:00">
+                  <abbr class="published" title="2014-03-12T13:30:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Wed 12 March 2014
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/news.html">News</a> 
+        <a class="label label-primary" href="../category/news.html">News</a> 
     </p>
                   </footer>
-                <p><a href="http://blogs.esri.com/esri/esri-insider/2014/03/05/esri-open-source-growing/?WT.mc_id=EmailCampaignh25209"><img alt="ESRI &amp; Open Source" class="right" src="http://www.carsonfarmer.com/images/esri_open.png" /></a></p>
+                <p><a href="http://blogs.esri.com/esri/esri-insider/2014/03/05/esri-open-source-growing/?WT.mc_id=EmailCampaignh25209"><img alt="ESRI &amp; Open Source" class="right" src="../images/esri_open.png" /></a></p>
 <p>Here&#8217;s a <a href="http://blogs.esri.com/esri/esri-insider/2014/03/05/esri-open-source-growing/?WT.mc_id=EmailCampaignh25209">blog post from <span class="caps">ESRI</span></a> about <span class="caps">ESRI</span>&#8217;s transition to open source, open development, and social coding.<a href="#kessler">*</a> It features <a href="https://github.com/">GitHub</a> pretty prominently, which continues to be an awesome resource for collaborative work &#8212; and not just for code. My colleagues and I have started using it for planning meetings and workshops, developing research papers, maintaining websites (this site is hosted on GitHub), and yes, even open source software projects. <span class="caps">ESRI</span> obviously also thinks GitHub is a useful resource, and their keynote for the <a href="http://www.esri.com/events/devsummit"><span class="caps">ESRI</span> DevSummit</a> is <a href="https://twitter.com/defunkt">GitHub <span class="caps">CEO</span> and Co-Founder Chris Wanstrath</a>!</p>
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2014/03/esri_and_open_source/">read more</a>
+                    <a class="readmore" href="../2014/03/esri_and_open_source/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2014/03/esri_and_open_source/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2014/03/esri_and_open_source/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/" rel="bookmark"
+                    <h1><a href="../2013/06/nyc-panel-climate-change/" rel="bookmark"
                            title="Permalink to New York City Panel on Climate Change">New York City Panel on Climate&nbsp;Change</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-06-12T15:55:00">
+                  <abbr class="published" title="2013-06-12T15:55:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Wed 12 June 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>This was recently announced on the <a href="http://www.geo.hunter.cuny.edu/">Hunter Geography Department</a>&nbsp;website:</p>
@@ -244,32 +243,32 @@ by the <a href="http://www.cunysustainablecities.org/"><span class="caps">CUNY</
 featured in the ...</p></blockquote>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/">read more</a>
+                    <a class="readmore" href="../2013/06/nyc-panel-climate-change/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/06/nyc-panel-climate-change/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2013/06/nyc-panel-climate-change/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/10/phd-position-in-geoinformatics-and-housing-research/" rel="bookmark"
+                    <h1><a href="../2012/10/phd-position-in-geoinformatics-and-housing-research/" rel="bookmark"
                            title="Permalink to PhD position in GeoInformatics and Housing research">PhD position in GeoInformatics and Housing&nbsp;research</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-10-25T14:37:00">
+                  <abbr class="published" title="2012-10-25T14:37:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Thu 25 October 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>The <span class="caps">CGI</span> is looking for a talented PhD student to fill an
@@ -282,32 +281,32 @@ developing state-of-the-art methods in geoinformatics and applying them
 to fundamental questions in the social housing&nbsp;sector.</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/10/phd-position-in-geoinformatics-and-housing-research/">read more</a>
+                    <a class="readmore" href="../2012/10/phd-position-in-geoinformatics-and-housing-research/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/10/phd-position-in-geoinformatics-and-housing-research/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/10/phd-position-in-geoinformatics-and-housing-research/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/07/paper-published-in-environmental-monitoring-and-assessment/" rel="bookmark"
+                    <h1><a href="../2012/07/paper-published-in-environmental-monitoring-and-assessment/" rel="bookmark"
                            title="Permalink to Paper published in Environmental Monitoring and Assessment">Paper published in Environmental Monitoring and&nbsp;Assessment</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-07-30T18:02:00">
+                  <abbr class="published" title="2012-07-30T18:02:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Mon 30 July 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/publication.html">Publication</a> 
+        <a class="label label-primary" href="../category/publication.html">Publication</a> 
     </p>
                   </footer>
                 <p>An article I worked on with Margaret E. Andrew, Trisalyn A. Nelson,
@@ -323,32 +322,32 @@ summer and winter conditions. Environmental Monitoring and Assessment.&nbsp;doi:
 <p>If you would like a copy, but do not have access to the article ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/07/paper-published-in-environmental-monitoring-and-assessment/">read more</a>
+                    <a class="readmore" href="../2012/07/paper-published-in-environmental-monitoring-and-assessment/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/07/paper-published-in-environmental-monitoring-and-assessment/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/07/paper-published-in-environmental-monitoring-and-assessment/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/05/presentation-at-cag-2012-in-waterloo/" rel="bookmark"
+                    <h1><a href="../2012/05/presentation-at-cag-2012-in-waterloo/" rel="bookmark"
                            title="Permalink to Presentation at CAG 2012 in Waterloo">Presentation at <span class="caps">CAG</span> 2012 in&nbsp;Waterloo</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-05-28T17:23:00">
+                  <abbr class="published" title="2012-05-28T17:23:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Mon 28 May 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/announcement.html">Announcement</a> 
+        <a class="label label-primary" href="../category/announcement.html">Announcement</a> 
     </p>
                   </footer>
                 <p>I am giving a talk and chairing a session at the <a href="http://www.cag2012.org/">Canadian Association
@@ -362,32 +361,32 @@ on full&nbsp;screen).</p>
 <p>Hope I see you&nbsp;there!</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/05/presentation-at-cag-2012-in-waterloo/">read more</a>
+                    <a class="readmore" href="../2012/05/presentation-at-cag-2012-in-waterloo/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/05/presentation-at-cag-2012-in-waterloo/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/05/presentation-at-cag-2012-in-waterloo/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/" rel="bookmark"
+                    <h1><a href="../2012/05/visualising-data-with-fatfonts/" rel="bookmark"
                            title="Permalink to Visualising data with FatFonts">Visualising data with&nbsp;FatFonts</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-05-26T20:30:00">
+                  <abbr class="published" title="2012-05-26T20:30:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Sat 26 May 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>I recently posted an <a href="http://www.st-andrews.ac.uk/geoinformatics/visualising-with-fatfonts/">article on the <span class="caps">CGI</span> blog</a> about some
@@ -408,32 +407,32 @@ beauty to my potentially boring data!
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/">read more</a>
+                    <a class="readmore" href="../2012/05/visualising-data-with-fatfonts/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/05/visualising-data-with-fatfonts/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
     1 / 2
-        <a class="right-arrow" href="http://www.carsonfarmer.com/tag/news2.html">
+        <a class="right-arrow" href="../tag/news2.html">
             <i class="fa fa-arrow-circle-right fa-4x"></i>
         </a>
 </p>            </section><!-- /#content -->
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -449,34 +448,30 @@ beauty to my potentially boring data!
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../maps/visitors/"><img src="../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -484,10 +479,7 @@ beauty to my potentially boring data!
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -524,6 +516,6 @@ beauty to my potentially boring data!
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

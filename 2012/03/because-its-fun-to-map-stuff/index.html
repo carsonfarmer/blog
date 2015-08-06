@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Because its fun to map stuff…</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../../../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../../../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../../../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../../../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../../../">
+                <img src="../../../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../../../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../../../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../../../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,62 +83,60 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../../../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
 <section id="content" class="body">
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
+        <a href="../../../2012/03/because-its-fun-to-map-stuff/" rel="bookmark"
            title="Permalink to Because its fun to map stuff…">Because its fun to map&nbsp;stuff&#8230;</a></h1>
-      <abbr class="published" title="2012-03-30T17:46:00">
+      <abbr class="published" title="2012-03-30T17:46:00-04:00">
           <i class="fa fa-calendar"></i>
           Fri 30 March 2012
       </abbr>
 <div class="share-list">
-<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/&text=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&hashtags=Data Science,Internet,Mapping,R,FOSS,How-To,&via=CarsonFarmer"
+<a href="http://twitter.com/share?url=../../../2012/03/because-its-fun-to-map-stuff/&text=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&hashtags=Data Science,Internet,Mapping,R,FOSS,How-To,&via=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-twitter-square fa-2x"></i> Tweet
 </a>
-<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/" 
+<a href="https://plus.google.com/share?url=../../../2012/03/because-its-fun-to-map-stuff/" 
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-google-plus-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/&title=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&summary=Its%20been%20quite%20a%20while%20since%20my%20last%20post%2C%20and%20its%20Friday%20and%20I%20was%20feeling%20creative%2C%20so%20I%20decided%20to%20map%20something%21%20I%E2%80%99ve%20been%20looking%20for%20an%20excuse%20to%20produce%20a%20nice%20graphic%20like%20the%20one%20Anita%20Graser%20created%20to%20represent%20Vienna%E2%80%99s%20green-spaces.%20She%20used%20Quantum%20GIS%20to%20produce%20a%20hexagonal%20grid%20for%20representing%20the%20density%20of%20Viennese%20trees%20instead%20of%20the%20standard%20heat%20map%20or%20kernel%20density%20map%2C%20and%20the%20results%20are%20quite%20nice%21%20I%E2%80%99m%20a%20huge%20fan%20of%20QGIS%2C%20but%20I%20tend%20to%20do%20most%20of%20my%20work%20in%20R%2C%20so%20I%20decided%20to%20...&source=CarsonFarmer"
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=../../../2012/03/because-its-fun-to-map-stuff/&title=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&summary=Its%20been%20quite%20a%20while%20since%20my%20last%20post%2C%20and%20its%20Friday%20and%20I%20was%20feeling%20creative%2C%20so%20I%20decided%20to%20map%20something%21%20I%E2%80%99ve%20been%20looking%20for%20an%20excuse%20to%20produce%20a%20nice%20graphic%20like%20the%20one%20Anita%20Graser%20created%20to%20represent%20Vienna%E2%80%99s%20green-spaces.%20She%20used%20Quantum%20GIS%20to%20produce%20a%20hexagonal%20grid%20for%20representing%20the%20density%20of%20Viennese%20trees%20instead%20of%20the%20standard%20heat%20map%20or%20kernel%20density%20map%2C%20and%20the%20results%20are%20quite%20nice%21%20I%E2%80%99m%20a%20huge%20fan%20of%20QGIS%2C%20but%20I%20tend%20to%20do%20most%20of%20my%20work%20in%20R%2C%20so%20I%20decided%20to%20...&source=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-linkedin-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/&name=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&description=Its%20been%20quite%20a%20while%20since%20my%20last%20post%2C%20and%20its%20Friday%20and%20I%20was%20feeling%20creative%2C%20so%20I%20decided%20to%20map%20something%21%20I%E2%80%99ve%20been%20looking%20for%20an%20excuse%20to%20produce%20a%20nice%20graphic%20like%20the%20one%20Anita%20Graser%20created%20to%20represent%20Vienna%E2%80%99s%20green-spaces.%20She%20used%20Quantum%20GIS%20to%20produce%20a%20hexagonal%20grid%20for%20representing%20the%20density%20of%20Viennese%20trees%20instead%20of%20the%20standard%20heat%20map%20or%20kernel%20density%20map%2C%20and%20the%20results%20are%20quite%20nice%21%20I%E2%80%99m%20a%20huge%20fan%20of%20QGIS%2C%20but%20I%20tend%20to%20do%20most%20of%20my%20work%20in%20R%2C%20so%20I%20decided%20to%20..."
+<a href="http://www.tumblr.com/share/link?url=../../../2012/03/because-its-fun-to-map-stuff/&name=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&description=Its%20been%20quite%20a%20while%20since%20my%20last%20post%2C%20and%20its%20Friday%20and%20I%20was%20feeling%20creative%2C%20so%20I%20decided%20to%20map%20something%21%20I%E2%80%99ve%20been%20looking%20for%20an%20excuse%20to%20produce%20a%20nice%20graphic%20like%20the%20one%20Anita%20Graser%20created%20to%20represent%20Vienna%E2%80%99s%20green-spaces.%20She%20used%20Quantum%20GIS%20to%20produce%20a%20hexagonal%20grid%20for%20representing%20the%20density%20of%20Viennese%20trees%20instead%20of%20the%20standard%20heat%20map%20or%20kernel%20density%20map%2C%20and%20the%20results%20are%20quite%20nice%21%20I%E2%80%99m%20a%20huge%20fan%20of%20QGIS%2C%20but%20I%20tend%20to%20do%20most%20of%20my%20work%20in%20R%2C%20so%20I%20decided%20to%20..."
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-tumblr-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/&p[title]=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&p[summary]=Its%20been%20quite%20a%20while%20since%20my%20last%20post%2C%20and%20its%20Friday%20and%20I%20was%20feeling%20creative%2C%20so%20I%20decided%20to%20map%20something%21%20I%E2%80%99ve%20been%20looking%20for%20an%20excuse%20to%20produce%20a%20nice%20graphic%20like%20the%20one%20Anita%20Graser%20created%20to%20represent%20Vienna%E2%80%99s%20green-spaces.%20She%20used%20Quantum%20GIS%20to%20produce%20a%20hexagonal%20grid%20for%20representing%20the%20density%20of%20Viennese%20trees%20instead%20of%20the%20standard%20heat%20map%20or%20kernel%20density%20map%2C%20and%20the%20results%20are%20quite%20nice%21%20I%E2%80%99m%20a%20huge%20fan%20of%20QGIS%2C%20but%20I%20tend%20to%20do%20most%20of%20my%20work%20in%20R%2C%20so%20I%20decided%20to%20..."
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=../../../2012/03/because-its-fun-to-map-stuff/&p[title]=Because%20its%20fun%20to%20map%C2%A0stuff%E2%80%A6&p[summary]=Its%20been%20quite%20a%20while%20since%20my%20last%20post%2C%20and%20its%20Friday%20and%20I%20was%20feeling%20creative%2C%20so%20I%20decided%20to%20map%20something%21%20I%E2%80%99ve%20been%20looking%20for%20an%20excuse%20to%20produce%20a%20nice%20graphic%20like%20the%20one%20Anita%20Graser%20created%20to%20represent%20Vienna%E2%80%99s%20green-spaces.%20She%20used%20Quantum%20GIS%20to%20produce%20a%20hexagonal%20grid%20for%20representing%20the%20density%20of%20Viennese%20trees%20instead%20of%20the%20standard%20heat%20map%20or%20kernel%20density%20map%2C%20and%20the%20results%20are%20quite%20nice%21%20I%E2%80%99m%20a%20huge%20fan%20of%20QGIS%2C%20but%20I%20tend%20to%20do%20most%20of%20my%20work%20in%20R%2C%20so%20I%20decided%20to%20..."
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-facebook-square fa-2x"></i> Share
@@ -158,14 +157,14 @@ similar using R. Turns out you can, and the final results are displayed
 below (read on to see the full work-flow). Instead of trees, I went
 ahead and mapped the locations of unique visitors to
 <code>http://www.carsonfarmer.com/</code> between 2009 and&nbsp;2011:</p>
-<p><a href="http://www.carsonfarmer.com/images/website_visitors.svg"><img alt="Visitors map" src="http://www.carsonfarmer.com/images/website_visitors.svg" /></a></p>
+<p><a href="../../../images/website_visitors.svg"><img alt="Visitors map" src="../../../images/website_visitors.svg" /></a></p>
 <h3>Work-flow</h3>
 <p>Firstly, I downloaded the logs for <code>www.carsonfarmer.com</code>. I did this
 directly from the console, though I&#8217;m pretty sure I could have done this
 from R as well. Next, I needed to extract the unique <span class="caps">IP</span> addresses from
 the logs. I found this nice grep one-liner from <a href="http://blogs.law.harvard.edu/djcp/2009/04/how-to-extract-uniq-ips-from-apache-via-grep-cut-and-uniq/">here</a>, which I
 modified to grab all unique <span class="caps">IP</span> addresses that &#8216;<span class="caps">GET</span>&#8217; something from the&nbsp;site:</p>
-<div class="highlight"><pre>grep <span class="s1">&#39;GET&#39;</span> access.log | cut -d<span class="s1">&#39; &#39;</span> -f1 | sort | uniq &gt; ip_addresses.log
+<div class="highlight"><pre>grep <span class="s1">&#39;GET&#39;</span> access.log <span class="p">|</span> cut -d<span class="s1">&#39; &#39;</span> -f1 <span class="p">|</span> sort <span class="p">|</span> uniq &gt; ip_addresses.log
 </pre></div>
 
 
@@ -192,7 +191,7 @@ packages: <code>RCurl</code>, <code>rjson</code>, and <code>plyr</code>):</p>
 <p>Once I had all that stuff installed and ready to go, I actually started
 up an R session and got&nbsp;working:</p>
 <div class="highlight"><pre>addresses <span class="o">=</span> read.table<span class="p">(</span><span class="s">&#39;ip_addresses.log&#39;</span><span class="p">,</span> col.names<span class="o">=</span><span class="s">&#39;address&#39;</span><span class="p">)</span>
-library<span class="p">(</span>RDSTK<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>RDSTK<span class="p">)</span>
 <span class="o">?</span> ip2coordinates
 </pre></div>
 
@@ -202,13 +201,13 @@ within a single string with comma-separated <span class="caps">IP</span> address
 only do a few IPs at a time (about 100 I think?) so I had to do this
 part in a loop (it probably isn&#8217;t polite to slam <span class="caps">DSTK</span> with 1,000s of
 requests, so be&nbsp;nice!).</p>
-<div class="highlight"><pre>ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
+<div class="highlight"><pre>ips <span class="o">=</span> <span class="kp">paste</span><span class="p">(</span><span class="kp">as.character</span><span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">80</span><span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
 out <span class="o">=</span> ip2coordinates<span class="p">(</span>ips<span class="p">)</span>
 last <span class="o">=</span> <span class="m">80</span>
-s <span class="o">=</span> c<span class="p">(</span>seq<span class="p">(</span><span class="m">160</span><span class="p">,</span> nrow<span class="p">(</span>addresses<span class="p">),</span> <span class="m">80</span><span class="p">),</span> nrow<span class="p">(</span>addresses<span class="p">))</span>
+s <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="kp">seq</span><span class="p">(</span><span class="m">160</span><span class="p">,</span> <span class="kp">nrow</span><span class="p">(</span>addresses<span class="p">),</span> <span class="m">80</span><span class="p">),</span> <span class="kp">nrow</span><span class="p">(</span>addresses<span class="p">))</span>
 <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> s<span class="p">)</span> <span class="p">{</span>
-    ips <span class="o">=</span> paste<span class="p">(</span>as.character<span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[(</span>last<span class="m">+1</span><span class="p">)</span><span class="o">:</span>i<span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
-    out <span class="o">=</span> rbind<span class="p">(</span>out<span class="p">,</span> ip2coordinates<span class="p">(</span>ips<span class="p">))</span>
+    ips <span class="o">=</span> <span class="kp">paste</span><span class="p">(</span><span class="kp">as.character</span><span class="p">(</span>addresses<span class="o">$</span>address<span class="p">[(</span>last<span class="m">+1</span><span class="p">)</span><span class="o">:</span>i<span class="p">]),</span> collapse<span class="o">=</span><span class="s">&#39;, &#39;</span><span class="p">)</span>
+    out <span class="o">=</span> <span class="kp">rbind</span><span class="p">(</span>out<span class="p">,</span> ip2coordinates<span class="p">(</span>ips<span class="p">))</span>
     last <span class="o">=</span> i
 <span class="p">}</span>
 </pre></div>
@@ -219,30 +218,30 @@ returned <code>data.frame</code> to a <code>SpatialPointsDataFrame</code>, b) cr
 <code>SpatialGrid</code> based on the points, c) create a <code>SpatialPolygons</code> object
 from a hexagonal sample of the grid, and then finally d) create a
 <code>SpatialPolygonsDataFrame</code> for&nbsp;plotting:</p>
-<div class="highlight"><pre>library<span class="p">(</span>sp<span class="p">)</span>
+<div class="highlight"><pre><span class="kn">library</span><span class="p">(</span>sp<span class="p">)</span>
 <span class="c1"># make the output into a Spatial* object</span>
 coordinates<span class="p">(</span>out<span class="p">)</span> <span class="o">=</span> <span class="o">~</span>longitude<span class="o">+</span>latitude
-library<span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
+<span class="kn">library</span><span class="p">(</span>maptools<span class="p">)</span> <span class="c1"># need this for the following function</span>
 sg <span class="o">=</span> Sobj_SpatialGrid<span class="p">(</span>out<span class="p">,</span> maxDim<span class="o">=</span><span class="m">200</span><span class="p">,</span> n<span class="o">=</span><span class="kc">NULL</span><span class="p">)</span><span class="o">$</span>SG
 hex_pts <span class="o">=</span> spsample<span class="p">(</span>sg<span class="p">,</span> type<span class="o">=</span><span class="s">&#39;hexagonal&#39;</span><span class="p">,</span> cellsize<span class="o">=</span>sg<span class="o">@</span>grid<span class="o">@</span>cellsize<span class="p">)</span>
 hex_poly <span class="o">=</span> HexPoints2SpatialPolygons<span class="p">(</span>hex_pts<span class="p">)</span>
 pts_poly <span class="o">=</span> over<span class="p">(</span>hex_poly<span class="p">,</span> out<span class="p">,</span> returnList<span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
-pts_poly_count <span class="o">=</span> sapply<span class="p">(</span>pts_poly<span class="p">,</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> nrow<span class="p">(</span>x<span class="p">))</span>
-poly <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>poly<span class="p">,</span> data.frame<span class="p">(</span><span class="s">&#39;count&#39;</span><span class="o">=</span>pts_poly_count<span class="p">),</span> 
+pts_poly_count <span class="o">=</span> <span class="kp">sapply</span><span class="p">(</span>pts_poly<span class="p">,</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> <span class="kp">nrow</span><span class="p">(</span>x<span class="p">))</span>
+poly <span class="o">=</span> SpatialPolygonsDataFrame<span class="p">(</span>poly<span class="p">,</span> <span class="kt">data.frame</span><span class="p">(</span><span class="s">&#39;count&#39;</span><span class="o">=</span>pts_poly_count<span class="p">),</span> 
     match.ID<span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
 </pre></div>
 
 
 <p>Ok, now for some&nbsp;plotting!</p>
 <div class="highlight"><pre><span class="c1"># pick some reasonable break points</span>
-breaks <span class="o">=</span> c<span class="p">(</span><span class="m">1.0</span><span class="p">,</span> <span class="m">10.0</span><span class="p">,</span> <span class="m">20.0</span><span class="p">,</span> <span class="m">50.0</span><span class="p">,</span> <span class="m">100.0</span><span class="p">,</span> <span class="m">500.0</span><span class="p">,</span> <span class="m">2000.0</span><span class="p">)</span>
+breaks <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="m">1.0</span><span class="p">,</span> <span class="m">10.0</span><span class="p">,</span> <span class="m">20.0</span><span class="p">,</span> <span class="m">50.0</span><span class="p">,</span> <span class="m">100.0</span><span class="p">,</span> <span class="m">500.0</span><span class="p">,</span> <span class="m">2000.0</span><span class="p">)</span>
 <span class="c1"># use RColorBrewer to get a nice blue palette</span>
-library<span class="p">(</span>RColorBrewer<span class="p">)</span>
+<span class="kn">library</span><span class="p">(</span>RColorBrewer<span class="p">)</span>
 <span class="c1"># don&#39;t use the lightest colour, it looks washed out</span>
 cols <span class="o">=</span> brewer.pal<span class="p">(</span><span class="m">7</span><span class="p">,</span><span class="s">&quot;Blues&quot;</span><span class="p">)[</span><span class="m">-1</span><span class="p">]</span> 
 <span class="c1"># plot the grid, which produces something close to our final product</span>
 spplot<span class="p">(</span>poly<span class="p">[</span>poly<span class="o">$</span>count<span class="o">&gt;</span><span class="m">0</span><span class="p">,],</span> col<span class="o">=</span><span class="s">&#39;white&#39;</span><span class="p">,</span> col.regions<span class="o">=</span>cols<span class="p">,</span> at<span class="o">=</span>breaks<span class="p">,</span> 
-       par.settings<span class="o">=</span>list<span class="p">(</span>axis.line<span class="o">=</span>list<span class="p">(</span>col<span class="o">=</span><span class="s">&#39;transparent&#39;</span><span class="p">)))</span>
+       par.settings<span class="o">=</span><span class="kt">list</span><span class="p">(</span>axis.line<span class="o">=</span><span class="kt">list</span><span class="p">(</span>col<span class="o">=</span><span class="s">&#39;transparent&#39;</span><span class="p">)))</span>
 </pre></div>
 
 
@@ -252,21 +251,21 @@ suited to the map at hand. In the end I had a nice map of my blog
 readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!</p>
     <p class="category">
         <i class="fa fa-certificate fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../../../category/helpful-tip.html">Helpful Tip</a> 
     </p>
     <p class="tag">
         <i class="fa fa-tags fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/data-science.html">Data Science</a>
+        <a class="label label-primary" href="../../../tag/data-science.html">Data Science</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/internet.html">Internet</a>
+        <a class="label label-primary" href="../../../tag/internet.html">Internet</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/mapping.html">Mapping</a>
+        <a class="label label-primary" href="../../../tag/mapping.html">Mapping</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/r.html">R</a>
+        <a class="label label-primary" href="../../../tag/r.html">R</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/foss.html">FOSS</a>
+        <a class="label label-primary" href="../../../tag/foss.html">FOSS</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/how-to.html">How-To</a>
+        <a class="label label-primary" href="../../../tag/how-to.html">How-To</a>
         </span>
     </p>
     </div><!-- /.entry-content -->
@@ -274,7 +273,7 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2012/03/because-its-fun-to-map-stuff/";
-          var disqus_url = "http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/";
+          var disqus_url = "../../../2012/03/because-its-fun-to-map-stuff/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
@@ -288,17 +287,17 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -314,34 +313,30 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../../../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../../../maps/visitors/"><img src="../../../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../../../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../../../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -349,10 +344,7 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -389,6 +381,6 @@ readers, and an excellent way to procrastinate on a sunny Friday&nbsp;afternoon!
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../../../theme/js/tools.js"></script>
 </body>
 </html>

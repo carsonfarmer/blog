@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://www.carsonfarmer.com/</link><description>www.carsonfarmer.com</description><atom:link href="http://www.carsonfarmer.com/feeds/networks.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 17 Apr 2010 14:26:00 -0400</lastBuildDate><item><title>Bootstrapping network partitioning methods</title><link>http://www.carsonfarmer.com/2010/04/bootstrapping-network-partitioning-methods/</link><description>&lt;p&gt;My PhD research at the moment focuses on network-based algorithms for
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carson Farmer</title><link>http://carsonfarmer.com/</link><description>carsonfarmer.com</description><atom:link href="http://carsonfarmer.com/feeds/networks.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 17 Apr 2010 14:26:00 -0400</lastBuildDate><item><title>Bootstrapping network partitioning methods</title><link>http://carsonfarmer.com/2010/04/bootstrapping-network-partitioning-methods/</link><description>&lt;p&gt;My PhD research at the moment focuses on network-based algorithms for
 delineating functional regions (geographical regions within which a
 large majority of the local population seeks employment, and the
 majority of local employers recruit their labour). Currently I&amp;#8217;m using a
@@ -7,7 +7,7 @@ network partitioning algorithm based on &lt;a href="http://en.wikipedia.org/wiki
 have found my results to be quite good so far, but, &amp;#8216;quite good&amp;#8217; isn&amp;#8217;t
 really a very scientific description of validity, so obviously some
 others means of validation is required. Enter bootstrap resampling!
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Bootstrapping can be used to assess the &lt;strong&gt;validity&lt;/strong&gt; of a
 particular network partitioning by measuring the &lt;strong&gt;stability&lt;/strong&gt; of the
 detected partitions (or clusters). Here, a cluster may be thought of as
@@ -50,7 +50,7 @@ the detected clusters goes down. The nice bit however, is that for
 (&lt;em&gt;&lt;code&gt;γ &amp;gt;= 0.6&lt;/code&gt;&lt;/em&gt;), meaning the network partitioning algorithm I was using
 is doing a pretty good job.&amp;nbsp;Nice!&lt;/p&gt;
 &lt;p&gt;This bootstrapping process is part of a paper I&amp;#8217;m working on at the
-moment, and uses a geographical variant of &lt;a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/"&gt;this algorithm&lt;/a&gt; to detect
+moment, and uses a geographical variant of &lt;a href="http://carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/"&gt;this algorithm&lt;/a&gt; to detect
 functional regions in travel to work data. I&amp;#8217;ll post more on the
 algorithm and my bootstrapping implementation in R (using the very cool
 &lt;a href="http://cran.r-project.org/web/packages/foreach/index.html"&gt;foreach&lt;/a&gt; package) here&amp;nbsp;soon.&lt;/p&gt;
@@ -58,28 +58,28 @@ algorithm and my bootstrapping implementation in R (using the very cool
 &lt;p&gt;Leicht, E. A., &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Newman, &lt;span class="caps"&gt;M. E. J.&lt;/span&gt;(2008). &lt;a href="http://prl.aps.org/abstract/PRL/v100/i11/e118703"&gt;Community structure in
 directed networks&lt;/a&gt;. &lt;em&gt;Physical Review Letters&lt;/em&gt;, 100(11),&amp;nbsp;118703.&lt;/p&gt;
 &lt;p&gt;Hennig, C. (2007). &lt;a href="http://www.sciencedirect.com/science/article/B6V8V-4MJJMV8-1/2/303f8dd772cd73d54aea3a224b188005"&gt;Cluster-wise assessment of cluster stability&lt;/a&gt;.
-&lt;em&gt;Computational Statistics &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Data Analysis&lt;/em&gt;, 52(1),&amp;nbsp;258-271.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 17 Apr 2010 14:26:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2010-04-17:2010/04/bootstrapping-network-partitioning-methods/</guid><category>Networks</category><category>R</category><category>Uncertainty</category><category>How-to</category></item><item><title>Community structure in directed, weighted networks</title><link>http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/</link><description>&lt;p&gt;Many natural and human systems can be represented as networks, including
+&lt;em&gt;Computational Statistics &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Data Analysis&lt;/em&gt;, 52(1),&amp;nbsp;258-271.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Sat, 17 Apr 2010 14:26:00 -0400</pubDate><guid>tag:carsonfarmer.com,2010-04-17:2010/04/bootstrapping-network-partitioning-methods/</guid><category>Networks</category><category>R</category><category>Uncertainty</category><category>How-to</category></item><item><title>Community structure in directed, weighted networks</title><link>http://carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/</link><description>&lt;p&gt;Many natural and human systems can be represented as networks, including
 the Internet, social interactions, food webs, and transportation and
 communication flows. One thing that these types of networks have in
 common, is that they can each be represented as a series of vertices (or
 nodes) and edges (or links). This &lt;a href="http://toreopsahl.com/2008/11/28/network-weighted-network/"&gt;blog entry&lt;/a&gt; presents a nice
 description of networks, highlighting the differences between various
 network types (directed, undirected, weighted, unweighted, etc.).
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;According to &lt;a href="http://arxiv.org/abs/0709.4500"&gt;this paper&lt;/a&gt;, many
 networks are found to display &amp;#8220;community structure&amp;#8221;, which basically
 refers to groupings of vertices where &lt;em&gt;within&lt;/em&gt;-group edge connections
 are more dense than &lt;em&gt;between&lt;/em&gt;-group edge connections. In order to detect
 and delineate these groupings, &lt;a href="http://arxiv.org/abs/0709.4500"&gt;Leicht &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Newman (2008)&lt;/a&gt; present a nice &amp;#8220;modularity&amp;#8221; optimisation algorithm which is
 designed to find a &amp;#8220;good&amp;#8221; division of a network by&amp;nbsp;maximising&lt;/p&gt;
-&lt;p&gt;$$Q =&amp;nbsp;\frac{1}{2m}s^TB_s,$$&lt;/p&gt;
-&lt;p&gt;where $s$ is a vector whose elements define which group each node
-belongs to, and $\mathbf{B}$ is the so-called modularity matrix, with&amp;nbsp;elements&lt;/p&gt;
-&lt;p&gt;$$B_{ij} = A_{ij} - \frac{k_{i}^{in}&amp;nbsp;k_{j}^{out}}{m},$$&lt;/p&gt;
-&lt;p&gt;where $A_{ij}$ is an element in the adjacency matrix $\mathbf{A}$, $k_{i}^{in}$
-and $k_{j}^{out}$ are the in- and out-degrees of the vertices, and $m$ is
+&lt;div class="math"&gt;$$Q = \frac{1}{2m}s^TB_s,$$&lt;/div&gt;
+&lt;p&gt;where &lt;span class="math"&gt;\(s\)&lt;/span&gt; is a vector whose elements define which group each node
+belongs to, and &lt;span class="math"&gt;\(\mathbf{B}\)&lt;/span&gt; is the so-called modularity matrix, with&amp;nbsp;elements&lt;/p&gt;
+&lt;div class="math"&gt;$$B_{ij} = A_{ij} - \frac{k_{i}^{in} k_{j}^{out}}{m},$$&lt;/div&gt;
+&lt;p&gt;where &lt;span class="math"&gt;\(A_{ij}\)&lt;/span&gt; is an element in the adjacency matrix &lt;span class="math"&gt;\(\mathbf{A}\)&lt;/span&gt;, &lt;span class="math"&gt;\(k_{i}^{in}\)&lt;/span&gt;
+and &lt;span class="math"&gt;\(k_{j}^{out}\)&lt;/span&gt; are the in- and out-degrees of the vertices, and &lt;span class="math"&gt;\(m\)&lt;/span&gt; is
 the total sum of edges in the network. In practice, this can be extended
-to directed networks by considering the matrix $\mathbf{B} + \mathbf{B}^T$ (for an
+to directed networks by considering the matrix &lt;span class="math"&gt;\(\mathbf{B} + \mathbf{B}^T\)&lt;/span&gt; (for an
 explanation of why this is the case, see &lt;a href="http://arxiv.org/abs/0709.4500"&gt;Leicht &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Newman&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;It is relatively straight-forward to extend the above modularity
 optimisation algorithm to the case of a weighted network by computing
@@ -90,11 +90,11 @@ theory of the modularity algorithm holds for this more general case
 (note that an unweighted network can simply be represented as a weighted
 network where the edge weights are all set to 1). As such, our new
 modularity matrix can be computed&amp;nbsp;as&lt;/p&gt;
-&lt;p&gt;$$B_{ij} = A_{ij} - \frac{s_{i}^{in}&amp;nbsp;s_{j}^{out}}{m},$$&lt;/p&gt;
-&lt;p&gt;where $m = \sum_{i}s_{i}^{in} = \sum_{j} s_j^{out}$, and $s$ represents the vertex
-strength. As such, using the above &lt;em&gt;new&lt;/em&gt; definition of $\mathbf{B}$, the
+&lt;div class="math"&gt;$$B_{ij} = A_{ij} - \frac{s_{i}^{in} s_{j}^{out}}{m},$$&lt;/div&gt;
+&lt;p&gt;where &lt;span class="math"&gt;\(m = \sum_{i}s_{i}^{in} = \sum_{j} s_j^{out}\)&lt;/span&gt;, and &lt;span class="math"&gt;\(s\)&lt;/span&gt; represents the vertex
+strength. As such, using the above &lt;em&gt;new&lt;/em&gt; definition of &lt;span class="math"&gt;\(\mathbf{B}\)&lt;/span&gt;, the
 modularity of a directed, weighted network is computed&amp;nbsp;as&lt;/p&gt;
-&lt;p&gt;$$Q =&amp;nbsp;\frac{1}{4m}s^{T}(\mathbf{B}-\mathbf{B}^{T})s.$$&lt;/p&gt;
+&lt;div class="math"&gt;$$Q = \frac{1}{4m}s^{T}(\mathbf{B}-\mathbf{B}^{T})s.$$&lt;/div&gt;
 &lt;p&gt;My current research uses a modified modularity optimisation algorithm to
 compute &lt;a href="http://en.wikipedia.org/wiki/Functional_region"&gt;functional regions&lt;/a&gt; for Ireland based on a range of
 socio-economic variables. The goal is to provide a consistent framework
@@ -104,4 +104,60 @@ countries and/or&amp;nbsp;regions.&lt;/p&gt;
 &lt;h3&gt;References&lt;/h3&gt;
 &lt;p&gt;Leicht, &lt;span class="caps"&gt;E. A.&lt;/span&gt; &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; Newman, &lt;span class="caps"&gt;M. E. J.&lt;/span&gt;(2008). &lt;a href="http://arxiv.org/abs/0709.4500"&gt;Community structure in directed networks&lt;/a&gt;.
 &lt;em&gt;Physical Review Letters&lt;/em&gt;, 100(11),&amp;nbsp;118703.&lt;/p&gt;
-&lt;p&gt;Newman, &lt;span class="caps"&gt;M. E. J.&lt;/span&gt;(2004). &lt;a href="http://arxiv.org/abs/cond-mat/0407503"&gt;Analysis of weighted networks&lt;/a&gt;. &lt;em&gt;Physical Review E&lt;/em&gt;, 70(5),&amp;nbsp;056131.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 20 Oct 2009 16:24:00 -0400</pubDate><guid>tag:www.carsonfarmer.com,2009-10-20:2009/10/community-structure-in-directed-weighted-networks/</guid><category>Modularity</category><category>Networks</category><category>Helpful Tip</category><category>Research</category></item></channel></rss>
+&lt;p&gt;Newman, &lt;span class="caps"&gt;M. E. J.&lt;/span&gt;(2004). &lt;a href="http://arxiv.org/abs/cond-mat/0407503"&gt;Analysis of weighted networks&lt;/a&gt;. &lt;em&gt;Physical Review E&lt;/em&gt;, 70(5),&amp;nbsp;056131.&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">cfarmer</dc:creator><pubDate>Tue, 20 Oct 2009 16:24:00 -0400</pubDate><guid>tag:carsonfarmer.com,2009-10-20:2009/10/community-structure-in-directed-weighted-networks/</guid><category>Modularity</category><category>Networks</category><category>Helpful Tip</category><category>Research</category></item></channel></rss>

@@ -3,37 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Community structure in directed, weighted networks</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../../../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-        
-<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-<script type="text/javascript">
-init_mathjax = function() {
-    if (window.MathJax) {
-        // MathJax loaded
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [ ['$','$'], ["\(","\)"] ],
-                displayMath: [ ['$$','$$'], ["\[","\]"] ]
-            },
-            displayAlign: 'left', // Change this to 'center' to center equations.
-            "HTML-CSS": {
-                styles: {'.MathJax_Display': {"margin": 0}}
-            }
-        });
-        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-    }
-}
-</script>
-
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../../../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../../../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../../../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -46,8 +29,8 @@ init_mathjax = function() {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../../../">
+                <img src="../../../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -56,17 +39,17 @@ init_mathjax = function() {
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../../../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../../../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../../../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -76,25 +59,22 @@ init_mathjax = function() {
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -103,62 +83,60 @@ init_mathjax = function() {
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../../../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
 <section id="content" class="body">
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/" rel="bookmark"
+        <a href="../../../2009/10/community-structure-in-directed-weighted-networks/" rel="bookmark"
            title="Permalink to Community structure in directed, weighted networks">Community structure in directed, weighted&nbsp;networks</a></h1>
-      <abbr class="published" title="2009-10-20T16:24:00">
+      <abbr class="published" title="2009-10-20T16:24:00-04:00">
           <i class="fa fa-calendar"></i>
           Tue 20 October 2009
       </abbr>
 <div class="share-list">
-<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/&text=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&hashtags=Modularity,Networks,Helpful Tip,Research,&via=CarsonFarmer"
+<a href="http://twitter.com/share?url=../../../2009/10/community-structure-in-directed-weighted-networks/&text=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&hashtags=Modularity,Networks,Helpful Tip,Research,&via=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-twitter-square fa-2x"></i> Tweet
 </a>
-<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/" 
+<a href="https://plus.google.com/share?url=../../../2009/10/community-structure-in-directed-weighted-networks/" 
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-google-plus-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/&title=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&summary=Many%20natural%20and%20human%20systems%20can%20be%20represented%20as%20networks%2C%20including%20the%20Internet%2C%20social%20interactions%2C%20food%20webs%2C%20and%20transportation%20and%20communication%20flows.%20One%20thing%20that%20these%20types%20of%20networks%20have%20in%20common%2C%20is%20that%20they%20can%20each%20be%20represented%20as%20a%20series%20of%20vertices%20%28or%20nodes%29%20and%20edges%20%28or%20links%29.%20This%20blog%20entry%20presents%20a%20nice%20description%20of%20networks%2C%20highlighting%20the%20differences%20between%20various%20network%20types%20%28directed%2C%20undirected%2C%20weighted%2C%20unweighted%2C%20etc.%29.&source=CarsonFarmer"
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=../../../2009/10/community-structure-in-directed-weighted-networks/&title=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&summary=Many%20natural%20and%20human%20systems%20can%20be%20represented%20as%20networks%2C%20including%20the%20Internet%2C%20social%20interactions%2C%20food%20webs%2C%20and%20transportation%20and%20communication%20flows.%20One%20thing%20that%20these%20types%20of%20networks%20have%20in%20common%2C%20is%20that%20they%20can%20each%20be%20represented%20as%20a%20series%20of%20vertices%20%28or%20nodes%29%20and%20edges%20%28or%20links%29.%20This%20blog%20entry%20presents%20a%20nice%20description%20of%20networks%2C%20highlighting%20the%20differences%20between%20various%20network%20types%20%28directed%2C%20undirected%2C%20weighted%2C%20unweighted%2C%20etc.%29.&source=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-linkedin-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/&name=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&description=Many%20natural%20and%20human%20systems%20can%20be%20represented%20as%20networks%2C%20including%20the%20Internet%2C%20social%20interactions%2C%20food%20webs%2C%20and%20transportation%20and%20communication%20flows.%20One%20thing%20that%20these%20types%20of%20networks%20have%20in%20common%2C%20is%20that%20they%20can%20each%20be%20represented%20as%20a%20series%20of%20vertices%20%28or%20nodes%29%20and%20edges%20%28or%20links%29.%20This%20blog%20entry%20presents%20a%20nice%20description%20of%20networks%2C%20highlighting%20the%20differences%20between%20various%20network%20types%20%28directed%2C%20undirected%2C%20weighted%2C%20unweighted%2C%20etc.%29."
+<a href="http://www.tumblr.com/share/link?url=../../../2009/10/community-structure-in-directed-weighted-networks/&name=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&description=Many%20natural%20and%20human%20systems%20can%20be%20represented%20as%20networks%2C%20including%20the%20Internet%2C%20social%20interactions%2C%20food%20webs%2C%20and%20transportation%20and%20communication%20flows.%20One%20thing%20that%20these%20types%20of%20networks%20have%20in%20common%2C%20is%20that%20they%20can%20each%20be%20represented%20as%20a%20series%20of%20vertices%20%28or%20nodes%29%20and%20edges%20%28or%20links%29.%20This%20blog%20entry%20presents%20a%20nice%20description%20of%20networks%2C%20highlighting%20the%20differences%20between%20various%20network%20types%20%28directed%2C%20undirected%2C%20weighted%2C%20unweighted%2C%20etc.%29."
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-tumblr-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/&p[title]=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&p[summary]=Many%20natural%20and%20human%20systems%20can%20be%20represented%20as%20networks%2C%20including%20the%20Internet%2C%20social%20interactions%2C%20food%20webs%2C%20and%20transportation%20and%20communication%20flows.%20One%20thing%20that%20these%20types%20of%20networks%20have%20in%20common%2C%20is%20that%20they%20can%20each%20be%20represented%20as%20a%20series%20of%20vertices%20%28or%20nodes%29%20and%20edges%20%28or%20links%29.%20This%20blog%20entry%20presents%20a%20nice%20description%20of%20networks%2C%20highlighting%20the%20differences%20between%20various%20network%20types%20%28directed%2C%20undirected%2C%20weighted%2C%20unweighted%2C%20etc.%29."
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=../../../2009/10/community-structure-in-directed-weighted-networks/&p[title]=Community%20structure%20in%20directed%2C%20weighted%C2%A0networks&p[summary]=Many%20natural%20and%20human%20systems%20can%20be%20represented%20as%20networks%2C%20including%20the%20Internet%2C%20social%20interactions%2C%20food%20webs%2C%20and%20transportation%20and%20communication%20flows.%20One%20thing%20that%20these%20types%20of%20networks%20have%20in%20common%2C%20is%20that%20they%20can%20each%20be%20represented%20as%20a%20series%20of%20vertices%20%28or%20nodes%29%20and%20edges%20%28or%20links%29.%20This%20blog%20entry%20presents%20a%20nice%20description%20of%20networks%2C%20highlighting%20the%20differences%20between%20various%20network%20types%20%28directed%2C%20undirected%2C%20weighted%2C%20unweighted%2C%20etc.%29."
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-facebook-square fa-2x"></i> Share
@@ -181,14 +159,14 @@ refers to groupings of vertices where <em>within</em>-group edge connections
 are more dense than <em>between</em>-group edge connections. In order to detect
 and delineate these groupings, <a href="http://arxiv.org/abs/0709.4500">Leicht <span class="amp">&amp;</span> Newman (2008)</a> present a nice &#8220;modularity&#8221; optimisation algorithm which is
 designed to find a &#8220;good&#8221; division of a network by&nbsp;maximising</p>
-<p>$$Q =&nbsp;\frac{1}{2m}s^TB_s,$$</p>
-<p>where $s$ is a vector whose elements define which group each node
-belongs to, and $\mathbf{B}$ is the so-called modularity matrix, with&nbsp;elements</p>
-<p>$$B_{ij} = A_{ij} - \frac{k_{i}^{in}&nbsp;k_{j}^{out}}{m},$$</p>
-<p>where $A_{ij}$ is an element in the adjacency matrix $\mathbf{A}$, $k_{i}^{in}$
-and $k_{j}^{out}$ are the in- and out-degrees of the vertices, and $m$ is
+<div class="math">$$Q = \frac{1}{2m}s^TB_s,$$</div>
+<p>where <span class="math">\(s\)</span> is a vector whose elements define which group each node
+belongs to, and <span class="math">\(\mathbf{B}\)</span> is the so-called modularity matrix, with&nbsp;elements</p>
+<div class="math">$$B_{ij} = A_{ij} - \frac{k_{i}^{in} k_{j}^{out}}{m},$$</div>
+<p>where <span class="math">\(A_{ij}\)</span> is an element in the adjacency matrix <span class="math">\(\mathbf{A}\)</span>, <span class="math">\(k_{i}^{in}\)</span>
+and <span class="math">\(k_{j}^{out}\)</span> are the in- and out-degrees of the vertices, and <span class="math">\(m\)</span> is
 the total sum of edges in the network. In practice, this can be extended
-to directed networks by considering the matrix $\mathbf{B} + \mathbf{B}^T$ (for an
+to directed networks by considering the matrix <span class="math">\(\mathbf{B} + \mathbf{B}^T\)</span> (for an
 explanation of why this is the case, see <a href="http://arxiv.org/abs/0709.4500">Leicht <span class="amp">&amp;</span> Newman</a>).</p>
 <p>It is relatively straight-forward to extend the above modularity
 optimisation algorithm to the case of a weighted network by computing
@@ -199,11 +177,11 @@ theory of the modularity algorithm holds for this more general case
 (note that an unweighted network can simply be represented as a weighted
 network where the edge weights are all set to 1). As such, our new
 modularity matrix can be computed&nbsp;as</p>
-<p>$$B_{ij} = A_{ij} - \frac{s_{i}^{in}&nbsp;s_{j}^{out}}{m},$$</p>
-<p>where $m = \sum_{i}s_{i}^{in} = \sum_{j} s_j^{out}$, and $s$ represents the vertex
-strength. As such, using the above <em>new</em> definition of $\mathbf{B}$, the
+<div class="math">$$B_{ij} = A_{ij} - \frac{s_{i}^{in} s_{j}^{out}}{m},$$</div>
+<p>where <span class="math">\(m = \sum_{i}s_{i}^{in} = \sum_{j} s_j^{out}\)</span>, and <span class="math">\(s\)</span> represents the vertex
+strength. As such, using the above <em>new</em> definition of <span class="math">\(\mathbf{B}\)</span>, the
 modularity of a directed, weighted network is computed&nbsp;as</p>
-<p>$$Q =&nbsp;\frac{1}{4m}s^{T}(\mathbf{B}-\mathbf{B}^{T})s.$$</p>
+<div class="math">$$Q = \frac{1}{4m}s^{T}(\mathbf{B}-\mathbf{B}^{T})s.$$</div>
 <p>My current research uses a modified modularity optimisation algorithm to
 compute <a href="http://en.wikipedia.org/wiki/Functional_region">functional regions</a> for Ireland based on a range of
 socio-economic variables. The goal is to provide a consistent framework
@@ -214,19 +192,75 @@ countries and/or&nbsp;regions.</p>
 <p>Leicht, <span class="caps">E. A.</span> <span class="amp">&amp;</span> Newman, <span class="caps">M. E. J.</span>(2008). <a href="http://arxiv.org/abs/0709.4500">Community structure in directed networks</a>.
 <em>Physical Review Letters</em>, 100(11),&nbsp;118703.</p>
 <p>Newman, <span class="caps">M. E. J.</span>(2004). <a href="http://arxiv.org/abs/cond-mat/0407503">Analysis of weighted networks</a>. <em>Physical Review E</em>, 70(5),&nbsp;056131.</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
     <p class="category">
         <i class="fa fa-certificate fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/networks.html">Networks</a> 
+        <a class="label label-primary" href="../../../category/networks.html">Networks</a> 
     </p>
     <p class="tag">
         <i class="fa fa-tags fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/modularity.html">Modularity</a>
+        <a class="label label-primary" href="../../../tag/modularity.html">Modularity</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/networks.html">Networks</a>
+        <a class="label label-primary" href="../../../tag/networks.html">Networks</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/helpful-tip.html">Helpful Tip</a>
+        <a class="label label-primary" href="../../../tag/helpful-tip.html">Helpful Tip</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/research.html">Research</a>
+        <a class="label label-primary" href="../../../tag/research.html">Research</a>
         </span>
     </p>
     </div><!-- /.entry-content -->
@@ -234,7 +268,7 @@ countries and/or&nbsp;regions.</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2009/10/community-structure-in-directed-weighted-networks/";
-          var disqus_url = "http://www.carsonfarmer.com/2009/10/community-structure-in-directed-weighted-networks/";
+          var disqus_url = "../../../2009/10/community-structure-in-directed-weighted-networks/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
@@ -248,17 +282,17 @@ countries and/or&nbsp;regions.</p>
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -274,34 +308,30 @@ countries and/or&nbsp;regions.</p>
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../../../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../../../maps/visitors/"><img src="../../../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../../../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../../../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -309,10 +339,7 @@ countries and/or&nbsp;regions.</p>
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -349,6 +376,6 @@ countries and/or&nbsp;regions.</p>
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../../../theme/js/tools.js"></script>
 </body>
 </html>

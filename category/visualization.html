@@ -3,16 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>Carson Farmer - Visualization</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -25,8 +29,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../">
+                <img src="../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -35,17 +39,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -55,25 +59,22 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -82,26 +83,24 @@
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
         
         
@@ -110,86 +109,86 @@
                     <ol id="posts-list" class="hfeed">
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2014/05/playing-with-citibike-trip-histories/" rel="bookmark"
+                    <h1><a href="../2014/05/playing-with-citibike-trip-histories/" rel="bookmark"
                            title="Permalink to Playing with CitiBike Trip Histories">Playing with CitiBike Trip&nbsp;Histories</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2014-05-07T15:45:00">
+                  <abbr class="published" title="2014-05-07T15:45:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Wed 07 May 2014
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
-                <p><a href="http://bl.ocks.org/cfarmer/11478345"><img alt="Chord flow diagram with time slider" class="right" src="http://www.carsonfarmer.com/images/chord_citibike.png" /></a> </p>
+                <p><a href="http://bl.ocks.org/cfarmer/11478345"><img alt="Chord flow diagram with time slider" class="right" src="../images/chord_citibike.png" /></a> </p>
 <p>I recently attended the April 2014 <a href="http://www.meetup.com/betanyc/">#BetaNYC</a> (#BikeNYC) <a href="https://twitter.com/CitibikeNYC">@CitiBikeNYC</a> Hacknight, and after seeing several interesting presentations on what people <em>are</em> doing, <em>want</em> to be doing, and are <em>thinking</em> of doing with the recently released <a href="https://citibikenyc.com/system-data">Citi Bike Trip Histories</a>, I was inspired. A few of us got together to &#8216;quickly&#8217; and &#8216;easily&#8217; hack together a <a href="http://bost.ocks.org/mike/sankey/">Sankey diagram</a> of the bike trip flows&#8230; Turns out this wasn&#8217;t nearly as quick and easy as we though: By the end of the evening, we were still struggling with getting <a href="http://d3js.org/">D3js</a>&#8216;s <a href="https://github.com/d3/d3-plugins/tree/master/sankey">Sankey</a> plugin to play nicely with our data (which I was manipulating ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2014/05/playing-with-citibike-trip-histories/">read more</a>
+                    <a class="readmore" href="../2014/05/playing-with-citibike-trip-histories/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2014/05/playing-with-citibike-trip-histories/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2014/05/playing-with-citibike-trip-histories/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2014/03/irish_famine_cartograms/" rel="bookmark"
+                    <h1><a href="../2014/03/irish_famine_cartograms/" rel="bookmark"
                            title="Permalink to After the Irish Famine: Population Change in Cartograms">After the Irish Famine: Population Change in&nbsp;Cartograms</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2014-03-28T15:45:00">
+                  <abbr class="published" title="2014-03-28T15:45:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Fri 28 March 2014
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
-                <p>In celebration of St Patrick&#8217;s day last week, I decided to dig up an old dataset from when I was living/working in Ireland on historical Irish populations by county, and have a play with <a href="http://d3js.org/">D3js</a> and cartograms. <a href="http://www.carsonfarmer.com/maps/irish_famine/">Click here</a> to view it &#8216;live&#8217;. If you&#8217;ve read any of my <a href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/">previous posts</a>, you&#8217;ll know that I like cartograms as a useful and fun way to visualize data. The <a href="http://en.wikipedia.org/wiki/Great_Famine_(Ireland)">Great Famine</a> was an important and significant event in Irish (and global) history, and cartograms provide a fun and informative way to explore the resultant population change in Ireland ...</p>
+                <p>In celebration of St Patrick&#8217;s day last week, I decided to dig up an old dataset from when I was living/working in Ireland on historical Irish populations by county, and have a play with <a href="http://d3js.org/">D3js</a> and cartograms. <a href="../maps/irish_famine/">Click here</a> to view it &#8216;live&#8217;. If you&#8217;ve read any of my <a href="../2012/08/olympic-cartogram/">previous posts</a>, you&#8217;ll know that I like cartograms as a useful and fun way to visualize data. The <a href="http://en.wikipedia.org/wiki/Great_Famine_(Ireland)">Great Famine</a> was an important and significant event in Irish (and global) history, and cartograms provide a fun and informative way to explore the resultant population change in Ireland ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2014/03/irish_famine_cartograms/">read more</a>
+                    <a class="readmore" href="../2014/03/irish_famine_cartograms/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2014/03/irish_famine_cartograms/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2014/03/irish_famine_cartograms/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/" rel="bookmark"
+                    <h1><a href="../2013/10/public-transportation-time-warp/" rel="bookmark"
                            title="Permalink to Public transportation time warp">Public transportation time&nbsp;warp</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-10-01T13:15:00">
+                  <abbr class="published" title="2013-10-01T13:15:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Tue 01 October 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>I recently came across two extremely cool videos while preparing lectures for my
@@ -221,32 +220,32 @@ original Translink footage <a href="http://www.youtube.com/watch?feature=player_
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/">read more</a>
+                    <a class="readmore" href="../2013/10/public-transportation-time-warp/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/10/public-transportation-time-warp/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2013/10/public-transportation-time-warp/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="bookmark"
+                    <h1><a href="../2013/09/maps-art-other-experiments/" rel="bookmark"
                            title="Permalink to Maps as Art and Other Experiments">Maps as Art and Other&nbsp;Experiments</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2013-09-27T17:25:00">
+                  <abbr class="published" title="2013-09-27T17:25:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Fri 27 September 2013
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>With the recent (and long anticipated) release of <a href="http://www.qgis.org/">Quantum <span class="caps">GIS</span> 2.0</a>, 
@@ -263,38 +262,38 @@ IPython magic:
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/">read more</a>
+                    <a class="readmore" href="../2013/09/maps-art-other-experiments/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2013/09/maps-art-other-experiments/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2013/09/maps-art-other-experiments/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/08/cartogram-updates/" rel="bookmark"
+                    <h1><a href="../2012/08/cartogram-updates/" rel="bookmark"
                            title="Permalink to cartogram updates">cartogram&nbsp;updates</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-08-10T14:07:00">
+                  <abbr class="published" title="2012-08-10T14:07:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Fri 10 August 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>It seems my <a href="http://www.carsonfarmer.com/examples/olympic_countries/">Olympic medals cartogram</a> is getting a bit more attention
 (<a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised">Guardian data blog</a>, and <a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html">Telegraph data and graphics blog</a>), so
 I&#8217;ve updated a few things and wanted to highlight/explain them a bit&nbsp;here.</p>
-<p><a href="http://www.carsonfarmer.com/examples/olympic_countries/"><img alt="image" src="http://www.carsonfarmer.com/images/grenada.png" title="Grenada" /></a></p>
+<p><a href="http://www.carsonfarmer.com/examples/olympic_countries/"><img alt="image" src="../images/grenada.png" title="Grenada" /></a></p>
 <p>Firstly, you can now explore the medal data together with
 population <strong>and</strong> <span class="caps">GDP</span> as well as without any warping to get a feel for
 how much things change. Secondly, in order to be able to display the map
@@ -302,32 +301,32 @@ in a way that is familiar to most people (i.e., landscape style), I had
 to take a few liberties in terms of representation. For ...</p>
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/08/cartogram-updates/">read more</a>
+                    <a class="readmore" href="../2012/08/cartogram-updates/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/08/cartogram-updates/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/08/cartogram-updates/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/" rel="bookmark"
+                    <h1><a href="../2012/08/olympic-cartogram/" rel="bookmark"
                            title="Permalink to Olympic cartogram">Olympic&nbsp;cartogram</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-08-02T12:18:00">
+                  <abbr class="published" title="2012-08-02T12:18:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Thu 02 August 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>The London 2012 Summer Olympics have generated quite a bit of buzz in
@@ -360,32 +359,32 @@ now do that by including this in your <span class="caps">HTML</span>&nbsp;source
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/">read more</a>
+                    <a class="readmore" href="../2012/08/olympic-cartogram/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/08/olympic-cartogram/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/08/olympic-cartogram/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/" rel="bookmark"
+                    <h1><a href="../2012/05/visualising-data-with-fatfonts/" rel="bookmark"
                            title="Permalink to Visualising data with FatFonts">Visualising data with&nbsp;FatFonts</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-05-26T20:30:00">
+                  <abbr class="published" title="2012-05-26T20:30:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Sat 26 May 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>I recently posted an <a href="http://www.st-andrews.ac.uk/geoinformatics/visualising-with-fatfonts/">article on the <span class="caps">CGI</span> blog</a> about some
@@ -406,32 +405,32 @@ beauty to my potentially boring data!
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/">read more</a>
+                    <a class="readmore" href="../2012/05/visualising-data-with-fatfonts/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/05/visualising-data-with-fatfonts/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/05/visualising-data-with-fatfonts/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
         
 
             <li><article class="hentry shadow">    
                 <header>
-                    <h1><a href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/" rel="bookmark"
+                    <h1><a href="../2012/04/research-dissemination-and-interactive-visuals/" rel="bookmark"
                            title="Permalink to Research dissemination and interactive visuals">Research dissemination and interactive&nbsp;visuals</a></h1>
                 </header>
                 
                 <div class="entry-content">
-                  <abbr class="published" title="2012-04-10T22:12:00">
+                  <abbr class="published" title="2012-04-10T22:12:00-04:00">
                       <i class="fa fa-calendar"></i>
                       Tue 10 April 2012
                   </abbr>
                       <address class="vcard author">
                           <i class="fa fa-user"></i>
-                          <a class="url fn" href="http://www.carsonfarmer.com/author/cfarmer.html">cfarmer</a>
+                          <a class="url fn" href="../author/cfarmer.html">cfarmer</a>
                       </address>
                   <footer class="post-info">
     <p class="category">
         <i class="fa fa-certificate fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/visualization.html">Visualization</a> 
+        <a class="label label-primary" href="../category/visualization.html">Visualization</a> 
     </p>
                   </footer>
                 <p>One of my goals for this year is to spend more time and effort
@@ -448,13 +447,13 @@ be able to use it, and maybe even create some compelling Visualizations
 in the process. While I&#8217;m not quite ready to start creating full-blown
 interactive websites yet, I thought it might be a good idea to start
 with something small to get the ball rolling; so I put together an
-<a href="/examples/visitors/">upgraded version</a> of my <a href="http://www.carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/">previous map</a> of visitors to www.carsonfarmer.com.
+<a href="/examples/visitors/">upgraded version</a> of my <a href="../2012/03/because-its-fun-to-map-stuff/">previous map</a> of visitors to www.carsonfarmer.com.
 
                 <p class="readmore">
                     <i class="fa fa-eye"></i>
-                    <a class="readmore" href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/">read more</a>
+                    <a class="readmore" href="../2012/04/research-dissemination-and-interactive-visuals/">read more</a>
                 </p>
-    <p><i class="fa fa-comments"></i> <a href="http://www.carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/#disqus_thread">comments</a></p>
+    <p><i class="fa fa-comments"></i> <a href="../2012/04/research-dissemination-and-interactive-visuals/#disqus_thread">comments</a></p>
                 </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
@@ -464,17 +463,17 @@ with something small to get the ball rolling; so I put together an
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -490,34 +489,30 @@ with something small to get the ball rolling; so I put together an
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../maps/visitors/"><img src="../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -525,10 +520,7 @@ with something small to get the ball rolling; so I put together an
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -565,6 +557,6 @@ with something small to get the ball rolling; so I put together an
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../theme/js/tools.js"></script>
 </body>
 </html>

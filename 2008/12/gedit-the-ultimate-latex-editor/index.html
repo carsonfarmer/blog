@@ -3,37 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>gedit: The ultimate LaTeX editor</title>
-    <link rel="stylesheet" href="http://www.carsonfarmer.com/theme/css/main.css">
+    <link rel="stylesheet" href="../../../theme/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
-    <link href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
-        
-<script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
-<script type="text/javascript">
-init_mathjax = function() {
-    if (window.MathJax) {
-        // MathJax loaded
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [ ['$','$'], ["\(","\)"] ],
-                displayMath: [ ['$$','$$'], ["\[","\]"] ]
-            },
-            displayAlign: 'left', // Change this to 'center' to center equations.
-            "HTML-CSS": {
-                styles: {'.MathJax_Display': {"margin": 0}}
-            }
-        });
-        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-    }
-}
-</script>
-
+    <link href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Carson Farmer Atom Feed" />
+    <link href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Carson Farmer RSS Feed" />
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <script src="http://www.carsonfarmer.com/libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../../libs/bootstrap-3.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="../../../libs/tipuesearch/tipuesearch_set.js"></script>
+    <script src="../../../libs/tipuesearch/tipuesearch.min.js"></script>
+    <!-- <link href="../../../libs/tipuesearch/tipuesearch.css" rel="stylesheet"> -->
 </head> 
 
+
 <body id="index" class="home">
-<!-- <img id="bg" src="http://www.carsonfarmer.com/theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
+<!-- <img id="bg" src="../../../theme/images/bg/bg-1024.png" style="position: fixed; top: 0; left: 0;"> -->
 <!--  -->
         <!-- <header id="banner" class="body"> -->
 <nav class="navbar navbar-default navbar-fixed-top sticky shadow" role="navigation">
@@ -46,8 +29,8 @@ init_mathjax = function() {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<a class="brand" id="home" href="http://www.carsonfarmer.com/">
-                <img src="http://www.carsonfarmer.com/theme/images/title.svg" id="title" class="svg"></img>
+<a class="brand" id="home" href="../../../">
+                <img src="../../../theme/images/title.svg" id="title" class="svg"></img>
             </a>
 	
         </div>
@@ -56,17 +39,17 @@ init_mathjax = function() {
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <a href="http://www.carsonfarmer.com/about/">
+              <a href="../../../about/">
                   <i class="fa fa-info-circle"></i> About
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/curriculum-vitae/">
+              <a href="../../../curriculum-vitae/">
                   <i class="fa fa-rocket"></i> Curriculum&nbsp;Vitae
               </a>
             </li>
             <li>
-              <a href="http://www.carsonfarmer.com/research/">
+              <a href="../../../research/">
                   <i class="fa fa-globe"></i> Research
               </a>
             </li>
@@ -76,25 +59,22 @@ init_mathjax = function() {
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">
                   <i class="fa fa-rss"></i> atom feed</a>
                 </li>
                 <li>
-                  <a href="http://www.carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
+                  <a href="http://carsonfarmer.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">
                   <i class="fa fa-rss"></i> rss feed</a>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="https://twitter.com/CarsonFarmer"><i class="fa fa-twitter"></i> twitter</a>
+                  <a href="https://twitter.com/carsonfarmer"><i class="fa fa-twitter"></i> twitter</a>
                 </li>
                 <li>
-                  <a href="https://github.com/cfarmer"><i class="fa fa-github"></i> github</a>
+                  <a href="https://github.com/carsonfarmer"><i class="fa fa-github"></i> github</a>
                 </li>
                 <li>
-                  <a href="http://about.me/carson.farmer"><i class="fa fa-user"></i> about.me</a>
-                </li>
-                <li>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer"><i class="fa fa-book"></i> academia.edu</a>
+                  <a href="http://about.me/carsonfarmer"><i class="fa fa-user"></i> about.me</a>
                 </li>
                 <li>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/"><i class="fa fa-linkedin"></i> linkedin</a>
@@ -103,62 +83,60 @@ init_mathjax = function() {
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub"><i class="fa fa-google-plus"></i> google+</a>
                 </li>
                 <li>
-                  <a href="http://cuny.is/cfarmer"><i class="fa fa-comment-o"></i> cuny.is</a>
-                </li>
-                <li>
-                  <a href="mailto:carson.farmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
+                  <a href="mailto:carsonfarmer@gmail.com"><i class="fa fa-envelope"></i> email</a>
                 </li>
               </ul>
             </li>
           </ul>
-          <form class="navbar-search pull-right">
+          <form class="navbar-search pull-right" action="../../../search/index.html">
             <div class="input-append">
-              <input type="search" class="form-control" id="top-query" placeholder="  ">
-            <div class="dropdown pull-right" id="top-dropdown">
+              <input type="search" class="form-control" name="q" id="tipue_search_input" autocomplete="off" required placeholder="  ">
+<!--             <div class="dropdown pull-right" id="top-dropdown">
               <a class="dropdown-toggle" id="top-toggle" role="button" data-toggle="dropdown" data-target="#" href="."></a>
-              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul></div>
+              <ul class="dropdown-menu pull-right" role="menu" id="top-results" aria-labelledby="top-toggle"></ul>
+              <div id="tipue_search_content"></div>
+              </div> -->
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
         <!-- </header> -->
 <section id="content" class="body">
   <article class="hentry shadow">
     <header>
       <h1 class="entry-title">
-        <a href="http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
+        <a href="../../../2008/12/gedit-the-ultimate-latex-editor/" rel="bookmark"
            title="Permalink to gedit: The ultimate LaTeX editor">gedit: The ultimate LaTeX&nbsp;editor</a></h1>
-      <abbr class="published" title="2008-12-12T00:56:00">
+      <abbr class="published" title="2008-12-12T00:56:00-05:00">
           <i class="fa fa-calendar"></i>
           Fri 12 December 2008
       </abbr>
 <div class="share-list">
-<a href="http://twitter.com/share?url=http%3A//www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/&text=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&hashtags=LaTeX,FOSS,How-To,Linux,&via=CarsonFarmer"
+<a href="http://twitter.com/share?url=../../../2008/12/gedit-the-ultimate-latex-editor/&text=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&hashtags=LaTeX,FOSS,How-To,Linux,&via=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-twitter-square fa-2x"></i> Tweet
 </a>
-<a href="https://plus.google.com/share?url=http%3A//www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/" 
+<a href="https://plus.google.com/share?url=../../../2008/12/gedit-the-ultimate-latex-editor/" 
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-google-plus-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/&title=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&summary=Out%20of%20the%20box%20gedit%20is%20a%20basic%20text%20editor%2C%20but%20it%20comes%20equipped%20with%20about%2012%20standard%20plugins%2C%20and%20another%209%20readily%20available.%20In%20addition%20to%20this%2C%20there%20are%20a%20range%20of%20%E2%80%98third-party%E2%80%99%20plugins%20developed%20to%20do%20various%20specific%20tasks%2C%20such%20as%20assist%20you%20in%20writing%20and%20exporting%20LaTeX%20documents%21&source=CarsonFarmer"
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=../../../2008/12/gedit-the-ultimate-latex-editor/&title=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&summary=Out%20of%20the%20box%20gedit%20is%20a%20basic%20text%20editor%2C%20but%20it%20comes%20equipped%20with%20about%2012%20standard%20plugins%2C%20and%20another%209%20readily%20available.%20In%20addition%20to%20this%2C%20there%20are%20a%20range%20of%20%E2%80%98third-party%E2%80%99%20plugins%20developed%20to%20do%20various%20specific%20tasks%2C%20such%20as%20assist%20you%20in%20writing%20and%20exporting%20LaTeX%20documents%21%20First%2C%20get%20all%20the%20basic%C2%A0plugins%3A%20sudo%20apt-get%20install%20gedit-plugins%60%20and%20enable%20them%20in%20gedit%20by%20going%20to%20Edit%20%3E%20Preferences%20%3E%20Plugins%2C%20and%20checking%20the%20ones%20that%20you%C2%A0want.%20Second%2C%20make%20sure%20you%20have%20all%20the%20required%20dependencies%20for%20the%20actual%20%5C%28%5CLaTeX%5C%29%20plugin%3A%201.%20The%20plugin%20is%20written%20in%20Python%20...if%20%28%21document.getElementById%28%27mathjaxscript_pelican_%23%25%40%23%24%40%23%27%29%29%20%7B%20var%20align%20%3D%20%22center%22%2C%20indent%20%3D%20%220em%22%2C%20linebreak%20%3D%20%22false%22%3B%20if%20%28false%29%20%7B%20align%20%3D%20%28screen.width&source=CarsonFarmer"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-linkedin-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.tumblr.com/share/link?url=http%3A//www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/&name=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&description=Out%20of%20the%20box%20gedit%20is%20a%20basic%20text%20editor%2C%20but%20it%20comes%20equipped%20with%20about%2012%20standard%20plugins%2C%20and%20another%209%20readily%20available.%20In%20addition%20to%20this%2C%20there%20are%20a%20range%20of%20%E2%80%98third-party%E2%80%99%20plugins%20developed%20to%20do%20various%20specific%20tasks%2C%20such%20as%20assist%20you%20in%20writing%20and%20exporting%20LaTeX%20documents%21"
+<a href="http://www.tumblr.com/share/link?url=../../../2008/12/gedit-the-ultimate-latex-editor/&name=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&description=Out%20of%20the%20box%20gedit%20is%20a%20basic%20text%20editor%2C%20but%20it%20comes%20equipped%20with%20about%2012%20standard%20plugins%2C%20and%20another%209%20readily%20available.%20In%20addition%20to%20this%2C%20there%20are%20a%20range%20of%20%E2%80%98third-party%E2%80%99%20plugins%20developed%20to%20do%20various%20specific%20tasks%2C%20such%20as%20assist%20you%20in%20writing%20and%20exporting%20LaTeX%20documents%21%20First%2C%20get%20all%20the%20basic%C2%A0plugins%3A%20sudo%20apt-get%20install%20gedit-plugins%60%20and%20enable%20them%20in%20gedit%20by%20going%20to%20Edit%20%3E%20Preferences%20%3E%20Plugins%2C%20and%20checking%20the%20ones%20that%20you%C2%A0want.%20Second%2C%20make%20sure%20you%20have%20all%20the%20required%20dependencies%20for%20the%20actual%20%5C%28%5CLaTeX%5C%29%20plugin%3A%201.%20The%20plugin%20is%20written%20in%20Python%20...if%20%28%21document.getElementById%28%27mathjaxscript_pelican_%23%25%40%23%24%40%23%27%29%29%20%7B%20var%20align%20%3D%20%22center%22%2C%20indent%20%3D%20%220em%22%2C%20linebreak%20%3D%20%22false%22%3B%20if%20%28false%29%20%7B%20align%20%3D%20%28screen.width"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-tumblr-square fa-2x"></i> Share
 </a>
 
-<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A//www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/&p[title]=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&p[summary]=Out%20of%20the%20box%20gedit%20is%20a%20basic%20text%20editor%2C%20but%20it%20comes%20equipped%20with%20about%2012%20standard%20plugins%2C%20and%20another%209%20readily%20available.%20In%20addition%20to%20this%2C%20there%20are%20a%20range%20of%20%E2%80%98third-party%E2%80%99%20plugins%20developed%20to%20do%20various%20specific%20tasks%2C%20such%20as%20assist%20you%20in%20writing%20and%20exporting%20LaTeX%20documents%21"
+<a href="http://www.facebook.com/sharer.php?s=100&p[url]=../../../2008/12/gedit-the-ultimate-latex-editor/&p[title]=gedit%3A%20The%20ultimate%20LaTeX%C2%A0editor&p[summary]=Out%20of%20the%20box%20gedit%20is%20a%20basic%20text%20editor%2C%20but%20it%20comes%20equipped%20with%20about%2012%20standard%20plugins%2C%20and%20another%209%20readily%20available.%20In%20addition%20to%20this%2C%20there%20are%20a%20range%20of%20%E2%80%98third-party%E2%80%99%20plugins%20developed%20to%20do%20various%20specific%20tasks%2C%20such%20as%20assist%20you%20in%20writing%20and%20exporting%20LaTeX%20documents%21%20First%2C%20get%20all%20the%20basic%C2%A0plugins%3A%20sudo%20apt-get%20install%20gedit-plugins%60%20and%20enable%20them%20in%20gedit%20by%20going%20to%20Edit%20%3E%20Preferences%20%3E%20Plugins%2C%20and%20checking%20the%20ones%20that%20you%C2%A0want.%20Second%2C%20make%20sure%20you%20have%20all%20the%20required%20dependencies%20for%20the%20actual%20%5C%28%5CLaTeX%5C%29%20plugin%3A%201.%20The%20plugin%20is%20written%20in%20Python%20...if%20%28%21document.getElementById%28%27mathjaxscript_pelican_%23%25%40%23%24%40%23%27%29%29%20%7B%20var%20align%20%3D%20%22center%22%2C%20indent%20%3D%20%220em%22%2C%20linebreak%20%3D%20%22false%22%3B%20if%20%28false%29%20%7B%20align%20%3D%20%28screen.width"
   onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;"
   class="label label-primary">
   <i class="fa fa-facebook-square fa-2x"></i> Share
@@ -172,7 +150,7 @@ with about 12 standard plugins, and another 9 readily available. In
 addition to this, there are a range of &#8216;third-party&#8217; plugins developed
 to do various specific tasks, such as assist you in writing and
 exporting LaTeX documents!
-
+<!--more-->
 First, get all the basic&nbsp;plugins:</p>
 <div class="highlight"><pre>sudo apt-get install gedit-plugins<span class="sb">`</span>
 </pre></div>
@@ -181,12 +159,12 @@ First, get all the basic&nbsp;plugins:</p>
 <p>and enable them in gedit by going to <code>Edit &gt; Preferences &gt; Plugins</code>, and
 checking the ones that you&nbsp;want.</p>
 <p>Second, make sure you have all the required dependencies for the actual
-$\LaTeX$ plugin:
+<span class="math">\(\LaTeX\)</span> plugin:
 1. The plugin is written in Python 2.4 and relies on PyGTK 2.4: <code>sudo apt-get install python-gtk2</code>
 2. Ensure that you have rubber installed. It is used for automated document 
 compiling: <code>sudo apt-get install rubber</code>
 3. To use the <span class="caps">DVI</span> inverse search you need the Python bindings for D-<span class="caps">BUS</span>: <code>sudo apt-get install python-dbus</code></p>
-<p>Third, download the latest version of the $\LaTeX$ plugin from <a href="http://live.gnome.org/Gedit/LaTeXPlugin">here</a>,
+<p>Third, download the latest version of the <span class="math">\(\LaTeX\)</span> plugin from <a href="http://live.gnome.org/Gedit/LaTeXPlugin">here</a>,
 and extract and copy the contained folder and a file to
 <code>~/.gnome2/gedit/plugins</code>. You may have to create <code>gedit/plugins</code> if you 
 haven&#8217;t installed any other plugins&nbsp;yet.</p>
@@ -195,24 +173,80 @@ dialog as we did with the other&nbsp;plugins.</p>
 <p>Now you have an editor with all sorts of handy functions, including
 inline spell check, code completion, tag, symbol, and character
 insertion, a file and document browser, and an embedded terminal, as
-well as tools to automatically create new $\LaTeX$ files, insert graphics,
+well as tools to automatically create new <span class="math">\(\LaTeX\)</span> files, insert graphics,
 tables, and matrices, and a fantastic dialog for automatically inserting
 BibTeX entries. Also, if you&#8217;re an R user who creates reports etc. you
 can use Sweave directly from gedit to embed R code in your LaTeX&nbsp;documents.</p>
 <p>All this in a lightweight text editor,&nbsp;nice!</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript'; 
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
     <p class="category">
         <i class="fa fa-certificate fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/category/helpful-tip.html">Helpful Tip</a> 
+        <a class="label label-primary" href="../../../category/helpful-tip.html">Helpful Tip</a> 
     </p>
     <p class="tag">
         <i class="fa fa-tags fa-fw fa-lg"></i>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/latex.html">LaTeX</a>
+        <a class="label label-primary" href="../../../tag/latex.html">LaTeX</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/foss.html">FOSS</a>
+        <a class="label label-primary" href="../../../tag/foss.html">FOSS</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/how-to.html">How-To</a>
+        <a class="label label-primary" href="../../../tag/how-to.html">How-To</a>
         </span>
-        <a class="label label-primary" href="http://www.carsonfarmer.com/tag/linux.html">Linux</a>
+        <a class="label label-primary" href="../../../tag/linux.html">Linux</a>
         </span>
     </p>
     </div><!-- /.entry-content -->
@@ -220,7 +254,7 @@ can use Sweave directly from gedit to embed R code in your LaTeX&nbsp;documents.
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           var disqus_identifier = "2008/12/gedit-the-ultimate-latex-editor/";
-          var disqus_url = "http://www.carsonfarmer.com/2008/12/gedit-the-ultimate-latex-editor/";
+          var disqus_url = "../../../2008/12/gedit-the-ultimate-latex-editor/";
           (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://carsonfarmer.disqus.com/embed.js';
@@ -234,17 +268,17 @@ can use Sweave directly from gedit to embed R code in your LaTeX&nbsp;documents.
         <section id="extras" class="body shadow">
 <div class="twitter">
     
-    <h2><a href="https://twitter.com/intent/user?screen_name=CarsonFarmer"
+    <h2><a href="https://twitter.com/intent/user?screen_name=carsonfarmer"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=600');return false;">
     <i class="fa fa-twitter"></i> twitter
         </a>
         </h2>
-    <a class="twitter-timeline" href="https://twitter.com/CarsonFarmer" 
+    <a class="twitter-timeline" href="https://twitter.com/carsonfarmer" 
         data-chrome="nofooter noheader noborders transparent" 
         data-widget-id="460846751906144256" 
         data-dnt="true" 
         height="300" lang="EN"
-        data-related="CarsonFarmer">
+        data-related="carsonfarmer">
         Tweets by @CarsonFarmer
     </a>
     <script>
@@ -260,34 +294,30 @@ can use Sweave directly from gedit to embed R code in your LaTeX&nbsp;documents.
 </div>
 <div class="visitors_map">
     
-    <h2><a href="http://www.carsonfarmer.com/maps/visitors/"
+    <h2><a href="../../../maps/visitors/"
       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=600,width=700');return false;">
     <i class="fa fa-map-marker"></i> recent visitors
         </a>
         </h2>
-  <a href="http://www.carsonfarmer.com/maps/visitors/"><img src="http://www.carsonfarmer.com/uploads/map-thumb.png"></a>
+  <a href="../../../maps/visitors/"><img src="../../../uploads/map-thumb.png"></a>
 </div>        </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body ">
             <address id="about" class="vcard body shadow">
                 <ul id="links">
-                    <li><i class="fa fa-certificate fa-fw"></i><a href="http://www.carsonfarmer.com/categories.html"> Categories</a></li>
-                    <li><i class="fa fa-tags fa-fw"></i><a href="http://www.carsonfarmer.com/tags.html"> Tags</a></li>
+                    <li><i class="fa fa-certificate fa-fw"></i><a href="../../../categories.html"> Categories</a></li>
+                    <li><i class="fa fa-tags fa-fw"></i><a href="../../../tags.html"> Tags</a></li>
                 </ul>
-                Carson Farmer | Assistant Professor of GIScience | Department Geography</br>
-                Hunter College, CUNY | 695 Park Avenue, New York, NY, 10065</br>
+                Carson Farmer | Assistant Professor | Department Geography | University of Colorado at Boulder</br></br>
             <p class="social-icons attribution">
-                  <a href="https://twitter.com/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
+                  <a href="https://twitter.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="twitter" data-placement="bottom">
                     <i class="fa fa-twitter fa-lg"></i>
                   </a>
-                  <a href="https://github.com/cfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
+                  <a href="https://github.com/carsonfarmer" data-toggle="tooltip" title="" data-original-title="github" data-placement="bottom">
                     <i class="fa fa-github fa-lg"></i>
                   </a>
-                  <a href="http://about.me/carson.farmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
+                  <a href="http://about.me/carsonfarmer" data-toggle="tooltip" title="" data-original-title="about.me" data-placement="bottom">
                     <i class="fa fa-user fa-lg"></i>
-                  </a>
-                  <a href="http://hunter-cuny.academia.edu/CarsonFarmer" data-toggle="tooltip" title="" data-original-title="academia.edu" data-placement="bottom">
-                    <i class="fa fa-book fa-lg"></i>
                   </a>
                   <a href="http://www.linkedin.com/pub/carson-farmer/40/3bb/27/" data-toggle="tooltip" title="" data-original-title="linkedin" data-placement="bottom">
                     <i class="fa fa-linkedin fa-lg"></i>
@@ -295,10 +325,7 @@ can use Sweave directly from gedit to embed R code in your LaTeX&nbsp;documents.
                   <a href="https://plus.google.com/108062014159451325697/about/p/pub" data-toggle="tooltip" title="" data-original-title="google+" data-placement="bottom">
                     <i class="fa fa-google-plus fa-lg"></i>
                   </a>
-                  <a href="http://cuny.is/cfarmer" data-toggle="tooltip" title="" data-original-title="cuny.is" data-placement="bottom">
-                    <i class="fa fa-comment-o fa-lg"></i>
-                  </a>
-                  <a href="mailto:carson.farmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
+                  <a href="mailto:carsonfarmer@gmail.com" data-toggle="tooltip" title="" data-original-title="email" data-placement="bottom">
                     <i class="fa fa-envelope fa-lg"></i>
                   </a>
                 <script >
@@ -335,6 +362,6 @@ can use Sweave directly from gedit to embed R code in your LaTeX&nbsp;documents.
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-<script src="http://www.carsonfarmer.com/theme/js/tools.js"></script>
+<script src="../../../theme/js/tools.js"></script>
 </body>
 </html>
