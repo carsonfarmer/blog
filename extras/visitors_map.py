@@ -1,124 +1,91 @@
-# Script for querying Google Analytics for creating a nice visitors map
-# Query based on following parameters, generated using:
-# http://ga-dev-tools.appspot.com/explorer/
-
-# Account : carson.farmer
-# Property : Carson Farmer
-# View (Profile): All Web Site Data
-# ids=ga:72662650
-# dimensions=ga:city,ga:latitude,ga:longitude,ga:region,ga:country
-# metrics=ga:uniqueEvents
-# start-date=
-# end-date=2013-10-26
-# start-index=2013-11-26
-# max-results=5000
-
-# A lot of the following code came from:
-# http://ilian.i-n-i.org/retrieving-google-analytics-data-with-python/
-
+import httplib2
+from apiclient.discovery import build
+from oauth2client.client import flow_from_clientsecrets
+from oauth2client.file import Storage
+from oauth2client import tools
+import argparse
 import datetime
-import sys
+import pandas as pd
 import os.path
+import sys
+
 today = datetime.date.today()
-import keyring
-kr = keyring.get_keyring()
-pwd = kr.get_password('google-analytics', 'cfarmer')
+last = today - datetime.timedelta(days=30)
 
 try:
     file_time = os.path.getmtime('../content/extras/visitors_map.js')
     file_date = datetime.datetime.fromtimestamp(file_time).date()
     if today == file_date:
-        print "already computed map for today... exiting!"
+        print("Already computed map for today... exiting!")
         sys.exit()  # No need to do anything, we've already done this today!
 except OSError, err:  # File doesn't exist!
     pass  # Just pass through, we need to create it...
 
-import gdata.analytics.client as client
-import pandas as pd
+CLIENT_SECRETS = '~/Documents/client_secrets.json'
+# The Flow object to be used if we need to authenticate.
+FLOW = flow_from_clientsecrets(
+    CLIENT_SECRETS,
+    scope='https://www.googleapis.com/auth/analytics.readonly',
+    message='%s is missing' % CLIENT_SECRETS
+)
+# A file to store the access token
+TOKEN_FILE_NAME = '~/Documents/credentials.dat'
 
-from geopy import geocoders
 
-last = today - datetime.timedelta(days=30)
+def prepare_credentials():
+    parser = argparse.ArgumentParser(parents=[tools.argparser])
+    flags = parser.parse_args()
+    # Retrieve existing credendials
+    storage = Storage(TOKEN_FILE_NAME)
+    credentials = storage.get()
+    # If no credentials exist, we create new ones
+    if credentials is None or credentials.invalid:
+        credentials = tools.run_flow(FLOW, storage, flags)
+    return credentials
 
-my_client = client.AnalyticsClient(source="www.carsonfarmer.com")
-token = my_client.client_login(
-    "carson.farmer",
-    pwd,
-    source="www.carsonfarmer.com",
-    service=my_client.auth_service,
-    account_type="GOOGLE",)
 
-# token = my_client.auth_token
+def initialize_service():
+    # Creates an http object and authorize it using
+    # the function prepare_creadentials()
+    http = httplib2.Http()
+    credentials = prepare_credentials()
+    http = credentials.authorize(http)
+    # Build the Analytics Service Object with the authorized http object
+    return build('analytics', 'v3', http=http)
 
-account_query = client.AccountFeedQuery()
-
-data_query = client.DataFeedQuery({
+params = {
     "ids": "ga:72662650",
     "dimensions": "ga:city,ga:latitude,ga:longitude,ga:region,ga:country",
     "metrics": "ga:uniqueEvents",
     "start-date": last.strftime("%Y-%m-%d"),
     "end-date": today.strftime("%Y-%m-%d"),
     "max-results": "5000",
-    })
+}
 
-print "getting feed from client..."
-feed = my_client.GetDataFeed(data_query)
 
-data = [[r.value for r in row.metric] + [r.value for r in row.dimension] for row in feed.entry]
-df = pd.DataFrame(data, columns=["visits", "city", "lat", "long", "region", "country"], dtype=float)
-
-df.city[df.city=="(not set)"] = ""
-df.region[df.region=="(not set)"] = ""
-df.country[df.country=="(not set)"] = ""
-
+# Simple function to combine place names
 def combine_places(row):
-	city = row.city + ", " if len(row.city) else ""
-	region = row.region + ", " if len(row.region) else ""
-	if city + region + row.country == "":
-		return "__unknown__"
-	return city + region + row.country
+    city = row.city + ", " if len(row.city) else ""
+    region = row.region + ", " if len(row.region) else ""
+    if city + region + row.country == "":
+        return "Unknown"
+    return city + region + row.country
+
+service = initialize_service()
+data = service.data().ga().get(**params).execute()
+# Drop everything that has any field not set...
+rows = [row for row in data["rows"] if "(not set)" not in row]
+df = pd.DataFrame(rows, columns=["city", "lat", "long", "region",
+                                 "country", "visits"], dtype=float)
+
 
 df["title"] = df.apply(combine_places, axis=1)
-no_lat_lon = (df.lat == 0) & (df.long == 0) & (df.title != "__unknown__")
 
-print "geocoding missing places..."
-gn = geocoders.GeoNames(username="cfarmer")
-
-def geocode(s):
-    try:
-        return s, list(gn.geocode(s).point)
-    except:
-        pass
-  	# Just place it in the North Atlantic
-    return s, [34.597042,-40.808716, 0.0]
-
-# Keep things in pieces in case of failures
-res = [geocode(s) for s in df.title[no_lat_lon]]
-ser = [pd.Series(s[1]) for s in res]
-ddf = pd.DataFrame(ser, index=df[no_lat_lon].index)
-ddf.columns = ["lat", "long", "elev"]
-
-df.lat[no_lat_lon] = ddf.lat
-df.long[no_lat_lon] = ddf.long
-
-df = df[df.title != "__unknown__"]
-
-print "writing to file..."
 json = df[["lat", "long", "title", "visits"]].to_json(orient='values')
-json = json.replace("],[","],\n[")
+json = json.replace("],[", "],\n[")
 json = json.replace("[[", "[\n[")
 json = json.replace("]]", "]\n];")
 
-with open('../content/extras/visitors_map.js', 'w+') as f:
+with open('visitor_locations.js', 'w+') as f:
     f.write('var visitors = ')
     f.write(json)
-
-# How to create a custom Icon:
-# https://github.com/Leaflet/Leaflet/blob/master/src/layer/marker/DivIcon.js
-# https://github.com/Leaflet/Leaflet/tree/master/src/layer/marker
-
-# http://stackoverflow.com/questions/1197172/how-can-i-take-a-screenshot-image-of-a-website-using-python
-from subprocess import call
-call(["webkit2png", "file://%s" % os.path.abspath("visitors_map.html"), "--thumb", "--delay=2", "--width=600", "--height=1100", "--filename=../content/extras/map"])
-
-print "done!"

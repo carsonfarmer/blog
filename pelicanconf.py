@@ -81,10 +81,10 @@ SUMMARY_MAX_LENGTH = 100
 SOCIAL = (
     ('twitter', 'https://twitter.com/carsonfarmer', 'fa-twitter'),
     ('github', 'https://github.com/carsonfarmer', 'fa-github'),
-    ('about.me', 'http://about.me/carsonfarmer', 'fa-user'),
+    ('about.me', 'https://about.me/carsonfarmer', 'fa-user'),
     # ('academia.edu', 'http://hunter-cuny.academia.edu/CarsonFarmer','fa -book'),
-    ('linkedin', 'http://www.linkedin.com/pub/carson-farmer/40/3bb/27/','fa-linkedin'),
-    ('google+', 'https://plus.google.com/108062014159451325697/about/p/pub','fa-google-plus'),
+    ('linkedin', 'https://www.linkedin.com/in/carsonfarmer','fa-linkedin'),
+    ('google+', 'https://plus.google.com/+carsonfarmer','fa-google-plus'),
     # ('cuny.is', 'http://cuny.is/cfarmer', 'fa-comment-o'),
     ('email', 'mailto:carsonfarmer@gmail.com', 'fa-envelope'),
 )
