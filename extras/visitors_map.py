@@ -57,9 +57,9 @@ params = {
     "ids": "ga:72662650",
     "dimensions": "ga:city,ga:latitude,ga:longitude,ga:region,ga:country",
     "metrics": "ga:uniqueEvents",
-    "start-date": last.strftime("%Y-%m-%d"),
-    "end-date": today.strftime("%Y-%m-%d"),
-    "max-results": "5000",
+    "start_date": last.strftime("%Y-%m-%d"),
+    "end_date": today.strftime("%Y-%m-%d"),
+    "max_results": "5000",
 }
 
 
