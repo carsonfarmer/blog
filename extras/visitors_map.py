@@ -86,6 +86,6 @@ json = json.replace("],[", "],\n[")
 json = json.replace("[[", "[\n[")
 json = json.replace("]]", "]\n];")
 
-with open('visitor_locations.js', 'w+') as f:
+with open('../content/extras/visitors_map.js', 'w+') as f:
     f.write('var visitors = ')
     f.write(json)
