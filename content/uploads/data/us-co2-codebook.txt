@@ -1,0 +1,23 @@
+Total CO2 emissions from fossil-fuels (1000 metric tons) for the United States
+
+Data source:
+  Source organization(s):      CDIAC (Carbon Dioxide Information Analysis Center)	
+  Link to source organization: http://cdiac.ornl.gov/	
+  File name:                   nation.1751_2009.csv	
+  Link to complete reference:  http://cdiac.ornl.gov/ftp/ndp030/CSV-FILES/
+  
+Data attributes:
+  year:
+  total_c:     Total CO2 emissions from fossil-fuels (thousand metric tons of C)
+  solid:       Emissions from solid fuel consumption
+  liquid:      Emissions from liquid fuel consumption
+  gas:         Emissions from gas fuel consumption
+  cement:      Emissions from cement production
+  gas_flare:   Emissions from gas flaring
+  per_capita:  Per capita CO2 emissions (metric tons of carbon)
+  bunker:      Emissions from bunker fuels (not included in the totals)
+  
+Notes:
+  To convert original data from amount of Carbon (thousand metric tons of C) 
+  into Carbon Dioxide (CO2), use the following formula: C*[(12+16*2)/12]
+
