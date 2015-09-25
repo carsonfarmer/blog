@@ -77,7 +77,7 @@ a img {border: 0px; background-color: transparent;}
 /*h1 a:hover {
     background-color: #e057b8;
 }*/
-	
+
 /* Paragraphs */
 div.line-block,
 p { margin-top: 1em;
@@ -187,11 +187,10 @@ q:before {
     font-size: 100%;
 }
 */
-/*blockquote p {
-    font-size: 88%;
+blockquote {
+    font-size: 100%;
 }
-*/
-/*.input-append button.add-on { 
+/*.input-append button.add-on {
   height: inherit !important;
 }
 */
@@ -292,7 +291,7 @@ q:before {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 30px dashed #B0C4DE;
-    display:block; 
+    display:block;
     width: 0;
     height: 0;
 }
@@ -308,7 +307,7 @@ q:before {
 	border-width:9px 21px 9px 0;
 	border-color:transparent #B0C4DE;
     /* reduce the damage in FF3.0
-    display:block; 
+    display:block;
     width:0;
 }*/
 
@@ -451,7 +450,7 @@ img.center, figure.center { margin: 0 auto; display: block; }
 }*/
 
 
-    
+
 /* main navbar */
 
 /*textarea:focus,
@@ -494,16 +493,16 @@ input[type="color"]:focus,
 .navbar .nav>li.pull-right {
     float: right;
 }*/
-  
+
 .share-list a{
   margin: 0em 0.5em;
 }
-  
+
 .badge-list {
   list-style: none;
 }
-  
-.badge-list li span { 
+
+.badge-list li span {
   width: 25px;
   text-align: center;
   margin-right: 1em;
@@ -546,7 +545,7 @@ input[type="color"]:focus,
 }
 
 .tag a, .category a {
-    margin: 0em 0.5.3em; 
+    margin: 0em 0.5.3em;
 }
 
 
@@ -588,8 +587,8 @@ input[type="color"]:focus,
     font-size: .6em;
 }*/
 
-/*.navbar .nav li.dropdown.open>.dropdown-toggle, 
-.navbar .nav li.dropdown.active>.dropdown-toggle, 
+/*.navbar .nav li.dropdown.open>.dropdown-toggle,
+.navbar .nav li.dropdown.active>.dropdown-toggle,
 .navbar .nav li.dropdown.open.active>.dropdown-toggle {
     background-color: #fff;
 }
@@ -705,13 +704,13 @@ input[type="color"]:focus,
 		width: 150px;
 		padding: 0 10px;
 }
-	
+
 #extras .blogroll li {
     float: left;
     margin: 0 20px 0 0;
     width: 150px;
 }
-	
+
 	/* Social */
 #extras .social {
 	float: right;
@@ -730,7 +729,7 @@ input[type="color"]:focus,
 	height: 35px;
     z-index: 10;
 }
-	
+
 #extras .twitter {
 	float: left;
     display: inline-block;
@@ -747,11 +746,11 @@ input[type="color"]:focus,
 #extras #visitors_map {
 	margin-bottom: 20px;
 }
-	
+
 #extras div[class='social'] a {
     text-decoration: normal;
 }
-	
+
 /*#social-menu a:before {
     padding-right: 0.5em;
 }
@@ -796,7 +795,7 @@ input[type="color"]:focus,
     -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
 }
- 
+
 /*
 	Footer
 *****************/
@@ -820,7 +819,7 @@ input[type="color"]:focus,
 	  margin-bottom: 1.5em;
 	  border-radius: 10px;
 	  -moz-border-radius: 10px;
-	  -webkit-border-radius: 10px;		
+	  -webkit-border-radius: 10px;
 }
 
 .page {
@@ -918,13 +917,13 @@ article header .published {
 }
 
 #map {
-    z-index: 0; 
+    z-index: 0;
 	top: 45px;
 	left: 0px;
-    position: absolute; 
+    position: absolute;
     width: 100%;
-    height: 100%; 
-    margin: 0; 
+    height: 100%;
+    margin: 0;
     padding: 0;
 }
 
@@ -934,18 +933,18 @@ article header .published {
    #posts-list {list-style: none; margin-left: -40px;}
 	/*#posts-list .hentry {padding-left: 0px; position: relative;}*/
 	/*#posts-list li {padding-bottom: 1.5em;}*/
-	
+
 /*    #posts-list footer {
         position: relative;
     float: left;
         top: 0.5em;
         width: 100%;
     }
-    
+
     #post-list footer p {
           display: inline;
     }*/
-	
+
 	/* About the Author */
 	#about-author {
 		background: #f9f9f9;
@@ -953,23 +952,23 @@ article header .published {
 		font-style: normal;
 		margin: 2em 0;
 		padding: 10px 20px 15px 20px;
-		
+
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
-	
+
 	#about-author strong {
 		color: #C64350;
 		clear: both;
 		display: block;
 		font-size: 1.429em;
 	}
-	
+
 	#about-author .photo {border: 1px solid #ddd; float: left; margin: 5px 1em 0 0;}
-	
+
 	/* Comments */
-	
+
 	.comments {
 	    padding-top: 20px;
 	}
@@ -980,24 +979,24 @@ article header .published {
 		font-style: normal;
 		margin: 0;
 		padding: 15px 20px;
-		
+
 		border-radius: 5px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
 	#comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
-	
+
 	#comments-list li:nth-child(2n) blockquote {background: #F5f5f5;}
-	
+
 	/* Add a Comment */
 	#add-comment label {clear: left; float: left; text-align: left; width: 150px;}
 	#add-comment input[type='text'],
 	#add-comment input[type='email'],
 	#add-comment input[type='url'] {float: left; width: 200px;}
-	
+
 	#add-comment textarea {float: left; height: 150px; width: 495px;}
-	
+
 	#add-comment p.req {clear: both; margin: 0 .5em 1em 0; text-align: right;}
-	
+
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
