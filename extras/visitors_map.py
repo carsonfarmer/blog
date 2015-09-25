@@ -18,10 +18,10 @@ try:
     if today == file_date:
         print("Already computed map for today... exiting!")
         sys.exit()  # No need to do anything, we've already done this today!
-except OSError, err:  # File doesn't exist!
+except OSError:  # File doesn't exist!
     pass  # Just pass through, we need to create it...
 
-CLIENT_SECRETS = '/Users/cfarmer/Documents/client_secrets.json'
+CLIENT_SECRETS = '~/Documents/client_secrets.json'
 # The Flow object to be used if we need to authenticate.
 FLOW = flow_from_clientsecrets(
     CLIENT_SECRETS,
@@ -29,7 +29,7 @@ FLOW = flow_from_clientsecrets(
     message='%s is missing' % CLIENT_SECRETS
 )
 # A file to store the access token
-TOKEN_FILE_NAME = '/Users/cfarmer/Documents/credentials.dat'
+TOKEN_FILE_NAME = '~/Documents/credentials.dat'
 
 
 def prepare_credentials():
