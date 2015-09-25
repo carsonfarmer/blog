@@ -33,7 +33,7 @@ original Translink footage &lt;a href="http://www.youtube.com/watch?feature=play
 &lt;/iframe&gt;
 &lt;/div&gt;
 
-</summary><category term="Visualization"></category><category term="Transportation"></category><category term="Video"></category><category term="Links"></category></entry><entry><title>Maps as Art and Other Experiments</title><link href="http://carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="alternate"></link><updated>2013-09-27T17:25:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2013-09-27:2013/09/maps-art-other-experiments/</id><summary type="html">&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
+&lt;!--more--&gt;</summary><category term="Visualization"></category><category term="Transportation"></category><category term="Video"></category><category term="Links"></category></entry><entry><title>Maps as Art and Other Experiments</title><link href="http://carsonfarmer.com/2013/09/maps-art-other-experiments/" rel="alternate"></link><updated>2013-09-27T17:25:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2013-09-27:2013/09/maps-art-other-experiments/</id><summary type="html">&lt;p&gt;With the recent (and long anticipated) release of &lt;a href="http://www.qgis.org/"&gt;Quantum &lt;span class="caps"&gt;GIS&lt;/span&gt; 2.0&lt;/a&gt;, 
 there has been a lot of &amp;#8216;buzz&amp;#8217; in the open source geospatial community about 
 all the cool new features that &lt;span class="caps"&gt;QGIS&lt;/span&gt; now boasts, and how far it has come in such 
 a short time. I was recently inspired by &lt;a href="http://anitagraser.com/2013/09/17/fun-with-data-defined-labels/"&gt;such a post by Anita Graser (aka 
@@ -44,7 +44,7 @@ with &lt;a href="http://lab.hakim.se/reveal-js/#/"&gt;Reveal.js&lt;/a&gt; slides
 the following &lt;a href="http://www.carsonfarmer.com/examples/map_art/"&gt;slide show&lt;/a&gt; using the images from &lt;span class="caps"&gt;QGIS&lt;/span&gt; and some 
 IPython magic:
 &lt;iframe src=http://www.carsonfarmer.com/examples/map_art/ width=700 height=500&gt;&lt;/iframe&gt;&lt;/p&gt;
-</summary><category term="Visualization"></category><category term="Python"></category><category term="Open Source"></category><category term="IPython"></category><category term="Mapping"></category></entry><entry><title>cartogram updates</title><link href="http://carsonfarmer.com/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
+&lt;!--more--&gt;</summary><category term="Visualization"></category><category term="Python"></category><category term="Open Source"></category><category term="IPython"></category><category term="Mapping"></category></entry><entry><title>cartogram updates</title><link href="http://carsonfarmer.com/2012/08/cartogram-updates/" rel="alternate"></link><updated>2012-08-10T14:07:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2012-08-10:2012/08/cartogram-updates/</id><summary type="html">&lt;p&gt;It seems my &lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;Olympic medals cartogram&lt;/a&gt; is getting a bit more attention
 (&lt;a href="http://www.guardian.co.uk/sport/datablog/interactive/2012/aug/10/olympics-medals-visualised"&gt;Guardian data blog&lt;/a&gt;, and &lt;a href="http://www.telegraph.co.uk/sport/olympics/olympic_infographics_and_data/9467077/London-2012-Olympics-interactive-world-medal-map-by-population-GDP-and-geographical-size.html"&gt;Telegraph data and graphics blog&lt;/a&gt;), so
 I&amp;#8217;ve updated a few things and wanted to highlight/explain them a bit&amp;nbsp;here.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.carsonfarmer.com/examples/olympic_countries/"&gt;&lt;img alt="image" src="http://carsonfarmer.com/images/grenada.png" title="Grenada" /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -94,7 +94,7 @@ now do that by including this in your &lt;span class="caps"&gt;HTML&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-
+&lt;!--more--&gt;
 
 &lt;p&gt;&lt;a href="{filename}/examples/olympic_countries/"&gt;&lt;img alt="image" src="http://carsonfarmer.com/images/olympic_carto.png" title="Olympic cartogram" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The cartgram is interactive, and was created using &lt;a href="http://www.python.org/"&gt;Python&lt;/a&gt;
@@ -132,7 +132,7 @@ on-shore terrestrial urbanization (more on these graphics soon). I&amp;#8217;m
 still experimenting with FatFonts at this stage, but so far, I&amp;#8217;m quite
 pleased with the results, and find that they offer a nice way to add
 beauty to my potentially boring data!
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://carsonfarmer.com/images/fat_fonts.png"&gt;&lt;img alt="image" src="http://carsonfarmer.com/images/fat_fonts-300x122.png" title="Subset of FatFont image" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Carson&lt;/p&gt;</summary><category term="Research"></category><category term="FatFonts"></category><category term="News"></category><category term="Feature"></category></entry><entry><title>Research dissemination and interactive visuals</title><link href="http://carsonfarmer.com/2012/04/research-dissemination-and-interactive-visuals/" rel="alternate"></link><updated>2012-04-10T22:12:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2012-04-10:2012/04/research-dissemination-and-interactive-visuals/</id><summary type="html">&lt;p&gt;One of my goals for this year is to spend more time and effort
 developing effective Visualizations for my various research projects, in
@@ -149,7 +149,7 @@ in the process. While I&amp;#8217;m not quite ready to start creating full-blown
 interactive websites yet, I thought it might be a good idea to start
 with something small to get the ball rolling; so I put together an
 &lt;a href="/examples/visitors/"&gt;upgraded version&lt;/a&gt; of my &lt;a href="http://carsonfarmer.com/2012/03/because-its-fun-to-map-stuff/"&gt;previous map&lt;/a&gt; of visitors to www.carsonfarmer.com.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;I used the excellent &lt;a href="http://mbostock.github.com/d3/"&gt;D3 JavaScript library&lt;/a&gt; to re-create the visitor
 map, this time providing some basic interaction with the data. Most of
 the functionality is based on &lt;a href="http://mbostock.github.com/d3/ex/"&gt;examples&lt;/a&gt; from the D3 website, and at

@@ -54,7 +54,7 @@ toolkit and its viability as an alternative to R&amp;#8221;. Carl draws on
 examples from &lt;em&gt;&lt;a href="http://shop.oreilly.com/product/0636920018483.do"&gt;Machine Learning for Hackers&lt;/a&gt;&lt;/em&gt; by &lt;a href="http://www.drewconway.com/"&gt;Drew Conway&lt;/a&gt; and
 &lt;a href="http://www.johnmyleswhite.com/"&gt;John Miles White&lt;/a&gt;, as well as &lt;a href="http://www.stat.columbia.edu/~gelman/"&gt;Gelman&lt;/a&gt; and &lt;a href="http://steinhardt.nyu.edu/faculty_bios/view/Jennifer_Hill"&gt;Hill’s&lt;/a&gt; &lt;em&gt;&lt;a href="http://www.stat.columbia.edu/~gelman/arm/"&gt;Data
 Analysis Using Regression and Multilevel/Hierarchical Models&lt;/a&gt;&lt;/em&gt;.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;From the&amp;nbsp;blog:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The objective [of this blog] isn’t to just make a key that translates
@@ -100,7 +100,7 @@ results that I&amp;#8217;m expecting. As a result, I am constantly trying out
 different classification schemes to help me generalize spatial patterns,
 highlight outliers and/or patterns, or just plain &lt;a href="http://www.markmonmonier.com/how_to_lie_with_maps_14880.htm"&gt;mess around with my
 data&lt;/a&gt;.
-&lt;/p&gt;
+&lt;!--more--&gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, &lt;a href="http://www.qgis.org/"&gt;&lt;span class="caps"&gt;QGIS&lt;/span&gt;&lt;/a&gt; (which has been my primary &lt;span class="caps"&gt;GIS&lt;/span&gt; for several years
 now) only &lt;strike&gt;has&lt;/strike&gt; had &amp;#8216;Equal Interval&amp;#8217; and &amp;#8216;Quantiles&amp;#8217; classification algorithms
 implemented. While these classification schemes are no doubt useful and

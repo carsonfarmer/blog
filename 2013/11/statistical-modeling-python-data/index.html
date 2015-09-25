@@ -178,7 +178,7 @@ this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-pyt
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note left shadow">
-    An alternative to writing <code>pds.xxx</code> when calling each &#8216;pandas&#8217; operator is to import all available operators from &#8216;pandas&#8217; at once: <code>from pandas import *</code>. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&nbsp;name.
+    An alternative to writing `pds.xxx` when calling each &#8216;pandas&#8217; operator is to import all available operators from &#8216;pandas&#8217; at once: `from pandas import *`. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&nbsp;name.
 </span></p>
 
 </div>
@@ -205,7 +205,7 @@ this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-pyt
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>You need do this only once in each session of Python, and on systems such as IPython, the library will sometimes be reloaded automatically (if you get an error message, it’s likely that the &#8216;pandas&#8217; library has not been installed on your system. Follow the installation instructions provided at the link&nbsp;above.)</p>
 <p>Reading in a data table that’s been connected with <code>read_csv()</code> is simply a matter of knowing the name (and location) of the data set. For instance, one data table used in examples in the &#8216;Statistical Modeling: A Fresh Approach&#8217; book is <code>"swim100m.csv"</code>. To read in this data table and create an object in Python that contains the data, use a command like&nbsp;this:</p>
-<p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i> <a href="http://www.mosaic-web.org/go/datasets/swim100m.csv"><code>swim100m.csv</code></a></span></p>
+<p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i>&nbsp;[`swim100m.csv`][link]</span></p>
 
 </div>
 </div>
@@ -501,7 +501,7 @@ this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh-approach-pyt
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note right shadow">
-Each column or variable in a &#8216;pandas&#8217; data frame is called a &#8216;series&#8217;, and each series can contain one of many different data types. For more information on series&#8217;, data frames, and other objects in &#8216;pandas&#8217;, <a href="http://pandas.pydata.org/pandas-docs/dev/dsintro.html">have a look here</a>.
+Each column or variable in a &#8216;pandas&#8217; data frame is called a &#8216;series&#8217;, and each series can contain one of many different data types. For more information on series&#8217;, data frames, and other objects in &#8216;pandas&#8217;, [have a look&nbsp;here][intro].
 </span></p>
 
 </div>
@@ -1038,7 +1038,7 @@ Name: year, dtype: float64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Sampling-from-a-Sample-Frame">Sampling from a Sample Frame<a class="anchor-link" href="#Sampling-from-a-Sample-Frame">&#182;</a></h2><p>Much of statistical analysis is concerned with the consequences of drawing a sample from the population. Ideally, you will have a sampling frame that lists every member of the population from which the sample is to be drawn. With this in hand, you could treat the individual cases in the sampling frame as if they were cards in a deck of hands. To pick your random sample, shuffle the deck and deal out the desired number of&nbsp;cards.</p>
 <p>When doing real work in the ﬁeld, you would use the randomly dealt cards to locate the real-world cases they correspond to. Sometimes in these tutorials, however, in order to let you explore the consequences of sampling, you will select a sample from an existing data set. For example, the <code>"kidsfeet.csv"</code> data set has <code>n=39</code> cases.</p>
-<p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i> <a href="http://www.mosaic-web.org/go/datasets/kidsfeet.csv"><code>kidsfeet.csv</code></a></span></p>
+<p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i>&nbsp;[`kidsfeet.csv`][link]</span></p>
 
 </div>
 </div>
@@ -1089,7 +1089,7 @@ Name: year, dtype: float64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note left shadow">
-The <code>ix[]</code> property is a bit tricky to figure out at first. For more information, see <a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html">the official docs</a>.
+The `ix[]` property is a bit tricky to figure out at first. For more information, see [the official&nbsp;docs][selecting].
 </span></p>
 
 </div>
@@ -1203,7 +1203,7 @@ The <code>ix[]</code> property is a bit tricky to figure out at first. For more 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note right shadow">
-To make things a bit more concise, you can <code>import np.random.choice as choice</code>, which will allow you to simply use <code>choice()</code> without including the library <em>and</em> module when&nbsp;typing.
+To make things a bit more concise, you can `import np.random.choice as choice`, which will allow you to simply use `choice()` without including the library *and* module when&nbsp;typing.
 </span></p>
 
 </div>

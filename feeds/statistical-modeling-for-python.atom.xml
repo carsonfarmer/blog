@@ -11,7 +11,7 @@ notebook for this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fr
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;In the 1880s, Sir Francis Galton, one of the pioneers of statistics, collected data on the heights of approximately 900 adult children and their parents in London. Galton was interested in studying the relationship between a full-grown child&amp;#8217;s height and his or her mother&amp;#8217;s and father&amp;#8217;s height. In order to do so, Galton collected height measurements from about 200 families in the city of&amp;nbsp;London.&lt;/p&gt;
 &lt;p&gt;As a setting to illustrate computer techniques for describing variability, take the data that Galton collected on the heights of adult children and their parents. The file &lt;code&gt;"galton.csv"&lt;/code&gt; stores these data in a modern, case/variable&amp;nbsp;format.&lt;/p&gt;
-&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/galton.csv"&gt;&lt;code&gt;galton.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt;&amp;nbsp;[`galton.csv`][link]&lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -203,7 +203,7 @@ notebook for this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fr
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt;
-Note that in the above case, &lt;code&gt;kind="weak"&lt;/code&gt; corresponds to the definition of a &amp;#8216;cumulative distribution function&amp;#8217;. A &lt;code&gt;percentileofscore()&lt;/code&gt; of 80% means that 80% of values are less than or equal to the provided score. This usage is consistent with how the &amp;#8216;mosaic&amp;#8217; R package calculates percentiles, using the &lt;code&gt;pdata&lt;/code&gt; function.
+Note that in the above case, `kind=&amp;#8221;weak&amp;#8221;` corresponds to the definition of a &amp;#8216;cumulative distribution function&amp;#8217;. A `percentileofscore()` of 80% means that 80% of values are less than or equal to the provided score. This usage is consistent with how the &amp;#8216;mosaic&amp;#8217; R package calculates percentiles, using the `pdata`&amp;nbsp;function.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -255,7 +255,7 @@ Note that in the above case, &lt;code&gt;kind="weak"&lt;/code&gt; corresponds to
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note left shadow"&gt;
-Note that numpy has a simpler version of this function, but it uses a different naming convention which readers of &amp;#8216;Statistical Modeling: A Fresh Approach&amp;#8217; and these tutorials might find confusing. In this case, the function is called &lt;code&gt;percentile&lt;/code&gt;, and returns the &amp;#8216;score&amp;#8217; or value at a given percentile. For example, &lt;code&gt;np.percentile(gal.height, 20)&lt;/code&gt; returns &lt;code&gt;63.5&lt;/code&gt; as in the above&amp;nbsp;example.
+Note that numpy has a simpler version of this function, but it uses a different naming convention which readers of &amp;#8216;Statistical Modeling: A Fresh Approach&amp;#8217; and these tutorials might find confusing. In this case, the function is called `percentile`, and returns the &amp;#8216;score&amp;#8217; or value at a given percentile. For example, `np.percentile(gal.height, 20)` returns `63.5` as in the above&amp;nbsp;example.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -384,14 +384,14 @@ Note that numpy has a simpler version of this function, but it uses a different 
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt;
-&lt;a href="http://www.secnetix.de/olli/Python/list_comprehensions.hawk"&gt;List comprehensions&lt;/a&gt; can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:&lt;br&gt;
-$S = \{ x^{2} : \{x \in 0 \dots 9\} \}$&lt;br&gt;
-$V = (1, 2, 4, 8, \dots, 2^{12})$&lt;br&gt;
-$M = \{x$ $|$ $x$ $\in S$ and $x$ even$\}$&lt;br&gt;
-You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:&lt;br&gt;
-&lt;code&gt;S = [x**2 for x in range(10)]&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;V = [2**i for i in range(13)]&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;M = [x for x in S if x % 2 == 0]&lt;/code&gt;&lt;br&gt;
+[List comprehensions][lists] can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:  
+$S = \{ x^{2} : \{x \in 0 \dots 9\} \}$  
+$V = (1, 2, 4, 8, \dots, 2^{12})$  
+$M = \{x$ $|$ $x$ $\in S$ and $x$ even$\}$  
+You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:  
+`S = [x**2 for x in range(10)]`  
+`V = [2**i for i in range(13)]`  
+`M = [x for x in S if x % 2 ==&amp;nbsp;0]`  
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -532,7 +532,7 @@ Name: height, dtype: float64&lt;/pre&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt;
-If you prefer to use the &lt;code&gt;pyplot&lt;/code&gt; interface, then remember to import it in the usual way at the beginning of your Python session: &lt;code&gt;import matplotlib.pyplot&lt;/code&gt;
+If you prefer to use the `pyplot` interface, then remember to import it in the usual way at the beginning of your Python session: `import&amp;nbsp;matplotlib.pyplot`
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -550,7 +550,7 @@ If you want interactive plotting (and why wouldn&amp;#8217;t you?!), start &amp;
 &lt;p&gt;Or, for inline figures in an IPython qtconsole or notebook,&amp;nbsp;use:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ipython notebook --pylab inline&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;/span&amp;gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1946,7 +1946,7 @@ this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note left shadow"&gt;
-    An alternative to writing &lt;code&gt;pds.xxx&lt;/code&gt; when calling each &amp;#8216;pandas&amp;#8217; operator is to import all available operators from &amp;#8216;pandas&amp;#8217; at once: &lt;code&gt;from pandas import *&lt;/code&gt;. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&amp;nbsp;name.
+    An alternative to writing `pds.xxx` when calling each &amp;#8216;pandas&amp;#8217; operator is to import all available operators from &amp;#8216;pandas&amp;#8217; at once: `from pandas import *`. This makes things a bit easier in terms of typing, but can sometimes lead to confusion when operators from different libraries have the same&amp;nbsp;name.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -1973,7 +1973,7 @@ this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;You need do this only once in each session of Python, and on systems such as IPython, the library will sometimes be reloaded automatically (if you get an error message, it’s likely that the &amp;#8216;pandas&amp;#8217; library has not been installed on your system. Follow the installation instructions provided at the link&amp;nbsp;above.)&lt;/p&gt;
 &lt;p&gt;Reading in a data table that’s been connected with &lt;code&gt;read_csv()&lt;/code&gt; is simply a matter of knowing the name (and location) of the data set. For instance, one data table used in examples in the &amp;#8216;Statistical Modeling: A Fresh Approach&amp;#8217; book is &lt;code&gt;"swim100m.csv"&lt;/code&gt;. To read in this data table and create an object in Python that contains the data, use a command like&amp;nbsp;this:&lt;/p&gt;
-&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/swim100m.csv"&gt;&lt;code&gt;swim100m.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt;&amp;nbsp;[`swim100m.csv`][link]&lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2269,7 +2269,7 @@ this tutorial is &lt;a href="https://github.com/cfarmer/stat-mod-fresh-approach-
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt;
-Each column or variable in a &amp;#8216;pandas&amp;#8217; data frame is called a &amp;#8216;series&amp;#8217;, and each series can contain one of many different data types. For more information on series&amp;#8217;, data frames, and other objects in &amp;#8216;pandas&amp;#8217;, &lt;a href="http://pandas.pydata.org/pandas-docs/dev/dsintro.html"&gt;have a look here&lt;/a&gt;.
+Each column or variable in a &amp;#8216;pandas&amp;#8217; data frame is called a &amp;#8216;series&amp;#8217;, and each series can contain one of many different data types. For more information on series&amp;#8217;, data frames, and other objects in &amp;#8216;pandas&amp;#8217;, [have a look&amp;nbsp;here][intro].
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -2806,7 +2806,7 @@ Name: year, dtype: float64&lt;/pre&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Sampling-from-a-Sample-Frame"&gt;Sampling from a Sample Frame&lt;a class="anchor-link" href="#Sampling-from-a-Sample-Frame"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Much of statistical analysis is concerned with the consequences of drawing a sample from the population. Ideally, you will have a sampling frame that lists every member of the population from which the sample is to be drawn. With this in hand, you could treat the individual cases in the sampling frame as if they were cards in a deck of hands. To pick your random sample, shuffle the deck and deal out the desired number of&amp;nbsp;cards.&lt;/p&gt;
 &lt;p&gt;When doing real work in the ﬁeld, you would use the randomly dealt cards to locate the real-world cases they correspond to. Sometimes in these tutorials, however, in order to let you explore the consequences of sampling, you will select a sample from an existing data set. For example, the &lt;code&gt;"kidsfeet.csv"&lt;/code&gt; data set has &lt;code&gt;n=39&lt;/code&gt; cases.&lt;/p&gt;
-&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt; &lt;a href="http://www.mosaic-web.org/go/datasets/kidsfeet.csv"&gt;&lt;code&gt;kidsfeet.csv&lt;/code&gt;&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="dataset shadow"&gt;&lt;i class="icon-flag" style="font-size: 1.5em;"&gt;&lt;/i&gt;&amp;nbsp;[`kidsfeet.csv`][link]&lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -2857,7 +2857,7 @@ Name: year, dtype: float64&lt;/pre&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note left shadow"&gt;
-The &lt;code&gt;ix[]&lt;/code&gt; property is a bit tricky to figure out at first. For more information, see &lt;a href="http://pandas.pydata.org/pandas-docs/stable/indexing.html"&gt;the official docs&lt;/a&gt;.
+The `ix[]` property is a bit tricky to figure out at first. For more information, see [the official&amp;nbsp;docs][selecting].
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -2971,7 +2971,7 @@ The &lt;code&gt;ix[]&lt;/code&gt; property is a bit tricky to figure out at firs
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt;
-To make things a bit more concise, you can &lt;code&gt;import np.random.choice as choice&lt;/code&gt;, which will allow you to simply use &lt;code&gt;choice()&lt;/code&gt; without including the library &lt;em&gt;and&lt;/em&gt; module when&amp;nbsp;typing.
+To make things a bit more concise, you can `import np.random.choice as choice`, which will allow you to simply use `choice()` without including the library *and* module when&amp;nbsp;typing.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -3294,7 +3294,7 @@ category: &amp;#8220;Statistical Modeling for&amp;nbsp;Python&amp;#8221;.&lt;/p&
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note left shadow"&gt;
-It is best to ensure you are using the latest version of &lt;code&gt;numpy&lt;/code&gt;, which is available &lt;a href="http://scipy.org/Download"&gt;from here&lt;/a&gt;.
+It is best to ensure you are using the latest version of `numpy`, which is available [from&amp;nbsp;here][numpy].
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;
@@ -4342,12 +4342,10 @@ An assignment command like &lt;code&gt;x=np.sqrt(x)&lt;/code&gt; can be confusin
     &lt;td&gt;$\cos^{-1}(-1)$&lt;/td&gt;
     &lt;td&gt;&lt;code&gt;np.acos(-1)&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Numbers can be written in &lt;strong&gt;scientific notation&lt;/strong&gt;. For example, the &amp;#8216;universal gravitational constant&amp;#8217; that describes the gravitational attraction between masses is $6.67428 \times 10^{11}$ (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as &lt;code&gt;6.67428e-11&lt;/code&gt;. The Avogadro constant, which gives the number of atoms in a mole, is $6.02214179 \times 10^{23}$ per mole, or &lt;code&gt;6.02214179e+23&lt;/code&gt;.&lt;/p&gt;
+&lt;/table&gt;&lt;p&gt;Numbers can be written in &lt;strong&gt;scientific notation&lt;/strong&gt;. For example, the &amp;#8216;universal gravitational constant&amp;#8217; that describes the gravitational attraction between masses is $6.67428 \times 10^{11}$ (with units meters-cubed per kilogram per second squared). In the computer notation, this would be written as &lt;code&gt;6.67428e-11&lt;/code&gt;. The Avogadro constant, which gives the number of atoms in a mole, is $6.02214179 \times 10^{23}$ per mole, or &lt;code&gt;6.02214179e+23&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The computer language does not directly support the recording of units. This is unfortunate, since in the real world numbers often have units and the units matter. For example, in 1999 the Mars Climate Orbiter crashed into Mars because the design engineers specified the engine&amp;#8217;s thrust in units of pounds, while the guidance engineers thought the units were&amp;nbsp;newtons.&lt;/p&gt;
 &lt;p&gt;&lt;span class="note right shadow"&gt;
-There are &lt;em&gt;some&lt;/em&gt; Python packages for handling units, including &lt;a href="https://pint.readthedocs.org/en/latest/"&gt;pint&lt;/a&gt;, &lt;a href="http://pythonhosted.org/quantities/"&gt;quantities&lt;/a&gt;, &lt;a href="https://pypi.python.org/pypi/units/"&gt;units&lt;/a&gt;, &lt;a href="http://docs.sympy.org/latest/modules/physics/units.html"&gt;sympy.physics.units&lt;/a&gt;, &lt;a href="http://conference.scipy.org/scipy2013/presentation_detail.php?id=174"&gt;etc&lt;/a&gt;.
+There are *some* Python packages for handling units, including [pint], [quantities], [units], [sympy.physics.units],&amp;nbsp;[etc].
 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Computer arithmetic is accurate and reliable, but it often involves very slight rounding of numbers. Ordinarily, this is not noticeable. However, it can become apparent in some calculations that produce results that are (near) zero. For example, mathematically, $sin(\pi) = 0$, however, the computer does not duplicate the mathematical relationship&amp;nbsp;exactly:&lt;/p&gt;
 
@@ -4494,7 +4492,7 @@ Mathematically oriented readers will wonder why &lt;code&gt;Python&lt;/code&gt; 
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;&lt;span class="note left shadow"&gt;
-In Python, data frames are not &amp;#8216;built in&amp;#8217; as part of the basic language, but the excellent &lt;a href="http://pandas.pydata.org/"&gt;&amp;#8216;pandas&amp;#8217;&lt;/a&gt; library provides data frames and a whole slew of other functionality to researchers doing data analysis with Python. We will be learning more about &amp;#8216;pandas&amp;#8217; in future&amp;nbsp;tutorials.
+In Python, data frames are not &amp;#8216;built in&amp;#8217; as part of the basic language, but the excellent [&amp;#8216;pandas&amp;#8217;][pandas] library provides data frames and a whole slew of other functionality to researchers doing data analysis with Python. We will be learning more about &amp;#8216;pandas&amp;#8217; in future&amp;nbsp;tutorials.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;/div&gt;

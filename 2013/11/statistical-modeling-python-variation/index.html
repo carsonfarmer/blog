@@ -157,7 +157,7 @@ notebook for this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In the 1880s, Sir Francis Galton, one of the pioneers of statistics, collected data on the heights of approximately 900 adult children and their parents in London. Galton was interested in studying the relationship between a full-grown child&#8217;s height and his or her mother&#8217;s and father&#8217;s height. In order to do so, Galton collected height measurements from about 200 families in the city of&nbsp;London.</p>
 <p>As a setting to illustrate computer techniques for describing variability, take the data that Galton collected on the heights of adult children and their parents. The file <code>"galton.csv"</code> stores these data in a modern, case/variable&nbsp;format.</p>
-<p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i> <a href="http://www.mosaic-web.org/go/datasets/galton.csv"><code>galton.csv</code></a></span></p>
+<p><span class="dataset shadow"><i class="icon-flag" style="font-size: 1.5em;"></i>&nbsp;[`galton.csv`][link]</span></p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ notebook for this tutorial is <a href="https://github.com/cfarmer/stat-mod-fresh
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note right shadow">
-Note that in the above case, <code>kind="weak"</code> corresponds to the definition of a &#8216;cumulative distribution function&#8217;. A <code>percentileofscore()</code> of 80% means that 80% of values are less than or equal to the provided score. This usage is consistent with how the &#8216;mosaic&#8217; R package calculates percentiles, using the <code>pdata</code> function.
+Note that in the above case, `kind=&#8221;weak&#8221;` corresponds to the definition of a &#8216;cumulative distribution function&#8217;. A `percentileofscore()` of 80% means that 80% of values are less than or equal to the provided score. This usage is consistent with how the &#8216;mosaic&#8217; R package calculates percentiles, using the `pdata`&nbsp;function.
 </span></p>
 
 </div>
@@ -401,7 +401,7 @@ Note that in the above case, <code>kind="weak"</code> corresponds to the definit
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note left shadow">
-Note that numpy has a simpler version of this function, but it uses a different naming convention which readers of &#8216;Statistical Modeling: A Fresh Approach&#8217; and these tutorials might find confusing. In this case, the function is called <code>percentile</code>, and returns the &#8216;score&#8217; or value at a given percentile. For example, <code>np.percentile(gal.height, 20)</code> returns <code>63.5</code> as in the above&nbsp;example.
+Note that numpy has a simpler version of this function, but it uses a different naming convention which readers of &#8216;Statistical Modeling: A Fresh Approach&#8217; and these tutorials might find confusing. In this case, the function is called `percentile`, and returns the &#8216;score&#8217; or value at a given percentile. For example, `np.percentile(gal.height, 20)` returns `63.5` as in the above&nbsp;example.
 </span></p>
 
 </div>
@@ -530,14 +530,14 @@ Note that numpy has a simpler version of this function, but it uses a different 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note right shadow">
-<a href="http://www.secnetix.de/olli/Python/list_comprehensions.hawk">List comprehensions</a> can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:<br>
-$S = \{ x^{2} : \{x \in 0 \dots 9\} \}$<br>
-$V = (1, 2, 4, 8, \dots, 2^{12})$<br>
-$M = \{x$ $|$ $x$ $\in S$ and $x$ even$\}$<br>
-You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:<br>
-<code>S = [x**2 for x in range(10)]</code><br>
-<code>V = [2**i for i in range(13)]</code><br>
-<code>M = [x for x in S if x % 2 == 0]</code><br>
+[List comprehensions][lists] can be used to construct lists in a very natural, easy way, like a mathematician is used to do. The following are common ways to describe lists (or sets, or tuples, or vectors) in mathematics:  
+$S = \{ x^{2} : \{x \in 0 \dots 9\} \}$  
+$V = (1, 2, 4, 8, \dots, 2^{12})$  
+$M = \{x$ $|$ $x$ $\in S$ and $x$ even$\}$  
+You probably know things like the above from previous math courses. In Python, you can write these expression almost exactly like a mathematician would do, without having to remember any special cryptic syntax. This is how you do the above in Python:  
+`S = [x**2 for x in range(10)]`  
+`V = [2**i for i in range(13)]`  
+`M = [x for x in S if x % 2 ==&nbsp;0]`  
 </span></p>
 
 </div>
@@ -678,7 +678,7 @@ Name: height, dtype: float64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><span class="note right shadow">
-If you prefer to use the <code>pyplot</code> interface, then remember to import it in the usual way at the beginning of your Python session: <code>import matplotlib.pyplot</code>
+If you prefer to use the `pyplot` interface, then remember to import it in the usual way at the beginning of your Python session: `import&nbsp;matplotlib.pyplot`
 </span></p>
 
 </div>
@@ -696,7 +696,7 @@ If you want interactive plotting (and why wouldn&#8217;t you?!), start &#8216;IP
 <p>Or, for inline figures in an IPython qtconsole or notebook,&nbsp;use:</p>
 
 <pre><code>ipython notebook --pylab inline</code></pre>
-<p></span></p>
+<p>&lt;/span&gt;</p>
 
 </div>
 </div>
