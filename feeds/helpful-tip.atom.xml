@@ -42,7 +42,7 @@ added a few&amp;nbsp;more]:&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://code.google.com/p/pyproj/"&gt;pyproj&lt;/a&gt; - For conversions between&amp;nbsp;projections&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Any others I&amp;#8217;ve&amp;nbsp;missed?&lt;/p&gt;
-&lt;!--more--&gt;</summary><category term="Update"></category><category term="Helpful Tip"></category><category term="Python"></category><category term="GIS"></category><category term="Open Source"></category></entry><entry><title>manageR and rpy2 installation problems</title><link href="http://carsonfarmer.com/2012/10/manager-and-rpy2-installation-problems/" rel="alternate"></link><updated>2012-10-06T14:26:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2012-10-06:2012/10/manager-and-rpy2-installation-problems/</id><summary type="html">&lt;p&gt;Unfortunately, I haven&amp;#8217;t had much time recently to update or work on
+</summary><category term="Update"></category><category term="Helpful Tip"></category><category term="Python"></category><category term="GIS"></category><category term="Open Source"></category></entry><entry><title>manageR and rpy2 installation problems</title><link href="http://carsonfarmer.com/2012/10/manager-and-rpy2-installation-problems/" rel="alternate"></link><updated>2012-10-06T14:26:00-04:00</updated><author><name>cfarmer</name></author><id>tag:carsonfarmer.com,2012-10-06:2012/10/manager-and-rpy2-installation-problems/</id><summary type="html">&lt;p&gt;Unfortunately, I haven&amp;#8217;t had much time recently to update or work on
 &lt;code&gt;manageR&lt;/code&gt;, but I&amp;#8217;m hoping that will change in the next few months&amp;#8230;
 Having said that, there are quite a few people out there that have been
 having trouble installing &lt;code&gt;manageR&lt;/code&gt; (and the required &lt;code&gt;rpy2&lt;/code&gt;) on their
@@ -52,7 +52,7 @@ various platforms, and I&amp;#8217;m going to use this post to amalgamate them,
 and hopefully create a one stop post for all your &lt;code&gt;rpy2&lt;/code&gt; and &lt;code&gt;manageR&lt;/code&gt;
 needs. I&amp;#8217;m also hoping that people will post potential fixes in the
 comments to help others with more specific problems?
-&lt;!--more--&gt;
+
 For now, I have the following potential fix for &lt;code&gt;OSX&lt;/code&gt; (Lion 10.7.2 at&amp;nbsp;least):&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Update &lt;code&gt;R&lt;/code&gt; to latest version (&lt;a href="http://www.r-project.org/"&gt;binary from r-project.org&lt;/a&gt;);&lt;/li&gt;
@@ -228,7 +228,7 @@ permanently. Basically, the script will replace/update three of the
 Vector menu tools, including &lt;code&gt;Analysis \&amp;gt; Sum line lengths&lt;/code&gt;, &lt;code&gt;Analysis
 \&amp;gt; Points in polygon&lt;/code&gt;, and &lt;code&gt;Geometry tools \&amp;gt; Add/Export geometry
 info&lt;/code&gt;.
-&lt;!--more--&gt;
+
 Here are some examples of the script&amp;#8217;s usage from the &lt;span class="caps"&gt;QGIS&lt;/span&gt; Python&amp;nbsp;console:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Add geometry information (assumes that the target layer in first
@@ -268,7 +268,7 @@ calculate shortest paths and various other network-based operations. In
 this post, I&amp;#8217;ll outline the steps required to get all this up and going,
 and provide a quick example to show how this can be combined with &lt;span class="caps"&gt;QGIS&lt;/span&gt;
 to visualise the computed shortest path directly.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;Firstly, we need to install all the required packages. I&amp;#8217;m assuming you
 already have &lt;code&gt;PostgreSQL&lt;/code&gt; and &lt;code&gt;PostGIS&lt;/code&gt; installed, but if not, have a &lt;a href="http://carsonfarmer.com/2008/11/quick-guide-to-setting-up-postgis-database/"&gt;look
 here&lt;/a&gt; for a quick guide to getting things set up (Note that the latest
@@ -462,7 +462,7 @@ results of something&amp;nbsp;like:&lt;/p&gt;
 to Giuseppe Sucameli and Jürgen E. Fischer, the answer is a resounding
 &amp;#8220;yes!&amp;#8221;. A &lt;a href="https://trac.osgeo.org/qgis/changeset/13340"&gt;recent patch&lt;/a&gt; to &lt;span class="caps"&gt;QGIS&lt;/span&gt; trunk now makes custom Postgres
 queries possible via the postgres data provider.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;strike&gt;Unfortunately there is no user interface implemented to take advantage
 of this functionality (yet!)&lt;/strike&gt;There is now a plugin available from the
 &lt;a href="http://www.faunalia.it/qgis/plugins.xml"&gt;Faunalia python plugin repository&lt;/a&gt; called &lt;code&gt;RT Sql Layer&lt;/code&gt; which provides
@@ -498,7 +498,7 @@ in R, using the very nice &lt;a href="http://cran.r-project.org/web/packages/for
 Computing&lt;/a&gt;. To show just how nice this package is, below is a minimal
 example of bootstrapping a network partitioning algorithm which takes
 advantage of a multicore processor:
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;doMC&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;foreach&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="kn"&gt;library&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;igraph&lt;span class="p"&gt;)&lt;/span&gt;
@@ -559,7 +559,7 @@ in &lt;code&gt;R&lt;/code&gt;, we need two libraries: &lt;code&gt;sp&lt;/code&gt
 takes a &lt;code&gt;SpatialPointsDataFrame&lt;/code&gt; as input, and returns a
 &lt;code&gt;SpatialPolygonsDataFrame&lt;/code&gt; that represents the Voronoi tessellation of
 the input point layer.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;voronoipolygons &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kr"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;layer&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="kn"&gt;require&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;deldir&lt;span class="p"&gt;)&lt;/span&gt;
     crds &lt;span class="o"&gt;=&lt;/span&gt; layer&lt;span class="o"&gt;@&lt;/span&gt;coords
@@ -594,7 +594,7 @@ to have to run on relatively large datasets, and probably behind the
 scenes on a server somewhere, we decided that Python was the way to go.
 The goal therefore was to reproduce the Matlab code using only Python
 libraries, and the fewer additional libraries required, the better.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;The most difficult stage in all this was to convert the Matlab code to
 Python code, while still remaining relatively fast and simple. The
 solution is of course the NumPy Python library, and nothing could have
@@ -614,7 +614,7 @@ when the process has finished, using the following&amp;nbsp;command:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;!--more--&gt;
+
 
 &lt;p&gt;In this case, the three parameters &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;e&lt;/code&gt;, and &lt;code&gt;n&lt;/code&gt; tell &lt;code&gt;watch&lt;/code&gt; to
 &lt;code&gt;[b]&lt;/code&gt;eep if the command has a non-zero exit (in this case when &lt;code&gt;shp2pgsql&lt;/code&gt;
@@ -644,7 +644,7 @@ based application, the obvious choice for implementing syntax
 highlighting was to use Qt&amp;#8217;s QSyntaxHighlighter. Unfortunately, there
 weren&amp;#8217;t many examples around that implemented syntax highlighting in
 Python, so I decided to post my own.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;The Python file used in this example is &lt;a href="http://carsonfarmer.com/uploads/highlighter.py"&gt;available here&lt;/a&gt;.
 To implement syntax highlighting, we need to subclass
 QSyntaxHighlighter, reimplement the &lt;code&gt;highlightBlock&lt;/code&gt; function, and
@@ -761,7 +761,7 @@ unexpected ways.&amp;#8221; There are now tones of websites and open-source
 software projects that incorporate &lt;span class="caps"&gt;OSM&lt;/span&gt; data, and the growing popularity
 of the site means that the data is only going to get better (more
 accurate) and bigger (more data).
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;Essentially, OpenStreetMap contributors go out into the world
 with handheld &lt;span class="caps"&gt;GPS&lt;/span&gt; units, and an insatiable need to map everything around
 them. They track their own movements down streets and trails, and along
@@ -808,7 +808,7 @@ with about 12 standard plugins, and another 9 readily available. In
 addition to this, there are a range of &amp;#8216;third-party&amp;#8217; plugins developed
 to do various specific tasks, such as assist you in writing and
 exporting LaTeX documents!
-&lt;!--more--&gt;
+
 First, get all the basic&amp;nbsp;plugins:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gedit-plugins&lt;span class="sb"&gt;`&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -899,7 +899,7 @@ there that explains in detail how to set up PostGIS, but by far the best
 reference I&amp;#8217;ve found is from &lt;a href="http://tim.linfiniti.com/" title="Tim Sutton's blog"&gt;Tim Sutton&amp;#8217;s blog&lt;/a&gt;, mainly because he
 uses Ubuntu, and sudo-apt gets everything you need to have PostGIS
 working in minutes.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;Here is a &lt;a href="http://tim.linfiniti.com/page/3" title="Setting Up Postgis on Ubuntu"&gt;link to the article&lt;/a&gt;, and below is a quote from his&amp;nbsp;blog:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Another reason I love Ubuntu - getting postgis + postgresql is really&amp;nbsp;easy&amp;#8230;&lt;/p&gt;
@@ -929,7 +929,7 @@ layer. While this is perhaps less obvious in the R environment, it is
 not impossible. The following command allows you to visually inspect,
 and change any data.frame (or other vector, matrix, etc.), including
 Spatial*DataFrames.
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kp"&gt;invisible&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;edit&lt;span class="p"&gt;(&lt;/span&gt;spatial_layer&lt;span class="o"&gt;@&lt;/span&gt;data&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 

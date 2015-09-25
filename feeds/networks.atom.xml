@@ -7,7 +7,7 @@ network partitioning algorithm based on &lt;a href="http://en.wikipedia.org/wiki
 have found my results to be quite good so far, but, &amp;#8216;quite good&amp;#8217; isn&amp;#8217;t
 really a very scientific description of validity, so obviously some
 others means of validation is required. Enter bootstrap resampling!
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;Bootstrapping can be used to assess the &lt;strong&gt;validity&lt;/strong&gt; of a
 particular network partitioning by measuring the &lt;strong&gt;stability&lt;/strong&gt; of the
 detected partitions (or clusters). Here, a cluster may be thought of as
@@ -65,7 +65,7 @@ common, is that they can each be represented as a series of vertices (or
 nodes) and edges (or links). This &lt;a href="http://toreopsahl.com/2008/11/28/network-weighted-network/"&gt;blog entry&lt;/a&gt; presents a nice
 description of networks, highlighting the differences between various
 network types (directed, undirected, weighted, unweighted, etc.).
-&lt;!--more--&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;According to &lt;a href="http://arxiv.org/abs/0709.4500"&gt;this paper&lt;/a&gt;, many
 networks are found to display &amp;#8220;community structure&amp;#8221;, which basically
 refers to groupings of vertices where &lt;em&gt;within&lt;/em&gt;-group edge connections
