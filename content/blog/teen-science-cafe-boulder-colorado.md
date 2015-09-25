@@ -6,7 +6,7 @@ Category: News
 Tags: Announcement, News, Presentation, Speaker
 Slug: teen-science-cafe-boulder-colorado
 
-[![image][]][link]
+[![Teen Science Cafe Logo][image]{.left}][link]
 
 I am very excited to announce that I will be giving a talk at the [Boulder Teen
 Science Cafe](http://sciencediscovery.colorado.edu/program/teen-cafe/) next
