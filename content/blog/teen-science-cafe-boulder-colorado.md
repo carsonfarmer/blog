@@ -26,5 +26,5 @@ off when possible and to leave younger siblings at home.
 
 In any case, it should be a lot of fun, and it sounds like an awesome program for teens in and around the Boulder and Denver area... go science!
 
-[image]: |filename|/images/teen-science-cafe.png
+[image]: |filename|/images/teen-science-cafe.jpg
 [link]: http://sciencediscovery.colorado.edu/program/teen-cafe/
