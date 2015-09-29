@@ -1,3 +1,4 @@
+
 '''
 Python Syntax Highlighting Example
 
@@ -10,7 +11,7 @@ version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more 
+FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more
 details.
 
 You should have received a copy of the GNU General Public Licence along with
@@ -44,8 +45,8 @@ class MyHighlighter( QSyntaxHighlighter ):
       brush = QBrush( Qt.darkBlue, Qt.SolidPattern )
       keyword.setForeground( brush )
       keyword.setFontWeight( QFont.Bold )
-      keywords = QStringList( [ "break", "else", "for", "if", "in", 
-                                "next", "repeat", "return", "switch", 
+      keywords = QStringList( [ "break", "else", "for", "if", "in",
+                                "next", "repeat", "return", "switch",
                                 "try", "while" ] )
       for word in keywords:
         pattern = QRegExp("\\b" + word + "\\b")
@@ -55,10 +56,10 @@ class MyHighlighter( QSyntaxHighlighter ):
       # reservedClasses
       reservedClasses.setForeground( brush )
       reservedClasses.setFontWeight( QFont.Bold )
-      keywords = QStringList( [ "array", "character", "complex", 
-                                "data.frame", "double", "factor", 
-                                "function", "integer", "list", 
-                                "logical", "matrix", "numeric", 
+      keywords = QStringList( [ "array", "character", "complex",
+                                "data.frame", "double", "factor",
+                                "function", "integer", "list",
+                                "logical", "matrix", "numeric",
                                 "vector" ] )
       for word in keywords:
         pattern = QRegExp("\\b" + word + "\\b")
@@ -73,7 +74,7 @@ class MyHighlighter( QSyntaxHighlighter ):
       assignmentOperator.setFontWeight( QFont.Bold )
       rule = HighlightingRule( pattern, assignmentOperator )
       self.highlightingRules.append( rule )
-      
+
       # delimiter
       pattern = QRegExp( "[\)\(]+|[\{\}]+|[][]+" )
       delimiter.setForeground( brush )
@@ -119,7 +120,7 @@ class MyHighlighter( QSyntaxHighlighter ):
       string.setForeground( brush )
       rule = HighlightingRule( pattern, string )
       self.highlightingRules.append( rule )
-      
+
       # singleQuotedString
       pattern = QRegExp( "\'.*\'" )
       pattern.setMinimal( True )
@@ -141,7 +142,7 @@ class HighlightingRule():
   def __init__( self, pattern, format ):
     self.pattern = pattern
     self.format = format
-    
+
 class TestApp( QMainWindow ):
   def __init__(self):
     QMainWindow.__init__(self)
@@ -161,4 +162,3 @@ if __name__ == "__main__":
   window = TestApp()
   window.show()
   sys.exit( app.exec_() )
-
